@@ -1,0 +1,5 @@
+{
+  "name": "Remix: Remix: Mekatronik BİST Portföy Yönetimi",
+  "description": "Closed-loop P-Control mantığıyla çalışan dinamik Borsa İstanbul portföy yönetim sistemi.",
+  "requestFramePermissions": []
+}

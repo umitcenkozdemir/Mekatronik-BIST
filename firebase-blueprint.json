@@ -1,0 +1,119 @@
+{
+  "entities": {
+    "users": {
+      "title": "User",
+      "description": "System users and their approval status",
+      "type": "object",
+      "properties": {
+        "email": { "type": "string", "description": "User email" },
+        "role": { "type": "string", "enum": ["admin", "user"], "description": "User role" },
+        "status": { "type": "string", "enum": ["pending", "approved"], "description": "Approval status" },
+        "created_at": { "type": "string", "format": "date-time" }
+      },
+      "required": ["email", "role", "status"]
+    },
+    "bist_stocks": {
+      "title": "BIST Stock List",
+      "description": "Static list of all BIST stocks",
+      "type": "object",
+      "properties": {
+        "symbol": { "type": "string" },
+        "name": { "type": "string" },
+        "last_price": { "type": "number" },
+        "daily_change": { "type": "number" },
+        "logoid": { "type": "string" },
+        "volume": { "type": "number" }
+      },
+      "required": ["symbol", "name"]
+    },
+    "stocks": {
+      "title": "Stock",
+      "description": "Stock information and control parameters",
+      "type": "object",
+      "properties": {
+        "symbol": { "type": "string", "description": "Stock symbol (e.g., EREGL.IS)" },
+        "name": { "type": "string", "description": "Company name" },
+        "sector": { "type": "string", "description": "Industry sector" },
+        "current_k": { "type": "number", "description": "Gain (K) coefficient" },
+        "adaptive_k": { "type": "boolean", "description": "Whether to use ATR-based adaptive K" },
+        "current_atr": { "type": "number", "description": "Average True Range (volatility)" },
+        "max_position_pct": { "type": "number", "description": "Max position size as % of total capital" },
+        "is_active": { "type": "boolean", "description": "Whether the stock is active in the portfolio" },
+        "last_price": { "type": "number", "description": "Last recorded closing price" },
+        "logoid": { "type": "string" }
+      },
+      "required": ["symbol", "current_k"]
+    },
+    "portfolio": {
+      "title": "Portfolio",
+      "description": "Current holdings and capital allocation",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string", "description": "User ID" },
+        "stock_id": { "type": "string", "description": "Reference to stock ID" },
+        "symbol": { "type": "string", "description": "Stock symbol" },
+        "current_lots": { "type": "number", "description": "Current number of shares held" },
+        "avg_cost": { "type": "number", "description": "Average cost per share" },
+        "allocated_capital": { "type": "number", "description": "Initial capital allocated to this stock" },
+        "injected_capital": { "type": "number", "description": "Total capital (Initial + Additions - Withdrawals)" },
+        "cash_reserve": { "type": "number", "description": "Reserved cash (Yedek Akçe)" },
+        "initial_ratio": { "type": "number", "description": "Initial allocation ratio (e.g., 0.6 for 60%)" },
+        "trailing_stop_pct": { "type": "number", "description": "Trailing stop-loss percentage" },
+        "highest_price": { "type": "number", "description": "Highest price reached since purchase" },
+        "take_profit_pct": { "type": "number", "description": "Take-profit target percentage" },
+        "take_profit_amount_pct": { "type": "number", "description": "Percentage of holdings to sell at take-profit" },
+        "monthly_start_equity": { "type": "number", "description": "Equity at the start of the current month" }
+      },
+      "required": ["uid", "stock_id", "symbol", "current_lots", "avg_cost"]
+    },
+    "transactions": {
+      "title": "Transaction",
+      "description": "Buy/Sell operations",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string", "description": "User ID" },
+        "stock_id": { "type": "string", "description": "Reference to stock ID" },
+        "symbol": { "type": "string", "description": "Stock symbol" },
+        "type": { "type": "string", "enum": ["BUY", "SELL", "DEPOSIT", "WITHDRAW"], "description": "Transaction type" },
+        "amount": { "type": "number", "description": "Number of lots" },
+        "price": { "type": "number", "description": "Price per lot" },
+        "commission": { "type": "number", "description": "Commission paid" },
+        "reason": { "type": "string", "description": "Reason for transaction" },
+        "timestamp": { "type": "string", "format": "date-time", "description": "When the transaction occurred" }
+      },
+      "required": ["stock_id", "symbol", "type", "amount", "price"]
+    },
+    "price_history": {
+      "title": "Price History",
+      "description": "Historical closing prices",
+      "type": "object",
+      "properties": {
+        "stock_id": { "type": "string", "description": "Reference to stock ID" },
+        "date": { "type": "string", "format": "date", "description": "Date of the price" },
+        "close_price": { "type": "number", "description": "Closing price" },
+        "volume": { "type": "number", "description": "Trading volume" }
+      },
+      "required": ["stock_id", "date", "close_price"]
+    },
+    "settings": {
+      "title": "System Settings",
+      "description": "Global parameters",
+      "type": "object",
+      "properties": {
+        "initial_buy_ratio": { "type": "number", "description": "Default initial buy ratio (e.g., 0.6)" },
+        "dead_band": { "type": "number", "description": "Dead-band percentage (e.g., 0.01 for 1%)" },
+        "commission_rate": { "type": "number", "description": "Default commission rate (e.g., 0.0004)" },
+        "blacklist": { "type": "array", "items": { "type": "string" }, "description": "List of stock symbols to ignore" }
+      }
+    }
+  },
+  "firestore": {
+    "/users": { "schema": "users", "description": "User management" },
+    "/bist_stocks": { "schema": "bist_stocks", "description": "BIST stock definitions" },
+    "/stocks": { "schema": "stocks", "description": "List of tracked stocks" },
+    "/portfolio": { "schema": "portfolio", "description": "Current portfolio holdings" },
+    "/transactions": { "schema": "transactions", "description": "History of all trades" },
+    "/price_history": { "schema": "price_history", "description": "Historical price data" },
+    "/settings": { "schema": "settings", "description": "Global system configuration" }
+  }
+}

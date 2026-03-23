@@ -1,0 +1,216 @@
+// ===============================================================
+// Assumed Data Model
+// ===============================================================
+//
+//   - status: string (pending/approved)
+//   - created_at: timestamp
+//
+// Collection: bist_stocks
+// Document ID: auto-generated
+// Fields:
+//   - symbol: string
+//   - name: string
+//
+// Collection: stocks
+// Fields:
+//   - symbol: string (required)
+//   - name: string (optional)
+//   - sector: string (optional)
+//   - current_k: number (required)
+//   - current_atr: number (optional)
+//   - is_active: bool (optional)
+//   - last_price: number (optional)
+//
+// Collection: portfolio
+// Fields:
+//   - stock_id: string (required)
+//   - symbol: string (required)
+//   - current_lots: number (required)
+//   - avg_cost: number (required)
+//   - allocated_capital: number (optional)
+//   - cash_reserve: number (optional)
+//   - initial_ratio: number (optional)
+//
+// Collection: transactions
+// Fields:
+//   - stock_id: string (required)
+//   - symbol: string (required)
+//   - type: string (BUY/SELL) (required)
+//   - amount: number (required)
+//   - price: number (required)
+//   - commission: number (optional)
+//   - timestamp: timestamp (required)
+//
+// Collection: price_history
+// Fields:
+//   - stock_id: string (required)
+//   - date: string (required)
+//   - close_price: number (required)
+//   - volume: number (optional)
+//
+// Collection: settings
+// Fields:
+//   - initial_buy_ratio: number (optional)
+//   - dead_band: number (optional)
+//   - commission_rate: number (optional)
+//   - symbols: list of strings (optional) - Blacklisted symbols
+//   - updated_at: timestamp (optional)
+//
+// ===============================================================
+
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // ===============================================================
+    // Helper Functions
+    // ===============================================================
+
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    function isAdmin() {
+      return isAuthenticated() &&
+        (get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'admin' ||
+          (request.auth.token.email == "umitcenkozdemir@gmail.com" && request.auth.token.email_verified == true));
+    }
+
+    function isApproved() {
+      return isAuthenticated() && 
+        (get(/databases/$(database)/documents/users/$(request.auth.uid)).data.status == 'approved' || isAdmin());
+    }
+
+    function isOwner(userId) {
+      return isAuthenticated() && request.auth.uid == userId;
+    }
+
+    function hasRequiredFields(fields) {
+      return request.resource.data.keys().hasAll(fields);
+    }
+
+    function hasOnlyAllowedFields(fields) {
+      return request.resource.data.keys().hasOnly(fields);
+    }
+
+    // ===============================================================
+    // Domain Validators
+    // ===============================================================
+
+    function isValidStock(data) {
+      return data.symbol is string && data.symbol.size() > 0 && data.symbol.size() < 20 &&
+             data.current_k is number && data.current_k >= 0 &&
+             (!('name' in data) || (data.name is string && data.name.size() < 100)) &&
+             (!('sector' in data) || (data.sector is string && data.sector.size() < 100)) &&
+             (!('is_active' in data) || data.is_active is bool) &&
+             (!('last_price' in data) || data.last_price is number) &&
+             (!('adaptive_k' in data) || data.adaptive_k is bool) &&
+             (!('current_atr' in data) || data.current_atr is number) &&
+             (!('max_position_pct' in data) || data.max_position_pct is number) &&
+             (!('logoid' in data) || (data.logoid is string || data.logoid == null));
+    }
+
+    function isValidPortfolio(data) {
+      return data.uid is string && data.uid == request.auth.uid &&
+             data.stock_id is string && data.symbol is string &&
+             data.current_lots is number && data.current_lots >= 0 &&
+             data.avg_cost is number && data.avg_cost >= 0 &&
+             (!('allocated_capital' in data) || data.allocated_capital is number) &&
+             (!('injected_capital' in data) || data.injected_capital is number) &&
+             (!('cash_reserve' in data) || data.cash_reserve is number) &&
+             (!('initial_ratio' in data) || data.initial_ratio is number) &&
+             (!('trailing_stop_pct' in data) || data.trailing_stop_pct is number) &&
+             (!('highest_price' in data) || data.highest_price is number) &&
+             (!('take_profit_pct' in data) || data.take_profit_pct is number) &&
+             (!('take_profit_amount_pct' in data) || data.take_profit_amount_pct is number) &&
+             (!('monthly_start_equity' in data) || data.monthly_start_equity is number);
+    }
+
+    function isValidTransaction(data) {
+      return (!('uid' in data) || (data.uid is string && data.uid == request.auth.uid)) &&
+             data.stock_id is string && data.symbol is string &&
+             data.type in ['BUY', 'SELL', 'DEPOSIT', 'WITHDRAW'] &&
+             data.amount is number && data.amount >= 0 &&
+             data.price is number && data.price >= 0 &&
+             (!('commission' in data) || data.commission is number) &&
+             (!('reason' in data) || data.reason is string) &&
+             data.timestamp is timestamp;
+    }
+
+    function isValidPriceHistory(data) {
+      return data.stock_id is string && data.date is string &&
+             data.close_price is number && data.close_price >= 0 &&
+             (!('volume' in data) || data.volume is number);
+    }
+
+    function isValidUser(data) {
+      return hasOnlyAllowedFields(['email', 'role', 'status', 'created_at']) &&
+        data.email is string &&
+        data.role in ['admin', 'user'] &&
+        data.status in ['pending', 'approved'];
+    }
+
+    function isValidSettings(data) {
+      return (!('initial_buy_ratio' in data) || (data.initial_buy_ratio is number && data.initial_buy_ratio >= 0 && data.initial_buy_ratio <= 1)) &&
+             (!('dead_band' in data) || (data.dead_band is number && data.dead_band >= 0)) &&
+             (!('commission_rate' in data) || (data.commission_rate is number && data.commission_rate >= 0)) &&
+             (!('symbols' in data) || (data.symbols is list && data.symbols.size() <= 1000)) &&
+             (!('updated_at' in data) || data.updated_at is timestamp);
+    }
+
+    // ===============================================================
+    // Match Rules
+    // ===============================================================
+
+    match /users/{userId} {
+      allow read: if isOwner(userId) || isAdmin();
+      allow create: if isAuthenticated() && request.auth.uid == userId && 
+        (
+          (request.resource.data.role == 'user' && request.resource.data.status == 'pending') ||
+          (request.auth.token.email == "umitcenkozdemir@gmail.com" && request.resource.data.role == 'admin' && request.resource.data.status == 'approved')
+        );
+      allow update: if isAdmin();
+    }
+
+    match /bist_stocks/{stockId} {
+      allow read: if isAuthenticated();
+      allow write: if isAdmin();
+    }
+
+    match /stocks/{stockId} {
+      allow read: if isApproved();
+      allow create, update: if isAdmin() && isValidStock(request.resource.data);
+      allow delete: if isAdmin();
+    }
+
+    match /portfolio/{portfolioId} {
+      allow read: if isApproved() && (resource.data.uid == request.auth.uid || isAdmin());
+      allow create: if isApproved() && isValidPortfolio(request.resource.data);
+      allow update: if isApproved() && (resource.data.uid == request.auth.uid || isAdmin()) && isValidPortfolio(request.resource.data);
+      allow delete: if isAdmin();
+    }
+
+    match /transactions/{transactionId} {
+      allow read: if isApproved() && (resource.data.uid == request.auth.uid || isAdmin());
+      allow create: if isApproved() && isValidTransaction(request.resource.data);
+      allow update, delete: if isAdmin(); // Generally immutable for users
+    }
+
+    match /price_history/{historyId} {
+      allow read: if isApproved();
+      allow create, update: if isAdmin() && isValidPriceHistory(request.resource.data);
+      allow delete: if isAdmin();
+    }
+
+    match /settings/{settingId} {
+      allow read: if isApproved();
+      allow create, update: if isAdmin() && isValidSettings(request.resource.data);
+      allow delete: if isAdmin();
+    }
+
+    // Default deny
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
