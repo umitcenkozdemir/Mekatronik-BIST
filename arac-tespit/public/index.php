@@ -65,7 +65,11 @@ $yn = [['has_key', 'Anahtar'], ['has_type_label', 'Tip Onay Etiketi'], ['has_rad
 <input type="hidden" name="decode_sources" id="decode_sources" value="<?= $val('decode_sources') ?>">
 
 <div class="card mb-3"><div class="card-body">
-  <label class="form-label fw-bold" for="vin">Şasi Numarası (VIN)</label>
+  <?php if (!isset($v['vin'])): ?>
+  <input type="file" id="photo" accept="image/*" capture="environment" hidden>
+  <button type="button" class="btn btn-dark btn-lg w-100 mb-3 py-3" id="scanBtn">📷 Şasi Numarasını Fotoğrafla</button>
+  <?php endif; ?>
+  <label class="form-label fw-bold" for="vin">Şasi Numarası (VIN) — okunan değeri kontrol edin</label>
   <div class="input-group">
     <input class="form-control" id="vin" name="vin" maxlength="17" value="<?= $val('vin') ?>" <?= isset($v['vin']) ? 'readonly' : 'autofocus' ?> inputmode="text" autocapitalize="characters">
     <button type="button" class="btn btn-primary" id="decodeBtn">Sorgula</button>

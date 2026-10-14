@@ -23,7 +23,7 @@ $pages = max(1, (int) ceil($res['total'] / $per));
 <title>Kayıtlar</title><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"></head>
 <body class="bg-light"><div class="container py-3">
 <div class="d-flex justify-content-between mb-3"><h5>Kayıtlı Araçlar (<?= $res['total'] ?>)</h5>
-  <div><a class="btn btn-primary btn-sm" href="index.php">+ Yeni Araç</a> <a class="btn btn-outline-secondary btn-sm" href="logout.php">Çıkış</a></div></div>
+  <div><a class="btn btn-primary btn-sm" href="index.php">+ Yeni Araç (Kamera)</a> <a class="btn btn-outline-secondary btn-sm" href="logout.php">Çıkış</a></div></div>
 <form class="mb-3"><input class="form-control" name="q" value="<?= Text::h($q) ?>" placeholder="Şasi no / model / motor no ara"></form>
 <?php if ($err): ?><div class="alert alert-danger"><?= Text::h($err) ?></div><?php endif; ?>
 <div class="table-responsive"><table class="table table-sm table-striped bg-white align-middle">

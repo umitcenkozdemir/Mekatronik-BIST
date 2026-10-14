@@ -24,6 +24,39 @@
     if (vin.value.length === 17) decode();
   });
   $('#decodeBtn').addEventListener('click', decode);
+
+  // --- Kamera ile VIN okuma ---
+  const photo = $('#photo'), scanBtn = $('#scanBtn');
+  if (scanBtn) {
+    scanBtn.addEventListener('click', () => photo.click());
+    photo.addEventListener('change', async () => {
+      const file = photo.files[0]; photo.value = '';
+      if (!file) return;
+      scanBtn.disabled = true; scanBtn.textContent = 'Okunuyor...';
+      try {
+        const blob = await shrink(file, 1800);
+        const fd = new FormData(); fd.append('photo', blob, 'vin.jpg');
+        const r = await fetch('api/scan_vin.php', { method: 'POST', body: fd, headers: { 'X-CSRF-Token': csrf } });
+        const j = await r.json();
+        if (!j.ok) return say('warning', esc(j.error || 'Okunamadı.'));
+        vin.value = j.vin; $('#vinCount').textContent = j.vin.length;
+        if (!j.valid || j.confidence !== 'high') {
+          vin.focus();
+          say('warning', `Okunan: <b class="font-monospace">${esc(j.vin)}</b> — ${j.valid ? 'emin değilim' : 'geçerli VIN değil'}. Fotoğrafla karşılaştırıp düzeltin.`);
+        } else { decode(); }
+      } catch (e) {
+        say('warning', 'Fotoğraf gönderilemedi. VIN\'i elle yazabilirsiniz.');
+      } finally { scanBtn.disabled = false; scanBtn.textContent = '📷 Şasi Numarasını Fotoğrafla'; }
+    });
+  }
+  // Büyük telefon fotoğraflarını ~1800px JPEG'e küçült (hız + veri tasarrufu)
+  async function shrink(file, max) {
+    const bmp = await createImageBitmap(file);
+    const k = Math.min(1, max / Math.max(bmp.width, bmp.height));
+    const c = document.createElement('canvas'); c.width = Math.round(bmp.width * k); c.height = Math.round(bmp.height * k);
+    c.getContext('2d').drawImage(bmp, 0, 0, c.width, c.height);
+    return new Promise((res, rej) => c.toBlob((b) => (b ? res(b) : rej(new Error('toBlob'))), 'image/jpeg', 0.85));
+  }
   $('#vinCount').textContent = vin.value.length;
 
   async function decode() {

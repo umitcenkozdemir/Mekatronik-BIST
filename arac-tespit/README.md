@@ -28,4 +28,5 @@ imza görseli için `storage/signatures/<inspector_id>.png` koyun (PDF'te otomat
 ## Notlar
 - NHTSA ABD kaynaklıdır; Renault/Fiat/VW gibi AB/TR araçlarda çoğunlukla sadece marka döner. Bu yüzden
   bir modelin ağırlık/boyut değerleri **ilk araçta bir kez** girilir, aynı VIN ön ekli sonraki araçlara otomatik dolar (sarı alanlar).
+- **Kamera ile VIN:** `.env` içine `ANTHROPIC_API_KEY` girin. Telefon fotoğrafı küçültülüp `api/scan_vin.php` ile Claude vision a gider; okunan VIN doğrulanır, "high" güvenli ve geçerliyse otomatik sorgulanır, değilse eksper düzeltir. Kamera için sayfa HTTPS üzerinden açılmalı.
 - NHTSA başarısız olursa form çalışmaya devam eder, alanlar elle doldurulur.
