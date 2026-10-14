@@ -1,0 +1,14 @@
+{
+  "name": "mekatronik/arac-tespit",
+  "description": "Yediemin araçları için VIN tabanlı araç tespit ve değerlendirme formu üretici",
+  "type": "project",
+  "require": {
+    "php": ">=8.1",
+    "ext-curl": "*",
+    "ext-pdo": "*",
+    "ext-mbstring": "*",
+    "mpdf/mpdf": "^8.2"
+  },
+  "autoload": { "psr-4": { "App\\": "src/" } },
+  "config": { "optimize-autoloader": true }
+}
