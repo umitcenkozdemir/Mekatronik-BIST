@@ -235,6 +235,7 @@ footer{color:var(--fg3);font-size:12px;padding-block:20px 120px;border-top:1px s
 .stk-ok{background:var(--good-soft);color:var(--good)}.stk-low{background:var(--warn-soft);color:var(--warn)}.stk-no{background:var(--sunk);color:var(--bad)}
 details.oos{margin-top:22px}details.oos summary{cursor:pointer;font-family:var(--f-display);font-size:17px;font-weight:600;display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}
 .sortbox{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.sortbox label{font-size:12px;color:var(--fg3);text-transform:uppercase;letter-spacing:.08em;font-weight:600}.sortsel{width:auto;min-width:0;max-width:100%}
+.yr{color:var(--fg3);font-weight:500;letter-spacing:0;text-transform:none}
 .oos-card{border-style:dashed;background:var(--bg)}
 .layout.nofilter{grid-template-columns:minmax(0,1fr)}
 .guidebar{background:var(--accent-soft);border-radius:var(--r);padding:10px 14px;margin-bottom:14px;font-size:13px;color:var(--fg)}
@@ -345,6 +346,7 @@ details.oos{margin-top:22px}details.oos summary{cursor:pointer;font-family:var(-
         <label>Min. eşik (mm)<select id="minClimb" class="fsel"><option value="0">Hepsi</option><option>18</option><option>20</option><option>30</option><option>40</option></select></label>
         <label>Min. mağaza<select id="minSites" class="fsel"><option value="1">1+</option><option value="2">2+</option><option value="3">3+</option><option value="5">5+</option><option value="8">8+</option></select></label>
         <label>Maks. yükseklik<select id="maxH" class="fsel"><option value="0">Hepsi</option><option value="80">80 mm</option><option value="90">90 mm</option><option value="95">95 mm</option><option value="100">100 mm</option></select></label>
+        <label>Çıkış yılı (≈)<select id="minYr" class="fsel"><option value="0">Hepsi</option><option value="2023">2023 ve sonrası</option><option value="2024">2024 ve sonrası</option><option value="2025">2025 ve sonrası</option><option value="2026">2026</option></select></label>
         <label>Maks. gürültü<select id="maxDb" class="fsel"><option value="0">Hepsi</option><option value="60">60 dB</option><option value="65">65 dB</option><option value="68">68 dB</option></select></label>
       </div>
     </div>
@@ -401,6 +403,7 @@ details.oos{margin-top:22px}details.oos summary{cursor:pointer;font-family:var(-
         <option value="rt">Çalışma süresi</option>
         <option value="sites">Mağaza sayısı</option>
         <option value="tlp">Puan başına en düşük TL</option>
+        <option value="yr">En yeni model</option>
         <option value="ur">Kullanıcı puanı (★)</option>
         <option value="urc">Değerlendirme sayısı</option>
         <option value="as">Satış sonrası notu (marka)</option>
@@ -409,7 +412,7 @@ details.oos{margin-top:22px}details.oos summary{cursor:pointer;font-family:var(-
       <div class="guidebar" id="oosHint" hidden></div>
       <div class="grid" id="cards"></div>
       <div class="more"><button class="btn" id="moreBtn" type="button">Daha fazla göster</button></div>
-      <details class="oos panel" id="oosBox"><summary><span id="oosTitle">Eski modeller</span><span class="note" id="oosSub"></span></summary><p style="margin:10px 0 0"><button type="button" class="btn" id="oosInList">Bunları da listede göster</button></p><p class="desc" style="margin-top:10px">Bunlar piyasadan çekilmiş veya yerini yeni sürümüne bırakmış eski modeller. Bir kısmı son stok kontrolünde (<span class="chk"></span>) hiçbir mağazada yoktu; bir kısmı 2023 öncesi seri olup sadece 1–2 satıcıda kalmış. İkinci el bakıyorsanız ya da elinizdeki modeli yenilerle kıyaslamak istiyorsanız işinize yarar. Fiyat, puan ve önerilere katılmazlar. Arama ve marka filtresi burada da geçerli.</p><div class="tablewrap"><table id="oostbl"><thead><tr><th>Model</th><th>Tip</th><th class="r">Emiş (Pa)</th><th class="r">Süre (dk)</th><th class="r">Pil (mAh)</th><th></th></tr></thead><tbody></tbody></table></div></details>
+      <details class="oos panel" id="oosBox"><summary><span id="oosTitle">Eski modeller</span><span class="note" id="oosSub"></span></summary><p style="margin:10px 0 0"><button type="button" class="btn" id="oosInList">Bunları da listede göster</button></p><p class="desc" style="margin-top:10px">Bunlar piyasadan çekilmiş veya yerini yeni sürümüne bırakmış eski modeller. Bir kısmı son stok kontrolünde (<span class="chk"></span>) hiçbir mağazada yoktu; bir kısmı 2023 veya öncesinde çıkmış olup sadece 1–2 satıcıda kalmış. İkinci el bakıyorsanız ya da elinizdeki modeli yenilerle kıyaslamak istiyorsanız işinize yarar. Fiyat, puan ve önerilere katılmazlar. Arama ve marka filtresi burada da geçerli.</p><div class="tablewrap"><table id="oostbl"><thead><tr><th>Model</th><th class="r">Yıl (≈)</th><th>Tip</th><th class="r">Emiş (Pa)</th><th class="r">Süre (dk)</th><th class="r">Pil (mAh)</th><th></th></tr></thead><tbody></tbody></table></div></details>
     </section>
     <section data-pane="tablo" hidden>
       <div class="reshead"><div class="count" id="count2"></div><div class="note">Sütun başlığına tıklayarak sıralayın, satıra tıklayarak ayrıntıyı açın.</div></div>
@@ -483,7 +486,10 @@ const fmt=n=>n==null?"—":Math.round(n).toLocaleString("tr-TR");
 const TL=n=>fmt(n)+" TL";
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const $=s=>document.querySelector(s);
-const LITE=OOS.map((o,i)=>{const b=BR[o.b]||{};return {id:"oos-"+i,lite:true,name:o.n,brand:o.b,model:o.n.slice(o.b.length).trim(),type:o.t,pa:o.pa,rt:o.rt,mah:o.mah,url:o.u,
+const YB=[[640000,2020],[720000,2021],[830000,2022],[895000,2023],[985000,2024],[1050000,2025]];
+const yearOf=id=>{if(!id)return null;for(const [l,y] of YB)if(id<l)return y;return 2026};
+ITEMS.forEach(r=>{r.yr=yearOf(r.imgId)});
+const LITE=OOS.map((o,i)=>{const b=BR[o.b]||{};return {id:"oos-"+i,lite:true,yr:yearOf(o.i),name:o.n,brand:o.b,model:o.n.slice(o.b.length).trim(),type:o.t,pa:o.pa,rt:o.rt,mah:o.mah,url:o.u,
   stock:"yok",price:null,sites:0,lastSites:0,score:null,fp:null,tlp:null,nav:"Bilinmiyor",obst:"Bilinmiyor",mop:"Bilinmiyor",station:"Bilinmiyor",net:b.network||"Bilinmiyor",w:b.warranty||null,
   voice:[],extras:[],sc:{},ur:null,urc:0,as:b.as??null,sellers:[],svHits:[],svHitN:0,acc:0}});
 const OOSALL=OOSFULL.concat(LITE);
@@ -513,7 +519,7 @@ const FEATNAME=Object.fromEntries(FEATS);
 const has=(r,k)=>k==="voice"?r.voice.length>0:!!r[k];
 
 const S={q:"",pmin:null,pmax:null,station:new Set(),nav:new Set(),mop:new Set(),obst:new Set(),type:new Set(),net:new Set(),stock:new Set(),feat:new Set(),brand:new Set(),
-  minPa:0,minRt:0,minClimb:0,minSites:1,maxH:0,maxDb:0,minUr:0,minUrc:0,minAs:0,minW:0,pareto:false,sort:"fp",tsort:null,shown:48,tshown:80,cmp:[]};
+  minPa:0,minRt:0,minClimb:0,minSites:1,maxH:0,maxDb:0,minUr:0,minUrc:0,minAs:0,minW:0,minYr:0,pareto:false,sort:"fp",tsort:null,shown:48,tshown:80,cmp:[]};
 (()=>{const c=store.get("rs-cmp");if(Array.isArray(c))S.cmp=c.filter(id=>byId[id]).slice(0,4)})();
 
 function filterOut(skip){
@@ -522,6 +528,7 @@ function filterOut(skip){
     if(S.pmin!=null&&r.price<S.pmin)return false;
     if(S.pmax!=null&&r.price>S.pmax)return false;
     for(const g of ["station","nav","mop","obst","type","net","stock"]) if(g!==skip&&S[g].size&&!S[g].has(r[g]))return false;
+    if(S.minYr&&!(r.yr>=S.minYr))return false;
     if(S.minUr&&!(r.ur>=S.minUr))return false;
     if(S.minUrc&&!(r.urc>=S.minUrc))return false;
     if(S.minAs&&!(r.as>=S.minAs))return false;
@@ -538,7 +545,7 @@ function filterOut(skip){
     return true});
 }
 const SORTS={fp:(a,b)=>b.fp-a.fp||b.score-a.score,score:(a,b)=>b.score-a.score||a.price-b.price,price:(a,b)=>a.price-b.price,"-price":(a,b)=>b.price-a.price,
-  pa:(a,b)=>(b.pa||0)-(a.pa||0),rt:(a,b)=>(b.rt||0)-(a.rt||0),sites:(a,b)=>b.sites-a.sites||a.price-b.price,tlp:(a,b)=>a.tlp-b.tlp,
+  pa:(a,b)=>(b.pa||0)-(a.pa||0),rt:(a,b)=>(b.rt||0)-(a.rt||0),sites:(a,b)=>b.sites-a.sites||a.price-b.price,tlp:(a,b)=>a.tlp-b.tlp,yr:(a,b)=>(b.yr||0)-(a.yr||0)||(b.imgId||0)-(a.imgId||0)||b.fp-a.fp,
   ur:(a,b)=>((b.urc>=20?b.ur:0)||0)-((a.urc>=20?a.ur:0)||0)||b.urc-a.urc,urc:(a,b)=>b.urc-a.urc,as:(a,b)=>(b.as??-1)-(a.as??-1)||b.fp-a.fp};
 
 /* ---------- filters UI ---------- */
@@ -571,7 +578,7 @@ document.addEventListener("click",e=>{
 $("#brands").addEventListener("change",e=>{const b=e.target.dataset.brand;if(!b)return;e.target.checked?S.brand.add(b):S.brand.delete(b);S.shown=48;update()});
 $("#bq").addEventListener("input",renderChips);
 let qt;$("#q").addEventListener("input",e=>{clearTimeout(qt);qt=setTimeout(()=>{S.q=e.target.value.trim();S.shown=48;update()},120)});
-for(const id of ["minPa","minRt","minClimb","minSites","maxH","maxDb","minUr","minUrc","minAs","minW"])$("#"+id).addEventListener("change",e=>{S[id]=+e.target.value;S.shown=48;update()});
+for(const id of ["minPa","minRt","minClimb","minSites","maxH","maxDb","minUr","minUrc","minAs","minW","minYr"])$("#"+id).addEventListener("change",e=>{S[id]=+e.target.value;S.shown=48;update()});
 $("#sort").addEventListener("change",e=>{S.sort=e.target.value;update()});
 $("#pareto").addEventListener("change",e=>{S.pareto=e.target.checked;update()});
 $("#showOOS").addEventListener("change",e=>{S.showOOS=e.target.checked;if(!S.showOOS)S.stock.delete("yok");S.shown=48;S.tshown=80;update()});
@@ -580,10 +587,10 @@ const PQ=[["≤ 10 bin",null,10000],["10–20 bin",10000,20000],["20–35 bin",2
 $("#pquick").innerHTML=PQ.map((p,i)=>`<button type="button" data-pq="${i}">${p[0]}</button>`).join("");
 $("#pquick").addEventListener("click",e=>{const b=e.target.closest("[data-pq]");if(!b)return;const p=PQ[+b.dataset.pq];S.pmin=p[1];S.pmax=p[2];$("#pmin").value=p[1]??"";$("#pmax").value=p[2]??"";S.shown=48;update()});
 $("#reset").addEventListener("click",()=>{
-  Object.assign(S,{q:"",pmin:null,pmax:null,minPa:0,minRt:0,minClimb:0,minSites:1,maxH:0,maxDb:0,minUr:0,minUrc:0,minAs:0,minW:0,pareto:false,showOOS:false,shown:48,tshown:80});$("#showOOS").checked=false;
+  Object.assign(S,{q:"",pmin:null,pmax:null,minPa:0,minRt:0,minClimb:0,minSites:1,maxH:0,maxDb:0,minUr:0,minUrc:0,minAs:0,minW:0,minYr:0,pareto:false,showOOS:false,shown:48,tshown:80});$("#showOOS").checked=false;
   ["station","nav","mop","obst","type","net","stock","feat","brand"].forEach(g=>S[g].clear());
   ["q","pmin","pmax","bq"].forEach(i=>$("#"+i).value="");
-  ["minPa","minRt","minClimb","maxH","maxDb","minUr","minUrc","minAs","minW"].forEach(i=>$("#"+i).value="0");$("#minSites").value="1";$("#pareto").checked=false;
+  ["minPa","minRt","minClimb","maxH","maxDb","minUr","minUrc","minAs","minW","minYr"].forEach(i=>$("#"+i).value="0");$("#minSites").value="1";$("#pareto").checked=false;
   update()});
 const fl=$("#filters");let scrim=null;
 function openF(){if(fl.classList.contains("open")){closeF();return}fl.classList.add("open");$("#openFilters").setAttribute("aria-expanded","true");try{fl.scrollIntoView({block:"start"})}catch(e){}}
@@ -596,7 +603,7 @@ function activeList(){
   if(S.pmin!=null||S.pmax!=null)a.push(["price",`${S.pmin!=null?fmt(S.pmin):"0"} – ${S.pmax!=null?fmt(S.pmax):"∞"} TL`]);
   for(const g of ["station","nav","mop","obst","type","net","stock","feat","brand"])for(const v of S[g])a.push([g+"|"+v,chipLabel(g,v)]);
   const th={minPa:v=>`≥ ${fmt(v)} Pa`,minRt:v=>`≥ ${v} dk`,minClimb:v=>`eşik ≥ ${v} mm`,maxH:v=>`yükseklik ≤ ${v} mm`,maxDb:v=>`≤ ${v} dB`,
-    minUr:v=>`★ ≥ ${String(v).replace(".",",")}`,minUrc:v=>`≥ ${v} değerlendirme`,minAs:v=>`satış sonrası ≥ ${v}`,minW:v=>`${v} yıl garanti`};
+    minYr:v=>`çıkış ≥ ${v}`,minUr:v=>`★ ≥ ${String(v).replace(".",",")}`,minUrc:v=>`≥ ${v} değerlendirme`,minAs:v=>`satış sonrası ≥ ${v}`,minW:v=>`${v} yıl garanti`};
   for(const k in th)if(S[k])a.push([k,th[k](S[k])]);
   if(S.minSites>1)a.push(["minSites",`${S.minSites}+ mağaza`]);
   if(S.pareto)a.push(["pareto","Fiyatına göre en iyi"]);
@@ -626,11 +633,11 @@ function specChips(r){
   if(r.mopLift)c.push(["Mop kaldırma",false]);
   return c.map(([t,h])=>`<span class="spec${h?" hi":""}">${esc(t)}</span>`).join("");
 }
-const stockBadge=r=>r.stock==="yok"?(r.sites>0?`<span class="stk stk-no" title="2023 öncesi seri; sadece ${r.sites} satıcıda kalmış">Eski model · ${r.sites} satıcı</span>`:`<span class="stk stk-no" title="Artık satılmıyor">Eski model</span>`):r.stock==="sinirli"?`<span class="stk stk-low" title="Sadece ${r.sites} mağazada stokta">Sınırlı · ${r.sites} mağaza</span>`:`<span class="stk stk-ok" title="${r.sites} mağazada stokta">Stokta · ${r.sites} mağaza</span>`;
+const stockBadge=r=>r.stock==="yok"?(r.sites>0?`<span class="stk stk-no" title="2023 veya öncesi çıkmış; sadece ${r.sites} satıcıda kalmış">Eski model · ${r.sites} satıcı</span>`:`<span class="stk stk-no" title="Artık satılmıyor">Eski model</span>`):r.stock==="sinirli"?`<span class="stk stk-low" title="Sadece ${r.sites} mağazada stokta">Sınırlı · ${r.sites} mağaza</span>`:`<span class="stk stk-ok" title="${r.sites} mağazada stokta">Stokta · ${r.sites} mağaza</span>`;
 const asBand=v=>v>=70?"g":v>=55?"m":"b";
 function liteCard(r){
   return `<article class="card oos-card">
-  <div class="top"><div style="min-width:0"><div class="brand">${esc(r.brand)}</div><h4><button type="button" data-open="${r.id}">${esc(r.model||r.name)}</button></h4></div></div>
+  <div class="top"><div style="min-width:0"><div class="brand">${esc(r.brand)}${r.yr?` <span class="yr">· ≈${r.yr}</span>`:""}</div><h4><button type="button" data-open="${r.id}">${esc(r.model||r.name)}</button></h4></div></div>
   <div class="price-row"><span class="price muted" style="font-size:15px">Satılmıyor</span>${stockBadge(r)}</div>
   <p class="note" style="margin:0">Artık satılmayan eski model; mağazalarda bulunamadı. Sadece temel özellikleri biliniyor.</p>
   <div class="specs"><span class="spec">${esc(r.type)}</span>${r.pa?`<span class="spec">${fmt(r.pa)} Pa</span>`:""}${r.rt?`<span class="spec">${fmt(r.rt)} dk</span>`:""}${r.mah?`<span class="spec">${fmt(r.mah)} mAh</span>`:""}</div>
@@ -641,7 +648,7 @@ function card(r){
   if(r.lite)return liteCard(r);
   const inCmp=S.cmp.includes(r.id);
   return `<article class="card">
-  <div class="top"><div style="min-width:0"><div class="brand">${esc(r.brand)}</div><h4><button type="button" data-open="${r.id}">${esc(r.model||r.name)}</button></h4></div>
+  <div class="top"><div style="min-width:0"><div class="brand">${esc(r.brand)}${r.yr?` <span class="yr" title="Türkiye'de satışa çıkış yılı (tahmini)">· ≈${r.yr}</span>`:""}</div><h4><button type="button" data-open="${r.id}">${esc(r.model||r.name)}</button></h4></div>
   ${r.pareto?`<span class="badge par" title="Bu fiyata veya altında daha yüksek puanlı model yok">Fiyatına göre en iyi</span>`:""}</div>
   <div class="price-row"><span class="price">${TL(r.price)}</span>${stockBadge(r)}</div>
   <div class="trust"><span>${r.ur!=null?`${stars(r.ur)} <span class="muted">(${fmt(r.urc)} değ.)</span>`:`<span class="muted">Kullanıcı puanı bulunamadı</span>`}</span>${r.as!=null?`<span class="as as${asBand(r.as)}" title="Marka satış sonrası notu (0–100)">Satış sonrası ${r.as}</span>`:`<span class="muted">Satış sonrası: veri yok</span>`}</div>
@@ -689,6 +696,7 @@ function oosRows(){
   const q=S.q.toLocaleLowerCase("tr");
   const full=OOSFULL.filter(r=>(!q||r.name.toLocaleLowerCase("tr").includes(q))&&(!S.brand.size||S.brand.has(r.brand)));
   const lite=OOS.filter(o=>(!q||o.n.toLocaleLowerCase("tr").includes(q))&&(!S.brand.size||S.brand.has(o.b)));
+  full.sort((a,b)=>(b.yr||0)-(a.yr||0));lite.sort((a,b)=>(yearOf(b.i)||0)-(yearOf(a.i)||0));
   return {full,lite};
 }
 function renderOOS(){
@@ -696,8 +704,8 @@ function renderOOS(){
   $("#oosTitle").textContent=`Eski modeller (${n})`;
   $("#oosSub").textContent=" · son kontrol "+CHECKED;
   document.querySelectorAll(".chk").forEach(e=>e.textContent=CHECKED);
-  $("#oostbl tbody").innerHTML=full.map(r=>`<tr data-open="${r.id}"><td class="model">${esc(r.name)}<small>${r.sites>0?`${r.sites} satıcıda kalmış · ${TL(r.price)}`:`Son görülen fiyat ${TL(r.price)}`}</small></td><td>${esc(r.type)}</td><td class="r num">${fmt(r.pa)}</td><td class="r num">${fmt(r.rt)}</td><td class="r num">${fmt(r.mah)}</td><td><button type="button" class="btn ghost" style="padding:0" data-open="${r.id}">Ayrıntı</button></td></tr>`).join("")+
-   lite.map(o=>`<tr><td class="model">${esc(o.n)}</td><td>${esc(o.t)}</td><td class="r num">${fmt(o.pa)}</td><td class="r num">${fmt(o.rt)}</td><td class="r num">${fmt(o.mah)}</td><td><a href="${esc(o.u)}" target="_blank" rel="noopener" style="color:var(--accent)">Epey</a></td></tr>`).join("")||`<tr><td colspan="6" class="note">Eşleşen eski model yok.</td></tr>`;
+  $("#oostbl tbody").innerHTML=full.map(r=>`<tr data-open="${r.id}"><td class="model">${esc(r.name)}<small>${r.sites>0?`${r.sites} satıcıda kalmış · ${TL(r.price)}`:`Son görülen fiyat ${TL(r.price)}`}</small></td><td class="r num">${r.yr??"—"}</td><td>${esc(r.type)}</td><td class="r num">${fmt(r.pa)}</td><td class="r num">${fmt(r.rt)}</td><td class="r num">${fmt(r.mah)}</td><td><button type="button" class="btn ghost" style="padding:0" data-open="${r.id}">Ayrıntı</button></td></tr>`).join("")+
+   lite.map(o=>`<tr><td class="model">${esc(o.n)}</td><td class="r num">${yearOf(o.i)??"—"}</td><td>${esc(o.t)}</td><td class="r num">${fmt(o.pa)}</td><td class="r num">${fmt(o.rt)}</td><td class="r num">${fmt(o.mah)}</td><td><a href="${esc(o.u)}" target="_blank" rel="noopener" style="color:var(--accent)">Epey</a></td></tr>`).join("")||`<tr><td colspan="7" class="note">Eşleşen eski model yok.</td></tr>`;
   $("#oosBox").hidden=!n||S.showOOS;
   const hint=$("#oosHint");
   if(!S.showOOS&&S.q&&n&&cur.length<6){hint.hidden=false;hint.innerHTML=`"${esc(S.q)}" araması için <b>${n}</b> eski model var (satıştan kalkmış ya da 1–2 satıcıda kalmış). <button type="button" class="btn ghost" style="padding:0;color:var(--accent);font-weight:600" id="oosOpen">Eski modelleri göster</button>`;}
@@ -716,6 +724,7 @@ const COLS=[
  ["ur","★ Kullanıcı",r=>r.ur!=null?r.ur.toFixed(1).replace(".",","):"—","r num",(a,b)=>(a.ur||0)-(b.ur||0)],
  ["urc","Değ. sayısı",r=>r.urc?fmt(r.urc):"—","r num",(a,b)=>a.urc-b.urc],
  ["as","Satış sonrası",r=>r.as??"—","r num",(a,b)=>(a.as??-1)-(b.as??-1)],
+ ["yr","Yıl (≈)",r=>r.yr??"—","r num",(a,b)=>(a.yr||0)-(b.yr||0)],
  ["pa","Emiş (Pa)",r=>fmt(r.pa),"r num",(a,b)=>(a.pa||0)-(b.pa||0)],
  ["nav","Navigasyon",r=>esc(r.nav),"",(a,b)=>a.nav.localeCompare(b.nav,"tr")],
  ["obst","Engel",r=>esc(r.obst),"",(a,b)=>a.obst.localeCompare(b.obst,"tr")],
@@ -853,7 +862,7 @@ function openDetail(id){
   if(r.lite){const q=encodeURIComponent(r.name.replace(/\(.*?\)/g,"").trim());
     $("#dlgBody").innerHTML=`<div class="mhead"><div><div class="brand" style="font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--fg3);font-weight:600">${esc(r.brand)} · ${esc(r.type)}</div><h2 id="dlgTitle">${esc(r.name)}</h2><div style="margin-top:6px">${stockBadge(r)}</div></div><button class="btn" type="button" id="dlgClose" aria-label="Kapat">✕</button></div>
     <div class="mbody"><p class="verdict" style="background:var(--warn-soft)">Bu artık satılmayan eski bir model; son stok kontrolünde (${CHECKED}) hiçbir mağazada bulunamadı. Ayrıntılı özellikleri ve puanı bu yüzden toplanmadı. İkinci el alacaksanız servis ve yedek parça durumunu mutlaka sorun.</p>
-    ${kv([["Emiş gücü",r.pa?fmt(r.pa)+" Pa":"—"],["Çalışma süresi",r.rt?fmt(r.rt)+" dk":"—"],["Pil",r.mah?fmt(r.mah)+" mAh":"—"]])}
+    ${kv([["Çıkış yılı (tahmini)",r.yr?"≈"+r.yr:"—"],["Emiş gücü",r.pa?fmt(r.pa)+" Pa":"—"],["Çalışma süresi",r.rt?fmt(r.rt)+" dk":"—"],["Pil",r.mah?fmt(r.mah)+" mAh":"—"]])}
     <div><h3>Yine de aramak isterseniz</h3><div class="links">${STORES.map(([n,u])=>`<a href="${u}${q}" target="_blank" rel="noopener">${n}</a>`).join("")}<a href="${esc(r.url)}" target="_blank" rel="noopener">Epey</a></div></div></div>`;
     const dlg=$("#dlg");if(!dlg.open)dlg.showModal();$("#dlgClose").onclick=()=>dlg.close();return;}
   const q=encodeURIComponent(r.name.replace(/\(.*?\)/g,"").trim());
@@ -865,14 +874,14 @@ function openDetail(id){
    <div class="mgrid">
     <div><h3>Puan dağılımı · toplam ${r.score.toFixed(0)}/100 · F/P ${r.fp}/100</h3><div class="sbars">${Object.entries(SCMAX).map(([k,[n,mx]])=>`<div class="sbar"><span>${n}</span><span class="bar"><i style="width:${(r.sc[k]||0)/mx*100}%"></i></span><span class="val">${(r.sc[k]||0).toString().replace(".",",")}/${mx}</span></div>`).join("")}</div>
      <p class="note" style="margin:10px 0 0">Bu fiyattaki modellerin ortalama beklenen puanı: <b class="num">${r.exp.toFixed(0)}</b>. Puan başına <b class="num">${TL(r.tlp)}</b>.</p></div>
-    <div><h3>Mağaza fiyatları</h3>${r.stock==="yok"?`<p class="verdict" style="background:var(--warn-soft)">${r.sites>0?`Bu eski bir model (2023 öncesi seri). Hâlâ ${r.sites} satıcıda bulunuyor ama yerini yeni sürümler aldı; fiyatı genellikle yüksektir. Almadan önce garanti ve servis durumunu satıcıya sorun.`:`Bu model artık satılmıyor (eski model); son stok kontrolünde (${CHECKED}) hiçbir mağazada bulunamadı. Aşağıdaki fiyatlar daha önceki kayıttır.`}</p>`:`<p class="note" style="margin:0 0 6px">Stok kontrolü: ${CHECKED} · ${r.sites} mağazada stokta. Mağaza bazında fiyatlar aynı günün sabah kaydıdır.</p>`}<div class="sellers">${sellers}</div>
+    <div><h3>Mağaza fiyatları</h3>${r.stock==="yok"?`<p class="verdict" style="background:var(--warn-soft)">${r.sites>0?`Bu eski bir model (Türkiye'ye yaklaşık ${r.yr||"2023 öncesi"} yılında gelmiş). Hâlâ ${r.sites} satıcıda bulunuyor ama yerini yeni sürümler aldı; fiyatı genellikle yüksektir. Almadan önce garanti ve servis durumunu satıcıya sorun.`:`Bu model artık satılmıyor (eski model); son stok kontrolünde (${CHECKED}) hiçbir mağazada bulunamadı. Aşağıdaki fiyatlar daha önceki kayıttır.`}</p>`:`<p class="note" style="margin:0 0 6px">Stok kontrolü: ${CHECKED} · ${r.sites} mağazada stokta. Mağaza bazında fiyatlar aynı günün sabah kaydıdır.</p>`}<div class="sellers">${sellers}</div>
      <div class="links" style="margin-top:10px">${STORES.map(([n,u])=>`<a href="${u}${q}" target="_blank" rel="noopener">${n}</a>`).join("")}</div>
      <div class="links" style="margin-top:6px"><a href="${esc(r.url)}#fiyatlar" target="_blank" rel="noopener">Epey: tüm satıcılar</a><a href="https://www.akakce.com/arama/?q=${q}" target="_blank" rel="noopener">Akakçe</a><a href="https://www.cimri.com/arama?q=${q}" target="_blank" rel="noopener">Cimri</a></div></div>
    </div>
    <div class="mgrid">
     <div><h3>Temizlik ve navigasyon <button type="button" class="help" data-help="nav" aria-label="Navigasyon türleri nedir?">?</button></h3>${kv([["Emiş gücü",u(r.pa&&fmt(r.pa),"Pa")],["Navigasyon",esc(r.nav)+(r.navRaw?` <span style="color:var(--fg3)">(${esc(r.navRaw)})</span>`:"")],["Engel algılama",esc(r.obst)],["Kamera",ynT(r.cam)],["Mop tipi",esc(r.mop)],["Mop kaldırma",r.mopLift?(r.mopLiftMm?u(r.mopLiftMm,"mm"):"Var"):"Yok"],["Uzayan mop",ynT(r.mopExt)],["Mop bırakma",ynT(r.mopDetach)],["Uzayan yan fırça",ynT(r.brushExt)],["Yan fırça sayısı",r.sides??"—"],["Halı algılama",ynT(r.carpet)],["Dolaşmayan fırça",ynT(r.tangle)],["HEPA filtre",ynT(r.hepa)],["Eşik aşma",u(r.climb,"mm")]])}</div>
     <div><h3>İstasyon <button type="button" class="help" data-help="station" aria-label="İstasyon tipleri nedir?">?</button></h3>${kv([["İstasyon tipi",esc(r.station)],["Toz boşaltma",r.selfEmpty?"Var":r.selfEmptyOpt?"Opsiyonel":"Yok"],["Mop yıkama",ynT(r.mopWash)],["Sıcak su ile yıkama",ynT(r.hotWash)],["Sıcak hava kurutma",ynT(r.hotDry)],["Otomatik su dolumu",ynT(r.refill)],["Otomatik deterjan",ynT(r.deterg)],["İstasyon toz torbası",u(r.stDust,"L")],["Temiz su tankı",u(r.stClean,"L")],["Kirli su tankı",u(r.stDirty,"L")]])}
-     <h3 style="margin-top:16px">Pil, gövde ve bağlantı</h3>${kv([["Çalışma süresi",u(r.rt,"dk")],["Pil",u(r.mah&&fmt(r.mah),"mAh")],["Şarj süresi",u(r.ch,"saat")],["Gürültü",u(r.db,"dB")],["Güç",u(r.w,"W")],["Toz haznesi",u(r.dust,"ml")],["Su haznesi",u(r.water,"ml")],["Yükseklik",u(r.h,"mm")],["Ağırlık",u(r.kg,"kg")],["Wi-Fi / uygulama",ynT(r.wifi)],["Sesli asistan",r.voice.length?esc(r.voice.join(", ")):"—"],["Matter",ynT(r.matter)],["Harita",r.maps?r.maps+" kat":(r.multimap?"Çoklu":"—")],["Renk",esc(r.color||"—")]])}</div>
+     <h3 style="margin-top:16px">Pil, gövde ve bağlantı</h3>${kv([["Çıkış yılı (tahmini)",r.yr?"≈"+r.yr:"—"],["Çalışma süresi",u(r.rt,"dk")],["Pil",u(r.mah&&fmt(r.mah),"mAh")],["Şarj süresi",u(r.ch,"saat")],["Gürültü",u(r.db,"dB")],["Güç",u(r.w,"W")],["Toz haznesi",u(r.dust,"ml")],["Su haznesi",u(r.water,"ml")],["Yükseklik",u(r.h,"mm")],["Ağırlık",u(r.kg,"kg")],["Wi-Fi / uygulama",ynT(r.wifi)],["Sesli asistan",r.voice.length?esc(r.voice.join(", ")):"—"],["Matter",ynT(r.matter)],["Harita",r.maps?r.maps+" kat":(r.multimap?"Çoklu":"—")],["Renk",esc(r.color||"—")]])}</div>
    </div>
    ${trustBlock(r,q)}
    ${r.extras.length?`<div><h3>Üreticinin listelediği diğer özellikler</h3><div class="extras">${r.extras.map(x=>`<span class="spec">${esc(x)}</span>`).join("")}</div></div>`:""}
@@ -886,7 +895,7 @@ $("#dlg").addEventListener("click",e=>{if(e.target.id==="dlg")e.target.close()})
 function openCompare(){
   const rs=S.cmp.map(id=>byId[id]);if(rs.length<2)return;
   const ROWS=[
-   ["Fiyat",r=>r.price,v=>TL(v),"min"],["Mağaza sayısı",r=>r.sites,v=>v,"max"],
+   ["Fiyat",r=>r.price,v=>TL(v),"min"],["Çıkış yılı (≈)",r=>r.yr,v=>v,"max"],["Mağaza sayısı",r=>r.sites,v=>v,"max"],
    ["Kullanıcı puanı (★)",r=>r.ur,v=>v.toFixed(1).replace(".",","),"max"],["Değerlendirme sayısı",r=>r.urc||null,v=>fmt(v),"max"],["Satış sonrası notu",r=>r.as,v=>v,"max"],
    ["Garanti (yıl)",r=>r.w,v=>v,"max"],["Servis ağı",r=>r.net],["Şikâyet yanıt oranı (%)",r=>BR[r.brand]?.responseRate??null,v=>"%"+v,"max"],["Özellik puanı",r=>r.score,v=>v.toFixed(0),"max"],["F/P endeksi",r=>r.fp,v=>v,"max"],["Puan başına TL",r=>r.tlp,v=>TL(v),"min"],
    ["Emiş gücü (Pa)",r=>r.pa,v=>fmt(v),"max"],["Navigasyon",r=>r.nav],["Engel algılama",r=>r.obst],["Mop tipi",r=>r.mop],["Mop kaldırma",r=>r.mopLift,ynT,"bool"],["Uzayan mop",r=>r.mopExt,ynT,"bool"],["Uzayan yan fırça",r=>r.brushExt,ynT,"bool"],
@@ -927,7 +936,9 @@ function renderStatic(){
   <h3>Fiyatına göre en iyi</h3>
   <p>Kendisinden ucuz olup daha yüksek puan alan başka model bulunmayan modellerdir (Pareto sınırı). Bütçeniz neyse, bu listede o bütçeye en yakın model teknik olarak en dolu seçenektir.</p>
   <h3>Stok kontrolü</h3>
-  <p>Stok durumu ${CHECKED} tarihinde epey.com listesi yeniden taranarak belirlendi. En az 3 mağazada fiyatı olan model "stokta", 1–2 mağazada olan "sınırlı stok" sayılır. Son kontrolde hiçbir mağazada fiyatı bulunmayan modeller, listenin arka sayfalarındaki fiyatsız popüler modeller ve 2023 öncesi serilerden sadece 1–2 satıcıda kalanlar (çıkış zamanı epey.com kataloğuna eklenme sırasından yaklaşık çıkarıldı) "eski modeller" bölümüne ayrılır; analizlere ve önerilere katılmaz.</p>
+  <p>Stok durumu ${CHECKED} tarihinde epey.com listesi yeniden taranarak belirlendi. En az 3 mağazada fiyatı olan model "stokta", 1–2 mağazada olan "sınırlı stok" sayılır. Son kontrolde hiçbir mağazada fiyatı bulunmayan modeller, listenin arka sayfalarındaki fiyatsız popüler modeller ve 2023 veya öncesinde çıkmış olup sadece 1–2 satıcıda kalanlar "eski modeller" bölümüne ayrılır; analizlere ve önerilere katılmaz.</p>
+  <h3>Çıkış yılı</h3>
+  <p>Ürün sayfalarında çıkış tarihi bulunmuyor. Epey.com kataloğuna eklenen her ürün sıradaki görsel numarasını alır; bu numaralar, çıkış yılını bildiğimiz modellerle (Roborock S5 Max 2019, S7 2021, Q7 Max 2022, S8 Pro Ultra 2023, Dreame X40 Ultra 2024, Roborock Saros 10 2025 vb.) eşleştirilerek yıla çevrildi. Gösterilen yıl tahmini Türkiye'de satışa çıkış yılıdır; ±1 yıl sapabilir.</p>
   <h3>Kullanıcı yorumları ve şikâyetler</h3>
   <p>Kullanıcı puanı, Hepsiburada ve Amazon'daki marka bazlı arama sonuçlarından (her markada 1–3 sayfa) model adıyla eşleşen ilanların yıldız ortalamasıdır; değerlendirme sayısıyla ağırlıklandırılır. Uyumlu yedek parça ilanları puana katılmaz, "yedek parça ilanı" sayısı olarak ayrıca gösterilir. Trendyol, Akakçe ve Cimri bu taramada erişime kapalıydı; bu sitelere ayrıntı penceresinden arama bağlantısıyla gidebilirsiniz.</p>
   <p>Şikâyet verisi Şikâyetvar'dan alınmıştır: marka puanı, toplam ve robot süpürge kategorisindeki şikâyet sayısı, son bir yıldaki yanıt oranı ve marka karnesi özeti. Büyük markalarda son 60–90, diğerlerinde son 20–25 şikâyet başlığı anahtar kelimelerle konulara ayrıldı. Şikâyet sayısı satış hacmiyle büyüdüğü için "yoğunluk" (1.000 kullanıcı değerlendirmesi başına şikâyet) ayrıca verilir; yalnızca en az 300 değerlendirmesi eşleşen markalarda hesaplanır.</p>
@@ -985,6 +996,7 @@ const TECH=[
  ["Eşik aşma (mm)","Türkiye'deki kapı eşikleri ve halı kenarları genelde 15–20 mm'dir; 20 mm standarttır. 30–40 mm ve üstü (bacaklı şasi) çift kademeli eşikler için. Eşiğinizi cetvelle ölçün."],
  ["Gövde yüksekliği (mm)","Koltuk ve yatak altını ölçün. LiDAR'lı modeller genelde 95–100 mm'dir; geri çekilebilen lazer kulesi olanlar 80 mm civarına iner."],
  ["Gürültü (dB)","60–65 dB normal konuşma seviyesidir. Evde yokken çalıştıracaksanız önemsizdir."],
+ ["Çıkış yılı (≈)","Modelin Türkiye'de satışa çıktığı yaklaşık yıl. Yeni modeller genelde daha iyi yazılım, engel algılama ve daha uzun güncelleme/yedek parça desteği demektir. 2–3 yıllık bir amiral gemisi, yeni orta segment bir modelden hâlâ iyi olabilir; fiyatı düştüyse fırsat olabilir."],
  ["Mağaza sayısı","Tek mağazada satılan model, ithalatçı fiyatıyla pahalı ya da stoktan çıkmak üzere olabilir. 3+ mağaza daha sağlıklı fiyat demektir."]];
 const FEATHELP={hotWash:"Paspası 45–80 °C suyla yıkar; yağlı mutfak kirinde fark yaratır.",hotDry:"Yıkanan paspası sıcak havayla kurutur; koku ve küfü önler. Mop yıkamalı istasyonda neredeyse şart.",refill:"Robotun su haznesini istasyon doldurur (bazı modellerde tesisata bağlanabilir).",deterg:"İstasyon deterjanı otomatik katar.",mopLift:"Halıya çıkınca paspası kaldırır; halıyı ıslatmaz. Halılı evde şart.",mopExt:"Paspas kenara doğru uzanır, süpürgelik dibini siler.",mopDetach:"Halı temizlerken paspası istasyonda bırakır; mop kaldırmadan da iyi.",brushExt:"Yan fırça köşelere uzanır.",cam:"Engel tanıma ve uzaktan görüntü için kamera.",carpet:"Halıyı algılayıp emişi artırır.",pet:"Evcil hayvan tüyü, konumu veya dışkısı için özel mod.",tangle:"Saç ve tüy dolanmayan fırça; uzun saçlı ve evcil hayvanlı evde çok önemli.",hepa:"İnce toz ve alerjen filtresi.",multimap:"Birden fazla katın haritasını saklar.",map3d:"Mobilyaları da gösteren 3D harita.",roomset:"Her oda için ayrı emiş ve su ayarı.",voice:"Alexa, Google veya Siri ile kontrol.",matter:"Farklı akıllı ev sistemleriyle uyum standardı.",uv:"UV ışıkla paspas veya hazne dezenfeksiyonu."};
 const stars5=n=>`<span class="st5" aria-label="5 üzerinden ${n}">${"●".repeat(n)}<span>${"●".repeat(5-n)}</span></span>`;
@@ -1003,7 +1015,7 @@ function trustHelpHTML(){return `<dl class="gloss"><dt>Kullanıcı puanı (★)<
  <dt>Satış sonrası notu</dt><dd>Markanın şikâyetlere yanıt oranı, Şikâyetvar memnuniyeti, kullanıcı puanı, servis ağı ve garanti süresinden oluşan 0–100 özet. 70 üstü iyi, 55 altı zayıf.</dd>
  <dt>Servis ağı</dt><dd>"Türkiye geneli": şehrinizde yetkili servis bulma ihtimali yüksek. "Merkezi": cihaz kargoyla tek servise gider, süreç 1–4 hafta sürebilir.</dd>
  <dt>Türkiye garantisi</dt><dd>Faturada "Türkiye garantili" veya resmi distribütör adı arayın. İthalatçı garantili ürünlerde servis süreci farklı ve bazen zor olabilir.</dd></dl>`}
-const HELP={stock:["Stok durumu nasıl belirlendi?",()=>`<dl class="gloss"><dt>Stokta (3+ mağaza)</dt><dd>Son kontrolde en az 3 farklı mağazada fiyatı ve stoğu vardı. Fiyat rekabeti var; tükenme riski düşük.</dd><dt>Sınırlı stok (1–2 mağaza)</dt><dd>Sadece 1–2 mağazada var. Fiyat ithalatçı veya tek satıcı fiyatı olabilir; model piyasadan çekiliyor da olabilir. Satın almadan önce satıcıyı ve garantiyi kontrol edin.</dd><dt>Eski model</dt><dd>Piyasadan çekilmiş veya yeni sürümü çıkmış model. İki durumda bu gruba girer: son kontrolde hiçbir mağazada fiyatı yoksa, ya da 2023 öncesi bir seri olup sadece 1–2 satıcıda kalmışsa. Çıkış tarihi, modelin epey.com kataloğuna eklenme sırasından yaklaşık olarak çıkarıldı. Eski olup hâlâ 3+ mağazada satılan modeller satışta sayılır. Listenin altında ayrı bölümde durur; "Eski modelleri de göster" ile listeye katabilirsiniz.</dd><dt>Kontrol zamanı</dt><dd>${CHECKED}. Stok, epey.com’un 19 mağazadan topladığı güncel tekliflerden belirlendi. Sayfa canlı değildir; satın almadan önce mağazada doğrulayın.</dd></dl>`],station:["İstasyon tipleri",()=>topicHTML("station",1)],nav:["Navigasyon türleri",()=>topicHTML("nav",1)],mop:["Mop sistemleri",()=>topicHTML("mop",1)],obst:["Engel algılama",()=>topicHTML("obst",1)],type:["Ürün tipi",()=>topicHTML("type",1)],
+const HELP={stock:["Stok durumu nasıl belirlendi?",()=>`<dl class="gloss"><dt>Stokta (3+ mağaza)</dt><dd>Son kontrolde en az 3 farklı mağazada fiyatı ve stoğu vardı. Fiyat rekabeti var; tükenme riski düşük.</dd><dt>Sınırlı stok (1–2 mağaza)</dt><dd>Sadece 1–2 mağazada var. Fiyat ithalatçı veya tek satıcı fiyatı olabilir; model piyasadan çekiliyor da olabilir. Satın almadan önce satıcıyı ve garantiyi kontrol edin.</dd><dt>Eski model</dt><dd>Piyasadan çekilmiş veya yeni sürümü çıkmış model. İki durumda bu gruba girer: son kontrolde hiçbir mağazada fiyatı yoksa, ya da 2023 veya öncesinde çıkmış olup sadece 1–2 satıcıda kalmışsa.</dd><dt>Çıkış yılı (≈)</dt><dd>Ürün sayfalarında çıkış tarihi yazmadığı için, modelin epey.com Türkiye kataloğuna eklenme sırasından tahmin edildi. Bu yaklaşık olarak Türkiye'de satışa çıkış yılıdır; dünyadaki ilk çıkıştan bir yıl kadar sonra olabilir. Eski olup hâlâ 3+ mağazada satılan modeller satışta sayılır. Listenin altında ayrı bölümde durur; "Eski modelleri de göster" ile listeye katabilirsiniz.</dd><dt>Kontrol zamanı</dt><dd>${CHECKED}. Stok, epey.com’un 19 mağazadan topladığı güncel tekliflerden belirlendi. Sayfa canlı değildir; satın almadan önce mağazada doğrulayın.</dd></dl>`],station:["İstasyon tipleri",()=>topicHTML("station",1)],nav:["Navigasyon türleri",()=>topicHTML("nav",1)],mop:["Mop sistemleri",()=>topicHTML("mop",1)],obst:["Engel algılama",()=>topicHTML("obst",1)],type:["Ürün tipi",()=>topicHTML("type",1)],
  tech:["Teknik değerler ne anlama gelir?",techHTML],feat:["Özellikler sözlüğü",featHTML],trust:["Kullanıcı puanı ve satış sonrası",trustHelpHTML],
  score:["Puanlar nasıl okunur?",()=>`<dl class="gloss"><dt>Özellik puanı (0–100)</dt><dd>Kâğıt üzerindeki özelliklerin toplamı: navigasyon, istasyon, mop, emiş, pil vb. Temizlik kalitesini doğrudan ölçmez.</dd><dt>F/P (0–100)</dt><dd>Aynı fiyattaki modellere göre ne kadar çok özellik sunduğu. 50 ortalama, 70+ fiyatına göre çok dolu.</dd><dt>Fiyatına göre en iyi</dt><dd>Kendisinden ucuz olup daha yüksek puan alan başka model yok.</dd></dl>`]};
 function openHelp(k){const h=HELP[k];if(!h)return;$("#helpBody").innerHTML=`<div class="mhead"><h2 id="helpTitle">${h[0]}</h2><button class="btn" type="button" id="helpClose" aria-label="Kapat">✕</button></div><div class="mbody">${h[1]()}<p class="note"><a href="#rehber" id="helpGuide">Tüm rehberi ve seçim sihirbazını aç →</a></p></div>`;

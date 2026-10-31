@@ -24,3 +24,4 @@ Puanlama ayrıntıları sayfadaki "Yöntem" sekmesindedir.
 11. `build.py` taze listeyi (`list_items2.json`) kullanır: 3+ mağaza "stokta", 1–2 "sınırlı", önceki listede olup tazede olmayan "stok yok".
 12. `python3 parse_oos.py <klasör>` → `oos.json` (arka sayfalardaki fiyatsız modeller); `python3 build_rel.py <klasör>` sonrası `python3 attach_oos.py <klasör> "31 Ekim 2026, 18:40"`.
 13. Eski model kuralı (`build.py`): epey görsel numarası (`imgids.json`, liste sayfalarından) 900.000'in altındaysa (yaklaşık 2023 sonu öncesi kataloğa eklenmiş) ve model sadece 1–2 mağazada kalmışsa "eski model" sayılır.
+14. Çıkış yılı (tahmini) sayfada `yearOf(imgId)` ile hesaplanır; eşikler `template.html` içindeki `YB` dizisindedir.
