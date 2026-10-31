@@ -1,0 +1,759 @@
+<title>Robot Süpürge Rehberi</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: sticky toolbar, left filter rail (drawer on phones), tabbed main area; data reads like a spec sheet. */
+:root{
+  --bg:#f3f6f7; --surface:#ffffff; --sunk:#e9eef0; --line:#d6dfe2; --line-soft:#e4eaec;
+  --fg:#14232a; --fg2:#435761; --fg3:#71838b;
+  --accent:#0b7480; --accent-ink:#ffffff; --accent-soft:#d8eef0; --laser:#d2503a;
+  --good:#1d7a46; --good-soft:#dcf0e3; --warn:#9a6a00; --warn-soft:#f6ecd2; --bad:#b03a2e;
+  --dot-muted:#c3ced2;
+  --f-display:"Familjen Grotesk","Segoe UI",system-ui,sans-serif;
+  --f-body:"IBM Plex Sans","Segoe UI",system-ui,sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
+  --r:10px; --shadow:0 1px 2px rgba(20,35,42,.06),0 4px 14px rgba(20,35,42,.06);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0f171b; --surface:#152127; --sunk:#1b2a31; --line:#2a3b43; --line-soft:#223239;
+  --fg:#e3ecef; --fg2:#a9bac1; --fg3:#7b8f97;
+  --accent:#4cc3cd; --accent-ink:#06262a; --accent-soft:#163a3f; --laser:#ef7a63;
+  --good:#5fcf8c; --good-soft:#173826; --warn:#e2b54c; --warn-soft:#3a2f12; --bad:#f08374;
+  --dot-muted:#33464e; --shadow:0 1px 2px rgba(0,0,0,.3),0 4px 14px rgba(0,0,0,.25); color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f171b; --surface:#152127; --sunk:#1b2a31; --line:#2a3b43; --line-soft:#223239;
+  --fg:#e3ecef; --fg2:#a9bac1; --fg3:#7b8f97;
+  --accent:#4cc3cd; --accent-ink:#06262a; --accent-soft:#163a3f; --laser:#ef7a63;
+  --good:#5fcf8c; --good-soft:#173826; --warn:#e2b54c; --warn-soft:#3a2f12; --bad:#f08374;
+  --dot-muted:#33464e; --shadow:0 1px 2px rgba(0,0,0,.3),0 4px 14px rgba(0,0,0,.25); color-scheme:dark}
+*{box-sizing:border-box}
+html,body{background:var(--bg)}
+body{color:var(--fg);font-family:var(--f-body);font-size:14px;line-height:1.5}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--surface)}
+button,input,select{font:inherit;color:inherit}
+button{cursor:pointer}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.num{font-family:var(--f-mono);font-variant-numeric:tabular-nums}
+.wrap{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));max-width:1480px;margin:0 auto}
+
+/* header */
+.masthead{background:var(--surface);border-bottom:1px solid var(--line)}
+.masthead .wrap{padding-block:22px 18px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px 32px;align-items:end}
+.brandline{display:flex;align-items:center;gap:12px}
+.logo{width:40px;height:40px;flex:none}
+h1{font-family:var(--f-display);font-weight:700;font-size:clamp(24px,3.2vw,34px);letter-spacing:-.01em;line-height:1.1;margin:0;text-wrap:balance}
+.sub{color:var(--fg2);margin:6px 0 0;max-width:68ch}
+.stats{display:flex;gap:28px;flex-wrap:wrap}
+.stat .k{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--fg3)}
+.stat .v{font-family:var(--f-mono);font-size:20px;font-weight:500}
+.toolbar{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--surface);border-bottom:1px solid var(--line)}
+.toolbar .wrap{display:flex;gap:10px;align-items:center;padding-block:10px;flex-wrap:wrap}
+.search{flex:1 1 260px;min-width:0;position:relative}
+.search input{width:100%;padding:9px 12px 9px 34px;border:1px solid var(--line);border-radius:8px;background:var(--bg)}
+.search svg{position:absolute;left:10px;top:50%;transform:translateY(-50%);color:var(--fg3)}
+.tabs{display:flex;gap:2px;background:var(--sunk);padding:3px;border-radius:9px;overflow-x:auto;max-width:100%}
+.tabs a{padding:6px 12px;border-radius:7px;color:var(--fg2);text-decoration:none;font-weight:500;white-space:nowrap}
+.tabs a[aria-current="page"]{background:var(--surface);color:var(--fg);box-shadow:var(--shadow)}
+.btn{border:1px solid var(--line);background:var(--surface);border-radius:8px;padding:8px 12px;font-weight:500}
+.btn:hover{border-color:var(--fg3)}
+.btn.primary{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.btn.ghost{background:transparent;border-color:transparent;color:var(--fg2)}
+.only-mobile{display:none}
+
+/* layout */
+.layout{display:grid;grid-template-columns:290px minmax(0,1fr);gap:24px;padding-block:20px 120px}
+aside.filters{position:sticky;top:calc(env(safe-area-inset-top,0px) + 70px);align-self:start;max-height:calc(100vh - 90px);overflow:auto;padding-right:6px}
+.fgroup{border-bottom:1px solid var(--line-soft);padding:12px 0}
+.fgroup:first-child{padding-top:0}
+.fgroup h3{font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--fg3);margin:0 0 8px;font-weight:600;display:flex;justify-content:space-between;align-items:center}
+.fgroup h3 button{font-size:11px;letter-spacing:0;text-transform:none;border:0;background:none;color:var(--accent);padding:0}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:4px 10px;font-size:13px;color:var(--fg2);display:inline-flex;gap:6px;align-items:center}
+.chip .c{font-family:var(--f-mono);font-size:11px;color:var(--fg3)}
+.chip[aria-pressed="true"]{background:var(--accent-soft);border-color:var(--accent);color:var(--fg)}
+.chip[aria-pressed="true"] .c{color:var(--fg2)}
+.pricebox{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.pricebox label{font-size:12px;color:var(--fg3);display:grid;gap:3px}
+.pricebox input,.fsel{width:100%;padding:7px 9px;border:1px solid var(--line);border-radius:7px;background:var(--surface)}
+.quick{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.quick button{font-size:12px;padding:3px 8px;border-radius:6px;border:1px dashed var(--line);background:transparent;color:var(--fg2)}
+.brandlist{display:grid;gap:2px;max-height:240px;overflow:auto;margin-top:6px}
+.brandlist label{display:flex;gap:8px;align-items:center;padding:3px 4px;border-radius:5px;cursor:pointer}
+.brandlist label:hover{background:var(--sunk)}
+.brandlist .c{margin-left:auto;font-family:var(--f-mono);font-size:11px;color:var(--fg3)}
+.brandsearch{width:100%;padding:6px 9px;border:1px solid var(--line);border-radius:7px;background:var(--surface);font-size:13px}
+.selrow{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.selrow label{font-size:12px;color:var(--fg3);display:grid;gap:3px}
+.toggle{display:flex;gap:8px;align-items:center;font-size:13px;color:var(--fg2);margin-top:6px}
+
+/* results header */
+.reshead{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:12px}
+.reshead .count{font-family:var(--f-display);font-size:20px;font-weight:600}
+.reshead .count small{font-family:var(--f-body);font-size:13px;color:var(--fg3);font-weight:400;margin-left:6px}
+.active-f{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}
+.active-f button{font-size:12px;border:1px solid var(--line);background:var(--sunk);border-radius:6px;padding:2px 8px;color:var(--fg2)}
+
+/* cards */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:14px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:14px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.card:hover{border-color:var(--fg3)}
+.card .top{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}
+.card .brand{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--fg3);font-weight:600}
+.card h4{font-family:var(--f-display);font-size:17px;font-weight:600;margin:1px 0 0;line-height:1.2;text-wrap:balance;overflow-wrap:anywhere}
+.card h4 button{all:unset;cursor:pointer}
+.card h4 button:hover{text-decoration:underline;text-underline-offset:3px}
+.card h4 button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.price{font-family:var(--f-mono);font-size:19px;font-weight:500;white-space:nowrap}
+.price-row{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+.sites{font-size:12px;color:var(--fg3)}
+.meters{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.meter .lab{display:flex;justify-content:space-between;font-size:11px;color:var(--fg3);text-transform:uppercase;letter-spacing:.06em}
+.meter .lab b{font-family:var(--f-mono);font-size:13px;color:var(--fg);letter-spacing:0;font-weight:500}
+.bar{height:6px;background:var(--sunk);border-radius:3px;overflow:hidden;margin-top:4px}
+.bar i{display:block;height:100%;background:var(--accent);border-radius:3px}
+.bar.fp i{background:var(--good)}
+.specs{display:flex;flex-wrap:wrap;gap:5px}
+.spec{font-size:12px;background:var(--sunk);border-radius:5px;padding:2px 7px;color:var(--fg2);white-space:nowrap}
+.spec.hi{background:var(--accent-soft);color:var(--fg)}
+.card .foot{display:flex;justify-content:space-between;align-items:center;margin-top:auto;padding-top:6px;border-top:1px dashed var(--line-soft)}
+.cmp{display:flex;gap:6px;align-items:center;font-size:13px;color:var(--fg2);cursor:pointer}
+.badge{font-size:11px;font-weight:600;padding:2px 7px;border-radius:5px;white-space:nowrap}
+.badge.par{background:var(--good-soft);color:var(--good)}
+.badge.one{background:var(--warn-soft);color:var(--warn)}
+.more{display:flex;justify-content:center;margin-top:18px}
+.empty{padding:40px 20px;text-align:center;color:var(--fg2);background:var(--surface);border:1px dashed var(--line);border-radius:var(--r)}
+
+/* table */
+.tablewrap{overflow-x:auto;background:var(--surface);border:1px solid var(--line);border-radius:var(--r)}
+table{border-collapse:collapse;width:100%;font-size:13px}
+th,td{padding:8px 10px;text-align:left;border-bottom:1px solid var(--line-soft);white-space:nowrap}
+th{position:sticky;top:0;background:var(--sunk);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--fg2);font-weight:600}
+th button{all:unset;cursor:pointer;display:inline-flex;gap:4px;align-items:center}
+th button:focus-visible{outline:2px solid var(--accent)}
+th[aria-sort] button{color:var(--fg)}
+td.r,th.r{text-align:right}
+tbody tr{cursor:pointer}
+tbody tr:hover{background:var(--sunk)}
+td.model{font-weight:500;max-width:260px;overflow:hidden;text-overflow:ellipsis}
+td.model small{display:block;color:var(--fg3);font-weight:400;font-size:11px}
+.yes{color:var(--good);font-weight:600}.no{color:var(--fg3)}
+
+/* analysis */
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:18px;margin-bottom:16px;min-width:0}
+.panel h2{font-family:var(--f-display);font-size:19px;margin:0 0 2px;font-weight:600}
+.panel .desc{color:var(--fg2);margin:0 0 12px;font-size:13px;max-width:80ch}
+.chartbox{position:relative;width:100%}
+.chartbox svg{display:block;width:100%;height:auto}
+.legend{display:flex;gap:16px;flex-wrap:wrap;font-size:12px;color:var(--fg2);margin-top:8px}
+.legend span{display:inline-flex;gap:6px;align-items:center}
+.sw{width:10px;height:10px;border-radius:50%;display:inline-block}
+.tip{position:absolute;pointer-events:none;background:var(--fg);color:var(--bg);padding:8px 10px;border-radius:7px;font-size:12px;line-height:1.4;max-width:240px;box-shadow:var(--shadow);z-index:5}
+.tip b{display:block;font-size:13px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.hbars{display:grid;gap:6px}
+.hbar{display:grid;grid-template-columns:110px minmax(0,1fr) 92px;gap:10px;align-items:center;font-size:13px}
+.hbar .nm{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.hbar .track{height:14px;position:relative}
+.hbar .track i{position:absolute;left:0;top:0;bottom:0;background:var(--accent);border-radius:0 4px 4px 0}
+.hbar .val{text-align:right;font-family:var(--f-mono);font-size:12px;color:var(--fg2)}
+.hist{display:flex;align-items:flex-end;gap:2px;height:180px;border-bottom:1px solid var(--line)}
+.hist div{flex:1;background:var(--accent);border-radius:4px 4px 0 0;min-height:1px;position:relative}
+.hist div:hover{opacity:.8}
+.histx{display:flex;justify-content:space-between;font-size:11px;color:var(--fg3);margin-top:4px;font-family:var(--f-mono)}
+.ftable td,.ftable th{white-space:normal}
+
+/* picks */
+.bracket{margin-bottom:22px}
+.bracket h3{font-family:var(--f-display);font-size:18px;margin:0 0 10px;display:flex;gap:10px;align-items:baseline}
+.bracket h3 small{font-family:var(--f-body);font-size:13px;color:var(--fg3);font-weight:400}
+.picks{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px}
+.pick{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:12px 14px;display:grid;gap:6px;text-align:left}
+.pick:hover{border-color:var(--accent)}
+.pick .rk{font-size:11px;color:var(--fg3);text-transform:uppercase;letter-spacing:.07em}
+.pick .nm{font-family:var(--f-display);font-weight:600;font-size:16px}
+.pick .ln{display:flex;justify-content:space-between;gap:8px;font-size:13px;color:var(--fg2)}
+.usecases{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px}
+
+/* method */
+.prose{max-width:72ch}
+.prose h2{font-family:var(--f-display);font-size:22px;margin:0 0 8px}
+.prose h3{font-family:var(--f-display);font-size:17px;margin:22px 0 6px}
+.prose p,.prose li{color:var(--fg2)}
+
+/* modal */
+dialog{border:0;padding:0;background:transparent;max-width:min(980px,calc(100vw - 24px));width:100%;max-height:calc(100vh - 24px)}
+dialog::backdrop{background:rgba(8,16,20,.55)}
+.modal{background:var(--surface);color:var(--fg);border-radius:14px;border:1px solid var(--line);overflow:auto;max-height:calc(100vh - 24px)}
+.mhead{padding:18px 20px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:16px;align-items:flex-start;position:sticky;top:0;background:var(--surface);z-index:2}
+.mhead h2{font-family:var(--f-display);font-size:22px;margin:0;line-height:1.15}
+.mbody{padding:18px 20px;display:grid;gap:20px}
+.mgrid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:22px}
+.kv{display:grid;grid-template-columns:auto 1fr;gap:4px 14px;font-size:13px;margin:0}
+.kv dt{color:var(--fg3)}
+.kv dd{margin:0;font-family:var(--f-mono);font-size:12.5px;text-align:right}
+.mbody h3{font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--fg3);margin:0 0 8px}
+.sellers{display:grid;gap:4px}
+.seller{display:flex;justify-content:space-between;padding:6px 10px;background:var(--sunk);border-radius:6px;font-size:13px}
+.seller:first-child{background:var(--good-soft)}
+.links{display:flex;gap:8px;flex-wrap:wrap}
+.links a{font-size:13px;color:var(--accent);text-decoration:none;border:1px solid var(--line);padding:5px 10px;border-radius:7px}
+.links a:hover{border-color:var(--accent)}
+.sbars{display:grid;gap:6px}
+.sbar{display:grid;grid-template-columns:120px minmax(0,1fr) 54px;gap:10px;align-items:center;font-size:12.5px}
+.sbar .val{font-family:var(--f-mono);text-align:right;color:var(--fg2)}
+.extras{display:flex;flex-wrap:wrap;gap:5px}
+.cmpt td,.cmpt th{white-space:normal;vertical-align:top;min-width:150px}
+.cmpt th:first-child,.cmpt td:first-child{min-width:130px;color:var(--fg3);font-weight:500}
+.cmpt td.best{background:var(--good-soft);font-weight:600}
+.cmpt thead th{text-transform:none;letter-spacing:0;font-size:13px;color:var(--fg)}
+
+/* tray */
+.tray{position:fixed;left:0;right:0;bottom:0;z-index:25;background:var(--surface);border-top:1px solid var(--line);box-shadow:0 -4px 16px rgba(0,0,0,.08);padding-bottom:env(safe-area-inset-bottom,0px)}
+.tray .wrap{display:flex;gap:10px;align-items:center;padding-block:10px;flex-wrap:wrap}
+.tray .items{display:flex;gap:6px;flex-wrap:wrap;flex:1;min-width:0}
+.tray .it{font-size:12px;background:var(--sunk);border-radius:6px;padding:4px 8px;display:inline-flex;gap:6px;align-items:center}
+.tray .it button{border:0;background:none;padding:0;color:var(--fg3);font-size:14px;line-height:1}
+.note{font-size:12px;color:var(--fg3)}
+footer{color:var(--fg3);font-size:12px;padding-block:20px 120px;border-top:1px solid var(--line)}
+
+@media (max-width:980px){
+  .layout{grid-template-columns:minmax(0,1fr)}
+  aside.filters{position:fixed;inset:0 auto 0 0;width:min(340px,88vw);max-height:none;z-index:40;background:var(--surface);padding:calc(env(safe-area-inset-top,0px) + 16px) 16px 90px max(16px,env(safe-area-inset-left,0px));transform:translateX(-105%);transition:transform .2s;box-shadow:var(--shadow);border-right:1px solid var(--line)}
+  aside.filters.open{transform:none}
+  .only-mobile{display:inline-flex}
+  .scrim{position:fixed;inset:0;background:rgba(8,16,20,.45);z-index:35}
+  .two,.mgrid{grid-template-columns:minmax(0,1fr)}
+  .masthead .wrap{grid-template-columns:minmax(0,1fr)}
+}
+@media (max-width:520px){
+  .stats{gap:16px}.stat .v{font-size:17px}
+  .hbar{grid-template-columns:84px minmax(0,1fr) 80px}
+  .sbar{grid-template-columns:96px minmax(0,1fr) 48px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<header class="masthead">
+  <div class="wrap">
+    <div>
+      <div class="brandline">
+        <svg class="logo" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="18" fill="none" stroke="var(--fg)" stroke-width="2.5"/><circle cx="20" cy="20" r="11" fill="none" stroke="var(--line)" stroke-width="2"/><circle cx="20" cy="11" r="3.5" fill="var(--laser)"/><path d="M20 11 L34 6" stroke="var(--laser)" stroke-width="1.5" stroke-dasharray="2 2"/></svg>
+        <h1>Robot Süpürge Rehberi</h1>
+      </div>
+      <p class="sub">Türkiye'deki mağazalarda satışta olan robot süpürgelerin fiyatları ve teknik özellikleri. Filtreleyin, karşılaştırın ve fiyat/performansa göre seçin.</p>
+    </div>
+    <div class="stats" id="stats"></div>
+  </div>
+</header>
+
+<div class="toolbar">
+  <div class="wrap">
+    <button class="btn only-mobile" id="openFilters" type="button" aria-controls="filters">Filtreler <span id="fcount" class="num"></span></button>
+    <div class="search">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="q" type="search" placeholder="Model veya marka ara (ör. Qrevo, S40, Deebot)" aria-label="Model veya marka ara">
+    </div>
+    <nav class="tabs" aria-label="Görünüm">
+      <a href="#liste" data-view="liste">Liste</a>
+      <a href="#tablo" data-view="tablo">Tablo</a>
+      <a href="#analiz" data-view="analiz">Analiz</a>
+      <a href="#oneriler" data-view="oneriler">Öneriler</a>
+      <a href="#yontem" data-view="yontem">Yöntem</a>
+    </nav>
+  </div>
+</div>
+
+<div class="wrap layout">
+  <aside class="filters" id="filters" aria-label="Filtreler">
+    <div class="fgroup" style="display:flex;justify-content:space-between;align-items:center">
+      <strong style="font-family:var(--f-display);font-size:16px">Filtreler</strong>
+      <span><button class="btn ghost" type="button" id="reset">Temizle</button><button class="btn only-mobile" type="button" id="closeFilters">Bitti</button></span>
+    </div>
+    <div class="fgroup">
+      <h3>Fiyat (TL)</h3>
+      <div class="pricebox">
+        <label>En az<input id="pmin" type="number" inputmode="numeric" min="0" step="500"></label>
+        <label>En çok<input id="pmax" type="number" inputmode="numeric" min="0" step="500"></label>
+      </div>
+      <div class="quick" id="pquick"></div>
+    </div>
+    <div class="fgroup"><h3>Sırala</h3>
+      <select id="sort" class="fsel" aria-label="Sıralama">
+        <option value="fp">Fiyat/performans (yüksek)</option>
+        <option value="score">Özellik puanı (yüksek)</option>
+        <option value="price">Fiyat (düşük → yüksek)</option>
+        <option value="-price">Fiyat (yüksek → düşük)</option>
+        <option value="pa">Emiş gücü</option>
+        <option value="rt">Çalışma süresi</option>
+        <option value="sites">Mağaza sayısı</option>
+        <option value="tlp">Puan başına en düşük TL</option>
+      </select>
+    </div>
+    <div class="fgroup"><h3>Hazır istasyon <button type="button" data-clear="station">sıfırla</button></h3><div class="chips" data-group="station"></div></div>
+    <div class="fgroup"><h3>Navigasyon <button type="button" data-clear="nav">sıfırla</button></h3><div class="chips" data-group="nav"></div></div>
+    <div class="fgroup"><h3>Mop tipi <button type="button" data-clear="mop">sıfırla</button></h3><div class="chips" data-group="mop"></div></div>
+    <div class="fgroup"><h3>Engel algılama <button type="button" data-clear="obst">sıfırla</button></h3><div class="chips" data-group="obst"></div></div>
+    <div class="fgroup">
+      <h3>Teknik eşikler</h3>
+      <div class="selrow">
+        <label>Min. emiş<select id="minPa" class="fsel"><option value="0">Hepsi</option><option>4000</option><option>6000</option><option>8000</option><option>10000</option><option>15000</option><option>20000</option><option>25000</option><option>30000</option></select></label>
+        <label>Min. süre (dk)<select id="minRt" class="fsel"><option value="0">Hepsi</option><option>90</option><option>120</option><option>150</option><option>180</option><option>240</option></select></label>
+        <label>Min. eşik (mm)<select id="minClimb" class="fsel"><option value="0">Hepsi</option><option>18</option><option>20</option><option>30</option><option>40</option></select></label>
+        <label>Min. mağaza<select id="minSites" class="fsel"><option value="1">1+</option><option value="2">2+</option><option value="3">3+</option><option value="5">5+</option><option value="8">8+</option></select></label>
+        <label>Maks. yükseklik<select id="maxH" class="fsel"><option value="0">Hepsi</option><option value="80">80 mm</option><option value="90">90 mm</option><option value="95">95 mm</option><option value="100">100 mm</option></select></label>
+        <label>Maks. gürültü<select id="maxDb" class="fsel"><option value="0">Hepsi</option><option value="60">60 dB</option><option value="65">65 dB</option><option value="68">68 dB</option></select></label>
+      </div>
+    </div>
+    <div class="fgroup"><h3>Özellikler <button type="button" data-clear="feat">sıfırla</button></h3><div class="chips" data-group="feat"></div>
+      <label class="toggle"><input type="checkbox" id="pareto"> Yalnızca "fiyatına göre en iyi" modeller</label>
+    </div>
+    <div class="fgroup"><h3>Ürün tipi <button type="button" data-clear="type">sıfırla</button></h3><div class="chips" data-group="type"></div></div>
+    <div class="fgroup">
+      <h3>Marka <button type="button" data-clear="brand">sıfırla</button></h3>
+      <input class="brandsearch" id="bq" type="search" placeholder="Marka ara" aria-label="Marka ara">
+      <div class="brandlist" id="brands"></div>
+    </div>
+  </aside>
+
+  <main id="main" style="min-width:0">
+    <section data-pane="liste">
+      <div class="reshead"><div class="count" id="count1"></div><div class="note" id="sortnote"></div></div>
+      <div class="active-f" id="activef"></div>
+      <div class="grid" id="cards"></div>
+      <div class="more"><button class="btn" id="moreBtn" type="button">Daha fazla göster</button></div>
+    </section>
+    <section data-pane="tablo" hidden>
+      <div class="reshead"><div class="count" id="count2"></div><div class="note">Sütun başlığına tıklayarak sıralayın, satıra tıklayarak ayrıntıyı açın.</div></div>
+      <div class="tablewrap"><table id="tbl"><thead></thead><tbody></tbody></table></div>
+      <div class="more"><button class="btn" id="moreTbl" type="button">Daha fazla satır</button></div>
+    </section>
+    <section data-pane="analiz" hidden>
+      <div class="panel">
+        <h2>Fiyat ve özellik puanı</h2>
+        <p class="desc">Her nokta bir model. Yeşil çizgi "fiyatına göre en iyi" sınırı: bu modellerden daha ucuz olup daha yüksek puan alan başka model yok. Kesikli çizgi, fiyata göre beklenen ortalama puan; çizginin üstündekiler fiyatının üstünde özellik sunuyor. Fiyat ekseni logaritmik.</p>
+        <div class="chartbox" id="scatter"></div>
+        <div class="legend"><span><i class="sw" style="background:var(--accent)"></i>Filtreye uyan modeller</span><span><i class="sw" style="background:var(--dot-muted)"></i>Diğer modeller</span><span><i class="sw" style="background:var(--good);border-radius:2px;height:3px;width:16px"></i>Fiyatına göre en iyi sınırı</span><span><i class="sw" style="background:none;border-top:2px dashed var(--fg3);border-radius:0;height:0;width:16px"></i>Beklenen puan</span></div>
+      </div>
+      <div class="two">
+        <div class="panel"><h2>Markaya göre medyan fiyat</h2><p class="desc">Filtredeki en az 3 modeli olan markalar. Sağda model sayısı ve ortalama puan.</p><div class="hbars" id="brandbars"></div></div>
+        <div class="panel"><h2>Fiyat dağılımı</h2><p class="desc">Filtredeki modellerin 5.000 TL'lik fiyat aralıklarına dağılımı.</p><div id="hist"></div></div>
+      </div>
+      <div class="panel"><h2>Bir özellik fiyatı ne kadar artırıyor?</h2><p class="desc">Filtredeki modellerde özelliğe sahip olanlarla olmayanların medyan fiyatı.</p><div class="tablewrap"><table class="ftable" id="ftable"><thead><tr><th>Özellik</th><th class="r">Modellerde payı</th><th class="r">Medyan fiyat (var)</th><th class="r">Medyan fiyat (yok)</th><th class="r">Fark</th></tr></thead><tbody></tbody></table></div></div>
+    </section>
+    <section data-pane="oneriler" hidden>
+      <div class="reshead"><div class="count">Bütçeye göre öneriler</div><div class="note">Soldaki filtreler burada da geçerli. Her bütçede fiyat/performansı en yüksek üç model.</div></div>
+      <div id="brackets"></div>
+      <div class="reshead" style="margin-top:12px"><div class="count">Kullanım senaryosuna göre</div></div>
+      <div class="usecases" id="usecases"></div>
+    </section>
+    <section data-pane="yontem" hidden>
+      <div class="prose" id="method"></div>
+    </section>
+  </main>
+</div>
+
+<footer><div class="wrap" id="foot"></div></footer>
+
+<div class="tray" id="tray" hidden>
+  <div class="wrap">
+    <strong>Karşılaştır</strong>
+    <div class="items" id="trayItems"></div>
+    <button class="btn ghost" type="button" id="trayClear">Temizle</button>
+    <button class="btn primary" type="button" id="trayGo">Karşılaştır</button>
+  </div>
+</div>
+
+<dialog id="dlg" aria-labelledby="dlgTitle"><div class="modal" id="dlgBody"></div></dialog>
+
+<script>
+const DATA=/*__DATA__*/;
+const SNAP="31 Ekim 2026";
+const ALL=DATA.items;
+const fmt=n=>n==null?"—":Math.round(n).toLocaleString("tr-TR");
+const TL=n=>fmt(n)+" TL";
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const $=s=>document.querySelector(s);
+const byId=Object.fromEntries(ALL.map(r=>[r.id,r]));
+const median=a=>{if(!a.length)return null;const s=[...a].sort((x,y)=>x-y),m=s.length>>1;return s.length%2?s[m]:(s[m-1]+s[m])/2};
+const store={get(k){try{return JSON.parse(localStorage.getItem(k))}catch(e){return null}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
+
+const FEATS=[
+ ["hotWash","Sıcak su ile mop yıkama"],["hotDry","Sıcak hava kurutma"],["refill","Otomatik su dolumu"],["deterg","Otomatik deterjan"],
+ ["mopLift","Mop kaldırma (halı)"],["mopExt","Uzayan mop"],["mopDetach","Mop bırakma"],["brushExt","Uzayan yan fırça"],
+ ["cam","Kamera"],["carpet","Halı algılama"],["pet","Evcil hayvan modu"],["tangle","Dolaşmayan fırça"],["hepa","HEPA filtre"],
+ ["multimap","Çoklu kat haritası"],["map3d","3D harita"],["roomset","Oda bazlı ayar"],["voice","Sesli asistan"],["matter","Matter"],["uv","UV sterilizasyon"]];
+const GROUPS={
+ station:["Tam istasyon","Toz boşaltma","Mop yıkama","Sadece şarj"],
+ nav:["LiDAR","Kamera (vSLAM)","ToF / 3D","Jiroskop","Diğer","Rastgele"],
+ mop:["Çift döner","Rulo mop","Titreşimli","Basınçlı ped","Sabit ped","Yok"],
+ obst:["Yapay zekâ / kamera","3D / yapısal ışık","Temel sensör","Tampon"],
+ type:["Süpürge + Mop","Sadece süpürge","Sadece mop"],
+ feat:FEATS.map(f=>f[0])
+};
+const FEATNAME=Object.fromEntries(FEATS);
+const has=(r,k)=>k==="voice"?r.voice.length>0:!!r[k];
+
+const S={q:"",pmin:null,pmax:null,station:new Set(),nav:new Set(),mop:new Set(),obst:new Set(),type:new Set(),feat:new Set(),brand:new Set(),
+  minPa:0,minRt:0,minClimb:0,minSites:1,maxH:0,maxDb:0,pareto:false,sort:"fp",tsort:null,shown:48,tshown:80,cmp:[]};
+(()=>{const c=store.get("rs-cmp");if(Array.isArray(c))S.cmp=c.filter(id=>byId[id]).slice(0,4)})();
+
+function filterOut(skip){
+  return ALL.filter(r=>{
+    if(S.q){const q=S.q.toLocaleLowerCase("tr");if(!(r.name.toLocaleLowerCase("tr").includes(q)||r.brand.toLocaleLowerCase("tr").includes(q)))return false}
+    if(S.pmin!=null&&r.price<S.pmin)return false;
+    if(S.pmax!=null&&r.price>S.pmax)return false;
+    for(const g of ["station","nav","mop","obst","type"]) if(g!==skip&&S[g].size&&!S[g].has(r[g]))return false;
+    if(skip!=="brand"&&S.brand.size&&!S.brand.has(r.brand))return false;
+    if(skip!=="feat")for(const f of S.feat)if(!has(r,f))return false;
+    if(S.minPa&&!(r.pa>=S.minPa))return false;
+    if(S.minRt&&!(r.rt>=S.minRt))return false;
+    if(S.minClimb&&!(r.climb>=S.minClimb))return false;
+    if(S.minSites>1&&r.sites<S.minSites)return false;
+    if(S.maxH&&!(r.h&&r.h<=S.maxH))return false;
+    if(S.maxDb&&!(r.db&&r.db<=S.maxDb))return false;
+    if(S.pareto&&!r.pareto)return false;
+    return true});
+}
+const SORTS={fp:(a,b)=>b.fp-a.fp||b.score-a.score,score:(a,b)=>b.score-a.score||a.price-b.price,price:(a,b)=>a.price-b.price,"-price":(a,b)=>b.price-a.price,
+  pa:(a,b)=>(b.pa||0)-(a.pa||0),rt:(a,b)=>(b.rt||0)-(a.rt||0),sites:(a,b)=>b.sites-a.sites||a.price-b.price,tlp:(a,b)=>a.tlp-b.tlp};
+
+/* ---------- filters UI ---------- */
+function chipLabel(g,v){return g==="feat"?FEATNAME[v]:v}
+function renderChips(){
+  for(const g of Object.keys(GROUPS)){
+    const box=document.querySelector(`.chips[data-group="${g}"]`);
+    const base=filterOut(g);
+    box.innerHTML=GROUPS[g].map(v=>{
+      const n=g==="feat"?base.filter(r=>has(r,v)).length:base.filter(r=>r[g]===v).length;
+      const on=S[g].has(v);
+      if(!n&&!on)return "";
+      return `<button type="button" class="chip" aria-pressed="${on}" data-g="${g}" data-v="${esc(v)}">${esc(chipLabel(g,v))}<span class="c">${n}</span></button>`}).join("");
+  }
+  const base=filterOut("brand"),cnt={};
+  base.forEach(r=>cnt[r.brand]=(cnt[r.brand]||0)+1);
+  const allB=[...new Set(ALL.map(r=>r.brand))];
+  const bq=($("#bq").value||"").toLocaleLowerCase("tr");
+  allB.sort((a,b)=>(cnt[b]||0)-(cnt[a]||0)||a.localeCompare(b,"tr"));
+  $("#brands").innerHTML=allB.filter(b=>(cnt[b]||S.brand.has(b))&&(!bq||b.toLocaleLowerCase("tr").includes(bq))).map(b=>
+    `<label><input type="checkbox" data-brand="${esc(b)}" ${S.brand.has(b)?"checked":""}> ${esc(b)}<span class="c">${cnt[b]||0}</span></label>`).join("")||`<span class="note">Eşleşen marka yok</span>`;
+}
+document.addEventListener("click",e=>{
+  const c=e.target.closest(".chip[data-g]");
+  if(c){const g=c.dataset.g,v=c.dataset.v;S[g].has(v)?S[g].delete(v):S[g].add(v);S.shown=48;S.tshown=80;update();return}
+  const cl=e.target.closest("[data-clear]");
+  if(cl){S[cl.dataset.clear].clear();update();return}
+});
+$("#brands").addEventListener("change",e=>{const b=e.target.dataset.brand;if(!b)return;e.target.checked?S.brand.add(b):S.brand.delete(b);S.shown=48;update()});
+$("#bq").addEventListener("input",renderChips);
+let qt;$("#q").addEventListener("input",e=>{clearTimeout(qt);qt=setTimeout(()=>{S.q=e.target.value.trim();S.shown=48;update()},120)});
+for(const id of ["minPa","minRt","minClimb","minSites","maxH","maxDb"])$("#"+id).addEventListener("change",e=>{S[id]=+e.target.value;S.shown=48;update()});
+$("#sort").addEventListener("change",e=>{S.sort=e.target.value;update()});
+$("#pareto").addEventListener("change",e=>{S.pareto=e.target.checked;update()});
+for(const id of ["pmin","pmax"])$("#"+id).addEventListener("change",e=>{const v=e.target.value.trim();S[id]=v===""?null:+v;S.shown=48;update()});
+const PQ=[["≤ 10 bin",null,10000],["10–20 bin",10000,20000],["20–35 bin",20000,35000],["35–50 bin",35000,50000],["50 bin +",50000,null]];
+$("#pquick").innerHTML=PQ.map((p,i)=>`<button type="button" data-pq="${i}">${p[0]}</button>`).join("");
+$("#pquick").addEventListener("click",e=>{const b=e.target.closest("[data-pq]");if(!b)return;const p=PQ[+b.dataset.pq];S.pmin=p[1];S.pmax=p[2];$("#pmin").value=p[1]??"";$("#pmax").value=p[2]??"";S.shown=48;update()});
+$("#reset").addEventListener("click",()=>{
+  Object.assign(S,{q:"",pmin:null,pmax:null,minPa:0,minRt:0,minClimb:0,minSites:1,maxH:0,maxDb:0,pareto:false,shown:48,tshown:80});
+  ["station","nav","mop","obst","type","feat","brand"].forEach(g=>S[g].clear());
+  ["q","pmin","pmax","bq"].forEach(i=>$("#"+i).value="");
+  ["minPa","minRt","minClimb","maxH","maxDb"].forEach(i=>$("#"+i).value="0");$("#minSites").value="1";$("#pareto").checked=false;
+  update()});
+const fl=$("#filters");let scrim=null;
+function openF(){fl.classList.add("open");scrim=document.createElement("div");scrim.className="scrim";scrim.onclick=closeF;document.body.appendChild(scrim)}
+function closeF(){fl.classList.remove("open");scrim&&scrim.remove();scrim=null}
+$("#openFilters").onclick=openF;$("#closeFilters").onclick=closeF;
+
+function activeList(){
+  const a=[];
+  if(S.q)a.push(["q",`"${S.q}"`]);
+  if(S.pmin!=null||S.pmax!=null)a.push(["price",`${S.pmin!=null?fmt(S.pmin):"0"} – ${S.pmax!=null?fmt(S.pmax):"∞"} TL`]);
+  for(const g of ["station","nav","mop","obst","type","feat","brand"])for(const v of S[g])a.push([g+"|"+v,g==="feat"?FEATNAME[v]:v]);
+  const th={minPa:v=>`≥ ${fmt(v)} Pa`,minRt:v=>`≥ ${v} dk`,minClimb:v=>`eşik ≥ ${v} mm`,maxH:v=>`yükseklik ≤ ${v} mm`,maxDb:v=>`≤ ${v} dB`};
+  for(const k in th)if(S[k])a.push([k,th[k](S[k])]);
+  if(S.minSites>1)a.push(["minSites",`${S.minSites}+ mağaza`]);
+  if(S.pareto)a.push(["pareto","Fiyatına göre en iyi"]);
+  return a;
+}
+$("#activef").addEventListener("click",e=>{
+  const b=e.target.closest("[data-af]");if(!b)return;const k=b.dataset.af;
+  if(k==="q"){S.q="";$("#q").value=""}
+  else if(k==="price"){S.pmin=S.pmax=null;$("#pmin").value=$("#pmax").value=""}
+  else if(k.includes("|")){const[g,v]=k.split("|");S[g].delete(v)}
+  else if(k==="pareto"){S.pareto=false;$("#pareto").checked=false}
+  else{S[k]=k==="minSites"?1:0;$("#"+k).value=String(S[k])}
+  update()});
+
+/* ---------- cards ---------- */
+function specChips(r){
+  const c=[];
+  if(r.pa)c.push([`${fmt(r.pa)} Pa`,r.pa>=15000]);
+  c.push([r.nav,r.nav==="LiDAR"]);
+  c.push([r.station,r.station==="Tam istasyon"]);
+  if(r.mop!=="Yok")c.push([r.mop+" mop",r.mop==="Çift döner"||r.mop==="Rulo mop"]);
+  if(r.obst==="Yapay zekâ / kamera")c.push(["Yapay zekâ engel",true]);
+  if(r.rt)c.push([`${r.rt} dk`,r.rt>=180]);
+  if(r.hotWash)c.push(["Sıcak su",true]);
+  if(r.mopLift)c.push(["Mop kaldırma",false]);
+  return c.map(([t,h])=>`<span class="spec${h?" hi":""}">${esc(t)}</span>`).join("");
+}
+function card(r){
+  const inCmp=S.cmp.includes(r.id);
+  return `<article class="card">
+  <div class="top"><div style="min-width:0"><div class="brand">${esc(r.brand)}</div><h4><button type="button" data-open="${r.id}">${esc(r.model||r.name)}</button></h4></div>
+  ${r.pareto?`<span class="badge par" title="Bu fiyata veya altında daha yüksek puanlı model yok">Fiyatına göre en iyi</span>`:r.sites<=1?`<span class="badge one" title="Fiyat tek mağazadan">Tek mağaza</span>`:""}</div>
+  <div class="price-row"><span class="price">${TL(r.price)}</span><span class="sites">${r.sites} mağaza</span></div>
+  <div class="meters">
+    <div class="meter"><div class="lab">Özellik puanı <b>${r.score.toFixed(0)}</b></div><div class="bar"><i style="width:${r.score}%"></i></div></div>
+    <div class="meter"><div class="lab">F/P <b>${r.fp}</b></div><div class="bar fp"><i style="width:${r.fp}%"></i></div></div>
+  </div>
+  <div class="specs">${specChips(r)}</div>
+  <div class="foot"><label class="cmp"><input type="checkbox" data-cmp="${r.id}" ${inCmp?"checked":""}> Karşılaştır</label><button class="btn ghost" type="button" data-open="${r.id}">Ayrıntı →</button></div>
+  </article>`;
+}
+document.addEventListener("click",e=>{const o=e.target.closest("[data-open]");if(o){openDetail(o.dataset.open)}});
+document.addEventListener("change",e=>{const id=e.target.dataset&&e.target.dataset.cmp;if(!id)return;toggleCmp(id,e.target.checked)});
+function toggleCmp(id,on){
+  if(on&&!S.cmp.includes(id)){if(S.cmp.length>=4){S.cmp.shift()}S.cmp.push(id)}
+  if(!on)S.cmp=S.cmp.filter(x=>x!==id);
+  store.set("rs-cmp",S.cmp);renderTray();
+  document.querySelectorAll(`[data-cmp]`).forEach(cb=>cb.checked=S.cmp.includes(cb.dataset.cmp));
+}
+function renderTray(){
+  $("#tray").hidden=!S.cmp.length;
+  $("#trayItems").innerHTML=S.cmp.map(id=>`<span class="it">${esc(byId[id].name)}<button type="button" aria-label="${esc(byId[id].name)} karşılaştırmadan çıkar" data-rm="${id}">×</button></span>`).join("")+(S.cmp.length<2?`<span class="note">En az 2 model seçin (en fazla 4)</span>`:"");
+  $("#trayGo").disabled=S.cmp.length<2;
+}
+$("#trayItems").addEventListener("click",e=>{const b=e.target.closest("[data-rm]");if(b)toggleCmp(b.dataset.rm,false)});
+$("#trayClear").onclick=()=>{S.cmp=[];store.set("rs-cmp",S.cmp);renderTray();document.querySelectorAll("[data-cmp]").forEach(cb=>cb.checked=false)};
+$("#trayGo").onclick=openCompare;
+$("#moreBtn").onclick=()=>{S.shown+=48;renderList(cur)};
+$("#moreTbl").onclick=()=>{S.tshown+=80;renderTable(cur)};
+
+let cur=[];
+function renderList(rows){
+  const n=rows.length;
+  $("#count1").innerHTML=`${n} model<small>/ ${ALL.length} model içinden</small>`;
+  $("#sortnote").textContent="Sıralama: "+$("#sort").selectedOptions[0].text;
+  const af=activeList();
+  $("#activef").innerHTML=af.map(([k,t])=>`<button type="button" data-af="${esc(k)}" aria-label="${esc(t)} filtresini kaldır">${esc(t)} ×</button>`).join("");
+  $("#fcount").textContent=af.length?`(${af.length})`:"";
+  $("#cards").innerHTML=n?rows.slice(0,S.shown).map(card).join(""):`<div class="empty" style="grid-column:1/-1">Bu filtrelere uyan model yok. Bir filtreyi kaldırmayı ya da fiyat aralığını genişletmeyi deneyin.</div>`;
+  $("#moreBtn").hidden=n<=S.shown;
+  $("#moreBtn").textContent=`Daha fazla göster (${Math.max(0,n-S.shown)} model kaldı)`;
+}
+
+/* ---------- table ---------- */
+const yn=b=>b?`<span class="yes">✓</span>`:`<span class="no">—</span>`;
+const COLS=[
+ ["name","Model",r=>`${esc(r.model||r.name)}<small>${esc(r.brand)}</small>`,"model",(a,b)=>a.name.localeCompare(b.name,"tr")],
+ ["price","Fiyat",r=>fmt(r.price),"r num",(a,b)=>a.price-b.price],
+ ["score","Puan",r=>r.score.toFixed(0),"r num",(a,b)=>a.score-b.score],
+ ["fp","F/P",r=>r.fp,"r num",(a,b)=>a.fp-b.fp],
+ ["pa","Emiş (Pa)",r=>fmt(r.pa),"r num",(a,b)=>(a.pa||0)-(b.pa||0)],
+ ["nav","Navigasyon",r=>esc(r.nav),"",(a,b)=>a.nav.localeCompare(b.nav,"tr")],
+ ["obst","Engel",r=>esc(r.obst),"",(a,b)=>a.obst.localeCompare(b.obst,"tr")],
+ ["mop","Mop",r=>esc(r.mop),"",(a,b)=>a.mop.localeCompare(b.mop,"tr")],
+ ["station","İstasyon",r=>esc(r.station),"",(a,b)=>a.station.localeCompare(b.station,"tr")],
+ ["hotWash","Sıcak su",r=>yn(r.hotWash),"",(a,b)=>a.hotWash-b.hotWash],
+ ["mopLift","Mop kaldırma",r=>yn(r.mopLift),"",(a,b)=>a.mopLift-b.mopLift],
+ ["rt","Süre (dk)",r=>fmt(r.rt),"r num",(a,b)=>(a.rt||0)-(b.rt||0)],
+ ["mah","Pil (mAh)",r=>fmt(r.mah),"r num",(a,b)=>(a.mah||0)-(b.mah||0)],
+ ["climb","Eşik (mm)",r=>fmt(r.climb),"r num",(a,b)=>(a.climb||0)-(b.climb||0)],
+ ["h","Yükseklik (mm)",r=>r.h??"—","r num",(a,b)=>(a.h||999)-(b.h||999)],
+ ["db","Gürültü (dB)",r=>fmt(r.db),"r num",(a,b)=>(a.db||999)-(b.db||999)],
+ ["dust","Toz haznesi (ml)",r=>fmt(r.dust),"r num",(a,b)=>(a.dust||0)-(b.dust||0)],
+ ["sites","Mağaza",r=>r.sites,"r num",(a,b)=>a.sites-b.sites]];
+$("#tbl thead").addEventListener("click",e=>{const b=e.target.closest("[data-col]");if(!b)return;const k=b.dataset.col;
+  S.tsort=S.tsort&&S.tsort[0]===k?[k,-S.tsort[1]]:[k,(k==="name"||k==="price"||k==="h"||k==="db")?1:-1];renderTable(cur)});
+function renderTable(rows){
+  $("#count2").innerHTML=`${rows.length} model<small>/ ${ALL.length} model içinden</small>`;
+  let r2=rows;
+  if(S.tsort){const c=COLS.find(c=>c[0]===S.tsort[0]);r2=[...rows].sort((a,b)=>c[4](a,b)*S.tsort[1])}
+  $("#tbl thead").innerHTML="<tr>"+COLS.map(c=>{const s=S.tsort&&S.tsort[0]===c[0]?(S.tsort[1]>0?"ascending":"descending"):null;
+    return `<th class="${c[3].includes("r")?"r":""}" ${s?`aria-sort="${s}"`:""}><button type="button" data-col="${c[0]}">${c[1]}${s?(s==="ascending"?" ↑":" ↓"):""}</button></th>`}).join("")+"</tr>";
+  $("#tbl tbody").innerHTML=r2.slice(0,S.tshown).map(r=>`<tr data-open="${r.id}" tabindex="0">`+COLS.map(c=>`<td class="${c[3]}">${c[2](r)}</td>`).join("")+"</tr>").join("");
+  $("#moreTbl").hidden=r2.length<=S.tshown;
+}
+$("#tbl tbody").addEventListener("keydown",e=>{if(e.key==="Enter"){const t=e.target.closest("[data-open]");t&&openDetail(t.dataset.open)}});
+
+/* ---------- analysis ---------- */
+function renderScatter(rows){
+  const box=$("#scatter");const W=860,H=440,m={l:48,r:18,t:14,b:42};
+  const xs=ALL.map(r=>r.price),xmin=5000,xmax=Math.max(...xs)*1.05;
+  const lx=v=>m.l+(Math.log(v)-Math.log(xmin))/(Math.log(xmax)-Math.log(xmin))*(W-m.l-m.r);
+  const ly=v=>m.t+(1-v/100)*(H-m.t-m.b);
+  const vis=new Set(rows.map(r=>r.id));
+  const ticks=[5000,10000,20000,50000,100000,200000].filter(t=>t<=xmax);
+  let s=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Fiyat ve özellik puanı dağılımı">`;
+  for(let y=0;y<=100;y+=20)s+=`<line x1="${m.l}" x2="${W-m.r}" y1="${ly(y)}" y2="${ly(y)}" stroke="var(--line-soft)"/><text x="${m.l-8}" y="${ly(y)+4}" text-anchor="end" font-size="11" fill="var(--fg3)" font-family="var(--f-mono)">${y}</text>`;
+  ticks.forEach(t=>s+=`<line x1="${lx(t)}" x2="${lx(t)}" y1="${m.t}" y2="${H-m.b}" stroke="var(--line-soft)"/><text x="${lx(t)}" y="${H-m.b+16}" text-anchor="middle" font-size="11" fill="var(--fg3)" font-family="var(--f-mono)">${t>=1000?(t/1000)+" bin":t}</text>`);
+  s+=`<text x="${(W+m.l)/2}" y="${H-6}" text-anchor="middle" font-size="12" fill="var(--fg2)">Fiyat (TL, logaritmik)</text><text transform="translate(13 ${(H-m.b)/2}) rotate(-90)" text-anchor="middle" font-size="12" fill="var(--fg2)">Özellik puanı</text>`;
+  const a=DATA.meta.a,b=DATA.meta.b;const ey=v=>Math.max(0,Math.min(100,a+b*Math.log(v)));
+  s+=`<path d="M${lx(xmin)} ${ly(ey(xmin))} L${lx(xmax)} ${ly(ey(xmax))}" stroke="var(--fg3)" stroke-width="1.5" stroke-dasharray="5 4" fill="none"/>`;
+  const par=ALL.filter(r=>r.pareto).sort((p,q)=>p.price-q.price);
+  let d="";par.forEach((r,i)=>{d+=(i?` L${lx(r.price)} ${ly(par[i-1].score)} L`:"M")+`${lx(r.price)} ${ly(r.score)}`});
+  s+=`<path d="${d}" stroke="var(--good)" stroke-width="2" fill="none"/>`;
+  const order=[...ALL].sort((p,q)=>vis.has(p.id)-vis.has(q.id));
+  order.forEach(r=>{const v=vis.has(r.id);s+=`<circle cx="${lx(r.price).toFixed(1)}" cy="${ly(r.score).toFixed(1)}" r="${v?4.5:3.5}" fill="${v?"var(--accent)":"var(--dot-muted)"}" stroke="var(--surface)" stroke-width="1.5"/>`});
+  s+=`<circle id="hov" r="7" fill="none" stroke="var(--fg)" stroke-width="2" style="display:none"/></svg><div class="tip" id="tip" hidden></div>`;
+  box.innerHTML=s;
+  const svg=box.querySelector("svg"),tip=box.querySelector("#tip"),hov=box.querySelector("#hov");
+  const pts=ALL.map(r=>({r,x:lx(r.price),y:ly(r.score)}));
+  function nearest(ev){const bb=svg.getBoundingClientRect(),k=W/bb.width;const x=(ev.clientX-bb.left)*k,y=(ev.clientY-bb.top)*k;
+    let best=null,bd=1e9;for(const p of pts){const dd=(p.x-x)**2+(p.y-y)**2;const pr=vis.has(p.r.id)?0:60;if(dd+pr<bd){bd=dd+pr;best=p}}return bd<(18*k)**2+60?best:null}
+  svg.addEventListener("mousemove",ev=>{const p=nearest(ev);if(!p){tip.hidden=true;hov.style.display="none";svg.style.cursor="default";return}
+    svg.style.cursor="pointer";hov.setAttribute("cx",p.x);hov.setAttribute("cy",p.y);hov.style.display="";
+    const bb=svg.getBoundingClientRect(),k=bb.width/W;
+    tip.innerHTML=`<b>${esc(p.r.name)}</b>${TL(p.r.price)} · puan ${p.r.score.toFixed(0)} · F/P ${p.r.fp}<br>${esc(p.r.station)} · ${esc(p.r.nav)}`;tip.hidden=false;
+    const tx=p.x*k,ty=p.y*k;tip.style.left=Math.min(tx+12,bb.width-250)+"px";tip.style.top=Math.max(0,ty-60)+"px"});
+  svg.addEventListener("mouseleave",()=>{tip.hidden=true;hov.style.display="none"});
+  svg.addEventListener("click",ev=>{const p=nearest(ev);p&&openDetail(p.r.id)});
+}
+function renderBrands(rows){
+  const g={};rows.forEach(r=>(g[r.brand]=g[r.brand]||[]).push(r));
+  const arr=Object.entries(g).filter(([,v])=>v.length>=3).map(([b,v])=>({b,n:v.length,med:median(v.map(r=>r.price)),sc:v.reduce((s,r)=>s+r.score,0)/v.length})).sort((p,q)=>q.med-p.med);
+  const mx=Math.max(...arr.map(a=>a.med),1);
+  $("#brandbars").innerHTML=arr.length?arr.map(a=>`<div class="hbar" title="${esc(a.b)}: ${a.n} model, medyan ${TL(a.med)}, ortalama puan ${a.sc.toFixed(0)}"><span class="nm">${esc(a.b)}</span><span class="track"><i style="width:${a.med/mx*100}%"></i></span><span class="val">${fmt(a.med/1000)} bin · ${a.n} · ${a.sc.toFixed(0)}p</span></div>`).join(""):`<p class="note">Filtrede 3+ modeli olan marka yok.</p>`;
+}
+function renderHist(rows){
+  const step=5000,cap=100000;const nb=cap/step+1;const c=new Array(nb).fill(0);
+  rows.forEach(r=>c[Math.min(nb-1,Math.floor(r.price/step))]++);
+  const mx=Math.max(...c,1);
+  $("#hist").innerHTML=`<div class="hist">${c.map((v,i)=>`<div style="height:${v/mx*100}%" title="${i===nb-1?"100 bin TL ve üzeri":fmt(i*step)+" – "+fmt((i+1)*step)+" TL"}: ${v} model"></div>`).join("")}</div><div class="histx"><span>0</span><span>25 bin</span><span>50 bin</span><span>75 bin</span><span>100 bin+</span></div>`;
+}
+function renderFeatTable(rows){
+  const F=[["Tam istasyon",r=>r.station==="Tam istasyon"],["LiDAR navigasyon",r=>r.nav==="LiDAR"],["Yapay zekâ / kamera ile engel algılama",r=>r.obst==="Yapay zekâ / kamera"],["Çift döner veya rulo mop",r=>r.mop==="Çift döner"||r.mop==="Rulo mop"],["Sıcak su ile mop yıkama",r=>r.hotWash],["Mop kaldırma",r=>r.mopLift],["Uzayan mop",r=>r.mopExt],["Uzayan yan fırça",r=>r.brushExt],["Emiş ≥ 15.000 Pa",r=>r.pa>=15000],["Eşik ≥ 40 mm",r=>r.climb>=40]];
+  $("#ftable tbody").innerHTML=F.map(([n,f])=>{const y=rows.filter(f),no=rows.filter(r=>!f(r));const my=median(y.map(r=>r.price)),mn=median(no.map(r=>r.price));
+    const pct=rows.length?Math.round(y.length/rows.length*100):0;const diff=my!=null&&mn!=null?my-mn:null;
+    return `<tr><td>${n}</td><td class="r num">%${pct}</td><td class="r num">${my!=null?TL(my):"—"}</td><td class="r num">${mn!=null?TL(mn):"—"}</td><td class="r num">${diff!=null?(diff>=0?"+":"")+TL(diff):"—"}</td></tr>`}).join("");
+}
+
+/* ---------- picks ---------- */
+function renderPicks(rows){
+  const B=[["10.000 TL altı",0,10000],["10.000 – 20.000 TL",10000,20000],["20.000 – 35.000 TL",20000,35000],["35.000 – 50.000 TL",35000,50000],["50.000 TL ve üzeri",50000,1e12]];
+  $("#brackets").innerHTML=B.map(([t,lo,hi])=>{const b=rows.filter(r=>r.price>=lo&&r.price<hi&&r.sites>=2).sort(SORTS.fp).slice(0,3);
+    const tot=rows.filter(r=>r.price>=lo&&r.price<hi).length;
+    return `<div class="bracket"><h3>${t}<small>${tot} model</small></h3>${b.length?`<div class="picks">${b.map((r,i)=>pick(r,i===0?"En iyi fiyat/performans":(i+1)+". sıra")).join("")}</div>`:`<p class="note">Bu bütçede en az 2 mağazada satılan model yok.</p>`}</div>`}).join("");
+  const U=[
+   ["Evcil hayvan sahipleri","Dolaşmayan fırça, kamera ile engel algılama ve en az 8.000 Pa emiş",r=>r.tangle&&r.obst!=="Tampon"&&r.pa>=8000],
+   ["Halılı ev","Mop kaldırma veya mop bırakma, halı algılama, en az 10.000 Pa",r=>(r.mopLift||r.mopDetach)&&r.carpet&&r.pa>=10000],
+   ["En az bakım","Tam istasyon, sıcak su ile yıkama ve sıcak hava kurutma",r=>r.station==="Tam istasyon"&&r.hotWash&&r.hotDry],
+   ["Küçük bütçe, akıllı harita","15.000 TL altı, LiDAR navigasyon",r=>r.price<15000&&r.nav==="LiDAR"],
+   ["Mobilya altı (alçak gövde)","Gövde yüksekliği 90 mm veya daha az",r=>r.h&&r.h<=90],
+   ["Eşikli ev","En az 30 mm eşik aşabilen modeller",r=>r.climb>=30],
+   ["Sessiz çalışma","Gürültü 62 dB veya altı",r=>r.db&&r.db<=62],
+   ["Büyük ev","En az 180 dk çalışma ve LiDAR",r=>r.rt>=180&&r.nav==="LiDAR"]];
+  $("#usecases").innerHTML=U.map(([t,d,f])=>{const c=rows.filter(r=>f(r)&&r.sites>=2).sort(SORTS.fp);const r=c[0];
+    return `<div class="panel" style="margin:0"><h2 style="font-size:16px">${t}</h2><p class="desc" style="margin-bottom:8px">${d} · ${c.length} uygun model</p>${r?pick(r,"Önerilen")+(c[1]?`<p class="note" style="margin:8px 0 0">Alternatif: <button type="button" class="btn ghost" style="padding:0" data-open="${c[1].id}">${esc(c[1].name)}</button> · ${TL(c[1].price)}</p>`:""):`<p class="note">Filtrede uygun model yok.</p>`}</div>`}).join("");
+}
+function pick(r,rk){return `<button type="button" class="pick" data-open="${r.id}"><span class="rk">${rk}</span><span class="nm">${esc(r.name)}</span>
+ <span class="ln"><span class="num" style="color:var(--fg);font-size:15px">${TL(r.price)}</span><span>${r.sites} mağaza</span></span>
+ <span class="ln"><span>Puan <b class="num">${r.score.toFixed(0)}</b> · F/P <b class="num">${r.fp}</b></span><span>${esc(r.station)}</span></span>
+ <span class="specs">${specChips(r)}</span></button>`}
+
+/* ---------- detail ---------- */
+const SCMAX={emis:["Emiş gücü",15],nav:["Navigasyon",15],engel:["Engel algılama",10],mop:["Mop sistemi",15],istasyon:["İstasyon",20],pil:["Pil / süre",8],akilli:["Akıllı özellikler",7],esik:["Eşik aşma",5],ekstra:["Ekstralar",5]};
+const u=(v,s)=>v==null||v===""||v===0?"—":`${typeof v==="number"?String(v).replace(".",","):v} ${s}`;
+function kv(pairs){return `<dl class="kv">${pairs.map(([k,v])=>`<dt>${k}</dt><dd>${v}</dd>`).join("")}</dl>`}
+const ynT=b=>b?"Var":"Yok";
+function openDetail(id){
+  const r=byId[id];if(!r)return;
+  const q=encodeURIComponent(r.name.replace(/\(.*?\)/g,"").trim());
+  const sellers=r.sellers.length?r.sellers.map(([s,p])=>`<div class="seller"><span>${esc(s)}</span><span class="num">${TL(p)}</span></div>`).join(""):`<p class="note">Mağaza listesi alınamadı.</p>`;
+  $("#dlgBody").innerHTML=`<div class="mhead"><div><div class="brand" style="font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--fg3);font-weight:600">${esc(r.brand)} · ${esc(r.type)}</div><h2 id="dlgTitle">${esc(r.name)}</h2>
+   <div style="display:flex;gap:14px;align-items:baseline;flex-wrap:wrap;margin-top:6px"><span class="price">${TL(r.price)}</span><span class="sites">en düşük fiyat · ${r.sites} mağaza</span>${r.pareto?`<span class="badge par">Fiyatına göre en iyi</span>`:""}</div></div>
+   <button class="btn" type="button" id="dlgClose" aria-label="Kapat">✕</button></div>
+  <div class="mbody">
+   <div class="mgrid">
+    <div><h3>Puan dağılımı · toplam ${r.score.toFixed(0)}/100 · F/P ${r.fp}/100</h3><div class="sbars">${Object.entries(SCMAX).map(([k,[n,mx]])=>`<div class="sbar"><span>${n}</span><span class="bar"><i style="width:${(r.sc[k]||0)/mx*100}%"></i></span><span class="val">${(r.sc[k]||0).toString().replace(".",",")}/${mx}</span></div>`).join("")}</div>
+     <p class="note" style="margin:10px 0 0">Bu fiyattaki modellerin ortalama beklenen puanı: <b class="num">${r.exp.toFixed(0)}</b>. Puan başına <b class="num">${TL(r.tlp)}</b>.</p></div>
+    <div><h3>Mağaza fiyatları</h3><div class="sellers">${sellers}</div>
+     <div class="links" style="margin-top:10px"><a href="${esc(r.url)}#fiyatlar" target="_blank" rel="noopener">Epey'de tüm fiyatlar</a><a href="https://www.akakce.com/arama/?q=${q}" target="_blank" rel="noopener">Akakçe'de ara</a><a href="https://www.cimri.com/arama?q=${q}" target="_blank" rel="noopener">Cimri'de ara</a></div></div>
+   </div>
+   <div class="mgrid">
+    <div><h3>Temizlik ve navigasyon</h3>${kv([["Emiş gücü",u(r.pa&&fmt(r.pa),"Pa")],["Navigasyon",esc(r.nav)+(r.navRaw?` <span style="color:var(--fg3)">(${esc(r.navRaw)})</span>`:"")],["Engel algılama",esc(r.obst)],["Kamera",ynT(r.cam)],["Mop tipi",esc(r.mop)],["Mop kaldırma",r.mopLift?(r.mopLiftMm?u(r.mopLiftMm,"mm"):"Var"):"Yok"],["Uzayan mop",ynT(r.mopExt)],["Mop bırakma",ynT(r.mopDetach)],["Uzayan yan fırça",ynT(r.brushExt)],["Yan fırça sayısı",r.sides??"—"],["Halı algılama",ynT(r.carpet)],["Dolaşmayan fırça",ynT(r.tangle)],["HEPA filtre",ynT(r.hepa)],["Eşik aşma",u(r.climb,"mm")]])}</div>
+    <div><h3>İstasyon</h3>${kv([["İstasyon tipi",esc(r.station)],["Toz boşaltma",r.selfEmpty?"Var":r.selfEmptyOpt?"Opsiyonel":"Yok"],["Mop yıkama",ynT(r.mopWash)],["Sıcak su ile yıkama",ynT(r.hotWash)],["Sıcak hava kurutma",ynT(r.hotDry)],["Otomatik su dolumu",ynT(r.refill)],["Otomatik deterjan",ynT(r.deterg)],["İstasyon toz torbası",u(r.stDust,"L")],["Temiz su tankı",u(r.stClean,"L")],["Kirli su tankı",u(r.stDirty,"L")]])}
+     <h3 style="margin-top:16px">Pil, gövde ve bağlantı</h3>${kv([["Çalışma süresi",u(r.rt,"dk")],["Pil",u(r.mah&&fmt(r.mah),"mAh")],["Şarj süresi",u(r.ch,"saat")],["Gürültü",u(r.db,"dB")],["Güç",u(r.w,"W")],["Toz haznesi",u(r.dust,"ml")],["Su haznesi",u(r.water,"ml")],["Yükseklik",u(r.h,"mm")],["Ağırlık",u(r.kg,"kg")],["Wi-Fi / uygulama",ynT(r.wifi)],["Sesli asistan",r.voice.length?esc(r.voice.join(", ")):"—"],["Matter",ynT(r.matter)],["Harita",r.maps?r.maps+" kat":(r.multimap?"Çoklu":"—")],["Renk",esc(r.color||"—")]])}</div>
+   </div>
+   ${r.extras.length?`<div><h3>Üreticinin listelediği diğer özellikler</h3><div class="extras">${r.extras.map(x=>`<span class="spec">${esc(x)}</span>`).join("")}</div></div>`:""}
+   <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center"><label class="cmp"><input type="checkbox" data-cmp="${r.id}" ${S.cmp.includes(r.id)?"checked":""}> Karşılaştırmaya ekle</label><span class="note">Fiyatlar ${SNAP} tarihli anlık görüntüdür; satın almadan önce mağazada doğrulayın.</span></div>
+  </div>`;
+  const dlg=$("#dlg");if(!dlg.open)dlg.showModal();$("#dlgClose").onclick=()=>dlg.close();
+  $("#dlgBody").scrollTop=0;
+}
+$("#dlg").addEventListener("click",e=>{if(e.target.id==="dlg")e.target.close()});
+
+function openCompare(){
+  const rs=S.cmp.map(id=>byId[id]);if(rs.length<2)return;
+  const ROWS=[
+   ["Fiyat",r=>r.price,v=>TL(v),"min"],["Mağaza sayısı",r=>r.sites,v=>v,"max"],["Özellik puanı",r=>r.score,v=>v.toFixed(0),"max"],["F/P endeksi",r=>r.fp,v=>v,"max"],["Puan başına TL",r=>r.tlp,v=>TL(v),"min"],
+   ["Emiş gücü (Pa)",r=>r.pa,v=>fmt(v),"max"],["Navigasyon",r=>r.nav],["Engel algılama",r=>r.obst],["Mop tipi",r=>r.mop],["Mop kaldırma",r=>r.mopLift,ynT,"bool"],["Uzayan mop",r=>r.mopExt,ynT,"bool"],["Uzayan yan fırça",r=>r.brushExt,ynT,"bool"],
+   ["İstasyon",r=>r.station],["Sıcak su yıkama",r=>r.hotWash,ynT,"bool"],["Sıcak hava kurutma",r=>r.hotDry,ynT,"bool"],["Otomatik su dolumu",r=>r.refill,ynT,"bool"],["Otomatik deterjan",r=>r.deterg,ynT,"bool"],
+   ["Çalışma süresi (dk)",r=>r.rt,v=>fmt(v),"max"],["Pil (mAh)",r=>r.mah,v=>fmt(v),"max"],["Eşik aşma (mm)",r=>r.climb,v=>fmt(v),"max"],["Yükseklik (mm)",r=>r.h,v=>v,"min"],["Gürültü (dB)",r=>r.db,v=>v,"min"],["Toz haznesi (ml)",r=>r.dust,v=>fmt(v),"max"],["Su haznesi (ml)",r=>r.water,v=>fmt(v),"max"],
+   ["Kamera",r=>r.cam,ynT,"bool"],["Halı algılama",r=>r.carpet,ynT,"bool"],["HEPA",r=>r.hepa,ynT,"bool"],["Sesli asistan",r=>r.voice.join(", ")||null],["Matter",r=>r.matter,ynT,"bool"]];
+  const body=ROWS.map(([n,g,f,mode])=>{const vals=rs.map(g);let best=null;
+    if(mode==="min"||mode==="max"){const nums=vals.filter(v=>v!=null);if(nums.length>1){best=mode==="min"?Math.min(...nums):Math.max(...nums);if(nums.every(v=>v===best))best=null}}
+    if(mode==="bool"&&vals.some(v=>v)&&!vals.every(v=>v))best=true;
+    return `<tr><td>${n}</td>${vals.map(v=>`<td class="${best!=null&&v===best?"best":""} ${typeof v==="number"?"num":""}">${v==null||v===""?"—":esc(f?f(v):v)}</td>`).join("")}</tr>`}).join("");
+  $("#dlgBody").innerHTML=`<div class="mhead"><div><h2 id="dlgTitle">Karşılaştırma</h2><p class="note" style="margin:4px 0 0">Yeşil hücreler o satırdaki en iyi değeri gösterir.</p></div><button class="btn" type="button" id="dlgClose" aria-label="Kapat">✕</button></div>
+   <div class="mbody"><div class="tablewrap"><table class="cmpt"><thead><tr><th></th>${rs.map(r=>`<th><button type="button" class="btn ghost" style="padding:0;font-weight:600;color:var(--fg);text-align:left" data-open="${r.id}">${esc(r.name)}</button></th>`).join("")}</tr></thead><tbody>${body}</tbody></table></div></div>`;
+  const dlg=$("#dlg");if(!dlg.open)dlg.showModal();$("#dlgClose").onclick=()=>dlg.close();
+}
+
+/* ---------- method & header ---------- */
+function renderStatic(){
+  const prices=ALL.map(r=>r.price);
+  $("#stats").innerHTML=[["Model",ALL.length],["Marka",new Set(ALL.map(r=>r.brand)).size],["Medyan fiyat",fmt(median(prices))+" TL"],["Fiyat aralığı",fmt(Math.min(...prices)/1000)+"–"+fmt(Math.max(...prices)/1000)+" bin"]]
+    .map(([k,v])=>`<div class="stat"><div class="k">${k}</div><div class="v">${v}</div></div>`).join("");
+  $("#method").innerHTML=`<h2>Veri ve puanlama yöntemi</h2>
+  <p>Liste, ${SNAP} tarihinde fiyat karşılaştırma sitesi epey.com'da en az bir Türk mağazasında (Hepsiburada, Trendyol, Amazon, n11, PTT AVM, MediaMarkt, Teknosa, Vatan ve diğerleri) fiyatı bulunan ${ALL.length} robot süpürgeden oluşur. Cam temizleme robotları ve fiyatı olmayan eski modeller dahil değildir. Gösterilen fiyat o gün bulunan en düşük fiyattır. Fiyatlar her gün değişir; satın almadan önce mağazada kontrol edin.</p>
+  <h3>Özellik puanı (0–100)</h3>
+  <p>Her model, teknik özelliklerinden hesaplanan bir puan alır. Puan sadece kâğıt üzerindeki özellikleri ölçer; gerçek temizlik performansı, yazılım kalitesi ve servis ağı puana dahil değildir.</p>
+  <div class="tablewrap" style="margin:10px 0"><table><thead><tr><th>Bileşen</th><th class="r">Maks.</th><th>Nasıl hesaplanır</th></tr></thead><tbody>
+   <tr><td>Emiş gücü</td><td class="r num">15</td><td style="white-space:normal">1.500 Pa'da 0, 30.000 Pa'da tam puan; logaritmik ölçek</td></tr>
+   <tr><td>Navigasyon</td><td class="r num">15</td><td style="white-space:normal">LiDAR 15 · kamera (vSLAM) 10 · ToF 9 · diğer harita 6 · jiroskop 4 · rastgele 0</td></tr>
+   <tr><td>Engel algılama</td><td class="r num">10</td><td style="white-space:normal">Kamera ve yapay zekâ ile nesne tanıma 10 · 3D / yapısal ışık 7 · temel sensör 3 · sadece tampon 0</td></tr>
+   <tr><td>Mop sistemi</td><td class="r num">15</td><td style="white-space:normal">Rulo 11 · çift döner 10 · titreşimli 8 · basınçlı ped 5 · sabit ped 3; mop kaldırma +2, uzayan mop +2</td></tr>
+   <tr><td>İstasyon</td><td class="r num">20</td><td style="white-space:normal">Toz boşaltma 7 (opsiyonel 2) · mop yıkama 6 · sıcak su 2 · sıcak hava kurutma 2 · otomatik su dolumu 1,5 · otomatik deterjan 1,5</td></tr>
+   <tr><td>Pil / süre</td><td class="r num">8</td><td style="white-space:normal">60 dk'da 0, 240 dk'da tam puan. Süre yoksa pil kapasitesinden tahmin edilir</td></tr>
+   <tr><td>Akıllı özellikler</td><td class="r num">7</td><td style="white-space:normal">Wi-Fi 2 · çoklu harita · oda bazlı ayar · sesli asistan veya Matter · halı algılama · yasak bölge (her biri 1)</td></tr>
+   <tr><td>Eşik aşma</td><td class="r num">5</td><td style="white-space:normal">18 mm altı 1 · 18–21 mm 2 · 22–39 mm 3,5 · 40 mm ve üstü 5</td></tr>
+   <tr><td>Ekstralar</td><td class="r num">5</td><td style="white-space:normal">Uzayan yan fırça 2 · dolaşmayan fırça · HEPA · evcil hayvan modu (her biri 1)</td></tr>
+  </tbody></table></div>
+  <h3>Fiyat/performans endeksi (F/P, 0–100)</h3>
+  <p>Tüm modellerde puan ile fiyatın logaritması arasında bir eğri oturtulur. Bu eğri, bir fiyattan beklenen ortalama puanı verir. F/P, modelin puanının bu beklentiden ne kadar saptığını gösterir: 50 tam beklenen düzey, 70 ve üstü fiyatının belirgin üstünde özellik demektir.</p>
+  <h3>Fiyatına göre en iyi</h3>
+  <p>Kendisinden ucuz olup daha yüksek puan alan başka model bulunmayan modellerdir (Pareto sınırı). Bütçeniz neyse, bu listede o bütçeye en yakın model teknik olarak en dolu seçenektir.</p>
+  <h3>Bilinen sınırlar</h3>
+  <ul><li>Özellikler üretici ve satıcı listelerinden derlenmiştir; bazı modellerde değer eksiktir. Eksik değer puanda 0 sayılır.</li><li>Tek mağazada satılan modellerin fiyatı ithalatçı fiyatı olabilir; "Min. mağaza" filtresiyle bunları eleyebilirsiniz.</li><li>Navigasyon ve mop tipi gibi sınıflar, ürün sayfasındaki ifadelerden otomatik çıkarılmıştır.</li></ul>`;
+  $("#foot").innerHTML=`Veri: epey.com fiyat ve özellik listeleri, ${SNAP}. ${ALL.length} model. Fiyatlar bilgi amaçlıdır; satıcıdan doğrulayın.`;
+}
+
+/* ---------- routing & update ---------- */
+const VIEWS=["liste","tablo","analiz","oneriler","yontem"];
+function view(){const h=location.hash.slice(1);return VIEWS.includes(h)?h:"liste"}
+function showView(){
+  const v=view();
+  document.querySelectorAll("[data-pane]").forEach(p=>p.hidden=p.dataset.pane!==v);
+  document.querySelectorAll(".tabs a").forEach(a=>a.setAttribute("aria-current",a.dataset.view===v?"page":"false"));
+  fl.style.display=v==="yontem"?"none":"";
+  renderView();
+}
+function renderView(){
+  const v=view();
+  if(v==="liste")renderList(cur);
+  else if(v==="tablo")renderTable(cur);
+  else if(v==="analiz"){renderScatter(cur);renderBrands(cur);renderHist(cur);renderFeatTable(cur)}
+  else if(v==="oneriler")renderPicks(cur);
+}
+function update(){
+  cur=filterOut().sort(SORTS[S.sort]);
+  renderChips();renderView();
+  store.set("rs-sort",S.sort);
+}
+window.addEventListener("hashchange",showView);
+(()=>{const s=store.get("rs-sort");if(s&&SORTS[s]){S.sort=s;$("#sort").value=s}})();
+renderStatic();renderTray();cur=filterOut().sort(SORTS[S.sort]);renderChips();showView();
+</script>
