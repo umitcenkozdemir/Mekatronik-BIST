@@ -1,0 +1,8 @@
+{
+ "_note": "Derin incelemede ürün sayfasından doğrulanan sınıflandırma düzeltmeleri",
+ "ecovacs-deebot-t90-omni": {"mop": "Rulo mop", "obst": "Yapay zekâ / kamera", "cam": true, "src": "Hepsiburada başlığı: OZMO Roller 3.0, AIVI 3D 4.0"},
+ "roborock-s9": {"mop": "Titreşimli", "src": "VibraRise 2.0 titreşimli mop"},
+ "roborock-s9-plus": {"mop": "Titreşimli", "src": "VibraRise 2.0 titreşimli mop"},
+ "roborock-s8-pro": {"mop": "Titreşimli", "src": "VibraRise 2.0 titreşimli mop"},
+ "dyson-spot-plusscrub-ai": {"obst": "Yapay zekâ / kamera", "cam": true, "src": "HD kamera ve yapay zekâ kir tanıma"}
+}

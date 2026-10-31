@@ -1,0 +1,8 @@
+# ham Tavily çıktıları (büyük); sadece işlenmiş research.json ve queue.json tutulur
+deep/*/*.json
+!deep/*/research.json
+!deep/*/queue.json
+list2/
+raw_detail/
+robot-supurge.html
+robots.json

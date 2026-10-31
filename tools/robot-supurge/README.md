@@ -25,3 +25,8 @@ Puanlama ayrıntıları sayfadaki "Yöntem" sekmesindedir.
 12. `python3 parse_oos.py <klasör>` → `oos.json` (arka sayfalardaki fiyatsız modeller); `python3 build_rel.py <klasör>` sonrası `python3 attach_oos.py <klasör> "31 Ekim 2026, 18:40"`.
 13. Eski model kuralı (`build.py`): epey görsel numarası (`imgids.json`, liste sayfalarından) 900.000'in altındaysa (yaklaşık 2023 sonu öncesi kataloğa eklenmiş) ve model sadece 1–2 mağazada kalmışsa "eski model" sayılır.
 14. Çıkış yılı (tahmini) sayfada `yearOf(imgId)` ile hesaplanır; eşikler `template.html` içindeki `YB` dizisindedir.
+
+## Günlük güncelleme ve derin inceleme
+Her gün yapılacak iş adım adım `DAILY.md` dosyasında: listeyi tazeleme, yeni modelleri bulma, sıradaki 20 modeli
+mağaza sayfaları ve kullanıcı yorumlarıyla derinlemesine inceleme (`profiles.json`), sınıflandırma düzeltmeleri
+(`corrections.json`) ve `bash rebuild.sh` ile sayfayı yeniden üretme.

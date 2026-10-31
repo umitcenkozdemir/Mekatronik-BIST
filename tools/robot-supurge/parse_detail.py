@@ -1,5 +1,6 @@
 import json,re,sys,glob
-out={}
+import os
+out=json.load(open(sys.argv[2])) if os.path.exists(sys.argv[2]) else {}  # MERGE: mevcut kayıtları koru
 def clean(s):
     s=re.sub(r'!\[[^\]]*\]\([^)]*\)','',s)
     return s

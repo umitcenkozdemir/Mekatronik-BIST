@@ -1,6 +1,7 @@
 import os
 import json,re,math,statistics as st
 S=os.environ.get('RS_WORK', os.path.dirname(os.path.abspath(__file__)))
+CORR=json.load(open(S+'/corrections.json')) if os.path.exists(S+'/corrections.json') else {}
 IMG=json.load(open(S+'/imgids.json')) if os.path.exists(S+'/imgids.json') else {}
 L=json.load(open(S+'/list_items2.json')); D=json.load(open(S+'/details.json'))
 _fresh={x['url'] for x in L}
@@ -52,6 +53,8 @@ for it in L:
         m=re.match(r'([\d.]+) mm Mop Yükseltme',o)
         if m: mop_lift_mm=float(m.group(1))
     mop_lift = mop_lift_mm is not None or bool(ot & {'Mop Alanını Yükseltme','Mop İşlevinde Halıya Çıkmaz','Otomatik Mop Çıkarma','AdaptiLift Şasi'})
+    _C=CORR.get(re.sub(r'\.html$','',it['url'].rsplit('/',1)[1]),{})
+    mop=_C.get('mop',mop); obst=_C.get('obst',obst); has_cam=_C.get('cam',has_cam); nav=_C.get('nav',nav)
     se=(sp.get('Toz Boşaltma İstasyonu') or ['Yok'])[0]; mw=(sp.get('Mop Temizleme İstasyonu') or ['Yok'])[0]
     selfempty = se=='Var'; mopwash = mw=='Var'
     if selfempty and mopwash: station='Tam istasyon'
