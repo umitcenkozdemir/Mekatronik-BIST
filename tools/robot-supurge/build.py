@@ -83,6 +83,8 @@ for it in L:
     zone=(sp.get('Bölge Bloklama') is not None) or (sp.get('Oda Sınırlandırma') or [''])[0]=='Var'
     sides=num(g(sp,'Yan Fırça Sayısı'))
     uv='UV Sterilizasyon' in ot
+    bagless=bool(selfempty and (ot & {'PureCyclone Teknolojisi','Siklon Sistem İstasyon'} or re.search(r'OmniCyclone',name)))
+    washFilter='Yıkanabilir Filtre' in ot
     sellers={}
     for s,p,sp_ in d['sellers']:
         n=SITES.get(s,s)
@@ -108,7 +110,7 @@ for it in L:
         nav=nav,navRaw=navraw,cam=has_cam,obst=obst,mop=mop,mopLift=mop_lift,mopLiftMm=mop_lift_mm,mopExt=mopext,mopDetach=mopdetach,
         station=station,selfEmpty=selfempty,selfEmptyOpt=se=='Opsiyonel',mopWash=mopwash,hotWash=hotwash,hotDry=hotdry,refill=refill,deterg=deterg,
         brushExt=brushext,carpet=carpet,pet=pet,tangle=tangle,hepa=hepa,wifi=wifi,voice=voice,matter=matter,maps=maps,multimap=multimap,map3d=map3d,roomset=roomset,zone=zone,
-        sides=sides,uv=uv,color=g(sp,'Renk Seçenekleri'),extras=sorted(ot),score=score,sc={k:round(v,1) for k,v in sc.items()}))
+        sides=sides,uv=uv,bagless=bagless,washFilter=washFilter,color=g(sp,'Renk Seçenekleri'),extras=sorted(ot),score=score,sc={k:round(v,1) for k,v in sc.items()}))
 # value index: score relative to log price, normalized 0-100
 import math
 xs=[math.log(o['price']) for o in out]; ys=[o['score'] for o in out]
