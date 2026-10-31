@@ -242,6 +242,7 @@ footer{color:var(--fg3);font-size:12px;padding-block:20px 120px;border-top:1px s
 .stk{font-size:11px;font-weight:600;padding:2px 7px;border-radius:5px;white-space:nowrap}
 .stk-ok{background:var(--good-soft);color:var(--good)}.stk-low{background:var(--warn-soft);color:var(--warn)}.stk-no{background:var(--sunk);color:var(--bad)}
 details.oos{margin-top:22px}details.oos summary{cursor:pointer;font-family:var(--f-display);font-size:17px;font-weight:600;display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}
+.sortbox{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.sortbox label{font-size:12px;color:var(--fg3);text-transform:uppercase;letter-spacing:.08em;font-weight:600}.sortsel{width:auto;min-width:0;max-width:100%}
 .oos-card{border-style:dashed;background:var(--bg)}
 .layout.nofilter{grid-template-columns:minmax(0,1fr)}
 .guidebar{background:var(--accent-soft);border-radius:var(--r);padding:10px 14px;margin-bottom:14px;font-size:13px;color:var(--fg)}
@@ -329,21 +330,6 @@ details.oos{margin-top:22px}details.oos summary{cursor:pointer;font-family:var(-
       </div>
       <div class="quick" id="pquick"></div>
     </div>
-    <div class="fgroup"><h3><span>Sırala <button type="button" class="help" data-help="score" aria-label="Puanlar nasıl okunur?">?</button></span></h3>
-      <select id="sort" class="fsel" aria-label="Sıralama">
-        <option value="fp">Fiyat/performans (yüksek)</option>
-        <option value="score">Özellik puanı (yüksek)</option>
-        <option value="price">Fiyat (düşük → yüksek)</option>
-        <option value="-price">Fiyat (yüksek → düşük)</option>
-        <option value="pa">Emiş gücü</option>
-        <option value="rt">Çalışma süresi</option>
-        <option value="sites">Mağaza sayısı</option>
-        <option value="tlp">Puan başına en düşük TL</option>
-        <option value="ur">Kullanıcı puanı (★)</option>
-        <option value="urc">Değerlendirme sayısı</option>
-        <option value="as">Satış sonrası notu (marka)</option>
-      </select>
-    </div>
     <div class="fgroup">
       <h3><span>Kullanıcılar ve satış sonrası <button type="button" class="help" data-help="trust" aria-label="Kullanıcı puanı ve satış sonrası nedir?">?</button></span></h3>
       <div class="selrow">
@@ -354,7 +340,7 @@ details.oos{margin-top:22px}details.oos summary{cursor:pointer;font-family:var(-
       </div>
       <div class="chips" data-group="net" style="margin-top:8px"></div>
     </div>
-    <div class="fgroup"><h3><span>Stok durumu <button type="button" class="help" data-help="stock" aria-label="Stok durumu nasıl belirlendi?">?</button></span><button type="button" data-clear="stock">sıfırla</button></h3><div class="chips" data-group="stock"></div><label class="toggle"><input type="checkbox" id="showOOS"> Stokta olmayanları da göster</label></div>
+    <div class="fgroup"><h3><span>Stok durumu <button type="button" class="help" data-help="stock" aria-label="Stok durumu nasıl belirlendi?">?</button></span><button type="button" data-clear="stock">sıfırla</button></h3><div class="chips" data-group="stock"></div><label class="toggle"><input type="checkbox" id="showOOS"> Eski modelleri de göster (artık satılmayanlar)</label></div>
     <div class="fgroup"><h3><span>Hazır istasyon <button type="button" class="help" data-help="station" aria-label="İstasyon tipleri nedir?">?</button></span><button type="button" data-clear="station">sıfırla</button></h3><div class="chips" data-group="station"></div></div>
     <div class="fgroup"><h3><span>Navigasyon <button type="button" class="help" data-help="nav" aria-label="Navigasyon türleri nedir?">?</button></span><button type="button" data-clear="nav">sıfırla</button></h3><div class="chips" data-group="nav"></div></div>
     <div class="fgroup"><h3><span>Mop tipi <button type="button" class="help" data-help="mop" aria-label="Mop sistemleri nedir?">?</button></span><button type="button" data-clear="mop">sıfırla</button></h3><div class="chips" data-group="mop"></div></div>
@@ -414,12 +400,24 @@ details.oos{margin-top:22px}details.oos summary{cursor:pointer;font-family:var(-
     </section>
     <section data-pane="liste">
       <div class="guidebar">Ne alacağınızdan emin değil misiniz? <a href="#rehber">Seçim sihirbazını deneyin</a> ya da filtre başlıklarındaki <span class="help" aria-hidden="true">?</span> işaretine dokunarak terimlerin ne anlama geldiğini okuyun.</div>
-      <div class="reshead"><div class="count" id="count1"></div><div class="note" id="sortnote"></div></div>
+      <div class="reshead"><div class="count" id="count1"></div><div class="sortbox"><label for="sort">Sırala</label><select id="sort" class="fsel sortsel" aria-label="Sıralama">
+        <option value="fp">Fiyat/performans (yüksek)</option>
+        <option value="score">Özellik puanı (yüksek)</option>
+        <option value="price">Fiyat (düşük → yüksek)</option>
+        <option value="-price">Fiyat (yüksek → düşük)</option>
+        <option value="pa">Emiş gücü</option>
+        <option value="rt">Çalışma süresi</option>
+        <option value="sites">Mağaza sayısı</option>
+        <option value="tlp">Puan başına en düşük TL</option>
+        <option value="ur">Kullanıcı puanı (★)</option>
+        <option value="urc">Değerlendirme sayısı</option>
+        <option value="as">Satış sonrası notu (marka)</option>
+      </select><button type="button" class="help" data-help="score" aria-label="Puanlar nasıl okunur?">?</button></div></div>
       <div class="active-f" id="activef"></div>
       <div class="guidebar" id="oosHint" hidden></div>
       <div class="grid" id="cards"></div>
       <div class="more"><button class="btn" id="moreBtn" type="button">Daha fazla göster</button></div>
-      <details class="oos panel" id="oosBox"><summary><span id="oosTitle">Stok bulunamayanlar</span><span class="note" id="oosSub"></span></summary><p style="margin:10px 0 0"><button type="button" class="btn" id="oosInList">Bunları da listede göster</button></p><p class="desc" style="margin-top:10px">Bu modeller yakın zamana kadar satılıyordu ama son stok kontrolünde (<span class="chk"></span>) hiçbir mağazada fiyatı yoktu. Fiyat, puan ve karşılaştırmalara katılmazlar. Arama ve marka filtresi burada da geçerli.</p><div class="tablewrap"><table id="oostbl"><thead><tr><th>Model</th><th>Tip</th><th class="r">Emiş (Pa)</th><th class="r">Süre (dk)</th><th class="r">Pil (mAh)</th><th></th></tr></thead><tbody></tbody></table></div></details>
+      <details class="oos panel" id="oosBox"><summary><span id="oosTitle">Eski modeller</span><span class="note" id="oosSub"></span></summary><p style="margin:10px 0 0"><button type="button" class="btn" id="oosInList">Bunları da listede göster</button></p><p class="desc" style="margin-top:10px">Bunlar piyasadan çekilmiş veya yerini yeni sürümüne bırakmış eski modeller: son stok kontrolünde (<span class="chk"></span>) hiçbir mağazada satılmıyorlardı. İkinci el bakıyorsanız ya da elinizdeki modeli yenilerle kıyaslamak istiyorsanız işinize yarar. Fiyat, puan ve önerilere katılmazlar. Arama ve marka filtresi burada da geçerli.</p><div class="tablewrap"><table id="oostbl"><thead><tr><th>Model</th><th>Tip</th><th class="r">Emiş (Pa)</th><th class="r">Süre (dk)</th><th class="r">Pil (mAh)</th><th></th></tr></thead><tbody></tbody></table></div></details>
     </section>
     <section data-pane="tablo" hidden>
       <div class="reshead"><div class="count" id="count2"></div><div class="note">Sütun başlığına tıklayarak sıralayın, satıra tıklayarak ayrıntıyı açın.</div></div>
@@ -552,7 +550,7 @@ const SORTS={fp:(a,b)=>b.fp-a.fp||b.score-a.score,score:(a,b)=>b.score-a.score||
   ur:(a,b)=>((b.urc>=20?b.ur:0)||0)-((a.urc>=20?a.ur:0)||0)||b.urc-a.urc,urc:(a,b)=>b.urc-a.urc,as:(a,b)=>(b.as??-1)-(a.as??-1)||b.fp-a.fp};
 
 /* ---------- filters UI ---------- */
-const STOCKLABEL={var:"Stokta (3+ mağaza)",sinirli:"Sınırlı stok (1–2 mağaza)",yok:"Stok yok"};
+const STOCKLABEL={var:"Stokta (3+ mağaza)",sinirli:"Sınırlı stok (1–2 mağaza)",yok:"Eski model (satılmıyor)"};
 function chipLabel(g,v){return g==="feat"?FEATNAME[v]:g==="net"?NETLABEL[v]:g==="stock"?STOCKLABEL[v]:v}
 function renderChips(){
   for(const g of Object.keys(GROUPS)){
@@ -610,7 +608,7 @@ function activeList(){
   for(const k in th)if(S[k])a.push([k,th[k](S[k])]);
   if(S.minSites>1)a.push(["minSites",`${S.minSites}+ mağaza`]);
   if(S.pareto)a.push(["pareto","Fiyatına göre en iyi"]);
-  if(S.showOOS)a.push(["showOOS","Stoksuzlar dahil"]);
+  if(S.showOOS)a.push(["showOOS","Eski modeller dahil"]);
   return a;
 }
 $("#activef").addEventListener("click",e=>{
@@ -636,13 +634,13 @@ function specChips(r){
   if(r.mopLift)c.push(["Mop kaldırma",false]);
   return c.map(([t,h])=>`<span class="spec${h?" hi":""}">${esc(t)}</span>`).join("");
 }
-const stockBadge=r=>r.stock==="yok"?`<span class="stk stk-no">Stok yok</span>`:r.stock==="sinirli"?`<span class="stk stk-low" title="Sadece ${r.sites} mağazada stokta">Sınırlı · ${r.sites} mağaza</span>`:`<span class="stk stk-ok" title="${r.sites} mağazada stokta">Stokta · ${r.sites} mağaza</span>`;
+const stockBadge=r=>r.stock==="yok"?`<span class="stk stk-no" title="Artık satılmıyor">Eski model</span>`:r.stock==="sinirli"?`<span class="stk stk-low" title="Sadece ${r.sites} mağazada stokta">Sınırlı · ${r.sites} mağaza</span>`:`<span class="stk stk-ok" title="${r.sites} mağazada stokta">Stokta · ${r.sites} mağaza</span>`;
 const asBand=v=>v>=70?"g":v>=55?"m":"b";
 function liteCard(r){
   return `<article class="card oos-card">
   <div class="top"><div style="min-width:0"><div class="brand">${esc(r.brand)}</div><h4><button type="button" data-open="${r.id}">${esc(r.model||r.name)}</button></h4></div></div>
-  <div class="price-row"><span class="price muted" style="font-size:15px">Fiyat yok</span>${stockBadge(r)}</div>
-  <p class="note" style="margin:0">Son kontrolde hiçbir mağazada bulunamadı. Sadece temel özellikler biliniyor.</p>
+  <div class="price-row"><span class="price muted" style="font-size:15px">Satılmıyor</span>${stockBadge(r)}</div>
+  <p class="note" style="margin:0">Artık satılmayan eski model; mağazalarda bulunamadı. Sadece temel özellikleri biliniyor.</p>
   <div class="specs"><span class="spec">${esc(r.type)}</span>${r.pa?`<span class="spec">${fmt(r.pa)} Pa</span>`:""}${r.rt?`<span class="spec">${fmt(r.rt)} dk</span>`:""}${r.mah?`<span class="spec">${fmt(r.mah)} mAh</span>`:""}</div>
   <div class="foot"><span class="note">Puanlanmadı</span><a class="btn ghost" href="${esc(r.url)}" target="_blank" rel="noopener">Epey'de incele →</a></div>
   </article>`;
@@ -686,8 +684,7 @@ let cur=[];
 function renderList(rows){
   const n=rows.length;
   const no=rows.filter(r=>r.stock==="yok").length;
-  $("#count1").innerHTML=`${n} model<small>${no?`(${n-no} stokta + ${no} stoksuz)`:`/ ${ALL.length} stoktaki model içinden`}</small>`;
-  $("#sortnote").textContent="Sıralama: "+$("#sort").selectedOptions[0].text;
+  $("#count1").innerHTML=`${n} model<small>${no?`(${n-no} satışta + ${no} eski model)`:`/ satıştaki ${ALL.length} model içinden`}</small>`;
   const af=activeList();
   $("#activef").innerHTML=af.map(([k,t])=>`<button type="button" data-af="${esc(k)}" aria-label="${esc(t)} filtresini kaldır">${esc(t)} ×</button>`).join("");
   $("#fcount").textContent=af.length?`(${af.length})`:"";
@@ -704,14 +701,14 @@ function oosRows(){
 }
 function renderOOS(){
   const {full,lite}=oosRows();const n=full.length+lite.length;
-  $("#oosTitle").textContent=`Stok bulunamayanlar (${n})`;
+  $("#oosTitle").textContent=`Eski modeller (${n})`;
   $("#oosSub").textContent=" · son kontrol "+CHECKED;
   document.querySelectorAll(".chk").forEach(e=>e.textContent=CHECKED);
   $("#oostbl tbody").innerHTML=full.map(r=>`<tr data-open="${r.id}"><td class="model">${esc(r.name)}<small>Son görülen fiyat ${TL(r.price)} · ${r.lastSites} mağaza</small></td><td>${esc(r.type)}</td><td class="r num">${fmt(r.pa)}</td><td class="r num">${fmt(r.rt)}</td><td class="r num">${fmt(r.mah)}</td><td><button type="button" class="btn ghost" style="padding:0" data-open="${r.id}">Ayrıntı</button></td></tr>`).join("")+
-   lite.map(o=>`<tr><td class="model">${esc(o.n)}</td><td>${esc(o.t)}</td><td class="r num">${fmt(o.pa)}</td><td class="r num">${fmt(o.rt)}</td><td class="r num">${fmt(o.mah)}</td><td><a href="${esc(o.u)}" target="_blank" rel="noopener" style="color:var(--accent)">Epey</a></td></tr>`).join("")||`<tr><td colspan="6" class="note">Eşleşen stoksuz model yok.</td></tr>`;
+   lite.map(o=>`<tr><td class="model">${esc(o.n)}</td><td>${esc(o.t)}</td><td class="r num">${fmt(o.pa)}</td><td class="r num">${fmt(o.rt)}</td><td class="r num">${fmt(o.mah)}</td><td><a href="${esc(o.u)}" target="_blank" rel="noopener" style="color:var(--accent)">Epey</a></td></tr>`).join("")||`<tr><td colspan="6" class="note">Eşleşen eski model yok.</td></tr>`;
   $("#oosBox").hidden=!n||S.showOOS;
   const hint=$("#oosHint");
-  if(!S.showOOS&&S.q&&n&&cur.length<6){hint.hidden=false;hint.innerHTML=`"${esc(S.q)}" araması için <b>${n}</b> model şu an stokta değil. <button type="button" class="btn ghost" style="padding:0;color:var(--accent);font-weight:600" id="oosOpen">Stok bulunamayanları göster</button>`;}
+  if(!S.showOOS&&S.q&&n&&cur.length<6){hint.hidden=false;hint.innerHTML=`"${esc(S.q)}" araması için <b>${n}</b> eski model var (artık satılmıyor). <button type="button" class="btn ghost" style="padding:0;color:var(--accent);font-weight:600" id="oosOpen">Eski modelleri göster</button>`;}
   else hint.hidden=true;
 }
 document.addEventListener("click",e=>{if(e.target.id==="oosInList"){S.showOOS=true;$("#showOOS").checked=true;update();return}if(e.target.id==="oosOpen"){const d=$("#oosBox");d.open=true;d.scrollIntoView({behavior:"smooth",block:"start"})}});
@@ -740,7 +737,7 @@ const COLS=[
  ["h","Yükseklik (mm)",r=>r.h??"—","r num",(a,b)=>(a.h||999)-(b.h||999)],
  ["db","Gürültü (dB)",r=>fmt(r.db),"r num",(a,b)=>(a.db||999)-(b.db||999)],
  ["dust","Toz haznesi (ml)",r=>fmt(r.dust),"r num",(a,b)=>(a.dust||0)-(b.dust||0)],
-["sites","Stok (mağaza)",r=>r.stock==="yok"?`<span class="stk stk-no">yok</span>`:r.stock==="sinirli"?`<span class="stk stk-low">${r.sites}</span>`:`<span class="stk stk-ok">${r.sites}</span>`,"r num",(a,b)=>a.sites-b.sites]];
+["sites","Stok (mağaza)",r=>r.stock==="yok"?`<span class="stk stk-no">eski</span>`:r.stock==="sinirli"?`<span class="stk stk-low">${r.sites}</span>`:`<span class="stk stk-ok">${r.sites}</span>`,"r num",(a,b)=>a.sites-b.sites]];
 $("#tbl thead").addEventListener("click",e=>{const b=e.target.closest("[data-col]");if(!b)return;const k=b.dataset.col;
   S.tsort=S.tsort&&S.tsort[0]===k?[k,-S.tsort[1]]:[k,(k==="name"||k==="price"||k==="h"||k==="db")?1:-1];renderTable(cur)});
 function renderTable(rows){
@@ -863,7 +860,7 @@ function openDetail(id){
   const r=byId[id];if(!r)return;
   if(r.lite){const q=encodeURIComponent(r.name.replace(/\(.*?\)/g,"").trim());
     $("#dlgBody").innerHTML=`<div class="mhead"><div><div class="brand" style="font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--fg3);font-weight:600">${esc(r.brand)} · ${esc(r.type)}</div><h2 id="dlgTitle">${esc(r.name)}</h2><div style="margin-top:6px">${stockBadge(r)}</div></div><button class="btn" type="button" id="dlgClose" aria-label="Kapat">✕</button></div>
-    <div class="mbody"><p class="verdict" style="background:var(--warn-soft)">Son stok kontrolünde (${CHECKED}) bu model hiçbir mağazada bulunamadı. Ayrıntılı özellikleri ve puanı bu yüzden toplanmadı.</p>
+    <div class="mbody"><p class="verdict" style="background:var(--warn-soft)">Bu artık satılmayan eski bir model; son stok kontrolünde (${CHECKED}) hiçbir mağazada bulunamadı. Ayrıntılı özellikleri ve puanı bu yüzden toplanmadı. İkinci el alacaksanız servis ve yedek parça durumunu mutlaka sorun.</p>
     ${kv([["Emiş gücü",r.pa?fmt(r.pa)+" Pa":"—"],["Çalışma süresi",r.rt?fmt(r.rt)+" dk":"—"],["Pil",r.mah?fmt(r.mah)+" mAh":"—"]])}
     <div><h3>Yine de aramak isterseniz</h3><div class="links">${STORES.map(([n,u])=>`<a href="${u}${q}" target="_blank" rel="noopener">${n}</a>`).join("")}<a href="${esc(r.url)}" target="_blank" rel="noopener">Epey</a></div></div></div>`;
     const dlg=$("#dlg");if(!dlg.open)dlg.showModal();$("#dlgClose").onclick=()=>dlg.close();return;}
@@ -876,7 +873,7 @@ function openDetail(id){
    <div class="mgrid">
     <div><h3>Puan dağılımı · toplam ${r.score.toFixed(0)}/100 · F/P ${r.fp}/100</h3><div class="sbars">${Object.entries(SCMAX).map(([k,[n,mx]])=>`<div class="sbar"><span>${n}</span><span class="bar"><i style="width:${(r.sc[k]||0)/mx*100}%"></i></span><span class="val">${(r.sc[k]||0).toString().replace(".",",")}/${mx}</span></div>`).join("")}</div>
      <p class="note" style="margin:10px 0 0">Bu fiyattaki modellerin ortalama beklenen puanı: <b class="num">${r.exp.toFixed(0)}</b>. Puan başına <b class="num">${TL(r.tlp)}</b>.</p></div>
-    <div><h3>Mağaza fiyatları</h3>${r.stock==="yok"?`<p class="verdict" style="background:var(--warn-soft)">Son stok kontrolünde (${CHECKED}) bu model hiçbir mağazada bulunamadı. Aşağıdaki fiyatlar daha önceki kayıttır.</p>`:`<p class="note" style="margin:0 0 6px">Stok kontrolü: ${CHECKED} · ${r.sites} mağazada stokta. Mağaza bazında fiyatlar aynı günün sabah kaydıdır.</p>`}<div class="sellers">${sellers}</div>
+    <div><h3>Mağaza fiyatları</h3>${r.stock==="yok"?`<p class="verdict" style="background:var(--warn-soft)">Bu model artık satılmıyor (eski model); son stok kontrolünde (${CHECKED}) hiçbir mağazada bulunamadı. Aşağıdaki fiyatlar daha önceki kayıttır.</p>`:`<p class="note" style="margin:0 0 6px">Stok kontrolü: ${CHECKED} · ${r.sites} mağazada stokta. Mağaza bazında fiyatlar aynı günün sabah kaydıdır.</p>`}<div class="sellers">${sellers}</div>
      <div class="links" style="margin-top:10px">${STORES.map(([n,u])=>`<a href="${u}${q}" target="_blank" rel="noopener">${n}</a>`).join("")}</div>
      <div class="links" style="margin-top:6px"><a href="${esc(r.url)}#fiyatlar" target="_blank" rel="noopener">Epey: tüm satıcılar</a><a href="https://www.akakce.com/arama/?q=${q}" target="_blank" rel="noopener">Akakçe</a><a href="https://www.cimri.com/arama?q=${q}" target="_blank" rel="noopener">Cimri</a></div></div>
    </div>
@@ -916,7 +913,7 @@ function openCompare(){
 /* ---------- method & header ---------- */
 function renderStatic(){
   const prices=ALL.map(r=>r.price);
-  $("#stats").innerHTML=[["Stokta model",ALL.length],["Stok yok",OOSFULL.length+OOS.length],["Marka",new Set(ALL.map(r=>r.brand)).size],["Kullanıcı puanlı",ALL.filter(r=>r.ur!=null).length],["Medyan fiyat",fmt(median(prices))+" TL"],["Fiyat aralığı",fmt(Math.min(...prices)/1000)+"–"+fmt(Math.max(...prices)/1000)+" bin"]]
+  $("#stats").innerHTML=[["Satıştaki model",ALL.length],["Eski model",OOSFULL.length+OOS.length],["Marka",new Set(ALL.map(r=>r.brand)).size],["Kullanıcı puanlı",ALL.filter(r=>r.ur!=null).length],["Medyan fiyat",fmt(median(prices))+" TL"],["Fiyat aralığı",fmt(Math.min(...prices)/1000)+"–"+fmt(Math.max(...prices)/1000)+" bin"]]
     .map(([k,v])=>`<div class="stat"><div class="k">${k}</div><div class="v">${v}</div></div>`).join("");
   $("#method").innerHTML=`<h2>Veri ve puanlama yöntemi</h2>
   <p>Liste, ${SNAP} tarihinde fiyat karşılaştırma sitesi epey.com'da en az bir Türk mağazasında (Hepsiburada, Trendyol, Amazon, n11, PTT AVM, MediaMarkt, Teknosa, Vatan ve diğerleri) fiyatı bulunan ${ALL.length} robot süpürgeden oluşur. Cam temizleme robotları ve fiyatı olmayan eski modeller dahil değildir. Gösterilen fiyat o gün bulunan en düşük fiyattır. Fiyatlar her gün değişir; satın almadan önce mağazada kontrol edin.</p>
@@ -938,7 +935,7 @@ function renderStatic(){
   <h3>Fiyatına göre en iyi</h3>
   <p>Kendisinden ucuz olup daha yüksek puan alan başka model bulunmayan modellerdir (Pareto sınırı). Bütçeniz neyse, bu listede o bütçeye en yakın model teknik olarak en dolu seçenektir.</p>
   <h3>Stok kontrolü</h3>
-  <p>Stok durumu ${CHECKED} tarihinde epey.com listesi yeniden taranarak belirlendi. En az 3 mağazada fiyatı olan model "stokta", 1–2 mağazada olan "sınırlı stok" sayılır. Önceki taramada olup son kontrolde hiçbir mağazada fiyatı bulunmayan modeller ve listenin arka sayfalarındaki fiyatsız popüler modeller "stok bulunamayanlar" bölümüne ayrılır; analizlere ve önerilere katılmaz.</p>
+  <p>Stok durumu ${CHECKED} tarihinde epey.com listesi yeniden taranarak belirlendi. En az 3 mağazada fiyatı olan model "stokta", 1–2 mağazada olan "sınırlı stok" sayılır. Önceki taramada olup son kontrolde hiçbir mağazada fiyatı bulunmayan modeller ve listenin arka sayfalarındaki fiyatsız popüler modeller "eski modeller" bölümüne ayrılır; analizlere ve önerilere katılmaz.</p>
   <h3>Kullanıcı yorumları ve şikâyetler</h3>
   <p>Kullanıcı puanı, Hepsiburada ve Amazon'daki marka bazlı arama sonuçlarından (her markada 1–3 sayfa) model adıyla eşleşen ilanların yıldız ortalamasıdır; değerlendirme sayısıyla ağırlıklandırılır. Uyumlu yedek parça ilanları puana katılmaz, "yedek parça ilanı" sayısı olarak ayrıca gösterilir. Trendyol, Akakçe ve Cimri bu taramada erişime kapalıydı; bu sitelere ayrıntı penceresinden arama bağlantısıyla gidebilirsiniz.</p>
   <p>Şikâyet verisi Şikâyetvar'dan alınmıştır: marka puanı, toplam ve robot süpürge kategorisindeki şikâyet sayısı, son bir yıldaki yanıt oranı ve marka karnesi özeti. Büyük markalarda son 60–90, diğerlerinde son 20–25 şikâyet başlığı anahtar kelimelerle konulara ayrıldı. Şikâyet sayısı satış hacmiyle büyüdüğü için "yoğunluk" (1.000 kullanıcı değerlendirmesi başına şikâyet) ayrıca verilir; yalnızca en az 300 değerlendirmesi eşleşen markalarda hesaplanır.</p>
@@ -1014,7 +1011,7 @@ function trustHelpHTML(){return `<dl class="gloss"><dt>Kullanıcı puanı (★)<
  <dt>Satış sonrası notu</dt><dd>Markanın şikâyetlere yanıt oranı, Şikâyetvar memnuniyeti, kullanıcı puanı, servis ağı ve garanti süresinden oluşan 0–100 özet. 70 üstü iyi, 55 altı zayıf.</dd>
  <dt>Servis ağı</dt><dd>"Türkiye geneli": şehrinizde yetkili servis bulma ihtimali yüksek. "Merkezi": cihaz kargoyla tek servise gider, süreç 1–4 hafta sürebilir.</dd>
  <dt>Türkiye garantisi</dt><dd>Faturada "Türkiye garantili" veya resmi distribütör adı arayın. İthalatçı garantili ürünlerde servis süreci farklı ve bazen zor olabilir.</dd></dl>`}
-const HELP={stock:["Stok durumu nasıl belirlendi?",()=>`<dl class="gloss"><dt>Stokta (3+ mağaza)</dt><dd>Son kontrolde en az 3 farklı mağazada fiyatı ve stoğu vardı. Fiyat rekabeti var; tükenme riski düşük.</dd><dt>Sınırlı stok (1–2 mağaza)</dt><dd>Sadece 1–2 mağazada var. Fiyat ithalatçı veya tek satıcı fiyatı olabilir; model piyasadan çekiliyor da olabilir. Satın almadan önce satıcıyı ve garantiyi kontrol edin.</dd><dt>Stok bulunamadı</dt><dd>Yakın zamana kadar satılıyordu ama son kontrolde hiçbir mağazada fiyatı yoktu. Listenin altında ayrı bölümde gösterilir.</dd><dt>Kontrol zamanı</dt><dd>${CHECKED}. Stok, epey.com’un 19 mağazadan topladığı güncel tekliflerden belirlendi. Sayfa canlı değildir; satın almadan önce mağazada doğrulayın.</dd></dl>`],station:["İstasyon tipleri",()=>topicHTML("station",1)],nav:["Navigasyon türleri",()=>topicHTML("nav",1)],mop:["Mop sistemleri",()=>topicHTML("mop",1)],obst:["Engel algılama",()=>topicHTML("obst",1)],type:["Ürün tipi",()=>topicHTML("type",1)],
+const HELP={stock:["Stok durumu nasıl belirlendi?",()=>`<dl class="gloss"><dt>Stokta (3+ mağaza)</dt><dd>Son kontrolde en az 3 farklı mağazada fiyatı ve stoğu vardı. Fiyat rekabeti var; tükenme riski düşük.</dd><dt>Sınırlı stok (1–2 mağaza)</dt><dd>Sadece 1–2 mağazada var. Fiyat ithalatçı veya tek satıcı fiyatı olabilir; model piyasadan çekiliyor da olabilir. Satın almadan önce satıcıyı ve garantiyi kontrol edin.</dd><dt>Eski model</dt><dd>Piyasadan çekilmiş veya yeni sürümü çıkmış, artık satılmayan model: son kontrolde hiçbir mağazada fiyatı yoktu. Listenin altında ayrı bölümde durur; "Eski modelleri de göster" ile listeye katabilirsiniz.</dd><dt>Kontrol zamanı</dt><dd>${CHECKED}. Stok, epey.com’un 19 mağazadan topladığı güncel tekliflerden belirlendi. Sayfa canlı değildir; satın almadan önce mağazada doğrulayın.</dd></dl>`],station:["İstasyon tipleri",()=>topicHTML("station",1)],nav:["Navigasyon türleri",()=>topicHTML("nav",1)],mop:["Mop sistemleri",()=>topicHTML("mop",1)],obst:["Engel algılama",()=>topicHTML("obst",1)],type:["Ürün tipi",()=>topicHTML("type",1)],
  tech:["Teknik değerler ne anlama gelir?",techHTML],feat:["Özellikler sözlüğü",featHTML],trust:["Kullanıcı puanı ve satış sonrası",trustHelpHTML],
  score:["Puanlar nasıl okunur?",()=>`<dl class="gloss"><dt>Özellik puanı (0–100)</dt><dd>Kâğıt üzerindeki özelliklerin toplamı: navigasyon, istasyon, mop, emiş, pil vb. Temizlik kalitesini doğrudan ölçmez.</dd><dt>F/P (0–100)</dt><dd>Aynı fiyattaki modellere göre ne kadar çok özellik sunduğu. 50 ortalama, 70+ fiyatına göre çok dolu.</dd><dt>Fiyatına göre en iyi</dt><dd>Kendisinden ucuz olup daha yüksek puan alan başka model yok.</dd></dl>`]};
 function openHelp(k){const h=HELP[k];if(!h)return;$("#helpBody").innerHTML=`<div class="mhead"><h2 id="helpTitle">${h[0]}</h2><button class="btn" type="button" id="helpClose" aria-label="Kapat">✕</button></div><div class="mbody">${h[1]()}<p class="note"><a href="#rehber" id="helpGuide">Tüm rehberi ve seçim sihirbazını aç →</a></p></div>`;
