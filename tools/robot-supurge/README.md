@@ -12,3 +12,9 @@ Veri anlık görüntüsü: 31 Ekim 2026, kaynak epey.com robot süpürge listele
 5. `template.html` içindeki `/*__DATA__*/` yerine `robots.json` içeriğini koyup `public/robot-supurge/index.html` olarak kaydedin.
 
 Puanlama ayrıntıları sayfadaki "Yöntem" sekmesindedir.
+
+## Güvence verisi (kullanıcı puanı, şikâyet, servis)
+6. Şikâyetvar marka sayfaları ve `/<marka>/robot-supurge?page=N` sayfalarını `sv/` klasörüne indirin → `python3 parse_sv.py <klasör>` → `sv.json`
+7. Hepsiburada (`/ara?q=<marka> robot süpürge&sayfa=N`) ve Amazon (`/s?k=...&page=N`) arama sayfalarını `hb/` ve `am/` klasörlerine indirin → `python3 parse_rate2.py <klasör>` → `ratings.json`
+8. `python3 build_rel.py <klasör>` → `robots2.json` (marka karnesi, şikâyet konuları, satış sonrası notu; servis/garanti bilgisi betikteki `SVC` tablosunda, kaynaklarıyla)
+9. `template.html` içindeki `/*__DATA__*/` yerine `robots2.json` koyun.

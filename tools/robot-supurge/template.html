@@ -217,6 +217,18 @@ dialog::backdrop{background:rgba(8,16,20,.55)}
 .note{font-size:12px;color:var(--fg3)}
 footer{color:var(--fg3);font-size:12px;padding-block:20px 120px;border-top:1px solid var(--line)}
 
+.trust{display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:13px;flex-wrap:wrap}
+.stars{color:var(--warn)}
+.muted{color:var(--fg3);font-size:12px}
+.as{font-size:11px;font-weight:600;padding:2px 7px;border-radius:5px;white-space:nowrap;font-family:var(--f-mono)}
+.as.asg{background:var(--good-soft);color:var(--good)}
+.as.asm{background:var(--warn-soft);color:var(--warn)}
+.as.asb{background:var(--sunk);color:var(--bad)}
+.hits{margin:0;padding-left:18px;display:grid;gap:5px;font-size:13px;color:var(--fg2)}
+.sub3{font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--fg3);margin:0 0 8px;font-weight:600}
+.hbar.ib{grid-template-columns:minmax(120px,190px) minmax(0,1fr) 70px}
+#btable tbody tr{cursor:pointer}
+.trustgrid{border-top:1px solid var(--line-soft);padding-top:18px}
 @media (max-width:980px){
   .layout{grid-template-columns:minmax(0,1fr)}
   aside.filters{position:fixed;inset:0 auto 0 0;width:min(340px,88vw);max-height:none;z-index:40;background:var(--surface);padding:calc(env(safe-area-inset-top,0px) + 16px) 16px 90px max(16px,env(safe-area-inset-left,0px));transform:translateX(-105%);transition:transform .2s;box-shadow:var(--shadow);border-right:1px solid var(--line)}
@@ -241,7 +253,7 @@ footer{color:var(--fg3);font-size:12px;padding-block:20px 120px;border-top:1px s
         <svg class="logo" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="18" fill="none" stroke="var(--fg)" stroke-width="2.5"/><circle cx="20" cy="20" r="11" fill="none" stroke="var(--line)" stroke-width="2"/><circle cx="20" cy="11" r="3.5" fill="var(--laser)"/><path d="M20 11 L34 6" stroke="var(--laser)" stroke-width="1.5" stroke-dasharray="2 2"/></svg>
         <h1>Robot Süpürge Rehberi</h1>
       </div>
-      <p class="sub">Türkiye'deki mağazalarda satışta olan robot süpürgelerin fiyatları ve teknik özellikleri. Filtreleyin, karşılaştırın ve fiyat/performansa göre seçin.</p>
+      <p class="sub">Türkiye'deki mağazalarda satışta olan robot süpürgelerin fiyatları, teknik özellikleri, kullanıcı puanları ve satış sonrası durumu. Filtreleyin, karşılaştırın, fiyat/performansa ve güvenceye göre seçin.</p>
     </div>
     <div class="stats" id="stats"></div>
   </div>
@@ -258,6 +270,7 @@ footer{color:var(--fg3);font-size:12px;padding-block:20px 120px;border-top:1px s
       <a href="#liste" data-view="liste">Liste</a>
       <a href="#tablo" data-view="tablo">Tablo</a>
       <a href="#analiz" data-view="analiz">Analiz</a>
+      <a href="#guvence" data-view="guvence">Güvence</a>
       <a href="#oneriler" data-view="oneriler">Öneriler</a>
       <a href="#yontem" data-view="yontem">Yöntem</a>
     </nav>
@@ -288,7 +301,20 @@ footer{color:var(--fg3);font-size:12px;padding-block:20px 120px;border-top:1px s
         <option value="rt">Çalışma süresi</option>
         <option value="sites">Mağaza sayısı</option>
         <option value="tlp">Puan başına en düşük TL</option>
+        <option value="ur">Kullanıcı puanı (★)</option>
+        <option value="urc">Değerlendirme sayısı</option>
+        <option value="as">Satış sonrası notu (marka)</option>
       </select>
+    </div>
+    <div class="fgroup">
+      <h3>Kullanıcılar ve satış sonrası</h3>
+      <div class="selrow">
+        <label>Min. kullanıcı puanı<select id="minUr" class="fsel"><option value="0">Hepsi</option><option value="4">4,0 ★</option><option value="4.3">4,3 ★</option><option value="4.5">4,5 ★</option></select></label>
+        <label>Min. değerlendirme<select id="minUrc" class="fsel"><option value="0">Hepsi</option><option value="1">En az 1</option><option value="20">20+</option><option value="100">100+</option><option value="500">500+</option></select></label>
+        <label>Min. satış sonrası<select id="minAs" class="fsel"><option value="0">Hepsi</option><option value="50">50+</option><option value="60">60+</option><option value="70">70+</option></select></label>
+        <label>Garanti<select id="minW" class="fsel"><option value="0">Hepsi</option><option value="3">3 yıl</option></select></label>
+      </div>
+      <div class="chips" data-group="net" style="margin-top:8px"></div>
     </div>
     <div class="fgroup"><h3>Hazır istasyon <button type="button" data-clear="station">sıfırla</button></h3><div class="chips" data-group="station"></div></div>
     <div class="fgroup"><h3>Navigasyon <button type="button" data-clear="nav">sıfırla</button></h3><div class="chips" data-group="nav"></div></div>
@@ -341,6 +367,20 @@ footer{color:var(--fg3);font-size:12px;padding-block:20px 120px;border-top:1px s
       </div>
       <div class="panel"><h2>Bir özellik fiyatı ne kadar artırıyor?</h2><p class="desc">Filtredeki modellerde özelliğe sahip olanlarla olmayanların medyan fiyatı.</p><div class="tablewrap"><table class="ftable" id="ftable"><thead><tr><th>Özellik</th><th class="r">Modellerde payı</th><th class="r">Medyan fiyat (var)</th><th class="r">Medyan fiyat (yok)</th><th class="r">Fark</th></tr></thead><tbody></tbody></table></div></div>
     </section>
+    <section data-pane="guvence" hidden>
+      <div class="panel">
+        <h2>Markaların satış sonrası karnesi</h2>
+        <p class="desc">Şikâyetvar, Hepsiburada, Amazon ve markaların resmi sitelerinden derlendi (31 Ekim 2026). Şikâyet sayısı satış hacmiyle birlikte büyür; bu yüzden "yoğunluk" sütunu robot süpürge şikâyetini, Hepsiburada ve Amazon'daki 1.000 kullanıcı değerlendirmesine böler. Satır başlığına tıklayarak markanın sık şikâyet konularını görün.</p>
+        <div class="tablewrap"><table id="btable"><thead></thead><tbody></tbody></table></div>
+        <p class="note" style="margin:8px 0 0">Satış sonrası notu bir özet göstergedir: şikâyet yanıt oranı %25, Şikâyetvar memnuniyeti %15, kullanıcı puanı %25, servis ağı %20, garanti süresi %15. Eksik bileşen nötr değerle doldurulur; hiç verisi olmayan markalara not verilmez. Ayrıntı "Yöntem" sekmesinde.</p>
+      </div>
+      <div class="panel" id="bdetail"></div>
+      <div class="panel">
+        <h2>Robot süpürgelerde en sık şikâyet konuları</h2>
+        <p class="desc">Şikâyetvar'daki son robot süpürge şikâyetlerinin başlık ve özetlerinden anahtar kelimeyle sınıflandırıldı. Bir şikâyet birden fazla konuya girebilir.</p>
+        <div class="hbars" id="allissues"></div>
+      </div>
+    </section>
     <section data-pane="oneriler" hidden>
       <div class="reshead"><div class="count">Bütçeye göre öneriler</div><div class="note">Soldaki filtreler burada da geçerli. Her bütçede fiyat/performansı en yüksek üç model.</div></div>
       <div id="brackets"></div>
@@ -370,6 +410,8 @@ footer{color:var(--fg3);font-size:12px;padding-block:20px 120px;border-top:1px s
 const DATA=/*__DATA__*/;
 const SNAP="31 Ekim 2026";
 const ALL=DATA.items;
+const BR=DATA.brands||{};
+ALL.forEach(r=>{const b=BR[r.brand]||{};r.net=b.network||"Bilinmiyor";r.w=b.warranty||null});
 const fmt=n=>n==null?"—":Math.round(n).toLocaleString("tr-TR");
 const TL=n=>fmt(n)+" TL";
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
@@ -389,13 +431,17 @@ const GROUPS={
  mop:["Çift döner","Rulo mop","Titreşimli","Basınçlı ped","Sabit ped","Yok"],
  obst:["Yapay zekâ / kamera","3D / yapısal ışık","Temel sensör","Tampon"],
  type:["Süpürge + Mop","Sadece süpürge","Sadece mop"],
+ net:["Türkiye geneli","Çok noktalı","Merkezi","Bilinmiyor"],
  feat:FEATS.map(f=>f[0])
 };
+const NETLABEL={"Türkiye geneli":"Servis: Türkiye geneli","Çok noktalı":"Servis: çok noktalı","Merkezi":"Servis: merkezi (kargo)","Bilinmiyor":"Servis bilgisi yok"};
+const STORES=[["Hepsiburada","https://www.hepsiburada.com/ara?q="],["Trendyol","https://www.trendyol.com/sr?q="],["Amazon","https://www.amazon.com.tr/s?k="],["MediaMarkt","https://www.mediamarkt.com.tr/tr/search.html?query="],["Teknosa","https://www.teknosa.com/arama/?s="],["n11","https://www.n11.com/arama?q="]];
+const stars=v=>v==null?"":`<span class="stars" aria-hidden="true">★</span> ${v.toFixed(1).replace(".",",")}`;
 const FEATNAME=Object.fromEntries(FEATS);
 const has=(r,k)=>k==="voice"?r.voice.length>0:!!r[k];
 
-const S={q:"",pmin:null,pmax:null,station:new Set(),nav:new Set(),mop:new Set(),obst:new Set(),type:new Set(),feat:new Set(),brand:new Set(),
-  minPa:0,minRt:0,minClimb:0,minSites:1,maxH:0,maxDb:0,pareto:false,sort:"fp",tsort:null,shown:48,tshown:80,cmp:[]};
+const S={q:"",pmin:null,pmax:null,station:new Set(),nav:new Set(),mop:new Set(),obst:new Set(),type:new Set(),net:new Set(),feat:new Set(),brand:new Set(),
+  minPa:0,minRt:0,minClimb:0,minSites:1,maxH:0,maxDb:0,minUr:0,minUrc:0,minAs:0,minW:0,pareto:false,sort:"fp",tsort:null,shown:48,tshown:80,cmp:[]};
 (()=>{const c=store.get("rs-cmp");if(Array.isArray(c))S.cmp=c.filter(id=>byId[id]).slice(0,4)})();
 
 function filterOut(skip){
@@ -403,7 +449,11 @@ function filterOut(skip){
     if(S.q){const q=S.q.toLocaleLowerCase("tr");if(!(r.name.toLocaleLowerCase("tr").includes(q)||r.brand.toLocaleLowerCase("tr").includes(q)))return false}
     if(S.pmin!=null&&r.price<S.pmin)return false;
     if(S.pmax!=null&&r.price>S.pmax)return false;
-    for(const g of ["station","nav","mop","obst","type"]) if(g!==skip&&S[g].size&&!S[g].has(r[g]))return false;
+    for(const g of ["station","nav","mop","obst","type","net"]) if(g!==skip&&S[g].size&&!S[g].has(r[g]))return false;
+    if(S.minUr&&!(r.ur>=S.minUr))return false;
+    if(S.minUrc&&!(r.urc>=S.minUrc))return false;
+    if(S.minAs&&!(r.as>=S.minAs))return false;
+    if(S.minW&&!(r.w>=S.minW))return false;
     if(skip!=="brand"&&S.brand.size&&!S.brand.has(r.brand))return false;
     if(skip!=="feat")for(const f of S.feat)if(!has(r,f))return false;
     if(S.minPa&&!(r.pa>=S.minPa))return false;
@@ -416,10 +466,11 @@ function filterOut(skip){
     return true});
 }
 const SORTS={fp:(a,b)=>b.fp-a.fp||b.score-a.score,score:(a,b)=>b.score-a.score||a.price-b.price,price:(a,b)=>a.price-b.price,"-price":(a,b)=>b.price-a.price,
-  pa:(a,b)=>(b.pa||0)-(a.pa||0),rt:(a,b)=>(b.rt||0)-(a.rt||0),sites:(a,b)=>b.sites-a.sites||a.price-b.price,tlp:(a,b)=>a.tlp-b.tlp};
+  pa:(a,b)=>(b.pa||0)-(a.pa||0),rt:(a,b)=>(b.rt||0)-(a.rt||0),sites:(a,b)=>b.sites-a.sites||a.price-b.price,tlp:(a,b)=>a.tlp-b.tlp,
+  ur:(a,b)=>((b.urc>=20?b.ur:0)||0)-((a.urc>=20?a.ur:0)||0)||b.urc-a.urc,urc:(a,b)=>b.urc-a.urc,as:(a,b)=>(b.as??-1)-(a.as??-1)||b.fp-a.fp};
 
 /* ---------- filters UI ---------- */
-function chipLabel(g,v){return g==="feat"?FEATNAME[v]:v}
+function chipLabel(g,v){return g==="feat"?FEATNAME[v]:g==="net"?NETLABEL[v]:v}
 function renderChips(){
   for(const g of Object.keys(GROUPS)){
     const box=document.querySelector(`.chips[data-group="${g}"]`);
@@ -447,7 +498,7 @@ document.addEventListener("click",e=>{
 $("#brands").addEventListener("change",e=>{const b=e.target.dataset.brand;if(!b)return;e.target.checked?S.brand.add(b):S.brand.delete(b);S.shown=48;update()});
 $("#bq").addEventListener("input",renderChips);
 let qt;$("#q").addEventListener("input",e=>{clearTimeout(qt);qt=setTimeout(()=>{S.q=e.target.value.trim();S.shown=48;update()},120)});
-for(const id of ["minPa","minRt","minClimb","minSites","maxH","maxDb"])$("#"+id).addEventListener("change",e=>{S[id]=+e.target.value;S.shown=48;update()});
+for(const id of ["minPa","minRt","minClimb","minSites","maxH","maxDb","minUr","minUrc","minAs","minW"])$("#"+id).addEventListener("change",e=>{S[id]=+e.target.value;S.shown=48;update()});
 $("#sort").addEventListener("change",e=>{S.sort=e.target.value;update()});
 $("#pareto").addEventListener("change",e=>{S.pareto=e.target.checked;update()});
 for(const id of ["pmin","pmax"])$("#"+id).addEventListener("change",e=>{const v=e.target.value.trim();S[id]=v===""?null:+v;S.shown=48;update()});
@@ -455,10 +506,10 @@ const PQ=[["≤ 10 bin",null,10000],["10–20 bin",10000,20000],["20–35 bin",2
 $("#pquick").innerHTML=PQ.map((p,i)=>`<button type="button" data-pq="${i}">${p[0]}</button>`).join("");
 $("#pquick").addEventListener("click",e=>{const b=e.target.closest("[data-pq]");if(!b)return;const p=PQ[+b.dataset.pq];S.pmin=p[1];S.pmax=p[2];$("#pmin").value=p[1]??"";$("#pmax").value=p[2]??"";S.shown=48;update()});
 $("#reset").addEventListener("click",()=>{
-  Object.assign(S,{q:"",pmin:null,pmax:null,minPa:0,minRt:0,minClimb:0,minSites:1,maxH:0,maxDb:0,pareto:false,shown:48,tshown:80});
-  ["station","nav","mop","obst","type","feat","brand"].forEach(g=>S[g].clear());
+  Object.assign(S,{q:"",pmin:null,pmax:null,minPa:0,minRt:0,minClimb:0,minSites:1,maxH:0,maxDb:0,minUr:0,minUrc:0,minAs:0,minW:0,pareto:false,shown:48,tshown:80});
+  ["station","nav","mop","obst","type","net","feat","brand"].forEach(g=>S[g].clear());
   ["q","pmin","pmax","bq"].forEach(i=>$("#"+i).value="");
-  ["minPa","minRt","minClimb","maxH","maxDb"].forEach(i=>$("#"+i).value="0");$("#minSites").value="1";$("#pareto").checked=false;
+  ["minPa","minRt","minClimb","maxH","maxDb","minUr","minUrc","minAs","minW"].forEach(i=>$("#"+i).value="0");$("#minSites").value="1";$("#pareto").checked=false;
   update()});
 const fl=$("#filters");let scrim=null;
 function openF(){fl.classList.add("open");scrim=document.createElement("div");scrim.className="scrim";scrim.onclick=closeF;document.body.appendChild(scrim)}
@@ -469,8 +520,9 @@ function activeList(){
   const a=[];
   if(S.q)a.push(["q",`"${S.q}"`]);
   if(S.pmin!=null||S.pmax!=null)a.push(["price",`${S.pmin!=null?fmt(S.pmin):"0"} – ${S.pmax!=null?fmt(S.pmax):"∞"} TL`]);
-  for(const g of ["station","nav","mop","obst","type","feat","brand"])for(const v of S[g])a.push([g+"|"+v,g==="feat"?FEATNAME[v]:v]);
-  const th={minPa:v=>`≥ ${fmt(v)} Pa`,minRt:v=>`≥ ${v} dk`,minClimb:v=>`eşik ≥ ${v} mm`,maxH:v=>`yükseklik ≤ ${v} mm`,maxDb:v=>`≤ ${v} dB`};
+  for(const g of ["station","nav","mop","obst","type","net","feat","brand"])for(const v of S[g])a.push([g+"|"+v,chipLabel(g,v)]);
+  const th={minPa:v=>`≥ ${fmt(v)} Pa`,minRt:v=>`≥ ${v} dk`,minClimb:v=>`eşik ≥ ${v} mm`,maxH:v=>`yükseklik ≤ ${v} mm`,maxDb:v=>`≤ ${v} dB`,
+    minUr:v=>`★ ≥ ${String(v).replace(".",",")}`,minUrc:v=>`≥ ${v} değerlendirme`,minAs:v=>`satış sonrası ≥ ${v}`,minW:v=>`${v} yıl garanti`};
   for(const k in th)if(S[k])a.push([k,th[k](S[k])]);
   if(S.minSites>1)a.push(["minSites",`${S.minSites}+ mağaza`]);
   if(S.pareto)a.push(["pareto","Fiyatına göre en iyi"]);
@@ -498,12 +550,14 @@ function specChips(r){
   if(r.mopLift)c.push(["Mop kaldırma",false]);
   return c.map(([t,h])=>`<span class="spec${h?" hi":""}">${esc(t)}</span>`).join("");
 }
+const asBand=v=>v>=70?"g":v>=55?"m":"b";
 function card(r){
   const inCmp=S.cmp.includes(r.id);
   return `<article class="card">
   <div class="top"><div style="min-width:0"><div class="brand">${esc(r.brand)}</div><h4><button type="button" data-open="${r.id}">${esc(r.model||r.name)}</button></h4></div>
   ${r.pareto?`<span class="badge par" title="Bu fiyata veya altında daha yüksek puanlı model yok">Fiyatına göre en iyi</span>`:r.sites<=1?`<span class="badge one" title="Fiyat tek mağazadan">Tek mağaza</span>`:""}</div>
   <div class="price-row"><span class="price">${TL(r.price)}</span><span class="sites">${r.sites} mağaza</span></div>
+  <div class="trust"><span>${r.ur!=null?`${stars(r.ur)} <span class="muted">(${fmt(r.urc)} değ.)</span>`:`<span class="muted">Kullanıcı puanı bulunamadı</span>`}</span>${r.as!=null?`<span class="as as${asBand(r.as)}" title="Marka satış sonrası notu (0–100)">Satış sonrası ${r.as}</span>`:`<span class="muted">Satış sonrası: veri yok</span>`}</div>
   <div class="meters">
     <div class="meter"><div class="lab">Özellik puanı <b>${r.score.toFixed(0)}</b></div><div class="bar"><i style="width:${r.score}%"></i></div></div>
     <div class="meter"><div class="lab">F/P <b>${r.fp}</b></div><div class="bar fp"><i style="width:${r.fp}%"></i></div></div>
@@ -551,6 +605,9 @@ const COLS=[
  ["price","Fiyat",r=>fmt(r.price),"r num",(a,b)=>a.price-b.price],
  ["score","Puan",r=>r.score.toFixed(0),"r num",(a,b)=>a.score-b.score],
  ["fp","F/P",r=>r.fp,"r num",(a,b)=>a.fp-b.fp],
+ ["ur","★ Kullanıcı",r=>r.ur!=null?r.ur.toFixed(1).replace(".",","):"—","r num",(a,b)=>(a.ur||0)-(b.ur||0)],
+ ["urc","Değ. sayısı",r=>r.urc?fmt(r.urc):"—","r num",(a,b)=>a.urc-b.urc],
+ ["as","Satış sonrası",r=>r.as??"—","r num",(a,b)=>(a.as??-1)-(b.as??-1)],
  ["pa","Emiş (Pa)",r=>fmt(r.pa),"r num",(a,b)=>(a.pa||0)-(b.pa||0)],
  ["nav","Navigasyon",r=>esc(r.nav),"",(a,b)=>a.nav.localeCompare(b.nav,"tr")],
  ["obst","Engel",r=>esc(r.obst),"",(a,b)=>a.obst.localeCompare(b.obst,"tr")],
@@ -644,7 +701,9 @@ function renderPicks(rows){
    ["Mobilya altı (alçak gövde)","Gövde yüksekliği 90 mm veya daha az",r=>r.h&&r.h<=90],
    ["Eşikli ev","En az 30 mm eşik aşabilen modeller",r=>r.climb>=30],
    ["Sessiz çalışma","Gürültü 62 dB veya altı",r=>r.db&&r.db<=62],
-   ["Büyük ev","En az 180 dk çalışma ve LiDAR",r=>r.rt>=180&&r.nav==="LiDAR"]];
+   ["Büyük ev","En az 180 dk çalışma ve LiDAR",r=>r.rt>=180&&r.nav==="LiDAR"],
+   ["Sorunsuz kullanım önceliği","Kullanıcı puanı ≥ 4,3 (en az 100 değerlendirme) ve satış sonrası notu ≥ 60",r=>r.ur>=4.3&&r.urc>=100&&(r.as??0)>=60],
+   ["Türkiye geneli servis","Servis ağı Türkiye geneli olan markalar",r=>r.net==="Türkiye geneli"]];
   $("#usecases").innerHTML=U.map(([t,d,f])=>{const c=rows.filter(r=>f(r)&&r.sites>=2).sort(SORTS.fp);const r=c[0];
     return `<div class="panel" style="margin:0"><h2 style="font-size:16px">${t}</h2><p class="desc" style="margin-bottom:8px">${d} · ${c.length} uygun model</p>${r?pick(r,"Önerilen")+(c[1]?`<p class="note" style="margin:8px 0 0">Alternatif: <button type="button" class="btn ghost" style="padding:0" data-open="${c[1].id}">${esc(c[1].name)}</button> · ${TL(c[1].price)}</p>`:""):`<p class="note">Filtrede uygun model yok.</p>`}</div>`}).join("");
 }
@@ -658,6 +717,29 @@ const SCMAX={emis:["Emiş gücü",15],nav:["Navigasyon",15],engel:["Engel algıl
 const u=(v,s)=>v==null||v===""||v===0?"—":`${typeof v==="number"?String(v).replace(".",","):v} ${s}`;
 function kv(pairs){return `<dl class="kv">${pairs.map(([k,v])=>`<dt>${k}</dt><dd>${v}</dd>`).join("")}</dl>`}
 const ynT=b=>b?"Var":"Yok";
+function issueBars(issues,sample){
+  if(!issues||!issues.length||!sample)return `<p class="note">Şikâyet örneklemi yok.</p>`;
+  const mx=Math.max(...issues.map(i=>i[1]));
+  return `<div class="hbars">${[...issues].sort((a,b)=>b[1]-a[1]).map(([n,c])=>`<div class="hbar ib"><span class="nm" title="${esc(n)}">${esc(n)}</span><span class="track"><i style="width:${c/mx*100}%"></i></span><span class="val">%${Math.round(c/sample*100)}</span></div>`).join("")}</div>`;
+}
+function svLink(b){return b.slug?`https://www.sikayetvar.com/${b.slug}/robot-supurge`:`https://www.sikayetvar.com/`}
+function trustBlock(r,q){
+  const b=BR[r.brand]||{};
+  const rr=(x,n,u)=>x?`<div class="seller"><span>${n}</span><span class="num">${stars(x[0])} · ${fmt(x[1])} değerlendirme</span></div>`:`<div class="seller" style="background:var(--sunk)"><span>${n}</span><span class="note">eşleşen ilan bulunamadı</span></div>`;
+  return `<div class="mgrid trustgrid">
+   <div><h3>Kullanıcı puanları</h3><div class="sellers">${rr(r.hb,"Hepsiburada")}${rr(r.am,"Amazon")}</div>
+    <p class="note" style="margin:8px 0 0">${r.acc?`Bu model için Hepsiburada ve Amazon aramalarında <b class="num">${r.acc}</b> uyumlu yedek parça veya sarf ilanı göründü.`:"Taranan aramalarda bu modele özel yedek parça ilanı görülmedi."}</p>
+    <h3 style="margin-top:16px">Şikâyetvar'da bu modelin geçtiği son başlıklar</h3>
+    ${r.svHits&&r.svHits.length?`<ul class="hits">${r.svHits.map(t=>`<li>${esc(t)}</li>`).join("")}</ul><p class="note">Son robot süpürge şikâyetleri örnekleminde ${r.svHitN} başlık. <a href="${svLink(b)}" target="_blank" rel="noopener">Şikâyetvar'da tümü</a></p>`:`<p class="note">Örneklemde bu modelin adı geçen şikâyet yok. Bu, hiç şikâyet olmadığı anlamına gelmez. <a href="${svLink(b)}" target="_blank" rel="noopener">Şikâyetvar'da ara</a></p>`}
+   </div>
+   <div><h3>${esc(r.brand)} satış sonrası · ${r.as!=null?"not "+r.as+"/100":"not hesaplanamadı (veri yok)"}</h3>${kv([
+     ["Garanti",b.warranty?b.warranty+" yıl":"—"],["Distribütör",esc(b.dist||"—")],["Servis",esc(b.service||"—")],["Servis ağı",esc(b.network||"Bilinmiyor")],["Yedek parça",esc(b.parts||"—")],
+     ["Şikâyetvar puanı",b.svScore!=null?b.svScore+"/100":"—"],["Robot süpürge şikâyeti",b.robotComplaints!=null?fmt(b.robotComplaints):"—"],["Şikâyet yanıt oranı",b.responseRate!=null?"%"+b.responseRate:"—"],
+     ["Şikâyet yoğunluğu",b.density!=null?b.density+" / 1.000 değ.":"—"],["Marka ort. kullanıcı puanı",b.userRating?stars(b.userRating)+` (${fmt(b.userCount)})`:"—"]])}
+     ${b.svcNote?`<p class="note" style="margin:8px 0 0">${esc(b.svcNote)}</p>`:""}
+     <h3 style="margin-top:14px">Markanın sık şikâyet konuları</h3>${issueBars(b.issues,b.sample)}
+   </div></div>`;
+}
 function openDetail(id){
   const r=byId[id];if(!r)return;
   const q=encodeURIComponent(r.name.replace(/\(.*?\)/g,"").trim());
@@ -670,13 +752,15 @@ function openDetail(id){
     <div><h3>Puan dağılımı · toplam ${r.score.toFixed(0)}/100 · F/P ${r.fp}/100</h3><div class="sbars">${Object.entries(SCMAX).map(([k,[n,mx]])=>`<div class="sbar"><span>${n}</span><span class="bar"><i style="width:${(r.sc[k]||0)/mx*100}%"></i></span><span class="val">${(r.sc[k]||0).toString().replace(".",",")}/${mx}</span></div>`).join("")}</div>
      <p class="note" style="margin:10px 0 0">Bu fiyattaki modellerin ortalama beklenen puanı: <b class="num">${r.exp.toFixed(0)}</b>. Puan başına <b class="num">${TL(r.tlp)}</b>.</p></div>
     <div><h3>Mağaza fiyatları</h3><div class="sellers">${sellers}</div>
-     <div class="links" style="margin-top:10px"><a href="${esc(r.url)}#fiyatlar" target="_blank" rel="noopener">Epey'de tüm fiyatlar</a><a href="https://www.akakce.com/arama/?q=${q}" target="_blank" rel="noopener">Akakçe'de ara</a><a href="https://www.cimri.com/arama?q=${q}" target="_blank" rel="noopener">Cimri'de ara</a></div></div>
+     <div class="links" style="margin-top:10px">${STORES.map(([n,u])=>`<a href="${u}${q}" target="_blank" rel="noopener">${n}</a>`).join("")}</div>
+     <div class="links" style="margin-top:6px"><a href="${esc(r.url)}#fiyatlar" target="_blank" rel="noopener">Epey: tüm satıcılar</a><a href="https://www.akakce.com/arama/?q=${q}" target="_blank" rel="noopener">Akakçe</a><a href="https://www.cimri.com/arama?q=${q}" target="_blank" rel="noopener">Cimri</a></div></div>
    </div>
    <div class="mgrid">
     <div><h3>Temizlik ve navigasyon</h3>${kv([["Emiş gücü",u(r.pa&&fmt(r.pa),"Pa")],["Navigasyon",esc(r.nav)+(r.navRaw?` <span style="color:var(--fg3)">(${esc(r.navRaw)})</span>`:"")],["Engel algılama",esc(r.obst)],["Kamera",ynT(r.cam)],["Mop tipi",esc(r.mop)],["Mop kaldırma",r.mopLift?(r.mopLiftMm?u(r.mopLiftMm,"mm"):"Var"):"Yok"],["Uzayan mop",ynT(r.mopExt)],["Mop bırakma",ynT(r.mopDetach)],["Uzayan yan fırça",ynT(r.brushExt)],["Yan fırça sayısı",r.sides??"—"],["Halı algılama",ynT(r.carpet)],["Dolaşmayan fırça",ynT(r.tangle)],["HEPA filtre",ynT(r.hepa)],["Eşik aşma",u(r.climb,"mm")]])}</div>
     <div><h3>İstasyon</h3>${kv([["İstasyon tipi",esc(r.station)],["Toz boşaltma",r.selfEmpty?"Var":r.selfEmptyOpt?"Opsiyonel":"Yok"],["Mop yıkama",ynT(r.mopWash)],["Sıcak su ile yıkama",ynT(r.hotWash)],["Sıcak hava kurutma",ynT(r.hotDry)],["Otomatik su dolumu",ynT(r.refill)],["Otomatik deterjan",ynT(r.deterg)],["İstasyon toz torbası",u(r.stDust,"L")],["Temiz su tankı",u(r.stClean,"L")],["Kirli su tankı",u(r.stDirty,"L")]])}
      <h3 style="margin-top:16px">Pil, gövde ve bağlantı</h3>${kv([["Çalışma süresi",u(r.rt,"dk")],["Pil",u(r.mah&&fmt(r.mah),"mAh")],["Şarj süresi",u(r.ch,"saat")],["Gürültü",u(r.db,"dB")],["Güç",u(r.w,"W")],["Toz haznesi",u(r.dust,"ml")],["Su haznesi",u(r.water,"ml")],["Yükseklik",u(r.h,"mm")],["Ağırlık",u(r.kg,"kg")],["Wi-Fi / uygulama",ynT(r.wifi)],["Sesli asistan",r.voice.length?esc(r.voice.join(", ")):"—"],["Matter",ynT(r.matter)],["Harita",r.maps?r.maps+" kat":(r.multimap?"Çoklu":"—")],["Renk",esc(r.color||"—")]])}</div>
    </div>
+   ${trustBlock(r,q)}
    ${r.extras.length?`<div><h3>Üreticinin listelediği diğer özellikler</h3><div class="extras">${r.extras.map(x=>`<span class="spec">${esc(x)}</span>`).join("")}</div></div>`:""}
    <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center"><label class="cmp"><input type="checkbox" data-cmp="${r.id}" ${S.cmp.includes(r.id)?"checked":""}> Karşılaştırmaya ekle</label><span class="note">Fiyatlar ${SNAP} tarihli anlık görüntüdür; satın almadan önce mağazada doğrulayın.</span></div>
   </div>`;
@@ -688,7 +772,9 @@ $("#dlg").addEventListener("click",e=>{if(e.target.id==="dlg")e.target.close()})
 function openCompare(){
   const rs=S.cmp.map(id=>byId[id]);if(rs.length<2)return;
   const ROWS=[
-   ["Fiyat",r=>r.price,v=>TL(v),"min"],["Mağaza sayısı",r=>r.sites,v=>v,"max"],["Özellik puanı",r=>r.score,v=>v.toFixed(0),"max"],["F/P endeksi",r=>r.fp,v=>v,"max"],["Puan başına TL",r=>r.tlp,v=>TL(v),"min"],
+   ["Fiyat",r=>r.price,v=>TL(v),"min"],["Mağaza sayısı",r=>r.sites,v=>v,"max"],
+   ["Kullanıcı puanı (★)",r=>r.ur,v=>v.toFixed(1).replace(".",","),"max"],["Değerlendirme sayısı",r=>r.urc||null,v=>fmt(v),"max"],["Satış sonrası notu",r=>r.as,v=>v,"max"],
+   ["Garanti (yıl)",r=>r.w,v=>v,"max"],["Servis ağı",r=>r.net],["Şikâyet yanıt oranı (%)",r=>BR[r.brand]?.responseRate??null,v=>"%"+v,"max"],["Özellik puanı",r=>r.score,v=>v.toFixed(0),"max"],["F/P endeksi",r=>r.fp,v=>v,"max"],["Puan başına TL",r=>r.tlp,v=>TL(v),"min"],
    ["Emiş gücü (Pa)",r=>r.pa,v=>fmt(v),"max"],["Navigasyon",r=>r.nav],["Engel algılama",r=>r.obst],["Mop tipi",r=>r.mop],["Mop kaldırma",r=>r.mopLift,ynT,"bool"],["Uzayan mop",r=>r.mopExt,ynT,"bool"],["Uzayan yan fırça",r=>r.brushExt,ynT,"bool"],
    ["İstasyon",r=>r.station],["Sıcak su yıkama",r=>r.hotWash,ynT,"bool"],["Sıcak hava kurutma",r=>r.hotDry,ynT,"bool"],["Otomatik su dolumu",r=>r.refill,ynT,"bool"],["Otomatik deterjan",r=>r.deterg,ynT,"bool"],
    ["Çalışma süresi (dk)",r=>r.rt,v=>fmt(v),"max"],["Pil (mAh)",r=>r.mah,v=>fmt(v),"max"],["Eşik aşma (mm)",r=>r.climb,v=>fmt(v),"max"],["Yükseklik (mm)",r=>r.h,v=>v,"min"],["Gürültü (dB)",r=>r.db,v=>v,"min"],["Toz haznesi (ml)",r=>r.dust,v=>fmt(v),"max"],["Su haznesi (ml)",r=>r.water,v=>fmt(v),"max"],
@@ -705,7 +791,7 @@ function openCompare(){
 /* ---------- method & header ---------- */
 function renderStatic(){
   const prices=ALL.map(r=>r.price);
-  $("#stats").innerHTML=[["Model",ALL.length],["Marka",new Set(ALL.map(r=>r.brand)).size],["Medyan fiyat",fmt(median(prices))+" TL"],["Fiyat aralığı",fmt(Math.min(...prices)/1000)+"–"+fmt(Math.max(...prices)/1000)+" bin"]]
+  $("#stats").innerHTML=[["Model",ALL.length],["Marka",new Set(ALL.map(r=>r.brand)).size],["Kullanıcı puanlı",ALL.filter(r=>r.ur!=null).length],["Medyan fiyat",fmt(median(prices))+" TL"],["Fiyat aralığı",fmt(Math.min(...prices)/1000)+"–"+fmt(Math.max(...prices)/1000)+" bin"]]
     .map(([k,v])=>`<div class="stat"><div class="k">${k}</div><div class="v">${v}</div></div>`).join("");
   $("#method").innerHTML=`<h2>Veri ve puanlama yöntemi</h2>
   <p>Liste, ${SNAP} tarihinde fiyat karşılaştırma sitesi epey.com'da en az bir Türk mağazasında (Hepsiburada, Trendyol, Amazon, n11, PTT AVM, MediaMarkt, Teknosa, Vatan ve diğerleri) fiyatı bulunan ${ALL.length} robot süpürgeden oluşur. Cam temizleme robotları ve fiyatı olmayan eski modeller dahil değildir. Gösterilen fiyat o gün bulunan en düşük fiyattır. Fiyatlar her gün değişir; satın almadan önce mağazada kontrol edin.</p>
@@ -726,13 +812,19 @@ function renderStatic(){
   <p>Tüm modellerde puan ile fiyatın logaritması arasında bir eğri oturtulur. Bu eğri, bir fiyattan beklenen ortalama puanı verir. F/P, modelin puanının bu beklentiden ne kadar saptığını gösterir: 50 tam beklenen düzey, 70 ve üstü fiyatının belirgin üstünde özellik demektir.</p>
   <h3>Fiyatına göre en iyi</h3>
   <p>Kendisinden ucuz olup daha yüksek puan alan başka model bulunmayan modellerdir (Pareto sınırı). Bütçeniz neyse, bu listede o bütçeye en yakın model teknik olarak en dolu seçenektir.</p>
+  <h3>Kullanıcı yorumları ve şikâyetler</h3>
+  <p>Kullanıcı puanı, Hepsiburada ve Amazon'daki marka bazlı arama sonuçlarından (her markada 1–3 sayfa) model adıyla eşleşen ilanların yıldız ortalamasıdır; değerlendirme sayısıyla ağırlıklandırılır. Uyumlu yedek parça ilanları puana katılmaz, "yedek parça ilanı" sayısı olarak ayrıca gösterilir. Trendyol, Akakçe ve Cimri bu taramada erişime kapalıydı; bu sitelere ayrıntı penceresinden arama bağlantısıyla gidebilirsiniz.</p>
+  <p>Şikâyet verisi Şikâyetvar'dan alınmıştır: marka puanı, toplam ve robot süpürge kategorisindeki şikâyet sayısı, son bir yıldaki yanıt oranı ve marka karnesi özeti. Büyük markalarda son 60–90, diğerlerinde son 20–25 şikâyet başlığı anahtar kelimelerle konulara ayrıldı. Şikâyet sayısı satış hacmiyle büyüdüğü için "yoğunluk" (1.000 kullanıcı değerlendirmesi başına şikâyet) ayrıca verilir; yalnızca en az 300 değerlendirmesi eşleşen markalarda hesaplanır.</p>
+  <h3>Satış sonrası notu (marka, 0–100)</h3>
+  <p>Şikâyet yanıt oranı %25 (veri yoksa 40 varsayılır), Şikâyetvar memnuniyet veya marka puanı %15 (yoksa 30), Hepsiburada ve Amazon kullanıcı puanı %25 (3,3 yıldızda 0, 4,7 yıldızda tam; yoksa 50), servis ağı %20 (Türkiye geneli 100, çok noktalı 75, merkezi 55, bilinmiyor 30), garanti %15 (3 yıl 100, 2 yıl 60). Servis ve garanti bilgisi markaların resmi sitelerinden ve distribütör sayfalarından derlendi. Bu not, özellik puanına ve F/P endeksine katılmaz.</p>
   <h3>Bilinen sınırlar</h3>
-  <ul><li>Özellikler üretici ve satıcı listelerinden derlenmiştir; bazı modellerde değer eksiktir. Eksik değer puanda 0 sayılır.</li><li>Tek mağazada satılan modellerin fiyatı ithalatçı fiyatı olabilir; "Min. mağaza" filtresiyle bunları eleyebilirsiniz.</li><li>Navigasyon ve mop tipi gibi sınıflar, ürün sayfasındaki ifadelerden otomatik çıkarılmıştır.</li></ul>`;
-  $("#foot").innerHTML=`Veri: epey.com fiyat ve özellik listeleri, ${SNAP}. ${ALL.length} model. Fiyatlar bilgi amaçlıdır; satıcıdan doğrulayın.`;
+  <ul><li>Özellikler üretici ve satıcı listelerinden derlenmiştir; bazı modellerde değer eksiktir. Eksik değer puanda 0 sayılır.</li><li>Şikâyetvar'a yazanlar sorun yaşayanlardır; şikâyet sayısı bir arıza oranı değildir. Yerli markalar (Arçelik, Beko, Fakir) Şikâyetvar'da daha görünürdür, küçük ithal markaların şikâyetleri dağınık kalabilir.</li><li>Kullanıcı puanı 263 modelde bulunamadı (çoğu az satılan veya yeni modeller). Puanı olmayan model kötü demek değildir.</li><li>Şikâyet başlıklarının modele eşlenmesi kullanıcıların yazdığı model adına dayanır ve hata payı vardır.</li><li>Tek mağazada satılan modellerin fiyatı ithalatçı fiyatı olabilir; "Min. mağaza" filtresiyle bunları eleyebilirsiniz.</li><li>Navigasyon ve mop tipi gibi sınıflar, ürün sayfasındaki ifadelerden otomatik çıkarılmıştır.</li></ul>`;
+  $("#foot").innerHTML=`Kaynaklar (${SNAP}): fiyat ve özellik için epey.com (19 mağazanın fiyatları); kullanıcı puanı için Hepsiburada ve Amazon; şikâyet için Şikâyetvar; servis ve garanti için marka ve distribütör siteleri. ${ALL.length} model. Fiyatlar bilgi amaçlıdır; satıcıdan doğrulayın.`;
 }
 
 /* ---------- routing & update ---------- */
-const VIEWS=["liste","tablo","analiz","oneriler","yontem"];
+const VIEWS=["liste","tablo","analiz","guvence","oneriler","yontem"];
+document.addEventListener("keydown",e=>{if(e.key==="Enter"){const t=e.target.closest&&e.target.closest("tr[data-brand]");if(t){selBrand=t.dataset.brand;renderGuvence(cur)}}});
 function view(){const h=location.hash.slice(1);return VIEWS.includes(h)?h:"liste"}
 function showView(){
   const v=view();
@@ -747,7 +839,41 @@ function renderView(){
   else if(v==="tablo")renderTable(cur);
   else if(v==="analiz"){renderScatter(cur);renderBrands(cur);renderHist(cur);renderFeatTable(cur)}
   else if(v==="oneriler")renderPicks(cur);
+  else if(v==="guvence")renderGuvence(cur);
 }
+let selBrand=null;
+function renderGuvence(rows){
+  const inF=new Set(rows.map(r=>r.brand));
+  const hidden=Object.entries(BR).filter(([b,x])=>inF.has(b)&&!x.hasData).length;
+  const list=Object.entries(BR).filter(([b,x])=>inF.has(b)&&x.hasData).map(([b,x])=>({b,...x,n:rows.filter(r=>r.brand===b).length}));
+  if(!S.bsort)S.bsort=["n",-1];
+  const k=S.bsort[0],d=S.bsort[1];
+  list.sort((p,q)=>{const a=p[k],c=q[k];if(a==null&&c==null)return 0;if(a==null)return 1;if(c==null)return -1;return (typeof a==="string"?a.localeCompare(c,"tr"):a-c)*d});
+  const C=[["b","Marka"],["n","Model",1],["as","Satış sonrası",1],["userRating","★ Kullanıcı",1],["userCount","Değ.",1],["svScore","Şikâyetvar puanı",1],["robotComplaints","Robot şikâyeti",1],["density","Yoğunluk /1.000",1],["responseRate","Yanıt oranı",1],["warranty","Garanti",1],["network","Servis ağı"]];
+  $("#btable thead").innerHTML="<tr>"+C.map(([c,n,r])=>`<th class="${r?"r":""}" ${k===c?`aria-sort="${d>0?"ascending":"descending"}"`:""}><button type="button" data-bcol="${c}">${n}${k===c?(d>0?" ↑":" ↓"):""}</button></th>`).join("")+"</tr>";
+  const val=(x,c)=>{const v=x[c];if(v==null)return "—";
+    if(c==="as")return `<span class="as as${asBand(v)}">${v}</span>`;if(c==="userRating")return v.toFixed(2).replace(".",",");if(c==="responseRate")return "%"+v;if(c==="warranty")return v+" yıl";
+    if(typeof v==="number")return fmt(v);return esc(v)};
+  $("#btable tbody").innerHTML=list.map(x=>`<tr data-brand="${esc(x.b)}" tabindex="0" ${selBrand===x.b?'style="background:var(--accent-soft)"':""}>${C.map(([c,,r])=>`<td class="${r?"r num":""}">${c==="b"?`<b>${esc(x.b)}</b>`:val(x,c)}</td>`).join("")}</tr>`).join("");
+  if(hidden)$("#btable tbody").insertAdjacentHTML("beforeend",`<tr><td colspan="11" class="note" style="cursor:default">Filtredeki ${hidden} küçük marka için şikâyet, puan veya servis verisi bulunamadı; tabloda gösterilmiyor.</td></tr>`);
+  if(!selBrand||!list.some(x=>x.b===selBrand))selBrand=list[0]&&list[0].b;
+  const x=BR[selBrand];
+  $("#bdetail").innerHTML=x?`<h2>${esc(selBrand)}</h2><p class="desc">${esc(x.service||"Servis bilgisi bulunamadı")}${x.svcSrc?` · Kaynak: ${esc(x.svcSrc)}`:""}</p>
+   <div class="two"><div><h3 class="sub3">Sık şikâyet konuları (son ${x.sample} şikâyet)</h3>${issueBars(x.issues,x.sample)}
+     ${x.topics&&x.topics.length?`<h3 class="sub3" style="margin-top:14px">Şikâyetvar'da öne çıkan aramalar</h3><div class="extras">${x.topics.map(t=>`<span class="spec">${esc(t)}</span>`).join("")}</div>`:""}
+     ${x.aiSummary?`<h3 class="sub3" style="margin-top:14px">Şikâyetvar marka karnesi özeti</h3><p class="note" style="font-size:13px;color:var(--fg2)">${esc(x.aiSummary)}</p>`:""}</div>
+   <div><h3 class="sub3">Son şikâyet başlıkları</h3>${x.recent&&x.recent.length?`<ul class="hits">${x.recent.map(it=>`<li>${esc(it.t)}${it.m&&it.m.length?` <span class="muted">· ${esc(it.m.join(", "))}</span>`:""}${it.d?` <span class="muted">· ${esc(it.d)}</span>`:""}</li>`).join("")}</ul>`:`<p class="note">Örneklem yok.</p>`}
+     <p class="note"><a href="${svLink(x)}" target="_blank" rel="noopener">Şikâyetvar'da ${esc(selBrand)} robot süpürge şikâyetleri</a></p>
+     <h3 class="sub3" style="margin-top:14px">Not dağılımı</h3>${kv(Object.entries(x.asParts||{}).map(([k2,v2])=>[{yanit:"Yanıt oranı (25)",memnuniyet:"Memnuniyet (15)",kullanici:"Kullanıcı puanı (25)",servis:"Servis ağı (20)",garanti:"Garanti (15)"}[k2],String(v2).replace(".",",")]))}</div></div>`:"";
+  const agg={};let tot=0;
+  Object.values(BR).forEach(b=>{tot+=b.sample||0;(b.issues||[]).forEach(([n,c])=>agg[n]=(agg[n]||0)+c)});
+  const arr=Object.entries(agg).sort((a,b)=>b[1]-a[1]);const mx=arr.length?arr[0][1]:1;
+  $("#allissues").innerHTML=arr.map(([n,c])=>`<div class="hbar ib"><span class="nm">${esc(n)}</span><span class="track"><i style="width:${c/mx*100}%"></i></span><span class="val">%${Math.round(c/tot*100)} · ${c}</span></div>`).join("")+`<p class="note">${tot} şikâyet başlığı, ${Object.values(BR).filter(b=>b.sample).length} marka.</p>`;
+}
+document.addEventListener("click",e=>{
+  const h=e.target.closest("[data-bcol]");if(h){const c=h.dataset.bcol;S.bsort=S.bsort&&S.bsort[0]===c?[c,-S.bsort[1]]:[c,c==="b"||c==="density"?1:-1];renderGuvence(cur);return}
+  const t=e.target.closest("tr[data-brand]");if(t){selBrand=t.dataset.brand;renderGuvence(cur);$("#bdetail").scrollIntoView({behavior:"smooth",block:"nearest"})}
+});
 function update(){
   cur=filterOut().sort(SORTS[S.sort]);
   renderChips();renderView();
