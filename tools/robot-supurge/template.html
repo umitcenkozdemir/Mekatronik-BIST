@@ -234,6 +234,7 @@ footer{color:var(--fg3);font-size:12px;padding-block:20px 120px;border-top:1px s
 .stk{font-size:11px;font-weight:600;padding:2px 7px;border-radius:5px;white-space:nowrap}
 .stk-ok{background:var(--good-soft);color:var(--good)}.stk-low{background:var(--warn-soft);color:var(--warn)}.stk-no{background:var(--sunk);color:var(--bad)}
 details.oos{margin-top:22px}details.oos summary{cursor:pointer;font-family:var(--f-display);font-size:17px;font-weight:600;display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}
+.oos-card{border-style:dashed;background:var(--bg)}
 .layout.nofilter{grid-template-columns:minmax(0,1fr)}
 .guidebar{background:var(--accent-soft);border-radius:var(--r);padding:10px 14px;margin-bottom:14px;font-size:13px;color:var(--fg)}
 .guidebar a,.prio a,#helpGuide{color:var(--accent);font-weight:600}
@@ -345,7 +346,7 @@ details.oos{margin-top:22px}details.oos summary{cursor:pointer;font-family:var(-
       </div>
       <div class="chips" data-group="net" style="margin-top:8px"></div>
     </div>
-    <div class="fgroup"><h3><span>Stok durumu <button type="button" class="help" data-help="stock" aria-label="Stok durumu nasıl belirlendi?">?</button></span><button type="button" data-clear="stock">sıfırla</button></h3><div class="chips" data-group="stock"></div></div>
+    <div class="fgroup"><h3><span>Stok durumu <button type="button" class="help" data-help="stock" aria-label="Stok durumu nasıl belirlendi?">?</button></span><button type="button" data-clear="stock">sıfırla</button></h3><div class="chips" data-group="stock"></div><label class="toggle"><input type="checkbox" id="showOOS"> Stokta olmayanları da göster</label></div>
     <div class="fgroup"><h3><span>Hazır istasyon <button type="button" class="help" data-help="station" aria-label="İstasyon tipleri nedir?">?</button></span><button type="button" data-clear="station">sıfırla</button></h3><div class="chips" data-group="station"></div></div>
     <div class="fgroup"><h3><span>Navigasyon <button type="button" class="help" data-help="nav" aria-label="Navigasyon türleri nedir?">?</button></span><button type="button" data-clear="nav">sıfırla</button></h3><div class="chips" data-group="nav"></div></div>
     <div class="fgroup"><h3><span>Mop tipi <button type="button" class="help" data-help="mop" aria-label="Mop sistemleri nedir?">?</button></span><button type="button" data-clear="mop">sıfırla</button></h3><div class="chips" data-group="mop"></div></div>
@@ -410,7 +411,7 @@ details.oos{margin-top:22px}details.oos summary{cursor:pointer;font-family:var(-
       <div class="guidebar" id="oosHint" hidden></div>
       <div class="grid" id="cards"></div>
       <div class="more"><button class="btn" id="moreBtn" type="button">Daha fazla göster</button></div>
-      <details class="oos panel" id="oosBox"><summary><span id="oosTitle">Stok bulunamayanlar</span><span class="note" id="oosSub"></span></summary><p class="desc" style="margin-top:10px">Bu modeller yakın zamana kadar satılıyordu ama son stok kontrolünde (<span class="chk"></span>) hiçbir mağazada fiyatı yoktu. Fiyat, puan ve karşılaştırmalara katılmazlar. Arama ve marka filtresi burada da geçerli.</p><div class="tablewrap"><table id="oostbl"><thead><tr><th>Model</th><th>Tip</th><th class="r">Emiş (Pa)</th><th class="r">Süre (dk)</th><th class="r">Pil (mAh)</th><th></th></tr></thead><tbody></tbody></table></div></details>
+      <details class="oos panel" id="oosBox"><summary><span id="oosTitle">Stok bulunamayanlar</span><span class="note" id="oosSub"></span></summary><p style="margin:10px 0 0"><button type="button" class="btn" id="oosInList">Bunları da listede göster</button></p><p class="desc" style="margin-top:10px">Bu modeller yakın zamana kadar satılıyordu ama son stok kontrolünde (<span class="chk"></span>) hiçbir mağazada fiyatı yoktu. Fiyat, puan ve karşılaştırmalara katılmazlar. Arama ve marka filtresi burada da geçerli.</p><div class="tablewrap"><table id="oostbl"><thead><tr><th>Model</th><th>Tip</th><th class="r">Emiş (Pa)</th><th class="r">Süre (dk)</th><th class="r">Pil (mAh)</th><th></th></tr></thead><tbody></tbody></table></div></details>
     </section>
     <section data-pane="tablo" hidden>
       <div class="reshead"><div class="count" id="count2"></div><div class="note">Sütun başlığına tıklayarak sıralayın, satıra tıklayarak ayrıntıyı açın.</div></div>
@@ -484,7 +485,11 @@ const fmt=n=>n==null?"—":Math.round(n).toLocaleString("tr-TR");
 const TL=n=>fmt(n)+" TL";
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const $=s=>document.querySelector(s);
-const byId=Object.fromEntries(ITEMS.map(r=>[r.id,r]));
+const LITE=OOS.map((o,i)=>{const b=BR[o.b]||{};return {id:"oos-"+i,lite:true,name:o.n,brand:o.b,model:o.n.slice(o.b.length).trim(),type:o.t,pa:o.pa,rt:o.rt,mah:o.mah,url:o.u,
+  stock:"yok",price:null,sites:0,lastSites:0,score:null,fp:null,tlp:null,nav:"Bilinmiyor",obst:"Bilinmiyor",mop:"Bilinmiyor",station:"Bilinmiyor",net:b.network||"Bilinmiyor",w:b.warranty||null,
+  voice:[],extras:[],sc:{},ur:null,urc:0,as:b.as??null,sellers:[],svHits:[],svHitN:0,acc:0}});
+const OOSALL=OOSFULL.concat(LITE);
+const byId=Object.fromEntries(ITEMS.concat(LITE).map(r=>[r.id,r]));
 const median=a=>{if(!a.length)return null;const s=[...a].sort((x,y)=>x-y),m=s.length>>1;return s.length%2?s[m]:(s[m-1]+s[m])/2};
 const store={get(k){try{return JSON.parse(localStorage.getItem(k))}catch(e){return null}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
 
@@ -500,7 +505,7 @@ const GROUPS={
  obst:["Yapay zekâ / kamera","3D / yapısal ışık","Temel sensör","Tampon"],
  type:["Süpürge + Mop","Sadece süpürge","Sadece mop"],
  net:["Türkiye geneli","Çok noktalı","Merkezi","Bilinmiyor"],
- stock:["var","sinirli"],
+ stock:["var","sinirli","yok"],
  feat:FEATS.map(f=>f[0])
 };
 const NETLABEL={"Türkiye geneli":"Servis: Türkiye geneli","Çok noktalı":"Servis: çok noktalı","Merkezi":"Servis: merkezi (kargo)","Bilinmiyor":"Servis bilgisi yok"};
@@ -514,7 +519,7 @@ const S={q:"",pmin:null,pmax:null,station:new Set(),nav:new Set(),mop:new Set(),
 (()=>{const c=store.get("rs-cmp");if(Array.isArray(c))S.cmp=c.filter(id=>byId[id]).slice(0,4)})();
 
 function filterOut(skip){
-  return ALL.filter(r=>{
+  return (S.showOOS?ALL.concat(OOSALL):ALL).filter(r=>{
     if(S.q){const q=S.q.toLocaleLowerCase("tr");if(!(r.name.toLocaleLowerCase("tr").includes(q)||r.brand.toLocaleLowerCase("tr").includes(q)))return false}
     if(S.pmin!=null&&r.price<S.pmin)return false;
     if(S.pmax!=null&&r.price>S.pmax)return false;
@@ -539,7 +544,7 @@ const SORTS={fp:(a,b)=>b.fp-a.fp||b.score-a.score,score:(a,b)=>b.score-a.score||
   ur:(a,b)=>((b.urc>=20?b.ur:0)||0)-((a.urc>=20?a.ur:0)||0)||b.urc-a.urc,urc:(a,b)=>b.urc-a.urc,as:(a,b)=>(b.as??-1)-(a.as??-1)||b.fp-a.fp};
 
 /* ---------- filters UI ---------- */
-const STOCKLABEL={var:"Stokta (3+ mağaza)",sinirli:"Sınırlı stok (1–2 mağaza)"};
+const STOCKLABEL={var:"Stokta (3+ mağaza)",sinirli:"Sınırlı stok (1–2 mağaza)",yok:"Stok yok"};
 function chipLabel(g,v){return g==="feat"?FEATNAME[v]:g==="net"?NETLABEL[v]:g==="stock"?STOCKLABEL[v]:v}
 function renderChips(){
   for(const g of Object.keys(GROUPS)){
@@ -553,7 +558,7 @@ function renderChips(){
   }
   const base=filterOut("brand"),cnt={};
   base.forEach(r=>cnt[r.brand]=(cnt[r.brand]||0)+1);
-  const allB=[...new Set(ALL.map(r=>r.brand))];
+  const allB=[...new Set((S.showOOS?ALL.concat(OOSALL):ALL).map(r=>r.brand))];
   const bq=($("#bq").value||"").toLocaleLowerCase("tr");
   allB.sort((a,b)=>(cnt[b]||0)-(cnt[a]||0)||a.localeCompare(b,"tr"));
   $("#brands").innerHTML=allB.filter(b=>(cnt[b]||S.brand.has(b))&&(!bq||b.toLocaleLowerCase("tr").includes(bq))).map(b=>
@@ -571,12 +576,13 @@ let qt;$("#q").addEventListener("input",e=>{clearTimeout(qt);qt=setTimeout(()=>{
 for(const id of ["minPa","minRt","minClimb","minSites","maxH","maxDb","minUr","minUrc","minAs","minW"])$("#"+id).addEventListener("change",e=>{S[id]=+e.target.value;S.shown=48;update()});
 $("#sort").addEventListener("change",e=>{S.sort=e.target.value;update()});
 $("#pareto").addEventListener("change",e=>{S.pareto=e.target.checked;update()});
+$("#showOOS").addEventListener("change",e=>{S.showOOS=e.target.checked;if(!S.showOOS)S.stock.delete("yok");S.shown=48;S.tshown=80;update()});
 for(const id of ["pmin","pmax"])$("#"+id).addEventListener("change",e=>{const v=e.target.value.trim();S[id]=v===""?null:+v;S.shown=48;update()});
 const PQ=[["≤ 10 bin",null,10000],["10–20 bin",10000,20000],["20–35 bin",20000,35000],["35–50 bin",35000,50000],["50 bin +",50000,null]];
 $("#pquick").innerHTML=PQ.map((p,i)=>`<button type="button" data-pq="${i}">${p[0]}</button>`).join("");
 $("#pquick").addEventListener("click",e=>{const b=e.target.closest("[data-pq]");if(!b)return;const p=PQ[+b.dataset.pq];S.pmin=p[1];S.pmax=p[2];$("#pmin").value=p[1]??"";$("#pmax").value=p[2]??"";S.shown=48;update()});
 $("#reset").addEventListener("click",()=>{
-  Object.assign(S,{q:"",pmin:null,pmax:null,minPa:0,minRt:0,minClimb:0,minSites:1,maxH:0,maxDb:0,minUr:0,minUrc:0,minAs:0,minW:0,pareto:false,shown:48,tshown:80});
+  Object.assign(S,{q:"",pmin:null,pmax:null,minPa:0,minRt:0,minClimb:0,minSites:1,maxH:0,maxDb:0,minUr:0,minUrc:0,minAs:0,minW:0,pareto:false,showOOS:false,shown:48,tshown:80});$("#showOOS").checked=false;
   ["station","nav","mop","obst","type","net","stock","feat","brand"].forEach(g=>S[g].clear());
   ["q","pmin","pmax","bq"].forEach(i=>$("#"+i).value="");
   ["minPa","minRt","minClimb","maxH","maxDb","minUr","minUrc","minAs","minW"].forEach(i=>$("#"+i).value="0");$("#minSites").value="1";$("#pareto").checked=false;
@@ -596,6 +602,7 @@ function activeList(){
   for(const k in th)if(S[k])a.push([k,th[k](S[k])]);
   if(S.minSites>1)a.push(["minSites",`${S.minSites}+ mağaza`]);
   if(S.pareto)a.push(["pareto","Fiyatına göre en iyi"]);
+  if(S.showOOS)a.push(["showOOS","Stoksuzlar dahil"]);
   return a;
 }
 $("#activef").addEventListener("click",e=>{
@@ -604,6 +611,7 @@ $("#activef").addEventListener("click",e=>{
   else if(k==="price"){S.pmin=S.pmax=null;$("#pmin").value=$("#pmax").value=""}
   else if(k.includes("|")){const[g,v]=k.split("|");S[g].delete(v)}
   else if(k==="pareto"){S.pareto=false;$("#pareto").checked=false}
+  else if(k==="showOOS"){S.showOOS=false;S.stock.delete("yok");$("#showOOS").checked=false}
   else{S[k]=k==="minSites"?1:0;$("#"+k).value=String(S[k])}
   update()});
 
@@ -622,7 +630,17 @@ function specChips(r){
 }
 const stockBadge=r=>r.stock==="yok"?`<span class="stk stk-no">Stok yok</span>`:r.stock==="sinirli"?`<span class="stk stk-low" title="Sadece ${r.sites} mağazada stokta">Sınırlı · ${r.sites} mağaza</span>`:`<span class="stk stk-ok" title="${r.sites} mağazada stokta">Stokta · ${r.sites} mağaza</span>`;
 const asBand=v=>v>=70?"g":v>=55?"m":"b";
+function liteCard(r){
+  return `<article class="card oos-card">
+  <div class="top"><div style="min-width:0"><div class="brand">${esc(r.brand)}</div><h4><button type="button" data-open="${r.id}">${esc(r.model||r.name)}</button></h4></div></div>
+  <div class="price-row"><span class="price muted" style="font-size:15px">Fiyat yok</span>${stockBadge(r)}</div>
+  <p class="note" style="margin:0">Son kontrolde hiçbir mağazada bulunamadı. Sadece temel özellikler biliniyor.</p>
+  <div class="specs"><span class="spec">${esc(r.type)}</span>${r.pa?`<span class="spec">${fmt(r.pa)} Pa</span>`:""}${r.rt?`<span class="spec">${fmt(r.rt)} dk</span>`:""}${r.mah?`<span class="spec">${fmt(r.mah)} mAh</span>`:""}</div>
+  <div class="foot"><span class="note">Puanlanmadı</span><a class="btn ghost" href="${esc(r.url)}" target="_blank" rel="noopener">Epey'de incele →</a></div>
+  </article>`;
+}
 function card(r){
+  if(r.lite)return liteCard(r);
   const inCmp=S.cmp.includes(r.id);
   return `<article class="card">
   <div class="top"><div style="min-width:0"><div class="brand">${esc(r.brand)}</div><h4><button type="button" data-open="${r.id}">${esc(r.model||r.name)}</button></h4></div>
@@ -659,7 +677,8 @@ $("#moreTbl").onclick=()=>{S.tshown+=80;renderTable(cur)};
 let cur=[];
 function renderList(rows){
   const n=rows.length;
-  $("#count1").innerHTML=`${n} model<small>/ ${ALL.length} model içinden</small>`;
+  const no=rows.filter(r=>r.stock==="yok").length;
+  $("#count1").innerHTML=`${n} model<small>${no?`(${n-no} stokta + ${no} stoksuz)`:`/ ${ALL.length} stoktaki model içinden`}</small>`;
   $("#sortnote").textContent="Sıralama: "+$("#sort").selectedOptions[0].text;
   const af=activeList();
   $("#activef").innerHTML=af.map(([k,t])=>`<button type="button" data-af="${esc(k)}" aria-label="${esc(t)} filtresini kaldır">${esc(t)} ×</button>`).join("");
@@ -682,12 +701,12 @@ function renderOOS(){
   document.querySelectorAll(".chk").forEach(e=>e.textContent=CHECKED);
   $("#oostbl tbody").innerHTML=full.map(r=>`<tr data-open="${r.id}"><td class="model">${esc(r.name)}<small>Son görülen fiyat ${TL(r.price)} · ${r.lastSites} mağaza</small></td><td>${esc(r.type)}</td><td class="r num">${fmt(r.pa)}</td><td class="r num">${fmt(r.rt)}</td><td class="r num">${fmt(r.mah)}</td><td><button type="button" class="btn ghost" style="padding:0" data-open="${r.id}">Ayrıntı</button></td></tr>`).join("")+
    lite.map(o=>`<tr><td class="model">${esc(o.n)}</td><td>${esc(o.t)}</td><td class="r num">${fmt(o.pa)}</td><td class="r num">${fmt(o.rt)}</td><td class="r num">${fmt(o.mah)}</td><td><a href="${esc(o.u)}" target="_blank" rel="noopener" style="color:var(--accent)">Epey</a></td></tr>`).join("")||`<tr><td colspan="6" class="note">Eşleşen stoksuz model yok.</td></tr>`;
-  $("#oosBox").hidden=!n;
+  $("#oosBox").hidden=!n||S.showOOS;
   const hint=$("#oosHint");
-  if(S.q&&n&&cur.length<6){hint.hidden=false;hint.innerHTML=`"${esc(S.q)}" araması için <b>${n}</b> model şu an stokta değil. <button type="button" class="btn ghost" style="padding:0;color:var(--accent);font-weight:600" id="oosOpen">Stok bulunamayanları göster</button>`;}
+  if(!S.showOOS&&S.q&&n&&cur.length<6){hint.hidden=false;hint.innerHTML=`"${esc(S.q)}" araması için <b>${n}</b> model şu an stokta değil. <button type="button" class="btn ghost" style="padding:0;color:var(--accent);font-weight:600" id="oosOpen">Stok bulunamayanları göster</button>`;}
   else hint.hidden=true;
 }
-document.addEventListener("click",e=>{if(e.target.id==="oosOpen"){const d=$("#oosBox");d.open=true;d.scrollIntoView({behavior:"smooth",block:"start"})}});
+document.addEventListener("click",e=>{if(e.target.id==="oosInList"){S.showOOS=true;$("#showOOS").checked=true;update();return}if(e.target.id==="oosOpen"){const d=$("#oosBox");d.open=true;d.scrollIntoView({behavior:"smooth",block:"start"})}});
 
 
 /* ---------- table ---------- */
@@ -713,7 +732,7 @@ const COLS=[
  ["h","Yükseklik (mm)",r=>r.h??"—","r num",(a,b)=>(a.h||999)-(b.h||999)],
  ["db","Gürültü (dB)",r=>fmt(r.db),"r num",(a,b)=>(a.db||999)-(b.db||999)],
  ["dust","Toz haznesi (ml)",r=>fmt(r.dust),"r num",(a,b)=>(a.dust||0)-(b.dust||0)],
- ["sites","Stok (mağaza)",r=>r.stock==="sinirli"?`<span class="stk stk-low">${r.sites}</span>`:`<span class="stk stk-ok">${r.sites}</span>`,"r num",(a,b)=>a.sites-b.sites]];
+["sites","Stok (mağaza)",r=>r.stock==="yok"?`<span class="stk stk-no">yok</span>`:r.stock==="sinirli"?`<span class="stk stk-low">${r.sites}</span>`:`<span class="stk stk-ok">${r.sites}</span>`,"r num",(a,b)=>a.sites-b.sites]];
 $("#tbl thead").addEventListener("click",e=>{const b=e.target.closest("[data-col]");if(!b)return;const k=b.dataset.col;
   S.tsort=S.tsort&&S.tsort[0]===k?[k,-S.tsort[1]]:[k,(k==="name"||k==="price"||k==="h"||k==="db")?1:-1];renderTable(cur)});
 function renderTable(rows){
@@ -722,7 +741,7 @@ function renderTable(rows){
   if(S.tsort){const c=COLS.find(c=>c[0]===S.tsort[0]);r2=[...rows].sort((a,b)=>c[4](a,b)*S.tsort[1])}
   $("#tbl thead").innerHTML="<tr>"+COLS.map(c=>{const s=S.tsort&&S.tsort[0]===c[0]?(S.tsort[1]>0?"ascending":"descending"):null;
     return `<th class="${c[3].includes("r")?"r":""}" ${s?`aria-sort="${s}"`:""}><button type="button" data-col="${c[0]}">${c[1]}${s?(s==="ascending"?" ↑":" ↓"):""}</button></th>`}).join("")+"</tr>";
-  $("#tbl tbody").innerHTML=r2.slice(0,S.tshown).map(r=>`<tr data-open="${r.id}" tabindex="0">`+COLS.map(c=>`<td class="${c[3]}">${c[2](r)}</td>`).join("")+"</tr>").join("");
+  $("#tbl tbody").innerHTML=r2.slice(0,S.tshown).map(r=>`<tr data-open="${r.id}" tabindex="0">`+COLS.map(c=>`<td class="${c[3]}">${r.lite&&!["name","pa","rt","mah","sites","as"].includes(c[0])?"—":c[2](r)}</td>`).join("")+"</tr>").join("");
   $("#moreTbl").hidden=r2.length<=S.tshown;
 }
 $("#tbl tbody").addEventListener("keydown",e=>{if(e.key==="Enter"){const t=e.target.closest("[data-open]");t&&openDetail(t.dataset.open)}});
@@ -834,6 +853,12 @@ function trustBlock(r,q){
 }
 function openDetail(id){
   const r=byId[id];if(!r)return;
+  if(r.lite){const q=encodeURIComponent(r.name.replace(/\(.*?\)/g,"").trim());
+    $("#dlgBody").innerHTML=`<div class="mhead"><div><div class="brand" style="font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--fg3);font-weight:600">${esc(r.brand)} · ${esc(r.type)}</div><h2 id="dlgTitle">${esc(r.name)}</h2><div style="margin-top:6px">${stockBadge(r)}</div></div><button class="btn" type="button" id="dlgClose" aria-label="Kapat">✕</button></div>
+    <div class="mbody"><p class="verdict" style="background:var(--warn-soft)">Son stok kontrolünde (${CHECKED}) bu model hiçbir mağazada bulunamadı. Ayrıntılı özellikleri ve puanı bu yüzden toplanmadı.</p>
+    ${kv([["Emiş gücü",r.pa?fmt(r.pa)+" Pa":"—"],["Çalışma süresi",r.rt?fmt(r.rt)+" dk":"—"],["Pil",r.mah?fmt(r.mah)+" mAh":"—"]])}
+    <div><h3>Yine de aramak isterseniz</h3><div class="links">${STORES.map(([n,u])=>`<a href="${u}${q}" target="_blank" rel="noopener">${n}</a>`).join("")}<a href="${esc(r.url)}" target="_blank" rel="noopener">Epey</a></div></div></div>`;
+    const dlg=$("#dlg");if(!dlg.open)dlg.showModal();$("#dlgClose").onclick=()=>dlg.close();return;}
   const q=encodeURIComponent(r.name.replace(/\(.*?\)/g,"").trim());
   const sellers=r.sellers.length?r.sellers.map(([s,p])=>`<div class="seller"><span>${esc(s)}</span><span class="num">${TL(p)}</span></div>`).join(""):`<p class="note">Mağaza listesi alınamadı.</p>`;
   $("#dlgBody").innerHTML=`<div class="mhead"><div><div class="brand" style="font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--fg3);font-weight:600">${esc(r.brand)} · ${esc(r.type)}</div><h2 id="dlgTitle">${esc(r.name)}</h2>
@@ -1073,7 +1098,7 @@ function renderGuide(){
 
 /* ---------- routing & update ---------- */
 const VIEWS=["rehber","liste","tablo","analiz","guvence","oneriler","yontem"];
-document.addEventListener("keydown",e=>{if(e.key==="Enter"){const t=e.target.closest&&e.target.closest("tr[data-brand]");if(t){selBrand=t.dataset.brand;renderGuvence(cur)}}});
+document.addEventListener("keydown",e=>{if(e.key==="Enter"){const t=e.target.closest&&e.target.closest("tr[data-brand]");if(t){selBrand=t.dataset.brand;renderGuvence(inStock())}}});
 function view(){const h=location.hash.slice(1);return VIEWS.includes(h)?h:"liste"}
 function showView(){
   const v=view();
@@ -1084,13 +1109,14 @@ function showView(){
   $("#openFilters").style.visibility=(v==="yontem"||v==="rehber")?"hidden":"";
   renderView();
 }
+const inStock=()=>cur.filter(r=>r.stock!=="yok");
 function renderView(){
   const v=view();
   if(v==="liste")renderList(cur);
   else if(v==="tablo")renderTable(cur);
-  else if(v==="analiz"){renderScatter(cur);renderBrands(cur);renderHist(cur);renderFeatTable(cur)}
-  else if(v==="oneriler")renderPicks(cur);
-  else if(v==="guvence")renderGuvence(cur);
+  else if(v==="analiz"){const s=inStock();renderScatter(s);renderBrands(s);renderHist(s);renderFeatTable(s)}
+  else if(v==="oneriler")renderPicks(inStock());
+  else if(v==="guvence")renderGuvence(inStock());
   else if(v==="rehber")renderGuide();
 }
 let selBrand=null;
@@ -1123,15 +1149,16 @@ function renderGuvence(rows){
   $("#allissues").innerHTML=arr.map(([n,c])=>`<div class="hbar ib"><span class="nm">${esc(n)}</span><span class="track"><i style="width:${c/mx*100}%"></i></span><span class="val">%${Math.round(c/tot*100)} · ${c}</span></div>`).join("")+`<p class="note">${tot} şikâyet başlığı, ${Object.values(BR).filter(b=>b.sample).length} marka.</p>`;
 }
 document.addEventListener("click",e=>{
-  const h=e.target.closest("[data-bcol]");if(h){const c=h.dataset.bcol;S.bsort=S.bsort&&S.bsort[0]===c?[c,-S.bsort[1]]:[c,c==="b"||c==="density"?1:-1];renderGuvence(cur);return}
-  const t=e.target.closest("tr[data-brand]");if(t){selBrand=t.dataset.brand;renderGuvence(cur);$("#bdetail").scrollIntoView({behavior:"smooth",block:"nearest"})}
+  const h=e.target.closest("[data-bcol]");if(h){const c=h.dataset.bcol;S.bsort=S.bsort&&S.bsort[0]===c?[c,-S.bsort[1]]:[c,c==="b"||c==="density"?1:-1];renderGuvence(inStock());return}
+  const t=e.target.closest("tr[data-brand]");if(t){selBrand=t.dataset.brand;renderGuvence(inStock());$("#bdetail").scrollIntoView({behavior:"smooth",block:"nearest"})}
 });
+const sortCur=a=>a.sort((x,y)=>((x.stock==="yok")-(y.stock==="yok"))||((!!x.lite)-(!!y.lite))||SORTS[S.sort](x,y));
 function update(){
-  cur=filterOut().sort(SORTS[S.sort]);
+  cur=sortCur(filterOut());
   renderChips();renderView();
   store.set("rs-sort",S.sort);
 }
 window.addEventListener("hashchange",showView);
 (()=>{const s=store.get("rs-sort");if(s&&SORTS[s]){S.sort=s;$("#sort").value=s}})();
-renderStatic();renderTray();cur=filterOut().sort(SORTS[S.sort]);renderChips();showView();
+renderStatic();renderTray();cur=sortCur(filterOut());renderChips();showView();
 </script>
