@@ -1,6 +1,7 @@
-import json,re,math,statistics as st
 import os
+import json,re,math,statistics as st
 S=os.environ.get('RS_WORK', os.path.dirname(os.path.abspath(__file__)))
+IMG=json.load(open(S+'/imgids.json')) if os.path.exists(S+'/imgids.json') else {}
 L=json.load(open(S+'/list_items2.json')); D=json.load(open(S+'/details.json'))
 _fresh={x['url'] for x in L}
 for x in json.load(open(S+'/list_items.json')):
@@ -99,7 +100,7 @@ for it in L:
     sc['ekstra']=(2 if brushext else 0)+(1 if tangle else 0)+(1 if hepa else 0)+(1 if pet else 0)
     score=round(sum(sc.values()),1)
     out.append(dict(id=re.sub(r'\.html$','',it['url'].rsplit('/',1)[1]),name=name,brand=brand,model=model,type={'Robot Süpürge+Mop':'Süpürge + Mop','Robot Süpürge':'Sadece süpürge','Robot Mop':'Sadece mop'}.get(typ,typ),
-        price=round(price),sites=0 if it.get('gone') else it['sites'],stock='yok' if it.get('gone') else ('var' if it['sites']>=3 else 'sinirli'),lastSites=it['sites'],sellers=sl[:8],url=it['url'],
+        price=round(price),sites=0 if it.get('gone') else it['sites'],stock='yok' if (it.get('gone') or (IMG.get(it['url'],10**9)<900000 and it['sites']<=2)) else ('var' if it['sites']>=3 else 'sinirli'),old=bool(IMG.get(it['url'],10**9)<900000),gone=bool(it.get('gone')),imgId=IMG.get(it['url']),lastSites=it['sites'],sellers=sl[:8],url=it['url'],
         pa=pa,mah=mah,rt=rt,ch=ch,db=db,w=w,dust=dust,water=water,h=h,kg=kg,climb=climb,area=area,stDust=st_dust,stClean=st_clean,stDirty=st_dirty,
         nav=nav,navRaw=navraw,cam=has_cam,obst=obst,mop=mop,mopLift=mop_lift,mopLiftMm=mop_lift_mm,mopExt=mopext,mopDetach=mopdetach,
         station=station,selfEmpty=selfempty,selfEmptyOpt=se=='Opsiyonel',mopWash=mopwash,hotWash=hotwash,hotDry=hotdry,refill=refill,deterg=deterg,
