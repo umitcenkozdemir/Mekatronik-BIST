@@ -229,6 +229,31 @@ footer{color:var(--fg3);font-size:12px;padding-block:20px 120px;border-top:1px s
 .hbar.ib{grid-template-columns:minmax(120px,190px) minmax(0,1fr) 70px}
 #btable tbody tr{cursor:pointer}
 .trustgrid{border-top:1px solid var(--line-soft);padding-top:18px}
+.fgroup h3 .help,.help{display:inline-grid;place-items:center;width:18px;height:18px;border-radius:50%;border:1px solid var(--accent);color:var(--accent);background:transparent;font-size:11px;font-weight:700;padding:0;margin-left:4px;vertical-align:middle;letter-spacing:0;font-family:var(--f-body);cursor:pointer}
+.mbody h3 .help{margin-left:6px}
+.layout.nofilter{grid-template-columns:minmax(0,1fr)}
+.guidebar{background:var(--accent-soft);border-radius:var(--r);padding:10px 14px;margin-bottom:14px;font-size:13px;color:var(--fg)}
+.guidebar a,.prio a,#helpGuide{color:var(--accent);font-weight:600}
+.ghero .lead,.lead{color:var(--fg2);max-width:78ch;margin:0 0 10px}
+.verdict{background:var(--good-soft);border-radius:8px;padding:8px 12px;margin:0 0 14px;max-width:78ch}
+.prio{margin:0;padding-left:22px;display:grid;gap:6px;color:var(--fg2);max-width:80ch}
+.prio b{color:var(--fg)}
+.optgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px}
+.opt{border:1px solid var(--line);border-radius:var(--r);padding:12px 14px;display:flex;flex-direction:column;gap:6px;min-width:0}
+.opt p{margin:0;font-size:13px;color:var(--fg2)}
+.opt .who{color:var(--fg)}
+.opth{display:flex;justify-content:space-between;align-items:center;gap:8px;font-family:var(--f-display);font-size:16px}
+.st5{color:var(--accent);letter-spacing:2px;font-size:10px;white-space:nowrap}.st5 span{color:var(--line)}
+.pl{color:var(--good);font-weight:700}.mi{color:var(--bad);font-weight:700}
+.btn.sm{padding:2px 0;font-size:13px;align-self:flex-start;color:var(--accent)}
+.gloss{display:grid;grid-template-columns:minmax(150px,220px) 1fr;gap:8px 18px;margin:0}
+.gloss dt{font-weight:600}.gloss dd{margin:0;color:var(--fg2)}
+.myths{margin:0;padding-left:18px;display:grid;gap:8px;color:var(--fg2);max-width:80ch}.myths b{color:var(--fg)}
+.wq{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px 22px}
+.wql{font-weight:600;margin-bottom:6px}
+.wres{border-top:1px solid var(--line-soft);margin-top:18px;padding-top:14px}
+#helpdlg .mbody{gap:14px}
+@media (max-width:600px){.gloss{grid-template-columns:1fr}.gloss dd{margin-bottom:6px}}
 @media (max-width:980px){
   .layout{grid-template-columns:minmax(0,1fr)}
   aside.filters{display:none;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:14px 16px}
@@ -267,6 +292,7 @@ footer{color:var(--fg3);font-size:12px;padding-block:20px 120px;border-top:1px s
       <input id="q" type="search" placeholder="Model veya marka ara (ör. Qrevo, S40, Deebot)" aria-label="Model veya marka ara">
     </div>
     <nav class="tabs" aria-label="Görünüm">
+      <a href="#rehber" data-view="rehber">Rehber</a>
       <a href="#liste" data-view="liste">Liste</a>
       <a href="#tablo" data-view="tablo">Tablo</a>
       <a href="#analiz" data-view="analiz">Analiz</a>
@@ -291,7 +317,7 @@ footer{color:var(--fg3);font-size:12px;padding-block:20px 120px;border-top:1px s
       </div>
       <div class="quick" id="pquick"></div>
     </div>
-    <div class="fgroup"><h3>Sırala</h3>
+    <div class="fgroup"><h3><span>Sırala <button type="button" class="help" data-help="score" aria-label="Puanlar nasıl okunur?">?</button></span></h3>
       <select id="sort" class="fsel" aria-label="Sıralama">
         <option value="fp">Fiyat/performans (yüksek)</option>
         <option value="score">Özellik puanı (yüksek)</option>
@@ -307,7 +333,7 @@ footer{color:var(--fg3);font-size:12px;padding-block:20px 120px;border-top:1px s
       </select>
     </div>
     <div class="fgroup">
-      <h3>Kullanıcılar ve satış sonrası</h3>
+      <h3><span>Kullanıcılar ve satış sonrası <button type="button" class="help" data-help="trust" aria-label="Kullanıcı puanı ve satış sonrası nedir?">?</button></span></h3>
       <div class="selrow">
         <label>Min. kullanıcı puanı<select id="minUr" class="fsel"><option value="0">Hepsi</option><option value="4">4,0 ★</option><option value="4.3">4,3 ★</option><option value="4.5">4,5 ★</option></select></label>
         <label>Min. değerlendirme<select id="minUrc" class="fsel"><option value="0">Hepsi</option><option value="1">En az 1</option><option value="20">20+</option><option value="100">100+</option><option value="500">500+</option></select></label>
@@ -316,12 +342,12 @@ footer{color:var(--fg3);font-size:12px;padding-block:20px 120px;border-top:1px s
       </div>
       <div class="chips" data-group="net" style="margin-top:8px"></div>
     </div>
-    <div class="fgroup"><h3>Hazır istasyon <button type="button" data-clear="station">sıfırla</button></h3><div class="chips" data-group="station"></div></div>
-    <div class="fgroup"><h3>Navigasyon <button type="button" data-clear="nav">sıfırla</button></h3><div class="chips" data-group="nav"></div></div>
-    <div class="fgroup"><h3>Mop tipi <button type="button" data-clear="mop">sıfırla</button></h3><div class="chips" data-group="mop"></div></div>
-    <div class="fgroup"><h3>Engel algılama <button type="button" data-clear="obst">sıfırla</button></h3><div class="chips" data-group="obst"></div></div>
+    <div class="fgroup"><h3><span>Hazır istasyon <button type="button" class="help" data-help="station" aria-label="İstasyon tipleri nedir?">?</button></span><button type="button" data-clear="station">sıfırla</button></h3><div class="chips" data-group="station"></div></div>
+    <div class="fgroup"><h3><span>Navigasyon <button type="button" class="help" data-help="nav" aria-label="Navigasyon türleri nedir?">?</button></span><button type="button" data-clear="nav">sıfırla</button></h3><div class="chips" data-group="nav"></div></div>
+    <div class="fgroup"><h3><span>Mop tipi <button type="button" class="help" data-help="mop" aria-label="Mop sistemleri nedir?">?</button></span><button type="button" data-clear="mop">sıfırla</button></h3><div class="chips" data-group="mop"></div></div>
+    <div class="fgroup"><h3><span>Engel algılama <button type="button" class="help" data-help="obst" aria-label="Engel algılama nedir?">?</button></span><button type="button" data-clear="obst">sıfırla</button></h3><div class="chips" data-group="obst"></div></div>
     <div class="fgroup">
-      <h3>Teknik eşikler</h3>
+      <h3><span>Teknik eşikler <button type="button" class="help" data-help="tech" aria-label="Teknik değerler ne anlama gelir?">?</button></span></h3>
       <div class="selrow">
         <label>Min. emiş<select id="minPa" class="fsel"><option value="0">Hepsi</option><option>4000</option><option>6000</option><option>8000</option><option>10000</option><option>15000</option><option>20000</option><option>25000</option><option>30000</option></select></label>
         <label>Min. süre (dk)<select id="minRt" class="fsel"><option value="0">Hepsi</option><option>90</option><option>120</option><option>150</option><option>180</option><option>240</option></select></label>
@@ -331,10 +357,10 @@ footer{color:var(--fg3);font-size:12px;padding-block:20px 120px;border-top:1px s
         <label>Maks. gürültü<select id="maxDb" class="fsel"><option value="0">Hepsi</option><option value="60">60 dB</option><option value="65">65 dB</option><option value="68">68 dB</option></select></label>
       </div>
     </div>
-    <div class="fgroup"><h3>Özellikler <button type="button" data-clear="feat">sıfırla</button></h3><div class="chips" data-group="feat"></div>
+    <div class="fgroup"><h3><span>Özellikler <button type="button" class="help" data-help="feat" aria-label="Özellikler ne işe yarar?">?</button></span><button type="button" data-clear="feat">sıfırla</button></h3><div class="chips" data-group="feat"></div>
       <label class="toggle"><input type="checkbox" id="pareto"> Yalnızca "fiyatına göre en iyi" modeller</label>
     </div>
-    <div class="fgroup"><h3>Ürün tipi <button type="button" data-clear="type">sıfırla</button></h3><div class="chips" data-group="type"></div></div>
+    <div class="fgroup"><h3><span>Ürün tipi <button type="button" class="help" data-help="type" aria-label="Ürün tipleri">?</button></span><button type="button" data-clear="type">sıfırla</button></h3><div class="chips" data-group="type"></div></div>
     <div class="fgroup">
       <h3>Marka <button type="button" data-clear="brand">sıfırla</button></h3>
       <input class="brandsearch" id="bq" type="search" placeholder="Marka ara" aria-label="Marka ara">
@@ -343,7 +369,38 @@ footer{color:var(--fg3);font-size:12px;padding-block:20px 120px;border-top:1px s
   </aside>
 
   <main id="main" style="min-width:0">
+    <section data-pane="rehber" hidden>
+      <div class="panel ghero">
+        <h2>Robot süpürge nasıl seçilir?</h2>
+        <p class="lead">Teknik terimler kafa karıştırıcı olabilir. Önce ne istediğinize karar verin, sonra özelliklere bakın. Aşağıdaki sihirbaz 9 soruyla sizin için uygun modelleri bulur; altında her terimin ne demek olduğunu ve hangisinin kime uygun olduğunu bulabilirsiniz.</p>
+        <h3 class="sub3" style="margin-top:14px">Neye hangi önem sırasıyla bakmalı?</h3>
+        <ol class="prio">
+          <li><b>Navigasyon.</b> Robotun temizlik kalitesini en çok belirleyen şey. LiDAR'lı model alın. <a href="#t-nav" data-jump="t-nav">Ayrıntı</a></li>
+          <li><b>İstasyon.</b> Ne kadar bakım yapmak istediğinize göre seçin. <a href="#t-station" data-jump="t-station">Ayrıntı</a></li>
+          <li><b>Mop sistemi.</b> Silme önemliyse döner veya rulo mop; halınız varsa mop kaldırma. <a href="#t-mop" data-jump="t-mop">Ayrıntı</a></li>
+          <li><b>Engel algılama.</b> Yerde kablo, çorap veya evcil hayvan varsa kameralı model. <a href="#t-obst" data-jump="t-obst">Ayrıntı</a></li>
+          <li><b>Satış sonrası.</b> Türkiye garantisi, servis ağı ve kullanıcı puanı. <a href="#guvence">Güvence sekmesi</a></li>
+          <li><b>Emiş gücü ve pil.</b> En son bakın: 8.000 Pa ve 150 dk çoğu ev için yeterli.</li>
+        </ol>
+      </div>
+      <div class="panel" id="wizard"></div>
+      <div id="topics"></div>
+      <div class="panel"><h2>Sık yapılan hatalar</h2>
+        <ul class="myths">
+          <li><b>"En yüksek Pa en iyisidir."</b> 10.000 Pa üstünde fark azalır; markalar farklı ölçer. Fırça ve navigasyon daha belirleyici.</li>
+          <li><b>"İstasyon lüks."</b> Toz boşaltma istasyonu olmayan robotun haznesini haftada 2–3 kez boşaltırsınız. Çoğu kullanıcı için en çok fark ettiren ekstra budur.</li>
+          <li><b>"Mop varsa yeter."</b> Sabit pedli paspas lekeyi çıkarmaz; halıda kaldırma yoksa halıyı ıslatır.</li>
+          <li><b>"Ucuz ithalatçı fiyatı fırsattır."</b> Faturada Türkiye garantisi yoksa arızada servis bulmak zorlaşabilir. Şikâyetlerin çoğu arızadan değil servis sürecinden geliyor.</li>
+          <li><b>Yüksekliği ölçmemek.</b> Koltuk altı 10 cm'den alçaksa LiDAR kulesi sığmayabilir.</li>
+        </ul>
+      </div>
+      <div class="panel"><h2>Bakım ve sarf malzemesi</h2>
+        <p class="lead">Robotun asıl masrafı sarf malzemesidir: yan fırça (3–6 ayda bir), ana fırça (6–12 ay), filtre (3–6 ay), paspas bezi (3–6 ay) ve istasyon torbası (1–2 ayda bir). Ekim 2026'da Hepsiburada ve Amazon'da gördüğümüz örnek fiyatlar: uyumlu 2'li yan fırça 320–360 TL, 2'li mop bezi yaklaşık 380 TL, 12'li toz torbası yaklaşık 840 TL, 12 parçalık uyumlu yedek set yaklaşık 790 TL. Yılda kabaca 1.000–3.000 TL ayırın.</p>
+        <p class="note">Ayrıntı penceresindeki "yedek parça ilanı" sayısı, o model için piyasada ne kadar uyumlu parça bulunduğunu gösterir. Çok satan modellerde parça bulmak kolaydır.</p>
+      </div>
+    </section>
     <section data-pane="liste">
+      <div class="guidebar">Ne alacağınızdan emin değil misiniz? <a href="#rehber">Seçim sihirbazını deneyin</a> ya da filtre başlıklarındaki <span class="help" aria-hidden="true">?</span> işaretine dokunarak terimlerin ne anlama geldiğini okuyun.</div>
       <div class="reshead"><div class="count" id="count1"></div><div class="note" id="sortnote"></div></div>
       <div class="active-f" id="activef"></div>
       <div class="grid" id="cards"></div>
@@ -405,6 +462,7 @@ footer{color:var(--fg3);font-size:12px;padding-block:20px 120px;border-top:1px s
 </div>
 
 <dialog id="dlg" aria-labelledby="dlgTitle"><div class="modal" id="dlgBody"></div></dialog>
+<dialog id="helpdlg" aria-labelledby="helpTitle"><div class="modal" id="helpBody"></div></dialog>
 
 <script>
 const DATA=/*__DATA__*/;
@@ -756,8 +814,8 @@ function openDetail(id){
      <div class="links" style="margin-top:6px"><a href="${esc(r.url)}#fiyatlar" target="_blank" rel="noopener">Epey: tüm satıcılar</a><a href="https://www.akakce.com/arama/?q=${q}" target="_blank" rel="noopener">Akakçe</a><a href="https://www.cimri.com/arama?q=${q}" target="_blank" rel="noopener">Cimri</a></div></div>
    </div>
    <div class="mgrid">
-    <div><h3>Temizlik ve navigasyon</h3>${kv([["Emiş gücü",u(r.pa&&fmt(r.pa),"Pa")],["Navigasyon",esc(r.nav)+(r.navRaw?` <span style="color:var(--fg3)">(${esc(r.navRaw)})</span>`:"")],["Engel algılama",esc(r.obst)],["Kamera",ynT(r.cam)],["Mop tipi",esc(r.mop)],["Mop kaldırma",r.mopLift?(r.mopLiftMm?u(r.mopLiftMm,"mm"):"Var"):"Yok"],["Uzayan mop",ynT(r.mopExt)],["Mop bırakma",ynT(r.mopDetach)],["Uzayan yan fırça",ynT(r.brushExt)],["Yan fırça sayısı",r.sides??"—"],["Halı algılama",ynT(r.carpet)],["Dolaşmayan fırça",ynT(r.tangle)],["HEPA filtre",ynT(r.hepa)],["Eşik aşma",u(r.climb,"mm")]])}</div>
-    <div><h3>İstasyon</h3>${kv([["İstasyon tipi",esc(r.station)],["Toz boşaltma",r.selfEmpty?"Var":r.selfEmptyOpt?"Opsiyonel":"Yok"],["Mop yıkama",ynT(r.mopWash)],["Sıcak su ile yıkama",ynT(r.hotWash)],["Sıcak hava kurutma",ynT(r.hotDry)],["Otomatik su dolumu",ynT(r.refill)],["Otomatik deterjan",ynT(r.deterg)],["İstasyon toz torbası",u(r.stDust,"L")],["Temiz su tankı",u(r.stClean,"L")],["Kirli su tankı",u(r.stDirty,"L")]])}
+    <div><h3>Temizlik ve navigasyon <button type="button" class="help" data-help="nav" aria-label="Navigasyon türleri nedir?">?</button></h3>${kv([["Emiş gücü",u(r.pa&&fmt(r.pa),"Pa")],["Navigasyon",esc(r.nav)+(r.navRaw?` <span style="color:var(--fg3)">(${esc(r.navRaw)})</span>`:"")],["Engel algılama",esc(r.obst)],["Kamera",ynT(r.cam)],["Mop tipi",esc(r.mop)],["Mop kaldırma",r.mopLift?(r.mopLiftMm?u(r.mopLiftMm,"mm"):"Var"):"Yok"],["Uzayan mop",ynT(r.mopExt)],["Mop bırakma",ynT(r.mopDetach)],["Uzayan yan fırça",ynT(r.brushExt)],["Yan fırça sayısı",r.sides??"—"],["Halı algılama",ynT(r.carpet)],["Dolaşmayan fırça",ynT(r.tangle)],["HEPA filtre",ynT(r.hepa)],["Eşik aşma",u(r.climb,"mm")]])}</div>
+    <div><h3>İstasyon <button type="button" class="help" data-help="station" aria-label="İstasyon tipleri nedir?">?</button></h3>${kv([["İstasyon tipi",esc(r.station)],["Toz boşaltma",r.selfEmpty?"Var":r.selfEmptyOpt?"Opsiyonel":"Yok"],["Mop yıkama",ynT(r.mopWash)],["Sıcak su ile yıkama",ynT(r.hotWash)],["Sıcak hava kurutma",ynT(r.hotDry)],["Otomatik su dolumu",ynT(r.refill)],["Otomatik deterjan",ynT(r.deterg)],["İstasyon toz torbası",u(r.stDust,"L")],["Temiz su tankı",u(r.stClean,"L")],["Kirli su tankı",u(r.stDirty,"L")]])}
      <h3 style="margin-top:16px">Pil, gövde ve bağlantı</h3>${kv([["Çalışma süresi",u(r.rt,"dk")],["Pil",u(r.mah&&fmt(r.mah),"mAh")],["Şarj süresi",u(r.ch,"saat")],["Gürültü",u(r.db,"dB")],["Güç",u(r.w,"W")],["Toz haznesi",u(r.dust,"ml")],["Su haznesi",u(r.water,"ml")],["Yükseklik",u(r.h,"mm")],["Ağırlık",u(r.kg,"kg")],["Wi-Fi / uygulama",ynT(r.wifi)],["Sesli asistan",r.voice.length?esc(r.voice.join(", ")):"—"],["Matter",ynT(r.matter)],["Harita",r.maps?r.maps+" kat":(r.multimap?"Çoklu":"—")],["Renk",esc(r.color||"—")]])}</div>
    </div>
    ${trustBlock(r,q)}
@@ -822,15 +880,172 @@ function renderStatic(){
   $("#foot").innerHTML=`Kaynaklar (${SNAP}): fiyat ve özellik için epey.com (19 mağazanın fiyatları); kullanıcı puanı için Hepsiburada ve Amazon; şikâyet için Şikâyetvar; servis ve garanti için marka ve distribütör siteleri. ${ALL.length} model. Fiyatlar bilgi amaçlıdır; satıcıdan doğrulayın.`;
 }
 
+/* ---------- guide / wizard ---------- */
+const TOPICS={
+ nav:{title:"Navigasyon: robot evi nasıl tanıyor?",group:"nav",
+  intro:"Navigasyon, robotun evin haritasını çıkarıp nerede olduğunu bilme yöntemidir. Seçimdeki en önemli tek özelliktir: iyi navigasyon, odaları sırayla ve eksiksiz temizler; uygulamadan oda seçmenize, yasak bölge çizmenize izin verir.",
+  verdict:"Çoğu ev için LiDAR'ı tercih edin. 10.000 TL üstündeki hemen her modelde var, artık pahalı bir özellik değil.",
+  opts:[
+   {v:"LiDAR",stars:5,how:"Üstteki küçük kulede dönen bir lazer, odayı saniyede binlerce kez ölçer ve santimetre hassasiyetinde harita çıkarır.",plus:"Hızlı ve doğru harita; karanlıkta da çalışır; oda bazlı temizlik, yasak bölge, çok kat haritası.",minus:"Kule gövdeyi yaklaşık 1 cm yükseltir; çok alçak mobilyaların altına girmeyebilir.",who:"Hemen herkes için varsayılan seçim."},
+   {v:"Kamera (vSLAM)",stars:3,how:"Kamera tavanı ve duvarları görüp yer işaretleri çıkarır, haritayı görüntüden kurar.",plus:"Kule yok, gövde alçak kalabilir; kamera aynı zamanda engel tanımada kullanılabilir.",minus:"Karanlıkta ve düz, desensiz tavanlarda zorlanır; ucuz modellerde harita kayabilir.",who:"İyi aydınlatılmış evler; kamerayı engel tanıma için de isteyenler."},
+   {v:"ToF / 3D",stars:4,how:"Kızılötesi ışığın gidip dönme süresini ölçen sensörlerle (ToF, dToF) mesafeyi ölçer; dönen kule gerekmez.",plus:"Lazere yakın doğruluk, alçak gövde.",minus:"Henüz az model var; yazılım olgunluğu markaya göre değişir.",who:"Mobilya altı boşluğu düşük evler."},
+   {v:"Jiroskop",stars:2,how:"Dönüş sensörü ve tekerlek sayacıyla düz çizgiler halinde zikzak gider.",plus:"Ucuz; rastgele gezene göre düzenli.",minus:"Gerçek harita yok ya da zayıf; oda seçemezsiniz, kaçırdığı yerler olur.",who:"Tek oda veya küçük daire, çok sınırlı bütçe."},
+   {v:"Diğer",stars:2,how:"Haritalama var ama yöntemi ürün sayfasında belirtilmemiş.",plus:"—",minus:"Ne aldığınızı bilemezsiniz; satın almadan önce üreticiden doğrulayın.",who:"Ancak yöntem doğrulanırsa."},
+   {v:"Rastgele",stars:1,how:"Bir yere çarpınca yön değiştirir, sistemsiz dolaşır.",plus:"En ucuz.",minus:"Uzun sürer, aynı yerden defalarca geçer, köşeleri kaçırır. Önerilmez.",who:"Önerilmez."}]},
+ obst:{title:"Engel algılama: kabloya, çoraba takılır mı?",group:"obst",
+  intro:"Navigasyon evin duvarlarını bilir; engel algılama ise yerdeki küçük, yer değiştiren şeyleri (kablo, terlik, çorap, oyuncak, evcil hayvan dışkısı) görmeyi sağlar.",
+  verdict:"Yerde eşya, kablo veya evcil hayvan varsa kameralı yapay zekâ ya da en azından 3D algılama alın. Derli toplu bir evde temel sensör yeterli.",
+  opts:[
+   {v:"Yapay zekâ / kamera",stars:5,how:"Ön kamera nesneyi görür ve ne olduğunu tanır (kablo, çorap, dışkı); etrafından dolaşır.",plus:"En az takılma; evcil hayvan dışkısından kaçınma; bazılarında uzaktan görüntü.",minus:"Daha pahalı; kamera gizlilik endişesi yaratabilir (yerel işleme yapan modelleri tercih edin).",who:"Evcil hayvanlı, çocuklu, yerde eşya bırakılan evler."},
+   {v:"3D / yapısal ışık",stars:4,how:"Lazer çizgileri veya ToF ile önündeki cismin şeklini ve yüksekliğini ölçer; ne olduğunu bilmez.",plus:"Kutu, ayak, terlik gibi cisimleri iyi görür.",minus:"İnce kablolarda ve düz cisimlerde (çorap, dışkı) daha zayıf.",who:"Orta derecede dağınık evler."},
+   {v:"Temel sensör",stars:2,how:"Önde kızılötesi sensörler, cisme yaklaşınca yavaşlar.",plus:"Mobilyaya sert çarpmaz.",minus:"Yerdeki küçük nesneleri görmez; kabloları yutabilir.",who:"Yerde eşya bırakılmayan evler."},
+   {v:"Tampon",stars:1,how:"Ancak çarpınca fark eder.",plus:"—",minus:"Her şeye çarpar, küçük nesnelere takılır.",who:"Önerilmez."}]},
+ mop:{title:"Mop (paspas) sistemi: ne kadar iyi siler?",group:"mop",
+  intro:"Robotların çoğu artık hem süpürüp hem siliyor. Fark, paspasın zemine nasıl bastırıldığı ve nasıl temizlendiğidir.",
+  verdict:"Düzenli silme istiyorsanız çift döner veya rulo mop, mümkünse mop yıkayan bir istasyonla birlikte. Halınız varsa mop kaldırma şart.",
+  opts:[
+   {v:"Rulo mop",stars:5,how:"Silindir şeklinde paspas döner ve sürekli temiz suyla yıkanıp kirli su emilir.",plus:"Kir zemine geri sürülmez; en hijyenik ve kenara yakın silme.",minus:"Yeni teknoloji, pahalı; parça bulunurluğu daha az.",who:"Silme performansına en çok önem verenler."},
+   {v:"Çift döner",stars:5,how:"İki yuvarlak paspas bastırarak döner; bazıları kenara uzanır.",plus:"Kurumuş lekelerde iyi; istasyonda otomatik yıkanır; çok yaygın.",minus:"Halıya geçerken kaldırma veya bırakma özelliği gerekir.",who:"Düzenli silme isteyenlerin çoğu."},
+   {v:"Titreşimli",stars:4,how:"Düz ped dakikada binlerce kez ileri geri titreşerek ovar.",plus:"Sabit pedden belirgin iyi; genelde kaldırma özelliğiyle gelir.",minus:"Köşelere ve kenarlara döner moptan az ulaşır.",who:"Orta düzey silme beklentisi."},
+   {v:"Basınçlı ped",stars:2,how:"Düz ped zemine bastırılarak sürüklenir.",plus:"Sabit pedden biraz iyi.",minus:"Lekeye zayıf.",who:"Hafif toz alma."},
+   {v:"Sabit ped",stars:2,how:"Su damlatan bez arkadan sürüklenir.",plus:"Ucuz; günlük toz için yeterli.",minus:"Lekeyi çıkarmaz, kiri yayabilir; halıya girerse ıslatır.",who:"Silmeyi bonus olarak görenler."},
+   {v:"Yok",stars:3,how:"Sadece süpürür.",plus:"Basit, daha az bakım.",minus:"Silme yok.",who:"Tamamı halı olan evler veya paspası kendisi yapanlar."}]},
+ station:{title:"İstasyon: ne kadar bakım yapmak istersiniz?",group:"station",
+  intro:"İstasyon robotun şarj olduğu yuvadır. Gelişmiş istasyonlar sizin yapacağınız işleri (toz haznesini boşaltma, paspası yıkama) üstlenir. Asıl karar şudur: robotla ne sıklıkta uğraşmak istiyorsunuz?",
+  verdict:"Toz boşaltma istasyonu yaşam kalitesini en çok artıran ekstradır. Düzenli silme istiyorsanız tam istasyon alın; yoksa paspası her seferinde elle yıkarsınız.",
+  opts:[
+   {v:"Tam istasyon",stars:5,how:"Tozu torbaya çeker, paspası yıkar ve kurutur, robotun su haznesini doldurur.",plus:"Haftada bir su tankı değiştirmek dışında neredeyse bakım yok.",minus:"Pahalı; yer kaplar (yaklaşık 35×45×45 cm); torba ve deterjan masrafı.",who:"En az uğraş isteyenler, düzenli silme."},
+   {v:"Toz boşaltma",stars:4,how:"Robot yuvaya dönünce toz haznesi istasyondaki torbaya boşaltılır.",plus:"4–8 haftada bir torba değişimi; tozla temas yok (alerjiye iyi).",minus:"Mop varsa paspası elle yıkarsınız; torba masrafı.",who:"Ağırlıklı süpürme yapan, bakımı azaltmak isteyenler."},
+   {v:"Mop yıkama",stars:3,how:"Sadece paspası yıkar, toz haznesini siz boşaltırsınız.",plus:"Silme işini otomatikleştirir.",minus:"Toz haznesi her 1–3 temizlikte boşaltılmalı. Pazarda nadir.",who:"Silme ağırlıklı kullanım."},
+   {v:"Sadece şarj",stars:2,how:"Sadece şarj eder.",plus:"Ucuz, küçük.",minus:"Toz haznesini her 1–3 temizlikte boşaltırsınız; paspas elle yıkanır.",who:"Küçük ev, sınırlı bütçe, bakımı dert etmeyenler."}]},
+ type:{title:"Ürün tipi",group:"type",intro:"Pazardaki modellerin neredeyse tamamı hem süpürüp hem siliyor.",verdict:"Silme istemeseniz bile süpürge + mop modelleri artık aynı fiyata.",
+  opts:[{v:"Süpürge + Mop",stars:5,how:"Hem süpürür hem siler.",plus:"Esnek.",minus:"—",who:"Çoğu kullanıcı."},{v:"Sadece süpürge",stars:3,how:"Yalnız süpürür.",plus:"Basit.",minus:"Silme yok.",who:"Halılı evler."},{v:"Sadece mop",stars:2,how:"Yalnız siler (ör. Braava).",plus:"Dar alanlarda iyi siler.",minus:"Süpürmez; ikinci cihaz gerekir.",who:"Zaten süpürgesi olanlar."}]}
+};
+const TECH=[
+ ["Emiş gücü (Pa)","Vakumun basınç farkı. Sert zeminde 2.500–4.000 Pa yeterli, halı ve evcil hayvan tüyü için 8.000 Pa üstü iyi. 10.000'in üzerindeki farklar pratikte sanıldığı kadar büyük değildir; markalar farklı yöntemlerle ölçer. Fırça tasarımı (kauçuk, dolaşmayan) en az emiş gücü kadar önemlidir."],
+ ["Çalışma süresi (dk)","120 dk yaklaşık 100 m² temizler. Büyük evde 180 dk üstünü seçin. Çoğu LiDAR'lı model pil bitince şarj olup kaldığı yerden devam eder; bu yüzden süre kritik değildir."],
+ ["Eşik aşma (mm)","Türkiye'deki kapı eşikleri ve halı kenarları genelde 15–20 mm'dir; 20 mm standarttır. 30–40 mm ve üstü (bacaklı şasi) çift kademeli eşikler için. Eşiğinizi cetvelle ölçün."],
+ ["Gövde yüksekliği (mm)","Koltuk ve yatak altını ölçün. LiDAR'lı modeller genelde 95–100 mm'dir; geri çekilebilen lazer kulesi olanlar 80 mm civarına iner."],
+ ["Gürültü (dB)","60–65 dB normal konuşma seviyesidir. Evde yokken çalıştıracaksanız önemsizdir."],
+ ["Mağaza sayısı","Tek mağazada satılan model, ithalatçı fiyatıyla pahalı ya da stoktan çıkmak üzere olabilir. 3+ mağaza daha sağlıklı fiyat demektir."]];
+const FEATHELP={hotWash:"Paspası 45–80 °C suyla yıkar; yağlı mutfak kirinde fark yaratır.",hotDry:"Yıkanan paspası sıcak havayla kurutur; koku ve küfü önler. Mop yıkamalı istasyonda neredeyse şart.",refill:"Robotun su haznesini istasyon doldurur (bazı modellerde tesisata bağlanabilir).",deterg:"İstasyon deterjanı otomatik katar.",mopLift:"Halıya çıkınca paspası kaldırır; halıyı ıslatmaz. Halılı evde şart.",mopExt:"Paspas kenara doğru uzanır, süpürgelik dibini siler.",mopDetach:"Halı temizlerken paspası istasyonda bırakır; mop kaldırmadan da iyi.",brushExt:"Yan fırça köşelere uzanır.",cam:"Engel tanıma ve uzaktan görüntü için kamera.",carpet:"Halıyı algılayıp emişi artırır.",pet:"Evcil hayvan tüyü, konumu veya dışkısı için özel mod.",tangle:"Saç ve tüy dolanmayan fırça; uzun saçlı ve evcil hayvanlı evde çok önemli.",hepa:"İnce toz ve alerjen filtresi.",multimap:"Birden fazla katın haritasını saklar.",map3d:"Mobilyaları da gösteren 3D harita.",roomset:"Her oda için ayrı emiş ve su ayarı.",voice:"Alexa, Google veya Siri ile kontrol.",matter:"Farklı akıllı ev sistemleriyle uyum standardı.",uv:"UV ışıkla paspas veya hazne dezenfeksiyonu."};
+const stars5=n=>`<span class="st5" aria-label="5 üzerinden ${n}">${"●".repeat(n)}<span>${"●".repeat(5-n)}</span></span>`;
+function optStats(g,v){const a=ALL.filter(r=>r[g]===v);return a.length?`${a.length} model · medyan ${fmt(median(a.map(r=>r.price)))} TL`:"Bu listede model yok"}
+function topicHTML(k,compact){
+  const t=TOPICS[k];
+  return `<p class="lead">${t.intro}</p><p class="verdict"><b>Kısaca:</b> ${t.verdict}</p>
+  <div class="optgrid">${t.opts.map(o=>`<div class="opt"><div class="opth"><b>${esc(o.v)}</b>${stars5(o.stars)}</div>
+   <p>${o.how}</p><p><span class="pl">+</span> ${o.plus}</p><p><span class="mi">−</span> ${o.minus}</p><p class="who"><b>Kime:</b> ${o.who}</p>
+   <p class="note">${optStats(t.group,o.v)}</p>
+   ${compact?"":`<button type="button" class="btn ghost sm" data-try="${t.group}|${esc(o.v)}">Bu modelleri listele →</button>`}</div>`).join("")}</div>`;
+}
+function techHTML(){return `<dl class="gloss">${TECH.map(([k,v])=>`<dt>${k}</dt><dd>${v}</dd>`).join("")}</dl>`}
+function featHTML(){return `<dl class="gloss">${FEATS.map(([k,n])=>`<dt>${n} <span class="muted">${ALL.filter(r=>has(r,k)).length} model</span></dt><dd>${FEATHELP[k]||""}</dd>`).join("")}</dl>`}
+function trustHelpHTML(){return `<dl class="gloss"><dt>Kullanıcı puanı (★)</dt><dd>Hepsiburada ve Amazon'daki yıldız ortalaması. 4,3 üstü iyi; değerlendirme sayısı 100'ün altındaysa ihtiyatlı okuyun.</dd>
+ <dt>Satış sonrası notu</dt><dd>Markanın şikâyetlere yanıt oranı, Şikâyetvar memnuniyeti, kullanıcı puanı, servis ağı ve garanti süresinden oluşan 0–100 özet. 70 üstü iyi, 55 altı zayıf.</dd>
+ <dt>Servis ağı</dt><dd>"Türkiye geneli": şehrinizde yetkili servis bulma ihtimali yüksek. "Merkezi": cihaz kargoyla tek servise gider, süreç 1–4 hafta sürebilir.</dd>
+ <dt>Türkiye garantisi</dt><dd>Faturada "Türkiye garantili" veya resmi distribütör adı arayın. İthalatçı garantili ürünlerde servis süreci farklı ve bazen zor olabilir.</dd></dl>`}
+const HELP={station:["İstasyon tipleri",()=>topicHTML("station",1)],nav:["Navigasyon türleri",()=>topicHTML("nav",1)],mop:["Mop sistemleri",()=>topicHTML("mop",1)],obst:["Engel algılama",()=>topicHTML("obst",1)],type:["Ürün tipi",()=>topicHTML("type",1)],
+ tech:["Teknik değerler ne anlama gelir?",techHTML],feat:["Özellikler sözlüğü",featHTML],trust:["Kullanıcı puanı ve satış sonrası",trustHelpHTML],
+ score:["Puanlar nasıl okunur?",()=>`<dl class="gloss"><dt>Özellik puanı (0–100)</dt><dd>Kâğıt üzerindeki özelliklerin toplamı: navigasyon, istasyon, mop, emiş, pil vb. Temizlik kalitesini doğrudan ölçmez.</dd><dt>F/P (0–100)</dt><dd>Aynı fiyattaki modellere göre ne kadar çok özellik sunduğu. 50 ortalama, 70+ fiyatına göre çok dolu.</dd><dt>Fiyatına göre en iyi</dt><dd>Kendisinden ucuz olup daha yüksek puan alan başka model yok.</dd></dl>`]};
+function openHelp(k){const h=HELP[k];if(!h)return;$("#helpBody").innerHTML=`<div class="mhead"><h2 id="helpTitle">${h[0]}</h2><button class="btn" type="button" id="helpClose" aria-label="Kapat">✕</button></div><div class="mbody">${h[1]()}<p class="note"><a href="#rehber" id="helpGuide">Tüm rehberi ve seçim sihirbazını aç →</a></p></div>`;
+  const d=$("#helpdlg");if(!d.open)d.showModal();$("#helpClose").onclick=()=>d.close();$("#helpGuide").onclick=()=>{d.close();const dd=$("#dlg");if(dd.open)dd.close()}}
+document.addEventListener("click",e=>{const h=e.target.closest("[data-help]");if(h){e.preventDefault();e.stopPropagation();openHelp(h.dataset.help);return}
+  const t=e.target.closest("[data-try]");if(t){const[g,v]=t.dataset.try.split("|");S[g].clear();S[g].add(v);S.shown=48;location.hash="liste";update()}});
+$("#helpdlg").addEventListener("click",e=>{if(e.target.id==="helpdlg")e.target.close()});
+
+document.addEventListener("click",e=>{const j=e.target.closest("[data-jump]");if(j){e.preventDefault();const el=document.getElementById(j.dataset.jump);el&&el.scrollIntoView({behavior:"smooth",block:"start"})}});
+/* wizard */
+const WQ=[
+ ["budget","Bütçeniz?",[["a","10 bin TL altı"],["b","10–20 bin"],["c","20–35 bin"],["d","35–50 bin"],["e","50 bin +"],["x","Farketmez"]]],
+ ["floor","Zemininiz?",[["hard","Çoğunlukla parke / seramik"],["mixed","Karışık, halılar var"],["carpet","Çoğunlukla halı"]]],
+ ["mop","Silme (paspas) ne kadar önemli?",[["no","Sadece süpürsün"],["light","Arada hafif silsin"],["yes","Düzenli ve iyi silsin"]]],
+ ["pet","Evcil hayvan veya uzun saç var mı?",[["y","Evet"],["n","Hayır"]]],
+ ["care","Robotla ne sıklıkta uğraşmak istersiniz?",[["often","Her birkaç günde boşaltırım"],["monthly","Ayda bir yeter"],["min","Neredeyse hiç"]]],
+ ["clutter","Yerde kablo, oyuncak, çorap olur mu?",[["y","Sık sık"],["n","Ev genelde derli toplu"]]],
+ ["home","Eviniz?",[["small","Tek kat, 100 m² altı"],["big","Tek kat, 100 m² üstü"],["multi","Birden fazla kat"]]],
+ ["sill","Eşikleriniz?",[["low","Eşik yok veya 2 cm altı"],["high","2–4 cm eşik var"]]],
+ ["prio","Önceliğiniz?",[["fp","Parasının karşılığı"],["safe","Sorunsuz marka ve servis"],["max","En çok özellik"]]]];
+const W={};
+function wizCriteria(){
+  const C=[];const add=(lab,test,apply,relax)=>C.push({lab,test,apply,relax});
+  const B={a:[null,10000],b:[10000,20000],c:[20000,35000],d:[35000,50000],e:[50000,null]}[W.budget];
+  if(B)add(`Bütçe ${B[0]?fmt(B[0]):"0"}–${B[1]?fmt(B[1]):"∞"} TL`,r=>(B[0]==null||r.price>=B[0])&&(B[1]==null||r.price<=B[1]),s=>{s.pmin=B[0];s.pmax=B[1]},9);
+  if(W.budget&&W.budget!=="a")add("LiDAR veya kamera ile harita",r=>["LiDAR","Kamera (vSLAM)","ToF / 3D"].includes(r.nav),s=>{["LiDAR","Kamera (vSLAM)","ToF / 3D"].forEach(v=>s.nav.add(v))},2);
+  if(W.mop==="yes")add("Çift döner, rulo veya titreşimli mop",r=>["Çift döner","Rulo mop","Titreşimli"].includes(r.mop),s=>{["Çift döner","Rulo mop","Titreşimli"].forEach(v=>s.mop.add(v))},4);
+  if(W.mop==="light")add("Mop var",r=>r.mop!=="Yok",s=>{["Çift döner","Rulo mop","Titreşimli","Basınçlı ped","Sabit ped"].forEach(v=>s.mop.add(v))},3);
+  if(W.mop&&W.mop!=="no"&&W.floor==="mixed")add("Halıda paspası kaldırır veya bırakır",r=>r.mopLift||r.mopDetach,s=>{s.feat.add("mopLift")},5);
+  if(W.floor==="carpet")add("En az 8.000 Pa emiş",r=>r.pa>=8000,s=>{s.minPa=8000},6);
+  if(W.floor==="mixed")add("Halı algılama",r=>r.carpet,s=>{s.feat.add("carpet")},1);
+  if(W.pet==="y")add("Dolaşmayan fırça",r=>r.tangle,s=>{s.feat.add("tangle")},3);
+  if(W.care==="monthly")add("Toz boşaltma istasyonu",r=>r.selfEmpty,s=>{s.station.add("Toz boşaltma");s.station.add("Tam istasyon")},7);
+  if(W.care==="min")add(W.mop==="no"?"Toz boşaltma istasyonu":"Tam istasyon (toz + mop yıkama)",r=>W.mop==="no"?r.selfEmpty:r.station==="Tam istasyon",s=>{if(W.mop!=="no")s.station.add("Tam istasyon");else{s.station.add("Toz boşaltma");s.station.add("Tam istasyon")}},7);
+  if(W.care==="min"&&W.mop==="yes")add("Sıcak hava kurutma",r=>r.hotDry,s=>{s.feat.add("hotDry")},2);
+  if(W.clutter==="y")add("Kameralı veya 3D engel algılama",r=>["Yapay zekâ / kamera","3D / yapısal ışık"].includes(r.obst),s=>{s.obst.add("Yapay zekâ / kamera");s.obst.add("3D / yapısal ışık")},5);
+  if(W.home==="big")add("En az 150 dk çalışma",r=>r.rt>=150,s=>{s.minRt=150},2);
+  if(W.home==="multi")add("Çoklu kat haritası",r=>r.multimap,s=>{s.feat.add("multimap")},3);
+  if(W.sill==="high")add("En az 30 mm eşik aşma",r=>r.climb>=30,s=>{s.minClimb=30},4);
+  if(W.prio==="safe")add("Satış sonrası notu 55+ ve kullanıcı puanı",r=>(r.as??0)>=55,s=>{s.minAs=55},6);
+  add("En az 2 mağazada satılıyor",r=>r.sites>=2,s=>{s.minSites=2},8);
+  return C;
+}
+function wizRun(){
+  let C=wizCriteria();const relaxed=[];
+  let res=ALL.filter(r=>C.every(c=>c.test(r)));
+  while(res.length<3&&C.some(c=>c.relax<9)){
+    const drop=C.filter(c=>c.relax<9).sort((a,b)=>a.relax-b.relax)[0];relaxed.push(drop.lab);C=C.filter(c=>c!==drop);
+    res=ALL.filter(r=>C.every(c=>c.test(r)));
+  }
+  const sorter=W.prio==="safe"?(a,b)=>((b.as??0)+(b.ur||4)*10)-((a.as??0)+(a.ur||4)*10)||b.fp-a.fp:W.prio==="max"?SORTS.score:SORTS.fp;
+  res.sort(sorter);
+  return {C,res,relaxed};
+}
+function why(r){const w=[];
+  if(r.nav==="LiDAR")w.push("LiDAR harita");if(r.station==="Tam istasyon")w.push("tam istasyon");else if(r.selfEmpty)w.push("toz boşaltma");
+  if(r.mop==="Çift döner"||r.mop==="Rulo mop")w.push(r.mop.toLowerCase()+" mop");if(r.mopLift)w.push("mop kaldırma");if(r.obst==="Yapay zekâ / kamera")w.push("kameralı engel tanıma");
+  if(r.ur>=4.3&&r.urc>=50)w.push(`kullanıcılar ${r.ur.toFixed(1).replace(".",",")} ★ veriyor`);if(r.pareto)w.push("fiyatına göre en iyi");
+  return w.slice(0,5).join(", ");}
+function renderWizard(){
+  const answered=WQ.filter(q=>W[q[0]]).length;
+  let out=`<h2>Seçim sihirbazı</h2><p class="desc">Soruları cevapladıkça öneriler güncellenir. İstediğinizi boş bırakabilirsiniz.</p><div class="wq">${WQ.map(([k,q,opts])=>`<div class="wqi"><div class="wql">${q}</div><div class="chips">${opts.map(([v,l])=>`<button type="button" class="chip" aria-pressed="${W[k]===v}" data-wk="${k}" data-wv="${v}">${l}</button>`).join("")}</div></div>`).join("")}</div>`;
+  if(answered){
+    const {C,res,relaxed}=wizRun();
+    out+=`<div class="wres"><div class="reshead"><div class="count">${res.length} uygun model</div><div><button type="button" class="btn" id="wReset">Sıfırla</button> <button type="button" class="btn primary" id="wApply">Hepsini listede göster</button></div></div>
+     <p class="note">Aranan: ${C.map(c=>esc(c.lab)).join(" · ")}</p>
+     ${relaxed.length?`<p class="note" style="color:var(--warn)">Tam eşleşen model azdı; şu şartlar gevşetildi: ${relaxed.map(esc).join(", ")}.</p>`:""}
+     <div class="picks">${res.slice(0,6).map((r,i)=>`<button type="button" class="pick" data-open="${r.id}"><span class="rk">${i===0?"En uygun":(i+1)+". öneri"}</span><span class="nm">${esc(r.name)}</span>
+      <span class="ln"><span class="num" style="color:var(--fg);font-size:15px">${TL(r.price)}</span><span>${r.ur!=null?stars(r.ur)+` (${fmt(r.urc)})`:""}</span></span>
+      <span class="ln" style="display:block">Neden: ${why(r)||"kriterlere uyuyor"}</span></button>`).join("")}</div></div>`;
+  }
+  $("#wizard").innerHTML=out;
+}
+document.addEventListener("click",e=>{
+  const c=e.target.closest("[data-wk]");if(c){const k=c.dataset.wk,v=c.dataset.wv;W[k]=W[k]===v?undefined:v;renderWizard();return}
+  if(e.target.id==="wReset"){Object.keys(W).forEach(k=>delete W[k]);renderWizard();return}
+  if(e.target.id==="wApply"){const {C}=wizRun();$("#reset").click();C.forEach(c=>c.apply(S));
+    $("#pmin").value=S.pmin??"";$("#pmax").value=S.pmax??"";["minPa","minRt","minClimb","minSites","minAs"].forEach(i=>$("#"+i).value=String(S[i]));
+    S.sort=W.prio==="max"?"score":W.prio==="safe"?"as":"fp";$("#sort").value=S.sort;location.hash="liste";update();try{$("#main").scrollIntoView({block:"start"})}catch(_){}}
+});
+function renderGuide(){
+  if(!$("#topics").dataset.done){
+    $("#topics").innerHTML=["nav","station","mop","obst"].map(k=>`<div class="panel" id="t-${k}"><h2>${TOPICS[k].title}</h2>${topicHTML(k)}</div>`).join("")+
+     `<div class="panel"><h2>Teknik değerler ne anlama gelir?</h2>${techHTML()}</div><div class="panel"><h2>Özellikler sözlüğü</h2>${featHTML()}</div><div class="panel"><h2>Kullanıcı puanı ve satış sonrası</h2>${trustHelpHTML()}</div>`;
+    $("#topics").dataset.done=1;
+  }
+  renderWizard();
+}
+
 /* ---------- routing & update ---------- */
-const VIEWS=["liste","tablo","analiz","guvence","oneriler","yontem"];
+const VIEWS=["rehber","liste","tablo","analiz","guvence","oneriler","yontem"];
 document.addEventListener("keydown",e=>{if(e.key==="Enter"){const t=e.target.closest&&e.target.closest("tr[data-brand]");if(t){selBrand=t.dataset.brand;renderGuvence(cur)}}});
 function view(){const h=location.hash.slice(1);return VIEWS.includes(h)?h:"liste"}
 function showView(){
   const v=view();
   document.querySelectorAll("[data-pane]").forEach(p=>p.hidden=p.dataset.pane!==v);
   document.querySelectorAll(".tabs a").forEach(a=>a.setAttribute("aria-current",a.dataset.view===v?"page":"false"));
-  fl.style.display=v==="yontem"?"none":"";
+  fl.style.display=(v==="yontem"||v==="rehber")?"none":"";
+  document.querySelector(".layout").classList.toggle("nofilter",v==="yontem"||v==="rehber");
+  $("#openFilters").style.visibility=(v==="yontem"||v==="rehber")?"hidden":"";
   renderView();
 }
 function renderView(){
@@ -840,6 +1055,7 @@ function renderView(){
   else if(v==="analiz"){renderScatter(cur);renderBrands(cur);renderHist(cur);renderFeatTable(cur)}
   else if(v==="oneriler")renderPicks(cur);
   else if(v==="guvence")renderGuvence(cur);
+  else if(v==="rehber")renderGuide();
 }
 let selBrand=null;
 function renderGuvence(rows){
