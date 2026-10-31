@@ -1,7 +1,10 @@
 import json,re,math,statistics as st
 import os
 S=os.environ.get('RS_WORK', os.path.dirname(os.path.abspath(__file__)))
-L=json.load(open(S+'/list_items.json')); D=json.load(open(S+'/details.json'))
+L=json.load(open(S+'/list_items2.json')); D=json.load(open(S+'/details.json'))
+_fresh={x['url'] for x in L}
+for x in json.load(open(S+'/list_items.json')):
+    if x['url'] not in _fresh and x['type']!='Cam Temizleme Robotu': x['gone']=True; L.append(x)
 SITES={'hepsiburada-com':'Hepsiburada','hepsiburada-com_ozel':'Hepsiburada','pttavm-com':'PTT AVM','idefix-com':'Idefix','trendyol-com':'Trendyol','n11-com':'n11','pazarama-com':'Pazarama','amazon-com-tr':'Amazon','beymen-com':'Beymen','mediamarkt-com-tr':'MediaMarkt','ciceksepeti-com':'Çiçeksepeti','teknosa-com':'Teknosa','vatanbilgisayar-com':'Vatan','a101-com-tr':'A101','passo-com-tr':'Passo','inbox-com-tr':'Inbox','arcelik-com-tr':'Arçelik','beko-com-tr':'Beko','turkcell-com-tr':'Turkcell Pasaj'}
 BRANDFIX={'Deebot':'Ecovacs','Simart':'Şımart','Şımart':'Şımart'}
 def num(v):
@@ -96,7 +99,7 @@ for it in L:
     sc['ekstra']=(2 if brushext else 0)+(1 if tangle else 0)+(1 if hepa else 0)+(1 if pet else 0)
     score=round(sum(sc.values()),1)
     out.append(dict(id=re.sub(r'\.html$','',it['url'].rsplit('/',1)[1]),name=name,brand=brand,model=model,type={'Robot Süpürge+Mop':'Süpürge + Mop','Robot Süpürge':'Sadece süpürge','Robot Mop':'Sadece mop'}.get(typ,typ),
-        price=round(price),sites=it['sites'],sellers=sl[:8],url=it['url'],
+        price=round(price),sites=0 if it.get('gone') else it['sites'],stock='yok' if it.get('gone') else ('var' if it['sites']>=3 else 'sinirli'),lastSites=it['sites'],sellers=sl[:8],url=it['url'],
         pa=pa,mah=mah,rt=rt,ch=ch,db=db,w=w,dust=dust,water=water,h=h,kg=kg,climb=climb,area=area,stDust=st_dust,stClean=st_clean,stDirty=st_dirty,
         nav=nav,navRaw=navraw,cam=has_cam,obst=obst,mop=mop,mopLift=mop_lift,mopLiftMm=mop_lift_mm,mopExt=mopext,mopDetach=mopdetach,
         station=station,selfEmpty=selfempty,selfEmptyOpt=se=='Opsiyonel',mopWash=mopwash,hotWash=hotwash,hotDry=hotdry,refill=refill,deterg=deterg,
@@ -116,7 +119,8 @@ for o,r in zip(out,res):
     o['tlp']=round(o['price']/max(o['score'],1))
 META={'a':a,'b':b}
 # pareto
-srt=sorted(out,key=lambda o:(o['price'],-o['score'])); best=-1
+for o in out: o['pareto']=False
+srt=sorted([o for o in out if o['stock']!='yok'],key=lambda o:(o['price'],-o['score'])); best=-1
 for o in srt:
     o['pareto']= o['score']>best
     if o['score']>best: best=o['score']

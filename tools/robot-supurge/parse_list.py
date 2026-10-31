@@ -5,6 +5,7 @@ for f in sorted(glob.glob(sys.argv[1]+'/*.json')):
     d=json.load(open(f))
     for r in d['results']:
         if 'epey.com/robot-supurge' not in r['url']: continue
+        r['url']=r['url'].split('?')[0]
         lines=r['raw_content'].split('\n')
         for i,l in enumerate(lines):
             m=re.search(r'\[(?:([\d.]+,\d+) TL ?(\d+) site, (\d+) fiyat|[^\]]*)\]\((https://www\.epey\.com/robot-supurge/[^ #]+\.html)#fiyatlar "([^"]+) Fiyatı"\)',l)

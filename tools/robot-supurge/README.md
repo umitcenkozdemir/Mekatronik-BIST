@@ -18,3 +18,8 @@ Puanlama ayrıntıları sayfadaki "Yöntem" sekmesindedir.
 7. Hepsiburada (`/ara?q=<marka> robot süpürge&sayfa=N`) ve Amazon (`/s?k=...&page=N`) arama sayfalarını `hb/` ve `am/` klasörlerine indirin → `python3 parse_rate2.py <klasör>` → `ratings.json`
 8. `python3 build_rel.py <klasör>` → `robots2.json` (marka karnesi, şikâyet konuları, satış sonrası notu; servis/garanti bilgisi betikteki `SVC` tablosunda, kaynaklarıyla)
 9. `template.html` içindeki `/*__DATA__*/` yerine `robots2.json` koyun.
+
+## Stok kontrolü
+10. Liste sayfalarını önbelleği atlatmak için benzersiz bir parametreyle yeniden indirin (ör. `https://www.epey.com/robot-supurge/N/?s=<tarih>`, N=1..22) → `list2/` → `python3 parse_list.py list2 list_items2.json`
+11. `build.py` taze listeyi (`list_items2.json`) kullanır: 3+ mağaza "stokta", 1–2 "sınırlı", önceki listede olup tazede olmayan "stok yok".
+12. `python3 parse_oos.py <klasör>` → `oos.json` (arka sayfalardaki fiyatsız modeller); `python3 build_rel.py <klasör>` sonrası `python3 attach_oos.py <klasör> "31 Ekim 2026, 18:40"`.
