@@ -5,6 +5,7 @@ Her gün: (1) listeyi tazele, yeni modelleri bul, (2) sıradaki 30 doğrulanmı�
 
 - Dal: `claude/robot-vacuum-comparison-portal-2g35xg`
 - Çalışma klasörü: `tools/buzdolabi` (aşağıda `$W`)
+- Yayındaki sayfa: https://claude.ai/artifact/TBCeNeEmZ4jjn6piozSSPF
 - Kapsam: epey.com'da "Kullanım Tipi: Solo" olan ev tipi buzdolapları. Büro/tezgah tipi, ankastre ve endüstriyel hariç.
 - Veriler yalnızca Tavily extract (extract_depth=advanced) ile çekilir; epey adreslerine her gün `?s=<YYYYMMDD>` ekle.
   Büyük çıktılar `~/.claude/projects/.../tool-results/*.txt` dosyasına yazılır; bunları ilgili klasöre kopyala.
