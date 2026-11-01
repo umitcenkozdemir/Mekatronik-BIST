@@ -1,0 +1,2726 @@
+{
+ "dreame-x40-ultra": {
+  "id": "dreame-x40-ultra",
+  "name": "Dreame X40 Ultra",
+  "offers": [
+   {
+    "store": "Hepsiburada",
+    "seller": "Hepsiburada",
+    "kind": "retail",
+    "price": 34999.0,
+    "age": "8 dk önce",
+    "title": "Dreame X40 Ultra Robot Süpürge Beyaz, 12.000PA Emiş Gücü - Beyaz Satıcı: Hepsiburada | 978 yorum"
+   },
+   {
+    "store": "Trendyol",
+    "seller": "SATÜRN",
+    "kind": "retail",
+    "price": 35174.0,
+    "age": "1 saat önce",
+    "title": "Dreame X40 Ultra Robot Süpürge Beyaz, 12.000PA Emiş Gücü Satıcı: SATÜRN"
+   },
+   {
+    "store": "Idefix",
+    "seller": "Kapdiyo",
+    "kind": "market",
+    "price": 35474.14,
+    "age": "9 dk önce",
+    "title": "Dreame X40 Ultra Çıkarılabilir Ve Kaldırılabilir Paspaslı Robot Süpürge, 12.000 Pa Emiş Gücü Beyaz Satıcı: Kapdiyo"
+   },
+   {
+    "store": "Idefix",
+    "seller": "Htc Teknoloji",
+    "kind": "market",
+    "price": 35905.0,
+    "age": "9 dk önce",
+    "title": "Dreame X40 Ultra Çıkarılabilir Ve Kaldırılabilir Paspaslı Robot Süpürge, 12.000 Pa Emiş Gücü Beyaz Satıcı: Htc Teknoloji"
+   },
+   {
+    "store": "Pazarama",
+    "seller": "Emc Bilişim ve Teknoloji",
+    "kind": "market",
+    "price": 37773.22,
+    "age": "15 dk önce",
+    "title": "Dreame X40 Ultra Beyaz Çöp İstasyonlu Akıllı Robot Süpürge Satıcı: Emc Bilişim ve Teknoloji"
+   },
+   {
+    "store": "Hepsiburada",
+    "seller": "EMC&BİLİSİM&TEKN",
+    "kind": "market",
+    "price": 38721.4,
+    "age": "8 dk önce",
+    "title": "Dreame X40 Ultra Robot Süpürge Beyaz, 12.000PA Emiş Gücü - Beyaz Satıcı: EMC&BİLİSİM&TEKN | 978 yorum"
+   },
+   {
+    "store": "PTT AVM",
+    "seller": "Kapdiyo",
+    "kind": "market",
+    "price": 38899.0,
+    "age": "5 saat önce",
+    "title": "Dreame X40 Ultra Beyaz Çöp İstasyonlu Akıllı Robot Süpürge Satıcı: Kapdiyo"
+   },
+   {
+    "store": "n11",
+    "seller": "saturnteknolojik",
+    "kind": "retail",
+    "price": 41499.0,
+    "age": "2 saat önce",
+    "title": "Dreame X40 Ultra Robot Süpürge Beyaz Satıcı: saturnteknolojik"
+   },
+   {
+    "store": "PTT AVM",
+    "seller": "BHR TEKNOLOJİ",
+    "kind": "market",
+    "price": 43999.1,
+    "age": "5 saat önce",
+    "title": "Dreame X40 Ultra Robot Süpürge Beyaz, 12.000Pa Emiş Gücü Satıcı: BHR TEKNOLOJİ"
+   },
+   {
+    "store": "n11",
+    "seller": "bhr-teknoloji",
+    "kind": "market",
+    "price": 44099.1,
+    "age": "2 saat önce",
+    "title": "Dreame X40 Ultra Robot Süpürge Beyaz Satıcı: bhr-teknoloji"
+   },
+   {
+    "store": "Pazarama",
+    "seller": "Adalılar Grup",
+    "kind": "market",
+    "price": 131305.33,
+    "age": "15 dk önce",
+    "title": "Dreame X40 Ultra Robot Süpürge Siyah, 12.000 Pa Emiş Satıcı: Adalılar Grup"
+   }
+  ],
+  "amz": [
+   {
+    "title": "Dreame X40 Ultra Robot Süpürge Beyaz",
+    "url": "https://www.amazon.com.tr/dp/B0F53XLV8R",
+    "price": null,
+    "buyable": false,
+    "unavailable": false,
+    "lowstock": null,
+    "rating": 3.6,
+    "count": 5,
+    "delivery": null
+   },
+   {
+    "title": "X40 Ultra Aksesuar Kiti",
+    "url": "https://www.amazon.com.tr/dp/B0D5Y7K6QS",
+    "price": 3499.0,
+    "buyable": true,
+    "unavailable": false,
+    "lowstock": null,
+    "rating": 4.5,
+    "count": 119,
+    "delivery": "ÜCRETSİZ teslimat 3 Kas Sal"
+   }
+  ],
+  "tek": [
+   {
+    "title": "Dreame X40 ULTRA Beyaz Robot Süpürge",
+    "price": 38829.0,
+    "url": "https://www.teknosa.com/dreame-x40-ultra-beyaz-robot-supurge-p-787127203",
+    "buyable": true
+   }
+  ],
+  "hb": {
+   "url": "https://www.hepsiburada.com/dreame-x40-ultra-robot-supurge-beyaz-12-000pa-emis-gucu-pm-HBC0000AB4HCC",
+   "seller": "HomeTech World",
+   "official": false,
+   "price": null,
+   "buyable": true,
+   "tr_warranty": false,
+   "importer": false,
+   "others": [],
+   "reviews": []
+  },
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Dreame+X40+Ultra"
+ },
+ "roborock-qrevo-edge-2-flow": {
+  "id": "roborock-qrevo-edge-2-flow",
+  "name": "Roborock Qrevo Edge 2 Flow",
+  "offers": [
+   {
+    "store": "Idefix",
+    "seller": "TEKNOSA",
+    "kind": "retail",
+    "price": 58199.03,
+    "age": "9 dk önce",
+    "title": "Roborock Qrevo Edge 2 Flow Çöp İstasyonlu Robot Süpürge Beyaz Satıcı: TEKNOSA"
+   },
+   {
+    "store": "Pazarama",
+    "seller": "Teknosa",
+    "kind": "retail",
+    "price": 58799.02,
+    "age": "15 dk önce",
+    "title": "Roborock Qrevo Edge 2 Flow Çöp İstasyonlu Robot Süpürge Beyaz Satıcı: Teknosa"
+   },
+   {
+    "store": "n11",
+    "seller": "teknosa",
+    "kind": "retail",
+    "price": 58999.0,
+    "age": "1 saat önce",
+    "title": "Roborock Qrevo Edge 2 Flow Akıllı Robot Süpürge Beyaz Satıcı: teknosa"
+   },
+   {
+    "store": "Hepsiburada",
+    "seller": "Teknosa",
+    "kind": "retail",
+    "price": 59999.0,
+    "age": "8 dk önce",
+    "title": "Roborock Qrevo Edge 2 Flow Akıllı Robot Süpürge Beyaz Satıcı: Teknosa | 5 yorum"
+   },
+   {
+    "store": "Trendyol",
+    "seller": "Teknosa",
+    "kind": "retail",
+    "price": 59999.0,
+    "age": "1 saat önce",
+    "title": "Roborock Qrevo Edge 2 Flow Akıllı Robot Süpürge Beyaz Satıcı: Teknosa"
+   },
+   {
+    "store": "Teknosa",
+    "seller": "Teknosa",
+    "kind": "retail",
+    "price": 64999.0,
+    "age": "44 dk önce",
+    "title": "Roborock Qrevo Edge 2 Flow Çöp İstasyonlu Robot Süpürge Beyaz"
+   }
+  ],
+  "amz": [],
+  "hbSearch": null,
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Roborock+Qrevo+Edge+2+Flow"
+ },
+ "narwal-freo-z10-ultra": {
+  "id": "narwal-freo-z10-ultra",
+  "name": "Narwal Freo Z10 Ultra",
+  "offers": [
+   {
+    "store": "Hepsiburada",
+    "seller": "Narwal Türkiye",
+    "kind": "brand",
+    "price": 23999.0,
+    "age": "8 dk önce",
+    "title": "Narwal Freo Z10 Ultra Akıllı Robot Süpürge Gri 18.000PA Emiş Gücü Sert Zemin Kullanımı için Akıllı Kontrol Satıcı: Narwa"
+   },
+   {
+    "store": "Trendyol",
+    "seller": "Narwal Türkiye",
+    "kind": "brand",
+    "price": 26232.0,
+    "age": "1 saat önce",
+    "title": "Narwal Freo Z10 Ultra Akıllı Robot Süpürge Gümüş,18.000PA Emiş Gücü Satıcı: Narwal Türkiye"
+   },
+   {
+    "store": "Trendyol",
+    "seller": "Narwal Türkiye",
+    "kind": "brand",
+    "price": 26232.0,
+    "age": "1 saat önce",
+    "title": "Narwal Freo Z10 Ultra Akıllı Robot Süpürge Gri,18.000PA Emiş Gücü Satıcı: Narwal Türkiye"
+   },
+   {
+    "store": "Pazarama",
+    "seller": "NARWAL TÜRKİYE",
+    "kind": "brand",
+    "price": 37344.03,
+    "age": "15 dk önce",
+    "title": "Narwal Freo Z10 Ultra Akıllı Robot Süpürge Satıcı: NARWAL TÜRKİYE"
+   },
+   {
+    "store": "Pazarama",
+    "seller": "NARWAL TÜRKİYE",
+    "kind": "brand",
+    "price": 37344.03,
+    "age": "15 dk önce",
+    "title": "Narwal Freo Z10 Ultra Akıllı Robot Süpürge Satıcı: NARWAL TÜRKİYE"
+   },
+   {
+    "store": "Hepsiburada",
+    "seller": "Narwal Türkiye",
+    "kind": "brand",
+    "price": 40499.0,
+    "age": "8 dk önce",
+    "title": "Narwal Freo Z10 Ultra Akıllı Robot Süpürge Gümüş 18.000PA Emiş Gücü Sert Zemin İçin Akıllı Kontrol Satıcı: Narwal Türkiy"
+   }
+  ],
+  "amz": [],
+  "tek": [],
+  "hbSearch": null,
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Narwal+Freo+Z10+Ultra"
+ },
+ "xiaomi-vacuum-5-pro": {
+  "id": "xiaomi-vacuum-5-pro",
+  "name": "Xiaomi Vacuum 5 Pro (OV21GL)",
+  "offers": [
+   {
+    "store": "Trendyol",
+    "seller": "Trendyol",
+    "kind": "retail",
+    "price": 38999.0,
+    "age": "1 saat önce",
+    "title": "Xiaomi Robot Vacuum 5 PRO Beyaz Akıllı Robot Süpürge 20000 Pa Emiş Gücü ( Xiaomi Türkiye Garantili) Satıcı: Trendyol"
+   },
+   {
+    "store": "n11",
+    "seller": "mirasu",
+    "kind": "market",
+    "price": 39811.0,
+    "age": "2 saat önce",
+    "title": "Xiaomi Robot Vacuum 5 Pro Robot Süpürge Satıcı: mirasu"
+   },
+   {
+    "store": "n11",
+    "seller": "dato-teknoloji",
+    "kind": "market",
+    "price": 39889.0,
+    "age": "2 saat önce",
+    "title": "Xiaomi Robot Vacuum 5 Pro Robot Süpürge Satıcı: dato-teknoloji"
+   },
+   {
+    "store": "PTT AVM",
+    "seller": "Ucuzportal",
+    "kind": "market",
+    "price": 39899.0,
+    "age": "5 saat önce",
+    "title": "Xiaomi Robot Vacuum 5 Pro Akıllı Robot Süpürge Ve Mop 20.000 Pa Beyaz (Xiaomi Tr Garantili) Satıcı: Ucuzportal"
+   },
+   {
+    "store": "Vatan",
+    "seller": "Vatan",
+    "kind": "retail",
+    "price": 39999.0,
+    "age": "33 dk önce",
+    "title": "Xiaomi Robot Vacuum 5 Pro Beyaz Akıllı Robot Süpürge 3 yorum"
+   },
+   {
+    "store": "Hepsiburada",
+    "seller": "miratek",
+    "kind": "market",
+    "price": 48133.0,
+    "age": "18 dk önce",
+    "title": "Xiaomi Robot Vacuum 5 Pro Akıllı Robot Süpürge ve Mop 20.000 Pa Beyaz (Xiaomi TR Garantili) Satıcı: miratek | 34 yorum"
+   },
+   {
+    "store": "Beymen",
+    "seller": "Beymen",
+    "kind": "retail",
+    "price": 49999.0,
+    "age": "50 dk önce",
+    "title": "Vacuum 5 Pro Beyaz Akıllı Robot Süpürge"
+   },
+   {
+    "store": "Hepsiburada",
+    "seller": "UMT TEKNOLOJİ YAZILIM A.Ş",
+    "kind": "market",
+    "price": 50025.5,
+    "age": "18 dk önce",
+    "title": "Xiaomi Robot Vacuum 5 Pro Akıllı Robot Süpürge ve Mop 20.000 Pa Beyaz (Xiaomi TR Garantili) Satıcı: UMT TEKNOLOJİ YAZILI"
+   },
+   {
+    "store": "Pazarama",
+    "seller": "Son Fırsat",
+    "kind": "market",
+    "price": 98499.0,
+    "age": "15 dk önce",
+    "title": "Xiaomi 20.000 Pa Emiş Güçlü Kendini Temizleme Özellikli Yapay Zeka Destekli Premium Robot Süpürge Satıcı: Son Fırsat"
+   }
+  ],
+  "tek": [],
+  "hbSearch": null,
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Xiaomi+Vacuum+5+Pro"
+ },
+ "ecovacs-deebot-t80-omni": {
+  "id": "ecovacs-deebot-t80-omni",
+  "name": "Ecovacs Deebot T80 Omni",
+  "offers": [
+   {
+    "store": "Hepsiburada",
+    "seller": "Ecovacs Group Türkiye",
+    "kind": "brand",
+    "price": 27999.0,
+    "age": "8 dk önce",
+    "title": "Sponsorlu Ecovacs DEEBOT T80 Omni Robot Süpürge 20.000PA Akıllı Telefon ile Kontrol Düz Zemin İçin Kullanım - Beyaz Satı"
+   },
+   {
+    "store": "Amazon",
+    "seller": "Ecovacs Group Türkiye",
+    "kind": "brand",
+    "price": 27999.0,
+    "age": "46 dk önce",
+    "title": "ECOVACS DEEBOT T80 OMNI Elektrikli Süpürge Robotu, 18.000 Pa, Anında Otomatik Temizleme OZMO ROLLER, ZeroTangle 3.0, 40-"
+   },
+   {
+    "store": "Trendyol",
+    "seller": "Ecovacs Group Türkiye",
+    "kind": "brand",
+    "price": 27999.0,
+    "age": "1 saat önce",
+    "title": "Ecovacs T80 Omni Robot Süpürge ve Paspas 20.000PA Zerotangle 3.0 75°c Sıcak Sulu Paspas Yıkama Satıcı: Ecovacs Group Tür"
+   },
+   {
+    "store": "Beymen",
+    "seller": "Beymen",
+    "kind": "retail",
+    "price": 27999.0,
+    "age": "50 dk önce",
+    "title": "T80 Omni Paspas ve Robot Süpürge"
+   },
+   {
+    "store": "n11",
+    "seller": "santisteknoloji",
+    "kind": "brand",
+    "price": 35999.1,
+    "age": "16 dk önce",
+    "title": "Ecovacs T80 18.000 Pa Omni Robot Süpürge Beyaz Satıcı: santisteknoloji"
+   },
+   {
+    "store": "Hepsiburada",
+    "seller": "İstemi ticaret",
+    "kind": "market",
+    "price": 36150.0,
+    "age": "8 dk önce",
+    "title": "Ecovacs DEEBOT T80 Omni Robot Süpürge 20.000PA Akıllı Telefon ile Kontrol Düz Zemin İçin Kullanım - Beyaz Satıcı: İstemi"
+   },
+   {
+    "store": "Pazarama",
+    "seller": "SANTİS TEKNOLOJİ",
+    "kind": "brand",
+    "price": 37999.05,
+    "age": "15 dk önce",
+    "title": "Ecovacs T80 Omni Robot Süpürge ve Paspas Satıcı: SANTİS TEKNOLOJİ"
+   },
+   {
+    "store": "Vatan",
+    "seller": "Vatan",
+    "kind": "retail",
+    "price": 39999.0,
+    "age": "33 dk önce",
+    "title": "Ecovacs Deebot T80 Omni Çöp İstasyonlu Akıllı Robot Süpürge"
+   },
+   {
+    "store": "PTT AVM",
+    "seller": "DIEGRUP",
+    "kind": "market",
+    "price": 63333.7,
+    "age": "5 saat önce",
+    "title": "Ecovacs Deebot T80 Omni Robot Süpürge Ve Paspas, 20.000 Pa Emiş Gücü, Kendini Temizleyen Ozmo Roller Ve Sıcak Su İle Pas"
+   },
+   {
+    "store": "PTT AVM",
+    "seller": "GlobalExpress",
+    "kind": "market",
+    "price": 91806.3,
+    "age": "5 saat önce",
+    "title": "Ecovacs T80 Omni Satıcı: GlobalExpress"
+   }
+  ],
+  "tek": [],
+  "hb": {
+   "url": "https://www.hepsiburada.com/ecovacs-deebot-t80-omni-robot-supurge-ve-paspas-20-000-pa-emis-gucu-kendini-temizleyen-ozmo-roller-ve-sicak-su-ile-paspas-yikama-zerotangle-3-0-dolasma-onleme-teknolojisi-ve-akilli-istasyon-pm-HBC0000ORHR0I",
+   "seller": "AB GLOBAL STORE",
+   "official": false,
+   "price": 63369.26,
+   "buyable": true,
+   "tr_warranty": false,
+   "importer": false,
+   "others": [],
+   "reviews": []
+  },
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Ecovacs+Deebot+T80+Omni"
+ },
+ "roborock-saros-20-flow": {
+  "id": "roborock-saros-20-flow",
+  "name": "Roborock Saros 20 Flow",
+  "offers": [
+   {
+    "store": "Hepsiburada",
+    "seller": "VATAN BİLGİSAYAR",
+    "kind": "retail",
+    "price": 79999.0,
+    "age": "18 dk önce",
+    "title": "Roborock Saros 20 Flow Beyaz Robot Süpürge Satıcı: VATAN BİLGİSAYAR | 3 yorum"
+   },
+   {
+    "store": "Trendyol",
+    "seller": "VATAN BİLGİSAYAR",
+    "kind": "retail",
+    "price": 89999.0,
+    "age": "1 saat önce",
+    "title": "Roborock Saros 20 Flow Akıllı Robot Süpürge - Beyaz Satıcı: VATAN BİLGİSAYAR"
+   }
+  ],
+  "tek": [],
+  "hb": {
+   "url": "https://www.hepsiburada.com/roborock-saros-20-flow-beyaz-robot-supurge-pm-HBC0000LMZUE9",
+   "seller": "VATAN BİLGİSAYAR",
+   "official": false,
+   "price": 79999.0,
+   "buyable": true,
+   "tr_warranty": false,
+   "importer": false,
+   "others": [],
+   "rating": 5.0,
+   "count": 3,
+   "stars": [
+    3,
+    0,
+    0,
+    0,
+    0
+   ],
+   "reviews": []
+  },
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Roborock+Saros+20+Flow"
+ },
+ "roborock-saros-10r": {
+  "id": "roborock-saros-10r",
+  "name": "Roborock Saros 10R",
+  "offers": [
+   {
+    "store": "Hepsiburada",
+    "seller": "Hepsiburada",
+    "kind": "retail",
+    "price": 54999.0,
+    "age": "8 dk önce",
+    "title": "Saros 10R Akıllı Robot Süpürge - Siyah Satıcı: Hepsiburada | 164 yorum"
+   },
+   {
+    "store": "Idefix",
+    "seller": "Htc Teknoloji",
+    "kind": "market",
+    "price": 57835.0,
+    "age": "9 dk önce",
+    "title": "Roborock Saros 10R Smart Robot Vacuum Cleaner Black Satıcı: Htc Teknoloji"
+   },
+   {
+    "store": "Idefix",
+    "seller": "Kapdiyo",
+    "kind": "market",
+    "price": 57877.14,
+    "age": "9 dk önce",
+    "title": "Roborock Saros 10R Smart Robot Vacuum Cleaner Black Satıcı: Kapdiyo"
+   },
+   {
+    "store": "PTT AVM",
+    "seller": "ibilisim",
+    "kind": "market",
+    "price": 58448.3,
+    "age": "5 saat önce",
+    "title": "Roborock Saros 10R Çöp İstasyonlu Akıllı Robot Süpürge Satıcı: ibilisim"
+   },
+   {
+    "store": "PTT AVM",
+    "seller": "Ucuzportal",
+    "kind": "market",
+    "price": 58499.0,
+    "age": "5 saat önce",
+    "title": "Roborock Saros 10R Akıllı Robot Süpürge Satıcı: Ucuzportal"
+   },
+   {
+    "store": "Trendyol",
+    "seller": "SATÜRN",
+    "kind": "retail",
+    "price": 59078.0,
+    "age": "1 saat önce",
+    "title": "Roborock Saros 10R Akıllı Robot Süpürge Satıcı: SATÜRN"
+   },
+   {
+    "store": "n11",
+    "seller": "ucuzportall",
+    "kind": "market",
+    "price": 60999.0,
+    "age": "2 saat önce",
+    "title": "Roborock Saros 10 R Robot Süpürge Siyah Siyah Satıcı: ucuzportall"
+   },
+   {
+    "store": "Hepsiburada",
+    "seller": "Hanelya",
+    "kind": "market",
+    "price": 65400.0,
+    "age": "8 dk önce",
+    "title": "Saros 10R Akıllı Robot Süpürge - Siyah Satıcı: Hanelya | 164 yorum"
+   },
+   {
+    "store": "n11",
+    "seller": "artutechno1",
+    "kind": "market",
+    "price": 72500.0,
+    "age": "2 saat önce",
+    "title": "Roborock Saros 10 R Robot Süpürge Siyah Siyah Satıcı: artutechno1"
+   }
+  ],
+  "tek": [],
+  "hb": {
+   "url": "https://www.hepsiburada.com/saros-10r-akilli-robot-supurge-pm-HBC00008ZC19Q",
+   "seller": "Hepsiburada",
+   "official": true,
+   "price": 54999.0,
+   "buyable": true,
+   "tr_warranty": true,
+   "importer": false,
+   "others": [
+    {
+     "seller": "Hanelya",
+     "score": "9,7",
+     "auth": true,
+     "price": 65400.0
+    },
+    {
+     "seller": "e-koz",
+     "score": "9,5",
+     "auth": true,
+     "price": 67225.0
+    }
+   ],
+   "rating": 4.2,
+   "count": 164,
+   "stars": [
+    119,
+    11,
+    6,
+    2,
+    26
+   ],
+   "reviews": [
+    {
+     "date": "28 Haziran 2025",
+     "text": "Ürünü hediye olarak aldım ama maalesef alan kişi hiçbir şeyi beğenmediği gibi bunu da beğenmedi. Ancak kendi deneyimime göre cihazın silme performansı oldukça başarılı, adeta ayna gibi parlatıyor. Halı süpürmesi ise tartışılır. Karşılaştırma yapmam gerekirse; bende Xiaomi X20 Plus ve Dyson 360 Vis Nav da var. Evinizde çok halıvar ise kesinlikle Dyson tercih edilmeli. Dyson'un çekiş gücü çok yüksek, fırçası zemine yapışıyor ve halıyı adeta döverek derinlemesine temizliyor. Ancak eğer halınız azsa ya da silme sizin için daha önemliyse Roborock Saro S10R gayet yeterli. Hiç halınız yoksa Xiaomi X20 Plus da tercih edilebilir. Silme ve süpürme performansı açısından Roborock ile Xiaomi arasında hiç",
+     "seller": "Hepsiburada",
+     "up": 119,
+     "down": 17
+    },
+    {
+     "date": "17 Ağustos",
+     "text": "Çok kolay kurulum, çok akıllı süpürme, paspaslama. Uygulamadan yönetmek sorunsuz, düzenli ve keyifli. 4-5 gündür kullanıyorum çok memnunum. Kutudan temizlik solüsyonu çıkıyor sanıyordum, yokmuş. Almayı düşünenlere tavsiye ederim çok güzel bir ürün.",
+     "seller": "Hepsiburada",
+     "up": 3,
+     "down": 1
+    },
+    {
+     "date": "20 Aralık 2025",
+     "text": "Satıcı: Hepsiburada Renk Siyah ED ED 27 Ağustos, Per| E D Hepsijet ile sorunsuz ve çok hızlı şekilde elime ulaştı kargo çok hızlı ve sorunsuz geliyor. Ürünü qr kod ile okutup uygulamayı indirdik yönlendirme yapıyor zaten uygulama sizi çok başarılı ve akıllı bir süpürge kesinlikle tavsiye ederim hızlı bir haritalama yaptı sonra her yeri süpürüp sildi dip köşe her yere giriyor koltukların ayak kısımları varsa oralardan kendi atlıyor etraftaki nesneleri odaları kendi tanıyor paspası çok iyi yapıyor ondan çok memnun kaldık kendi paspasını yıkayıp kurutuyor. Ses olarak gayet sessiz bir şekilde çalışıyor rahatsız eden bir sesi yok halı da kendi çekim gücünü ayarlıyor genel olarak herşeyi kendi yap",
+     "seller": "Hepsiburada",
+     "up": 0,
+     "down": 0
+    },
+    {
+     "date": "22 Haziran 2025",
+     "text": "Uzun araştırmalar sonucunda almak için beklediğim robot süpürge Beklediğime değdi İstasyonlu seçme sebebim her odadan sonra hazneyi boşaltmak zorunda kalmayım (odalarım büyük ve evim çok toz oluyor) mopları sıcak suyla kendi yıkaması (benden güzel yıkadı) Diğerlerinden daha ince olduğu için bütün bazalarımın altını rahatlıkla sildi süpürdü Titreşimli mop olmadığı için sadece süpürme yapma isterseniz mopları yuvada çıkarıyor gerçi çıkarmasada halınıza değmiyor Gerçekten dip köşe silip süpürüyor çekim gücü çok çok iyi Mopları yoğun ıslak seçerseniz kurutma süresi uzuyor ve bu arada oda da sıcak oluyor ama bu kış için avantaj tabi 😄 ben kurutmayı iptal edip mopları çıkarıp kendi halinde kurumay",
+     "seller": "Roborock Türkiye",
+     "up": 27,
+     "down": 3
+    },
+    {
+     "date": "12 Aralık 2025",
+     "text": "İyi olsun sorumsuz uzun zaman kullanayım diyorsanız aradığınız ürün bu değil. -ürünü aldım 6 hafta kullandım. Son 3 haftadır “dahili hata.robotu sıfırlayın” diye bildirim alıyorum ve cihaz evin içinde türkçe olarak bu hatayı bangır bangır bağırıyor. Ve bu hatayı safece 2 oda temizlerken 15-20 kez tekrarlıyor -yan fırçası sebepsizce sıkıştı ve artık çalışmıyor. -bir şey sıkışmadığı halde cihazın ana fırçası yırtıldı. Yani başınıza bela atıyordanız tam olarak almanız gereken cihaz bu. Bir şikayette HepsiBurada ekibine gelsin. Zorla cihaz bakıp paketi sattılar. 2 bin tl ye. Garanti talebi oluşturdum yorumumu Roborock ekibinin hızına göre güncelleyeceğim. Şahsi fikrim almayın, aldırmayın.",
+     "seller": "Hepsiburada",
+     "up": 34,
+     "down": 6
+    },
+    {
+     "date": "19 Ağustos",
+     "text": "Mükemmel bir ürün. Daha önce iki robot süpürge alıp iade ettim; biri dyson spot and scrub; halılara acayip takılıyor, yüksek olduğu için çoğu yerden kaçınıyor. Evin bir kısmını temizlemeden bıraktı. İkincisi Roborock qrevo 2 flow; bu da dyson gibi rulo paspaslı. Rulo paspas teknolojisi çok güzel ancak rulo paspaslı modellerin hepsi 10 cm üzerinde malesef. Bu sebeple bu cihaz diğer tüm kullandığım robot süpürgelerin girebildiği koltuk altlarına girmedi. Dar alanlara giremeyeceğini düşünüp yanaşmıyor bile. Velhasıl rulo paspas sevdamdan vazgeçip bu cihazı aldım. Çok memnun kaldım, girmediği köşe bucak yok. Kenarlara çok iyi yanaşıp temizliyor. Pırıl pırıl yapıyor her yeri. Deterjanını da orjin",
+     "seller": "Hepsiburada",
+     "up": 4,
+     "down": 0
+    },
+    {
+     "date": "30 Kasım 2025",
+     "text": "Ürünü almadan önce 1 ay araştırdım z70 alacaktım bu ürün stokta yok diye fakat onun fırçasının kıl topladığını çok yerde okudum izledim.Benim için önemli olan bişeydi evde kedim ve köpeğim var. Stok gelince hiç kaçırmadan aldım. İnce olması büyük avantaj Roborock s5 max yatak baza altına giremiyordu. Ürün kapalı kutu geldi hiç bir sorun yok. Haritalamayı 2+1 80 m2 ev için 6 dak da yaptı. İçerisinde toz haznesi vardı ayrıca kutuda da geldi toplam 2 oldu. Engelden kaçınma çok iyi çalışıyor. 4 cm eşik var banyo girişi 3-4 kez uğraştı ama geçemedi. Benim için önemli değil eşik atlama o yüzden sorun yok. Genel anlamda ilk gün memnunum yorumumu güncelleyeceğim kullandıkça",
+     "seller": "Hepsiburada",
+     "up": 7,
+     "down": 3
+    },
+    {
+     "date": "04 Temmuz 2025",
+     "text": "Ürün güzel detaylı temizlik yapıyor ancak içinden temizlik solisyonu çıkmadı bu fiyatlı bir üründe olması gerekirdi",
+     "seller": "Hepsiburada",
+     "up": 7,
+     "down": 5
+    },
+    {
+     "date": "05 Ağustos",
+     "text": "İlk aldığım üründe Hata 52 / Hata 53 (Temizleme tepsisi/su tahliye sorunu) hatası yaşadım ve sorunu çözemeyince ürünü iade/değişime gönderdim. Satıcısının doğrudan Hepsiburada olması bu noktada büyük avantaj sağladı; süreç inanılmaz hızlı ilerledi ve talebim 2. iş gününde onaylanıp sıfır ürün tarafıma gönderildi. Yeni gelen cihazda şu an için hiçbir sorun yok, gayet güzel çalışıyor. Hepsiburada’ya bu hızlı ve mağdur etmeyen müşteri memnuniyeti odaklı yaklaşımı için teşekkür ederim. ​Ancak marka tarafındaki yetkili servis süreci konusunda ciddi endişelerim var. Yaşadığım sorun sırasında teknik desteğe ulaştığımda, telefonda herhangi bir yönlendirme yapmadan veya uzaktan yönlendirici bir çözüm",
+     "seller": "Hepsiburada",
+     "up": 4,
+     "down": 0
+    }
+   ]
+  },
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Roborock+Saros+10R"
+ },
+ "dreame-d30-ultra": {
+  "id": "dreame-d30-ultra",
+  "name": "Dreame D30 Ultra",
+  "offers": [
+   {
+    "store": "Hepsiburada",
+    "seller": "Hepsiburada",
+    "kind": "retail",
+    "price": 30999.0,
+    "age": "8 dk önce",
+    "title": "Dreame D30 Ultra Robot Süpürge Beyaz, 25.000PA Emiş Gücü Satıcı: Hepsiburada | 22 yorum"
+   },
+   {
+    "store": "n11",
+    "seller": "donvito",
+    "kind": "market",
+    "price": 33499.0,
+    "age": "2 saat önce",
+    "title": "Dreame D30 Ultra 25.000Pa Emiş Gücü Robot Süpürge Beyaz Satıcı: donvito"
+   },
+   {
+    "store": "n11",
+    "seller": "n11",
+    "kind": "retail",
+    "price": 33999.0,
+    "age": "2 saat önce",
+    "title": "Dreame D30 Ultra 25.000Pa Emiş Gücü Robot Süpürge Beyaz Satıcı: n11"
+   },
+   {
+    "store": "Idefix",
+    "seller": "Pandora Ticaret",
+    "kind": "market",
+    "price": 35423.04,
+    "age": "9 dk önce",
+    "title": "Dreame D30 Ultra Robot Süpürge Beyaz, 25.000Pa Emiş Gücü Satıcı: Pandora Ticaret"
+   },
+   {
+    "store": "Pazarama",
+    "seller": "Dreame Türkiye",
+    "kind": "brand",
+    "price": 35519.04,
+    "age": "15 dk önce",
+    "title": "Dreame D30 Ultra Robot Süpürge Beyaz, 25.000Pa Emiş Gücü Satıcı: Dreame Türkiye"
+   },
+   {
+    "store": "Hepsiburada",
+    "seller": "Dreame Türkiye",
+    "kind": "brand",
+    "price": 36999.0,
+    "age": "8 dk önce",
+    "title": "Dreame D30 Ultra Robot Süpürge Beyaz, 25.000PA Emiş Gücü Satıcı: Dreame Türkiye | 22 yorum"
+   },
+   {
+    "store": "Trendyol",
+    "seller": "Dreame Türkiye",
+    "kind": "brand",
+    "price": 36999.0,
+    "age": "1 saat önce",
+    "title": "Dreame D30 Ultra Robot Süpürge Beyaz, 25.000Pa Emiş Gücü Satıcı: Dreame Türkiye"
+   },
+   {
+    "store": "Idefix",
+    "seller": "Dreame Türkiye",
+    "kind": "brand",
+    "price": 36999.0,
+    "age": "9 dk önce",
+    "title": "Dreame D30 Ultra Robot Süpürge Beyaz, 25.000Pa Emiş Gücü Satıcı: Dreame Türkiye"
+   },
+   {
+    "store": "Beymen",
+    "seller": "Beymen",
+    "kind": "retail",
+    "price": 36999.0,
+    "age": "50 dk önce",
+    "title": "D30 Ultra Beyaz Akıllı Robot Süpürge"
+   },
+   {
+    "store": "Pazarama",
+    "seller": "EnSonu",
+    "kind": "market",
+    "price": 50998.95,
+    "age": "15 dk önce",
+    "title": "Dreame D30 Ultra Robot Süpürge Beyaz, 25.000Pa Emiş Gücü Satıcı: EnSonu"
+   }
+  ],
+  "amz": [
+   {
+    "title": "D30 Ultra Robot Süpürge Beyaz, 25.000Pa Emiş Gücü",
+    "url": "https://www.amazon.com.tr/dp/B0GXYNQN8Q",
+    "price": null,
+    "buyable": false,
+    "unavailable": false,
+    "lowstock": null,
+    "rating": null,
+    "count": 0,
+    "delivery": null
+   }
+  ],
+  "tek": [
+   {
+    "title": "Dreame D30 Ultra Robot Süpürge Beyaz",
+    "price": 41873.0,
+    "url": "https://www.teknosa.com/dreame-d30-ultra-robot-supurge-beyaz-p-100000062251",
+    "buyable": true
+   }
+  ],
+  "hbSearch": null,
+  "mm": [
+   {
+    "title": "[DREAME D30 Ultra Robot Süpürge](https://www.mediamarkt.com.tr/tr/product/_dreame-d30-ultra-robot-supurge-1253223.html)",
+    "url": "https://www.mediamarkt.com.tr/tr/product/_dreame-l50s-pro-ultra-robot-supurge-beyaz-1256601.html",
+    "price": 36299.0,
+    "delivery": true,
+    "store_pickup": true
+   }
+  ],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Dreame+D30+Ultra"
+ },
+ "dreame-l10s-pro-gen-2": {
+  "id": "dreame-l10s-pro-gen-2",
+  "name": "Dreame L10S Pro Gen 2",
+  "offers": [
+   {
+    "store": "Hepsiburada",
+    "seller": "Hepsiburada",
+    "kind": "retail",
+    "price": 9999.0,
+    "age": "8 dk önce",
+    "title": "Dreame L10s Pro Gen 2 Robot Süpürge Beyaz, 7.000PA Emiş Gücü - Beyaz Satıcı: Hepsiburada | 700 yorum"
+   },
+   {
+    "store": "n11",
+    "seller": "reveil",
+    "kind": "market",
+    "price": 10999.0,
+    "age": "2 saat önce",
+    "title": "Dreame L10S Pro Gen 2 Robot Süpürge Beyaz Satıcı: reveil"
+   },
+   {
+    "store": "Idefix",
+    "seller": "Pandora Ticaret",
+    "kind": "market",
+    "price": 11749.0,
+    "age": "9 dk önce",
+    "title": "Dreame L10s Pro Gen 2 Robot Süpürge Beyaz Satıcı: Pandora Ticaret"
+   },
+   {
+    "store": "PTT AVM",
+    "seller": "BHR TEKNOLOJİ",
+    "kind": "market",
+    "price": 11879.1,
+    "age": "5 saat önce",
+    "title": "Dreame L10s Pro Gen 2 Robot Süpürge Beyaz Satıcı: BHR TEKNOLOJİ"
+   },
+   {
+    "store": "Hepsiburada",
+    "seller": "SİNA TEKNOLOJİ",
+    "kind": "market",
+    "price": 11911.5,
+    "age": "8 dk önce",
+    "title": "Dreame L10s Pro Gen 2 Robot Süpürge Beyaz, 7.000PA Emiş Gücü - Beyaz Satıcı: SİNA TEKNOLOJİ | 700 yorum"
+   },
+   {
+    "store": "Trendyol",
+    "seller": "SATÜRN",
+    "kind": "retail",
+    "price": 11981.0,
+    "age": "1 saat önce",
+    "title": "Dreame L10s Pro Gen 2 Robot Süpürge Beyaz, 7.000PA Emiş Gücü Satıcı: SATÜRN"
+   },
+   {
+    "store": "Amazon",
+    "seller": "PEYStech",
+    "kind": "market",
+    "price": 11989.0,
+    "age": "46 dk önce",
+    "title": "Dreame L10s Pro Gen 2 Robot Vakum ve Paspas, 7000Pa Emiş, DuoScrub™ Paspas, Otomatik Paspas Kaldırma, Ultrasonik Halı ve"
+   },
+   {
+    "store": "Pazarama",
+    "seller": "BHR TEKNOLOJİ",
+    "kind": "market",
+    "price": 12219.06,
+    "age": "15 dk önce",
+    "title": "DREAME L10s Pro Gen2 Robot Süpürge Beyaz Satıcı: BHR TEKNOLOJİ"
+   },
+   {
+    "store": "Idefix",
+    "seller": "Galaxy Store",
+    "kind": "market",
+    "price": 12300.0,
+    "age": "9 dk önce",
+    "title": "Dreame L10s Pro Gen 2 Robot Süpürge Beyaz Satıcı: Galaxy Store"
+   },
+   {
+    "store": "PTT AVM",
+    "seller": "TecTex",
+    "kind": "market",
+    "price": 12600.0,
+    "age": "5 saat önce",
+    "title": "Dreame L10s Pro Gen 2 Robot Süpürge Beyaz Satıcı: TecTex"
+   },
+   {
+    "store": "n11",
+    "seller": "inovateknoloji",
+    "kind": "market",
+    "price": 12990.0,
+    "age": "2 saat önce",
+    "title": "Dreame L10S Pro Gen 2 Robot Süpürge Beyaz Satıcı: inovateknoloji"
+   },
+   {
+    "store": "Pazarama",
+    "seller": "Daraz e-lektronik",
+    "kind": "market",
+    "price": 15939.0,
+    "age": "15 dk önce",
+    "title": "DREAME L10s Pro Gen2 Robot Süpürge Beyaz Satıcı: Daraz e-lektronik"
+   }
+  ],
+  "amz": [
+   {
+    "title": "Dreame L10s Pro Gen 2 Robot Süpürge Beyaz, 7.000PA Emiş Gücü",
+    "url": "https://www.amazon.com.tr/dp/B0H94YLB18",
+    "price": null,
+    "buyable": false,
+    "unavailable": false,
+    "lowstock": null,
+    "rating": null,
+    "count": 0,
+    "delivery": null
+   }
+  ],
+  "tek": [],
+  "hb": {
+   "url": "https://www.hepsiburada.com/dreame-l10s-pro-gen-2-robot-vakum-ve-paspas-7000pa-emis-duoscrub-paspas-otomatik-paspas-kaldirma-ultrasonik-hali-ve-hali-algilama-pm-HBC0000ONHTN9",
+   "seller": "Ayizii",
+   "official": false,
+   "price": 23978.0,
+   "buyable": true,
+   "tr_warranty": false,
+   "importer": false,
+   "others": [],
+   "reviews": []
+  },
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Dreame+L10S+Pro+Gen+2"
+ },
+ "dreame-l40-ultra-ae": {
+  "id": "dreame-l40-ultra-ae",
+  "name": "Dreame L40 Ultra AE (RLL77SE)",
+  "offers": [
+   {
+    "store": "Amazon",
+    "seller": "Teknosa",
+    "kind": "retail",
+    "price": 34999.0,
+    "age": "46 dk önce",
+    "title": "Dreame L40 Ultra AE Robot Süpürge Satıcı: Teknosa"
+   },
+   {
+    "store": "Teknosa",
+    "seller": "Teknosa",
+    "kind": "retail",
+    "price": 34999.0,
+    "age": "44 dk önce",
+    "title": "Dreame L40 Ultra AE Robot Süpürge"
+   },
+   {
+    "store": "n11",
+    "seller": "dreameturkiye",
+    "kind": "brand",
+    "price": 38159.05,
+    "age": "2 saat önce",
+    "title": "Dreame L40 Ultra Ae Beyaz Robot Süpürge Satıcı: dreameturkiye"
+   },
+   {
+    "store": "Pazarama",
+    "seller": "Dreame Türkiye",
+    "kind": "brand",
+    "price": 38399.04,
+    "age": "15 dk önce",
+    "title": "Dreame L40 Ultra AE Robot Süpürge Satıcı: Dreame Türkiye"
+   },
+   {
+    "store": "Idefix",
+    "seller": "TEKNOSA",
+    "kind": "retail",
+    "price": 38799.03,
+    "age": "9 dk önce",
+    "title": "Dreame L40 Ultra AE Robot Süpürge, 19.000 Pa Emiş Gücü Satıcı: TEKNOSA"
+   },
+   {
+    "store": "Pazarama",
+    "seller": "Teknosa",
+    "kind": "retail",
+    "price": 39199.02,
+    "age": "15 dk önce",
+    "title": "Dreame L40 Ultra AE Robot Süpürge Satıcı: Teknosa"
+   },
+   {
+    "store": "n11",
+    "seller": "teknosa",
+    "kind": "retail",
+    "price": 39219.0,
+    "age": "1 saat önce",
+    "title": "Dreame L40 Ultra Ae Beyaz Robot Süpürge Satıcı: teknosa"
+   },
+   {
+    "store": "A101",
+    "seller": "A101",
+    "kind": "retail",
+    "price": 39499.0,
+    "age": "38 dk önce",
+    "title": "Dreame L40 Ultra AE Robot Süpürge"
+   },
+   {
+    "store": "Hepsiburada",
+    "seller": "diMalls",
+    "kind": "market",
+    "price": 39799.0,
+    "age": "18 dk önce",
+    "title": "Dreame L40 Ultra AE Robot Süpürge 19.000 Pa Emiş Gücü ile Akıllı Telefon Kontrolü Düz Zemin Kullanımı Satıcı: diMalls | "
+   },
+   {
+    "store": "Hepsiburada",
+    "seller": "Dreame Türkiye",
+    "kind": "brand",
+    "price": 39999.0,
+    "age": "18 dk önce",
+    "title": "Dreame L40 Ultra AE Robot Süpürge 19.000 Pa Emiş Gücü ile Akıllı Telefon Kontrolü Düz Zemin Kullanımı Satıcı: Dreame Tür"
+   },
+   {
+    "store": "Trendyol",
+    "seller": "Teknosa",
+    "kind": "retail",
+    "price": 39999.0,
+    "age": "4 saat önce",
+    "title": "Dreame L40 Ultra AE Robot Süpürge, 19.000 Pa Emiş Gücü Satıcı: Teknosa"
+   },
+   {
+    "store": "Trendyol",
+    "seller": "Dreame Türkiye",
+    "kind": "brand",
+    "price": 39999.0,
+    "age": "1 saat önce",
+    "title": "Dreame L40 Ultra AE Robot Süpürge, 19.000 Pa Emiş Gücü Satıcı: Dreame Türkiye"
+   },
+   {
+    "store": "Idefix",
+    "seller": "Dreame Türkiye",
+    "kind": "brand",
+    "price": 39999.0,
+    "age": "9 dk önce",
+    "title": "Dreame L40 Ultra AE Robot Süpürge, 19.000 Pa Emiş Gücü Satıcı: Dreame Türkiye"
+   },
+   {
+    "store": "Beymen",
+    "seller": "Beymen",
+    "kind": "retail",
+    "price": 39999.0,
+    "age": "50 dk önce",
+    "title": "L40 Ultra AE Beyaz Robot Süpürge"
+   },
+   {
+    "store": "PTT AVM",
+    "seller": "PANDORA TİCARET",
+    "kind": "market",
+    "price": 45899.1,
+    "age": "5 saat önce",
+    "title": "Dreame L40 Ultra Ae Çöp İstasyonlu Akıllı Robot Süpürge Satıcı: PANDORA TİCARET"
+   },
+   {
+    "store": "PTT AVM",
+    "seller": "GlobalExpress",
+    "kind": "market",
+    "price": 88634.7,
+    "age": "5 saat önce",
+    "title": "Dreame L40 Ultra Ae Satıcı: GlobalExpress"
+   }
+  ],
+  "amz": [],
+  "tek": [
+   {
+    "title": "Dreame L40 Ultra AE Robot Süpürge",
+    "price": 34999.0,
+    "url": "https://www.teknosa.com/dreame-l40-ultra-ae-robot-supurge-p-100000059037",
+    "buyable": true
+   }
+  ],
+  "hb": {
+   "url": "https://www.hepsiburada.com/dreame-l40-ultra-ae-robot-supurge-19-000-pa-emis-gucu-pm-HBC0000A57V5M",
+   "seller": "diMalls",
+   "official": false,
+   "price": 39799.0,
+   "buyable": true,
+   "tr_warranty": false,
+   "importer": false,
+   "others": [
+    {
+     "seller": "Dreame Türkiye",
+     "score": "9,7",
+     "auth": true,
+     "price": 39999.0
+    },
+    {
+     "seller": "Teknosa",
+     "score": "9,5",
+     "auth": true,
+     "price": 39999.0
+    }
+   ],
+   "rating": 4.1,
+   "count": 74,
+   "stars": [
+    54,
+    4,
+    0,
+    1,
+    15
+   ],
+   "reviews": [
+    {
+     "date": "29 Aralık 2025",
+     "text": "Harika urun. Baska sozum yok.. yalniz satıcı moplar yana açılmıyor dedi ısrarla. Görüldüğü gibi açılıyor bu harika bir özellik.",
+     "seller": "Dreame Türkiye",
+     "up": 16,
+     "down": 3
+    },
+    {
+     "date": "18 Kasım 2025",
+     "text": "Ürün bugün teslim edildi. Öncelikle hepsijete teşekkür ederim. 1 günde geldi cihaz. Cihaza gelirsem tüm evi temizletip sildirdim. 2cmlik eşiğim vardı onu atlayabiliyor. Önceki kulladığım model S7 idi ve bariz fark olarak cihazın sesi diyebilirim. Gerçekten normal emiş gücünde nerdeyse yarı yarıya ses farkı var. Çok sessiz çalışıyor. Bu cihaz ile X40 arasında kalmıştım fakat incelediğim yorumlar neticesinde buna karar kıldım. Daha güncel bir cihaz ve emiş gücü çok daha yüksek. Evi tanıdıkça temizleme performansının artacağını düşünüyorum. İlk temizlemede açıkcası yerde saç teli bıraktı. Paspaslaması gayet iyi. İstasyonu kendini temizliyor. Engellerden kaçması gayet iyi hiç çarpmadı eşyalarıma",
+     "seller": "Teknosa",
+     "up": 21,
+     "down": 2
+    },
+    {
+     "date": "24 Aralık 2025",
+     "text": "İlk robot süpürgemiz ve araştırarak almıştım. X50 ile bu model arasında kalmıştım ama pratikte o kadar fiyat farkını hak edecek bir avantaj görmedim. Haritalaması oldukça hızlı. İlk çalışmada bile evi net şekilde çıkarıyor; her temizlikte haritayı güncelliyor ve zamanla halı, yatak, koltuk gibi alanları daha doğru tanımlıyor. Uygulama üzerinden manuel eklemelerle harita daha da iyileştirilebiliyor. Uygulaması ve uzaktan kontrolü başarılı. Oda ve bölge temizliği, kamera destekli algılama ve perde ayarı gibi detaylar kolayca yönetilebiliyor. Günlük veya haftalık planlama yaparak otomatik temizlik rutinleri oluşturmak da mümkün. Paspaslama performansı iyi ve ıslaklık seviyesi ayarlanabiliyor. O",
+     "seller": "Teknosa",
+     "up": 22,
+     "down": 2
+    },
+    {
+     "date": "16 Ekim",
+     "text": "Beklentimin üzerinde performansa sahip.",
+     "seller": "Dreame Türkiye",
+     "up": 0,
+     "down": 0
+    },
+    {
+     "date": "22 Aralık 2025",
+     "text": "Alın aldırın diyorum🥰Roborock kullanmıştım daha önce bu sefer Dreame tercih ettim ve iyi ki etmişim. Özelliklerinde ne varsa yapıyor okuduğum olumsuz yorumların hiçbirini yaşamadım, 10 dakikada haritaladı ve inanılmaz sessiz , karanlıkta ışığını açıyor, uygulamada her şeyi yönetebilirsiniz . Gereksiz uzun yazmak istemedim👍👍",
+     "seller": "Teknosa",
+     "up": 21,
+     "down": 0
+    }
+   ]
+  },
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Dreame+L40+Ultra+AE"
+ },
+ "dreame-l50-ultra-ce": {
+  "id": "dreame-l50-ultra-ce",
+  "name": "Dreame L50 Ultra CE",
+  "offers": [
+   {
+    "store": "MediaMarkt",
+    "seller": "MediaMarkt",
+    "kind": "retail",
+    "price": 38999.0,
+    "age": "37 dk önce",
+    "title": "Dreame L50 Ultra CE Robot Süpürge"
+   },
+   {
+    "store": "Trendyol",
+    "seller": "Trendyol",
+    "kind": "retail",
+    "price": 41799.0,
+    "age": "1 saat önce",
+    "title": "Dreame L50 Ultra CE Robot Süpürge Beyaz, 25.000Pa Emiş Gücü Satıcı: Trendyol"
+   },
+   {
+    "store": "Hepsiburada",
+    "seller": "VATAN BİLGİSAYAR",
+    "kind": "retail",
+    "price": 41999.0,
+    "age": "12 dk önce",
+    "title": "Dreame L50 Ultra CE Beyaz Robot Süpürge 25000PA Emiş Gücü Akıllı Telefon ile Kontrol Düz Zemin İçin Satıcı: VATAN BİLGİS"
+   },
+   {
+    "store": "Trendyol",
+    "seller": "VATAN BİLGİSAYAR",
+    "kind": "retail",
+    "price": 41999.0,
+    "age": "8 saat önce",
+    "title": "Dreame L50 Ultra CE Robot Süpürge Beyaz, 25.000Pa Emiş Gücü Satıcı: VATAN BİLGİSAYAR"
+   },
+   {
+    "store": "Teknosa",
+    "seller": "Teknosa",
+    "kind": "retail",
+    "price": 41999.0,
+    "age": "44 dk önce",
+    "title": "Dreame L50 Ultra Ce Robot Süpürge Beyaz"
+   },
+   {
+    "store": "Pazarama",
+    "seller": "MEDIAMARKT",
+    "kind": "retail",
+    "price": 42629.02,
+    "age": "15 dk önce",
+    "title": "Dreame L50 Ultra CE Robot Süpürge Beyaz, 25.000Pa Emiş Gücü Satıcı: MEDIAMARKT"
+   },
+   {
+    "store": "n11",
+    "seller": "dreameturkiye",
+    "kind": "brand",
+    "price": 43199.04,
+    "age": "2 saat önce",
+    "title": "Dreame L50 Ultra CE 25.000Pa Emiş Gücü Robot Süpürge Beyaz Satıcı: dreameturkiye"
+   },
+   {
+    "store": "Pazarama",
+    "seller": "Dreame Türkiye",
+    "kind": "brand",
+    "price": 43199.04,
+    "age": "15 dk önce",
+    "title": "Dreame L50 Ultra CE Robot Süpürge Beyaz, 25.000Pa Emiş Gücü Satıcı: Dreame Türkiye"
+   },
+   {
+    "store": "n11",
+    "seller": "mediamarkt",
+    "kind": "retail",
+    "price": 43499.0,
+    "age": "1 saat önce",
+    "title": "Dreame L50 Ultra CE 25.000Pa Emiş Gücü Robot Süpürge Beyaz Satıcı: mediamarkt"
+   },
+   {
+    "store": "Amazon",
+    "seller": "Dreame TR",
+    "kind": "brand",
+    "price": 44999.0,
+    "age": "46 dk önce",
+    "title": "L50 Ultra CE Robot Süpürge Beyaz, 25.000Pa Emiş Gücü Satıcı: Dreame TR"
+   },
+   {
+    "store": "Hepsiburada",
+    "seller": "Dreame Türkiye",
+    "kind": "brand",
+    "price": 44999.0,
+    "age": "12 dk önce",
+    "title": "Dreame L50 Ultra CE Beyaz Robot Süpürge 25000PA Emiş Gücü Akıllı Telefon ile Kontrol Düz Zemin İçin Satıcı: Dreame Türki"
+   },
+   {
+    "store": "Idefix",
+    "seller": "Dreame Türkiye",
+    "kind": "brand",
+    "price": 44999.0,
+    "age": "9 dk önce",
+    "title": "Dreame L50 Ultra CE Robot Süpürge Beyaz, 25.000Pa Emiş Gücü Satıcı: Dreame Türkiye"
+   },
+   {
+    "store": "Beymen",
+    "seller": "Beymen",
+    "kind": "retail",
+    "price": 44999.0,
+    "age": "50 dk önce",
+    "title": "L50 Ultra CE Beyaz Robot Süpürge"
+   },
+   {
+    "store": "Vatan",
+    "seller": "Vatan",
+    "kind": "retail",
+    "price": 49999.0,
+    "age": "33 dk önce",
+    "title": "Dreame L50 Ultra CE Robot Süpürge"
+   }
+  ],
+  "amz": [
+   {
+    "title": "L50 Ultra CE Robot Süpürge Beyaz, 25.000Pa Emiş Gücü",
+    "url": "https://www.amazon.com.tr/dp/B0GXYYVV5B",
+    "price": 44999.0,
+    "buyable": true,
+    "unavailable": false,
+    "lowstock": null,
+    "rating": null,
+    "count": 0,
+    "delivery": "ÜCRETSİZ teslimat 4 - 5 Kas"
+   }
+  ],
+  "tek": [
+   {
+    "title": "Dreame L50 Ultra Ce Robot Süpürge Beyaz",
+    "price": 41999.0,
+    "url": "https://www.teknosa.com/dreame-l50-ultra-ce-robot-supurge-beyaz-p-100000062271",
+    "buyable": true
+   }
+  ],
+  "hbSearch": null,
+  "mm": [
+   {
+    "title": "[DREAME L50 Ultra CE Robot Süpürge](https://www.mediamarkt.com.tr/tr/product/_dreame-l50-ultra-ce-robot-supurge-1253224.html)",
+    "url": "https://www.mediamarkt.com.tr/tr/product/_dreame-l50s-pro-ultra-robot-supurge-beyaz-1256601.html",
+    "price": 41999.0,
+    "delivery": true,
+    "store_pickup": true
+   }
+  ],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Dreame+L50+Ultra+CE"
+ },
+ "dreame-d20": {
+  "id": "dreame-d20",
+  "name": "Dreame D20",
+  "offers": [
+   {
+    "store": "Amazon",
+    "seller": "Dreame TR",
+    "kind": "brand",
+    "price": 13999.0,
+    "age": "46 dk önce",
+    "title": "Dreame D20 Robot Süpürge, 13.000 Pa Emiş Gücü Satıcı: Dreame TR"
+   },
+   {
+    "store": "Teknosa",
+    "seller": "Teknosa",
+    "kind": "retail",
+    "price": 13999.0,
+    "age": "44 dk önce",
+    "title": "Dreame D20 Beyaz Robot Süpürge"
+   },
+   {
+    "store": "Pazarama",
+    "seller": "Dreame Türkiye",
+    "kind": "brand",
+    "price": 14399.04,
+    "age": "15 dk önce",
+    "title": "Dreame D20 Robot Süpürge Beyaz, 13.000Pa Emiş Gücü Satıcı: Dreame Türkiye"
+   },
+   {
+    "store": "Idefix",
+    "seller": "Pandora Ticaret",
+    "kind": "market",
+    "price": 14495.04,
+    "age": "9 dk önce",
+    "title": "Dreame D20 Robot Süpürge Beyaz, 13.000Pa Emiş Gücü Satıcı: Pandora Ticaret"
+   },
+   {
+    "store": "Pazarama",
+    "seller": "Teknosa",
+    "kind": "retail",
+    "price": 14699.02,
+    "age": "15 dk önce",
+    "title": "Dreame D20 Robot Süpürge Beyaz, 13.000Pa Emiş Gücü Satıcı: Teknosa"
+   },
+   {
+    "store": "Hepsiburada",
+    "seller": "Dreame Türkiye",
+    "kind": "brand",
+    "price": 14999.0,
+    "age": "18 dk önce",
+    "title": "Dreame D20 Robot Süpürge, 13.000 Pa Emiş Gücü Satıcı: Dreame Türkiye | 59 yorum"
+   },
+   {
+    "store": "Hepsiburada",
+    "seller": "Teknosa",
+    "kind": "retail",
+    "price": 14999.0,
+    "age": "18 dk önce",
+    "title": "Dreame D20 Robot Süpürge, 13.000 Pa Emiş Gücü Satıcı: Teknosa | 59 yorum"
+   },
+   {
+    "store": "Trendyol",
+    "seller": "Dreame Türkiye",
+    "kind": "brand",
+    "price": 14999.0,
+    "age": "1 saat önce",
+    "title": "Dreame D20 Robot Süpürge, 13.000 Pa Emiş Gücü Satıcı: Dreame Türkiye"
+   },
+   {
+    "store": "Trendyol",
+    "seller": "Teknosa",
+    "kind": "retail",
+    "price": 14999.0,
+    "age": "5 saat önce",
+    "title": "Dreame D20 Robot Süpürge, 13.000 Pa Emiş Gücü Satıcı: Teknosa"
+   },
+   {
+    "store": "n11",
+    "seller": "teknosa",
+    "kind": "retail",
+    "price": 14999.0,
+    "age": "1 saat önce",
+    "title": "Dreame D20 Robot Süpürge Satıcı: teknosa"
+   },
+   {
+    "store": "n11",
+    "seller": "dreameturkiye",
+    "kind": "brand",
+    "price": 14999.0,
+    "age": "2 saat önce",
+    "title": "Dreame D20 Robot Süpürge Satıcı: dreameturkiye"
+   },
+   {
+    "store": "Idefix",
+    "seller": "Dreame Türkiye",
+    "kind": "brand",
+    "price": 14999.0,
+    "age": "9 dk önce",
+    "title": "Dreame D20 Robot Süpürge Beyaz, 13.000Pa Emiş Gücü Satıcı: Dreame Türkiye"
+   },
+   {
+    "store": "Beymen",
+    "seller": "Beymen",
+    "kind": "retail",
+    "price": 14999.0,
+    "age": "50 dk önce",
+    "title": "D20 Beyaz Robot Süpürge"
+   },
+   {
+    "store": "A101",
+    "seller": "A101",
+    "kind": "retail",
+    "price": 16299.0,
+    "age": "38 dk önce",
+    "title": "Dreame D20 Akıllı Robot Süpürge"
+   },
+   {
+    "store": "PTT AVM",
+    "seller": "Koycebine",
+    "kind": "market",
+    "price": 18719.1,
+    "age": "5 saat önce",
+    "title": "Dreame D20 Robot Süpürge, 13.000 Pa Emiş Gücü Satıcı: Koycebine"
+   },
+   {
+    "store": "Vatan",
+    "seller": "Vatan",
+    "kind": "retail",
+    "price": 19699.0,
+    "age": "33 dk önce",
+    "title": "Dreame D20 Robot Süpürge 5 yorum"
+   }
+  ],
+  "amz": [],
+  "tek": [
+   {
+    "title": "Dreame D20 Beyaz Robot Süpürge",
+    "price": 13999.0,
+    "url": "https://www.teknosa.com/dreame-d20-beyaz-robot-supurge-p-100000060732",
+    "buyable": true
+   }
+  ],
+  "hbSearch": null,
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Dreame+D20"
+ },
+ "xiaomi-x20-max-2": {
+  "id": "xiaomi-x20-max-2",
+  "name": "Xiaomi X20 Max",
+  "offers": [
+   {
+    "store": "Hepsiburada",
+    "seller": "Plus Market",
+    "kind": "market",
+    "price": 26009.1,
+    "age": "8 dk önce",
+    "title": "Robot Vacuum X20 Max Akıllı Robot Süpürge ve Mop - 8000Pa Siyah(Xiaomi Türkiye Garantili) Satıcı: Plus Market | 59 yorum"
+   },
+   {
+    "store": "Idefix",
+    "seller": "HANİBU",
+    "kind": "market",
+    "price": 27808.0,
+    "age": "9 dk önce",
+    "title": "Xiaomi Robot Vacuum X20 Max Çöp İstasyonlu Akıllı Robot Süpürge Satıcı: HANİBU"
+   },
+   {
+    "store": "Hepsiburada",
+    "seller": "HANİBU",
+    "kind": "market",
+    "price": 28260.0,
+    "age": "8 dk önce",
+    "title": "Robot Vacuum X20 Max Akıllı Robot Süpürge ve Mop - 8000Pa Siyah(Xiaomi Türkiye Garantili) Satıcı: HANİBU | 59 yorum"
+   },
+   {
+    "store": "Trendyol",
+    "seller": "Xiaomi Resmi Mağazası",
+    "kind": "brand",
+    "price": 28999.0,
+    "age": "1 saat önce",
+    "title": "Xiaomi Robot Vacuum X20 Max Akıllı Robot Süpürge ve Mop - 8000Pa Siyah(Xiaomi Türkiye Garantili) Satıcı: Xiaomi Resmi Ma"
+   },
+   {
+    "store": "Trendyol",
+    "seller": "hanibu",
+    "kind": "market",
+    "price": 30500.0,
+    "age": "7 saat önce",
+    "title": "Xiaomi Robot Vacuum X20 Max Akıllı Robot Süpürge ve Mop - 8000Pa Siyah(Xiaomi Türkiye Garantili) Satıcı: hanibu"
+   },
+   {
+    "store": "n11",
+    "seller": "vegasteknoloji",
+    "kind": "market",
+    "price": 30999.0,
+    "age": "2 saat önce",
+    "title": "Xiaomi Robot Vacuum X20 Max Çöp İstasyonlu Akıllı Robot Süpürge + Mop Satıcı: vegasteknoloji"
+   },
+   {
+    "store": "PTT AVM",
+    "seller": "TVSHOOP",
+    "kind": "market",
+    "price": 32391.0,
+    "age": "5 saat önce",
+    "title": "Xiaomi Robot Süpürge X20 Max 8000 Pa Emiş Gücü İle Düz Zemin İçin Tasarlandı Satıcı: TVSHOOP"
+   },
+   {
+    "store": "PTT AVM",
+    "seller": "HFTEKNOLOJİ",
+    "kind": "market",
+    "price": 36900.0,
+    "age": "5 saat önce",
+    "title": "Xiaomi Moplu Özelliği İle Robot Vacuum X20 Max Robot Süpürge + Xiaomi Baskül Hediye Satıcı: HFTEKNOLOJİ"
+   },
+   {
+    "store": "Idefix",
+    "seller": "Mufabel",
+    "kind": "market",
+    "price": 38999.0,
+    "age": "9 dk önce",
+    "title": "Xiaomi Robot Vacuum X20 Max Çöp İstasyonlu Akıllı Robot Süpürge Satıcı: Mufabel"
+   },
+   {
+    "store": "n11",
+    "seller": "shoppingbymufabel",
+    "kind": "market",
+    "price": 39999.99,
+    "age": "2 saat önce",
+    "title": "Xiaomi Robot Vacuum X20 Max Çöp İstasyonlu Akıllı Robot Süpürge + Mop Satıcı: shoppingbymufabel"
+   },
+   {
+    "store": "Pazarama",
+    "seller": "Son Fırsat",
+    "kind": "market",
+    "price": 58499.0,
+    "age": "15 dk önce",
+    "title": "Xiaomi Robot Vacuum X20 Max Robot Süpürge Siyah Satıcı: Son Fırsat"
+   }
+  ],
+  "tek": [],
+  "hb": {
+   "url": "https://www.hepsiburada.com/xiaomi-robot-vacuum-siyah-robot-supurge-turkiye-garantili-x20-max-xiaomi-akilli-baskul-hediye-pm-HBC0000DSLQH0",
+   "seller": "HFTeknoloji",
+   "official": false,
+   "price": null,
+   "buyable": true,
+   "tr_warranty": true,
+   "importer": false,
+   "others": [],
+   "rating": 5.0,
+   "count": 1,
+   "stars": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "reviews": []
+  },
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Xiaomi+X20+Max"
+ },
+ "mova-v70-ultra-complete": {
+  "id": "mova-v70-ultra-complete",
+  "name": "Mova V70 Ultra Complete",
+  "offers": [
+   {
+    "store": "?",
+    "seller": "Mağaza (doğrudan)",
+    "kind": "retail",
+    "price": 71999.0,
+    "age": null,
+    "title": "Mova V70 Ultra Complete Robot Süpürge Beyaz 71.999,00 TL Ücretsiz Kargo 7199900"
+   },
+   {
+    "store": "?",
+    "seller": "MOVA Türkiye",
+    "kind": "brand",
+    "price": 72379.06,
+    "age": null,
+    "title": "00 Pa Emiş Gücü, 17 cm Uzayabilen MaxiReachX Mop, 3 Yıl Garanti Satıcı: MOVA Türkiye 72.379,06 TL Ücretsiz Kargo 7237906"
+   },
+   {
+    "store": "?",
+    "seller": "Amazon.com.tr",
+    "kind": "retail",
+    "price": 76999.0,
+    "age": null,
+    "title": "iReachX™ Mop Pedleri, 9 cm'ye Kadar Eşik Atlama, 3 Yıl Garanti Satıcı: Amazon.com.tr 76.999,00 TL Ücretsiz Kargo 7699900"
+   },
+   {
+    "store": "?",
+    "seller": "MOVA Türkiye",
+    "kind": "brand",
+    "price": 76999.0,
+    "age": null,
+    "title": " Gücü, 17 cm Uzayabilen Maxireachx Mop, 3 Yıl Garanti Satıcı: MOVA Türkiye | 4 yorum 76.999,00 TL Ücretsiz Kargo 7699900"
+   },
+   {
+    "store": "?",
+    "seller": "MOVA Türkiye",
+    "kind": "brand",
+    "price": 76999.0,
+    "age": null,
+    "title": "00 Pa Emiş Gücü, 17 cm Uzayabilen MaxiReachX Mop, 3 Yıl Garanti Satıcı: MOVA Türkiye 76.999,00 TL Ücretsiz Kargo 7699900"
+   },
+   {
+    "store": "?",
+    "seller": "Mova Türkiye",
+    "kind": "brand",
+    "price": 76999.0,
+    "age": null,
+    "title": "00 Pa Emiş Gücü, 17 cm Uzayabilen MaxiReachX Mop, 3 Yıl Garanti Satıcı: Mova Türkiye 76.999,00 TL Ücretsiz Kargo 7699900"
+   },
+   {
+    "store": "?",
+    "seller": "Mağaza (doğrudan)",
+    "kind": "retail",
+    "price": 76999.0,
+    "age": null,
+    "title": "9 dk önce 6 76999.00 V70 Ultra Complete Akıllı Robot Süpürge 76.999,00 TL Ücretsiz Kargo 7699900"
+   }
+  ],
+  "tek": [],
+  "hb": {
+   "url": "https://www.hepsiburada.com/mova-v70-ultra-complete-42-000-pa-emis-gucu-17-cm-uzayabilen-maxireachx-mop-3-yil-garanti-pm-HBC0000JG33ZP",
+   "seller": "MOVA Türkiye",
+   "official": false,
+   "price": 76999.0,
+   "buyable": true,
+   "tr_warranty": false,
+   "importer": false,
+   "others": [],
+   "rating": 2.0,
+   "count": 4,
+   "stars": [
+    1,
+    0,
+    0,
+    0,
+    3
+   ],
+   "reviews": [
+    {
+     "date": "01 Ekim",
+     "text": "koltukların altına girmedi alçak geçitli alan olarak işaretledim lidarını indirip girecek ama kafası çok karışıyor bir odayı 3 parçada temizledi. Halıyı ayrı halının 2 tarafını ayrı planladı arada temizlenmeyen boşluklar kaldı. En can sıkan kısmı kanepenin yüksekligi yeterli olmasına ragmen altına girmedi. Eski süpürgem dream L10s pro bir uçtan bir uca S çizerek tertemiz süpürüyordu koltukların altına giriyordu. paspasını kendi yıkayan akıllı robot süpürge alayım almışken en iyisi olsun dedim hayal kırıklıgı oldu. mutfakla salon arasında saçma sapan bir haritalama yaptı görseli attım.mutfagımla salon arasında sadece duvar var ama haritayı böyle saçma bir şekilde oluşturdu. 5 yıllık süpürgem ",
+     "seller": "MOVA Türkiye",
+     "up": 4,
+     "down": 0
+    },
+    {
+     "date": "02 Ekim",
+     "text": "Ürün aslında başarılı ama içindeki solüsyon kutusu ve toz haznesi deforme çıktı. Firmayla Whatsapp üzerinden iletişime geçtim önce kayıt açtılar bir gün sonra hayır ürünü Hepsiburada üzerinden aldınız onlarla görüşün dediler. Güler misin ağlar mısın? Firma müşteri memnuniyeti diye bir düşünceye sahip değil. Ürünü sattıktan sonra klasik Türkiye gerçeğiyle karşı karşıyasınız. 3 Yıl garantili diyorlar ama şimdiden böyle sıkıntılı bir firma garantiyi de iplemez büyük ihtimalle. Çin firmalarımdan uzak durun.",
+     "seller": "MOVA Türkiye",
+     "up": 6,
+     "down": 0
+    },
+    {
+     "date": "02 Ekim",
+     "text": "Çok güzel robot",
+     "seller": "MOVA Türkiye",
+     "up": 0,
+     "down": 1
+    },
+    {
+     "date": "29 Eylül",
+     "text": "Ürün için verilmiş bir puan değildir ürünü yorumlamak dahi gereksiz ürün eksik gönderiyor ve hiç bir şekilde musteri iletişimi yok ben diğer aldığım her elektronik urunde ki bu zamanda firmalar ozellikle arayarak memnuniyet araştırması yapıyor bu firmada ne yazikki yok ve musteriyi haksız çıkartma politaki var yazik... Gerisini siz anlayin",
+     "seller": "MOVA Türkiye",
+     "up": 13,
+     "down": 2
+    }
+   ]
+  },
+  "mm": [
+   {
+    "title": "[MOVA V70 Ultra Complete Robot Süpürge Beyaz](https://www.mediamarkt.com.tr/tr/product/_mova-v70-ultra-complete-robot-supurge-beyaz-1256200.html)",
+    "url": "https://www.mediamarkt.com.tr/tr/product/_mova-z70-ultra-roller-complete-robot-supurge-siyah-1256199.html",
+    "price": 76999.0,
+    "delivery": true,
+    "store_pickup": true
+   }
+  ],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Mova+V70+Ultra+Complete"
+ },
+ "mova-e50-pro-ultra": {
+  "id": "mova-e50-pro-ultra",
+  "name": "Mova E50 Pro Ultra",
+  "offers": [
+   {
+    "store": "MediaMarkt",
+    "seller": "MediaMarkt",
+    "kind": "retail",
+    "price": 36999.0,
+    "age": "37 dk önce",
+    "title": "Mova E50 Pro Ultra İstasyonlu Robot Süpürge Beyaz"
+   },
+   {
+    "store": "Amazon",
+    "seller": "Amazon.com.tr",
+    "kind": "retail",
+    "price": 39999.0,
+    "age": "17 dk önce",
+    "title": "MOVA E50 Pro Ultra Robot Süpürge, 30.000 Pa Emiş Gücü, 100 °C Sıcak Su ile Paspas Temizleme, Kendi Kendini Temizleyen İs"
+   },
+   {
+    "store": "Hepsiburada",
+    "seller": "MOVA Türkiye",
+    "kind": "brand",
+    "price": 42999.0,
+    "age": "8 dk önce",
+    "title": "MOVA E50 Pro Ultra Robot Süpürge, 30000 PA Emiş Gücü, 3 Yıl Garanti Satıcı: MOVA Türkiye | 12 yorum"
+   },
+   {
+    "store": "Trendyol",
+    "seller": "MOVA Türkiye",
+    "kind": "brand",
+    "price": 42999.0,
+    "age": "1 saat önce",
+    "title": "MOVA E50 Pro Ultra Robot Süpürge, 30000 PA Emiş Gücü, 3 Yıl Garanti Satıcı: MOVA Türkiye"
+   },
+   {
+    "store": "n11",
+    "seller": "movaturkiye",
+    "kind": "brand",
+    "price": 42999.0,
+    "age": "2 saat önce",
+    "title": "Mova E50 Pro Ultra İstasyonlu Robot Süpürge Beyaz Satıcı: movaturkiye"
+   },
+   {
+    "store": "Idefix",
+    "seller": "Mova Türkiye",
+    "kind": "brand",
+    "price": 42999.0,
+    "age": "9 dk önce",
+    "title": "Mova E50 Pro Ultra Robot Süpürge Satıcı: Mova Türkiye"
+   },
+   {
+    "store": "Beymen",
+    "seller": "Beymen",
+    "kind": "retail",
+    "price": 42999.0,
+    "age": "50 dk önce",
+    "title": "E50 Pro Ultra Robot Süpürge"
+   },
+   {
+    "store": "n11",
+    "seller": "teknosa",
+    "kind": "retail",
+    "price": 45999.0,
+    "age": "1 saat önce",
+    "title": "Mova E50 Pro Ultra İstasyonlu Robot Süpürge Beyaz Satıcı: teknosa"
+   },
+   {
+    "store": "PTT AVM",
+    "seller": "DIEGRUP",
+    "kind": "market",
+    "price": 74175.9,
+    "age": "5 saat önce",
+    "title": "Mova E50 Pro Ultra Robot Süpürge, 30.000 Pa Emiş Gücü, 100 °C Sıcak Su İle Paspas Temizleme, Kendi Kendini Temizleyen İs"
+   },
+   {
+    "store": "Hepsiburada",
+    "seller": "Haneora",
+    "kind": "market",
+    "price": 79875.79,
+    "age": "8 dk önce",
+    "title": "Mova E50 Pro Ultra Robot Süpürge, 30.000 Pa Emiş Gücü, 100 °c Sıcak Su ile Paspas Temizleme, Kendi Kendini Temizleyen Is"
+   },
+   {
+    "store": "PTT AVM",
+    "seller": "GlobalExpress",
+    "kind": "market",
+    "price": 89855.1,
+    "age": "5 saat önce",
+    "title": "Mova E50 Pro Ultra İstasyonlu Robot Süpürge Beyaz Satıcı: GlobalExpress"
+   }
+  ],
+  "amz": [],
+  "tek": [
+   {
+    "title": "Mova E50 Pro Ultra Çöp İstasyonlu Robot Süpürge",
+    "price": 39999.0,
+    "url": "https://www.teknosa.com/mova-e50-pro-ultra-cop-istasyonlu-robot-supurge-p-100000064221",
+    "buyable": true
+   }
+  ],
+  "hbSearch": null,
+  "mm": [
+   {
+    "title": "[MOVA E50 Pro Ultra İstasyonlu Robot Süpürge Beyaz](https://www.mediamarkt.com.tr/tr/product/_mova-e50-pro-ultra-robot-supurge-beyaz-1255406.html)",
+    "url": "https://www.mediamarkt.com.tr/tr/product/_mova-z70-ultra-roller-complete-robot-supurge-siyah-1256199.html",
+    "price": 39999.0,
+    "delivery": true,
+    "store_pickup": true
+   }
+  ],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Mova+E50+Pro+Ultra"
+ },
+ "philips-xu5100": {
+  "id": "philips-xu5100",
+  "name": "Philips XU5100",
+  "offers": [
+   {
+    "store": "Idefix",
+    "seller": "HKTeknoloji",
+    "kind": "market",
+    "price": 17199.14,
+    "age": "9 dk önce",
+    "title": "Philips 5000 Serisi Islak Kuru Robot Süpürge, Yüksek Emiş Gücü, Otomatik Boşaltma, Beyaz, XU5100/20 Satıcı: HKTeknoloji"
+   },
+   {
+    "store": "PTT AVM",
+    "seller": "Toozi",
+    "kind": "market",
+    "price": 18999.1,
+    "age": "5 saat önce",
+    "title": "Philips Homerun 5000 Serisi Xu5100/10 Siyah Çöp İstasyonlu Akıllı Robot Süpürge Satıcı: Toozi"
+   },
+   {
+    "store": "Amazon",
+    "seller": "Amazon.com.tr",
+    "kind": "retail",
+    "price": 19000.0,
+    "age": "17 dk önce",
+    "title": "Philips HomeRun 5000 Serisi Robot Elektrikli Süpürge, Çift Döner Mop, Süpürme ve Paspas, 10.000Pa Emiş Gücü, Lazer Çizgi"
+   },
+   {
+    "store": "Idefix",
+    "seller": "TEK TIKLA İNDİRİM",
+    "kind": "market",
+    "price": 19000.0,
+    "age": "9 dk önce",
+    "title": "Philips 5000 Serisi XU5100/10 Islak & Kuru Robot Süpürge Satıcı: TEK TIKLA İNDİRİM"
+   },
+   {
+    "store": "PTT AVM",
+    "seller": "Y.F.Y Teknoloji",
+    "kind": "market",
+    "price": 19249.0,
+    "age": "5 saat önce",
+    "title": "Philips Homerun 5000 Serisi Xu5100/20 Beyaz Çöp İstasyonlu Akıllı Robot Süpürge Satıcı: Y.F.Y Teknoloji"
+   },
+   {
+    "store": "Amazon",
+    "seller": "Amazon.com.tr",
+    "kind": "retail",
+    "price": 19285.0,
+    "age": "17 dk önce",
+    "title": "Philips 5000 Serisi Islak Kuru Robot Süpürge, Yüksek Emiş Gücü, Uzun Çalışma Süresi, 200 dk'ya Kadar Şarj, HomeRun, Otom"
+   },
+   {
+    "store": "n11",
+    "seller": "zepteknoloji",
+    "kind": "market",
+    "price": 19998.0,
+    "age": "2 saat önce",
+    "title": "Philips 5000 Serisi XU5100/10 Islak & Kuru Robot Süpürge Siyah Satıcı: zepteknoloji"
+   },
+   {
+    "store": "n11",
+    "seller": "çeyizmağazası",
+    "kind": "market",
+    "price": 20000.0,
+    "age": "2 saat önce",
+    "title": "Philips 5000 Serisi XU5100/10 Islak & Kuru Robot Süpürge Siyah Satıcı: çeyizmağazası"
+   },
+   {
+    "store": "Pazarama",
+    "seller": "mld home",
+    "kind": "market",
+    "price": 21216.0,
+    "age": "15 dk önce",
+    "title": "Philips 5000 Serisi XU5100/10 Islak & Kuru Robot Süpürge Satıcı: mld home"
+   },
+   {
+    "store": "Pazarama",
+    "seller": "bizdensec",
+    "kind": "market",
+    "price": 21217.0,
+    "age": "15 dk önce",
+    "title": "Philips 5000 Serisi XU5100/10 Islak & Kuru Robot Süpürge Satıcı: bizdensec"
+   },
+   {
+    "store": "Hepsiburada",
+    "seller": "ÖzkaTeknoloji",
+    "kind": "market",
+    "price": 21427.78,
+    "age": "18 dk önce",
+    "title": "Philips 5000 Serisi Islak Kuru Robot Süpürge, Yüksek Emiş Gücü, Uzun Çalışma Süresi, HomeRun, Otomatik Boşaltma İstasyon"
+   },
+   {
+    "store": "Hepsiburada",
+    "seller": "BİZDENSEÇ",
+    "kind": "market",
+    "price": 21533.56,
+    "age": "18 dk önce",
+    "title": "Philips 5000 Serisi Islak Kuru Robot Süpürge, Yüksek Emiş Gücü, Uzun Çalışma Süresi, HomeRun, Otomatik Boşaltma İstasyon"
+   },
+   {
+    "store": "A101",
+    "seller": "A101",
+    "kind": "retail",
+    "price": 21999.0,
+    "age": "38 dk önce",
+    "title": "Philips HomeRun 5000 Serisi XU5100/10 Siyah Çöp İstasyonlu Akıllı Robot Süpürge"
+   },
+   {
+    "store": "A101",
+    "seller": "A101",
+    "kind": "retail",
+    "price": 22499.0,
+    "age": "38 dk önce",
+    "title": "Philips HomeRun 5000 Serisi XU5100/20 Beyaz Çöp İstasyonlu Akıllı Robot Süpürge"
+   },
+   {
+    "store": "Teknosa",
+    "seller": "Teknosa",
+    "kind": "retail",
+    "price": 22599.0,
+    "age": "44 dk önce",
+    "title": "Philips Xu5100/10 HomeRun5000 Islak ve Kuru Robot Süpürge"
+   },
+   {
+    "store": "Teknosa",
+    "seller": "Teknosa",
+    "kind": "retail",
+    "price": 22699.0,
+    "age": "44 dk önce",
+    "title": "Philips Xu5100/20 İstasyonlu Robot Süpürge"
+   },
+   {
+    "store": "Çiçeksepeti",
+    "seller": "Makroreyon",
+    "kind": "market",
+    "price": 24999.0,
+    "age": "1 saat önce",
+    "title": "Philips XU5100/20 HomeRun 5000 Serisi Islak & Kuru İstasyonlu Robot Süpürge-Beyaz Satıcı: Makroreyon"
+   },
+   {
+    "store": "Trendyol",
+    "seller": "Real Shop",
+    "kind": "market",
+    "price": 25840.0,
+    "age": "1 saat önce",
+    "title": "Philips 10000Pa Akıllı Robot Süpürge ve Mop Otomatik Boşaltma İstasyonu Çizgi Lazer Dolanma Önleme Tiftik Makinesi HEDİY"
+   },
+   {
+    "store": "Trendyol",
+    "seller": "Real Shop",
+    "kind": "market",
+    "price": 26540.0,
+    "age": "1 saat önce",
+    "title": "Philips kendini Mop Otomatik temizleyen Otomatik Toz Boşaltma Akıllı Robot Süpürge Satıcı: Real Shop"
+   }
+  ],
+  "amz": [],
+  "tek": [],
+  "hb": {
+   "url": "https://www.hepsiburada.com/5000-serisi-islak-kuru-robot-supurge-yuksek-emis-gucu-uzun-calisma-suresi-homerun-otomatik-bosaltma-istasyonu-gri-xu5100-10-pm-HBC00009X737W",
+   "seller": "BİZDENSEÇ",
+   "official": false,
+   "price": null,
+   "buyable": true,
+   "tr_warranty": false,
+   "importer": false,
+   "others": [
+    {
+     "seller": "İNDİRİM RÜZGARI",
+     "score": "9,7",
+     "auth": true,
+     "price": 20610.0
+    },
+    {
+     "seller": "MakroReyon",
+     "score": "9,4",
+     "auth": true,
+     "price": 20969.1
+    }
+   ],
+   "rating": 4.4,
+   "count": 42,
+   "stars": [
+    32,
+    3,
+    1,
+    2,
+    4
+   ],
+   "reviews": [
+    {
+     "date": "09 Nisan",
+     "text": "Yani yorumlarda dört dörtlük ürün gibi anlatanlara şaşırıyorum arkadaşlar mop takılıyken halıyı supuremıyor süpürme ayrı sılme ayrı ıkı işlem yapmak gerekıylr yada evınızın halısız olması gerekiyor istasyonlu olması büyük kolaylık. Haritalandırmasını begenmedım yani mükemmel bir ürün değil kesinlikle lütfen yorum yaparken herşeyi düşünerek ve abartmadan yapın kı alacak insanları da sıkıntıya sokmayın",
+     "seller": "EMC&BİLİSİM&TEKN",
+     "up": 21,
+     "down": 3
+    },
+    {
+     "date": "10 Mayıs",
+     "text": "Güzel ve kullanışlı,, haritalamasında sıkıntı yaşamadık sadece moplar ile halıya çıkamıyor maalesef",
+     "seller": "VATAN BİLGİSAYAR",
+     "up": 2,
+     "down": 0
+    },
+    {
+     "date": "30 Haziran",
+     "text": "Kesinlikle tavsiye ediyorum mükemmel",
+     "seller": "AGB PAZARLAMA",
+     "up": 0,
+     "down": 0
+    },
+    {
+     "date": "16 Kasım 2025",
+     "text": "Öncelikle bu kadar tatlı ve kompakt bir tasarım beklemiyordum. İstasyon kısmı hem doku hem de renk olarak eve çok güzel uyum sağladı. Ayrıca yanında ek mop ve temizleme suyu ile geliyormuş bu da çok büyük bir avantaj. Temizlik konusuna gelirsek uygulama ile alanı hemen tanıdı. Ben hem eşyalı hem eşyasız iki harita oluşturdum. Zaten kucuk bir evim olduğu için çok kisa sürede temizliyor. Moplari da çekme kuvveti de gayet yeterli geldi benim için. Konuşması çok sesli geldi bana, süpürürken o kadar ses çıkartmıyor öyle söyleyeyim ama o sesi uygulamadan vs azalticam :)",
+     "seller": "Hepsiburada",
+     "up": 1,
+     "down": 3
+    }
+   ]
+  },
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Philips+XU5100"
+ },
+ "dreame-f20": {
+  "id": "dreame-f20",
+  "name": "Dreame F20",
+  "offers": [
+   {
+    "store": "Idefix",
+    "seller": "NEONBİL",
+    "kind": "market",
+    "price": 14706.0,
+    "age": "9 dk önce",
+    "title": "Dreame F20 Robot Süpürge Beyaz, 20.000Pa Emiş Gücü Satıcı: NEONBİL"
+   },
+   {
+    "store": "PTT AVM",
+    "seller": "NEONBİL",
+    "kind": "market",
+    "price": 15390.0,
+    "age": "5 saat önce",
+    "title": "Dreame F20 Robot Süpürge Beyaz, 20.000Pa Emiş Gücü Satıcı: NEONBİL"
+   },
+   {
+    "store": "Pazarama",
+    "seller": "NEONBİL",
+    "kind": "market",
+    "price": 16758.0,
+    "age": "15 dk önce",
+    "title": "Dreame F20 Robot Süpürge Beyaz, 20.000Pa Emiş Gücü Satıcı: NEONBİL"
+   },
+   {
+    "store": "n11",
+    "seller": "mediamarkt",
+    "kind": "retail",
+    "price": 16899.0,
+    "age": "1 saat önce",
+    "title": "Dreame F20 20.000Pa Emiş Gücü Robot Süpürge Beyaz Satıcı: mediamarkt"
+   },
+   {
+    "store": "Pazarama",
+    "seller": "MEDIAMARKT",
+    "kind": "retail",
+    "price": 16953.02,
+    "age": "15 dk önce",
+    "title": "Dreame F20 Robot Süpürge Beyaz, 20.000Pa Emiş Gücü Satıcı: MEDIAMARKT"
+   },
+   {
+    "store": "MediaMarkt",
+    "seller": "MediaMarkt",
+    "kind": "retail",
+    "price": 16999.0,
+    "age": "37 dk önce",
+    "title": "Dreame F20 Robot Süpürge Beyaz"
+   },
+   {
+    "store": "Amazon",
+    "seller": "NEONBİL",
+    "kind": "market",
+    "price": 17100.0,
+    "age": "46 dk önce",
+    "title": "F20 Robot Süpürge Beyaz, 20.000Pa Emiş Gücü Satıcı: NEONBİL"
+   },
+   {
+    "store": "Hepsiburada",
+    "seller": "NEONBİL",
+    "kind": "market",
+    "price": 17100.0,
+    "age": "12 dk önce",
+    "title": "Dreame F20 Robot Süpürge Beyaz, 20.000PA Emiş Gücü ile Düz Zemin için Akıllı Kontrol Satıcı: NEONBİL | 9 yorum"
+   },
+   {
+    "store": "Trendyol",
+    "seller": "NEONBİL",
+    "kind": "market",
+    "price": 17100.0,
+    "age": "1 saat önce",
+    "title": "Dreame F20 Robot Süpürge Beyaz, 20.000Pa Emiş Gücü Satıcı: NEONBİL"
+   },
+   {
+    "store": "n11",
+    "seller": "NEONBİL",
+    "kind": "market",
+    "price": 17100.0,
+    "age": "2 saat önce",
+    "title": "Dreame F20 20.000Pa Emiş Gücü Robot Süpürge Beyaz Satıcı: NEONBİL"
+   },
+   {
+    "store": "Hepsiburada",
+    "seller": "VATAN BİLGİSAYAR",
+    "kind": "retail",
+    "price": 17999.0,
+    "age": "12 dk önce",
+    "title": "Dreame F20 Robot Süpürge Beyaz, 20.000PA Emiş Gücü ile Düz Zemin için Akıllı Kontrol Satıcı: VATAN BİLGİSAYAR | 9 yorum"
+   },
+   {
+    "store": "Teknosa",
+    "seller": "Teknosa",
+    "kind": "retail",
+    "price": 17999.0,
+    "age": "44 dk önce",
+    "title": "Dreame F20 Robot Süpürge Beyaz"
+   },
+   {
+    "store": "Vatan",
+    "seller": "Vatan",
+    "kind": "retail",
+    "price": 18999.0,
+    "age": "33 dk önce",
+    "title": "Dreame F20 Robot Süpürge 1 yorum"
+   },
+   {
+    "store": "Idefix",
+    "seller": "Dreame Türkiye",
+    "kind": "brand",
+    "price": 18999.0,
+    "age": "9 dk önce",
+    "title": "Dreame F20 Robot Süpürge Beyaz, 20.000Pa Emiş Gücü Satıcı: Dreame Türkiye"
+   },
+   {
+    "store": "Beymen",
+    "seller": "Beymen",
+    "kind": "retail",
+    "price": 18999.0,
+    "age": "50 dk önce",
+    "title": "F20 Beyaz Akıllı Robot Süpürge"
+   }
+  ],
+  "amz": [
+   {
+    "title": "F20 Robot Süpürge Beyaz, 20.000Pa Emiş Gücü",
+    "url": "https://www.amazon.com.tr/dp/B0GXYSYNCM",
+    "price": 17100.0,
+    "buyable": true,
+    "unavailable": false,
+    "lowstock": "3",
+    "rating": null,
+    "count": 0,
+    "delivery": "ÜCRETSİZ teslimat 3 Kas Sal"
+   }
+  ],
+  "tek": [
+   {
+    "title": "Dreame F20 Robot Süpürge Beyaz",
+    "price": 17100.0,
+    "url": "https://www.teknosa.com/dreame-f20-robot-supurge-beyaz-p-100000062274",
+    "buyable": true
+   }
+  ],
+  "hbSearch": null,
+  "mm": [
+   {
+    "title": "[DREAME F20 Robot Süpürge Beyaz](https://www.mediamarkt.com.tr/tr/product/_dreame-f20-robot-supurge-1253221.html)",
+    "url": "https://www.mediamarkt.com.tr/tr/product/_dreame-f10-robot-sprge-byz-f10-white-1251376.html",
+    "price": 17999.0,
+    "delivery": true,
+    "store_pickup": true
+   }
+  ],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Dreame+F20"
+ },
+ "roborock-qrevo-c-pro": {
+  "id": "roborock-qrevo-c-pro",
+  "name": "Roborock Qrevo C Pro",
+  "offers": [
+   {
+    "store": "Amazon",
+    "seller": "Amazon.com.tr",
+    "kind": "retail",
+    "price": 46229.37,
+    "age": "17 dk önce",
+    "title": "Roborock Qrevo C Pro, Beyaz Satıcı: Amazon.com.tr"
+   },
+   {
+    "store": "Idefix",
+    "seller": "Titanyum AVM",
+    "kind": "market",
+    "price": 46229.37,
+    "age": "9 dk önce",
+    "title": "Roborock Qrevo C Pro Akıllı Robot Süpürge 18.500 Pa - Beyaz Satıcı: Titanyum AVM"
+   },
+   {
+    "store": "n11",
+    "seller": "n11",
+    "kind": "retail",
+    "price": 46499.0,
+    "age": "2 saat önce",
+    "title": "Roborock Qrevo C Pro Akıllı Robot Süpürge Satıcı: n11"
+   },
+   {
+    "store": "MediaMarkt",
+    "seller": "MediaMarkt",
+    "kind": "retail",
+    "price": 46999.0,
+    "age": "37 dk önce",
+    "title": "Roborock Qrevo C Pro İstasyonlu Robot Süpürge Beyaz"
+   },
+   {
+    "store": "PTT AVM",
+    "seller": "Titanyum AVM",
+    "kind": "market",
+    "price": 47499.0,
+    "age": "5 saat önce",
+    "title": "Roborock Qrevo C Pro Çöp İstasyonlu Akıllı Robot Süpürge Satıcı: Titanyum AVM"
+   },
+   {
+    "store": "n11",
+    "seller": "titanyumavm",
+    "kind": "market",
+    "price": 47889.0,
+    "age": "2 saat önce",
+    "title": "Roborock Qrevo C Pro Akıllı Robot Süpürge Satıcı: titanyumavm"
+   },
+   {
+    "store": "Idefix",
+    "seller": "ELEKTRO SHOPPİNG",
+    "kind": "market",
+    "price": 47990.4,
+    "age": "9 dk önce",
+    "title": "Roborock Qrevo C Pro Akıllı Robot Süpürge 18.500 Pa - Beyaz Satıcı: ELEKTRO SHOPPİNG"
+   },
+   {
+    "store": "Hepsiburada",
+    "seller": "ELEKTRO SHOPPİNG",
+    "kind": "market",
+    "price": 48770.1,
+    "age": "8 dk önce",
+    "title": "Roborock Qrevo C Pro Akıllı Robot Süpürge 18.500 Pa - Beyaz Satıcı: ELEKTRO SHOPPİNG | 274 yorum"
+   },
+   {
+    "store": "Hepsiburada",
+    "seller": "UMT TEKNOLOJİ YAZILIM A.Ş",
+    "kind": "market",
+    "price": 48906.0,
+    "age": "8 dk önce",
+    "title": "Roborock Qrevo C Pro Akıllı Robot Süpürge 18.500 Pa - Beyaz Satıcı: UMT TEKNOLOJİ YAZILIM A.Ş | 274 yorum"
+   },
+   {
+    "store": "Trendyol",
+    "seller": "Trendyol",
+    "kind": "retail",
+    "price": 48949.0,
+    "age": "1 saat önce",
+    "title": "Roborock Qrevo C Pro Akıllı Robot Süpürge 18.500 Pa - Beyaz Satıcı: Trendyol"
+   },
+   {
+    "store": "Pazarama",
+    "seller": "MEDIAMARKT",
+    "kind": "retail",
+    "price": 48999.0,
+    "age": "15 dk önce",
+    "title": "Roborock Qrevo C Pro Akıllı Robot Süpürge 18.500 Pa - Beyaz Satıcı: MEDIAMARKT"
+   },
+   {
+    "store": "Teknosa",
+    "seller": "Teknosa",
+    "kind": "retail",
+    "price": 49999.0,
+    "age": "44 dk önce",
+    "title": "Roborock Qrevo C Pro Çöp İstasyonlu Beyaz Robot Süpürge"
+   },
+   {
+    "store": "Vatan",
+    "seller": "Vatan",
+    "kind": "retail",
+    "price": 49999.0,
+    "age": "33 dk önce",
+    "title": "Roborock Q Revo C Pro Robot Süpürge 27 yorum"
+   },
+   {
+    "store": "PTT AVM",
+    "seller": "TicaretVitrini",
+    "kind": "market",
+    "price": 54000.0,
+    "age": "5 saat önce",
+    "title": "Roborock Qrevo C Pro Akıllı Robot Süpürge 18.500 Pa - Beyaz Satıcı: TicaretVitrini"
+   },
+   {
+    "store": "Passo",
+    "seller": "Passo",
+    "kind": "retail",
+    "price": 69999.0,
+    "age": "3 saat önce",
+    "title": "ROBOROCK Q revo C Pro Akıllı Robot Süpürge 18.500 Pa - Beyaz Sadece Mobilde"
+   }
+  ],
+  "amz": [
+   {
+    "title": "Roborock Qrevo C Pro, Beyaz",
+    "url": "https://www.amazon.com.tr/dp/B0GJCZ1L3T",
+    "price": 46229.37,
+    "buyable": true,
+    "unavailable": false,
+    "lowstock": null,
+    "rating": 4.1,
+    "count": 18,
+    "delivery": "ÜCRETSİZ teslimat 4 Kas Çar"
+   }
+  ],
+  "tek": [
+   {
+    "title": "Roborock Qrevo C Pro Çöp İstasyonlu Beyaz Robot Süpürge",
+    "price": 49999.0,
+    "url": "https://www.teknosa.com/roborock-qrevo-pro-cop-istasyonlu-beyaz-robot-supurge-p-100000060975",
+    "buyable": true
+   }
+  ],
+  "hb": {
+   "url": "https://www.hepsiburada.com/roborock-q-revo-c-pro-robot-supurge-18500pa-yuksek-emis-gucu-islak-ve-kuru-temizleme-mukemmel-paspaslama-pm-HBC0000CTMKRL",
+   "seller": "ARTU TECHNO",
+   "official": false,
+   "price": null,
+   "buyable": true,
+   "tr_warranty": false,
+   "importer": false,
+   "others": [
+    {
+     "seller": "DorukExpress",
+     "score": "9,6",
+     "auth": true,
+     "price": 57374.1
+    },
+    {
+     "seller": "pandorra teknoloji",
+     "score": "9,5",
+     "auth": true,
+     "price": 62099.1
+    }
+   ],
+   "rating": 5.0,
+   "count": 5,
+   "stars": [
+    5,
+    0,
+    0,
+    0,
+    0
+   ],
+   "reviews": [
+    {
+     "date": "15 Mart",
+     "text": "Yorum yapmak için 2 hafta kullanmayı bekledim. Kullanıcı yorumlarından çok faydalandığım için de başkalarına faydalı olması dileğiyle görüşlerimi paylaşmak istiyorum: - Diğer markalar ve Roborock markasının diğer modelleri ile bu model arasında karşılaştırma yaptığımda benim için en önemli etken 18500PA emiş gücü oldu. Roborockun diğer popüler modellerinin emiş gücü 10000-12000PA bandındaydı. Fiyat olarak aralarında çok yüksek bir fark olmamasından dolayı bütçemi biraz daha zorlayıp en iyi emiş gücü olan ürünü almaya karar verdim. İyi ki de bu modelde karar kılmışım diyorum. Emiş gücü gerçekten çok kuvvetli. Standart bir kablolu elektrikli süpürgeyle neredeyse aynı. Bu ürünü aldıktan sonra s",
+     "seller": "TECHNOLOGYMARKET",
+     "up": 31,
+     "down": 0
+    },
+    {
+     "date": "03 Mayıs",
+     "text": "Makine çok iyi 4 günden beri kullanıyorum hem kuru hem ıslak temizlemesi ve haritalama olayı gayet güzel istediğin yeri mobilden temizletebiliyorsun yüksek emiş fonxiyonuyla harika aura clinmax süpürgemi kaldırdım o derece.",
+     "seller": "pandorra teknoloji",
+     "up": 6,
+     "down": 3
+    },
+    {
+     "date": "08 Nisan",
+     "text": "Henüz kurmadım kurduğumda yeniden yazacağım ama satıcıya teşekkür ederim çok hızlı kargoladı bir günde elimdeydi.",
+     "seller": "EKŞİ KARPUZ",
+     "up": 1,
+     "down": 0
+    }
+   ]
+  },
+  "mm": [
+   {
+    "title": "[ROBOROCK QREVO C Pro İstasyonlu Robot Süpürge Beyaz](https://www.mediamarkt.com.tr/tr/product/_roborock-qrevo-c-pro-istasyonlu-robot-supurge-beyaz-1252147.html)",
+    "url": "https://www.mediamarkt.com.tr/tr/product/_populer-roborock-qrevo-curv-qrevo-c-qrevo-c-pro-uyumlu-full-yedek-parca-seti-8-parca-cok-renkli-179661160.html",
+    "price": 49999.0,
+    "delivery": true,
+    "store_pickup": true
+   }
+  ],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Roborock+Qrevo+C+Pro"
+ },
+ "xiaomi-robot-vacuum-x20-plus": {
+  "id": "xiaomi-robot-vacuum-x20-plus",
+  "name": "Xiaomi Robot Vacuum X20+",
+  "offers": [
+   {
+    "store": "PTT AVM",
+    "seller": "Prime Teknoloji",
+    "kind": "market",
+    "price": 23399.1,
+    "age": "5 saat önce",
+    "title": "Xiaomi Robot Vacuum X20 Plus Çöp İstasyonlu Akıllı Robot Süpürge Satıcı: Prime Teknoloji"
+   },
+   {
+    "store": "Hepsiburada",
+    "seller": "Plus Market",
+    "kind": "market",
+    "price": 25109.1,
+    "age": "8 dk önce",
+    "title": "Xiaomi Robot Vacuum X20 Plus Akıllı Robot Süpürge ve Mop - 6.000 Pa, Otomatik Mop Yıkama & Kurutma, Toz Boşaltma İstasyo"
+   },
+   {
+    "store": "Hepsiburada",
+    "seller": "DUYAR TEKNOLOJİ",
+    "kind": "market",
+    "price": 26009.1,
+    "age": "8 dk önce",
+    "title": "Xiaomi Robot Vacuum X20 Plus Akıllı Robot Süpürge ve Mop - 6.000 Pa, Otomatik Mop Yıkama & Kurutma, Toz Boşaltma İstasyo"
+   },
+   {
+    "store": "n11",
+    "seller": "plus-market",
+    "kind": "market",
+    "price": 27999.0,
+    "age": "2 saat önce",
+    "title": "Xiaomi Robot Vacuum X20 Plus Robot Süpürge (Xiaomi Türkiye Garantili) Satıcı: plus-market"
+   },
+   {
+    "store": "Trendyol",
+    "seller": "E-BAŞARI",
+    "kind": "market",
+    "price": 29500.0,
+    "age": "1 saat önce",
+    "title": "Xiaomi Robot Vacuum X20 Plus Beyaz Satıcı: E-BAŞARI"
+   },
+   {
+    "store": "n11",
+    "seller": "saturnteknolojik",
+    "kind": "retail",
+    "price": 31999.0,
+    "age": "2 saat önce",
+    "title": "Xiaomi Robot Vacuum X20 Plus Robot Süpürge (Xiaomi Türkiye Garantili) Satıcı: saturnteknolojik"
+   },
+   {
+    "store": "Trendyol",
+    "seller": "ÜÇBOYUT",
+    "kind": "market",
+    "price": 33263.01,
+    "age": "1 saat önce",
+    "title": "Xiaomi 7.000 Pa Emiş Gücü Otomatik Paspas Yıkama Halı Tanıma Akıllı Robot Süpürge Satıcı: ÜÇBOYUT"
+   },
+   {
+    "store": "Idefix",
+    "seller": "E-BAŞARI",
+    "kind": "market",
+    "price": 41000.0,
+    "age": "9 dk önce",
+    "title": "Xiaomi Robot Vacuum X20 Plus Çöp İstasyonlu Akıllı Robot Süpürge Satıcı: E-BAŞARI"
+   },
+   {
+    "store": "PTT AVM",
+    "seller": "Bizegel",
+    "kind": "market",
+    "price": 49490.1,
+    "age": "5 saat önce",
+    "title": "Xiaomi Istasyonlu -Kendini Temizleyen 6000Pa Sesli Kontrol Robot Vacuum X20 Plus-Hepsi Bir Arada Akıllı Temizlik Robotu "
+   }
+  ],
+  "amz": [
+   {
+    "title": "Xiaomi Robot Vacuum X20 Plus Çöp İstasyonlu Akıllı Robot Süpürge",
+    "url": "https://www.amazon.com.tr/dp/B0CTCXKL52",
+    "price": null,
+    "buyable": false,
+    "unavailable": false,
+    "lowstock": null,
+    "rating": null,
+    "count": 0,
+    "delivery": null
+   }
+  ],
+  "tek": [
+   {
+    "title": "Xiaomi Robot Vacuum X20 Plus Akıllı Robot Süpürge Beyaz",
+    "price": 29999.0,
+    "url": "https://www.teknosa.com/xiaomi-robot-vacuum-x20-plus-akilli-robot-supurge-beyaz-p-787126293",
+    "buyable": true
+   }
+  ],
+  "hb": {
+   "url": "https://www.hepsiburada.com/xiaomi-robot-vacuum-x20-plus-akilli-robot-supurge-ve-mop-6-000-pa-otomatik-mop-yikama-kurutma-toz-bosaltma-istasyonlu-app-kontrollu-beyaz-pm-HBC00006DA6SB",
+   "seller": "Plus Market",
+   "official": false,
+   "price": 25109.1,
+   "buyable": true,
+   "tr_warranty": false,
+   "importer": false,
+   "others": [
+    {
+     "seller": "DUYAR TEKNOLOJİ",
+     "score": "10,0",
+     "auth": true,
+     "price": 28899.0
+    },
+    {
+     "seller": "E-BAŞARI",
+     "score": "9,7",
+     "auth": true,
+     "price": 29500.0
+    }
+   ],
+   "rating": 4.6,
+   "count": 1734,
+   "stars": [
+    1394,
+    175,
+    43,
+    16,
+    106
+   ],
+   "reviews": [
+    {
+     "date": "23 Haziran 2024",
+     "text": "-Ürün süpürme ve silme konusunda çok başarılı bir ürün. -Haritalaması hızlı ortalama 7-10 dakikada tamamlıyor. - Mob kurulama işlemi uzun sürse de sessiz bir şekilde çalışıyor. sesi hiç bir şekilde duyulmuyor. - Türkçe dil desteği var - Tek şuana kadar gördüğüm problem ürün içerisinde halı tanıma özelliği olmasına rağmen haritalama esnasında halı tanıma yapmıyor. Tüm haritalama bittikten sonra halıyı uygulama üzerinden tek seferlik bir elimizle sınırlandırarak belirtiyoruz. Sınır köşeleri az fazla gösterilme durumunda halının kenarlarına da paspas değiyor. Cihazda ki tek problem otomatik halı tanımama. - Tasarım olarak çok şık ve sade bir model. - Çarpma olayı yok denecek kadar çok ufak tema",
+     "seller": "Hepsiburada",
+     "up": 362,
+     "down": 31
+    },
+    {
+     "date": "19 Aralık 2024",
+     "text": "Arkadaşlar herkese merhabalar. Biraz uzun olabilir ama araştırıp alırken bende böyle bir yorum aradım. Yaklaşık 1 hafta 10 gün araştırıp öyle aldım ve 25 gündür de kullanıyorum. Kullanıp eksisiyle artısıyla yazmak istedim. Resimlere bakarsanız zaten az çok fikir sahibi olursunuz örneğin 19 mt alanı 27 dk da temizledi 4 adet temizlik modu ve 4 seviye çekiş gücü var 160 metrekare evim olmasına rağmen 2-2.5 saatte temizliyor. Artı yönleri 1. Mopları dönerli olması ve çıkarılıp takılabilmesi 2. Mopları Kendi temizleyip kendi kurutması 3. İstasyonunun olması kesinlikle çok büyük kolaylık sağlıyor çöpü her temizlikten sonra çekiyor ve 25 gündür hala dolmadı su haznesi var 4 lt temiz su t lt kirli ",
+     "seller": "Hepsiburada",
+     "up": 178,
+     "down": 9
+    },
+    {
+     "date": "14 Aralık 2024",
+     "text": "Ürün iki gün önce elime ulaştı çok araştırdım gem buradan hem başka yerlerden kullanıcıların yorumlarını inceledim memnun kalanları görünce bir hevesle aldım ama beklentimi karşılamadı diyebilirim.Bugün oturma odasını süpürme ve mop standart kodda deneyip çalıştırdım 45 dk da temizlemiş peki sonuç nasıl fotoğrafta görüldüğü üzere halının tüylerini toplatıp geri atıyor defalarca salonu dolaştı ama tüyleri bu şekilde bıraktı.Üstelik oturma odam kirli değildi zaten alma amacım günlük temizlik için halım çok tüy bıraktığından ve tozlanmalar için her defasında koca elektrikli süpürgeyi çalıştırmamak adına almıştım .Ayrıca turbo modda çalıştırmamama rağmen çok da sesi rahatsız ediyor yorumlardaki ",
+     "seller": "Hepsiburada",
+     "up": 58,
+     "down": 11
+    },
+    {
+     "date": "03 Ağustos 2024",
+     "text": "3 gün içerisinde satın aldıktan sonra hemen geldi. Kargo sağlam ve sıkıntısız geldi. Basitçe üzerindeki talimatlara göre kurulumu gerçekleştirdik. Süpürge ses olarak İngilizce ancak mobil uygulaması Türkçe. Deneme maksatlı sadece oturma odasını hemen haritalandırdık. 2 dk bile sürmedi. Ardından mobil uygulama üzerinden sadece süpürme işlemini başlattık. 4 adet güç modu mevcut. Halı üzerinden rahatça süpürme işlemini gerçekleştirdi. Herhangi bir takılma durumu olmadı. Sensörleri gayet iyi çalışıyor. Koltuk ve masa ayaklarını rahatça çarpmadan hemen tanıyarak kenarlarını süpürüyor. Tanımadığı köşe veya eşya yok. Süpürme işlemi bittikten sonra kendi ünitesine geçiyor ve hızlı şekilde boşaltım y",
+     "seller": "Hepsiburada",
+     "up": 37,
+     "down": 3
+    },
+    {
+     "date": "10 Mart 2025",
+     "text": "Gayet guzel şuanlık hiçbir sorun yok X markaların giremediği yatak altına girdi çok şükür sırf Oyüzden bir sürü robot süpürge değiştim denemediğim kalmadı",
+     "seller": "Hepsiburada",
+     "up": 12,
+     "down": 1
+    },
+    {
+     "date": "24 Ağustos 2025",
+     "text": "Alırken baya araştırdım ama yinede kafamda soru işaretleri vardı benim gibi arkadaşlar için yorumlamak istiyorum evim 200m2 haritalandırma uzun sürmedi fakat ilk süpürme çoookk uzun sürdü çünkü haritanın sınırlarını belirlemek için bütün evin kenarlarını gezdi ve tekrar bütün evi süpürdü toplamda 3 tur attı ve şarjı ancak bitti kurulumuda çok basitti 4 ayrı süpürme seviyesi var seçilebiliyor her süpürmeden sonra tozu otomatik boşaltıyor bunuda ayarlayabiliyorsunuz en çok merak ettiğim silme kısmıydı 5,8 ve 10m2 seçebekleri var seçtiğiniz m2 ye göre dönüp pedleri yıkıyor işine kaldığı yerden devam ediyor bunu yaparken paspsları kaldırıyor silmesi gereken yerde indirip işini bitirince tekrar k",
+     "seller": "ZELA",
+     "up": 3,
+     "down": 2
+    },
+    {
+     "date": "04 Aralık 2024",
+     "text": "Ürünü ilk gün güzel bir şekilde süpürdü 2 gün actigimda turbo gücü açmama rağmen böyle toz birikintileri bırakıyor memnun değilim o kadar merakla aldım ama böyle olması beni gerçekten hayal kırikligina uğrattı silme modu ise leke tam olarak çıkarmıyor iade işlemi başlayacağım",
+     "seller": "Hepsiburada",
+     "up": 15,
+     "down": 19
+    },
+    {
+     "date": "24 Ekim 2024",
+     "text": "Mobil uygulama kullanımı çok pratik; haritalamayı sorunsuz yapıyor. Komutlara tam anlamıyla uyuyor. Her anlamda çok memnun kaldım.",
+     "seller": "Hepsiburada",
+     "up": 8,
+     "down": 5
+    },
+    {
+     "date": "13 Mayıs 2025",
+     "text": "Ürün gayet güzel ve kaliteli Uygulama kurulumuda basit birşekilde yapılıyor Süpürme performansını çok beğendim Tereddüt etmeden alınabilir ihtiyacı olanların isteklerini en iyi şekilde karşılayacağını düşünüyorum",
+     "seller": "Hepsiburada",
+     "up": 2,
+     "down": 0
+    },
+    {
+     "date": "10 Ocak 2025",
+     "text": "Yaklaşık bir aydır kullanıyorum. Çok büyük bir kolaylık. Zamanlı temizlik özelliği ile her sabah kahvaltı sonrası mutfağı süpürüp paspas işlemini yapıyor akşam üzeri de belirlediğim saatlerde kullandığımız odaları temizliyor.",
+     "seller": "Hepsiburada",
+     "up": 3,
+     "down": 1
+    }
+   ]
+  },
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Xiaomi+Robot+Vacuum+X20%2B"
+ },
+ "xiaomi-s40": {
+  "id": "xiaomi-s40",
+  "name": "Xiaomi S40 (OV81)",
+  "offers": [
+   {
+    "store": "?",
+    "seller": "TecTex",
+    "kind": "market",
+    "price": 11565.0,
+    "age": null,
+    "title": "Xiaomi Vacuum S40 Akıllı Robot Süpürge Satıcı: TecTex 11.565,00 TL Ücretsiz Kargo 1156500"
+   },
+   {
+    "store": "?",
+    "seller": "KOYCEBİNE",
+    "kind": "market",
+    "price": 12815.04,
+    "age": null,
+    "title": "5 saat önce 1 11565.00 Xiaomi Robot Vacuum S40 Robot Süpürge White Satıcı: KOYCEBİNE 12.815,04 TL Ücretsiz Kargo 1281504"
+   },
+   {
+    "store": "?",
+    "seller": "gurler-ticaret",
+    "kind": "market",
+    "price": 12998.0,
+    "age": null,
+    "title": "9 dk önce 2 12815.04 Xiaomi Robot Vacuum S40 Robot Süpürge Satıcı: gurler-ticaret 12.998,00 TL Ücretsiz Kargo 1299800"
+   },
+   {
+    "store": "?",
+    "seller": "HKTeknoloji",
+    "kind": "market",
+    "price": 12999.0,
+    "age": null,
+    "title": "saat önce 3 12998.00 Xiaomi Robot Vacuum S40 Robot Süpürge White Satıcı: HKTeknoloji 12.999,00 TL Ücretsiz Kargo 1299900"
+   },
+   {
+    "store": "?",
+    "seller": "MAYISETİCARET",
+    "kind": "market",
+    "price": 13299.0,
+    "age": null,
+    "title": "9 dk önce 4 12999.00 Xiaomi Robot Vacuum S40 EU Satıcı: MAYISETİCARET 13.299,00 TL Ücretsiz Kargo 1329900"
+   },
+   {
+    "store": "?",
+    "seller": "Koycebine",
+    "kind": "market",
+    "price": 13629.06,
+    "age": null,
+    "title": "ı Robot Süpürge + Paspas -10000 Pa Emiş Gücü (Xiaomi TR Garantili) Satıcı: Koycebine 13.629,06 TL Ücretsiz Kargo 1362906"
+   },
+   {
+    "store": "?",
+    "seller": "SATÜRN",
+    "kind": "retail",
+    "price": 13731.0,
+    "age": null,
+    "title": "ıllı Robot Süpürge + Paspas -10000 Pa Emiş Gücü (Xiaomi TR Garantili) Satıcı: SATÜRN 13.731,00 TL Ücretsiz Kargo 1373100"
+   },
+   {
+    "store": "?",
+    "seller": "TECHPOİNT TEKNOLOJİ",
+    "kind": "market",
+    "price": 14099.06,
+    "age": null,
+    "title": "pürge + Paspas -10000 Pa Emiş Gücü (Xiaomi TR Garantili) Satıcı: TECHPOİNT TEKNOLOJİ 14.099,06 TL Ücretsiz Kargo 1409906"
+   },
+   {
+    "store": "?",
+    "seller": "Koycebine",
+    "kind": "market",
+    "price": 14399.1,
+    "age": null,
+    "title": "ı Robot Süpürge + Paspas -10000 Pa Emiş Gücü (Xiaomi Tr Garantili) Satıcı: Koycebine 14.399,10 TL Ücretsiz Kargo 1439910"
+   },
+   {
+    "store": "?",
+    "seller": "Mobilsepet",
+    "kind": "market",
+    "price": 14599.0,
+    "age": null,
+    "title": "cü ile Beyaz Akıllı Robot Süpürge Etkili Temizlik İçin Satıcı: Mobilsepet | 14 yorum 14.599,00 TL Ücretsiz Kargo 1459900"
+   },
+   {
+    "store": "?",
+    "seller": "FATİH GRUP",
+    "kind": "market",
+    "price": 14650.0,
+    "age": null,
+    "title": "cü ile Beyaz Akıllı Robot Süpürge Etkili Temizlik İçin Satıcı: FATİH GRUP | 14 yorum 14.650,00 TL Ücretsiz Kargo 1465000"
+   },
+   {
+    "store": "?",
+    "seller": "tecnobank",
+    "kind": "market",
+    "price": 14999.0,
+    "age": null,
+    "title": "8 dk önce 11 14650.00 Xiaomi Robot Vacuum S40 Robot Süpürge Satıcı: tecnobank 14.999,00 TL Ücretsiz Kargo 1499900"
+   },
+   {
+    "store": "?",
+    "seller": "Mağaza (doğrudan)",
+    "kind": "retail",
+    "price": 17999.0,
+    "age": null,
+    "title": "2 saat önce 12 14999.00 Vacuum S40 Akıllı Robot Süpürge 17.999,00 TL Ücretsiz Kargo 1799900"
+   }
+  ],
+  "tek": [],
+  "hb": {
+   "url": "https://www.hepsiburada.com/xiaomi-s40-robot-supurge-10000pa-pm-HBC0000A3Y02K",
+   "seller": "MRl",
+   "official": false,
+   "price": null,
+   "buyable": true,
+   "tr_warranty": false,
+   "importer": false,
+   "others": [
+    {
+     "seller": "FATİH GRUP",
+     "score": "9,4",
+     "auth": true,
+     "price": 17369.1
+    },
+    {
+     "seller": "Clm Group Bilişim",
+     "score": "9,5",
+     "auth": true,
+     "price": 26999.1
+    }
+   ],
+   "rating": 5.0,
+   "count": 2,
+   "stars": [
+    2,
+    0,
+    0,
+    0,
+    0
+   ],
+   "reviews": [
+    {
+     "date": "05 Şubat",
+     "text": "Ürün daha dün gelıme gectı bugün çalıştırdım daha ılk gün umarım sorun yaşamam ancak paketleme süper kargo hızlı teşekkür ederim",
+     "seller": "ADA TİCARET2",
+     "up": 0,
+     "down": 0
+    }
+   ]
+  },
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Xiaomi+S40"
+ }
+}

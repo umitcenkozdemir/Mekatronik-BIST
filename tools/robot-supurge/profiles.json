@@ -1,216 +1,1202 @@
 {
- "_meta": {"category": "robot-supurge", "format": 1, "note": "Elle yazılan model profilleri. Mağaza/stok/puan verisi research.json'dan otomatik eklenir."},
+ "_meta": {
+  "category": "robot-supurge",
+  "format": 1,
+  "note": "Elle yazılan model profilleri. Mağaza/stok/puan verisi research.json'dan otomatik eklenir."
+ },
  "roborock-qrevo-l-pro": {
   "date": "31 Ekim 2026",
   "verdict": "Tam istasyonlu bir Roborock için en makul giriş noktalarından biri. Süpürme ve döner moplu silme güçlü; istasyon paspası sıcak suyla yıkayıp sıcak havayla kurutuyor, su haznesini de dolduruyor. Kamerası yok ve mopu sadece 10 mm kaldırıyor; kalın halılı veya yerde eşyası çok olan evlerde üst modellere bakın.",
-  "forWho": ["Ağırlıklı parke ve seramik, ince halılı evler", "Tam istasyonu 40 bin TL altında isteyenler", "İlk robot süpürgesini alacaklar"],
-  "notFor": ["Kalın tüylü halısı olanlar (mop 10 mm kalkıyor, istasyonda bırakılamıyor)", "Yerde kablo, çorap, oyuncak çok olan evler (kamerasız)"],
-  "pros": ["18.500 Pa emiş, hızlı ve kararlı LiDAR haritalama", "İstasyon: toz boşaltma, sıcak suyla mop yıkama, sıcak hava kurutma, otomatik su dolumu", "96,5 mm gövde çoğu koltuk altına giriyor", "Hepsiburada, MediaMarkt ve Amazon'da büyük satıcıdan, Roborock Türkiye garantili"],
-  "cons": ["Mop yalnızca 10 mm kalkıyor; mopu çıkarıp bırakamıyor", "Kamera yok; 3D ışıklı engel algılama küçük nesnelerde sınırlı", "Uzayan mop ve yan fırça yok; köşelerde Edge serisi daha iyi"],
-  "liked": ["Döner moplarla silme kalitesi", "Kurulumun ve ilk haritalamanın hızlı olması", "Uygulamadan emiş ve su ayarlarının ayrıntılı yapılabilmesi"],
-  "disliked": ["Halı kenarında dönerken paspasın halıya sürtüp iz bırakması", "Uygulamanın ilk kullanımda karmaşık gelmesi", "Az sayıda kullanıcıda ilk haftalarda oda sırası ve yazılım hataları"],
-  "issues": ["Şikâyetvar'da tekerlek hatası (kod 108) ve orijinal toz torbası bulunamaması başlıkları var"]
+  "forWho": [
+   "Ağırlıklı parke ve seramik, ince halılı evler",
+   "Tam istasyonu 40 bin TL altında isteyenler",
+   "İlk robot süpürgesini alacaklar"
+  ],
+  "notFor": [
+   "Kalın tüylü halısı olanlar (mop 10 mm kalkıyor, istasyonda bırakılamıyor)",
+   "Yerde kablo, çorap, oyuncak çok olan evler (kamerasız)"
+  ],
+  "pros": [
+   "18.500 Pa emiş, hızlı ve kararlı LiDAR haritalama",
+   "İstasyon: toz boşaltma, sıcak suyla mop yıkama, sıcak hava kurutma, otomatik su dolumu",
+   "96,5 mm gövde çoğu koltuk altına giriyor",
+   "Hepsiburada, MediaMarkt ve Amazon'da büyük satıcıdan, Roborock Türkiye garantili"
+  ],
+  "cons": [
+   "Mop yalnızca 10 mm kalkıyor; mopu çıkarıp bırakamıyor",
+   "Kamera yok; 3D ışıklı engel algılama küçük nesnelerde sınırlı",
+   "Uzayan mop ve yan fırça yok; köşelerde Edge serisi daha iyi"
+  ],
+  "liked": [
+   "Döner moplarla silme kalitesi",
+   "Kurulumun ve ilk haritalamanın hızlı olması",
+   "Uygulamadan emiş ve su ayarlarının ayrıntılı yapılabilmesi"
+  ],
+  "disliked": [
+   "Halı kenarında dönerken paspasın halıya sürtüp iz bırakması",
+   "Uygulamanın ilk kullanımda karmaşık gelmesi",
+   "Az sayıda kullanıcıda ilk haftalarda oda sırası ve yazılım hataları"
+  ],
+  "issues": [
+   "Şikâyetvar'da tekerlek hatası (kod 108) ve orijinal toz torbası bulunamaması başlıkları var"
+  ]
  },
  "roborock-qrevo-curv-2-pro": {
   "date": "31 Ekim 2026",
   "verdict": "Roborock'un neredeyse her şey dahil sınıfı: kameralı yapay zekâ engel algılama, mopu çıkarıp istasyonda bırakma, uzayan mop ve yan fırça, 40 mm eşik aşan yükselen şasi ve 79,8 mm'lik alçak gövde. Hepsiburada'da satışı bulunamadı; MediaMarkt ve Amazon'dan alınabiliyor.",
-  "forWho": ["Halı ve parkenin karışık olduğu, eşikli evler", "Evcil hayvanlı ve yerde eşya olan evler", "Alçak mobilyası olanlar"],
-  "notFor": ["Sadece süpürme isteyenler veya 45 bin TL altı bütçeler"],
-  "pros": ["25.000 Pa emiş ve dolaşmayan DuoDivide fırça", "Kamera ve yapay zekâ ile nesne ve evcil hayvan tanıma", "Mopu halıda tamamen bırakabiliyor; mop ve yan fırça uzuyor", "AdaptiLift şasi ile 40 mm eşik, geri çekilebilir lazerle 79,8 mm yükseklik", "290 dk çalışma (6.400 mAh)"],
-  "cons": ["Otomatik deterjan dozajı yok", "Amazon puanı 4,0 (361 değerlendirme); bu sınıf için ortalama", "Hepsiburada'da resmi satış bulunamadı"],
-  "liked": [], "disliked": [],
+  "forWho": [
+   "Halı ve parkenin karışık olduğu, eşikli evler",
+   "Evcil hayvanlı ve yerde eşya olan evler",
+   "Alçak mobilyası olanlar"
+  ],
+  "notFor": [
+   "Sadece süpürme isteyenler veya 45 bin TL altı bütçeler"
+  ],
+  "pros": [
+   "25.000 Pa emiş ve dolaşmayan DuoDivide fırça",
+   "Kamera ve yapay zekâ ile nesne ve evcil hayvan tanıma",
+   "Mopu halıda tamamen bırakabiliyor; mop ve yan fırça uzuyor",
+   "AdaptiLift şasi ile 40 mm eşik, geri çekilebilir lazerle 79,8 mm yükseklik",
+   "290 dk çalışma (6.400 mAh)"
+  ],
+  "cons": [
+   "Otomatik deterjan dozajı yok",
+   "Amazon puanı 4,0 (361 değerlendirme); bu sınıf için ortalama",
+   "Hepsiburada'da resmi satış bulunamadı"
+  ],
+  "liked": [],
+  "disliked": [],
   "issues": []
  },
  "roborock-saros-20": {
   "date": "31 Ekim 2026",
   "verdict": "Lazer kulesi yerine kamera ve ToF sensörleriyle haritalayan, Roborock'un en 'görsel' modeli. 36.000 Pa ve 8,5 cm'ye kadar eşik aşan şasiyle temizliği çok güçlü; ama yorumlar ikiye bölünüyor: Hepsiburada'daki 62 değerlendirmenin dörtte biri 1 yıldız.",
-  "forWho": ["Yüksek eşikli, çok halılı evler", "İyi aydınlatılmış, en yeni teknolojiyi isteyen evler"],
-  "notFor": ["Karanlıkta çalıştırmayı düşünenler (görüntüyle gezdiği için ışığa bağımlı)", "Sorunsuzluğu öne koyanlar; aynı fiyata lazerli Saros 20 Sonic veya Qrevo Edge 3 Pro var"],
-  "pros": ["36.000 Pa emiş", "8,5 cm'ye kadar kademeli eşik aşma (AdaptiLift 3.0)", "Otomatik deterjan, sıcak suyla yıkama ve kurutma", "79,8 mm gövde, mopu bırakma ve uzayan kollar"],
-  "cons": ["Lazer yok; kullanıcıya göre karanlık veya güneş vuran odalarda yanılıyor (güneşli halıyı parke sanmak gibi)", "Bir kullanıcıya göre lazerli eski Roborock'lardan daha yavaş temizliyor", "Hepsiburada'da 1 yıldız oranı yüksek"],
-  "liked": ["Mobilyaları ve evcil hayvan yatağını tanıyıp haritaya işlemesi", "Çekim gücü", "Hızlı ve doğru ilk haritalama"],
-  "disliked": ["Işık koşullarına duyarlı gezinme", "Temizlik süresinin uzaması"],
+  "forWho": [
+   "Yüksek eşikli, çok halılı evler",
+   "İyi aydınlatılmış, en yeni teknolojiyi isteyen evler"
+  ],
+  "notFor": [
+   "Karanlıkta çalıştırmayı düşünenler (görüntüyle gezdiği için ışığa bağımlı)",
+   "Sorunsuzluğu öne koyanlar; aynı fiyata lazerli Saros 20 Sonic veya Qrevo Edge 3 Pro var"
+  ],
+  "pros": [
+   "36.000 Pa emiş",
+   "8,5 cm'ye kadar kademeli eşik aşma (AdaptiLift 3.0)",
+   "Otomatik deterjan, sıcak suyla yıkama ve kurutma",
+   "79,8 mm gövde, mopu bırakma ve uzayan kollar"
+  ],
+  "cons": [
+   "Lazer yok; kullanıcıya göre karanlık veya güneş vuran odalarda yanılıyor (güneşli halıyı parke sanmak gibi)",
+   "Bir kullanıcıya göre lazerli eski Roborock'lardan daha yavaş temizliyor",
+   "Hepsiburada'da 1 yıldız oranı yüksek"
+  ],
+  "liked": [
+   "Mobilyaları ve evcil hayvan yatağını tanıyıp haritaya işlemesi",
+   "Çekim gücü",
+   "Hızlı ve doğru ilk haritalama"
+  ],
+  "disliked": [
+   "Işık koşullarına duyarlı gezinme",
+   "Temizlik süresinin uzaması"
+  ],
   "issues": []
  },
  "roborock-qrevo-edge-2": {
   "date": "31 Ekim 2026",
   "verdict": "Kameralı engel algılamayı, mopu çıkarıp bırakmayı ve uzayan mop ile yan fırçayı 47 bin TL civarına indiren model. İlk kullanıcılar çok memnun (31 değerlendirmede ortalama 4,4). Otomatik deterjan ve otomatik su dolumu yok.",
-  "forWho": ["Kameralı model isteyip 60 bin TL vermek istemeyenler", "Karışık zeminli evler"],
-  "notFor": ["Deterjanı da otomatik isteyenler (Edge 2 Pro)"],
-  "pros": ["25.000 Pa, kamera ve yapay zekâ ile engel algılama", "Mopu halıda istasyonda bırakıyor, halıyı ıslatmıyor", "Uzayan mop ve yan fırçayla kenar temizliği", "79,8 mm gövde (geri çekilebilir lazer)"],
-  "cons": ["Otomatik deterjan dozajı yok", "Bir kullanıcıya göre iki parçalı fırça saçları topak halinde halıda bırakabiliyor", "Otomatik su dolumu yok"],
-  "liked": ["Halı süpürme performansı", "Paspası halıda kaldırması ve bırakması", "Fiyatına göre donanım"],
-  "disliked": ["Yüksek emiş değerine rağmen süpürmede beklenen farkı görmeyenler", "Toplanan saçların bazen halıda kalması"],
+  "forWho": [
+   "Kameralı model isteyip 60 bin TL vermek istemeyenler",
+   "Karışık zeminli evler"
+  ],
+  "notFor": [
+   "Deterjanı da otomatik isteyenler (Edge 2 Pro)"
+  ],
+  "pros": [
+   "25.000 Pa, kamera ve yapay zekâ ile engel algılama",
+   "Mopu halıda istasyonda bırakıyor, halıyı ıslatmıyor",
+   "Uzayan mop ve yan fırçayla kenar temizliği",
+   "79,8 mm gövde (geri çekilebilir lazer)"
+  ],
+  "cons": [
+   "Otomatik deterjan dozajı yok",
+   "Bir kullanıcıya göre iki parçalı fırça saçları topak halinde halıda bırakabiliyor",
+   "Otomatik su dolumu yok"
+  ],
+  "liked": [
+   "Halı süpürme performansı",
+   "Paspası halıda kaldırması ve bırakması",
+   "Fiyatına göre donanım"
+  ],
+  "disliked": [
+   "Yüksek emiş değerine rağmen süpürmede beklenen farkı görmeyenler",
+   "Toplanan saçların bazen halıda kalması"
+  ],
   "issues": []
  },
  "roborock-qrevo-2-pro": {
   "date": "31 Ekim 2026",
   "verdict": "Kameraya ihtiyaç duymayan evler için Roborock'un en dengeli tam istasyonlularından: 25.000 Pa, mopu 15 mm kaldırma ve istasyonda bırakma, sıcak suyla yıkama ve otomatik su dolumu. Hepsiburada'da 33 değerlendirmede ortalama 4,2; kedi tüyünün fırçaya dolanmadığı yazılıyor.",
-  "forWho": ["Evcil hayvanlı ama derli toplu evler", "Edge 2 ile kararsız kalıp kamerayı gerekli görmeyenler"],
-  "notFor": ["Yerde kablo ve oyuncak çok olan evler"],
-  "pros": ["25.000 Pa ve dolaşmayan DuoDivide fırça", "Mop 15 mm kalkıyor ve istasyonda bırakılabiliyor", "Uzayan mop, sıcak suyla yıkama, sıcak hava kurutma, otomatik su dolumu", "253 dk çalışma"],
-  "cons": ["Kamera yok; bir kullanıcıda yatak altındaki kablo mopa dolandı", "96,6 mm gövde, alçak mobilyalara girmeyebilir", "Yan fırça uzamıyor"],
-  "liked": ["Kedi tüylerini fırçaya dolamadan toplaması", "Paspaslama", "Kolay kurulum, Türkçe kurulum posteri"],
-  "disliked": ["Kabloların mopa dolanması"],
+  "forWho": [
+   "Evcil hayvanlı ama derli toplu evler",
+   "Edge 2 ile kararsız kalıp kamerayı gerekli görmeyenler"
+  ],
+  "notFor": [
+   "Yerde kablo ve oyuncak çok olan evler"
+  ],
+  "pros": [
+   "25.000 Pa ve dolaşmayan DuoDivide fırça",
+   "Mop 15 mm kalkıyor ve istasyonda bırakılabiliyor",
+   "Uzayan mop, sıcak suyla yıkama, sıcak hava kurutma, otomatik su dolumu",
+   "253 dk çalışma"
+  ],
+  "cons": [
+   "Kamera yok; bir kullanıcıda yatak altındaki kablo mopa dolandı",
+   "96,6 mm gövde, alçak mobilyalara girmeyebilir",
+   "Yan fırça uzamıyor"
+  ],
+  "liked": [
+   "Kedi tüylerini fırçaya dolamadan toplaması",
+   "Paspaslama",
+   "Kolay kurulum, Türkçe kurulum posteri"
+  ],
+  "disliked": [
+   "Kabloların mopa dolanması"
+  ],
   "issues": []
  },
  "roborock-s9": {
   "date": "31 Ekim 2026",
   "verdict": "İstasyonsuz ama sağlam bir LiDAR'lı süpürücü: 13.000 Pa, 250 dk pil ve titreşimli VibraRise mop. Haznesini boşaltmayı ve paspası yıkamayı dert etmeyenler için güçlü bir fiyat/performans seçeneği. Toz boşaltmalı hali S9+.",
-  "forWho": ["20 bin TL altı bütçe, ağırlıklı süpürme", "Büyük veya çok katlı ev (uzun pil)"],
-  "notFor": ["Haftalık bakımla uğraşmak istemeyenler"],
-  "pros": ["13.000 Pa, LiDAR ve 3D engel algılama", "250 dk çalışma", "Titreşimli mop, halıda 8 mm kaldırma", "500 ml büyük toz haznesi"],
-  "cons": ["İstasyon yok: hazne ve paspas elle temizlenir", "Saçaklı halı ve kilimlerde fırçaya dolanma (kullanıcı yorumu)", "Dolaşmayan fırça yok"],
-  "liked": ["Zahmetsiz ve isabetli haritalama", "Süpürme gücü", "Fiyat/performans"],
-  "disliked": ["Saçaklı halılara takılma", "Az sayıda kullanıcıda ilk günlerde 'robot hatası' ve servis süreci"],
+  "forWho": [
+   "20 bin TL altı bütçe, ağırlıklı süpürme",
+   "Büyük veya çok katlı ev (uzun pil)"
+  ],
+  "notFor": [
+   "Haftalık bakımla uğraşmak istemeyenler"
+  ],
+  "pros": [
+   "13.000 Pa, LiDAR ve 3D engel algılama",
+   "250 dk çalışma",
+   "Titreşimli mop, halıda 8 mm kaldırma",
+   "500 ml büyük toz haznesi"
+  ],
+  "cons": [
+   "İstasyon yok: hazne ve paspas elle temizlenir",
+   "Saçaklı halı ve kilimlerde fırçaya dolanma (kullanıcı yorumu)",
+   "Dolaşmayan fırça yok"
+  ],
+  "liked": [
+   "Zahmetsiz ve isabetli haritalama",
+   "Süpürme gücü",
+   "Fiyat/performans"
+  ],
+  "disliked": [
+   "Saçaklı halılara takılma",
+   "Az sayıda kullanıcıda ilk günlerde 'robot hatası' ve servis süreci"
+  ],
   "issues": []
  },
  "roborock-s8-pro": {
   "date": "31 Ekim 2026",
   "verdict": "Türkiye'de en çok değerlendirilen Roborock'lardan (Hepsiburada'da 1.500'ü aşkın değerlendirme, ortalama 4,1). İstasyonsuz, titreşimli moplu ve LiDAR'lı; 15 bin TL civarında güvenilir bir başlangıç. Satıcıya dikkat: bazı pazar yeri ilanları iki katı fiyata, Amazon'daki ana ilanda ise şu an satın alma kutusu yok.",
-  "forWho": ["15 bin TL bütçeyle LiDAR'lı, markalı model isteyenler"],
-  "notFor": ["İstasyon isteyenler (S8 Pro+ toz boşaltmalı)"],
-  "pros": ["LiDAR ve 3D engel algılama", "Titreşimli mop, halıda 8 mm kaldırma", "250 dk pil, 500 ml hazne", "Çok yaygın olduğu için sarf malzemesi kolay bulunur"],
-  "cons": ["İstasyon yok", "Ana fırça kapağı kırılması Şikâyetvar'da tekrar eden bir konu", "Fiyat ilandan ilana çok değişiyor; büyük mağazadan almak daha güvenli"],
-  "liked": [], "disliked": [],
-  "issues": ["Şikâyetvar: ana fırça kapağının kendiliğinden kırılması ve garanti dışı sayılması", "Şarj sorunu ve tekrarlayan arıza başlıkları"]
+  "forWho": [
+   "15 bin TL bütçeyle LiDAR'lı, markalı model isteyenler"
+  ],
+  "notFor": [
+   "İstasyon isteyenler (S8 Pro+ toz boşaltmalı)"
+  ],
+  "pros": [
+   "LiDAR ve 3D engel algılama",
+   "Titreşimli mop, halıda 8 mm kaldırma",
+   "250 dk pil, 500 ml hazne",
+   "Çok yaygın olduğu için sarf malzemesi kolay bulunur"
+  ],
+  "cons": [
+   "İstasyon yok",
+   "Ana fırça kapağı kırılması Şikâyetvar'da tekrar eden bir konu",
+   "Fiyat ilandan ilana çok değişiyor; büyük mağazadan almak daha güvenli"
+  ],
+  "liked": [],
+  "disliked": [],
+  "issues": [
+   "Şikâyetvar: ana fırça kapağının kendiliğinden kırılması ve garanti dışı sayılması",
+   "Şarj sorunu ve tekrarlayan arıza başlıkları"
+  ]
  },
  "dreame-x50-ultra-complete": {
   "date": "31 Ekim 2026",
   "verdict": "Fiyat/performans endeksinin zirvesindeki modellerden: kameralı yapay zekâ, katlanır bacaklarla 6 cm eşik aşma, otomatik deterjan ve tam istasyon 46–47 bin TL'ye. Hepsiburada'da 272 değerlendirme, ortalama 4,1. Bir kısmı ilk haftalarda arıza bildiriyor ama Dreame Türkiye'nin iadeyi sorunsuz yaptığı yazılıyor.",
-  "forWho": ["Yüksek eşikli evler", "Tam donanım isteyip 50 bin TL altında kalmak isteyenler"],
-  "notFor": ["Satış sonrası hızlı yanıtı en öne koyanlar (Dreame'nin şikâyet yanıt oranı düşük)"],
-  "pros": ["20.000 Pa, kamera ve LiDAR ile 3D nesne tanıma", "Robotik bacaklarla 60 mm'ye kadar eşik", "Mop çıkarma, uzayan mop ve yan fırça, otomatik deterjan, sıcak suyla yıkama ve kurutma", "Dreame Türkiye resmi mağazası Hepsiburada'da satıyor"],
-  "cons": ["Hepsiburada'da 1 yıldız oranı yaklaşık %15", "Kalabalık odalarda ve ince kilimlerde bazı yerleri atlayabiliyor (kullanıcı yorumu)", "Dreame'nin Şikâyetvar yanıt oranı %22"],
-  "liked": ["Kiri algılayıp geri dönerek alması", "Tek şarjla tüm evi süpürüp silmesi", "Eşik algılama"],
-  "disliked": ["Erken dönem arızası (kendi etrafında dönme, hızlı şarj bitmesi) yaşayanlar", "Eşyalı odalarda ayrıntı kaybı"],
-  "issues": ["Şikâyetvar: motor yanması, eksik paspas tutucu ve tekrar eden arıza başlıkları"]
+  "forWho": [
+   "Yüksek eşikli evler",
+   "Tam donanım isteyip 50 bin TL altında kalmak isteyenler"
+  ],
+  "notFor": [
+   "Satış sonrası hızlı yanıtı en öne koyanlar (Dreame'nin şikâyet yanıt oranı düşük)"
+  ],
+  "pros": [
+   "20.000 Pa, kamera ve LiDAR ile 3D nesne tanıma",
+   "Robotik bacaklarla 60 mm'ye kadar eşik",
+   "Mop çıkarma, uzayan mop ve yan fırça, otomatik deterjan, sıcak suyla yıkama ve kurutma",
+   "Dreame Türkiye resmi mağazası Hepsiburada'da satıyor"
+  ],
+  "cons": [
+   "Hepsiburada'da 1 yıldız oranı yaklaşık %15",
+   "Kalabalık odalarda ve ince kilimlerde bazı yerleri atlayabiliyor (kullanıcı yorumu)",
+   "Dreame'nin Şikâyetvar yanıt oranı %22"
+  ],
+  "liked": [
+   "Kiri algılayıp geri dönerek alması",
+   "Tek şarjla tüm evi süpürüp silmesi",
+   "Eşik algılama"
+  ],
+  "disliked": [
+   "Erken dönem arızası (kendi etrafında dönme, hızlı şarj bitmesi) yaşayanlar",
+   "Eşyalı odalarda ayrıntı kaybı"
+  ],
+  "issues": [
+   "Şikâyetvar: motor yanması, eksik paspas tutucu ve tekrar eden arıza başlıkları"
+  ]
  },
  "roborock-saros-20-sonic": {
   "date": "31 Ekim 2026",
   "verdict": "Saros 20'nin lazerli ve titreşimli moplu kardeşi: 36.000 Pa, 8,5 cm eşik aşma ve tam donanımlı istasyon. Temizliği çok beğeniliyor ama Hepsiburada'daki 121 değerlendirmenin üçte birinden fazlası 1 yıldız; erken arıza ve servis şikâyetleri dikkat çekiyor.",
-  "forWho": ["Çok yüksek eşikli evler"],
-  "notFor": ["Sorunsuzluk ve servis güvencesini öne koyanlar"],
-  "pros": ["36.000 Pa, LiDAR ve kamera", "Titreşimli (sonic) mop, mopu bırakma, uzayan kollar", "8,5 cm kademeli eşik aşma", "Otomatik deterjan ve otomatik su dolumu"],
-  "cons": ["Yüksek 1 yıldız oranı: erken arıza ve servis şikâyetleri", "Bir kullanıcıda tırmanma kolu hatası (171) üçüncü günde çıktı", "Döner moplu rakiplere göre köşe silmesi daha sınırlı"],
-  "liked": ["Silme ve haritalama kalitesi", "Toz ve kir toplama gücü"],
-  "disliked": ["Erken dönem arızalar", "Garanti ve iade sürecinde muhatap bulamama"],
-  "issues": ["Şikâyetvar: sürekli dönme arızası, dahili hata ve tekerlek problemi başlıkları"]
+  "forWho": [
+   "Çok yüksek eşikli evler"
+  ],
+  "notFor": [
+   "Sorunsuzluk ve servis güvencesini öne koyanlar"
+  ],
+  "pros": [
+   "36.000 Pa, LiDAR ve kamera",
+   "Titreşimli (sonic) mop, mopu bırakma, uzayan kollar",
+   "8,5 cm kademeli eşik aşma",
+   "Otomatik deterjan ve otomatik su dolumu"
+  ],
+  "cons": [
+   "Yüksek 1 yıldız oranı: erken arıza ve servis şikâyetleri",
+   "Bir kullanıcıda tırmanma kolu hatası (171) üçüncü günde çıktı",
+   "Döner moplu rakiplere göre köşe silmesi daha sınırlı"
+  ],
+  "liked": [
+   "Silme ve haritalama kalitesi",
+   "Toz ve kir toplama gücü"
+  ],
+  "disliked": [
+   "Erken dönem arızalar",
+   "Garanti ve iade sürecinde muhatap bulamama"
+  ],
+  "issues": [
+   "Şikâyetvar: sürekli dönme arızası, dahili hata ve tekerlek problemi başlıkları"
+  ]
  },
  "roborock-qrevo-edge-5v1": {
   "date": "31 Ekim 2026",
   "verdict": "Qrevo L Pro'nun kenar temizliği güçlendirilmiş hali: mop ve yan fırça dışa açılarak süpürgelik diplerine ulaşıyor. Hepsiburada'da 115 değerlendirme, ortalama 4,2. Kamerası yok ve mopu çıkaramıyor.",
-  "forWho": ["Kenar ve köşe temizliğine önem veren, 40 bin TL bütçeli evler"],
-  "notFor": ["Kalın halılı evler (mopu bırakabilen Edge 2'ye bakın)"],
-  "pros": ["Uzayan mop ve yan fırça", "18.500 Pa, LiDAR, dolaşmayan DuoDivide fırça", "Sıcak suyla yıkama, sıcak hava kurutma, otomatik su dolumu", "Önünde kamera yok; gizlilik açısından rahat"],
-  "cons": ["Kamera yok; kullanıcıya göre kablolara takılabiliyor", "Mop yalnızca 10 mm kalkıyor, bırakılamıyor", "Şikâyetvar'da istasyona yerleşme ve tekerlek arızası başlıkları"],
-  "liked": ["Kenar ve köşe silme", "Halı süpürme gücü", "Zamanlanmış otomatik temizlik"],
-  "disliked": ["Uygulamanın başta zor gelmesi", "Kablolara takılma"],
-  "issues": ["Şikâyetvar: istasyona tek seferde girememe, ilk gün arıza, sağ tekerlek arızası"]
+  "forWho": [
+   "Kenar ve köşe temizliğine önem veren, 40 bin TL bütçeli evler"
+  ],
+  "notFor": [
+   "Kalın halılı evler (mopu bırakabilen Edge 2'ye bakın)"
+  ],
+  "pros": [
+   "Uzayan mop ve yan fırça",
+   "18.500 Pa, LiDAR, dolaşmayan DuoDivide fırça",
+   "Sıcak suyla yıkama, sıcak hava kurutma, otomatik su dolumu",
+   "Önünde kamera yok; gizlilik açısından rahat"
+  ],
+  "cons": [
+   "Kamera yok; kullanıcıya göre kablolara takılabiliyor",
+   "Mop yalnızca 10 mm kalkıyor, bırakılamıyor",
+   "Şikâyetvar'da istasyona yerleşme ve tekerlek arızası başlıkları"
+  ],
+  "liked": [
+   "Kenar ve köşe silme",
+   "Halı süpürme gücü",
+   "Zamanlanmış otomatik temizlik"
+  ],
+  "disliked": [
+   "Uygulamanın başta zor gelmesi",
+   "Kablolara takılma"
+  ],
+  "issues": [
+   "Şikâyetvar: istasyona tek seferde girememe, ilk gün arıza, sağ tekerlek arızası"
+  ]
  },
  "roborock-qrevo-curv-2-flow": {
   "date": "31 Ekim 2026",
   "verdict": "Roborock'un rulo moplu modeli: paspas silindiri temizlik sırasında sürekli temiz suyla yıkanıyor, kir zemine geri sürülmüyor. Kameralı engel algılama ve 272 dk pil var. Gövde 11,9 cm ile yüksek; alçak mobilya altına girmez.",
-  "forWho": ["Silme kalitesini en öne koyanlar", "Yağlı veya yapışkan mutfak zemini olan evler"],
-  "notFor": ["Mobilya altı boşluğu 12 cm'den az olanlar"],
-  "pros": ["Rulo mop (SpiraFlow): sürekli kendini temizleyen silme", "Kamera ve yapay zekâ ile engel algılama", "Mop 15 mm kalkıyor, mop uzuyor", "272 dk çalışma"],
-  "cons": ["119 mm gövde yüksekliği", "Mopu bırakamıyor", "Hepsiburada'da satışı bulunamadı; Teknosa ve Amazon'da var"],
-  "liked": [], "disliked": [],
+  "forWho": [
+   "Silme kalitesini en öne koyanlar",
+   "Yağlı veya yapışkan mutfak zemini olan evler"
+  ],
+  "notFor": [
+   "Mobilya altı boşluğu 12 cm'den az olanlar"
+  ],
+  "pros": [
+   "Rulo mop (SpiraFlow): sürekli kendini temizleyen silme",
+   "Kamera ve yapay zekâ ile engel algılama",
+   "Mop 15 mm kalkıyor, mop uzuyor",
+   "272 dk çalışma"
+  ],
+  "cons": [
+   "119 mm gövde yüksekliği",
+   "Mopu bırakamıyor",
+   "Hepsiburada'da satışı bulunamadı; Teknosa ve Amazon'da var"
+  ],
+  "liked": [],
+  "disliked": [],
   "issues": []
  },
  "dyson-spot-plusscrub-ai": {
   "date": "31 Ekim 2026",
   "verdict": "Dyson'ın tam istasyonlu robotu: rulo mop ve HD kamerayla kir tanıma. Silme kalitesi övülüyor ama yazılım ve akıllı özelliklerde rakiplerinin gerisinde kaldığı yazılıyor; Amazon'da 216 değerlendirmede 3,4, Hepsiburada'da 1 yıldız oranı yüksek.",
-  "forWho": ["Dyson'ı tercih eden ve silmeyi öne koyanlar"],
-  "notFor": ["Aynı fiyata olgun yazılım isteyenler (Roborock Qrevo L Pro, Dreame X40 Ultra'ya bakın)"],
-  "pros": ["Rulo mop ve sıcak suyla zemin temizliği", "HD kamera ve yapay zekâyla kir ve engel tanıma", "MediaMarkt, Teknosa ve Amazon'da stokta"],
-  "cons": ["Kullanıcılar takılma, durma ve kendi etrafında dönme gibi yazılım sorunları bildiriyor", "Halıyı haritada bilip atlamıyor; halıya çıkıp şarj harcıyor", "Çalışma süresi kısa (140 dk), istasyon gürültülü", "Hepsiburada'daki Dyson Türkiye ilanı şu an satın alınamıyor"],
-  "liked": ["Silme kalitesi"],
-  "disliked": ["Yazılım hataları", "Halı yönetimi", "Sade suyla bile köpük bırakması"],
+  "forWho": [
+   "Dyson'ı tercih eden ve silmeyi öne koyanlar"
+  ],
+  "notFor": [
+   "Aynı fiyata olgun yazılım isteyenler (Roborock Qrevo L Pro, Dreame X40 Ultra'ya bakın)"
+  ],
+  "pros": [
+   "Rulo mop ve sıcak suyla zemin temizliği",
+   "HD kamera ve yapay zekâyla kir ve engel tanıma",
+   "MediaMarkt, Teknosa ve Amazon'da stokta"
+  ],
+  "cons": [
+   "Kullanıcılar takılma, durma ve kendi etrafında dönme gibi yazılım sorunları bildiriyor",
+   "Halıyı haritada bilip atlamıyor; halıya çıkıp şarj harcıyor",
+   "Çalışma süresi kısa (140 dk), istasyon gürültülü",
+   "Hepsiburada'daki Dyson Türkiye ilanı şu an satın alınamıyor"
+  ],
+  "liked": [
+   "Silme kalitesi"
+  ],
+  "disliked": [
+   "Yazılım hataları",
+   "Halı yönetimi",
+   "Sade suyla bile köpük bırakması"
+  ],
   "issues": []
  },
  "roborock-q8-max-pro": {
   "date": "31 Ekim 2026",
   "verdict": "Türkiye'de en çok değerlendirilen robot süpürgelerden (Hepsiburada'da yaklaşık 1.900 değerlendirme, ortalama 4,2). İstasyonsuz, LiDAR'lı ve dolaşmayan fırçalı; 15 bin TL civarındaki en güvenli tercihlerden. Mopu basit; ana fırça kapağının kırılması bilinen bir sorun.",
-  "forWho": ["15 bin TL bütçe, ağırlıklı süpürme"],
-  "notFor": ["İyi silme isteyenler"],
-  "pros": ["LiDAR ve 3D engel algılama", "Dolaşmayan rulo fırça, 10.000 Pa", "250 dk pil, 500 ml hazne, 20 mm eşik", "Çok yaygın: yedek parça ve sarf bol"],
-  "cons": ["Mop sabit ped; basit silme", "Ana fırça kapağının kırılması yorumlarda ve Şikâyetvar'da tekrar ediyor", "Bazı kullanıcılar haritanın ara ara karıştığını, püsküllü halıya takıldığını yazıyor"],
-  "liked": ["Peluş halıda bile ince kiri çekmesi", "Haritalama", "Ses seviyesinin ayarlanabilmesi"],
-  "disliked": ["3+1 evi en yüksek modda tek şarjda bitirememesi", "Fırça kapağı kırılması ve servis süreci"],
-  "issues": ["Şikâyetvar: ana fırça kapağı kırılması ve garanti tartışması", "Pro+ sürümünde şarjdan çıkıp kapanma şikâyetleri"]
+  "forWho": [
+   "15 bin TL bütçe, ağırlıklı süpürme"
+  ],
+  "notFor": [
+   "İyi silme isteyenler"
+  ],
+  "pros": [
+   "LiDAR ve 3D engel algılama",
+   "Dolaşmayan rulo fırça, 10.000 Pa",
+   "250 dk pil, 500 ml hazne, 20 mm eşik",
+   "Çok yaygın: yedek parça ve sarf bol"
+  ],
+  "cons": [
+   "Mop sabit ped; basit silme",
+   "Ana fırça kapağının kırılması yorumlarda ve Şikâyetvar'da tekrar ediyor",
+   "Bazı kullanıcılar haritanın ara ara karıştığını, püsküllü halıya takıldığını yazıyor"
+  ],
+  "liked": [
+   "Peluş halıda bile ince kiri çekmesi",
+   "Haritalama",
+   "Ses seviyesinin ayarlanabilmesi"
+  ],
+  "disliked": [
+   "3+1 evi en yüksek modda tek şarjda bitirememesi",
+   "Fırça kapağı kırılması ve servis süreci"
+  ],
+  "issues": [
+   "Şikâyetvar: ana fırça kapağı kırılması ve garanti tartışması",
+   "Pro+ sürümünde şarjdan çıkıp kapanma şikâyetleri"
+  ]
  },
  "roborock-qrevo-edge-3-pro": {
   "date": "31 Ekim 2026",
   "verdict": "Roborock'un en yeni üst modellerinden: 36.000 Pa, kameralı engel algılama, mopu bırakma, otomatik deterjan ve 88 mm'ye varan eşik aşma. Henüz Türkçe kullanıcı yorumu yok. Hepsiburada'daki ilan resmi satıcıda değil ve pahalı; MediaMarkt'ta 74.999 TL.",
-  "forWho": ["En yeni Roborock'u isteyen, yüksek eşikli evler"],
-  "notFor": ["Kanıtlanmış model isteyenler (Qrevo Curv 2 Pro, Edge 2 Pro)"],
-  "pros": ["36.000 Pa, LiDAR ve kamera", "AdaptiLift 3.0 ile 88 mm eşik", "Otomatik deterjan, sıcak suyla yıkama, kurutma, mopu bırakma, uzayan kollar", "256 dk çalışma"],
-  "cons": ["Henüz kullanıcı yorumu ve uzun dönem verisi yok", "Otomatik su dolumu yok", "Fiyat mağazaya göre 70–82 bin TL arasında"],
-  "liked": [], "disliked": [],
+  "forWho": [
+   "En yeni Roborock'u isteyen, yüksek eşikli evler"
+  ],
+  "notFor": [
+   "Kanıtlanmış model isteyenler (Qrevo Curv 2 Pro, Edge 2 Pro)"
+  ],
+  "pros": [
+   "36.000 Pa, LiDAR ve kamera",
+   "AdaptiLift 3.0 ile 88 mm eşik",
+   "Otomatik deterjan, sıcak suyla yıkama, kurutma, mopu bırakma, uzayan kollar",
+   "256 dk çalışma"
+  ],
+  "cons": [
+   "Henüz kullanıcı yorumu ve uzun dönem verisi yok",
+   "Otomatik su dolumu yok",
+   "Fiyat mağazaya göre 70–82 bin TL arasında"
+  ],
+  "liked": [],
+  "disliked": [],
   "issues": []
  },
  "dreame-x60-ultra-complete": {
   "date": "31 Ekim 2026",
   "verdict": "Dreame'nin amiral gemisi: 35.000 Pa, 79,5 mm ince gövde, 88 mm'ye kadar eşik aşma ve 55 dB ile listedeki en sessizlerden. Kullanıcı yorumu henüz az. Hepsiburada ilanı pazar yeri satıcısında ve çok pahalı; MediaMarkt'ta 77.399 TL.",
-  "forWho": ["Alçak mobilya, yüksek eşik ve sessizliği birlikte isteyenler"],
-  "notFor": ["Fiyat/performans arayanlar (X50 Ultra Complete çok daha ucuz)"],
-  "pros": ["35.000 Pa, kamera ve LiDAR", "79,5 mm gövde, 88 mm kademeli eşik", "Sıcak suyla yıkama ve kurutma, otomatik su dolumu, mopu bırakma, uzayan kollar", "55 dB gürültü"],
-  "cons": ["Henüz yeterli kullanıcı yorumu yok", "Dolaşmayan fırça bilgisi yok", "Dreame'nin şikâyet yanıt oranı düşük (%22)"],
-  "liked": [], "disliked": [],
+  "forWho": [
+   "Alçak mobilya, yüksek eşik ve sessizliği birlikte isteyenler"
+  ],
+  "notFor": [
+   "Fiyat/performans arayanlar (X50 Ultra Complete çok daha ucuz)"
+  ],
+  "pros": [
+   "35.000 Pa, kamera ve LiDAR",
+   "79,5 mm gövde, 88 mm kademeli eşik",
+   "Sıcak suyla yıkama ve kurutma, otomatik su dolumu, mopu bırakma, uzayan kollar",
+   "55 dB gürültü"
+  ],
+  "cons": [
+   "Henüz yeterli kullanıcı yorumu yok",
+   "Dolaşmayan fırça bilgisi yok",
+   "Dreame'nin şikâyet yanıt oranı düşük (%22)"
+  ],
+  "liked": [],
+  "disliked": [],
   "issues": []
  },
  "roborock-s9-plus": {
   "date": "31 Ekim 2026",
   "verdict": "S9'un toz boşaltma istasyonlu hali: haznesini kendisi boşaltıyor, paspası elle yıkarsınız. Ağırlıklı süpürme yapan ve bakımı azaltmak isteyenler için 25 bin TL civarında mantıklı bir seçim.",
-  "forWho": ["Halı veya halıflex ağırlıklı, silmeye az ihtiyaç duyan evler"],
-  "notFor": ["Düzenli silme isteyenler"],
-  "pros": ["Toz boşaltma istasyonu: haftalarca hazne boşaltmak yok", "13.000 Pa, LiDAR, 250 dk pil; 3 katlı evi tek şarjda bitiren kullanıcı var", "Titreşimli mop, 8 mm kaldırma", "Hepsiburada ve MediaMarkt'ta Roborock Türkiye garantili"],
-  "cons": ["Mop yıkama yok", "Dolaşmayan fırça yok", "Bir kullanıcıya göre uygulaması alt modele göre daha sorunlu"],
-  "liked": ["Hızlı haritalama ve düzenli rotalar", "Kalın engellerin üstünden geçebilmesi", "Çok katlı ev desteği"],
-  "disliked": ["Uygulama"],
+  "forWho": [
+   "Halı veya halıflex ağırlıklı, silmeye az ihtiyaç duyan evler"
+  ],
+  "notFor": [
+   "Düzenli silme isteyenler"
+  ],
+  "pros": [
+   "Toz boşaltma istasyonu: haftalarca hazne boşaltmak yok",
+   "13.000 Pa, LiDAR, 250 dk pil; 3 katlı evi tek şarjda bitiren kullanıcı var",
+   "Titreşimli mop, 8 mm kaldırma",
+   "Hepsiburada ve MediaMarkt'ta Roborock Türkiye garantili"
+  ],
+  "cons": [
+   "Mop yıkama yok",
+   "Dolaşmayan fırça yok",
+   "Bir kullanıcıya göre uygulaması alt modele göre daha sorunlu"
+  ],
+  "liked": [
+   "Hızlı haritalama ve düzenli rotalar",
+   "Kalın engellerin üstünden geçebilmesi",
+   "Çok katlı ev desteği"
+  ],
+  "disliked": [
+   "Uygulama"
+  ],
   "issues": []
  },
  "roborock-qrevo-edge-2-pro": {
   "date": "31 Ekim 2026",
   "verdict": "Qrevo Edge 2'nin üstüne otomatik deterjan, 40 mm eşik aşan şasi ve 290 dk pil ekleyen sürüm. Kullanıcı sayısı az (16 değerlendirme, 4,1). Aradaki 15–17 bin TL'ye değip değmeyeceği evinizdeki eşiklere bağlı.",
-  "forWho": ["Yüksek eşikli, deterjanı da otomatik isteyenler"],
-  "notFor": ["Eşiği olmayan evler (Edge 2 yeterli)"],
-  "pros": ["25.000 Pa, kamera, mopu bırakma, uzayan kollar", "Otomatik deterjan, sıcak suyla istasyon yıkama", "AdaptiLift ile 40 mm eşik", "290 dk çalışma"],
-  "cons": ["Edge 2'ye göre belirgin pahalı", "Otomatik su dolumu yok", "Hepsiburada'da resmi satış bulunamadı; MediaMarkt ve Teknosa'da 69.999 TL"],
-  "liked": [], "disliked": [],
+  "forWho": [
+   "Yüksek eşikli, deterjanı da otomatik isteyenler"
+  ],
+  "notFor": [
+   "Eşiği olmayan evler (Edge 2 yeterli)"
+  ],
+  "pros": [
+   "25.000 Pa, kamera, mopu bırakma, uzayan kollar",
+   "Otomatik deterjan, sıcak suyla istasyon yıkama",
+   "AdaptiLift ile 40 mm eşik",
+   "290 dk çalışma"
+  ],
+  "cons": [
+   "Edge 2'ye göre belirgin pahalı",
+   "Otomatik su dolumu yok",
+   "Hepsiburada'da resmi satış bulunamadı; MediaMarkt ve Teknosa'da 69.999 TL"
+  ],
+  "liked": [],
+  "disliked": [],
   "issues": []
  },
  "xiaomi-h50-pro": {
   "date": "31 Ekim 2026",
   "verdict": "Xiaomi'nin tam istasyonlu orta segment modeli: döner mop, uzayan mop ve yan fırça, sıcak hava kurutma. Hepsiburada'daki 15 değerlendirmenin 12'si 5, 3'ü 1 yıldız: memnun olanlar ayrıntılı silmeyi, memnun olmayanlar malzeme kalitesini ve süpürmeyi eleştiriyor.",
-  "forWho": ["30 bin TL'ye tam istasyon isteyen Xiaomi kullanıcıları"],
-  "notFor": ["Saçlı ve evcil hayvanlı evler"],
-  "pros": ["15.000 Pa, LiDAR", "Uzayan mop ve yan fırça, 10 mm mop kaldırma", "Toz boşaltma, mop yıkama, sıcak hava kurutma", "Hepsiburada'nın kendisi satıyor"],
-  "cons": ["Sıcak suyla mop yıkama yok", "Kamera yok; bir kullanıcıda aynayı oda sandı, eşiğe takıldı", "Dolaşmayan fırça yok; saç dolanması bildirilmiş", "Şikâyetvar'da uygulama ve Wi-Fi bağlantı şikâyetleri"],
-  "liked": ["Oda oda silip paspası yıkaması", "Köşelere uzanan mop"],
-  "disliked": ["Malzeme kalitesi", "Süpürme performansı ve saç dolanması", "Paspas temizliğinin uzun sürmesi"],
-  "issues": ["Şikâyetvar: uygulama bağlantı hatası, Wi-Fi ve şarj istasyonu arızası"]
+  "forWho": [
+   "30 bin TL'ye tam istasyon isteyen Xiaomi kullanıcıları"
+  ],
+  "notFor": [
+   "Saçlı ve evcil hayvanlı evler"
+  ],
+  "pros": [
+   "15.000 Pa, LiDAR",
+   "Uzayan mop ve yan fırça, 10 mm mop kaldırma",
+   "Toz boşaltma, mop yıkama, sıcak hava kurutma",
+   "Hepsiburada'nın kendisi satıyor"
+  ],
+  "cons": [
+   "Sıcak suyla mop yıkama yok",
+   "Kamera yok; bir kullanıcıda aynayı oda sandı, eşiğe takıldı",
+   "Dolaşmayan fırça yok; saç dolanması bildirilmiş",
+   "Şikâyetvar'da uygulama ve Wi-Fi bağlantı şikâyetleri"
+  ],
+  "liked": [
+   "Oda oda silip paspası yıkaması",
+   "Köşelere uzanan mop"
+  ],
+  "disliked": [
+   "Malzeme kalitesi",
+   "Süpürme performansı ve saç dolanması",
+   "Paspas temizliğinin uzun sürmesi"
+  ],
+  "issues": [
+   "Şikâyetvar: uygulama bağlantı hatası, Wi-Fi ve şarj istasyonu arızası"
+  ]
  },
  "ecovacs-deebot-t90-omni": {
   "date": "31 Ekim 2026",
   "verdict": "Rulo moplu (OZMO Roller) ve kameralı (AIVI 3D) en uygun fiyatlı modellerden. 30.000 Pa ve hızlı haritalama övülüyor. Hepsiburada'daki 154 değerlendirmenin yaklaşık dörtte biri 1 yıldız; kullanıcılara göre bunun bir kısmı satıcıların fiyat oynamalarından kaynaklanıyor.",
-  "forWho": ["Rulo mopu ve kamerayı 40 bin TL altında isteyenler"],
-  "notFor": ["Satış sonrası güvenceyi öne koyanlar"],
-  "pros": ["Rulo mop ve sıcak suyla yıkama", "Kameralı yapay zekâ engel algılama, ZeroTangle fırça", "30.000 Pa, 260 dk, otomatik su dolumu", "Ecovacs Group Türkiye resmi mağazası satıyor"],
-  "cons": ["Sıcak hava kurutma yok", "Kullanıcıya göre kamera görüşmesinde robotta mikrofon yok", "Halı püsküllerine takılma; kalın halı modunda halı kenarından kaçınma", "Destek erişimi şikâyetleri (Ecovacs'ın Şikâyetvar puanı 5/100)"],
-  "liked": ["Hızlı haritalama (150 m² 15 dakikada)", "Sessizlik ve çekim gücü", "Kolay kurulum ve Türkçe uygulama"],
-  "disliked": ["Fiyat dalgalanması", "Halı köşelerinde fırça takılması", "Destek sitesine ulaşamama"],
+  "forWho": [
+   "Rulo mopu ve kamerayı 40 bin TL altında isteyenler"
+  ],
+  "notFor": [
+   "Satış sonrası güvenceyi öne koyanlar"
+  ],
+  "pros": [
+   "Rulo mop ve sıcak suyla yıkama",
+   "Kameralı yapay zekâ engel algılama, ZeroTangle fırça",
+   "30.000 Pa, 260 dk, otomatik su dolumu",
+   "Ecovacs Group Türkiye resmi mağazası satıyor"
+  ],
+  "cons": [
+   "Sıcak hava kurutma yok",
+   "Kullanıcıya göre kamera görüşmesinde robotta mikrofon yok",
+   "Halı püsküllerine takılma; kalın halı modunda halı kenarından kaçınma",
+   "Destek erişimi şikâyetleri (Ecovacs'ın Şikâyetvar puanı 5/100)"
+  ],
+  "liked": [
+   "Hızlı haritalama (150 m² 15 dakikada)",
+   "Sessizlik ve çekim gücü",
+   "Kolay kurulum ve Türkçe uygulama"
+  ],
+  "disliked": [
+   "Fiyat dalgalanması",
+   "Halı köşelerinde fırça takılması",
+   "Destek sitesine ulaşamama"
+  ],
   "issues": []
  },
  "xiaomi-s40-pro": {
   "date": "31 Ekim 2026",
   "verdict": "İstasyonsuz ama döner moplu nadir modellerden: 15.000 Pa, uzayan mop ve yan fırça, 180 dk pil. Hepsiburada'da 153 değerlendirme, ortalama 4,2. En düşük fiyatlar pazar yeri satıcılarında; bazı ilanlar 30 bin TL'ye çıkıyor, karşılaştırarak alın.",
-  "forWho": ["15 bin TL civarında iyi silen model isteyenler"],
-  "notFor": ["Bakımla uğraşmak istemeyenler"],
-  "pros": ["Döner mop (istasyonsuz modellerde nadir)", "Uzayan mop ve yan fırça", "15.000 Pa, LiDAR, dolaşmayan fırça", "430 ml hazne"],
-  "cons": ["İstasyon yok: paspas ve hazne elle temizlenir", "Kamera yok", "Fiyat satıcıya göre 15–30 bin TL arasında değişiyor"],
-  "liked": [], "disliked": [],
+  "forWho": [
+   "15 bin TL civarında iyi silen model isteyenler"
+  ],
+  "notFor": [
+   "Bakımla uğraşmak istemeyenler"
+  ],
+  "pros": [
+   "Döner mop (istasyonsuz modellerde nadir)",
+   "Uzayan mop ve yan fırça",
+   "15.000 Pa, LiDAR, dolaşmayan fırça",
+   "430 ml hazne"
+  ],
+  "cons": [
+   "İstasyon yok: paspas ve hazne elle temizlenir",
+   "Kamera yok",
+   "Fiyat satıcıya göre 15–30 bin TL arasında değişiyor"
+  ],
+  "liked": [],
+  "disliked": [],
   "issues": []
+ },
+ "dreame-x40-ultra": {
+  "date": "1 Kasım 2026",
+  "verdict": "2024 amiral gemisi, bugün 35 bin TL civarına inmiş durumda ve özellik puanına göre listenin en iyi fiyat/performans modellerinden. Kamera + LiDAR, uzayan yan fırça, sıcak suyla mop yıkama/kurutma, otomatik su ve deterjan dolumu var. Hepsiburada'nın kendi satışından ya da büyük mağazalardan alın; pazar yeri ilanları 38–131 bin TL arasında dağınık.",
+  "forWho": [
+   "Tam istasyonlu, kameralı üst segmenti 35 bin TL civarında isteyenler",
+   "Evcil hayvanlı, yerde eşyası olan evler",
+   "Köşe temizliğini önemseyenler (uzayan fırça ve mop)"
+  ],
+  "notFor": [
+   "Kalın tüylü halısı çok olanlar (mop 10,5 mm kalkıyor)",
+   "Satış sonrası iletişimi kritik görenler (Dreame Şikâyetvar yanıt oranı %22)"
+  ],
+  "pros": [
+   "12.000 Pa emiş, kamera + lazer navigasyon, yapay zekâ ile nesne tanıma",
+   "İstasyon: toz boşaltma, sıcak suyla yıkama, sıcak hava kurutma, otomatik su ve deterjan",
+   "Hepsiburada (kendi satışı) 34.999 TL, Trendyol'da SATÜRN 35.174 TL",
+   "Değerlendirme ortalaması 4,4 (983 değerlendirme)"
+  ],
+  "cons": [
+   "Amazon'da robotun kendisi şu an satın alınamıyor (yalnızca aksesuar kiti satışta)",
+   "Teknosa fiyatı 38.829 TL; pazar yerinde 131 bin TL'lik ilan bile var",
+   "Yeni nesil L40/L50 serisine göre emiş gücü daha düşük"
+  ],
+  "liked": [],
+  "disliked": [],
+  "issues": [
+   "Şikâyetvar'da X40 Ultra için sıvı sızıntısı ve alt kapakta renk değişimi, harita/navigasyon sorunu nedeniyle değişim talebi ve servis desteği alınamaması başlıkları var (6 eşleşme)"
+  ]
+ },
+ "roborock-qrevo-edge-2-flow": {
+  "date": "1 Kasım 2026",
+  "verdict": "Roborock'un rulo moplu (Flow) yeni nesil tam istasyonlu modeli: 35.000 Pa, kamera, 89,9 mm gövde ve 15 mm mop kaldırma. Türkiye'de şu an yalnızca Teknosa kanalı satıyor (Teknosa, Hepsiburada, Trendyol, n11, Idefix ve Pazarama'daki Teknosa mağazaları). Henüz kullanıcı yorumu yok; özellik puanı yüksek ama fiyatı 58–65 bin TL.",
+  "forWho": [
+   "Rulo mopla sürekli temiz bezle silmek isteyenler",
+   "Alçak mobilyası olan evler (89,9 mm)",
+   "Kamera ile nesne kaçınmayı önemseyenler"
+  ],
+  "notFor": [
+   "Bütçesi 50 bin TL altında olanlar",
+   "Kullanıcı deneyimi oturmuş model arayanlar (henüz yorum yok)"
+  ],
+  "pros": [
+   "35.000 Pa emiş, RGB kamera, geri çekilebilir LiDAR",
+   "Rulo mop, 15 mm mop kaldırma, uzayan yan fırça",
+   "İstasyon: toz boşaltma, sıcak suyla yıkama, sıcak hava kurutma, otomatik su dolumu"
+  ],
+  "cons": [
+   "Tek satış kanalı Teknosa; fiyat 58.199 TL (Idefix) ile 64.999 TL (teknosa.com) arasında",
+   "Otomatik deterjan dolumu yok",
+   "Roborock'ta servis tek merkezden ve kargo ile (Recci Teknoloji)"
+  ],
+  "liked": [],
+  "disliked": [],
+  "issues": [
+   "Modele özel Şikâyetvar başlığı yok. Roborock genelinde şikâyetlerin yarısından fazlası servis/garanti süreciyle ilgili; marka yanıt oranı %81."
+  ]
+ },
+ "narwal-freo-z10-ultra": {
+  "date": "1 Kasım 2026",
+  "verdict": "Kameralı ve sıcak su yıkamalı tam istasyon için bugün en ucuz seçeneklerden: Hepsiburada'daki Narwal Türkiye mağazasında 23.999 TL ve fiyat/performans sıralamasında üst sıralarda. Ancak aynı resmi mağazanın başka ilanları 26–40 bin TL; doğru ilanı seçin. İstasyonda otomatik su dolumu yok, temiz/kirli su tankları elle doldurulup boşaltılıyor.",
+  "forWho": [
+   "25 bin TL altında kamera + tam istasyon isteyenler",
+   "Silme ağırlıklı kullanım (çift döner mop, kenara uzayan mop)"
+  ],
+  "notFor": [
+   "Yaygın servis ağı ve hızlı yedek parça bekleyenler",
+   "Su tankıyla uğraşmak istemeyenler (otomatik dolum yok)"
+  ],
+  "pros": [
+   "18.000 Pa emiş, RGB kamera, yapay zekâ kir tanıma",
+   "Uzayan mop, 12 mm mop kaldırma, sıcak suyla yıkama ve sıcak hava kurutma, deterjan",
+   "Satıcı resmi distribütör (Narwal Türkiye)"
+  ],
+  "cons": [
+   "Aynı modelin resmi mağaza ilanları 23.999–40.499 TL arasında; fiyat tutarsız",
+   "Uzayan yan fırça ve dolaşma önleyici fırça yok",
+   "Narwal'ın Türkiye servis ağı küçük; destek WhatsApp üzerinden, aksesuar sınırlı"
+  ],
+  "liked": [],
+  "disliked": [],
+  "issues": [
+   "Şikâyetvar: 'Freo Z10 Ultra sürekli 1082 ve 1019 hata veriyor' başlığı (1 kayıt). Marka genelinde az şikâyet var (5); bunlar servis ve yedek parça konulu."
+  ]
+ },
+ "xiaomi-vacuum-5-pro": {
+  "date": "1 Kasım 2026",
+  "verdict": "Xiaomi'nin kameralı ve geri çekilebilir LiDAR'lı yeni üst modeli. Kâğıt üzerinde güçlü (20.000 Pa, sıcak su yıkama/kurutma, uzayan mop ve fırça), ancak 39 bin TL'ye otomatik su dolumu yok, çalışma süresi 140 dk, epey verisine göre mop sabit ped. Bu fiyata Dreame L40 Ultra AE veya X40 Ultra daha fazla özellik veriyor.",
+  "forWho": [
+   "Xiaomi ekosistemini kullananlar",
+   "Alçak mobilya (88 mm gövde, geri çekilebilir LiDAR)"
+  ],
+  "notFor": [
+   "Fiyat/performans arayanlar",
+   "Büyük evler (140 dk çalışma süresi)"
+  ],
+  "pros": [
+   "20.000 Pa, HD kamera + dToF, yapay zekâ kir tanıma",
+   "15 mm mop kaldırma, uzayan mop ve yan fırça",
+   "Trendyol (kendi satışı) 38.999 TL, Vatan 39.999 TL"
+  ],
+  "cons": [
+   "Otomatik su ve deterjan dolumu yok",
+   "Hepsiburada'da yalnızca pazar yeri satıcıları (48–50 bin TL); MediaMarkt, Teknosa ve Amazon aramalarında bulunamadı",
+   "Xiaomi'de servis/garanti şikâyetleri yüksek (Şikâyetvar örneğinde %68)"
+  ],
+  "liked": [],
+  "disliked": [],
+  "issues": [
+   "Modele özel Şikâyetvar başlığı yok; marka genelinde servis süreci, mop/istasyon ve navigasyon şikâyetleri öne çıkıyor."
+  ]
+ },
+ "ecovacs-deebot-t80-omni": {
+  "date": "1 Kasım 2026",
+  "verdict": "Rulo moplu (OZMO Roller) ve kameralı tam istasyonlu Ecovacs modeli, resmi mağazada 27.999 TL. Sınıflandırması düzeltildi: epey'de 'basınçlı ped' görünüyordu, Hepsiburada başlığına göre rulo mop. Ecovacs Group Türkiye mağazasından (Hepsiburada, Amazon, Trendyol) veya Beymen'den alın; Hepsiburada'da 63 bin TL'lik pazar yeri ilanı da var.",
+  "forWho": [
+   "Rulo mopla silme isteyen, 30 bin TL bütçeli alıcılar",
+   "Uzun çalışma süresi isteyen büyük evler (290 dk)"
+  ],
+  "notFor": [
+   "Satış sonrası hizmete en çok önem verenler (Ecovacs Şikâyetvar puanı düşük)",
+   "Otomatik su dolumu isteyenler"
+  ],
+  "pros": [
+   "20.000 Pa, RGB kamera + AIVI 3D 3.0, dToF navigasyon",
+   "Rulo mop, ZeroTangle 3.0 dolaşma önleme, kenara uzayan mop",
+   "Sıcak suyla mop yıkama ve sıcak hava kurutma",
+   "Resmi mağaza fiyatı 27.999 TL"
+  ],
+  "cons": [
+   "Otomatik su ve deterjan dolumu yok",
+   "Pazar yeri ilanları 36–92 bin TL; ürün sayfasında karşınıza çıkan ilk satıcı resmi mağaza olmayabilir",
+   "Uzayan yan fırça yok"
+  ],
+  "liked": [],
+  "disliked": [],
+  "issues": [
+   "Şikâyetvar: 'T80 Omni'da hızlı pil boşalması ve servis gecikmesi', T80S için sürekli arıza/uzun servis süresi ve Ecovacs genelinde garanti kapsamında yedek parça bulunamaması başlıkları var"
+  ]
+ },
+ "roborock-saros-20-flow": {
+  "date": "1 Kasım 2026",
+  "verdict": "Listedeki en yüksek özellik puanına sahip model: 36.000 Pa, rulo mop, kamera ve 8,8 cm'ye kadar eşik aşma. Türkiye'de yalnızca Vatan Bilgisayar satıyor (Hepsiburada'da 79.999 TL, Trendyol'da 89.999 TL), bu yüzden stok sınırlı. Her şeyin en iyisini isteyen ve fiyatı dert etmeyen biri için.",
+  "forWho": [
+   "Yüksek eşikli, çok katlı veya karmaşık evler (88 mm tırmanma)",
+   "Rulo mop + kamera + en güçlü emiş isteyenler"
+  ],
+  "notFor": [
+   "Fiyat/performans arayanlar (Saros 10R veya Qrevo serisi çok daha ucuz)",
+   "Birden fazla satıcı arasından seçim yapmak isteyenler"
+  ],
+  "pros": [
+   "36.000 Pa emiş, RGB kamera, geri çekilebilir LiDAR",
+   "88 mm eşik aşma, 89,9 mm gövde",
+   "Sıcak suyla yıkama/kurutma, deterjan, uzayan mop ve fırça",
+   "Hepsiburada'da 3 değerlendirmenin üçü de 5 yıldız (yorum metni yok)"
+  ],
+  "cons": [
+   "Tek satıcı (Vatan); fiyat 80–90 bin TL",
+   "Otomatik su dolumu yok",
+   "Kullanıcı deneyimi henüz çok az"
+  ],
+  "liked": [],
+  "disliked": [],
+  "issues": [
+   "Modele özel Şikâyetvar başlığı yok. Roborock servisi tek merkezden kargo ile yapılıyor."
+  ]
+ },
+ "roborock-saros-10r": {
+  "date": "1 Kasım 2026",
+  "verdict": "LiDAR kulesi olmayan, 79,8 mm ince gövdeli tam istasyonlu Roborock: yorumlarda baza ve koltuk altlarına girmesi en çok övülen yanı. Silme performansı çok beğenilmiş, halıda süpürme gücü tartışmalı. Hepsiburada'nın kendi satışında 54.999 TL ve Türkiye garantili; 164 puanın %16'sı 1 yıldız, arıza ve hata bildiren yorumlar var.",
+  "forWho": [
+   "Alçak baza ve koltukları olan evler",
+   "Evcil hayvanlı evler (dolaşma önleyici fırça, kamera)",
+   "Ağırlıklı sert zemin; silme önceliği olanlar"
+  ],
+  "notFor": [
+   "Halısı çok olan evler (bir kullanıcı Dyson ile karşılaştırıp halıda zayıf buldu)",
+   "Arıza riskine toleransı düşük olanlar"
+  ],
+  "pros": [
+   "79,8 mm gövde, 3D ToF + kamera navigasyon, 40 mm eşik aşma",
+   "Çıkarılabilir ve uzayan mop, uzayan yan fırça",
+   "Sıcak su yıkama/kurutma, otomatik su ve deterjan dolumu",
+   "Hepsiburada'nın kendi satışı: iade/değişim hızlı (bir kullanıcı 2 iş gününde yenisini almış)"
+  ],
+  "cons": [
+   "Hepsiburada puanları: 119×5, 11×4, 6×3, 2×2, 26×1 yıldız",
+   "Kutudan temizlik solüsyonu çıkmıyor (iki kullanıcı)",
+   "Diğer satıcılar 57–72 bin TL"
+  ],
+  "liked": [
+   "Silme performansı ('ayna gibi parlatıyor')",
+   "İnce gövdeyle baza ve koltuk altlarına girmesi",
+   "Sıcak suyla mop yıkama, hızlı haritalama (80 m² 6 dakikada, bir kullanıcıya göre)",
+   "Uygulama ve kurulumun kolay olması"
+  ],
+  "disliked": [
+   "Halıda süpürme gücünün yetersiz kalması (bir kullanıcıya göre)",
+   "Bir kullanıcıda 6 hafta sonra sürekli 'dahili hata, robotu sıfırlayın' uyarısı, sıkışan yan fırça ve yırtılan ana fırça",
+   "Bir kullanıcıda Hata 52/53 (temizleme tepsisi/su tahliyesi), değişimle çözülmüş"
+  ],
+  "issues": [
+   "Şikâyetvar: 'Saros 10R modelinde sürekli arıza, servis çözümsüz kaldı ve değişim talep ediliyor' (1 kayıt)",
+   "Yorumlarda dahili hata uyarısı ve tahliye hatası (52/53) bildirimleri"
+  ]
+ },
+ "dreame-d30-ultra": {
+  "date": "1 Kasım 2026",
+  "verdict": "Tam istasyonun en ucuz yollarından biri: Hepsiburada'nın kendi satışında 30.999 TL, 25.000 Pa emiş ve uzayan mop. Ancak istasyon mopu sıcak suyla yıkamıyor ve sıcak havayla kurutmuyor, kamera ya da 3D engel algılama da yok. Birkaç bin TL fazlasına Dreame L40 Ultra AE (34.999 TL) bunların hepsini veriyor.",
+  "forWho": [
+   "Düzenli, eşyası az, sert zeminli evler",
+   "Toz boşaltma + mop yıkama istasyonunu 31 bin TL civarında isteyenler"
+  ],
+  "notFor": [
+   "Yerde kablo ve oyuncak çok olan evler (kamera/3D sensör yok)",
+   "Evcil hayvan sahipleri (dolaşma önleyici fırça yok)"
+  ],
+  "pros": [
+   "25.000 Pa emiş, LiDAR",
+   "Uzayan mop, 10,5 mm mop kaldırma",
+   "Toz boşaltma ve mop yıkama istasyonu",
+   "Ortalama puan 4,7 (22 değerlendirme)"
+  ],
+  "cons": [
+   "Sıcak suyla yıkama, sıcak hava kurutma ve otomatik su dolumu yok",
+   "Engel algılama yalnızca tampon",
+   "Amazon'da şu an satın alınamıyor; Dreame Türkiye mağazalarında 36.999 TL, Teknosa'da 41.873 TL"
+  ],
+  "liked": [],
+  "disliked": [],
+  "issues": [
+   "Modele özel Şikâyetvar başlığı yok. Dreame genelinde servis süreci ve mop/istasyon konuları öne çıkıyor; marka yanıt oranı %22."
+  ]
+ },
+ "dreame-l10s-pro-gen-2": {
+  "date": "1 Kasım 2026",
+  "verdict": "10 bin TL bütçenin en güçlü seçeneklerinden: LiDAR, 3D ışıklı engel algılama, dönen ve 7 mm kalkan çift mop. İstasyonu yok, tozu ve mopları elle temizliyorsunuz. Hepsiburada'nın kendi satışında 9.999 TL; aynı sitede 23.978 TL'lik pazar yeri ilanı da var, satıcıya bakın.",
+  "forWho": [
+   "İlk robot süpürgesini alacak, bütçesi 10–12 bin TL olanlar",
+   "Küçük ve orta boy daireler",
+   "İstasyon yerine yer kazanmak isteyenler"
+  ],
+  "notFor": [
+   "Haznesini her gün boşaltmak istemeyenler (istasyon yok)",
+   "Kalın halılı evler (mop sadece 7 mm kalkıyor)"
+  ],
+  "pros": [
+   "LiDAR + 3D yapısal ışık engel algılama, dolaşma önleyici fırça",
+   "Döner çift mop, büyük hazneler (470 ml toz, 300 ml su)",
+   "Hepsiburada (kendi satışı) 9.999 TL; ortalama puan 4,5 (699 değerlendirme)"
+  ],
+  "cons": [
+   "Şarj istasyonu dışında istasyon yok: toz boşaltma ve mop yıkama elle",
+   "Amazon'da şu an satın alınamıyor; satıcıların çoğu pazar yeri",
+   "Hepsiburada'daki bir ilan 23.978 TL (piyasanın 2 katından fazla)"
+  ],
+  "liked": [],
+  "disliked": [],
+  "issues": [
+   "Şikâyetvar: 'Islak paspas arızalı L10s Pro Gen 2 ve tekrarlanan Vatan Bilgisayar servis hatası' (1 kayıt)"
+  ]
+ },
+ "dreame-l40-ultra-ae": {
+  "date": "1 Kasım 2026",
+  "verdict": "Bugün en dengeli tam istasyonlu modellerden: kamera + 3D engel algılama, 19.000 Pa, sıcak su yıkama/kurutma, otomatik su ve deterjan dolumu. Teknosa'da (ve Amazon'daki Teknosa mağazasında) 34.999 TL. Yorumlarda sessizliği ve hızlı haritalaması övülüyor, ancak 74 puanın 15'i 1 yıldız.",
+  "forWho": [
+   "35 bin TL civarında 'her şeyi yapan' bir model isteyenler",
+   "Sessiz çalışma isteyenler",
+   "Eşikli evler (2 cm eşiği aştığını söyleyen kullanıcı var)"
+  ],
+  "notFor": [
+   "Kalın halılı evler (mop 10,5 mm kalkıyor)",
+   "Uzun pil ömrü isteyen çok büyük evler (180 dk)"
+  ],
+  "pros": [
+   "RGB kamera + 3D engel algılama, LiDAR",
+   "Kenara uzayan mop, dolaşma önleyici fırça",
+   "Tam istasyon: toz, sıcak su yıkama, sıcak hava kurutma, otomatik su ve deterjan",
+   "Teknosa, Dreame Türkiye, A101, Beymen dahil 10 mağazada"
+  ],
+  "cons": [
+   "Hepsiburada puanları: 54×5, 4×4, 1×2, 15×1 yıldız (%20 tek yıldız)",
+   "Uzayan yan fırça yok",
+   "Hepsiburada'daki ilk satıcı pazar yeri (diMalls 39.799 TL); Dreame Türkiye ve Teknosa aynı sayfada 39.999 TL"
+  ],
+  "liked": [
+   "Hızlı ve isabetli haritalama (ilk çalışmada evi çıkarması, 10 dakikada haritalama)",
+   "Sessiz çalışma (S7'ye göre yarı yarıya sessiz, bir kullanıcıya göre)",
+   "Uygulama ve uzaktan kontrol",
+   "X40/X50 ile arasındaki fiyat farkını hak eden fark görülmemesi"
+  ],
+  "disliked": [
+   "Bir satıcının mopların yana açılmadığını söylemesi (kullanıcı açıldığını doğruladı)"
+  ],
+  "issues": [
+   "Şikâyetvar: 'Yazılım sorunu nedeniyle L40 Ultra AE sürekli takılıyor ve iade talebi' (1 kayıt)"
+  ]
+ },
+ "dreame-l50-ultra-ce": {
+  "date": "1 Kasım 2026",
+  "verdict": "L40 serisinin halefi: 25.000 Pa, uzayan mop ve uzayan yan fırça, sıcak su yıkama/kurutma ve otomatik su dolumu. Ama bu CE sürümde kamera yok (3D ışıklı engel algılama var) ve epey'de navigasyon tipi belirtilmemiş. MediaMarkt'ta 38.999 TL; kameralı L40 Ultra AE ise 34.999 TL.",
+  "forWho": [
+   "Güçlü emiş ve kenar temizliği isteyen, kameraya gerek duymayanlar",
+   "Büyük mağazadan (MediaMarkt, Teknosa, Vatan) almak isteyenler"
+  ],
+  "notFor": [
+   "Yerde küçük nesne çok olan evler (kamera yok)",
+   "Evcil hayvan dışkısı gibi risklerden kaçınmak isteyenler (yapay zekâ tanıma yok)"
+  ],
+  "pros": [
+   "25.000 Pa emiş, 3D yapısal ışık engel algılama",
+   "Uzayan mop ve uzayan yan fırça",
+   "Sıcak suyla yıkama, sıcak hava kurutma, otomatik su dolumu",
+   "MediaMarkt 38.999 TL; Amazon'da Dreame TR 44.999 TL sepete eklenebiliyor"
+  ],
+  "cons": [
+   "Kamera yok; aynı paraya kameralı alternatifler var",
+   "Otomatik deterjan dolumu ve dolaşma önleyici fırça yok",
+   "Henüz kullanıcı yorumu yok"
+  ],
+  "liked": [],
+  "disliked": [],
+  "issues": [
+   "Şikâyetvar: 'L50 Ultra CE mop arızası ve servis iletişimsizliği' (1 kayıt)"
+  ]
+ },
+ "dreame-d20": {
+  "date": "1 Kasım 2026",
+  "verdict": "İstasyonsuz, basit ama uzun soluklu bir süpürücü: LiDAR, 13.000 Pa, 285 dk çalışma ve 700 ml toz haznesi. Mop sabit ped ve kalkmıyor; silme sadece yardımcı özellik. Amazon (Dreame TR) ve Teknosa'da 13.999 TL. Hepsiburada'daki 'D20 Ultra' farklı ve daha pahalı bir model, karıştırmayın.",
+  "forWho": [
+   "Büyük ama düz zeminli evler (uzun pil, büyük hazne)",
+   "Ağırlıklı süpürme isteyen, 15 bin TL altı bütçe"
+  ],
+  "notFor": [
+   "Mopla gerçek silme isteyenler (sabit ped, kaldırma yok)",
+   "Yerde eşyası çok olan evler (sadece tampon)"
+  ],
+  "pros": [
+   "13.000 Pa emiş, LiDAR, 285 dk çalışma",
+   "700 ml toz, 350 ml su haznesi",
+   "Resmi mağaza ve büyük perakendecilerde bol stok (16 ilan); ortalama puan 4,5 (59 değerlendirme)"
+  ],
+  "cons": [
+   "İstasyon yok; tozu elle boşaltıyorsunuz",
+   "Mop kalkmıyor: mop takılıyken halıya girmemesi için alan sınırı çizmek gerekir",
+   "Engel algılama yalnızca tampon"
+  ],
+  "liked": [],
+  "disliked": [],
+  "issues": [
+   "Modele özel Şikâyetvar başlığı yok."
+  ]
+ },
+ "xiaomi-x20-max-2": {
+  "date": "1 Kasım 2026",
+  "verdict": "Tam istasyonlu (sıcak su yıkama ve kurutma) ve kenara uzayan moplu, ama emişi (8.000 Pa) ve çalışma süresi (120 dk) bu fiyata zayıf. Engel algılama 'tampon' değil, Hepsiburada açıklamasına göre yapısal ışıklı; sınıflandırma düzeltildi. Büyük mağaza stoğu yok: Trendyol'daki Xiaomi Resmi Mağazası (28.999 TL) ya da Türkiye garantili ilanları seçin.",
+  "forWho": [
+   "Xiaomi uygulamasını kullanan, orta büyüklükte evler",
+   "Sıcak su yıkamalı istasyonu 26–29 bin TL'ye isteyenler"
+  ],
+  "notFor": [
+   "Büyük evler (120 dk)",
+   "Şikâyet geçmişi temiz model arayanlar"
+  ],
+  "pros": [
+   "Tam istasyon: toz boşaltma, sıcak su yıkama, sıcak hava kurutma",
+   "Kenara uzayan mop, 10 mm mop kaldırma, dolaşma önleyici fırça",
+   "LiDAR + yapısal ışık engel algılama"
+  ],
+  "cons": [
+   "8.000 Pa emiş, 120 dk çalışma süresi",
+   "Otomatik su dolumu yok",
+   "Satıcıların çoğu pazar yeri (26–58 bin TL); Teknosa, MediaMarkt ve Amazon'da yok"
+  ],
+  "liked": [],
+  "disliked": [],
+  "issues": [
+   "Şikâyetvar'da 7 eşleşme: tekrarlayan aynı arızalar, haritalama/navigasyon sorunu nedeniyle iade talebi, servis hataları ve performans kaybı başlıkları"
+  ]
+ },
+ "mova-v70-ultra-complete": {
+  "date": "1 Kasım 2026",
+  "verdict": "Mova'nın amiral gemisi: 42.000 Pa, 9 cm'ye kadar eşik aşma, 17 cm uzayabilen mop ve 3 yıl garanti. 72–77 bin TL fiyatına rağmen epey verisinde kamera, sıcak suyla yıkama ve kurutma görünmüyor; satın almadan ürün sayfasından doğrulayın. Hepsiburada'daki 4 değerlendirmenin 3'ü tek yıldız ve hepsi teslimat/destek ya da navigasyonla ilgili.",
+  "forWho": [
+   "Yüksek eşikli evler (80–90 mm)",
+   "En yüksek emiş gücünü ve 3 yıl garantiyi isteyenler"
+  ],
+  "notFor": [
+   "Fiyat/performans arayanlar",
+   "Satış sonrası iletişime önem verenler (yorumlarda firma iletişimi eleştiriliyor)"
+  ],
+  "pros": [
+   "42.000 Pa emiş, geri çekilebilir LiDAR",
+   "Çıkarılabilir ve uzayan mop (17 cm), uzayan yan fırça, deterjan",
+   "MOVA Türkiye, MediaMarkt ve Amazon'da 76.999 TL; 3 yıl garanti"
+  ],
+  "cons": [
+   "Hepsiburada puanları: 1×5, 3×1 yıldız",
+   "Epey verisine göre kamera yok ve istasyonda sıcak su/kurutma yok",
+   "Fiyat/performans puanı düşük (özellik puanı 77,7)"
+  ],
+  "liked": [
+   "Bir kullanıcıya göre ürün 'aslında başarılı'"
+  ],
+  "disliked": [
+   "Eksik parça gönderilmesi ve müşteri iletişimi olmaması",
+   "Solüsyon kutusu ve toz haznesinin deforme gelmesi; firmanın kullanıcıyı Hepsiburada'ya yönlendirmesi",
+   "Alçak alan işaretlense de koltuk altına girmemesi, bir odayı 3 parçada temizleyip boşluk bırakması (bir kullanıcıya göre)"
+  ],
+  "issues": [
+   "Yorumlarda kutudan eksik/hasarlı parça çıkması ve firma desteğine ulaşamama",
+   "Modele özel Şikâyetvar başlığı yok; Mova marka yanıt oranı %22"
+  ]
+ },
+ "mova-e50-pro-ultra": {
+  "date": "1 Kasım 2026",
+  "verdict": "30.000 Pa, sıcak suyla mop yıkama ve kurutma, deterjan ve uzayan mop sunan güçlü bir tam istasyon; MediaMarkt'ta 36.999 TL ve 3 yıl Mova garantisi var. Epey'de engel algılama sadece tampon görünüyor; Hepsiburada'da modele ait 'kamera modülü' yedek parçası satılıyor. Kameralı olup olmadığını ürün sayfasından teyit edin.",
+  "forWho": [
+   "Güçlü emiş ve uzun garanti isteyenler",
+   "Büyük mağazadan (MediaMarkt, Teknosa, Amazon) almak isteyenler"
+  ],
+  "notFor": [
+   "Kamera ile nesne kaçınma şart olanlar (teyit edilmeden)",
+   "Otomatik su dolumu isteyenler"
+  ],
+  "pros": [
+   "30.000 Pa emiş, LiDAR",
+   "Uzayan mop, 10,5 mm mop kaldırma, dolaşma önleyici fırça",
+   "Sıcak suyla yıkama, sıcak hava kurutma, deterjan",
+   "Ortalama puan 5,0 (12 değerlendirme)"
+  ],
+  "cons": [
+   "Otomatik su dolumu ve uzayan yan fırça yok",
+   "Fiyat mağazaya göre 36.999–45.999 TL; pazar yeri ilanları 74–90 bin TL",
+   "Pil kapasitesi ve çalışma süresi epey'de belirtilmemiş"
+  ],
+  "liked": [],
+  "disliked": [],
+  "issues": [
+   "Modele özel Şikâyetvar başlığı yok. Mova genelinde servis ve uygulama konulu az sayıda şikâyet var (49)."
+  ]
+ },
+ "philips-xu5100": {
+  "date": "1 Kasım 2026",
+  "verdict": "Toz boşaltma istasyonlu, LiDAR'lı ve döner çift moplu bir Philips; 17–22 bin TL. İstasyon mopu yıkamıyor, sadece tozu boşaltıyor. Yorumlarda iki kullanıcı moplar takılıyken halıya çıkmadığını, süpürme ve silmeyi ayrı yapmak gerektiğini söylüyor.",
+  "forWho": [
+   "Halısız ya da az halılı evler",
+   "Kompakt istasyon tasarımı isteyenler"
+  ],
+  "notFor": [
+   "Halılı evlerde tek seferde süpürme + silme isteyenler",
+   "Mopu kendisi yıkasın isteyenler"
+  ],
+  "pros": [
+   "10.000 Pa, LiDAR, döner çift mop, dolaşma önleyici fırça",
+   "Toz boşaltma istasyonu",
+   "Amazon (kendi satışı) 19.000 TL, A101 ve Teknosa'da da stokta; 42 puanın 32'si 5 yıldız"
+  ],
+  "cons": [
+   "Mop yıkama/kurutma yok",
+   "Engel algılama yalnızca tampon",
+   "En ucuz ilanlar pazar yeri; Hepsiburada'da da satıcılar pazar yeri"
+  ],
+  "liked": [
+   "İstasyonun kompakt tasarımı ve eve uyumu",
+   "Kutudan ek mop ve temizleme suyu çıkması",
+   "Uygulamanın alanı hızlı tanıması"
+  ],
+  "disliked": [
+   "Moplar takılıyken halıya çıkmaması (iki kullanıcı)",
+   "Haritalamanın beğenilmemesi (bir kullanıcıya göre)"
+  ],
+  "issues": [
+   "Modele özel Şikâyetvar başlığı yok."
+  ]
+ },
+ "dreame-f20": {
+  "date": "1 Kasım 2026",
+  "verdict": "İstasyonsuz giriş modeli: 20.000 Pa emiş ve LiDAR var, ama pil küçük (3.200 mAh, 150 dk) ve mop sabit ped. Büyük mağazalarda 17–19 bin TL; daha ucuz ilanlar NEONBİL pazar yeri mağazasından. Aynı fiyat bandında Dreame D20 daha uzun çalışıyor, L10S Pro Gen 2 ise döner mop ve 3D engel algılama veriyor.",
+  "forWho": [
+   "Küçük, düz zeminli evlerde güçlü süpürme isteyenler"
+  ],
+  "notFor": [
+   "Mopla ciddi silme isteyenler",
+   "Büyük evler (150 dk)"
+  ],
+  "pros": [
+   "20.000 Pa emiş, LiDAR, dolaşma önleyici fırça",
+   "MediaMarkt 16.999 TL, Teknosa ve Vatan'da stokta"
+  ],
+  "cons": [
+   "Sabit ped mop, kaldırma yok",
+   "Engel algılama yalnızca tampon",
+   "Fiyat/performans puanı düşük (özellik puanı 42)"
+  ],
+  "liked": [],
+  "disliked": [],
+  "issues": [
+   "Modele özel Şikâyetvar başlığı yok."
+  ]
+ },
+ "roborock-qrevo-c-pro": {
+  "date": "1 Kasım 2026",
+  "verdict": "18.500 Pa emişli, sıcak su yıkama/kurutma ve otomatik su dolumu olan Roborock tam istasyonu; Amazon'da 46.229 TL, MediaMarkt'ta 46.999 TL. Kamera yok, 3D ışıklı engel algılama var. Hepsiburada'da satıcılar pazar yeri ve 48–62 bin TL; Amazon ya da MediaMarkt daha mantıklı.",
+  "forWho": [
+   "Güçlü emişli Roborock isteyen, sert zeminli evler",
+   "Büyük mağaza güvencesi isteyenler (Amazon, MediaMarkt, Teknosa, Vatan)"
+  ],
+  "notFor": [
+   "Kamera ile nesne kaçınma isteyenler",
+   "Fiyat/performans arayanlar (Dreame L40 Ultra AE kameralı ve daha ucuz)"
+  ],
+  "pros": [
+   "18.500 Pa emiş, LiDAR + 3D engel algılama",
+   "Kenara uzayan mop, dolaşma önleyici fırça",
+   "Sıcak suyla yıkama, sıcak hava kurutma, otomatik su dolumu",
+   "Amazon (kendi satışı) 46.229 TL, sepete eklenebiliyor"
+  ],
+  "cons": [
+   "Kamera ve deterjan dolumu yok",
+   "Mop yalnızca 10 mm kalkıyor",
+   "Hepsiburada'da resmi satıcı yok; ilanlar 48–62 bin TL"
+  ],
+  "liked": [
+   "18.500 Pa emiş gücü (aynı fiyattaki 10–12 bin Pa'lık modellere göre)",
+   "Kuru ve ıslak temizlik, haritalama ve mobil uygulamadan bölge seçme",
+   "Bir kullanıcının dikey süpürgesini bırakacak kadar memnun kalması"
+  ],
+  "disliked": [],
+  "issues": [
+   "Modele özel Şikâyetvar başlığı yok. Roborock servisi tek merkezden kargo ile."
+  ]
+ },
+ "xiaomi-robot-vacuum-x20-plus": {
+  "date": "1 Kasım 2026",
+  "verdict": "Çok satmış (1.734 değerlendirme, %80'i 5 yıldız) ama artık eskimiş bir model: 6.000 Pa emiş, tampon engel algılama, mopu sıcak suyla yıkamıyor. 23–30 bin TL'ye bugün kameralı ve sıcak su yıkamalı modeller var (ör. Narwal Freo Z10 Ultra 23.999 TL). Satıcıların neredeyse tamamı pazar yeri; Amazon'da satın alınamıyor.",
+  "forWho": [
+   "Kanıtlanmış, sorunsuz yorumları çok bir model isteyenler",
+   "Alçak yatak altları (bir kullanıcı diğer markaların giremediği yere girdiğini yazdı)"
+  ],
+  "notFor": [
+   "Halılı evler (halı tanıma ve halı temizliğinde şikâyetler var)",
+   "Güncel teknoloji isteyenler"
+  ],
+  "pros": [
+   "Toz boşaltma + mop yıkama + kurutma istasyonu",
+   "LiDAR, hızlı haritalama (7–10 dk, bir kullanıcıya göre)",
+   "Hepsiburada puanları: 1.394×5, 175×4, 43×3, 16×2, 106×1"
+  ],
+  "cons": [
+   "6.000 Pa emiş; 7 mm mop kaldırma",
+   "Engel algılama yalnızca tampon",
+   "Teknosa (29.999 TL) dışında satıcılar pazar yeri"
+  ],
+  "liked": [
+   "Süpürme ve silme başarısı",
+   "Sessiz çalışma ve hızlı haritalama",
+   "Türkçe uygulama, zamanlanmış temizlik"
+  ],
+  "disliked": [
+   "Haritalama sırasında halı tanımaması, halıyı elle işaretlemek gerekmesi",
+   "Halıda tüyleri toplayıp geri bırakması (bir kullanıcıya göre)",
+   "Turbo modda bile toz bırakması ve lekeyi tam çıkaramaması (bir kullanıcıya göre)",
+   "Robotun sesli uyarılarının İngilizce olması"
+  ],
+  "issues": [
+   "Şikâyetvar'da 5 eşleşme: arıza ve servis ücreti, kırılan ön tekerlek için 3 hafta yanıtsızlık, yetkisiz serviste ücret talebi, servis takibinde zorluk"
+  ]
+ },
+ "xiaomi-s40": {
+  "date": "1 Kasım 2026",
+  "verdict": "11–14 bin TL'lik temel LiDAR'lı süpürge: 10.000 Pa, 180 dk, 520 ml hazne. İstasyonu yok, mop sabit ped ve kalkmıyor. Satıcıların çoğu pazar yeri; büyük perakendeci olarak yalnızca Trendyol'daki SATÜRN (13.731 TL) görünüyor. Türkiye garantili ilanı seçin.",
+  "forWho": [
+   "Bütçesi 12–14 bin TL olan, süpürme ağırlıklı kullanıcılar",
+   "Küçük daireler"
+  ],
+  "notFor": [
+   "Mopla silme isteyenler",
+   "Yerde eşya çok olan evler (tampon)"
+  ],
+  "pros": [
+   "10.000 Pa emiş, LiDAR, dolaşma önleyici fırça",
+   "520 ml toz haznesi, 180 dk çalışma"
+  ],
+  "cons": [
+   "İstasyon yok, mop sabit ped",
+   "Engel algılama yalnızca tampon",
+   "Satıcıların çoğu pazar yeri; Hepsiburada'da ilk satıcı küçük bir mağaza"
+  ],
+  "liked": [],
+  "disliked": [],
+  "issues": [
+   "Modele özel Şikâyetvar başlığı yok; Xiaomi genelinde servis/garanti şikâyetleri yüksek."
+  ]
  }
 }

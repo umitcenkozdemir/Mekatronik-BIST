@@ -1,8 +1,34 @@
 {
  "_note": "Derin incelemede ürün sayfasından doğrulanan sınıflandırma düzeltmeleri",
- "ecovacs-deebot-t90-omni": {"mop": "Rulo mop", "obst": "Yapay zekâ / kamera", "cam": true, "src": "Hepsiburada başlığı: OZMO Roller 3.0, AIVI 3D 4.0"},
- "roborock-s9": {"mop": "Titreşimli", "src": "VibraRise 2.0 titreşimli mop"},
- "roborock-s9-plus": {"mop": "Titreşimli", "src": "VibraRise 2.0 titreşimli mop"},
- "roborock-s8-pro": {"mop": "Titreşimli", "src": "VibraRise 2.0 titreşimli mop"},
- "dyson-spot-plusscrub-ai": {"obst": "Yapay zekâ / kamera", "cam": true, "src": "HD kamera ve yapay zekâ kir tanıma"}
+ "ecovacs-deebot-t90-omni": {
+  "mop": "Rulo mop",
+  "obst": "Yapay zekâ / kamera",
+  "cam": true,
+  "src": "Hepsiburada başlığı: OZMO Roller 3.0, AIVI 3D 4.0"
+ },
+ "roborock-s9": {
+  "mop": "Titreşimli",
+  "src": "VibraRise 2.0 titreşimli mop"
+ },
+ "roborock-s9-plus": {
+  "mop": "Titreşimli",
+  "src": "VibraRise 2.0 titreşimli mop"
+ },
+ "roborock-s8-pro": {
+  "mop": "Titreşimli",
+  "src": "VibraRise 2.0 titreşimli mop"
+ },
+ "dyson-spot-plusscrub-ai": {
+  "obst": "Yapay zekâ / kamera",
+  "cam": true,
+  "src": "HD kamera ve yapay zekâ kir tanıma"
+ },
+ "ecovacs-deebot-t80-omni": {
+  "mop": "Rulo mop",
+  "src": "Hepsiburada başlığı: Kendini Temizleyen OZMO Roller ve Sıcak Su ile Paspas Yıkama (1 Kasım 2026)"
+ },
+ "xiaomi-x20-max-2": {
+  "obst": "3D / yapısal ışık",
+  "src": "Hepsiburada ürün açıklaması: Yapılandırılmış ışıklı ve kenar lazerli hassas engel atlama sistemi (1 Kasım 2026)"
+ }
 }

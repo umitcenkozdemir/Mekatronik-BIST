@@ -21,6 +21,10 @@ for f in glob.glob(S+'/list2/*.json'):
                 elif s.startswith('*'): break
                 j+=1
             out[url]=dict(name=name,url=url,type=typ,runtime=vals[0] if vals else None,battery=vals[2] if len(vals)>2 else None,suction=vals[3] if len(vals)>3 else None,page=page)
+import os  # MERGE: önceki fiyatsız modelleri koru (sayfa sırası değişince kaybolmasınlar), bugün fiyatlı olanları çıkar
+if os.path.exists(S+'/oos.json'):
+    for o in json.load(open(S+'/oos.json')):
+        if o['url'] not in priced and o['url'] not in out: out[o['url']]=o
 json.dump(list(out.values()),open(S+'/oos.json','w'),ensure_ascii=False)
 print(len(out)); import collections; print(collections.Counter(o['name'].split()[0] for o in out.values()).most_common(25))
 print([o['name'] for o in out.values()][:40])

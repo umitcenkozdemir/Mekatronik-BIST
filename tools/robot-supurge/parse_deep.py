@@ -15,7 +15,9 @@ def hb_product(t,url):
     m=re.search(r'\nSatıcı: \[([^\]]+)\]',t); o['seller']=m.group(1) if m else None
     head=t[:t.find('Ürün Bilgileri')] if 'Ürün Bilgileri' in t else t[:20000]
     o['official']='Resmi Satıcı' in head
-    m=re.search(r'Takip et\s*\n+\s*([\d.]+,\d\d) TL',head) or re.search(r'\n([\d.]+,\d\d) TL\s*\n',head)
+    m=re.search(r'Takip et[^\n]*\s*\n+(?:\s*Sepete özel fiyat\s*\n+)?\s*([\d.]+,\d\d) TL',head)
+    if not m:  # ek garanti / koruma paketi ve "sepete özel" fiyatlarını atla
+        m=next((x for x in re.finditer(r'\n([\d.]+,\d\d) TL\s*\n',head) if not re.search(r'Detayları incele|Sepete özel|Ürüne git|Kazancımı gör|kazanç|İndirim',head[max(0,x.start()-60):x.start()])),None)
     o['price']=TLn(m.group(1)) if m else None
     o['buyable']=('Sepete ekle' in head) and not re.search(r'Tükendi|Gelince haber ver|Stokta yok|şu an satışta değil',head,re.I)
     o['tr_warranty']=bool(re.search(r'Türkiye Garantili',t)) ; o['importer']=bool(re.search(r'İthalatçı Garantili',t))
@@ -43,7 +45,10 @@ src=open(S+'/parse_rate2.py').read(); exec('import re\n'+src[src.index('ACC='):s
 def hb_search(t,o):
     k=keyname(o)
     for mm in re.finditer(r'\[!\[Image \d+: ([^\]]+)\]\([^)]*\)\]\((https://www\.hepsiburada\.com/[^ )"]+)',t):
-        if k in comp(mm.group(1)) and not ACC.search(mm.group(1)): return dict(url=mm.group(2),title=mm.group(1),fromSearch=True)
+        ct=comp(mm.group(1)); j=ct.find(k)
+        if j<0 or ACC.search(mm.group(1)): continue
+        if re.match(r'(ultra|pro|plus|max|omni|lite|mini|gen|se|ae|ce|complete|s|e|\d)',ct[j+len(k):]): continue  # başka varyant (ör. D20 -> D20 Ultra)
+        if True: return dict(url=mm.group(2),title=mm.group(1),fromSearch=True)
     return None
 # --- MediaMarkt search
 def mm_search(t,o):
