@@ -6,7 +6,10 @@ t=open(S+'/template.html').read()
 D=json.load(open(S+'/robots2.json'))
 # sayfada yalnızca satıştaki modeller: stokta olmayan eski modeller ve tek satıcılı doğrulanamayanlar çıkarılır
 D['hidden']=dict(oos=sum(1 for o in D['items'] if o['stock']=='yok')+len(D.get('oos',[])),tek=sum(1 for o in D['items'] if o['stock']!='yok' and o.get('ver')=='tek'))
-D['items']=[o for o in D['items'] if o['stock']!='yok' and o.get('ver')!='tek']
+# 2024 ve öncesi çıkıp yalnızca pazar yeri satıcılarında kalan modeller: eski stok, fiyatlar güvenilmez -> listeden çıkar
+_old_pz=lambda o: o.get('ver')=='pazaryeri' and (o.get('imgId') or 10**9)<985000
+D['hidden']['oldpz']=sum(1 for o in D['items'] if o['stock']!='yok' and _old_pz(o))
+D['items']=[o for o in D['items'] if o['stock']!='yok' and o.get('ver')!='tek' and not _old_pz(o)]
 D['oos']=[]
 d=json.dumps(D,ensure_ascii=False,separators=(',',':')).replace('</','<\\/')
 body=t.replace('/*__DATA__*/',d,1)
