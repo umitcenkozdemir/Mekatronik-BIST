@@ -1,0 +1,11 @@
+# ham Tavily çıktıları (büyük); işlenmiş JSON dosyaları tutulur
+list/
+raw_detail/
+sv/
+deep/*.json
+deep/*/*.json
+!deep/*/research.json
+!deep/*/queue.json
+buzdolabi.html
+data.json
+detail_batches.json
