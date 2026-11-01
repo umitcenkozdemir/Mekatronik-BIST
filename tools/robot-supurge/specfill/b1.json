@@ -1,0 +1,5 @@
+{
+"roborock-s8-maxv-ultra":{"stDust":2.5,"stClean":4,"stDirty":3.5,"specSrc":"Bağımsız inceleme (Jamie Andrews): 2,5 L toz torbası, 4 L temiz, 3,5 L kirli su tankı"},
+"roborock-saros-20":{"kg":5.05,"ch":2.5,"rt":180,"specSrc":"Roborock ABD ürün sayfası: robot 5,05 kg, 2,5 saat şarj; Business Insider: 180 dk"},
+"roborock-s7-max-ultra":{"kg":4.5,"specSrc":"Roborock ABD ürün sayfası: robot 10 lb (≈4,5 kg)"}
+}

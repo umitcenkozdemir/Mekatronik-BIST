@@ -32,6 +32,14 @@ TAG=$(date +%Y%m%d)
    Yeni modelleri `profile_queue.json`'a popülerlik sırasına göre ekle (liste sayfasındaki sırası).
 5. `python3 -I parse_oos.py $W` (fiyatsız eski modeller listesi).
 
+## 1b. Özellik tamamlama (her gün 20 model, en pahalıdan)
+
+Hedef: hiçbir modelde boş özellik kalmaması. `spec_gaps.json` eksik alanları en pahalı modelden başlayarak listeler
+(rebuild sonrası yeniden üretilir). Sıradaki 20 model için üretici sayfası ve bağımsız incelemelerden (Tavily search) değer bul,
+`specfill/bN.json` dosyasına yaz: `{id: {alan: değer, "na": [aranıp bulunamayan alanlar], "specSrc": "kaynak"}}`.
+Alanlar: pa (Pa), mah, rt (dk), ch (saat), db, dust (ml), water (ml), h (mm), kg, climb (mm), stDust/stClean/stDirty (L), sides.
+Kaynakta bulunamayan değerler "na" listesine girer; sayfada "Üretici açıklamıyor" yazar. Tahmin yazma.
+
 ## 2. Derin inceleme (20 model)
 
 1. `python3 -I deep_urls.py $W $B 20` → 6 grup adres basar ve `deep/$B/queue.json` yazar.

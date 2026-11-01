@@ -3,9 +3,11 @@
 set -e
 W="$(cd "$(dirname "$0")" && pwd)"; cd "$W"
 WHEN="${1:-$(date '+%d.%m.%Y %H:%M')}"
+python3 -I specfill/merge.py "$W" >/dev/null
 RS_WORK="$W" python3 -I build.py
 python3 -I build_rel.py "$W" >/dev/null
 python3 -I attach_oos.py "$W" "$WHEN"
 python3 -I enrich.py "$W"
 python3 -I ikinciel/build_used.py "$W" >/dev/null
+python3 -I specfill/gaps.py "$W"
 python3 -I assemble.py "$W" "$W/../../public/robot-supurge/index.html"

@@ -69,6 +69,36 @@
   "dust": 350,
   "tangle": true,
   "combo": true,
-  "src": "eufy ürün sayfası ve incelemeler: üçlü çizgi lazer engel algılama, 350 ml hazne, Pro-Detangle fırça, robottan çıkan 30.000 Pa dikey/el süpürgesi (1 Kasım 2026)"
+  "src": "eufy ürün sayfası, Homes & Gardens, Vacuum Wars, Consumer Reports: üçlü çizgi lazer, 350 ml hazne, 65–70 dB, halı algılama, robottan çıkan 30.000 Pa dikey/el süpürgesi; pil kapasitesi ve robot ağırlığı yayımlanmamış (1 Kasım 2026)",
+  "db": 65,
+  "carpet": true,
+  "na": [
+   "mah",
+   "kg"
+  ],
+  "comboSpec": {
+   "Emiş gücü": "30.000 Pa",
+   "Çalışma süresi": "25–30 dk (bağımsız inceleme)",
+   "Ağırlık": "≈2,3 kg (el ünitesi, bağımsız inceleme)",
+   "Filtre": "5 aşamalı AeroTurbo filtre",
+   "Aparatlar": "Teleskopik boru, zemin başlığı, 2 el aparatı",
+   "Boşaltma": "El ünitesi de aynı istasyona boşaltılıyor"
+  }
+ },
+ "roborock-s8-maxv-ultra": {
+  "stDust": 2.5,
+  "stClean": 4,
+  "stDirty": 3.5,
+  "specSrc": "Bağımsız inceleme (Jamie Andrews): 2,5 L toz torbası, 4 L temiz, 3,5 L kirli su tankı"
+ },
+ "roborock-saros-20": {
+  "kg": 5.05,
+  "ch": 2.5,
+  "rt": 180,
+  "specSrc": "Roborock ABD ürün sayfası: robot 5,05 kg, 2,5 saat şarj; Business Insider: 180 dk"
+ },
+ "roborock-s7-max-ultra": {
+  "kg": 4.5,
+  "specSrc": "Roborock ABD ürün sayfası: robot 10 lb (≈4,5 kg)"
  }
 }
