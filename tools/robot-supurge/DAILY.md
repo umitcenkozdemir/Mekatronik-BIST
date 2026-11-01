@@ -1,6 +1,6 @@
 # Robot Süpürge Rehberi — günlük iş
 
-Her gün: (1) listeyi tazele, yeni modelleri bul, (2) sıradaki 20 doğrulanmış modeli derinlemesine incele,
+Her gün: (1) listeyi tazele, yeni modelleri bul, (2) profili olmayan modelleri derinlemesine incele (1 Kasım 2026 itibarıyla satıştaki 270 modelin tamamı incelendi; artık yalnızca yeni çıkan modeller kalıyor),
 (3) sayfayı yeniden üret, yayınla, repoya gönder.
 
 - Dal: `claude/robot-vacuum-comparison-portal-2g35xg`
@@ -35,6 +35,7 @@ TAG=$(date +%Y%m%d)
 ## 2. Derin inceleme (20 model)
 
 1. `python3 -I deep_urls.py $W $B 20` → 6 grup adres basar ve `deep/$B/queue.json` yazar.
+   Kuyruk boşsa yalnızca pazar yerinde satılanlar için `--pz` ekle. İkisi de boşsa bu adımı atla.
 2. Her grubu Tavily extract (advanced) ile çek, çıktıları `deep/$B/{epey,hb,hbrev,mm,tek,amz}.json` olarak kaydet.
 3. `python3 -I parse_deep.py $W deep/$B` → `deep/$B/research.json` ve özet satırları.
 4. HB ürün linki olmayanlar için: `python3 -I deep_urls.py $W $B --second` → basılan adresleri çek,
