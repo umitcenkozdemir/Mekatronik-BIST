@@ -91,6 +91,10 @@ for it in L:
         if n not in sellers or p<sellers[n]: sellers[n]=p
     sl=sorted(sellers.items(),key=lambda x:x[1])
     price=it['price']
+    # derin incelemede doğrulanan alan düzeltmeleri (corrections.json)
+    dust=_C.get('dust',dust); tangle=_C.get('tangle',tangle); hepa=_C.get('hepa',hepa); climb=_C.get('climb',climb); h=_C.get('h',h)
+    combo=bool(ot & {'El Süpürgesi Olarak Kullanılabilen Özel Gövde','30000 Pa El Süpürgesi'}) or bool(_C.get('combo'))
+    spot='FlexiOne Taşınabilir Derin Temizleyici' in ot or bool(_C.get('spot'))
     # ---- score (0-100)
     sc={}
     sc['emis']= 0 if not pa else max(0,min(1,math.log(pa/1500)/math.log(30000/1500)))*15
@@ -102,9 +106,9 @@ for it in L:
     sc['pil']= 0 if not run else max(0,min(1,(run-60)/(240-60)))*8
     sc['akilli']=(2 if wifi else 0)+(1 if multimap else 0)+(1 if roomset else 0)+(1 if (voice or matter) else 0)+(1 if carpet else 0)+(1 if zone else 0)
     sc['esik']= 0 if not climb else (1 if climb<18 else 2 if climb<22 else 3.5 if climb<40 else 5)
-    sc['ekstra']=(2 if brushext else 0)+(1 if tangle else 0)+(1 if hepa else 0)+(1 if pet else 0)
+    sc['ekstra']=min(5,(2 if brushext else 0)+(1 if tangle else 0)+(1 if hepa else 0)+(1 if pet else 0)+(2 if combo else 0)+(1 if spot else 0))
     score=round(sum(sc.values()),1)
-    out.append(dict(id=re.sub(r'\.html$','',it['url'].rsplit('/',1)[1]),name=name,brand=brand,model=model,type={'Robot Süpürge+Mop':'Süpürge + Mop','Robot Süpürge':'Sadece süpürge','Robot Mop':'Sadece mop'}.get(typ,typ),
+    out.append(dict(id=re.sub(r'\.html$','',it['url'].rsplit('/',1)[1]),name=name,brand=brand,model=model,type='Robot + dikey süpürge' if combo else {'Robot Süpürge+Mop':'Süpürge + Mop','Robot Süpürge':'Sadece süpürge','Robot Mop':'Sadece mop'}.get(typ,typ),combo=combo,spot=spot,
         price=round(price),sites=0 if it.get('gone') else it['sites'],stock='yok' if (it.get('gone') or (IMG.get(it['url'],10**9)<900000 and it['sites']<=2)) else ('var' if it['sites']>=3 else 'sinirli'),old=bool(IMG.get(it['url'],10**9)<900000),gone=bool(it.get('gone')),imgId=IMG.get(it['url']),lastSites=it['sites'],sellers=sl[:8],url=it['url'],
         pa=pa,mah=mah,rt=rt,ch=ch,db=db,w=w,dust=dust,water=water,h=h,kg=kg,climb=climb,area=area,stDust=st_dust,stClean=st_clean,stDirty=st_dirty,
         nav=nav,navRaw=navraw,cam=has_cam,obst=obst,mop=mop,mopLift=mop_lift,mopLiftMm=mop_lift_mm,mopExt=mopext,mopDetach=mopdetach,

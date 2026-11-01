@@ -63,5 +63,12 @@
  "roborock-s8-pro-plus": {
   "mop": "Titreşimli",
   "src": "VibraRise titreşimli mop (1 Kasım 2026)"
+ },
+ "anker-eufy-3-in-1-e20": {
+  "obst": "3D / yapısal ışık",
+  "dust": 350,
+  "tangle": true,
+  "combo": true,
+  "src": "eufy ürün sayfası ve incelemeler: üçlü çizgi lazer engel algılama, 350 ml hazne, Pro-Detangle fırça, robottan çıkan 30.000 Pa dikey/el süpürgesi (1 Kasım 2026)"
  }
 }

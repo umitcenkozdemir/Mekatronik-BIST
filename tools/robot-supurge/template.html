@@ -148,6 +148,7 @@ aside.filters{align-self:start;min-width:0;padding-right:6px}
 .uinline{background:var(--sunk);border-radius:8px;padding:10px 12px}.uinline h3{margin:0 0 4px}
 @media (max-width:520px){.unums{grid-template-columns:1fr 1fr}}
 
+.oddp{margin:0;font-size:calc(12px*var(--fs));color:var(--bad);background:var(--warn-soft);border-radius:6px;padding:4px 8px}
 .badge{font-size:calc(11px*var(--fs));font-weight:600;padding:2px 7px;border-radius:5px;white-space:nowrap}
 .badge.par{background:var(--good-soft);color:var(--good)}
 .badge.one{background:var(--warn-soft);color:var(--warn)}
@@ -572,7 +573,7 @@ const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&
 const $=s=>document.querySelector(s);
 const YB=[[640000,2020],[720000,2021],[830000,2022],[895000,2023],[985000,2024],[1050000,2025]];
 const yearOf=id=>{if(!id)return null;for(const [l,y] of YB)if(id<l)return y;return 2026};
-ITEMS.forEach(r=>{r.yr=yearOf(r.imgId)});
+ITEMS.forEach(r=>{r.yr=yearOf(r.imgId);r.odd=r.sites<=2&&r.price>20000&&r.exp&&r.score<r.exp*0.7});
 const LITE=OOS.map((o,i)=>{const b=BR[o.b]||{};return {id:"oos-"+i,lite:true,yr:yearOf(o.i),name:o.n,brand:o.b,model:o.n.slice(o.b.length).trim(),type:o.t,pa:o.pa,rt:o.rt,mah:o.mah,url:o.u,
   stock:"yok",price:null,sites:0,lastSites:0,score:null,fp:null,tlp:null,nav:"Bilinmiyor",obst:"Bilinmiyor",mop:"Bilinmiyor",station:"Bilinmiyor",net:b.network||"Bilinmiyor",w:b.warranty||null,
   voice:[],extras:[],sc:{},ur:null,urc:0,as:b.as??null,sellers:[],svHits:[],svHitN:0,acc:0}});
@@ -591,7 +592,7 @@ const GROUPS={
  nav:["LiDAR","Kamera (vSLAM)","ToF / 3D","Jiroskop","Diğer","Rastgele"],
  mop:["Çift döner","Rulo mop","Titreşimli","Basınçlı ped","Sabit ped","Yok"],
  obst:["Yapay zekâ / kamera","3D / yapısal ışık","Temel sensör","Tampon"],
- type:["Süpürge + Mop","Sadece süpürge","Sadece mop"],
+ type:["Süpürge + Mop","Sadece süpürge","Robot + dikey süpürge","Sadece mop"],
  net:["Türkiye geneli","Çok noktalı","Merkezi","Bilinmiyor"],
  stock:["var","sinirli"],
  feat:FEATS.map(f=>f[0])
@@ -630,7 +631,7 @@ function filterOut(skip){
     if(S.pareto&&!r.pareto)return false;
     return true});
 }
-const SORTS={fp:(a,b)=>b.fp-a.fp||b.score-a.score,score:(a,b)=>b.score-a.score||a.price-b.price,price:(a,b)=>a.price-b.price,"-price":(a,b)=>b.price-a.price,
+const SORTS={fp:(a,b)=>b.fp-a.fp||b.score-a.score,score:(a,b)=>b.score-a.score||a.price-b.price,price:(a,b)=>a.price-b.price,"-price":(a,b)=>(a.odd-b.odd)||b.price-a.price,
   pa:(a,b)=>(b.pa||0)-(a.pa||0),rt:(a,b)=>(b.rt||0)-(a.rt||0),sites:(a,b)=>b.sites-a.sites||a.price-b.price,tlp:(a,b)=>a.tlp-b.tlp,deep:(a,b)=>(!!b.prof-!!a.prof)||b.fp-a.fp,yr:(a,b)=>(b.yr||0)-(a.yr||0)||(b.imgId||0)-(a.imgId||0)||b.fp-a.fp,
   ur:(a,b)=>((b.urc>=20?b.ur:0)||0)-((a.urc>=20?a.ur:0)||0)||b.urc-a.urc,urc:(a,b)=>b.urc-a.urc,as:(a,b)=>(b.as??-1)-(a.as??-1)||b.fp-a.fp};
 
@@ -715,11 +716,13 @@ $("#activef").addEventListener("click",e=>{
 /* ---------- cards ---------- */
 function specChips(r){
   const c=[];
+  if(r.combo)c.push(["Robottan çıkan dikey + el süpürgesi",true]);
+  if(r.spot)c.push(["Taşınabilir leke temizleyici",true]);
   if(r.pa)c.push([`${fmt(r.pa)} Pa`,r.pa>=15000]);
   c.push([r.nav,r.nav==="LiDAR"]);
   c.push([r.station,r.station==="Tam istasyon"]);
   if(r.mop!=="Yok")c.push([r.mop+" mop",r.mop==="Çift döner"||r.mop==="Rulo mop"]);
-  if(r.obst==="Yapay zekâ / kamera")c.push(["Yapay zekâ engel",true]);
+  if(r.obst==="Yapay zekâ / kamera")c.push(["Yapay zekâ engel",true]);else if(r.obst==="3D / yapısal ışık")c.push(["3D engel algılama",false]);
   if(r.rt)c.push([`${r.rt} dk`,r.rt>=180]);
   if(r.hotWash)c.push(["Sıcak su",true]);
   if(r.mopLift)c.push(["Mop kaldırma",false]);
@@ -742,7 +745,7 @@ function card(r){
   return `<article class="card">
   <div class="top"><div style="min-width:0"><div class="brand">${esc(r.brand)}${r.yr?` <span class="yr" title="Türkiye'de satışa çıkış yılı (tahmini)">· ≈${r.yr}</span>`:""}</div><h4><button type="button" data-open="${r.id}">${esc(r.model||r.name)}</button></h4></div>
   <div class="badges">${r.prof?`<span class="badge deep" title="Mağaza stokları, satıcılar ve kullanıcı yorumları tek tek incelendi">✓ Detaylı incelendi</span>`:""}${r.pareto?`<span class="badge par" title="Bu fiyata veya altında daha yüksek puanlı model yok">Fiyatına göre en iyi</span>`:""}${r.ver==="pazaryeri"?`<span class="badge one" title="Sadece pazar yeri satıcılarında; büyük mağaza veya resmi satıcıda bulunamadı. Garanti türünü kontrol edin.">Pazar yeri</span>`:""}</div></div>
-  <div class="price-row"><span class="price">${TL(r.price)}</span>${stockBadge(r)}</div>${r.prof?`<p class="verd">${esc(r.prof.verdict.split(". ")[0])}.</p>`:""}
+  <div class="price-row"><span class="price">${TL(r.price)}</span>${stockBadge(r)}</div>${r.odd?`<p class="oddp" title="Tek veya iki satıcının fiyatı; özellikleri bu fiyattaki modellerin çok gerisinde">Fiyat gerçek dışı olabilir; satın almadan önce başka mağazalarda kontrol edin.</p>`:""}${r.prof?`<p class="verd">${esc(r.prof.verdict.split(". ")[0])}.</p>`:""}
   <div class="trust"><span>${r.ur!=null?`${stars(r.ur)} <span class="muted">(${fmt(r.urc)} değ.)</span>`:`<span class="muted">Kullanıcı puanı bulunamadı</span>`}</span>${r.as!=null?`<span class="as as${asBand(r.as)}" title="Marka satış sonrası notu (0–100)">Satış sonrası ${r.as}</span>`:`<span class="muted">Satış sonrası: veri yok</span>`}</div>
   <div class="meters">
     <div class="meter"><div class="lab">Özellik puanı <b>${r.score.toFixed(0)}</b></div><div class="bar"><i style="width:${r.score}%"></i></div></div>

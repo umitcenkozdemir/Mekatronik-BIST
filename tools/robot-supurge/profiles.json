@@ -4486,23 +4486,33 @@
  },
  "anker-eufy-3-in-1-e20": {
   "date": "1 Kasım 2026",
-  "verdict": "Robot süpürge, dikey süpürge ve el süpürgesi bir arada: robotun gövdesinden çıkan el ünitesi dikey süpürgeye dönüşüyor. Yalnızca Anker Türkiye Amazon'da satıyor; görünen 100 bin TL fiyat gerçek dışı (muhtemelen hatalı ilan). Mop yok, 8.000 Pa.",
+  "verdict": "Robot süpürge, dikey süpürge ve el süpürgesi tek cihazda: robotun içindeki süpürge ünitesi çıkarılıp sapa takılınca 30.000 Pa'lık kablosuz dikey süpürgeye dönüşüyor. Robot modunda 8.000 Pa, LiDAR, üçlü çizgi lazerle milimetre düzeyinde engel algılama, 180 dk pil ve 75 güne kadar toz biriktiren 3 litre torbalı boşaltma istasyonu var. Mop yok. Eufy modeli 2026'dan itibaren üretimden kaldırdı. Türkiye'de görünen tek fiyat Amazon'daki Anker Türkiye ilanı (99.999 TL); bu, Avrupa fiyatının (549 €) yaklaşık üç katı ve gerçekçi değil.",
   "forWho": [
-   "Tavsiye edilmez (fiyat hatalı)"
+   "Hem robot hem kablosuz dikey süpürge isteyenler",
+   "Alerjisi olanlar (5 aşamalı filtre)"
   ],
   "notFor": [
-   "Paspas isteyenler"
+   "Paspas isteyenler",
+   "Alçak mobilyalı evler (11,85 cm)"
   ],
   "pros": [
-   "Robot + dikey + el süpürgesi",
-   "Toz boşaltma istasyonu"
+   "Tek cihazda robot + dikey + el süpürgesi, dikey modda 30.000 Pa",
+   "Üçlü lazer engel algılama, dolaşmayan fırça",
+   "Robot ve el ünitesi aynı istasyona boşaltıyor (75 gün)"
   ],
   "cons": [
-   "100 bin TL fiyat gerçek dışı",
-   "Mop yok, 11,85 cm yükseklik"
+   "Mop yok",
+   "Türkiye fiyatı (99.999 TL) gerçek dışı; üretimden kalktı",
+   "Dikey modda pil 25–30 dk"
   ],
-  "liked": [],
-  "disliked": [],
+  "liked": [
+   "Robot modunda tek şarjla tüm evi temizlemesi (yabancı incelemeler)",
+   "Yapı kalitesi"
+  ],
+  "disliked": [
+   "Dikey ve el modunda kısa pil süresi",
+   "Toz haznesinin küçük olması (350 ml)"
+  ],
   "issues": []
  },
  "roborock-qrevo-curv": {
