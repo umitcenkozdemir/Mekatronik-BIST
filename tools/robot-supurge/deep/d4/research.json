@@ -1,0 +1,990 @@
+{
+ "simart-katya-o": {
+  "id": "simart-katya-o",
+  "name": "Şımart Katya O",
+  "offers": [],
+  "hbSearch": null,
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=%C5%9E%C4%B1mart+Katya+O"
+ },
+ "mova-z70-ultra-roller-complete": {
+  "id": "mova-z70-ultra-roller-complete",
+  "name": "Mova Z70 Ultra Roller Complete",
+  "offers": [],
+  "amz": [],
+  "hb": {
+   "url": "https://www.hepsiburada.com/z70-ultra-roller-complete-pm-HBC0000IUZ4D7",
+   "seller": "MOVA Türkiye",
+   "official": false,
+   "price": 74999.0,
+   "buyable": true,
+   "tr_warranty": false,
+   "importer": false,
+   "others": [],
+   "rating": 3.0,
+   "count": 1,
+   "stars": [
+    0,
+    0,
+    1,
+    0,
+    0
+   ],
+   "reviews": [
+    {
+     "date": "28 Eylül",
+     "text": "Çok araştırarak, dreame x40 ultra dan sonra ve dreame den çok memnundum, daha yeni teknoloji ve daha yeni ürün diye aldığım ürün, muhtemelen sorun vardı çünkü 36bin pascal bir ürün bu kadar kötü çekemez bende iade ettim ve firma çya çok teşekkür ederim, 2 günde iademi onayladılar.",
+     "seller": "MOVA Türkiye",
+     "up": 1,
+     "down": 0
+    }
+   ]
+  },
+  "mm": [
+   {
+    "title": "[MOVA Z70 Ultra Roller Complete Robot Süpürge Siyah](https://www.mediamarkt.com.tr/tr/product/_mova-z70-ultra-roller-complete-robot-supurge-siyah-1256199.html)",
+    "url": "https://www.mediamarkt.com.tr/tr/product/_mova-z60-ultra-roller-complete-robot-supurge-beyaz-172064176.html",
+    "price": 74999.0,
+    "delivery": true,
+    "store_pickup": true
+   }
+  ],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Mova+Z70+Ultra+Roller+Complete"
+ },
+ "dreame-d20-ultra": {
+  "id": "dreame-d20-ultra",
+  "name": "Dreame D20 Ultra",
+  "offers": [],
+  "tek": [],
+  "hb": {
+   "url": "https://www.hepsiburada.com/d20-ultra-robot-supurge-beyaz-13-000pa-emis-gucu-duoscrub-paspaslama-sistemi-pm-HBC000098DY68",
+   "seller": "Hepsiburada",
+   "official": true,
+   "price": null,
+   "buyable": false,
+   "tr_warranty": false,
+   "importer": false,
+   "others": [],
+   "reviews": []
+  },
+  "mm": [
+   {
+    "title": "[DREAME D20 Ultra Robot Süpürge Beyaz](https://www.mediamarkt.com.tr/tr/product/_dreame-d20-ultra-robot-supurge-beyaz-1248098.html)",
+    "url": "https://www.mediamarkt.com.tr/tr/product/_dreame-l50s-pro-ultra-robot-supurge-beyaz-1256601.html",
+    "price": 29999.0,
+    "delivery": true,
+    "store_pickup": true
+   }
+  ],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Dreame+D20+Ultra"
+ },
+ "xiaomi-h50": {
+  "id": "xiaomi-h50",
+  "name": "Xiaomi H50",
+  "offers": [],
+  "tek": [
+   {
+    "title": "Xiaomi H50 Çöp İstasyonlu Robot Süpürge ve Paspas 10.000 Pa",
+    "price": 24999.0,
+    "url": "https://www.teknosa.com/xiaomi-h50-cop-istasyonlu-robot-supurge-paspas-10000-pa-p-100000062603",
+    "buyable": true
+   }
+  ],
+  "hb": {
+   "url": "https://www.hepsiburada.com/robot-vacuum-h50-beyaz-akilli-robot-supurge-paspas-10000-pa-emis-gucu-xiaomi-tr-garantili-pm-HBC0000DTTLIK",
+   "seller": "Hepsiburada",
+   "official": true,
+   "price": 22999.0,
+   "buyable": true,
+   "tr_warranty": false,
+   "importer": false,
+   "others": [
+    {
+     "seller": "ASG TEKNOLOJİ",
+     "score": "8,8",
+     "auth": true,
+     "price": 26100.0
+    },
+    {
+     "seller": "Xiaomi Store Türkiye",
+     "score": null,
+     "auth": true,
+     "price": 32999.0
+    }
+   ],
+   "rating": 5.0,
+   "count": 1,
+   "stars": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "reviews": [
+    {
+     "date": "29 Ekim",
+     "text": "Çok çabuk geldi",
+     "seller": "Hepsiburada",
+     "up": 0,
+     "down": 0
+    }
+   ]
+  },
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Xiaomi+H50"
+ },
+ "roborock-saros-z70": {
+  "id": "roborock-saros-z70",
+  "name": "Roborock Saros Z70",
+  "offers": [],
+  "amz": [],
+  "tek": [
+   {
+    "title": "Roborock Saros Z70 Gümüş Robot Süpürge",
+    "price": 100999.0,
+    "url": "https://www.teknosa.com/roborock-saros-z70-gumus-robot-supurge-p-100000054482",
+    "buyable": true
+   },
+   {
+    "title": "Roborock Saros Z70 Orijinal Deterjan Yüzey Temizleme Solüsyonu 1 Litre-Çin Yerel Ambalajlı",
+    "price": 3710.36,
+    "url": "https://www.teknosa.com/roborock-saros-z70-orijinal-deterjan-yuzey-temizleme-solusyonu-1-litre-cin-yerel-ambalajli-p-787135594",
+    "buyable": true
+   }
+  ],
+  "hb": {
+   "url": "https://www.hepsiburada.com/roborock-saros-z70-gumus-robot-supurge-22-000-pa-emis-gucu-omnigrip-mekanik-kol-40mm-engel-asma-80-c-hijyenik-paspas-yikama-ve-kurutma-istasyonlu-3d-tof-navigasyon-180-dakika-calisma-suresi-pm-HBC0000DH7XQ1",
+   "seller": "MRl",
+   "official": false,
+   "price": null,
+   "buyable": true,
+   "tr_warranty": false,
+   "importer": false,
+   "others": [
+    {
+     "seller": "MORTIK",
+     "score": "9,4",
+     "auth": true,
+     "price": 94091.0
+    },
+    {
+     "seller": "MuFaBel",
+     "score": "9,8",
+     "auth": true,
+     "price": 119999.0
+    }
+   ],
+   "rating": 5.0,
+   "count": 1,
+   "stars": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "reviews": [
+    {
+     "date": "31 Mart",
+     "text": "Muhteşem bir ürün çok memnun kaldım",
+     "seller": "MORTIK",
+     "up": 1,
+     "down": 0
+    }
+   ]
+  },
+  "mm": [
+   {
+    "title": "[ROBOROCK Saros Z70 Robot Süpürge Gümüş](https://www.mediamarkt.com.tr/tr/product/_roborock-saros-z70-robot-supurge-gumus-1246735.html)",
+    "url": "https://www.mediamarkt.com.tr/tr/product/_roborock-saros-z70-robot-supurge-siyah-1248710.html",
+    "price": 69999.0,
+    "delivery": true,
+    "store_pickup": true
+   },
+   {
+    "title": "[ROBOROCK Saros Z70 Robot Süpürge Siyah](https://www.mediamarkt.com.tr/tr/product/_roborock-saros-z70-robot-supurge-siyah-1248710.html)",
+    "url": "https://www.mediamarkt.com.tr/tr/product/_roborock-qrevo-master-saros-z70-2li-filtre-175229190.html",
+    "price": 69999.0,
+    "delivery": true,
+    "store_pickup": true
+   }
+  ],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Roborock+Saros+Z70"
+ },
+ "dreame-l10s-plus": {
+  "id": "dreame-l10s-plus",
+  "name": "Dreame L10S Plus",
+  "offers": [],
+  "tek": [
+   {
+    "title": "Dreame L10S Plus Robot Süpürge",
+    "price": 19999.0,
+    "url": "https://www.teknosa.com/dreame-l10s-plus-robot-supurge-p-100000053862",
+    "buyable": true
+   }
+  ],
+  "hb": {
+   "url": "https://www.hepsiburada.com/l10s-plus-robot-supurge-beyaz-pm-HBC00007KA9HL",
+   "seller": "Hepsiburada",
+   "official": true,
+   "price": 17999.0,
+   "buyable": true,
+   "tr_warranty": false,
+   "importer": false,
+   "others": [
+    {
+     "seller": "MEMAS TEKNOLOJİ",
+     "score": "9,5",
+     "auth": true,
+     "price": 18900.0
+    },
+    {
+     "seller": "SATÜRN",
+     "score": "9,5",
+     "auth": true,
+     "price": 18899.1
+    }
+   ],
+   "rating": 4.4,
+   "count": 451,
+   "stars": [
+    367,
+    19,
+    10,
+    5,
+    50
+   ],
+   "reviews": [
+    {
+     "date": "07 Mayıs 2025",
+     "text": "İlk defa robot süpürge kullanan biri olarak tek pişmanlığım neden daha önce almadığımdır. Dream markasını daha önce duymadım biraz araştırınca servis ve parça desteği sebebiyle bu markada karar kıldım aradığım krıterler çöpunu kendı boşaltması halıyı ıslatmaması ve telefondan herseyı yönetebılmektı, bu modelde hepsı olunca aldım. Kurulumu gayet kolay zaten herşeyi uygulama üzerinden halledebılıyorsunuz. İlk gün harıtalandırma başlat dedı başlattık ama şarj az olunca tekrar şarja geldı ve yaklaşık 3 saatte şarjını doldurdu tekrar devam ettırebılıyorsunuz 7 dk gıbı bır surede harıtalandırma bıttı her köşeye girmiyor harıtalama yaparken içiniz rahat olsun süpürürken her yere giriyor. Harıtalama",
+     "seller": "Hepsiburada",
+     "up": 202,
+     "down": 11
+    },
+    {
+     "date": "14 Mayıs",
+     "text": "Şu an için sorunsuz çalışıyor ve görevini yapıyor, robotu alırken bakım hizmet paketinin de zorunlu kılınması bence iyi bir durum olmamış, satıcının bunu yeniden değerlendirmesi gerekiyor diye düşünüyorum, üstelik bakım hizmet servisinin de sadece İstanbul'da olması benim için büyük sorun, buna rağmen uygun fiyata aldım ve de iyi ki almışım diyorum",
+     "seller": "Hepsiburada",
+     "up": 5,
+     "down": 5
+    },
+    {
+     "date": "22 Temmuz 2025",
+     "text": "sessiz calisiyor, tertemiz yapti. bittiginde sarj unitesine dönüyor, cöpünü bosaltiyor, sesli olarak ta bilgilendiriyor. henüz silme işlemini denemedim ama paspaslari da diger modellere göre çok daha iyi. Dream xiaomi ye robot süpürge üreten firmaymiş gönül rahatlığı ile alınabilinir. cekim gücü de 7000 pa 👍",
+     "seller": "Hepsiburada",
+     "up": 18,
+     "down": 7
+    },
+    {
+     "date": "24 Ağustos",
+     "text": "Ürün elime sorunsuz ulaştı kargolama güzeldi metaryallerde 1 fırça olması biraz beni biraz hayal kırıklığına uğrattı 2 olsa daha verimli olacağını düşünüyorum şuan şarj olma süresini bekliyorum Denemeden değerlendirmek istemiyorum herhangi bir sorunla karşılaşırsam süpürmede haritalandırmada ve mop özelliğnde iade edeceğim sorun yaşamazsam yorumu güncellerim",
+     "seller": "Hepsiburada",
+     "up": 4,
+     "down": 0
+    },
+    {
+     "date": "07 Nisan 2025",
+     "text": "Daha önce Xiaomi kullanıyordum o direk git gel yaparak süpürüyordu bu ilk önce halı kenarları sonra halinin üzerine çıkarak süpürüyor ama çok güzel didik didik dokunmadigi yer kalmadan süpürdü o yüzden uzun sürüyor her orayı temizlemesi şarjı tam yetmedi istasyona gitti şarjı dolunca tekrar kaldığı yerden devam ediyor",
+     "seller": "Hepsiburada",
+     "up": 22,
+     "down": 8
+    },
+    {
+     "date": "06 Mart",
+     "text": "Gerçek tecrübem görünsün diye 3 yıldız verdim.aslında -5 yıldız olması lazım. Seramik zeminde bile kırıntıları toplamıyor. Öndeki tek fırça ile kırıntıları daha kötü etrafa saçıyor. Silme pedleri asla hiçbir lekeyi çıkartmıyor. 8 metre kar küçük bir mutfağı üst üste 4 kere temizletince ancak temizliyor. Bu bizim kullandığımız ilk robot süpürge değil ama en kötüsü kesinlikle",
+     "seller": "Hepsiburada",
+     "up": 14,
+     "down": 11
+    },
+    {
+     "date": "10 Mayıs",
+     "text": "Anneler günü için anneme hediye aldım. Fiyatına göre inanılmaz iyi bir ürün alırken aklımda çok soru vardı pişman olur muyum diye ama kesinlikle fiyatını hak ediyor. Haritalandırması o kadar kolay ki 4-5 dakika civarı sürdü ve etrafta o kadar engel olmasına rağmen hiç çarpmadan haritayı çıkardı. Sadece oturma odasını hem süpür hem sil modunda başlattım ve ilk deneme de topladığı toza bakın. Tek eleştirebileceğim yönü 20 metrekare oturma odasını 30 dakika da tamamladı. Şarjı biraz hızlı bitiyor ve geç doluyor. Onun dışında temizlik konusunda asla üzmeyecek bir cihaz. Hepsiburada'ya da ayrıca teşekkür etmek istiyorum. 2 gün içinde hızlıca teslim ettiler ve tertemiz geldi.",
+     "seller": "Hepsiburada",
+     "up": 5,
+     "down": 0
+    },
+    {
+     "date": "11 Mayıs 2025",
+     "text": "Çok istediğim bi robottu umarım sorunsuz çalışır hepsiburadaya çok teşekkür ediyorum güzel kampanyası için ayrıca kızım anneler günü hediyesi olarak aldı kızımada çok teşekkür ediyorum",
+     "seller": "Hepsiburada",
+     "up": 5,
+     "down": 0
+    },
+    {
+     "date": "20 Ekim",
+     "text": "Sakın ürünü almayın beğenmeyip geri iade ettiğiniz zaman iade kabul almıyorlar ben de tüketici haklarına başvurdum kullanmadığım halde sıfır ürünü geri iade almıyorlar bir de zorunlu bakım ürünü kitliyorlar hijyen ürünü diyerekten ürünü iade almadılar tarafıma tekrardan göndereceklermiş beş yıldız veriyorum ki yorumum yukarıda görünsün",
+     "seller": "Hepsiburada",
+     "up": 0,
+     "down": 0
+    },
+    {
+     "date": "16 Temmuz",
+     "text": "Ürünün haritalaması çok pratik. Çalışma sesi hiç rahatsız edici değil. Paspas özelliği güzel. Yalnız sadece su kullanmak gerekiyor. Paspas pederi kolaylıkla çıkartılıp takılabiliyor. Tek anlayamadığım şey yanında zorunlu olarak aldığımız bakım paketinin ne işe yaradığı. Bu konuda hiç bir açıklama yok. Bu bir ürün mü? Servis mi? Bakım mı? Hiç bir açıklama yok. Almıyormuş gibi alıyorsunuz sanki. Nasıl kullanılıyor, garantiye dahil mi ayrı bir şey mi hiç belli değil. Mesela ürünü iade etsek bu da iade olur mu? Çok flu. Biz herşeyi mi yaşayarak öğreneceğiz acaba çok merak ediyorum.",
+     "seller": "Hepsiburada",
+     "up": 6,
+     "down": 3
+    }
+   ]
+  },
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Dreame+L10S+Plus"
+ },
+ "xiaomi-robot-vacuum-6": {
+  "id": "xiaomi-robot-vacuum-6",
+  "name": "Xiaomi Robot Vacuum 6 (PV32GL)",
+  "offers": [],
+  "amz": [],
+  "tek": [],
+  "hbSearch": null,
+  "mm": [
+   {
+    "title": "[MOVA E40 Ultra Robot Süpürge Beyaz](https://www.mediamarkt.com.tr/tr/product/_mova-e40-ultra-robot-supurge-beyaz-1250556.html)",
+    "url": "https://www.mediamarkt.com.tr/tr/product/_simart-katya-v-10000pa-guclu-emis-gucu-6400mah-yuksek-batarya-akilli-robot-supurge-siyah-166542304.html",
+    "price": 32999.0,
+    "delivery": true,
+    "store_pickup": true
+   }
+  ],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Xiaomi+Robot+Vacuum+6"
+ },
+ "dreame-aqua-10-ultra-roller": {
+  "id": "dreame-aqua-10-ultra-roller",
+  "name": "Dreame Aqua 10 Ultra Roller",
+  "offers": [],
+  "amz": [],
+  "tek": [],
+  "hb": {
+   "url": "https://www.hepsiburada.com/dreame-aqua-10-ultra-roller-robot-supurge-beyaz-30-000pa-emis-gucu-pm-HBC0000DPU8UE",
+   "seller": "İMERS TECHNOLOGY COMPANY",
+   "official": false,
+   "price": 57599.1,
+   "buyable": true,
+   "tr_warranty": false,
+   "importer": false,
+   "others": [
+    {
+     "seller": "NEONBİL",
+     "score": "9,2",
+     "auth": true,
+     "price": 58999.0
+    },
+    {
+     "seller": "Hepsiburada",
+     "score": null,
+     "auth": true,
+     "price": 59999.0
+    }
+   ],
+   "rating": 1.0,
+   "count": 1,
+   "stars": [
+    0,
+    0,
+    0,
+    0,
+    1
+   ],
+   "reviews": [
+    {
+     "date": "03 Eylül",
+     "text": "Hiç bir temizliği tamamlayamıyor. Her yerde takılıp duruyor. Hiç memnun değilim.",
+     "seller": "Hepsiburada",
+     "up": 2,
+     "down": 2
+    }
+   ]
+  },
+  "mm": [
+   {
+    "title": "[DREAME Aqua10 Ultra Roller Robot Süpürge](https://www.mediamarkt.com.tr/tr/product/_dreame-aqua10-ultra-roller-robot-supurge-1253226.html)",
+    "url": "https://www.mediamarkt.com.tr/tr/product/_dreame-x50-ultra-complete-akilli-robot-supurge-beyaz-167870904.html",
+    "price": 61499.0,
+    "delivery": true,
+    "store_pickup": true
+   }
+  ],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Dreame+Aqua+10+Ultra+Roller"
+ },
+ "dji-romo-s": {
+  "id": "dji-romo-s",
+  "name": "DJI Romo S (CR8F)",
+  "offers": [],
+  "tek": [
+   {
+    "title": "DJI Romo S Çöp İstasyonlu Robot Süpürge",
+    "price": 84112.51,
+    "url": "https://www.teknosa.com/dji-romo-s-cop-istasyonlu-robot-supurge-p-100000060739",
+    "buyable": true
+   }
+  ],
+  "hbSearch": null,
+  "mm": [
+   {
+    "title": "[DJI Romo S Robot Süpürge Water Tank Version](https://www.mediamarkt.com.tr/tr/product/_dji-romo-s-robot-supurge-water-tank-version-1251498.html)",
+    "url": "https://www.mediamarkt.com.tr/tr/product/_rovexa-dji-romo-s-robot-supurge-uyumlu-5-parca-set-186170759.html",
+    "price": 47497.0,
+    "delivery": true,
+    "store_pickup": true
+   }
+  ],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=DJI+Romo+S"
+ },
+ "homend-alex-40": {
+  "id": "homend-alex-40",
+  "name": "Homend Alex 40",
+  "offers": [],
+  "tek": [
+   {
+    "title": "Homend Alex 40 Otomatik Boşaltım Sistemli Moplu 28.000 Pa Robot Süpürge",
+    "price": 45027.0,
+    "url": "https://www.teknosa.com/homend-alex-40-otomatik-bosaltim-sistemli-moplu-28000-pa-robot-supurge-p-787138243",
+    "buyable": true
+   }
+  ],
+  "hb": {
+   "url": "https://www.hepsiburada.com/homend-alex-40-otomatik-bosaltim-sistemli-moplu-28-000-pa-robot-supurge-pm-HBC0000MZ4Y60",
+   "seller": "benial",
+   "official": false,
+   "price": 44862.3,
+   "buyable": true,
+   "tr_warranty": false,
+   "importer": false,
+   "others": [
+    {
+     "seller": "Homend",
+     "score": "9,2",
+     "auth": true,
+     "price": 44999.0
+    }
+   ],
+   "reviews": []
+  },
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Homend+Alex+40"
+ },
+ "narwal-freo-s": {
+  "id": "narwal-freo-s",
+  "name": "Narwal Freo S",
+  "offers": [],
+  "amz": [
+   {
+    "title": "NARWAL Freo silme fonksiyonlu ve otomatik yerleştirme istasyonlu robot süpürge (Freo modu ve DirtSense kir algılama, dön",
+    "url": "https://www.amazon.com.tr/dp/B0C4L1HN45",
+    "price": 34999.0,
+    "buyable": true,
+    "unavailable": false,
+    "lowstock": null,
+    "rating": 4.1,
+    "count": 244,
+    "delivery": "ÜCRETSİZ teslimat 3 Kas Sal"
+   }
+  ],
+  "tek": [],
+  "hb": {
+   "url": "https://www.hepsiburada.com/narwal-freo-s-pm-HBC0000B2Z80S",
+   "seller": "Narwal Türkiye",
+   "official": false,
+   "price": 9999.0,
+   "buyable": true,
+   "tr_warranty": false,
+   "importer": false,
+   "others": [],
+   "rating": 3.5,
+   "count": 10,
+   "stars": [
+    5,
+    0,
+    2,
+    1,
+    2
+   ],
+   "reviews": [
+    {
+     "date": "21 Ekim",
+     "text": "Cihaz gerçekten işini iyi yapıyor, haritalandırma ve temizlik olarak hersey baya başarılı, bu fiyata gerçekten beklentilerimin üzerinde bir performans oldu 👍",
+     "seller": "Narwal Türkiye",
+     "up": 0,
+     "down": 0
+    },
+    {
+     "date": "17 Ekim",
+     "text": "Ürünü gemın uygulaması sayesınde sorunsuz kurduk, 120 metre 4 oda ,salon, mutfak hepsını sorunsuz harıtaladı süpürdü ve pas pasladı istasyona döndüm sorunsuz bosalttı bızım evde zemın hem fayans hem halı gecışlerde hıc sorun yasamadık bır şarj dönümü bıtmedı. Ürünün konuşmasını Türkçe ye cevırdım telefondan sorunsuz komut ve takıp yapabılıyorum. Alacak ve kararsız arkadaşlar bende bıraz cekınerek almıstım ama performansını görünce hemen kızımada aldım.",
+     "seller": "Narwal Türkiye",
+     "up": 1,
+     "down": 1
+    },
+    {
+     "date": "09 Ekim",
+     "text": "Şimdilik 5 yıldız verdim henüz çok deneyemedim ama ilk izlenimleri çık iyi beğendim bu fiyata daha ne olsın",
+     "seller": "Narwal Türkiye",
+     "up": 1,
+     "down": 0
+    },
+    {
+     "date": "20 Ekim",
+     "text": "Fiat performans",
+     "seller": "Narwal Türkiye",
+     "up": 1,
+     "down": 0
+    },
+    {
+     "date": "28 Ekim",
+     "text": "Şun bir sıkıntı yok memnunum",
+     "seller": "Narwal Türkiye",
+     "up": 0,
+     "down": 0
+    }
+   ]
+  },
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Narwal+Freo+S"
+ },
+ "philips-homerun-9000-serisi-xu9100-10": {
+  "id": "philips-homerun-9000-serisi-xu9100-10",
+  "name": "Philips HomeRun 9000 Serisi XU9100/10",
+  "offers": [],
+  "amz": [],
+  "tek": [
+   {
+    "title": "Philips HomeRun 9000 Serisi XU9100/10 Çöp İstasyonlu Akıllı Robot Süpürge",
+    "price": 37997.0,
+    "url": "https://www.teknosa.com/philips-homerun-9000-serisi-xu910010-cop-istasyonlu-akilli-robot-supurge-p-787133516",
+    "buyable": true
+   }
+  ],
+  "hbSearch": null,
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Philips+HomeRun+9000+Serisi+XU9100%2F10"
+ },
+ "dreame-l40-ultra": {
+  "id": "dreame-l40-ultra",
+  "name": "Dreame L40 Ultra (RLX53SE)",
+  "offers": [],
+  "hb": {
+   "url": "https://www.hepsiburada.com/l40-ultra-pm-HBC000084JCZ6",
+   "seller": "MOBİLEX",
+   "official": false,
+   "price": null,
+   "buyable": true,
+   "tr_warranty": false,
+   "importer": false,
+   "others": [
+    {
+     "seller": "IDEA",
+     "score": "10,0",
+     "auth": true,
+     "price": 37575.0
+    },
+    {
+     "seller": "NMA TEKNOLOJİ",
+     "score": "10,0",
+     "auth": true,
+     "price": 37799.1
+    }
+   ],
+   "rating": 4.5,
+   "count": 83,
+   "stars": [
+    68,
+    6,
+    1,
+    2,
+    6
+   ],
+   "reviews": [
+    {
+     "date": "20 Haziran 2025",
+     "text": "Ürünü çok araştırdık ben farklı bir marka istiyordum r ile başlayan eşim ise fiyatının özelliklerine göre fazla olduğunu söyleyerek bu markayı araştırmaya başladık evimizde bir kedi ve köpek var her yer tüy doluydu tüyleri toplayabilecek mi diye tereddüt ettik fakat ilk çalıştırmamızla birlikte bu düşünce tamamen yok oldu hazne resmen full tüy ile doldu, iyi ki araştırıp bu ürünü almışız cok büyük kolaylık oldu. İstedigimiz zaman kedimize ve köpegimize bakıp seslenebiliyoruz aklımız evde kalmıyor. Mop ise sanki ben viledayla silmişim gibi siliyor hiçbir sıkıntı yaşamadım şu zamana kadar cok memnunum. Su haznesi ve atık haznesinden hiç bahsetmiyorum cok büyük 2 ay kadar boşaltmadan gider gibi",
+     "seller": "Hepsiburada",
+     "up": 15,
+     "down": 1
+    },
+    {
+     "date": "05 Temmuz 2025",
+     "text": "Dreame L40 Ultra modelini kısa süre önce Hepsiburada üzerinden satın aldım ancak cihazın mop (paspaslama) fonksiyonunda ciddi bir sorun var. Cihaz, \"paspas pedlerini takamadı\" şeklinde bir hata uyarısı veriyor ve pedleri dışarı çıkarması gereken mekanizma doğru çalışmıyor. Bir taraf ped dışarı çıkarken, diğer taraf içeride kalıyor ve bu durum pedlerin cihaza düzgün şekilde takılmasını engelliyor. Elle müdahale edip pedleri manuel olarak yerine oturttuğumda geçici olarak çalışıyor, fakat otomatik fonksiyon sürekli olarak arıza veriyor. Sorunun donanım kaynaklı mı yoksa yazılımsal mı olduğunu net olarak anlayamadım, ancak bu seviyede bir ürünün iki haftadan kısa sürede böyle kritik bir arıza v",
+     "seller": "Hepsiburada",
+     "up": 47,
+     "down": 0
+    },
+    {
+     "date": "23 Nisan 2025",
+     "text": "Ürünü eşim için almadan önce on gün boyunca piyasadaki rakiplerini fiyat-performans ekseninde tek tek inceledim. Benim ölçütüm basit: Ödediğim paranın her kuruşuna değecek bir makine ve gerçekten kullanacağım işlevleri eksiksiz sunması. Dreame L40 tam da bu iki kritere nokta atışıyla uydu. Aynı fiyat bandındaki modelleri teknik verilerde ve gerçek kullanım testlerinde geride bırakıyor; izlediğim yabancı inceleme videoları da bu sonucu pekiştirdi. Cihazı üç gündür aktif olarak kullanıyoruz. Zemin haritasını şaşırtıcı bir hızla çıkardı, halıdan seramiğe geçişlerde performans kaybı yaşamadı, mop modunda da pırıl pırıl sonuç verdi. Uygulama arayüzü anlaşılır; günlük temizlik rutinlerini birkaç d",
+     "seller": "Hepsiburada",
+     "up": 27,
+     "down": 7
+    },
+    {
+     "date": "24 Haziran",
+     "text": "Tam 3 aydır düzenli olarak kullanıyorum. Haritayla ilgili 1 kere problem yaşadım onu da kullandığım haritayı silip tekrar haritalandırma yaptım düzeldi. Genel olarak sensör temizliğiyle ilgili problem yaşayanlar olmuş temizliğinin görselini yoruma ekliyorum. Cihazı tamamen kapattıktan sonra temizliği yaparsanız herhangi bir problem olmuyor. Ben çok memnunum almak isteyen olursa düşünmeden alabilir.",
+     "seller": "Dreame Türkiye",
+     "up": 0,
+     "down": 0
+    },
+    {
+     "date": "15 Haziran 2025",
+     "text": "Yaklaşık 1 haftadır Dreame L40 Ultra'yı kullanıyorum ve kesinlikle aldığıma değdi. Haritalamayı çok hızlı yaptı, evin her köşesini detaylıca temizliyor. Vakum gücü gerçekten çok iyi; halıların derinini bile tertemiz yapıyor. Mop özelliği sayesinde zeminler parlıyor, ayrıca mop kendini yıkayıp kurutuyor, hiç uğraş gerektirmiyor çok beğendim.",
+     "seller": "Dreame Türkiye",
+     "up": 7,
+     "down": 1
+    }
+   ]
+  },
+  "mm": [
+   {
+    "title": "[DREAME L40 Ultra CE Robot Süpürge Beyaz](https://www.mediamarkt.com.tr/tr/product/_dreame-l40-ultra-ce-robot-supurge-beyaz-1248097.html)",
+    "url": "https://www.mediamarkt.com.tr/tr/product/_dreame-l40-ultra-mop-robot-supurge-beyaz-1245645.html",
+    "price": 30999.0,
+    "delivery": true,
+    "store_pickup": true
+   }
+  ],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Dreame+L40+Ultra"
+ },
+ "philips-xu5000": {
+  "id": "philips-xu5000",
+  "name": "Philips XU5000",
+  "offers": [],
+  "tek": [],
+  "hb": {
+   "url": "https://www.hepsiburada.com/5000-serisi-islak-kuru-robot-supurge-yuksek-emis-gucu-uzun-calisma-suresi-homerun-lazer-teknolojisi-beyaz-xu5000-20-pm-HBC00009X74SB",
+   "seller": "Hepsiburada",
+   "official": true,
+   "price": 14399.0,
+   "buyable": true,
+   "tr_warranty": false,
+   "importer": false,
+   "others": [
+    {
+     "seller": "Hesaplı Mağaza",
+     "score": "9,6",
+     "auth": true,
+     "price": 15544.97
+    },
+    {
+     "seller": "EMC&BİLİSİM&TEKN",
+     "score": "9,7",
+     "auth": true,
+     "price": 15628.5
+    }
+   ],
+   "rating": 3.8,
+   "count": 50,
+   "stars": [
+    28,
+    5,
+    7,
+    1,
+    9
+   ],
+   "reviews": [
+    {
+     "date": "29 Kasım 2025",
+     "text": "Her türlü boşluğa, deliğe girip temizlemesi gerçekten çok işime yaradı. Sadece süpürge modunda değil aynı zamanda moplarken de girip temizliyor. Kurulumu çok basit ve sorunsuz. Bu kadar sessiz çalışmasını da beklemiyordum. Akşamları kimseyi rahatsız etmeden sessizce çalışıyor. Haritalandırdıktan sonra bile etraftaki değişikliklere de hızlıca uyum sağlıyor. Sıkıştığı 1-2 yer oldu onları da kendi çabasıyla kolaylıkla aşıyor. Her türlü gelişmeyi bildirim olarak gönderiyor. Test amaçlı çalışırken durdurup yerini değiştirdim onu da algılayarak kaldığı yerden devam ediyor. :) çok memnun kaldım.",
+     "seller": "Hepsiburada",
+     "up": 14,
+     "down": 4
+    },
+    {
+     "date": "26 Haziran",
+     "text": "Ürün güzel fakat Kurulumundan mi kaynaklandi bilmiyorum tam sonuç alamadım olduğu yerde dönüp duruyor sarzi yüzde 65 iken istasyona gidiyor iade etmek istemiyorum değişim istiyorum lutfen",
+     "seller": "Hepsiburada",
+     "up": 1,
+     "down": 1
+    },
+    {
+     "date": "02 Şubat",
+     "text": "Süpürme performansını beğendim ama şarjı yüzde 35 kalınca istasyona dönmesi garip. Hala süpürebilir durumda olmasına rağmen temizliği durduruyor. Ayrıca çok çok kötü bir özellik olarak, tüylü halılarımı engel olarak algılayıp üzerine çıkmıyor. Maalesef 3 halımı hiç süpüremeyecek. Genel olarak 5/3 bir performans. Çok da memnun kalmadım.",
+     "seller": "Hepsiburada",
+     "up": 23,
+     "down": 2
+    },
+    {
+     "date": "14 Ekim",
+     "text": "5 yıldız verdim ki üstte yorumum görünsün diye Çünkü 11 Mart'ta 2026 yılında aldım Fakat Geldiği günden beri iki kez problem yaşadım İkisinde de servise götürdüm servis bana birinde şeyi üretim hatası dedi onu Neyse bir şekilde yaptılar Eve getirdim bu sefer seti çok gürültülü çalışmaya başladı tekrar götürdüm götürdüğümde fanında arıza olduğunu ve bunun tedarik olmasın tedarikçiden gelmesini beklediler fanını fanını taktılar Eve getirdim Fakat ben hani bunun iadesini değişimini istiyorum Bir yıldır yani ben bunu kendi şeylerine de servislerine de söyledim Fakat hiçbir şekilde kabul etmiyorlar aldığınız firmayla görüşün aldığım firma Hepsiburada fakat hepsi burada soru cevap falan hep kapatm",
+     "seller": "Hepsiburada",
+     "up": 2,
+     "down": 0
+    },
+    {
+     "date": "03 Aralık 2025",
+     "text": "Toz, kırıntı, hayvan tüyü ne varsa emiyor. Evdeki 2 köpeğimin tüyleri zahmet harcamadan temizleniyor. Halı ve sert zemindeki kiri kesinlikle iyi topluyor. Süpürürken mop da yapabiliyorsunuz. Çok tercih etmesem de ekstrası olması hoş. Lazerle ve uygulama aracılığıyla evin haritasını çıkarıyor. Mobilya altı, köşeler, vs. hepsini rahatlıkla süpürüyor. Kurulumu da talimatları okuduktan sonra çok kolay. Zaten ürünün üzerine de bol bol görsel koymuşlar nasıl kullanmamız gerektiğine dair. Rengi de çok hoş. Fiyatını hak eden bir ürün. Evde oturduğum yerden temizlik yapmak çok keyifli.",
+     "seller": "Hepsiburada",
+     "up": 8,
+     "down": 3
+    }
+   ]
+  },
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Philips+XU5000"
+ },
+ "ecovacs-deebot-t90-pro-omni": {
+  "id": "ecovacs-deebot-t90-pro-omni",
+  "name": "Ecovacs Deebot T90 Pro Omni",
+  "offers": [],
+  "amz": [],
+  "tek": [],
+  "hb": {
+   "url": "https://www.hepsiburada.com/ecovacs-deebot-t90-pro-omni-robot-supurge-ve-paspas-30-000-pa-emis-gucu-hizli-sarj-truedge-ozellikli-ozmo-roller-3-0-paspas-sistemi-otomatik-temizlik-solusyonu-dozajlama-akilli-omni-istasyon-pm-HBC0000ORYY2S",
+   "seller": "AB GLOBAL STORE",
+   "official": false,
+   "price": 95880.64,
+   "buyable": true,
+   "tr_warranty": false,
+   "importer": false,
+   "others": [],
+   "reviews": []
+  },
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Ecovacs+Deebot+T90+Pro+Omni"
+ },
+ "dreame-l40-plus": {
+  "id": "dreame-l40-plus",
+  "name": "Dreame L40 Plus",
+  "offers": [],
+  "tek": [
+   {
+    "title": "Dreame L40 Plus Robot Süpürge Beyaz",
+    "price": 21799.0,
+    "url": "https://www.teknosa.com/dreame-l40-plus-robot-supurge-beyaz-p-100000062273",
+    "buyable": true
+   }
+  ],
+  "hb": {
+   "url": "https://www.hepsiburada.com/dreame-l40-plus-robot-supurge-beyaz-13-000pa-emis-gucu-pm-HBC0000DU31Y4",
+   "seller": "HEER GRUP",
+   "official": false,
+   "price": 22705.4,
+   "buyable": true,
+   "tr_warranty": false,
+   "importer": false,
+   "others": [
+    {
+     "seller": "RU MUS TİCARET",
+     "score": "9,8",
+     "auth": true,
+     "price": 23047.96
+    },
+    {
+     "seller": "REMYA",
+     "score": "9,6",
+     "auth": true,
+     "price": 23112.38
+    }
+   ],
+   "rating": 4.5,
+   "count": 19,
+   "stars": [
+    14,
+    3,
+    1,
+    0,
+    1
+   ],
+   "reviews": [
+    {
+     "date": "02 Eylül",
+     "text": "Genel olarak çok iyi. Tek sıkıntı paspaslama yaparken pedler halıya değiyor. Sanırım bu bütün robot süpürgelerde olan bir şey çünkü pedler halıda yukarı kalktığı halde ve halı ince olduğu halde üzerinde ıslak ped ile geziyor ve azda olsa değiyor. Bu sorundan ilk süpürmede pedleri çıkararak kurtuldum. Ayrıca iki haritalandırma yaptım birisi süpürme birisi paspaslama. Bir sıkıntı da kilimlere dolanıyor ilerleyemiyor bu sebeple o odayı iptal etmek durumunda kaldım. Bu konuda çözüm bulan varsa onu uygulamayı düşünüyorum. Güncelleme; planlanmış temizleme yaptım. gün belirledim ama gün gelmeden saat geldiği anda çalışmaya başlıyor planlanan temizlik gününü uyguluyor. Kafası karışmış buluyorum baze",
+     "seller": "VATAN BİLGİSAYAR",
+     "up": 0,
+     "down": 0
+    },
+    {
+     "date": "18 Mayıs",
+     "text": "Harika bir ürün, çok memnun kaldık, herkese tavsiye ediyorum",
+     "seller": "Dreame Türkiye",
+     "up": 2,
+     "down": 0
+    },
+    {
+     "date": "05 Mayıs",
+     "text": "Ürün hızlı ve güzel paketlenmiş şekilde elime ulaştı ilk haritalandırma işlemini gayet güzel yaptı ve evi taradı, ilk silme ve süpürme işlemini de gerçekleştirdi temiz bırakıyor, sadece kablolara takıldığı zaman uyarı vermiyor kurtulmaya çalışıyor şimdilik herhangi bir sorun yok ileri tarihlerde yorumu güncelleyeceğim.",
+     "seller": "Dreame Türkiye",
+     "up": 5,
+     "down": 1
+    },
+    {
+     "date": "16 Ağustos",
+     "text": "Daha önce hiç robot süpürge kullanmamıştım, iki kedim olduğu için çok tedirgindim. Günlük kullanımda temizliği yeterli geldi. Kedilerim de sandığımdan az korktu. Temiz zannettiğiniz yerden bile çıkan toz inanılmaz",
+     "seller": "Dreame Türkiye",
+     "up": 1,
+     "down": 0
+    },
+    {
+     "date": "05 Mayıs",
+     "text": "Şık bir ürün Türkçe güzel konuşuyor ☺️ kurulumu kolay tam çalışmasını henüz test edemedim onuda sonra yazarım Hızlı ve hasarsız teslimat yapıldı şahane",
+     "seller": "Teknosa",
+     "up": 1,
+     "down": 1
+    }
+   ]
+  },
+  "mm": [
+   {
+    "title": "[DREAME L40 Plus Robot Süpürge](https://www.mediamarkt.com.tr/tr/product/_dreame-l40-plus-robot-supurge-1253222.html)",
+    "url": "https://www.mediamarkt.com.tr/tr/product/_populer-dreame-aksesuar-seti-l10s-plus-l40-plus-uyumlu-ana-firca-2x-yan-firca-2x-filtre-2x-toz-torbasi-175345319.html",
+    "price": 21849.0,
+    "delivery": true,
+    "store_pickup": true
+   }
+  ],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Dreame+L40+Plus"
+ },
+ "mova-v50-ultra-complete": {
+  "id": "mova-v50-ultra-complete",
+  "name": "Mova V50 Ultra Complete",
+  "offers": [],
+  "amz": [],
+  "tek": [],
+  "hbSearch": {
+   "url": "https://www.hepsiburada.com/mova-v50-ultra-complete-jypdm-1a01-12-v-robot-supurge-su-pompasi-pm-HBC0000I4222A",
+   "title": "Ümit Maker Mova V50 Ultra Complete JYPDM-1A01 12 V Robot Süpürge Su Pompası",
+   "fromSearch": true
+  },
+  "mm": [
+   {
+    "title": "[MOVA V50 Ultra Complete Robot Süpürge Beyaz](https://www.mediamarkt.com.tr/tr/product/_mova-v50-pro-ultra-robot-supurge-beyaz-1252355.html)",
+    "url": "https://www.mediamarkt.com.tr/tr/product/_mova-z70-ultra-roller-complete-robot-supurge-siyah-1256199.html",
+    "price": 54999.0,
+    "delivery": true,
+    "store_pickup": true
+   }
+  ],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Mova+V50+Ultra+Complete"
+ },
+ "ecovacs-deebot-n20e-plus": {
+  "id": "ecovacs-deebot-n20e-plus",
+  "name": "Ecovacs Deebot N20e Plus",
+  "offers": [],
+  "amz": [],
+  "hbSearch": null,
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Ecovacs+Deebot+N20e+Plus"
+ },
+ "mova-p50-pro-ultra": {
+  "id": "mova-p50-pro-ultra",
+  "name": "Mova P50 Pro Ultra",
+  "offers": [],
+  "tek": [
+   {
+    "title": "Mova P50 Pro Ultra İstasyonlu Robot Süpürge Beyaz",
+    "price": 37999.0,
+    "url": "https://www.teknosa.com/mova-p50-pro-ultra-istasyonlu-robot-supurge-beyaz-p-100000061521",
+    "buyable": true
+   }
+  ],
+  "hb": {
+   "url": "https://www.hepsiburada.com/mova-p50-pro-ultra-pm-HBC000095I3E1",
+   "seller": "NAXİN",
+   "official": false,
+   "price": 58000.0,
+   "buyable": true,
+   "tr_warranty": false,
+   "importer": false,
+   "others": [
+    {
+     "seller": "MRl",
+     "score": "9,1",
+     "auth": true,
+     "price": 53541.0
+    }
+   ],
+   "rating": 4.2,
+   "count": 19,
+   "stars": [
+    14,
+    1,
+    0,
+    1,
+    3
+   ],
+   "reviews": [
+    {
+     "date": "14 Ekim 2025",
+     "text": "Kullanılmış, ayıplı ürünü utanmadan bloknotu dahi sökmeden göndermişler. Çift banttan daha açmadan belliydi. Umarım bir başkasına da bu iade edeceğim ayıplı ürün göndermezler.",
+     "seller": "MOVA Türkiye",
+     "up": 18,
+     "down": 0
+    },
+    {
+     "date": "13 Nisan",
+     "text": "Eylül 2025 den beri kullanıyoruz biz çok ama çok memnunuz evet Türkçe yok ama İngilizce sorun olmuyor bazen yerleri sildikten sonra süpürürken su damlaları oluyor ama hep değil biz sorun etmiyoruz bakımını düzenli yapıyoruz iyi ki almışız almak isteyenler hiç düşünmeden alsınlar ben yorum yokken almıştım pişman değilim",
+     "seller": "MOVA Türkiye",
+     "up": 0,
+     "down": 0
+    },
+    {
+     "date": "07 Ağustos",
+     "text": "Ürün ev teslim olmuyo apartman girisine birakiliyor bu konu cok kotu",
+     "seller": "MOVA Türkiye",
+     "up": 0,
+     "down": 0
+    },
+    {
+     "date": "05 Ekim 2025",
+     "text": "Roborock s5 max 5 yıl kullandıktan sonra dreame x40 ultra / x50 ultra takip ederken indirime girmesiyle ve 3 yıl da garantisiyle dreamenin yan firması olduğunu öğrenince aldık. Dreame x50 ultra ile hemen hemen aynı özelliklerde eşik atlama yok o da bize lazım değil zaten. Kurulumu yaptıktan sonra süpürüp sildirdik süpürmesi de silmesi de çok güzel. Eski cihazımız süpürmüyormuş onu fark ettim.",
+     "seller": "MOVA Türkiye",
+     "up": 2,
+     "down": 0
+    },
+    {
+     "date": "12 Eylül 2025",
+     "text": "Ürünün kirli su tankı motoru çalışmıyor ve dışarı su sızdırıyor yeni ürün göndermeleri için destek talebi oluşturdum yorumu ürün elime tekrar ulaşınca güncelleyeceğim bu arada su siperliği takılı takılı olmadan çalışmıyor zaten. Eşime süpriz yapacaktım şimdi bununla uğraşıyorum lütfen yardımcı olun",
+     "seller": "MOVA Türkiye",
+     "up": 5,
+     "down": 0
+    }
+   ]
+  },
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Mova+P50+Pro+Ultra"
+ },
+ "dreame-l50s-pro-ultra": {
+  "id": "dreame-l50s-pro-ultra",
+  "name": "Dreame L50s Pro Ultra",
+  "offers": [],
+  "amz": [
+   {
+    "title": "Dreame L50s Pro Ultra Robot Süpürge Beyaz, 30.000Pa Emiş Gücü",
+    "url": "https://www.amazon.com.tr/dp/B0HLFLFW7C",
+    "price": 53999.0,
+    "buyable": true,
+    "unavailable": false,
+    "lowstock": null,
+    "rating": null,
+    "count": 0,
+    "delivery": "ÜCRETSİZ teslimat 4 Kas Çar"
+   }
+  ],
+  "tek": [
+   {
+    "title": "Dreame L50s Pro Ultra Çöp İstasyonlu Robot Süpürge Beyaz",
+    "price": 53999.0,
+    "url": "https://www.teknosa.com/dreame-l50s-pro-ultra-cop-istasyonlu-robot-supurge-beyaz-p-100000064624",
+    "buyable": true
+   }
+  ],
+  "hb": {
+   "url": "https://www.hepsiburada.com/dreame-l50s-pro-ultra-robot-supurge-beyaz-30-000pa-emis-gucu-pm-HBC0000HZHQCQ",
+   "seller": "Dreame Türkiye",
+   "official": false,
+   "price": 59999.0,
+   "buyable": true,
+   "tr_warranty": false,
+   "importer": false,
+   "others": [],
+   "reviews": []
+  },
+  "mm": [
+   {
+    "title": "[DREAME L50S Pro Ultra Robot Süpürge Beyaz](https://www.mediamarkt.com.tr/tr/product/_dreame-l50s-pro-ultra-robot-supurge-beyaz-1256601.html)",
+    "url": "https://www.mediamarkt.com.tr/tr/product/_dreame-matrix-10-ultra-robot-supurge-siyah-1255322.html",
+    "price": 59999.0,
+    "delivery": true,
+    "store_pickup": true
+   }
+  ],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Dreame+L50s+Pro+Ultra"
+ }
+}

@@ -1,0 +1,762 @@
+{
+ "fakir-robert-rs-850-plus": {
+  "id": "fakir-robert-rs-850-plus",
+  "name": "Fakir Robert RS 850 Plus",
+  "offers": [],
+  "tek": [],
+  "hb": {
+   "url": "https://www.hepsiburada.com/robert-rs-850-plus-robot-supurge-pm-HBC0000EBKN8S",
+   "seller": "Fakir Türkiye",
+   "official": true,
+   "price": 49999.0,
+   "buyable": true,
+   "tr_warranty": false,
+   "importer": false,
+   "others": [],
+   "reviews": []
+  },
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Fakir+Robert+RS+850+Plus"
+ },
+ "arcelik-imperium-robo-2-2-rs-6121": {
+  "id": "arcelik-imperium-robo-2-2-rs-6121",
+  "name": "Arçelik Imperium Robo 2.2 RS 6121",
+  "offers": [],
+  "hbSearch": null,
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Ar%C3%A7elik+Imperium+Robo+2.2+RS+6121"
+ },
+ "kiwi-kvc-4091": {
+  "id": "kiwi-kvc-4091",
+  "name": "Kiwi KVC-4091",
+  "offers": [],
+  "tek": [],
+  "hb": {
+   "url": "https://www.hepsiburada.com/kvc-4091-akilli-robot-supurge-6000pa-guclu-emis-lazer-haritalama-paspas-uygulama-kontrollu-pm-HBC0000AP3X30",
+   "seller": "KİWİ STORE",
+   "official": false,
+   "price": 9199.0,
+   "buyable": true,
+   "tr_warranty": false,
+   "importer": false,
+   "others": [
+    {
+     "seller": "Kuzeypazarlama",
+     "score": "9,4",
+     "auth": true,
+     "price": 9873.59
+    }
+   ],
+   "rating": 3.0,
+   "count": 2,
+   "stars": [
+    1,
+    0,
+    0,
+    0,
+    1
+   ],
+   "reviews": [
+    {
+     "date": "11 Nisan",
+     "text": "ASLA ALMAYIN! Uzun araştırmalarım sonucu fiyat performans olarak en mantıklı süpürgenin bu olduğuna karar vermiştim. Asla aldanmayın ucuz etin yahnisi sorunları bitmiyor. İlk aldığımda çarpışma sensörü hatası diyerek etrafı boş olmasına rağmen sürekli hata veriyordu değişim talep ettim şimdikinde de wi-fi'a bağlanmıyor bu zaten kronik sorunuymuş yorumlarda da görmüştüm. KİWİDEN UZAK DURUN. Satıcıya da teşekkür ederim.",
+     "seller": "Kuzeypazarlama",
+     "up": 2,
+     "down": 1
+    },
+    {
+     "date": "20 Mart",
+     "text": "Akıllı robot süpürge uygulamayla bağlanılabiliyor gerçekten güzel",
+     "seller": "Kuzeypazarlama",
+     "up": 1,
+     "down": 2
+    }
+   ]
+  },
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Kiwi+KVC-4091"
+ },
+ "karcher-rvf-7-eu": {
+  "id": "karcher-rvf-7-eu",
+  "name": "Karcher RVF 7 EU",
+  "offers": [],
+  "tek": [],
+  "hbSearch": null,
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Karcher+RVF+7+EU"
+ },
+ "karcher-rvc-3-comfort-extra": {
+  "id": "karcher-rvc-3-comfort-extra",
+  "name": "Karcher RVC 3 Comfort Extra",
+  "offers": [],
+  "hb": {
+   "url": "https://www.hepsiburada.com/rvc-3-comfort-extra-pm-HBC0000DPPDIP",
+   "seller": "SS.TEKNOLOJİ",
+   "official": false,
+   "price": 23299.0,
+   "buyable": true,
+   "tr_warranty": false,
+   "importer": false,
+   "others": [],
+   "rating": 1.0,
+   "count": 1,
+   "stars": [
+    0,
+    0,
+    0,
+    0,
+    1
+   ],
+   "reviews": [
+    {
+     "date": "16 Ekim",
+     "text": "Ürünün su hazinesinden su dökülüyor. Alman markası diye tercih ettim ancak benim için hayal kırıklığı",
+     "seller": "HEER GRUP",
+     "up": 0,
+     "down": 0
+    }
+   ]
+  },
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Karcher+RVC+3+Comfort+Extra"
+ },
+ "narwal-freo-z10": {
+  "id": "narwal-freo-z10",
+  "name": "Narwal Freo Z10",
+  "offers": [],
+  "amz": [],
+  "hbSearch": null,
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Narwal+Freo+Z10"
+ },
+ "bosch-spotless": {
+  "id": "bosch-spotless",
+  "name": "Bosch Spotless (BCRC1W)",
+  "offers": [],
+  "tek": [],
+  "hbSearch": {
+   "url": "https://www.hepsiburada.com/bosch-spotless-robot-supurge-paspasi-orjinal-urun-pm-HBC0000CI2Q9D",
+   "title": "Bosch Spotless Robot Süpürge Paspası Orjinal Ürün",
+   "fromSearch": true
+  },
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Bosch+Spotless"
+ },
+ "irobot-roomba-combo-10-max": {
+  "id": "irobot-roomba-combo-10-max",
+  "name": "iRobot Roomba Combo 10 Max",
+  "offers": [],
+  "hb": {
+   "url": "https://www.hepsiburada.com/irobot-roomba-combo-10-max-robot-supurge-ve-paspas-pm-HBC00008P9XRO",
+   "seller": "Nice Teknoloji",
+   "official": false,
+   "price": 39369.07,
+   "buyable": true,
+   "tr_warranty": false,
+   "importer": false,
+   "others": [],
+   "rating": 5.0,
+   "count": 2,
+   "stars": [
+    2,
+    0,
+    0,
+    0,
+    0
+   ],
+   "reviews": [
+    {
+     "date": "29 Aralık 2025",
+     "text": "Ürünü hediye aldık daha acmadik. Ancak uzun bir araştırma sonucunda en iyileri arasında başlarda yer alması nedeniyle seçtik.",
+     "seller": "iRobot Türkiye",
+     "up": 1,
+     "down": 4
+    }
+   ]
+  },
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=iRobot+Roomba+Combo+10+Max"
+ },
+ "karcher-rcv-2": {
+  "id": "karcher-rcv-2",
+  "name": "Karcher RCV 2",
+  "offers": [],
+  "tek": [],
+  "hbSearch": null,
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Karcher+RCV+2"
+ },
+ "tefal-rg9177-x-plorer-serie-140": {
+  "id": "tefal-rg9177-x-plorer-serie-140",
+  "name": "Tefal RG9177 X-Plorer Serie 140",
+  "offers": [],
+  "amz": [],
+  "tek": [],
+  "hb": {
+   "url": "https://www.hepsiburada.com/tefal-rg9177-x-plorer-serie-140-mop-ozellikli-dahili-temizleme-istasyonlu-akilli-robot-supurge-6000-pa-pm-HBC00007WOD5Y",
+   "seller": "oktayteknoloji",
+   "official": false,
+   "price": 13049.1,
+   "buyable": true,
+   "tr_warranty": false,
+   "importer": false,
+   "others": [
+    {
+     "seller": "NMA TEKNOLOJİ",
+     "score": "10,0",
+     "auth": true,
+     "price": 14999.0
+    },
+    {
+     "seller": "benial",
+     "score": "9,5",
+     "auth": true,
+     "price": 16297.0
+    }
+   ],
+   "reviews": []
+  },
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Tefal+RG9177+X-Plorer+Serie+140"
+ },
+ "ezviz-rs20-pro": {
+  "id": "ezviz-rs20-pro",
+  "name": "Ezviz RS20 Pro",
+  "offers": [],
+  "hb": {
+   "url": "https://www.hepsiburada.com/ezviz-rs20-pro-robot-supurge-5l-temiz-4-2l-kirli-su-5l-toz-tanki-sicak-su-ile-paspas-yikama-sicak-hava-ile-paspas-kurutma-otomatik-bosaltma-yapay-zeka-engellerden-kacinma-hali-algilama-pm-HBC000074QTT8",
+   "seller": "ALLMALL ELEKTRONİK",
+   "official": false,
+   "price": 35999.1,
+   "buyable": true,
+   "tr_warranty": false,
+   "importer": false,
+   "others": [
+    {
+     "seller": "EZVIZ TURKIYE",
+     "score": "9,6",
+     "auth": true,
+     "price": 35999.1
+    }
+   ],
+   "rating": 4.0,
+   "count": 25,
+   "stars": [
+    18,
+    0,
+    1,
+    2,
+    4
+   ],
+   "reviews": [
+    {
+     "date": "21 Şubat 2025",
+     "text": "Sdn Hakkı Alkan YouTube inceleme videosunda görüp almaya karar verdim. Beklentilerimizi karşılamaz düşüncesi ile 75-100 bandında olan markalara fazla para vermektense bu modeli almak daha mantıklı geldi. Kendi orijinal kutusunu birde aynı ebat koliyle koyup sağlam bir şekilde gönderdiler. Cihazın malzeme kalitesi çok iyi. Haritalama süpürme paspas tüm aşamalar sorunsuz ve sessiz. İşleri bitirdikten sonra birde çay çekse daha ne olsun :)",
+     "seller": "EZVIZ TÜRKİYE",
+     "up": 11,
+     "down": 6
+    },
+    {
+     "date": "12 Temmuz 2025",
+     "text": "Ezviz Rs20 Pro makinesini 7 Mayıs tarihinde aldım ve o tarihten beri istediğim performansı alamadım. Seri numarası BD3776368 olan cihazımla ilgili olarak servisten hiç memnun kalmadım;istediğim şekilde yardımcı olmadılar. Sorunlarımı anlattığımda, bana YouTube.com kanalında buldukları bir video ile sorunu çözmemi önerdiler ya da doğrudan makineyi göndermemi istediler.Yeni aldığım bir makineyi hemen servise göndermemi istemeleri hoşuma gitmedi;uzaktan inceleyip sorunu çözmelerini beklerdim.Direkt olarak makineyi göndermemi istemeleri bana kolaycılık gibi geldi.Yeni alınan bir makine hemen servise gönderilir mi? Ayrıca, 'İlk defa sizden şikayet aldık',Biz reklam bile yapmadık',Reklam bütçesi a",
+     "seller": "EZVIZ TÜRKİYE",
+     "up": 2,
+     "down": 3
+    },
+    {
+     "date": "10 Mart 2025",
+     "text": "Satın almayı düşünenler için görüşlerimi iletmek istedim, Kargo ve paketleme: Ürünü çarşamba sipariş ettim, perşembe kargoya verildi ve cuma günü bana ulaştı. Orijinal ambalajlı paketinin dışında ayrıca bir daha kutuya konmuş sağlam bir şekilde geldi. Kutu açılımı: Kutu üzerinde ürün parçaları vede çıkardıktan sonra yapacağınız işlem basamakları tanımlanmış. Kurulum ve haritalama: Ürün üzerindeki karekodu okutuyorsunuz ve wifi ağınıza tanımlıyorsunuz bu kadar basit. sonrasında haritalamayı tek seferde sorunsuz bir şekilde yaptı. Uygulama: Gerçekten uygulaması hem kolay anlaşılır hemde çok kullanışlı. Günlük plan vb gibi yapılar diğer süpürgelerde de var ama kısayol sekmesi çok güzel olmuş. K",
+     "seller": "EZVIZ TÜRKİYE",
+     "up": 6,
+     "down": 2
+    },
+    {
+     "date": "11 Eylül",
+     "text": "Ürün gerçekten çok başarılı, özellikle temizlik performansını oldukça beğendim. Ev işlerinde ciddi anlamda kolaylık sağladı. Kurulumu ve kullanımı da gayet pratik. Ayrıca satıcıya özellikle teşekkür etmek istiyorum. Siparişim çok hızlı kargoya verildi ve ürün kısa sürede, sağlam ve özenli paketlenmiş şekilde elime ulaştı. Hem üründen hem de alışveriş sürecinden çok memnun kaldım. Kesinlikle tavsiye ederim.",
+     "seller": "ALLMALL ELEKTRONİK",
+     "up": 0,
+     "down": 0
+    },
+    {
+     "date": "11 Mayıs 2025",
+     "text": "Daha önceden bilmediğim bir marka ancak özelliklerini incelediğimde bilindik markaların üst modellerine denk hatta daha fazla işlevsel olduğunu gördüm. Bir kaç gündür kullanıyorum şimdilik son derece memnunum. İlk gün bir sorun yaşadık satıcı hemen ilgilendi ve teknik servisle iletişime geçmemizi sağladı, yazılımla ilgili bi sorunmuş çözüldü ve şu an sorunsuz çalışıyor. Her yönüyle mükemmel. Olumsuz diyebileceğim hiç bir yönü yok.",
+     "seller": "EZVIZ TÜRKİYE",
+     "up": 0,
+     "down": 1
+    },
+    {
+     "date": "07 Eylül",
+     "text": "Ürün beklediğimden çok daha hızlı ve sorunsuz bir şekilde elime ulaştı. Paketleme gayet özenliydi. Satıcının hızlı gönderimi ve ilgisi için ayrıca teşekkür ederim. Ürünü kullanmaya başladıktan sonra da beklentilerimi fazlasıyla karşıladı. Temizliği başarılı, kullanımı oldukça pratik ve gerçekten büyük kolaylık sağlıyor. Fiyatına göre performansını da çok başarılı buldum.",
+     "seller": "ALLMALL ELEKTRONİK",
+     "up": 0,
+     "down": 0
+    },
+    {
+     "date": "11 Eylül",
+     "text": "Ürün elime ulaştı deneyimleyip yorum yapmak istedim gayet güzel çalışıyor tam bir fiyat performans ürünü ve teslimat çok hızlı yapıldı muadillerine göre daha kaliteli ve hızlı bir ürün satıcı ayrıca çok ilgili taleplerimize anında dönüş yaptı",
+     "seller": "ALLMALL ELEKTRONİK",
+     "up": 0,
+     "down": 0
+    },
+    {
+     "date": "02 Aralık 2025",
+     "text": "Başlangıç modeli olan r4 modelini kullanan bir kullanıcı olarak yazıyorum. 4 gün oldu bu cihazı alalı. 3 gündür garanti ile ugraşıyorum. Cihaz mop u ile birlikte kesinlikle halıya çıkmıyor halıyı geçmiyor. Arızalı gibi sağ sol yaparak hedefine gidiyor. Haritalamasi hızlı . Sadece supur me için halıya cikiyor ama bir düzen içinde değilde karmaşik şekilde süpürüyor halıyı. 2 o dayı neredeyse %50 şarj harcıyor. Size önerim çok kompleks cihaz almayın. Baslangiç serisi istasyonlu bir cihaz alın.Odanin yarısını halı kapliyirsa diğer tarafındaki paspaslanacak yere gitmiyor. Odanın birinde köşeye girip dönüyor sonra temizlik tamamlandı diyor. Şuanda teknik servis ile görüşüyorum. Cihazı gönderin diy",
+     "seller": "EZVIZ TURKIYE",
+     "up": 0,
+     "down": 0
+    },
+    {
+     "date": "10 Mart 2025",
+     "text": "Bu robot süpürge gerçekten hayatımı kolaylaştırdı. Temizleme performansı harika, özellikle halılar üzerinde etkileyici bir güç gösteriyor. Toz ve tüyleri kolayca topluyor, sessiz çalışması da büyük bir artı. Haritalama özelliği sayesinde evin her köşesini eksiksiz temizliyor. Uygulama üzerinden evcil hayvanımı kontrol edebilmek mükemmel. fırçasındaki makas sayesinde saç ve pislik dolanmasını engelliyor .Şarj ömrü uzun ve kendi kendine şarj istasyonuna sorunsuz dönebiliyor. Fiyat-performans oranı da oldukça tatmin edici. Kesinlikle tavsiye ederim.",
+     "seller": "EZVIZ TÜRKİYE",
+     "up": 4,
+     "down": 2
+    },
+    {
+     "date": "28 Mart 2025",
+     "text": "Harika Bir Performans – Zaman ve Enerjiden Tasarruf Sağlıyor. Bu robot süpürgeyi aldığım için çok mutluyum! Kullanımı son derece kolay ve ev temizliğinde büyük bir yardımcı. Özellikle yoğun olduğum günlerde evi kendi kendine temizlemesi inanılmaz rahatlatıcı. Güçlü emiş gücü sayesinde toz, kırıntı ve hatta evcil hayvan tüylerini bile etkili bir şekilde topluyor. Akıllı haritalama özelliği ile evin planını öğreniyor ve hiçbir köşeyi atlamadan verimli bir temizlik yapıyor. Uygulama üzerinden kontrol edebilmek, programlayabilmek oluşturabilmek de ayrı bir avantaj. Sessiz çalışma modu sayesinde gürültü yapmıyor, gece bile rahatsız etmiyor. Pilleri uzun süre gidiyor ve kendini otomatik olarak şar",
+     "seller": "EZVIZ TÜRKİYE",
+     "up": 0,
+     "down": 0
+    }
+   ]
+  },
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Ezviz+RS20+Pro"
+ },
+ "arcelik-imperium-robo-2-1-rs-9221": {
+  "id": "arcelik-imperium-robo-2-1-rs-9221",
+  "name": "Arçelik Imperium Robo 2.1 RS 9221",
+  "offers": [],
+  "tek": [],
+  "hb": {
+   "url": "https://www.hepsiburada.com/arcelik-imperium-rs-9221-robot-supurge-pm-HBC00005LFEFP",
+   "seller": "HANÇER BEYAZ EŞYA",
+   "official": false,
+   "price": null,
+   "buyable": true,
+   "tr_warranty": false,
+   "importer": false,
+   "others": [
+    {
+     "seller": "Avrupa Beyaz Eşya",
+     "score": "9,8",
+     "auth": true,
+     "price": 17350.0
+    },
+    {
+     "seller": "CENNET-MUAMMER YEŞİL ADİ ORTAKLIĞI",
+     "score": "9,0",
+     "auth": true,
+     "price": 17460.0
+    }
+   ],
+   "rating": 4.0,
+   "count": 20,
+   "stars": [
+    14,
+    1,
+    0,
+    1,
+    4
+   ],
+   "reviews": [
+    {
+     "date": "11 Nisan 2025",
+     "text": "1 haftadır kullanıyorum. Deneyimlerimi paylaşmak istiyorum. Satıcıya öncelikle tsk ediyorum gayet güzel paketlemişti. Kargoda sorun yaşamadım. Fiyatını magazasına göre uygun oldugu için tereddütte kalmıştım. Arçelik müşteri hizmetlerine mail attıgımda anında dönüş yapılıp sorun yaşadıgımızda firmamız ilgilenir cevabı aldıgım için yetkili satıcı olmasına dikkat ederek sipariş verdim. ( Diğer markalardan ayırt etme sebebim budur . Geniş agı mevcut ve yerli üretim ) Gelelim ürüne ; bekledgimden umdugumdan harika çıktı. Daha önce alamdıgıma pişman oldum . Emiş gücü olarak oldukça yeterli zaten halıda otomatik algılayıp emiş gücünü arttırıyor. şarj süresi oldukça iyi. İlk 2 3 gün haritalndırmada ",
+     "seller": "Türkoğlu Mobilya",
+     "up": 1,
+     "down": 2
+    },
+    {
+     "date": "29 Ağustos",
+     "text": "Ürünü koç kardeşler firmasından satın aldım, robot haritalandırma işlemini bir türlü yapmıyor, yasal süre içerisinde iade göndermeme rağmen iadem olumsuz sonuçlandı, ayıplı ürün olmasa bile 14 gün içinde koşulsuz iade hakkım varken ürün ayıplı olmasına rağmen iadem kabul edilmedi. Hepsiburada müşteri hizmetleri de gerekli desteği sağlamıyor, şikayet kaydına rağmen dönüş yapmıyorlar. Tüketici hakem heyeti ile ilerleyeceğim.",
+     "seller": "KOÇ KARDEŞLER",
+     "up": 0,
+     "down": 0
+    },
+    {
+     "date": "23 Mayıs",
+     "text": "kesinlikle tavsiye ediyorum..",
+     "seller": "Türkoğlu Mobilya",
+     "up": 0,
+     "down": 0
+    },
+    {
+     "date": "22 Kasım 2024",
+     "text": "Ürünün kurulumunu yaptık Ancak daha haritalandırma yapmadık. Denedik çekimi çok güzel hasarsız bir şekilde tarafıma teslim edildi. İlgi alakanız için çok teşekkür ederim sorularıma hemen cevap verdiniz Arçelik’ten saçmamak gerekiyor. Kalite bir başka 5 yıldız değil 10 yıldız hak ediyorsunuz bereketli satışlarınız olsun alacaklar olanlar tereddüt etmeden alabilir 👌🏻😊",
+     "seller": "ÖKSÜZLER-ARÇELİK",
+     "up": 2,
+     "down": 0
+    },
+    {
+     "date": "01 Nisan 2025",
+     "text": "Ürünü 5 aydır kullanıyorum çok memnunum çok güzel bir ürün işinizi aşırı derecede kolaylaştıran bir araç tavsiye ederim ben çok çok memnun kaldım",
+     "seller": "beyazesyaevimde",
+     "up": 0,
+     "down": 0
+    }
+   ]
+  },
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Ar%C3%A7elik+Imperium+Robo+2.1+RS+9221"
+ },
+ "fakir-robert-rs-740": {
+  "id": "fakir-robert-rs-740",
+  "name": "Fakir Robert RS 740",
+  "offers": [],
+  "tek": [],
+  "hb": {
+   "url": "https://www.hepsiburada.com/fakir-robert-rs-740-akilli-robot-supurge-pm-HBC000052NLTR",
+   "seller": "Fakir Türkiye",
+   "official": true,
+   "price": 22699.0,
+   "buyable": true,
+   "tr_warranty": false,
+   "importer": false,
+   "others": [],
+   "rating": 4.5,
+   "count": 6,
+   "stars": [
+    4,
+    1,
+    1,
+    0,
+    0
+   ],
+   "reviews": [
+    {
+     "date": "18 Aralık 2025",
+     "text": "Çok memnun kaldım iyiki almışım",
+     "seller": "Emr Çarşı+",
+     "up": 0,
+     "down": 0
+    },
+    {
+     "date": "23 Kasım 2023",
+     "text": "Kargo sağlam geldi. Kurulumu basit ürün gayet iyi temizliyor yıkanmış gibi",
+     "seller": "SMART PAZARLAMA",
+     "up": 1,
+     "down": 0
+    }
+   ]
+  },
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Fakir+Robert+RS+740"
+ },
+ "lydsto-r1-pro": {
+  "id": "lydsto-r1-pro",
+  "name": "Lydsto R1 Pro",
+  "offers": [],
+  "tek": [],
+  "hb": {
+   "url": "https://www.hepsiburada.com/lydsto-r1-pro-toz-toplama-uniteli-akilli-robot-supurge-beyaz-lydsto-turkiye-garantili-pm-HBC00002E3PMG",
+   "seller": "Lydsto Türkiye",
+   "official": true,
+   "price": 44999.1,
+   "buyable": true,
+   "tr_warranty": true,
+   "importer": false,
+   "others": [],
+   "rating": 4.4,
+   "count": 44,
+   "stars": [
+    34,
+    3,
+    0,
+    1,
+    6
+   ],
+   "reviews": [
+    {
+     "date": "24 Mart 2023",
+     "text": "Ürünü yaklaşık 10 gündür kullanıyorum. Faydalı bir yorum yazabilmek adına detaylı olarak ürünü denemek istedim. Ürün gerçekten çok iyi. Kullanımı oldukça kolay, ekipmanların takması çıkarması değiştirmesi çok pratik. Çekim gücü oldukça kuvvetli, haritalama sistemi harika. Kesinlikle tavsiye ediyorum. Fiyatının çok üzerinde bir performansa sahip. Hızlı kargolama ve hizmet içinde satıcıya çok teşekkür ederim.",
+     "seller": "Lydsto Türkiye",
+     "up": 2,
+     "down": 0
+    },
+    {
+     "date": "07 Ağustos",
+     "text": "3 tane aldım. 1 tanesi sürekli bozuluyor çevrim dışı oluyor. Fabrika hatası var büyük ihtimalle 😔 para iadesi istedim. Üçüncü 👎Tamiri 🤔 geri göndermişler. Geldi şimdi doğru tüketici hakları 👍",
+     "seller": "Lydsto Türkiye",
+     "up": 0,
+     "down": 0
+    },
+    {
+     "date": "02 Mayıs",
+     "text": "İlk 5 6 ay sorunsuz kullanıyorsunuz sonrasında , batarya fırça.vidalarına kadar çöp oluyor , batarya için servise gönderdik batarya şişme yaptı , garantiden çıkardılar birsürü para verdik geldi bir daha da kullanmadık , aklı olan bunu almasın .",
+     "seller": "Lydsto Türkiye",
+     "up": 0,
+     "down": 0
+    },
+    {
+     "date": "28 Şubat",
+     "text": "Bu ürünü 1 yıl önce aldım ilk 5-6 ay süper sonra kullanamıyorsunuz. Şarj bataryası alttaki apartları hepsi çöp oluyor yedek parçalarını da bulamıyorsunuz. Şarjı hemen bitiyr haritası bozuluyor. Robot yuvasına bile gidemiyor. Yedeği de yok. Aklı olan buna para vermesin. Vallahi billahi böyle rezalet bir ürün görmedim. kimseye de ulaşamıyoruz. Lütfen bu yazımı okuyun ve almayın Sakın sakın sakın.",
+     "seller": "Lydsto Türkiye",
+     "up": 0,
+     "down": 0
+    },
+    {
+     "date": "14 Ağustos 2025",
+     "text": "Ürün hakkında uzun bir süre kullandıktan sonra deneyimlerimi paylaşmak istedim. İlk aldığımda 3-4 ay düzenli kullandım sorun yaşamadım harita silme vs. Sonrasında harita silindi alt tarafındaki fırçalar deforme oldu derken şuan hem şarjı çabuk bitiyor hemde silme konusunda sorunlar yaşıyorum. Bu konuda kimseye ulaşamıyorum garantisi var mı onu bile bilmiyorum. Tavsiyem uzun süreleri sorun yaşamayacağınız bir ürün almak olsun.",
+     "seller": "Lydsto Türkiye",
+     "up": 0,
+     "down": 0
+    }
+   ]
+  },
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Lydsto+R1+Pro"
+ },
+ "fakir-robert-rs-780": {
+  "id": "fakir-robert-rs-780",
+  "name": "Fakir Robert RS 780",
+  "offers": [],
+  "hbSearch": {
+   "url": "https://www.hepsiburada.com/fakir-robert-rs-780-toz-haznesi-pm-HBC00009W5KD7",
+   "title": "Fakir Robert Rs 780 Toz Haznesi",
+   "fromSearch": true
+  },
+  "mm": [
+   {
+    "title": "[FAKIR Robert RS 780 Robot Süpürge](https://www.mediamarkt.com.tr/tr/product/_fakir-robert-rs-780-robot-supurge-1228651.html)",
+    "url": "https://www.mediamarkt.com.tr/tr/product/_rovexa-fakir-robert-rs-780-uyumlu-5-parca-set-186041567.html",
+    "price": 26499.0,
+    "delivery": true,
+    "store_pickup": true
+   }
+  ],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Fakir+Robert+RS+780"
+ },
+ "fakir-robert-robot": {
+  "id": "fakir-robert-robot",
+  "name": "Fakir Robert",
+  "offers": [],
+  "hbSearch": {
+   "url": "https://www.hepsiburada.com/fakir-robert-rs-760-yeni-nesil-robot-supurge-yeni-logolu-pm-HBC000088DR4X",
+   "title": "Fakir Robert Rs 760 Robot Süpürge 4000 Pa Emiş Gücü Akıllı Telefon ile Kontrol Sert Zemin Kullanımı",
+   "fromSearch": true
+  },
+  "mm": [
+   {
+    "title": "[FAKIR Robert RS 780 Robot Süpürge](https://www.mediamarkt.com.tr/tr/product/_fakir-robert-rs-780-robot-supurge-1228651.html)",
+    "url": "https://www.mediamarkt.com.tr/tr/product/_rovexa-fakir-robert-rs-780-uyumlu-5-parca-set-186041567.html",
+    "price": 26499.0,
+    "delivery": true,
+    "store_pickup": true
+   }
+  ],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Fakir+Robert"
+ },
+ "beko-robo-x-3-1-vrr-82314-vb": {
+  "id": "beko-robo-x-3-1-vrr-82314-vb",
+  "name": "Beko Robo-X 3.1 VRR 82314 VB",
+  "offers": [],
+  "tek": [],
+  "hb": {
+   "url": "https://www.hepsiburada.com/beko-robo-x-3-1-vrr-82314-vb-robot-supurge-pm-HBC0000F8B9EF",
+   "seller": "DTM KUZEN",
+   "official": false,
+   "price": 31999.0,
+   "buyable": true,
+   "tr_warranty": false,
+   "importer": false,
+   "others": [
+    {
+     "seller": "SIĞLANLAR LİMİTED ŞİRKETİ",
+     "score": "9,9",
+     "auth": true,
+     "price": 29999.0
+    },
+    {
+     "seller": "Yaylacıoğlu Home",
+     "score": "9,7",
+     "auth": true,
+     "price": 29999.0
+    }
+   ],
+   "reviews": []
+  },
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Beko+Robo-X+3.1+VRR+82314+VB"
+ },
+ "lydsto-s1d-max": {
+  "id": "lydsto-s1d-max",
+  "name": "Lydsto S1D Max (YM-S1MAX)",
+  "offers": [],
+  "tek": [],
+  "hb": {
+   "url": "https://www.hepsiburada.com/lydsto-s1-d-max-uv-sterilizasyonlu-8000-pa-yapay-zeka-akilli-robot-supurge-pm-HBC000054LCZB",
+   "seller": "Lydsto Türkiye",
+   "official": true,
+   "price": 16931.0,
+   "buyable": true,
+   "tr_warranty": true,
+   "importer": false,
+   "others": [],
+   "rating": 4.5,
+   "count": 70,
+   "stars": [
+    57,
+    4,
+    3,
+    2,
+    4
+   ],
+   "reviews": [
+    {
+     "date": "18 Şubat 2025",
+     "text": "Alalı bir yıl oldu ama ilk günden hep sorun yaşattı. Bir defa teknik servise gitti su tankında sorun varmış hiç kullanmadan onu halledip gönderdiler biraz kullandım iyi gidiyordu şimdi yine silme işlemi yapmıyor. bu arada sürekli teknik servis ile görüşme yaptım .basit arızalarda yardımcı oldular sorunu telefon üzeri çözdük ama üç aydır silme yapamıyorum. kutusunu atmıyorum çünkü yine teknik servise gitmesi lazım . Beş yıldızı herkes okuyabilsin diye verdim.",
+     "seller": "Lydsto Türkiye",
+     "up": 1,
+     "down": 0
+    },
+    {
+     "date": "08 Mart 2024",
+     "text": "bu kadar kötü nasıl yapabildiler bilmiyorum sözde çekimi 8000pa ama hiç çekmiyor çocuklu ev daha önceki robotum 3000pa olmasına rağmen hiç sorun olmuyordu 1 yıl kullandm(kardeşime verdim) uv özelliğndn dolayı bunu tercih ettm ama çekim gücü berbat arada fırçaya takılıyor geri düşüyor kalıntılar o kadar çekmiyor fırçadakini bile servise gitti geldi sorn yok dendi halınn üstünde çekim diye birşey yok sakın yorumlara inanmayın video fotoğraf da ekleyeceğim 5000tl lk robotlar bile bundn bin kat iyi temizliyor uygulama da sürekli hata veriyor.kullandm beğenmedm iade hakkm var diye düşünmeyin iade falan almıyorlar yani direkt uzaklaşın iki sefer temizlik yaptktn sonraki görseller",
+     "seller": "Lydsto Türkiye",
+     "up": 7,
+     "down": 1
+    },
+    {
+     "date": "31 Ocak 2024",
+     "text": "fırça tamamen silikon resimdeki gibi kıl silikon değil saç falan çekmiyor hiç birşey çekmiyor 8000pa çekiş gücü falan yok yerdeki ekmek kırıntılarnı bile çekemiyor temizlik devam ederken toz haznesini çıkar temizlik bitti uyarısı veriyor ekranda, yaptığım en kötü alışveriş diyebilirim yorumlar yanıltıcı uv ve çekim gücü için özellikle bunu terch etmiştm kız kardeşimde farklı bir marka var daha uygun ve emiş gücü daha düşük o buna göre mükemmel ötesi en azndn temizlik yapıldığı anlşılıyor bunda sadece tekerlek izleri var ve azck bişy topluyor onu da geri diğer tarafa bırakıyor paspası çıkarmanz gerekiyor kuru bile olsa yoksa sadece süpürme yapmıyor sürekli yetersz su uyarısı veriyor.haritalan",
+     "seller": "Lydsto Türkiye",
+     "up": 6,
+     "down": 0
+    },
+    {
+     "date": "13 Ocak 2024",
+     "text": "Ürün gayet güzel. Sığabileceği her alana giriyor ve gerçekten güzel toz topluyor. Söyleyebileceğim tek kusuru maximum çekim gücüne sahip modda çalışırken söylenen çalışma süresine ulaşamıyor. Maximum ayarda yaklaşık 100 dakika civarında çalışabiliyor (uygulamasında gözüktüğüne göre temizlemeye çalıştığı alan 95m2). Almak isteyenler tereddüt etmesin, yüksek ihtimalle beklentilerinizin üzerinde bile olacaktır.",
+     "seller": "Lydsto Türkiye",
+     "up": 1,
+     "down": 1
+    },
+    {
+     "date": "02 Şubat 2024",
+     "text": "Ürünü 1 haftadır kullanıyorum.Genel olarak memnunum.İlk başta haritalandırma yapıyor ben 2 kere yaptırdım. tavsiyem haritalandırma yaparken ortalıkta bir şey bırakmamanız.Her şeyi telefonunuza yüklediğiniz uygulamadan yönetiyorsunuz... Çekiş gücünü,silme suyunu ayarlayabilmeniz güzel bir özellik.Süpürme ve silme işlemini aynı anda da yapabilirsiniz ayrı ayrı da kullanabilirsiniz.İnce tozları,beyaz kedi tüylerini bile görüyor emiş gücü kuvvetli. Süpürme ve silme işleminden sonra evde temizlik yapıldığını anlıyorsunuz .",
+     "seller": "Lydsto Türkiye",
+     "up": 1,
+     "down": 2
+    }
+   ]
+  },
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Lydsto+S1D+Max"
+ },
+ "lydsto-w2-edge": {
+  "id": "lydsto-w2-edge",
+  "name": "Lydsto W2 Edge",
+  "offers": [],
+  "tek": [],
+  "hbSearch": null,
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Lydsto+W2+Edge"
+ },
+ "lydsto-r1": {
+  "id": "lydsto-r1",
+  "name": "Lydsto R1 (HD-STYTJ)",
+  "offers": [],
+  "tek": [
+   {
+    "title": "Lydsto R1-D Siyah Akıllı Robot Süpürge ve Paspas",
+    "price": 42999.0,
+    "url": "https://www.teknosa.com/lydsto-r1-d-siyah-akilli-robot-supurge-paspas-p-787110614",
+    "buyable": true
+   }
+  ],
+  "hb": {
+   "url": "https://www.hepsiburada.com/lydsto-r1-toz-toplama-uniteli-akilli-robot-supurge-siyah-pm-HBC00000GS8E0",
+   "seller": "Lydsto Türkiye",
+   "official": true,
+   "price": 44099.1,
+   "buyable": true,
+   "tr_warranty": false,
+   "importer": false,
+   "others": [],
+   "rating": 4.9,
+   "count": 202,
+   "stars": [
+    196,
+    3,
+    0,
+    0,
+    3
+   ],
+   "reviews": [
+    {
+     "date": "21 Ekim 2022",
+     "text": "Okadar çokmarka varkı kafanızın karışması normal 1-5 ay sonra yorum yapayım dedim sonuçta yorumlara bakarak alım yapıyorlar kimseyi yanıltmak istemem ürüne gelecek olursak haritalandırması gerçekten başarılı sensörler vadlasıyla iş görüyor 120 m karelik evi temizlettimde %30 şarj kalıyor bu cihazların kullanım ömrünü artırmak istyorsanız her kullanımdan sonra ana fırça-tekerlek-hepa filtre temizliğini yapacaksınız bunları aksatırsanız cihazın hata vermeside gayet normal. Tek beğenmediğim yanı toz haznesi çok küçük alacak olan çöp istasyonlu modele yönelsinler yedek parça saf malzemeleri piyasada çokça var zaten xoami markasıyla aynı aparatları kullanıyorlar ben 1 buçuk aylık kullanımdan memn",
+     "seller": "Lydsto Türkiye",
+     "up": 2,
+     "down": 0
+    },
+    {
+     "date": "20 Mart 2025",
+     "text": "Ürün muhteşem ikinci hatun gibi her yeri silip süpürüyor hatunda fazla yorulmuyor kadın dirdirindan kurtulmak isteyenlere tavsiye ederim 😆😆😆",
+     "seller": "Lydsto Türkiye",
+     "up": 1,
+     "down": 0
+    },
+    {
+     "date": "09 Ocak 2025",
+     "text": "Adı Leyla bizde. Kuma olarak eve aldım hanım kıskanıyor. İstediğimiz yeri oturduğumuz yerden komutla temizletip supurtuyoruz.Teknolojik imkanlardan faydalanmak lazım.",
+     "seller": "Lydsto Türkiye",
+     "up": 0,
+     "down": 0
+    },
+    {
+     "date": "16 Şubat 2025",
+     "text": "Mükemmel bir ropot",
+     "seller": "Lydsto Türkiye",
+     "up": 0,
+     "down": 0
+    },
+    {
+     "date": "04 Ekim 2024",
+     "text": "Çalışan bayanların eli ayağı olucak bir ürün",
+     "seller": "Lydsto Türkiye",
+     "up": 1,
+     "down": 0
+    },
+    {
+     "date": "09 Ekim 2024",
+     "text": "Hayatım bu kadar kolay olmamıştı. Kızımı seviyorum bana çok yardımcı🥰",
+     "seller": "Lydsto Türkiye",
+     "up": 0,
+     "down": 0
+    },
+    {
+     "date": "25 Ekim 2024",
+     "text": "eksik yok hayat kurtarıyor herkese tavsiyemdir",
+     "seller": "Lydsto Türkiye",
+     "up": 0,
+     "down": 0
+    },
+    {
+     "date": "16 Eylül 2024",
+     "text": "Harika ürün iyi ki almışım eşime hediye olarak aldım çok memnun",
+     "seller": "Lydsto Türkiye",
+     "up": 1,
+     "down": 0
+    },
+    {
+     "date": "09 Aralık 2023",
+     "text": "Satıcıya buradan çok teşekkür ederim taahhüt ettiği süreden çok daha hızlı gönderdi ürün gerçekten dediklerindençok daha iyi aynı özelliklere sahip 14-15 milyarlık bir robot süpürgenin özelliği var haritalandırma o kadar kolay ki ve o kadar güzel işlem yapıyor ki temiz evden kir çıkarttı ya",
+     "seller": "Lydsto Türkiye",
+     "up": 1,
+     "down": 0
+    },
+    {
+     "date": "12 Eylül 2024",
+     "text": "ailecek memnunuz",
+     "seller": "Lydsto Türkiye",
+     "up": 0,
+     "down": 0
+    }
+   ]
+  },
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Lydsto+R1"
+ }
+}

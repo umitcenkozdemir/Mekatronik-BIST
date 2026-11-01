@@ -1,0 +1,880 @@
+{
+ "cecotec-conga-x70": {
+  "id": "cecotec-conga-x70",
+  "name": "Cecotec Conga X70",
+  "offers": [],
+  "hbSearch": {
+   "url": "https://www.hepsiburada.com/conga-x70-ai-robot-supurge-15-000-pa-emis-gucu-lazer-navigasyon-ve-yapay-zek-doner-paspaslar-yan-firca-4-u-1-arada-otomatik-bosaltma-istasyonu-uygulama-kontrolu-bluetooth-ve-2-4-ghz-wi-fi-bag-pm-HBC0000IT44KH",
+   "title": "Cecotec Conga X70 AI Robot Süpürge, 15.000 Pa, Lazer Navigasyon, Döner Paspas, Otomatik Boşaltma İstasyonu",
+   "fromSearch": true
+  },
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Cecotec+Conga+X70"
+ },
+ "dreame-l40": {
+  "id": "dreame-l40",
+  "name": "Dreame L40",
+  "offers": [],
+  "tek": [
+   {
+    "title": "Dreame L40 Robot Süpürge Beyaz",
+    "price": 22999.0,
+    "url": "https://www.teknosa.com/dreame-l40-robot-supurge-beyaz-p-100000060317",
+    "buyable": true
+   }
+  ],
+  "hbSearch": null,
+  "mm": [
+   {
+    "title": "[DREAME L40 RLL43SDA Robot Süpürge Beyaz](https://www.mediamarkt.com.tr/tr/product/_dreame-l40-rll43sda-rbt-sprg-byz-1251374.html)",
+    "url": "https://www.mediamarkt.com.tr/tr/product/_dreame-l40-ultra-mop-robot-supurge-beyaz-1245645.html",
+    "price": 22999.0,
+    "delivery": true,
+    "store_pickup": true
+   },
+   {
+    "title": "[DREAME L40S Pro Ultra Robot Süpürge Beyaz](https://www.mediamarkt.com.tr/tr/product/_dreame-l40s-pro-ultra-robot-supurge-l40s-prult-wh-1250025.html)",
+    "url": "https://www.mediamarkt.com.tr/tr/product/_populer-dreame-x40-ultra-x40-pro-l40-ultra-uyumlu-robot-supurge-aksesuar-seti-175345348.html",
+    "price": 46999.0,
+    "delivery": true,
+    "store_pickup": true
+   }
+  ],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Dreame+L40"
+ },
+ "fakir-robert-rs-840-plus": {
+  "id": "fakir-robert-rs-840-plus",
+  "name": "Fakir Robert RS 840 Plus",
+  "offers": [],
+  "tek": [],
+  "hb": {
+   "url": "https://www.hepsiburada.com/fakir-robert-rs840-plus-robot-supurge-pm-HBC0000IBR5U7",
+   "seller": "Serçe Home",
+   "official": false,
+   "price": 39999.0,
+   "buyable": true,
+   "tr_warranty": false,
+   "importer": false,
+   "others": [],
+   "reviews": []
+  },
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Fakir+Robert+RS+840+Plus"
+ },
+ "dreame-l40s-pro": {
+  "id": "dreame-l40s-pro",
+  "name": "Dreame L40s Pro",
+  "offers": [],
+  "amz": [],
+  "tek": [],
+  "hb": {
+   "url": "https://www.hepsiburada.com/dreame-l40s-pro-ultra-robot-supurge-19-000-pa-emis-gucu-pm-HBC0000A580OD",
+   "seller": "MEMAS TEKNOLOJİ",
+   "official": false,
+   "price": 44729.1,
+   "buyable": true,
+   "tr_warranty": false,
+   "importer": false,
+   "others": [
+    {
+     "seller": "pandorra teknoloji",
+     "score": "9,5",
+     "auth": true,
+     "price": 46799.1
+    },
+    {
+     "seller": "ÇETİNGSM",
+     "score": "10,0",
+     "auth": true,
+     "price": 48555.0
+    }
+   ],
+   "rating": 4.2,
+   "count": 39,
+   "stars": [
+    29,
+    2,
+    1,
+    0,
+    7
+   ],
+   "reviews": [
+    {
+     "date": "15 Ocak",
+     "text": "Ürünü kullanmaya başladık. Bazen 1 defasında salonuna hiç girmedi. Ancak temizlik ve paspas güzel. İlk robot süpürgemiz alışmak biraz zaman alacak. Ben aldıktan sonra fiyat artmış klasık yurdum örnekleri.",
+     "seller": "Dreame Türkiye",
+     "up": 29,
+     "down": 1
+    },
+    {
+     "date": "12 Şubat",
+     "text": "Yapay zekanın tavsiyesi üzerine aldım 😁 iyikide aldım diyorum çok güzel çok hamarat maşallah 😂 yorumlarda baktım tabiki ama günlük hayatta çok büyük destekçi olacak gibi gözüküyor bir deneme yaptım çok beğendim umarım güzel günlerde kullanırız ayrıca hızlı kargo ve satıcı ilgisinede çok teşekkür ediyorum",
+     "seller": "SUNATEK",
+     "up": 10,
+     "down": 0
+    },
+    {
+     "date": "12 Mart",
+     "text": "Kurulumda ve kullanımda hiçbir problem yaşamadım haritalandırma,wifi bağlantısı,paspas ve süpürme, sadece süpürme, sadece paspas hepsini tek tek denedim tek oda temizlemeyi tüm evi temizlemeyi hepsini denedim hepsi sorunsuz çalışıyor. Evimde fazla alan olmadığı için önden ve yanlardan boşluk tam veremediğim için şarj ünitesine dönerken sorun yaşadı cihaz ama boşluk verip tekrar haritalama yapınca sorun çözüldü. Almak isteyen gönül rahatlığı ile alabilir biz gibi fukara iseniz kendinizi zengin hissetmenizi sağlayacak elit bir cihaz :) Boşluk için önden 1 buçuk metre yanlardan 0.50 metre boşluk olması gerekiyor buna göre alın.",
+     "seller": "D&D TEKNOLOJİ VE İLETİŞİM",
+     "up": 17,
+     "down": 11
+    },
+    {
+     "date": "24 Nisan",
+     "text": "Hepsiburada müşterisi olarak ilkdefa böyle bir firma ile alışveriş yapmaya çalıştım.ama böyle bir firma ile ilk defa karşılaştım.yasal süre olan 15 gün icerisinde iade hakkım olan sürede hasarlı bozuk robotu iade ettim.gondermis olduğu robot patpstlara sarılı bir şekilde kutu koli icerisine koyulma suretiyle bana ulaştı.icerinde garanti belgesi yoktu.urunu acıktık robot kendi ekseni etrafında dönüp duruyor.hareket etmiyor.ayni zamanda kırmızı ışık yanıp sönüyor.lazeri tarama yapmıyor.simdi sizlere atacağım video sizlerde göreceksiniz.robot yerinde sayıyor.iadesini yetkili firmadan istediğim halde koli nin üzerine iade kodu yazılır mı.resim cizseydiniz.bari dedi.eşimi arayarak hakaret etti.",
+     "seller": "SUNATEK",
+     "up": 4,
+     "down": 1
+    },
+    {
+     "date": "13 Şubat",
+     "text": "Satıcı: NEONBİL HA HA 29 Temmuz, Çar| H A Uzun araştırmalar sonunda bu modeli tercih ettim ve beklentimin üzerinde çıktı. Emiş gücü gerçekten çok başarılı, ince tozları ve evcil hayvan tüylerini rahatlıkla topluyor. Haritalama hızlı ve doğru, engellere çarpması çok az. İstasyonu sayesinde toz haznesiyle uğraşmıyorum, paspas performansı da günlük temizlik için fazlasıyla yeterli. Uygulaması kullanışlı ve kurulumu çok kolaydı. Fiyatını hak eden kaliteli bir ürün, kesinlikle tavsiye ederim.",
+     "seller": "Dreame Türkiye",
+     "up": 0,
+     "down": 0
+    },
+    {
+     "date": "14 Mayıs",
+     "text": "Urun elime ulasinca hemen kurulum ve hizli haritalandirmayla aktiflestirdim. Supurmesi ve paspaslamasi cok iyi. Haritalandirma yaparken odalarinizin aydinlik olmasina dikkat edin. Kameranin olmasi robotun hangi odada ne yaptigini gormek icin gayet guzel. Kullandigim model l40s pro ultra. Tavsiye ederim. Uzun kullanim sonunda olumsuzluk yasarsam tekrar yorum yaparim.",
+     "seller": "Teknosa",
+     "up": 0,
+     "down": 0
+    },
+    {
+     "date": "25 Ekim",
+     "text": "Yorum üstte çıksın daha çok insana ulaşsın diye 5 Yıldız verdim. 5 ay içinde ikinci arızaya girişi BİREBİR DEĞİŞİM İSTEDİM RET ETTİLER. Düz zeminde uçurum sensörü uyarı veriyor. Eski makinama güvenip aldım ama malesef hayal kırıklığı oldu. TAVSİYE ETMİYORUM....",
+     "seller": "Teknosa",
+     "up": 0,
+     "down": 0
+    },
+    {
+     "date": "24 Şubat",
+     "text": "Fiyatına göre bedava indirim ile 44 liraya aldık, özelliklerine göre değer. Bilindik diğer markadan 20 bin daha uygun, ama performans olarak onu geçer.",
+     "seller": "beyazay teknoloji",
+     "up": 4,
+     "down": 0
+    },
+    {
+     "date": "06 Nisan",
+     "text": "Oldukça başarılı bir ürün. Bazı ince halılarda, halı özelliklerini tanimlarsanız daha başarılı sonuçlar elde ediyorsunuz. Tavsiye ederim.",
+     "seller": "ÇETİNGSM",
+     "up": 2,
+     "down": 0
+    }
+   ]
+  },
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Dreame+L40s+Pro"
+ },
+ "ecovacs-deebot-x8-pro-omni": {
+  "id": "ecovacs-deebot-x8-pro-omni",
+  "name": "Ecovacs Deebot X8 Pro Omni",
+  "offers": [],
+  "amz": [
+   {
+    "title": "Ecovacs Deebot X8 Pro Omni Siyah Robot Süpürge Ve Paspas 18000 Pa Emiş Gücü",
+    "url": "https://www.amazon.com.tr/dp/B0F13MDB1N",
+    "price": null,
+    "buyable": false,
+    "unavailable": false,
+    "lowstock": null,
+    "rating": null,
+    "count": 0,
+    "delivery": null
+   }
+  ],
+  "tek": [],
+  "hb": {
+   "url": "https://www.hepsiburada.com/ecovacs-deebot-x8-pro-omni-siyah-robot-supurge-ve-paspas-18000-pa-emis-gucu-pm-HBC00007SKT2V",
+   "seller": "TeknoLab Elektronik",
+   "official": false,
+   "price": 43091.1,
+   "buyable": true,
+   "tr_warranty": false,
+   "importer": false,
+   "others": [
+    {
+     "seller": "BOLKUR",
+     "score": "9,7",
+     "auth": true,
+     "price": 42929.1
+    },
+    {
+     "seller": "IDEA",
+     "score": "10,0",
+     "auth": true,
+     "price": 45000.0
+    }
+   ],
+   "rating": 4.1,
+   "count": 52,
+   "stars": [
+    37,
+    3,
+    2,
+    0,
+    10
+   ],
+   "reviews": [
+    {
+     "date": "15 Eylül 2025",
+     "text": "Tahmini 7-8 dakikada bütün evi haritaladım. Süpürme çok verimli çalışıyor ve kesinlikle fircasinda kıl tüy kalmıyor,icerisinde bulunan sert plastikler parcalayarak içine cekiyor.Moplama özelliği alışılmış robotlardan çok farklı çalışmakta, her seferinde istasyona giderek mop temizlemeden anlık temizleme ve yeni su ile silme yapıyor,bu çok güzel bir özellik. İstasyonda ayrıca bir solüsyon haznesi bulunmakta ama henüz kullanmadim. Üzerinde gerçek bir kamera var evde olmadığımda kedimi uzaktan izleyebiliyorum☺️ ilk izlenimim gayet iyi kullandıkça goreceğiz.",
+     "seller": "Santis Store",
+     "up": 4,
+     "down": 3
+    },
+    {
+     "date": "27 Eylül 2025",
+     "text": "Öncelikle ürün çok hızlı ve sorunsuz geldi. Kurulumu kolay bir ürün. Bu seviyede bu fiyata inanılmaz iyi bir ürün bence. Hem dip köşe temizliyor hem de mopu çok iyi çalışıyor. Özellikle mopunun rulo şeklinde olması sebebiyle de mop temizliğini dah iyi yapıyor. Ben çok memnun kaldım üründen 3+1 evi rahatlıkla temizliyor. Köpeğimin tüylerini bile sounsuzca süpürüyor.",
+     "seller": "Santis Store",
+     "up": 4,
+     "down": 1
+    },
+    {
+     "date": "13 Eylül 2025",
+     "text": "Dip köşe temziledi, herşeyi kendi yapıyor :) Mopu ileri geri girip çıkıyor köşeleri gayet iyi temziledi. İlk kullanım tecrübemden memnun kaldım.",
+     "seller": "Santis Store",
+     "up": 4,
+     "down": 1
+    },
+    {
+     "date": "19 Kasım 2025",
+     "text": "Arkadaşlar eşinize alacağınız en güzel yardımcı hediye olacağına inanın. 🎁 Eşim çok beğendi ve çok güzel temizlik yapıyor , ürün çok başarılı kesinlikle alınması gereken ürün Teşekkür ediyorum 😊",
+     "seller": "Hepsiburada",
+     "up": 1,
+     "down": 1
+    },
+    {
+     "date": "08 Ekim 2025",
+     "text": "Yaklaşık 10 gündür bu robotu kullanıyorum. tüm özelliklerini kullanamadım ama ürün gerçekten muazzam bir alet. Fırçası köşelere erişmek için dışarıya doğru uzayabiliyor. halıyı algıladığı zaman mop bezi yukarı kalkıyor. kendi kendini temizleyip fırçayı kendisi kuruluyor. uygulamadan ayarladıktan sonra sesli komut ile temizlemeyi başlatabiliyorsunuz. çoğu şeyi zaten kendisi yapay zekayayla algılayabiliyor.",
+     "seller": "Santis Store",
+     "up": 17,
+     "down": 2
+    }
+   ]
+  },
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Ecovacs+Deebot+X8+Pro+Omni"
+ },
+ "ultenic-d6s": {
+  "id": "ultenic-d6s",
+  "name": "Ultenic D6S",
+  "offers": [],
+  "tek": [],
+  "hb": {
+   "url": "https://www.hepsiburada.com/ultenic-d6s-robot-vacuum-cleaner-vibration-mopping-3000pa-strong-suction-super-slim-app-control-ideal-for-pet-hair-hard-floors-and-carpets-pm-HBC0000OH8SK6",
+   "seller": "BRANDMİX",
+   "official": false,
+   "price": 11092.23,
+   "buyable": true,
+   "tr_warranty": false,
+   "importer": false,
+   "others": [],
+   "reviews": []
+  },
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Ultenic+D6S"
+ },
+ "roborock-saros-10": {
+  "id": "roborock-saros-10",
+  "name": "Roborock Saros 10",
+  "offers": [],
+  "tek": [
+   {
+    "title": "Roborock Saros 10 Beyaz Robot Süpürge",
+    "price": 72997.0,
+    "url": "https://www.teknosa.com/roborock-saros-10-beyaz-robot-supurge-p-115044847",
+    "buyable": true
+   },
+   {
+    "title": "Roborock Saros 10 R -Çöp İstasyonlu Siyah Robot Süpürge",
+    "price": 63018.33,
+    "url": "https://www.teknosa.com/roborock-saros-10-r-cop-istasyonlu-siyah-robot-supurge-p-100000055453",
+    "buyable": true
+   }
+  ],
+  "hbSearch": {
+   "url": "https://www.hepsiburada.com/saros-10r-akilli-robot-supurge-pm-HBC00008ZC19Q",
+   "title": "Saros 10R Akıllı Robot Süpürge",
+   "fromSearch": true
+  },
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Roborock+Saros+10"
+ },
+ "cecotec-conga-y80": {
+  "id": "cecotec-conga-y80",
+  "name": "Cecotec Conga Y80",
+  "offers": [],
+  "amz": [
+   {
+    "title": "Cecotec Conga Y80 kendi kendine boşaltma istasyonlu robot süpürge ve silme robotu. Lazer navigasyon ve KI, emiş gücü 130",
+    "url": "https://www.amazon.com.tr/dp/B0FL2J1MHW",
+    "price": null,
+    "buyable": false,
+    "unavailable": false,
+    "lowstock": null,
+    "rating": 4.0,
+    "count": 378,
+    "delivery": null
+   }
+  ],
+  "tek": [],
+  "hb": {
+   "url": "https://www.hepsiburada.com/conga-y80-robot-supurge-pm-HBC0000DFPKLC",
+   "seller": "Cecotec Türkiye",
+   "official": false,
+   "price": 20907.83,
+   "buyable": true,
+   "tr_warranty": false,
+   "importer": false,
+   "others": [],
+   "reviews": []
+  },
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Cecotec+Conga+Y80"
+ },
+ "simart-katya-p": {
+  "id": "simart-katya-p",
+  "name": "Şımart Katya P",
+  "offers": [],
+  "hbSearch": null,
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=%C5%9E%C4%B1mart+Katya+P"
+ },
+ "lydsto-w3": {
+  "id": "lydsto-w3",
+  "name": "Lydsto W3",
+  "offers": [],
+  "tek": [
+   {
+    "title": "Lydsto W3 Basınçlı Paspas 10000 Pa Akıllı Robot Süpürge",
+    "price": 27999.0,
+    "url": "https://www.teknosa.com/lydsto-w3-basincli-paspas-10000-pa-akilli-robot-supurge-p-787124471",
+    "buyable": true
+   }
+  ],
+  "hb": {
+   "url": "https://www.hepsiburada.com/lydsto-w3-basincli-paspas-10000-pa-toz-toplama-uniteli-akilli-robot-supurge-pm-HBC00006CDIBL",
+   "seller": "Lydsto Türkiye",
+   "official": true,
+   "price": null,
+   "buyable": true,
+   "tr_warranty": false,
+   "importer": false,
+   "others": [],
+   "rating": 4.6,
+   "count": 94,
+   "stars": [
+    83,
+    2,
+    1,
+    0,
+    8
+   ],
+   "reviews": [
+    {
+     "date": "01 Nisan 2025",
+     "text": "Canım annemin yükü hafiflesin diye aldım. Biraz fiyat/performans araştırması yaptıktan sonra bu üründe karar kıldım. İyi ki almışım. Kurulumunu yaptım. Annem sadece başlat düğmesine basıp, bir de arada su tankları ve toz torbasıyla ilgilenecek o kadar. Silme ve süpürme performansı üst düzey. Kendi kendini temizlemesi de cabası. Yaşlılar, çalışanlar, evde yaşlısı olanlar, evcil hayvanı olanlar için resmen mucize. Malzeme kalitesi harika. Parasının hakkını fazlasıyla veriyor.",
+     "seller": "Lydsto Türkiye",
+     "up": 6,
+     "down": 2
+    },
+    {
+     "date": "07 Ekim",
+     "text": "Üst düzey bir robot değil ancak haritalama olsun kendisini konumlandırma olsun Mobil uygulamasının sadeliği, robotun ve uygulamanın wifi ağına kolaylıkla bağlanması beni gerçekten rahatlattı. Ben paspas özelliğini pek beğenmedim kötü değil ama tercih etmiyorum zeminde silinme izi kalıyor ancak süpürme konusunda iyi. 3+1 evi maksimum güçte rahatlıkla süpürüyor sonra gidip kendisini temizleyerek şarj oluyor. Boş yere 60 bin tl lik pahalı cihazlar almayın.",
+     "seller": "Lydsto Türkiye",
+     "up": 0,
+     "down": 0
+    },
+    {
+     "date": "10 Mayıs 2025",
+     "text": "İnanılmaz bir ürün.Rakiplerine göre fiyat performans ürünü.İnanılmaz temiz iş yapıyor.Haritalandırma halı temizleme mükemmel.",
+     "seller": "Lydsto Türkiye",
+     "up": 1,
+     "down": 0
+    },
+    {
+     "date": "02 Temmuz",
+     "text": "Bir yıldır kullanıyoruz. Çok iyi. bir sıkıntı yok",
+     "seller": "Lydsto Türkiye",
+     "up": 1,
+     "down": 0
+    },
+    {
+     "date": "24 Temmuz 2024",
+     "text": "Evet pahalli, ama diger robot süpürgelerle kiyas edilemeyecek kadarda iyi. Mükemmel cekis gücü mükemmel silme. Özellikle cocuklu evler icin gercekten müthis elim kolum kanadim oldu",
+     "seller": "Lydsto Türkiye",
+     "up": 2,
+     "down": 0
+    }
+   ]
+  },
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Lydsto+W3"
+ },
+ "ultenic-t10-pro": {
+  "id": "ultenic-t10-pro",
+  "name": "Ultenic T10 Pro",
+  "offers": [],
+  "tek": [],
+  "hb": {
+   "url": "https://www.hepsiburada.com/ultenic-t10-pro-robot-supurge-silme-fonksiyonlu-istasyonu-4000-pa-temizlik-robotu-uzun-calisma-suresi-200-dakika-lidar-navigasyon-hali-algilamali-robot-supurge-kartografi-wifi-app-pm-HBC0000OQ4Q5E",
+   "seller": "VELORA COSMETİCS",
+   "official": false,
+   "price": 22989.12,
+   "buyable": true,
+   "tr_warranty": false,
+   "importer": false,
+   "others": [],
+   "reviews": []
+  },
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Ultenic+T10+Pro"
+ },
+ "lydsto-w2-lite": {
+  "id": "lydsto-w2-lite",
+  "name": "Lydsto W2 Lite",
+  "offers": [],
+  "tek": [],
+  "hbSearch": null,
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Lydsto+W2+Lite"
+ },
+ "philips-homerun-7000-series-aqua-xu7000": {
+  "id": "philips-homerun-7000-series-aqua-xu7000",
+  "name": "Philips HomeRun 7000 Series Aqua XU7000",
+  "offers": [],
+  "amz": [],
+  "tek": [],
+  "hbSearch": null,
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Philips+HomeRun+7000+Series+Aqua+XU7000"
+ },
+ "ecovacs-deebot-n20-pro": {
+  "id": "ecovacs-deebot-n20-pro",
+  "name": "Ecovacs Deebot N20 Pro",
+  "offers": [],
+  "tek": [
+   {
+    "title": "Ecovacs Deebot N20 Pro Robot Süpürge",
+    "price": 11999.0,
+    "url": "https://www.teknosa.com/ecovacs-deebot-n20-pro-robot-supurge-p-115048895",
+    "buyable": true
+   }
+  ],
+  "hb": {
+   "url": "https://www.hepsiburada.com/ecovacs-deebot-n20-pro-akilli-robot-supurge-8000pa-emis-gucu-2-si-1-arada-supurme-ve-paspaslama-truemapping-lazer-navigasyon-300-dakika-calisma-suresi-p-HBCV00006XVQLI",
+   "seller": "Techburada",
+   "official": false,
+   "price": 11249.1,
+   "buyable": true,
+   "tr_warranty": false,
+   "importer": false,
+   "others": [
+    {
+     "seller": "NOLVA",
+     "score": "9,6",
+     "auth": true,
+     "price": 11248.2
+    },
+    {
+     "seller": "GLOBAL TEKNOLOJİİ",
+     "score": "9,6",
+     "auth": true,
+     "price": 13845.04
+    }
+   ],
+   "rating": 4.4,
+   "count": 163,
+   "stars": [
+    121,
+    18,
+    9,
+    1,
+    14
+   ],
+   "reviews": [
+    {
+     "date": "24 Aralık 2024",
+     "text": "Ürünü iki gün içinde teslim aldık . Tasarım olarak güzel bir ürün.kurulumun zor olduğu ile ilgili yorumlar görmüştüm bu açıkçası beni korkuttu ama wifi ağının 2.4 GHz olanına bağlı olduğunuzdan emin olun 2 GHz olana bağlanmaya çalışınca şifreyi doğru da yazsanız bir türlü bağlanmıyor ben de yanlış bağlanınca müşteri hizmetlerinden yardım aldım öylece sorunu anladım burayı aşınca kurulum gayet basit. Haritalamayi yapması hızlı gayet. Performansina gelince dört kademeli çekim gücü var ve kademeyi yukselttikce ses biraz artıyor rahatsız edici değil. Süpürge performansı bence çok iyi gayet halıda iz bırakacak kadar temizliyor evi her supurusumde bir hazne dolusu toz çıkıyor ve bu şaşırtıcı. Silm",
+     "seller": "",
+     "up": 94,
+     "down": 2
+    },
+    {
+     "date": "07 Nisan",
+     "text": "Fiyat performans ürünü süper. Uygulama kullanımı, kurulum, haritalama ve temizlik çok kolay iyiki almışım =) Satıcı: LUCKY TREND Seçenek Deebot N20 Pro",
+     "seller": "",
+     "up": 1,
+     "down": 1
+    },
+    {
+     "date": "17 Temmuz",
+     "text": "Fiyat performans ürünü şuan. Gayet iyi. Satıcı: Hepsiburada Seçenek Deebot N20e",
+     "seller": "",
+     "up": 0,
+     "down": 0
+    },
+    {
+     "date": "29 Eylül 2025",
+     "text": "Dışardaki fiyattan daha uygun ve Fiyat performans ürünü Satıcı: smartport Seçenek Deebot N20 Pro",
+     "seller": "",
+     "up": 3,
+     "down": 0
+    },
+    {
+     "date": "07 Aralık 2024",
+     "text": "Satıcıya da teşekkür ediyorum çok hızlı teslimattı robot supurge 8 dk gibi sürede 150 metrekare evin planını cıkarsın çok da güzel süpürüyor tavsiye ederim Satıcı: DEY ELEKTRONİK Seçenek Deebot N20 Pro",
+     "seller": "",
+     "up": 7,
+     "down": 0
+    },
+    {
+     "date": "05 Mart 2025",
+     "text": "Ürünü alalı 2 hafta oldu. Kullandıktan sonra robot süpürge alacaklar için değerlendirme yapmak istedim. Ben de yorumlara bakarak ürünü aldım. Robot kurulum aşamasında İngilizce konuşuyor ama sonrasındaki sesli bildirimler ve uygulama Türkçe. Kurulumu kolay. Ev interneti olmadığı kurulum aşamasında 2 telefona ihtiyacım oldu. Kendi telefonumun Hotspotunu açtım. Diğer telefona uygulamayı indirdim. Uygulama indirdiğim telefonu da kendi telefonuma bağladım. Robotu açtıktan sonra wifi düğmesine kısa süre bastıktan sonra telefonun wifisini görüyor. Hotspot şifresini girdikten sonra robot telefonun wifisine bağlanmış oluyor. Diğer telefondaki uygulamayla robotu kurduktan sonra haritalandırma yaptırd",
+     "seller": "",
+     "up": 29,
+     "down": 6
+    },
+    {
+     "date": "03 Ekim",
+     "text": "Bugün elime geçti ilk kullanımda gerçekten iyi toz topladı yani yerde görüldüğü bütün kırıklar gerçekten rahatlıkla aldı ya ilk kullanıma göre iyi beğendim şu anlık hani ilk defa kullandım zaten eğer ileride bir sıkıntı bir şey yaşarsam güncelleme yaparım şu anlık iyi güzel beğendik Satıcı: Cep Ekspress Seçenek Deebot N20e",
+     "seller": "",
+     "up": 0,
+     "down": 0
+    },
+    {
+     "date": "01 Ağustos",
+     "text": "Çok başarılı fiyat piyasaya göre çok uygun paketleme bir tık daha iyi olabilirdi sadece strece sarmak yerine ürun sıfır kapalı kutu gönül rahatlığı ile alabilirsiniz Satıcı: Lugo Seçenek Deebot N20 Pro",
+     "seller": "",
+     "up": 0,
+     "down": 0
+    },
+    {
+     "date": "02 Aralık 2025",
+     "text": "Üründen gerçekten memnunum aldığım günden çok rahatım tehdit edenler varsa hemen alsın yorumları aldanıp almaktan vazgeçmeyin gerçekten bugüne kadar almadığım için pişmanım Satıcı: Yenisey Seçenek Deebot N20 Pro",
+     "seller": "",
+     "up": 1,
+     "down": 0
+    },
+    {
+     "date": "28 Ekim 2024",
+     "text": "Ürünü 2 gün önce aldım bir değerlendirip yorum yapmak istedim bir süredir bir çok markayı araştırdım ve bu marka en iyisi ve en iyi fiyatlası. Emiş gücü zaten efsane kesinlikle tavsiye ederim Ayrıca satıcı ya teşekkürler özenle paketli ve dikkatli şekilde ulaştı... Satıcı: Comfor Seçenek Deebot N20 Pro",
+     "seller": "",
+     "up": 9,
+     "down": 1
+    }
+   ]
+  },
+  "mm": [
+   {
+    "title": "[ECOVACS Deebot N20 Pro Robot Süpürge Beyaz](https://www.mediamarkt.com.tr/tr/product/_ecovacs-deebot-n20-pro-robot-supurge-beyaz-1240079.html)",
+    "url": "https://www.mediamarkt.com.tr/tr/product/_ecovacs-t80s-omni-robot-supurge-mop-siyah-1252217.html",
+    "price": 11999.0,
+    "delivery": true,
+    "store_pickup": true
+   }
+  ],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Ecovacs+Deebot+N20+Pro"
+ },
+ "philips-2000-serisi-xu2000-15": {
+  "id": "philips-2000-serisi-xu2000-15",
+  "name": "Philips 2000 Serisi XU2000/15",
+  "offers": [],
+  "hbSearch": null,
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Philips+2000+Serisi+XU2000%2F15"
+ },
+ "mova-e40-ultra": {
+  "id": "mova-e40-ultra",
+  "name": "Mova E40 Ultra",
+  "offers": [],
+  "tek": [
+   {
+    "title": "Mova E40 Ultra İstasyonlu Robot Süpürge Beyaz",
+    "price": 32397.0,
+    "url": "https://www.teknosa.com/mova-e40-ultra-istasyonlu-robot-supurge-beyaz-p-100000061520",
+    "buyable": true
+   }
+  ],
+  "hbSearch": null,
+  "mm": [
+   {
+    "title": "[MOVA E40 Ultra Robot Süpürge Beyaz](https://www.mediamarkt.com.tr/tr/product/_mova-e40-ultra-robot-supurge-beyaz-1250556.html)",
+    "url": "https://www.mediamarkt.com.tr/tr/product/_mova-e50-pro-ultra-robot-supurge-beyaz-1255406.html",
+    "price": 32999.0,
+    "delivery": true,
+    "store_pickup": true
+   }
+  ],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Mova+E40+Ultra"
+ },
+ "yui-rs16-pro": {
+  "id": "yui-rs16-pro",
+  "name": "Yui RS16 Pro",
+  "offers": [],
+  "tek": [
+   {
+    "title": "Yui RS16 Pro Akıllı Robot Vacuum & Mop Süpürge Otomatik Toz Boşaltma Beyaz",
+    "price": 18999.0,
+    "url": "https://www.teknosa.com/yui-rs16-pro-akilli-robot-vacuum-mop-supurge-otomatik-toz-bosaltma-beyaz-p-787132887",
+    "buyable": true
+   }
+  ],
+  "hb": {
+   "url": "https://www.hepsiburada.com/rs16-pro-akilli-robot-vacuum-mop-supurge-otomatik-toz-bosaltma-beyaz-yui-turkiye-garantili-pm-HBC0000ASGAV5",
+   "seller": "Hepsiburada",
+   "official": true,
+   "price": 18999.0,
+   "buyable": true,
+   "tr_warranty": true,
+   "importer": false,
+   "others": [
+    {
+     "seller": "İdeal Sanal",
+     "score": "9,1",
+     "auth": true,
+     "price": 19999.0
+    }
+   ],
+   "rating": 3.0,
+   "count": 3,
+   "stars": [
+    1,
+    0,
+    1,
+    0,
+    1
+   ],
+   "reviews": [
+    {
+     "date": "25 Ağustos",
+     "text": "Ürün güzel, sarf malzemeleri pahalı",
+     "seller": "Hepsiburada",
+     "up": 0,
+     "down": 0
+    },
+    {
+     "date": "16 Eylül",
+     "text": "Berbat bi cihaz alalı 20 gün olmadı bozuldu iade talebi kabul edilmiyor bir kere tek evi sildi",
+     "seller": "Hepsiburada",
+     "up": 0,
+     "down": 0
+    },
+    {
+     "date": "09 Eylül",
+     "text": "Tek başına paspas yapmıyor süpürge paspas yapıyor",
+     "seller": "Hepsiburada",
+     "up": 0,
+     "down": 0
+    }
+   ]
+  },
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Yui+RS16+Pro"
+ },
+ "bosch-spotless-advanced-plus": {
+  "id": "bosch-spotless-advanced-plus",
+  "name": "Bosch Spotless Advanced + (BCRD2W)",
+  "offers": [],
+  "hb": {
+   "url": "https://www.hepsiburada.com/robot-supurge-spotless-advanced-bcrd2w-pm-HBC0000JEAG1M",
+   "seller": "NAXİN",
+   "official": false,
+   "price": 42000.0,
+   "buyable": true,
+   "tr_warranty": false,
+   "importer": false,
+   "others": [
+    {
+     "seller": "Bosch Ev Aletleri",
+     "score": "9,6",
+     "auth": true,
+     "price": 43700.0
+    }
+   ],
+   "reviews": []
+  },
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Bosch+Spotless+Advanced+%2B"
+ },
+ "homend-alex-laser-power-1289h": {
+  "id": "homend-alex-laser-power-1289h",
+  "name": "Homend Alex Laser Power 1289H",
+  "offers": [],
+  "tek": [
+   {
+    "title": "Homend Alex Laser Power 1289H Otomatik Boşaltım Sistemli Yeni Nesil Moplu 5 Kpa Robot Süpürge Beyaz",
+    "price": 23999.0,
+    "url": "https://www.teknosa.com/homend-alex-laser-power-1289h-otomatik-bosaltim-sistemli-yeni-nesil-moplu-5-kpa-robot-supurge-beyaz-p-787134383",
+    "buyable": true
+   }
+  ],
+  "hb": {
+   "url": "https://www.hepsiburada.com/homend-alex-laser-power-otomatik-bosaltim-sistemli-yeni-nesil-moplu-robot-supurge-pm-HBC0000HK0DCS",
+   "seller": "Homend",
+   "official": true,
+   "price": 12999.0,
+   "buyable": true,
+   "tr_warranty": false,
+   "importer": false,
+   "others": [
+    {
+     "seller": "Mis.Sofya",
+     "score": "9,7",
+     "auth": true,
+     "price": 23500.0
+    }
+   ],
+   "rating": 4.4,
+   "count": 5,
+   "stars": [
+    3,
+    1,
+    1,
+    0,
+    0
+   ],
+   "reviews": [
+    {
+     "date": "27 Ekim",
+     "text": "Menmun kalmadım şarj dolmuyor ve sürekli uyarı verıyor en ufak tozu almıyo",
+     "seller": "Homend",
+     "up": 0,
+     "down": 0
+    },
+    {
+     "date": "13 Eylül",
+     "text": "Ürünü kullanalı bir hafta oluyor. Sadece bir kez mop özelliğini kullandım. Açıkçası hiç memnun kalmadım. Süpürmesi en yüksek seviyede tanecik bırakıyor. Açıkçası kullanmasaydım iade ederdim. En yüksek seviyede süpürme yaparken bile yüzde 65 ilk bi süpürme yapıyor. Çevremdeki insanların tobot süpürgedi ile kıyas edince onların yüzde 85 -90 civarında güzel sonuçlar verdiğini gördüm. Ben yerli malı olduğu için tercih etmiştim ama Malesef memnun kalmadım.",
+     "seller": "Homend",
+     "up": 1,
+     "down": 0
+    },
+    {
+     "date": "01 Ekim",
+     "text": "Süper iyiki almışım",
+     "seller": "Homend",
+     "up": 0,
+     "down": 0
+    },
+    {
+     "date": "07 Eylül",
+     "text": "Kargolama çok özenliydi ürünü de çok beğendim çalışan kadınlar için kurtarıcı bi ürün almak isteyenlere tavsiye ederim",
+     "seller": "Homend",
+     "up": 0,
+     "down": 0
+    }
+   ]
+  },
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Homend+Alex+Laser+Power+1289H"
+ },
+ "narwal-freo-z-ultra": {
+  "id": "narwal-freo-z-ultra",
+  "name": "Narwal Freo Z Ultra",
+  "offers": [],
+  "amz": [],
+  "tek": [],
+  "hb": {
+   "url": "https://www.hepsiburada.com/narwal-freo-z-ultra-robot-supurge-gri-pm-HBC000087PGG0",
+   "seller": "Kırmızıetiketim",
+   "official": true,
+   "price": 24682.41,
+   "buyable": true,
+   "tr_warranty": false,
+   "importer": false,
+   "others": [
+    {
+     "seller": "Hepsiburada",
+     "score": null,
+     "auth": true,
+     "price": 32999.0
+    }
+   ],
+   "rating": 3.9,
+   "count": 49,
+   "stars": [
+    30,
+    6,
+    2,
+    1,
+    10
+   ],
+   "reviews": [
+    {
+     "date": "09 Kasım 2025",
+     "text": "narval tr ye yeni girmis olsada cok arastirdim ve bu robotta karar verdim oncelikle kargo saglam eksiksiz ve hepsijet tarafindan pazar gunu teslim edildi,hemen haritalama yaptik evim 220 m.kare once salonu ana haritaya dahil etmedi sonra tekrar yaptik ve 23 dakika da 160 m.kare kullanilir alanin planini cikartti turkce dil destegi ile kizim turkce konusuyor 🥰benim icin 12 bin pa emis gucu ve paspaslari kendinin yikamasi onemliydi bu ozelliklerde baska urunlere cok odemeye gerek yok diyerek sans vermek istedim malzeme kalitesi ve yedekleri ile uzun vadede beni mutlu ederse ne ala..",
+     "seller": "Hepsiburada",
+     "up": 8,
+     "down": 4
+    },
+    {
+     "date": "11 Ağustos 2025",
+     "text": "Kargo çok hızlı geldi, paket hasarsız ulaştı. Bu robot süpürgenin Türkçe dil desteği var, kullanırken hiç sorun yaşamadım, çok memnun kaldım. Gerçek kullanım ürün açıklamasıyla tıpatıp aynı.",
+     "seller": "Narwal Türkiye",
+     "up": 6,
+     "down": 1
+    },
+    {
+     "date": "25 Aralık 2025",
+     "text": "Yorumlara bakarak temizliği iyi denildiği için aldım ama ben beğenemedim Xiaomi nin en ucuz modelini kullanıyorduk çok güzel süpürüyordu bu okadar değil 12 bin çekiş gücü nerede ben göremedim açıkcası ayrıca haritalamayı yapamadığı için mi bilmiyorum ki buda bir sorun ama odayı tam süpürmeden geri döndü durdu sürekli başlatmak zorunda kaldık suyuda hemen bitirdi 10 metre alanı süpürtemedik 5 metresini belki süpürmüştür biz mi yapamadık yada bize gelen ürün mü sıkıntılı var birşey ama hadi hayırlısı😀",
+     "seller": "Hepsiburada",
+     "up": 3,
+     "down": 4
+    },
+    {
+     "date": "04 Şubat",
+     "text": "Yaklaşık 1 aydır kullanıyorum ve gerçekten memnunum. Robot süpürgelerle oldukça ilgiliyim; bu yüzden almadan önce bayağı araştırma yaptım. Bu benim 3. robot süpürgem oluyor. Genelde güncel özellikleri kullanabilmek için 2 yılda bir değiştiriyorum. Bu modeli tercih etmemdeki en önemli nedenler; fiyatına göre sunduğu özelliklerin çok iyi olması ve ayrıca 9 taksit seçeneğinin bulunmasıydı. Açıkçası bu ikisi benim için oldukça cazip oldu. Özelliklerine gelecek olursam; cihazın iyonize su ile (bir nevi deterjanlı su hazırlıyor gibi düşünebiliriz) paspaslarını temizleme özelliği var. Paspasları bu suyla yıkıyor. Ben özellikle paspas özelliğini zahmetsiz kullanabilmek için dock’lu bir model istiyor",
+     "seller": "Narwal Türkiye",
+     "up": 11,
+     "down": 0
+    },
+    {
+     "date": "07 Temmuz",
+     "text": "16 ocakta robotu aldim alma sebebim toza alerjimin yüksek olması gayet güzel temizliyordu memnundum 3 hafta olacak çip ısınma hatası verdi satıcı resetlememi istedi yaptım aynı hata devam ediyor beni servise yönlendirdi kullanıcı hatası olsa anlarım ben alerji aşısı olan birisiyim eşim makine mühendisi çip hatası veren makine sorunludur dedi taksitleri bitmeden bozulan bir cihaz servisi nerededir bilmiyorum 5 yıldız bilerek verdim alacaklar dikkat etsin Almanyadan Tikom marka geldi 5 yıldır kullanıyorum 1 defa hata vermedi bunu toz haznesi olduğu için çok araştırarak aldim ama büyük bir sorun oldu bu ücret ve kalite asla etmez uzak durun 3 hafta oldu servis cevap vermiyor hepsiburada bizden ",
+     "seller": "Narwal Türkiye",
+     "up": 1,
+     "down": 0
+    },
+    {
+     "date": "15 Aralık 2025",
+     "text": "Ürünü alalı 1 hafta oldu ben çok memnun kaldım paspaslaması,süpürmesi gayet iyi haritalamayı kısa sürede yaptı.Bazı yorumlarda halıları süpürmüyor es geçiyor yazmıslar doğru ilk süpürmesinde benim halılarımıda süpürmeden es geçti yabancı forumlardan baktım haritalama bölümünden halıları temizle seçeneği var onu işaretleyince halıları da temizliyor.Onun haricinde istasyonu çok şık uygulaması kullanışlı 2 adet kamerası var karanlık yerlerde aydınlatma açıyor özellik olarak baya iyi ben memnun kaldım alacaklara tavsiye ederim.",
+     "seller": "Hepsiburada",
+     "up": 6,
+     "down": 0
+    },
+    {
+     "date": "14 Kasım 2025",
+     "text": "Uzun kullanım sonrası değerlendirme yapıyorum siteden bu cihazı ilk alan olabilirim. Cihaz aldığımda Türkiye kullanımına kapalı idi distribütör bu konuda hızlı dönüş yaptı ve güncelleme ile sorunu çözdü. Ürünün süpürme ve mop özelliği eski nesillere göre gayet iyi, engelden kaçma ve yapay zekâ iyi çalışıyor ama aralıklı takılmalar yaşanıyor ve elle müdahale gerektirebiliyor. Evde olmadığımız zamanlarda kedimizi kamera ve ses ile takip edebiliyoruz. Aplikasyonu kullanışlı. 6 aylık kullanım sonrası mudahillerine göre tam fiyat performans ürünü.",
+     "seller": "Narwal Türkiye",
+     "up": 11,
+     "down": 0
+    },
+    {
+     "date": "22 Ocak",
+     "text": "Herkese yardımcı olması amacı ile çok uzun süre robot süpürge araştırdım bunu görüncede araştırmak istedim yurtdışı sitelerinden vs en çok satan marka robotun 80-90 binlik modelleri ile karşılaştırılmış bede bir şans vermek istedim öncelikle evet haritalamayı biraz zor yaptı bi 7-8 krre baştan yaptım evimin kapıları çok yakın olduğu için odaların tek oda gibi çıkarıyordu sonra doğru yaptı süpürme gücü 12000 pascal gücünde değil tam olarak en yüksek modda bile o şekilde olduğunu sanmıyorum ama gayet yeterli süpürme gücü veriyor mu evet veriyor paspası daha verimli gibi birde halının ortalı olduğu yerlerde bazen kafası karışıp halının dışta kalan parkelerinbir tarafını alıyor bir tarafını almi",
+     "seller": "Narwal Türkiye",
+     "up": 7,
+     "down": 1
+    },
+    {
+     "date": "25 Ocak",
+     "text": "Ürünü neredeyse bir aya yakındır kullanıyorum.Öncelikle inanılmaz hızlı ve sağlam bir şekilde geldi.Kutu içinde çokça yedek aparatları ve deterjanı var (2-3bin gibi kâr demek bu) .Kurulumu ve haritalandırması eğer detaylara dikkat ederseniz kolay hızlı ve sorunsuz oluyor.Köşe,halı,silme ve süpürme yoğunluğu hassasiyeti için ince ayarları var,halıyı asla ıslatmıyor,mop temizliği için sizin seçeceğiniz sıklıkta üniteye gidiyor,bir kaç tane kısayol oluşturunca temizlik aşaması çok pratik oldu.Nerede sorun yaşadığını resimleyerek göstermesi çok tatlı:) Yaşlı bir hastanın ve ev ahalisinin bolca olduğu evimde bana çok büyük bir yardımcı oldu,daha önce de başka marka robot süpürge kullanmış biri ol",
+     "seller": "Narwal Türkiye",
+     "up": 3,
+     "down": 0
+    },
+    {
+     "date": "09 Şubat",
+     "text": "Süpürgeyi 10 gündür deneyimliyorum, gerçekten güzel makine. Paslaması çok başarılı ve pedlerini çok güzel yıkamış. Bugün yıkamak için çıkardım, ne bir koku ne de bir leke var üstünde. Evimde Alman kurdu olmasına rağmen gerçekten fırçasında hiç tüy ve saç kılı yoktu. Bir eleştirim var, o da uygulamada akıllı toz boşaltmayı seçmiştim. Kendi doluluğuna göre boşaltıyormuş, birkaç temizlikte boşaltmadı. Üçüncü temizlikte boşaltmak isteyince benim köpeğin tüylerini boşaltamadı tabii, ben elimle boşalttım. Sonra her temizlikte boşalt seçeneğini seçince sıkıntı olmadı bir daha. Makinenin kendi beyni var gibi, diğer makinelerin izlediği yolu izlemiyor, kendince bir çizgisi var onu uyguluyor, değişik ",
+     "seller": "Narwal Türkiye",
+     "up": 4,
+     "down": 0
+    }
+   ]
+  },
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Narwal+Freo+Z+Ultra"
+ }
+}

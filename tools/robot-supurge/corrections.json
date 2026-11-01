@@ -30,5 +30,38 @@
  "xiaomi-x20-max-2": {
   "obst": "3D / yapısal ışık",
   "src": "Hepsiburada ürün açıklaması: Yapılandırılmış ışıklı ve kenar lazerli hassas engel atlama sistemi (1 Kasım 2026)"
+ },
+ "ecovacs-deebot-t30c": {
+  "nav": "LiDAR",
+  "src": "Ecovacs T30C: TrueMapping lazer (dToF) navigasyon; epey alanı boş (1 Kasım 2026)"
+ },
+ "ecovacs-t30c-prime": {
+  "nav": "LiDAR",
+  "src": "Ecovacs T30C Prime: TrueMapping lazer (dToF) navigasyon; epey alanı boş (1 Kasım 2026)"
+ },
+ "ecovacs-deebot-t80s-omni": {
+  "mop": "Rulo mop",
+  "src": "Ecovacs T80S Omni: OZMO Roller rulo mop (1 Kasım 2026)"
+ },
+ "ecovacs-deebot-t90-pro-omni": {
+  "mop": "Rulo mop",
+  "nav": "LiDAR",
+  "src": "Ecovacs T90 Pro Omni: OZMO Roller 3.0 rulo mop, dToF lazer navigasyon (1 Kasım 2026)"
+ },
+ "ecovacs-deebot-x11-pro-omni": {
+  "mop": "Rulo mop",
+  "src": "Hepsiburada yorumları ve X11 serisi: OZMO Roller rulo mop (1 Kasım 2026)"
+ },
+ "ecovacs-deebot-x11-omnicyclone": {
+  "mop": "Rulo mop",
+  "src": "X11 serisi: OZMO Roller rulo mop (1 Kasım 2026)"
+ },
+ "mova-v50-ultra-complete": {
+  "mop": "Çift döner",
+  "src": "epey ek özellikleri: Çift Döner Mop (1 Kasım 2026)"
+ },
+ "roborock-s8-pro-plus": {
+  "mop": "Titreşimli",
+  "src": "VibraRise titreşimli mop (1 Kasım 2026)"
  }
 }

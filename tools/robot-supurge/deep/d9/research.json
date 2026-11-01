@@ -1,0 +1,834 @@
+{
+ "cecotec-conga-y50": {
+  "id": "cecotec-conga-y50",
+  "name": "Cecotec Conga Y50",
+  "offers": [],
+  "tek": [],
+  "hb": {
+   "url": "https://www.hepsiburada.com/conga-y50-robot-supurge-pm-HBC0000DFNXYW",
+   "seller": "Cecotec Türkiye",
+   "official": false,
+   "price": 19165.43,
+   "buyable": true,
+   "tr_warranty": false,
+   "importer": false,
+   "others": [],
+   "reviews": []
+  },
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Cecotec+Conga+Y50"
+ },
+ "arcelik-imperium-robo-3-2-rs-6131": {
+  "id": "arcelik-imperium-robo-3-2-rs-6131",
+  "name": "Arçelik Imperium Robo 3.2 RS 6131",
+  "offers": [],
+  "tek": [],
+  "hb": {
+   "url": "https://www.hepsiburada.com/arcelik-imperium-robo-3-2-rs-6131-toz-istasyonlu-robot-supurge-pm-HBC0000DA0UW0",
+   "seller": "ALATAŞ DTM",
+   "official": false,
+   "price": 29033.9,
+   "buyable": true,
+   "tr_warranty": false,
+   "importer": false,
+   "others": [
+    {
+     "seller": "KARABAĞ TİCARET",
+     "score": "9,4",
+     "auth": true,
+     "price": 29699.1
+    },
+    {
+     "seller": "Altın Mobilya",
+     "score": "9,9",
+     "auth": true,
+     "price": 30943.23
+    }
+   ],
+   "reviews": []
+  },
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Ar%C3%A7elik+Imperium+Robo+3.2+RS+6131"
+ },
+ "cecotec-conga-m10": {
+  "id": "cecotec-conga-m10",
+  "name": "Cecotec Conga M10",
+  "offers": [],
+  "tek": [],
+  "hb": {
+   "url": "https://www.hepsiburada.com/conga-m10-robot-supurge-pm-HBC0000D1YGVT",
+   "seller": "Cecotec Türkiye",
+   "official": false,
+   "price": 15196.63,
+   "buyable": true,
+   "tr_warranty": false,
+   "importer": false,
+   "others": [],
+   "reviews": []
+  },
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Cecotec+Conga+M10"
+ },
+ "beko-robo-x-2-2-vrr-52514-vb": {
+  "id": "beko-robo-x-2-2-vrr-52514-vb",
+  "name": "Beko Robo-X 2.2 VRR 52514 VB",
+  "offers": [],
+  "tek": [],
+  "hb": {
+   "url": "https://www.hepsiburada.com/beko-robo-x-2-2-vrr-52514-vb-akilli-robot-supurge-pm-HBC0000FNW7SJ",
+   "seller": "AYKOÇ",
+   "official": false,
+   "price": null,
+   "buyable": true,
+   "tr_warranty": false,
+   "importer": false,
+   "others": [
+    {
+     "seller": "ARICA DTM",
+     "score": "9,7",
+     "auth": true,
+     "price": 21200.0
+    },
+    {
+     "seller": "ADALYA HOME TEKNOLOJİ",
+     "score": "9,8",
+     "auth": true,
+     "price": 19699.0
+    }
+   ],
+   "reviews": []
+  },
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Beko+Robo-X+2.2+VRR+52514+VB"
+ },
+ "beko-robo-x-3-2-vrr-62514-vb": {
+  "id": "beko-robo-x-3-2-vrr-62514-vb",
+  "name": "Beko Robo-X 3.2 VRR 62514 VB",
+  "offers": [],
+  "tek": [],
+  "hb": {
+   "url": "https://www.hepsiburada.com/beko-robo-x-3-2-vrr-62514-vb-toz-istasyonlu-robot-supurge-pm-HBC0000GFPFX8",
+   "seller": "ARICA DTM",
+   "official": false,
+   "price": null,
+   "buyable": true,
+   "tr_warranty": false,
+   "importer": false,
+   "others": [
+    {
+     "seller": "EREN TİCARET ANTALYA",
+     "score": "9,7",
+     "auth": true,
+     "price": 26000.1
+    },
+    {
+     "seller": "Tunalar Dayanıklı Tüketim",
+     "score": "9,7",
+     "auth": true,
+     "price": 25999.0
+    }
+   ],
+   "reviews": []
+  },
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Beko+Robo-X+3.2+VRR+62514+VB"
+ },
+ "karcher-rvc-3-eu": {
+  "id": "karcher-rvc-3-eu",
+  "name": "Karcher RVC 3 EU",
+  "offers": [],
+  "amz": [],
+  "tek": [],
+  "hbSearch": null,
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Karcher+RVC+3+EU"
+ },
+ "yui-rs16-pro-max-pet-kit": {
+  "id": "yui-rs16-pro-max-pet-kit",
+  "name": "Yui RS16 Pro Max Pet Kit",
+  "offers": [],
+  "hbSearch": null,
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Yui+RS16+Pro+Max+Pet+Kit"
+ },
+ "yui-rs16": {
+  "id": "yui-rs16",
+  "name": "Yui RS16",
+  "offers": [],
+  "hbSearch": null,
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Yui+RS16"
+ },
+ "arcelik-imperium-robo-4-0-rs-9551": {
+  "id": "arcelik-imperium-robo-4-0-rs-9551",
+  "name": "Arçelik Imperium Robo 4.0 RS 9551",
+  "offers": [],
+  "tek": [],
+  "hb": {
+   "url": "https://www.hepsiburada.com/imperium-robo-4-0-rs-9551-robot-supurge-pm-HBC0000AQPQT3",
+   "seller": "CENNET-MUAMMER YEŞİL ADİ ORTAKLIĞI",
+   "official": false,
+   "price": null,
+   "buyable": true,
+   "tr_warranty": false,
+   "importer": false,
+   "others": [
+    {
+     "seller": "KARAMUSTAFA KARDEŞLER LTD ŞTİ",
+     "score": "9,5",
+     "auth": true,
+     "price": 44055.0
+    },
+    {
+     "seller": "Gazioglu DTM",
+     "score": "9,4",
+     "auth": true,
+     "price": 44046.0
+    }
+   ],
+   "rating": 3.5,
+   "count": 4,
+   "stars": [
+    2,
+    0,
+    1,
+    0,
+    1
+   ],
+   "reviews": [
+    {
+     "date": "13 Şubat",
+     "text": "Çok araştırıp iyi bir ürün almaya çalıştım. Ama beni o kadar üzdü ki. WiFi ye asla bağlanmıyor. Servis geldi o da yapamadı, değişim talebi oluşturdu. İlk geldiğinde en azından manuel çalışıyordu. Sonra o da gitti. İstasyonu bir türlü şarj olmuyor. Çalıştığı zaman performansı güzel olsa da beni çok uğraştırdı ve üzdü bu süpürge",
+     "seller": "YAŞAR MOBİLYA DAYANIKLI TÜKETİM MALLARI",
+     "up": 3,
+     "down": 2
+    },
+    {
+     "date": "09 Ocak",
+     "text": "BİR defa kullandım iyi.memnunuz.",
+     "seller": "Başak Dayanikli Tüketim",
+     "up": 0,
+     "down": 0
+    }
+   ]
+  },
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Ar%C3%A7elik+Imperium+Robo+4.0+RS+9551"
+ },
+ "fakir-robert-rs-800": {
+  "id": "fakir-robert-rs-800",
+  "name": "Fakir Robert RS 800",
+  "offers": [],
+  "tek": [],
+  "hb": {
+   "url": "https://www.hepsiburada.com/robert-rs-800-robot-supurge-pm-HBC0000NOLGWA",
+   "seller": "aktifexpress",
+   "official": false,
+   "price": null,
+   "buyable": true,
+   "tr_warranty": false,
+   "importer": false,
+   "others": [],
+   "reviews": []
+  },
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Fakir+Robert+RS+800"
+ },
+ "ezviz-rs20-max": {
+  "id": "ezviz-rs20-max",
+  "name": "Ezviz RS20 Max",
+  "offers": [],
+  "amz": [],
+  "tek": [
+   {
+    "title": "Ezviz RS20 Max Kendi Kendine Temizleme 13000 Pa Kameralı Devriye İki Yönlü Konuşma Robot Süpürge",
+    "price": 69999.0,
+    "url": "https://www.teknosa.com/ezviz-rs20-max-kendi-kendine-temizleme-13000-pa-kamerali-devriye-iki-yonlu-konusma-robot-supurge-p-787128917",
+    "buyable": true
+   }
+  ],
+  "hbSearch": null,
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Ezviz+RS20+Max"
+ },
+ "homend-alex-laser-1291h": {
+  "id": "homend-alex-laser-1291h",
+  "name": "Homend Alex Laser 1291H",
+  "offers": [],
+  "tek": [],
+  "hb": {
+   "url": "https://www.hepsiburada.com/homend-alex-laser-1291h-moplu-ve-haritalamali-akilli-robot-supurge-siyah-pm-HBC00008IGUN5",
+   "seller": "KAVRAN HOME",
+   "official": false,
+   "price": 10169.1,
+   "buyable": true,
+   "tr_warranty": false,
+   "importer": false,
+   "others": [
+    {
+     "seller": "Homend",
+     "score": "9,2",
+     "auth": true,
+     "price": 14999.0
+    },
+    {
+     "seller": "Mis.Sofya",
+     "score": "9,7",
+     "auth": true,
+     "price": 18999.0
+    }
+   ],
+   "rating": 5.0,
+   "count": 5,
+   "stars": [
+    5,
+    0,
+    0,
+    0,
+    0
+   ],
+   "reviews": [
+    {
+     "date": "16 Mayıs",
+     "text": "Paketleme ve Kargo: Kargo inanılmaz hızlı geldi. Paketlemesi o kadar güvenli ve özenliydi ki hiçbir zarar görmeden elime ulaştı. ​Kurulum ve Dil Desteği: Türkçe kullanım kılavuzu sayesinde kurulumu çok rahat yaptım. Cihazın \"Temizliğe başlıyorum\" gibi Türkçe sesli komutlar vermesi de kullanımını çok keyifli hale getiriyor. ​Haritalama ve Performans: Uygulamayı indirdikten sonra ilk iş olarak bütün evin haritasını çıkarıyor ve ardından temizliğe başlıyor. Haritalaması son derece başarılı. ​Farklı Çalışma Modları: İstediğiniz temizliğe göre toz alma veya yer silme ile alakalı modları mevcut. Ayrıca uygulamada Ekonomik, Standart ve Güçlü Çekim gibi yüksek performans seçenekleri de yer alıyor. ​",
+     "seller": "Homend",
+     "up": 2,
+     "down": 1
+    },
+    {
+     "date": "26 Mayıs",
+     "text": "açıkçası çok tereddütlüydüm herkes robot süpürgeler hakkında farklı olumsuzluklar belirttiği için mükemmel temizlik uygun fiyat ve kolay kurulumu görünce iyiki dedim tereddütsüz alabilirsiniz",
+     "seller": "Homend",
+     "up": 0,
+     "down": 0
+    },
+    {
+     "date": "08 Ağustos",
+     "text": "Ürün çok güzel ve kaliteli çok yüksek fiyata başka ürün almayın",
+     "seller": "KAVRAN HOME",
+     "up": 0,
+     "down": 0
+    },
+    {
+     "date": "18 Mart",
+     "text": "ürün anlatıldığı gibi",
+     "seller": "Homend",
+     "up": 0,
+     "down": 1
+    }
+   ]
+  },
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Homend+Alex+Laser+1291H"
+ },
+ "fakir-robert-rs-760": {
+  "id": "fakir-robert-rs-760",
+  "name": "Fakir Robert RS 760",
+  "offers": [],
+  "tek": [],
+  "hb": {
+   "url": "https://www.hepsiburada.com/fakir-robert-rs-760-yeni-nesil-robot-supurge-yeni-logolu-pm-HBC000088DR4X",
+   "seller": "AND GRUP",
+   "official": false,
+   "price": 13499.1,
+   "buyable": true,
+   "tr_warranty": false,
+   "importer": false,
+   "others": [
+    {
+     "seller": "AKBİR BİLİŞİM",
+     "score": "9,7",
+     "auth": true,
+     "price": 16199.1
+    },
+    {
+     "seller": "BakserLTD",
+     "score": "9,3",
+     "auth": true,
+     "price": 16199.1
+    }
+   ],
+   "rating": 5.0,
+   "count": 1,
+   "stars": [
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "reviews": [
+    {
+     "date": "07 Mayıs",
+     "text": "Harika bir ürün 2 ürünü de kardeşime aldım oda çok memnun fiyatını hak ediyor paketleme de çok iyi teşekkür ediyorum",
+     "seller": "AND GRUP",
+     "up": 0,
+     "down": 0
+    }
+   ]
+  },
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Fakir+Robert+RS+760"
+ },
+ "ezviz-re4-plus": {
+  "id": "ezviz-re4-plus",
+  "name": "Ezviz RE4 Plus",
+  "offers": [],
+  "amz": [
+   {
+    "title": "Ezviz RE4 Plus Çöp İstasyonlu Akıllı Robot Süpürge",
+    "url": "https://www.amazon.com.tr/dp/B0D3WVZ9BG",
+    "price": 20999.0,
+    "buyable": true,
+    "unavailable": false,
+    "lowstock": null,
+    "rating": 4.0,
+    "count": 84,
+    "delivery": "ÜCRETSİZ teslimat 3 - 4 Kas"
+   },
+   {
+    "title": "EZVIZ Robotik Süpürge RE4 Plus",
+    "url": "https://www.amazon.com.tr/dp/B0CM8PZZP3",
+    "price": 19999.0,
+    "buyable": true,
+    "unavailable": false,
+    "lowstock": null,
+    "rating": 4.1,
+    "count": 104,
+    "delivery": "ÜCRETSİZ teslimat 3 Kas Sal"
+   }
+  ],
+  "tek": [
+   {
+    "title": "Ezviz RE4 Plus Black Akıllı ve Paspaslı Otomatik Çöp Boşaltma ve Şarj - Halı Algılama Robot Süpürge Siyah",
+    "price": 20999.0,
+    "url": "https://www.teknosa.com/ezviz-re4-plus-black-akilli-paspasli-otomatik-cop-bosaltma-sarj-hali-algilama-robot-supurge-siyah-p-787128589",
+    "buyable": true
+   },
+   {
+    "title": "Ezviz RE4 Plus Black Akıllı ve Paspaslı Otomatik Çöp Boşaltma ve Şarj - Halı Algılama Robot Süpürge Beyaz",
+    "price": 19999.0,
+    "url": "https://www.teknosa.com/ezviz-re4-plus-black-akilli-paspasli-otomatik-cop-bosaltma-sarj-hali-algilama-robot-supurge-beyaz-p-787128606",
+    "buyable": true
+   }
+  ],
+  "hb": {
+   "url": "https://www.hepsiburada.com/ezviz-re4-plus-black-akilli-ve-paspasli-robot-supurge-otomatik-cop-bosaltma-ve-sarj-hali-algilama-p-HBCV00008E9Q8F",
+   "seller": "ALLMALL ELEKTRONİK",
+   "official": false,
+   "price": 17776.66,
+   "buyable": true,
+   "tr_warranty": true,
+   "importer": false,
+   "others": [
+    {
+     "seller": "EZVIZ TURKIYE",
+     "score": "9,6",
+     "auth": true,
+     "price": 16998.99
+    },
+    {
+     "seller": "Inv Teknoloji",
+     "score": "9,9",
+     "auth": true,
+     "price": 19799.1
+    }
+   ],
+   "rating": 4.3,
+   "count": 233,
+   "stars": [
+    168,
+    22,
+    13,
+    5,
+    25
+   ],
+   "reviews": [
+    {
+     "date": "15 Eylül 2024",
+     "text": "İkinci kez robot süpürge kullanıyorum. Dertsiz kullanım açısından 4 litrelik toz torbası ve 90 günlük ömrü satın almamdaki en büyük etken. Ancak kullanırken diğer ilgimi çeken özelliği ise uygulamanın rahat kullanımı oldu. Ürünün paketlemesi gayet başarılı, hasarsız bir şekilde teslim edildi. EZVIZ uygulamasını cep telefonuma indirdim. Robotun yanındaki kontak düğmesinden cihazı açtım. Cep telefonumdan uygulamayı açıp hesap tanımlaması yaptım. Uygulamada sağ üst köşede yer alan + işaretine ve sonrasında aygıt ekleye tıkladım. Menüden Robot Süpürgeyi seçtim. Telefonumda açılan QR kod okuyucuyla robot süpürgenin altındaki QR kodu okutup evdeki wi-fi’ı seçtim ve wi-fi şifresini tanımladım. Akab",
+     "seller": "EZVIZ TÜRKİYE",
+     "up": 56,
+     "down": 5
+    },
+    {
+     "date": "19 Eylül 2024",
+     "text": "Ürünün rengini ve tasarımını beğendiğim için satın almıştım, ürün geldi ve fotolardan çok daha güzel, hem rengi , hem tasarımı hem kullanılan malzeme kalitesi çok başarılı. Ürünün içinden birer adet yedek toz torbası. Yan fırça. Paspas. Filtre ve temizlik fırçası çıktı bence çok iyi düşünülmüş bir hediye , bir süre daha bu aksesuarlar için ödeme yapmama gerek olmayacak. İlk kez Robot süpürge satın aldım ve beni endişelendiren haritalamayi doğru yapıp yapamayacağımdi. Tek tuşla haritalamayi kendi gapti ardından tüm evi sildi ve süpürdü. Muadil ürünlere göre toz torbası çok büyük tam 4LT. yedek toz torbası ile birlikte 6 ay boyunca toza dokunmadan temizlik yapabilecek. Emiş gücü ve paspas perf",
+     "seller": "EZVIZ TÜRKİYE",
+     "up": 17,
+     "down": 4
+    },
+    {
+     "date": "03 Haziran 2025",
+     "text": "3 ayda 2 kez servise gitti",
+     "seller": "EZVIZ TÜRKİYE",
+     "up": 1,
+     "down": 0
+    },
+    {
+     "date": "05 Ocak",
+     "text": "Doğrusu birazcık tereddütteydim ama çok beğendim uygulamayı biraz zor buldum ama hızlı bağlandı tam temizlik yapmadım haritalandırma yapacağım ama çalışması gayet güzel çok sessiz halıların üstüne çok güzel tırmanıyor Hatta inatla neredeyse daha yukarı çıkmaya çalışıyor daha önce kullandığım robot süpürgeden çok daha iyi çöpünü boşaltıyor şarj yuvasına Park etmede biraz sorun yaşıyor Ama belki ben de bilemedim çok yeniyiz henüz Türkçe konuşması Ayrıca çok iyi yani Şimdilik çok beğendim Eğer bir sorun olursa daha sonra yorumumu güncellerim adına da oğlum Pikachu koydu",
+     "seller": "EZVIZ TURKIYE",
+     "up": 0,
+     "down": 0
+    },
+    {
+     "date": "16 Eylül 2024",
+     "text": "Üç yıl önce bilindik bir markanın ürününü evde kullanıyordum. Ofisteki eski modeli hediye ettikten sonra neredeyse bir yıldır yeni bir ürün arayışındaydım. Aradığım kriterler arasında Lidar teknolojisinin bulunması, sürekli hazne boşaltma derdinin olmaması ve ıslak temizleme özelliği yer alıyordu. Zaman geçtikçe teknoloji başka bir seviyeye ulaşmış ve artık bu ürünler tam anlamıyla işe yarar hale gelmiş. Kutuyu açıp ürünü fişe taktım, Türkçe kullanım kılavuzunda uygulamayı indirmem gerektiği belirtilmişti. Ürün üzerindeki QR kodu okutarak hızlıca eşleme yaptım. Kutuyu açmam ve ürünün kullanıma hazır hale gelmesi beş dakika bile sürmedi. Ürünün bir yazılım güncellemesi olduğunu fark ettim ve ",
+     "seller": "EZVIZ TÜRKİYE",
+     "up": 14,
+     "down": 1
+    },
+    {
+     "date": "03 Haziran 2025",
+     "text": "3 ayda 2 kez servise gitti Satıcı: EZVIZ TÜRKİYE Renk Siyah - Beyaz Video 2",
+     "seller": "",
+     "up": 1,
+     "down": 0
+    },
+    {
+     "date": "10 Aralık 2024",
+     "text": "Fiyat performans ürünü. Haritalama özelligi cok iyi evde yokken bile komut verip temizlik yaptirabiliyorsunuz. Istediginiz alani belirleyip sadece orayi temizliyor. Kesinlikle en ufak kir toz birakmiyor. Cöpünu bosaltiyor. Hali uzerinde ve engellerden duruma gore kendi yukselip geciyor. Cok para verip bilindik marka almayin hepsine tas cikarir. %100 tavsiye esiyorum. Firma cok ilgili, kutulama, kargolama cok iyi. Firmaya ozellikle tesekkurlerimi borc biliyorum. Kendilerine cok tesekkur ederim.",
+     "seller": "EZVIZ TÜRKİYE",
+     "up": 3,
+     "down": 1
+    },
+    {
+     "date": "11 Aralık 2024",
+     "text": "Kurulumu çok basit haritalama olayı da aynı temizlemesi iyi fiyatına göre şahane bir ürün halıya falan takılmıyor hemen hemen her gün evi silmeme rağmen ilk kullanımda çıkan kire şaşırdım program dili ve cihaz dili Türkçe seçebiliyorsunuz programın kullanımı da basit ve sade muadillerine göre fiyat performans olarak alınabilir bir cihaz aynı zamanda kutunun içinden sarf ( yedek) malzemede çıkıyor her robot süpürgede yok bu ayrıntı onu da göz önünde bulundurmalısınız kısacası işinizi fazlasıyla görür alacak arkadaşlara tavsiye ederim",
+     "seller": "EZVIZ TÜRKİYE",
+     "up": 3,
+     "down": 0
+    },
+    {
+     "date": "07 Nisan 2025",
+     "text": "Fiyat performans ürünü bazen zorlanıyor bulmakta rotayı birde şarj merkez yeri değiştir kolay olmalı yeni alternatif harita özeliği varmı bulamadım toz boşaltma çok ses yapıyor genelde güzel yedek parça 1 er adet 10 numara halıları alırken sanki paspas su olayını kapatmıyor gibi geldi halıya gelince kapatmalı gibi geliyor daha inceleme devam ileride daha iyi analiz yapabilirim pişman değilim aldığıma",
+     "seller": "EZVIZ TÜRKİYE",
+     "up": 2,
+     "down": 1
+    },
+    {
+     "date": "12 Ekim 2024",
+     "text": "Gayet başarılı bir ürün bence haritalama konusunda bilmediğimiz için biraz zorlandık,hafta içi firma ile goruseceklerimiz var elbet,Türkçe dil desteğini falan uğraşa uğraşa bulduk,elbette ilk kullanıma göre memnun kaldık fiyat performans ürünü dememek için hiçbir sebep yok,uretenlere teşekkürler ♥️",
+     "seller": "EZVIZ TÜRKİYE",
+     "up": 4,
+     "down": 0
+    },
+    {
+     "date": "23 Aralık 2024",
+     "text": "Alalı 1 ayı geçti. F/p odaları günde bir kere dolanması tozlanmayı azaltıyor. 90 güne kadar toz torbası değiştirme derdi yok. Haritalandırmasına göre evde 15 - 20 tane oda var gözüküyor. İstasyon çekim sesi biraz yüksek sadece, robot sesi fazla sayılmaz. Halıda emiş gücünün artması da iyi bir detay",
+     "seller": "EZVIZ TÜRKİYE",
+     "up": 3,
+     "down": 1
+    }
+   ]
+  },
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Ezviz+RE4+Plus"
+ },
+ "hoover-hg530h-011": {
+  "id": "hoover-hg530h-011",
+  "name": "Hoover HG530H 011",
+  "offers": [],
+  "tek": [],
+  "hbSearch": null,
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Hoover+HG530H+011"
+ },
+ "fakir-robert-rs-730": {
+  "id": "fakir-robert-rs-730",
+  "name": "Fakir Robert RS 730",
+  "offers": [],
+  "tek": [
+   {
+    "title": "Fakir Robert RS 730 Robot Süpürge",
+    "price": 13995.0,
+    "url": "https://www.teknosa.com/fakir-robert-rs-730-robot-supurge-p-787135841",
+    "buyable": true
+   }
+  ],
+  "hb": {
+   "url": "https://www.hepsiburada.com/fakir-robert-rs-730-robot-supurge-pm-HBC000077RQE1",
+   "seller": "4E1D",
+   "official": false,
+   "price": null,
+   "buyable": true,
+   "tr_warranty": false,
+   "importer": false,
+   "others": [
+    {
+     "seller": "TLTB",
+     "score": "9,8",
+     "auth": true,
+     "price": 11592.0
+    },
+    {
+     "seller": "Bizce Avm",
+     "score": "9,9",
+     "auth": true,
+     "price": 13310.1
+    }
+   ],
+   "rating": 4.0,
+   "count": 3,
+   "stars": [
+    2,
+    0,
+    0,
+    1,
+    0
+   ],
+   "reviews": [
+    {
+     "date": "22 Temmuz",
+     "text": "Ürün sağlam ve güzel kargolanmış geldi. Kullanınca yorumumu güncelleyeceğim.",
+     "seller": "S-G ELEKTRONİK",
+     "up": 0,
+     "down": 0
+    },
+    {
+     "date": "19 Ocak 2024",
+     "text": "Süpürgenin çekiş gücü çok iyi. Etrafı güzel süpürüyor. Ama zekası pek gelişmiş değil. Odaların haritasını düzgün çıkaramıyor. Sürekli aynı çizgide ileri geri gidiyor ama kendisini metrelerce yok kat etti zannediyor. Halıların saçaklarını koparıyor, sehpaların ayağına çıkıp orada kalıyor. Daha önce başka bir model kullanıyorduk, onda hiç böyle sorunlar yaşamamıştık. Aldığımıza biraz pişman olduk.",
+     "seller": "EVÇARŞI",
+     "up": 4,
+     "down": 0
+    }
+   ]
+  },
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Fakir+Robert+RS+730"
+ },
+ "irobot-roomba-combo-j7": {
+  "id": "irobot-roomba-combo-j7",
+  "name": "iRobot Roomba Combo j7 (C7158)",
+  "offers": [],
+  "amz": [
+   {
+    "title": "iRobot Roomba Combo j7 Robot Süpürge ve Paspas",
+    "url": "https://www.amazon.com.tr/dp/B0BQN6J3C9",
+    "price": null,
+    "buyable": false,
+    "unavailable": false,
+    "lowstock": null,
+    "rating": 3.5,
+    "count": 8,
+    "delivery": null
+   }
+  ],
+  "tek": [],
+  "hb": {
+   "url": "https://www.hepsiburada.com/irobot-roomba-combo-j7-robot-supurge-yuksek-emis-gucu-ve-akilli-navigasyon-ile-75-dk-temizlik-pm-HBC00003GMB2N",
+   "seller": "Certus Türkiye",
+   "official": false,
+   "price": 17999.1,
+   "buyable": true,
+   "tr_warranty": false,
+   "importer": false,
+   "others": [],
+   "rating": 4.3,
+   "count": 27,
+   "stars": [
+    20,
+    1,
+    3,
+    0,
+    3
+   ],
+   "reviews": [
+    {
+     "date": "22 Temmuz 2025",
+     "text": "Ürün gayet güzel,kaliteli ve üstün teknojisi ile hayatınızı kolaylaştıran bir ürün..",
+     "seller": "iRobot Türkiye",
+     "up": 1,
+     "down": 0
+    },
+    {
+     "date": "26 Kasım 2025",
+     "text": "Merhaba ürünü 2gün önce teslim aldım çok başarılı temizlik ve silme ancak toz haznesi dolmadığı halde süpürürken tozları halıların üzerine bırakıyor. Tüm halıda var ve 2kez süpürdüm ikisinde de bıraktı. Acaba benim bir hatam mı var yoksa iade edeceğim",
+     "seller": "ROYAL GROSS",
+     "up": 0,
+     "down": 2
+    },
+    {
+     "date": "08 Haziran 2023",
+     "text": "Ürünü yaklaşık 2 aydır kullanıyorum gayet basarili bir ürün yüksekliği özellikle mobilya altlarina girmesi şahane oldu. engel algılama gayet başarılı her süpürme de algıladığı engelleri gösteriyor kablo çorap mobilya altlarına kaçan oyuncaklardan uzak duruyor size resmini çekip temizlik sonunda raporluyor. ulaşılması güç yerlerde eşya kaybettiyseniz buluyor :) ister istemez bu süpürge ile ortalığı düzenli tutmanız gerekiyor yoksa vay efendim burada şunu gördüm ondan burayı supuremedim deyip foto çekip kanıtlarıyla sizi ezikliyor :) sonrasında topladiysan söyle supureyim bak oralari tekrardan diyor. temizliği gercekten çok iyi her supurme sonrası bu kadar tozu nereden çıkarttığını merak ediyo",
+     "seller": "Gelecek Evimde",
+     "up": 13,
+     "down": 1
+    },
+    {
+     "date": "25 Ağustos",
+     "text": "Irobot kullandığım bir marka çok memnunum o yüzden üst modelini aldım",
+     "seller": "iRobot Türkiye",
+     "up": 0,
+     "down": 0
+    },
+    {
+     "date": "21 Eylül",
+     "text": "ambajında geldi anlatıldığı gibi hiç bir sorun olamadan kullanıyoruz.",
+     "seller": "Certus Türkiye",
+     "up": 0,
+     "down": 0
+    }
+   ]
+  },
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=iRobot+Roomba+Combo+j7"
+ },
+ "lydsto-w2": {
+  "id": "lydsto-w2",
+  "name": "Lydsto W2",
+  "offers": [],
+  "tek": [],
+  "hb": {
+   "url": "https://www.hepsiburada.com/lydsto-w2-cift-sterilizasyonlu-su-toz-toplama-uniteli-robot-supurge-lydsto-turkiye-garantili-pm-HBC000036PAKV",
+   "seller": "Evidea",
+   "official": false,
+   "price": 25999.0,
+   "buyable": true,
+   "tr_warranty": true,
+   "importer": false,
+   "others": [
+    {
+     "seller": "Lydsto Türkiye",
+     "score": "9,7",
+     "auth": true,
+     "price": 29884.1
+    }
+   ],
+   "rating": 4.7,
+   "count": 487,
+   "stars": [
+    434,
+    12,
+    8,
+    11,
+    22
+   ],
+   "reviews": [
+    {
+     "date": "08 Mayıs 2023",
+     "text": "Çok uzun süre robot süpürge araştırdım, hatta Lydsto w2’yi görmeden önce başka bir marka alıp sonra bu ürünü görünce siparişi iptal ettim. Evim yeni sıfır bir ev inanılmaz derece toz oluyor bu sebeple Lydsto dan sonra evimi hiç silmez oldum. Emiş gücü inanılmaz iyi, istasyonlu olması çok büyük avantaj, bir aydır sürekli kullanıyorum daha torbasının çok az bir kısmı doldu ben özellikle halıları süpürttüğümden kaynaklı o da halılar yeni olduğu için çok tüy bırakıyor yoksa bu kadar bile dolmazdı.Şu tanklarının ayrı olması çok güzel bir özellik yani diğer cihazlar gibi 300 ml su ile bütün evi silmiyor, uygulamada ayarları var 6-9-12 dk aralıklarla suyu değiştir komutu verebiliyorsunuz.temizlik b",
+     "seller": "Lydsto Türkiye",
+     "up": 25,
+     "down": 0
+    },
+    {
+     "date": "17 Haziran",
+     "text": "Ürün dün elime geçti manuel olarak kullandım istasyona girerken yer dar olduğu için sıkıntı yaşıyordu yer değişikliği yaptım hala sıkıntılar yaşıyoruz",
+     "seller": "Lydsto Türkiye",
+     "up": 0,
+     "down": 0
+    },
+    {
+     "date": "06 Nisan 2023",
+     "text": "İnsan kullandıkça teknolojinin bukadar gelişmiş olmasına şaşırıyor doğrusu! Paspasları istasyona gelip 6 dakikada bir sıcak suyla basınçlı bir şekilde yıkıyor. Silerken basınçlı bir şekilde siliyor parke ve fayanslarda iz ve kir bırakmıyor. Tek şarjla 240 metrekare evimi silip süpürdü. Uygulamasından ayarlayabiliyorsunuz süpürme gücünü halılara gelince emiş gücü daha fazla oluyor. Silme işlemimde halılara çıkmasını istemiyorsanız uygulamadan ayarlayabiliyorsunuz. Onun dışında halıya çıksa bile halıda da sıcak suyla silme işlemine devam ediyor bence bu iyi bişey! Arada tanımladığım haritaya ulaşamıyor. Onun içinde destek ekibi ev büyük olduğu için sinyal almada güçlük çekiyor olabilir dedi. O",
+     "seller": "Lydsto Türkiye",
+     "up": 5,
+     "down": 0
+    },
+    {
+     "date": "05 Ağustos 2023",
+     "text": "Türkiye'de satışta olan en iyi robot süpürge 2023 Ağustos itibariyle mop özelliğini de hakkıyla yapan tek robot süpürge",
+     "seller": "Lydsto Türkiye",
+     "up": 5,
+     "down": 1
+    },
+    {
+     "date": "08 Mayıs 2023",
+     "text": "Açıkçası diğer serilere bakıyordum. İncelemelerinde bu modeli çok beğendim. Büyük bir kutu geldi. İçinden yedek 2 fırça, 2 yedek mop, temizlik fırçası, hatta yedek biraz daha uzun (10 cm gibi) enerji kablosu vs çıktı. Özellikle yer silme mop işlevi yer silme işlemine uygun yapılmış. Süpürme fonksiyonunda beklentimin üzerinde buldum. Kendi uygulamasını kullanıyorum gayet rahat. Fake hata almadim hiç harita kaybetme sorunları oluşmadı. Dikkatimi çeken, haritalama olsa bile her odada bir çerçeve çizip yeni duruma göre temizliğe başlıyor 👍 emiş gücü ve pil tüketimi başarılı gerçekten. Bir temizlikte kenar ucu püsküllü halıya takilma zorlanma yaşamadı ise min. %50 gördüm, maalesef benim salon hal",
+     "seller": "Lydsto Türkiye",
+     "up": 4,
+     "down": 0
+    }
+   ]
+  },
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Lydsto+W2"
+ },
+ "robogil-stella-500b": {
+  "id": "robogil-stella-500b",
+  "name": "Robogil Stella-500B",
+  "offers": [],
+  "tek": [],
+  "hbSearch": null,
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Robogil+Stella-500B"
+ },
+ "fantom-galaxy-xy-38": {
+  "id": "fantom-galaxy-xy-38",
+  "name": "Fantom Galaxy XY 38",
+  "offers": [],
+  "hb": {
+   "url": "https://www.hepsiburada.com/fantom-galaxy-xy-38-pm-HBC0000065UA3",
+   "seller": "Turuncu Elma",
+   "official": false,
+   "price": 22963.06,
+   "buyable": true,
+   "tr_warranty": false,
+   "importer": false,
+   "others": [
+    {
+     "seller": "labooryonline",
+     "score": "9,3",
+     "auth": true,
+     "price": 25000.0
+    },
+    {
+     "seller": "Fantom",
+     "score": "9,5",
+     "auth": true,
+     "price": 27940.0
+    }
+   ],
+   "rating": 4.4,
+   "count": 57,
+   "stars": [
+    45,
+    4,
+    1,
+    1,
+    6
+   ],
+   "reviews": [
+    {
+     "date": "25 Ekim 2022",
+     "text": "Ürünü kullanmadan yorum yapmak istemediğim için birkaç kullandıktan sonra yorum yapıyorum diğerlerine kıyasla süper ötesi modları çok kullanışlı özellikleri çok güzel ve etkili çalışıyor yapmış olduğu temizlik şaşırttı denemek için öncesinde süpürdüğümüz alana robota temizlettiğimizde bir o kadar daha küpür çıkarttı çok başarılı tekrar alacak olsan düşünmeden tekrar aynısını alırım 👏👍",
+     "seller": "LEAFHOME",
+     "up": 4,
+     "down": 0
+    },
+    {
+     "date": "15 Temmuz 2025",
+     "text": "Her gun çıkardığı pisliği görünce şok geçirdiğimi soylemek isterim çok büyük konformus özellikle baza altlarına girip en ulaşılması mümkün olmayan yerleri süpürmesi işimi çok kolaylastirdi ben haritalandirma yapmadan kullanıyorum kumandası yeterli oluyor. Mop özelliği yerlerde iz bırakmıyor halıları kaldırmak gerekiyor o yüzden onu çok kullanmasamda gerektiğinde kullanılır kademe ayarı olması çok güzel şarjı evimin alt katına yetiyor eğer mopu calistirmadiysam ust katida süpürür. Sadece susam gibi şeyleri supururken once saçıp sonra supuruyor fircalarindan dolayı sanırım. Beğenmediğim tek özelliği bu. Onun disinda bu fiyata alinacabilecek en güzel şey bir senedir kullanıyorum.",
+     "seller": "labooryonline",
+     "up": 1,
+     "down": 0
+    },
+    {
+     "date": "24 Kasım 2021",
+     "text": "Fantom'un Robotundan aldım. Böyle bir performans beklemiyordum açıkcası. Parkeleri ıslak mopta çok güzel temizliyor aynı şekilde halıyı da. Evimi haritalandırdım istediğim odayı kolayca temizletiyorum robotuma. Connect uygulaması çok güzel ve özellikle Türkçe olması. Robot haznesi kolayca boşalttım. Daha ne diyeyim ürün süper. Artık ev temizliğini Fantom Robot'a bıraktım. Birde yemek yapan robotu çıkarsalar :-) Kargolamadaki hız ve özen için göndericiye teşekkür ederim.",
+     "seller": "Sude Home",
+     "up": 13,
+     "down": 2
+    },
+    {
+     "date": "20 Şubat",
+     "text": "Çekim gücü, kademeli güç ayarı, şarjın yetmesi, mop özelliği, sesinin çok yüksek olmaması, Türk malı olması, bataryası Japon malı olması çok güzel özellikleri. Üstelik kumandası var ben sadece onu kullanıyorum. Çok beğendim tavsiye ederim",
+     "seller": "labooryonline",
+     "up": 1,
+     "down": 0
+    },
+    {
+     "date": "24 Haziran 2024",
+     "text": "Metin kutusuna yapıştırmak için klibe dokunun.Sabitlemek için dokunup basılı tutun. Sabitlenmemiş klipler 1 saat sonra silinecektir.Metin kutusuna yapıştırmak için klibe dokunun.Metin kutusuna yapıştırmak için klibe dokunun.Metin kutusuna yapıştırmak için klibe dokunun.Sabitlemek için dokunup basılı tutun. Sabitlenmemiş klipler 1 saat sonra silinecektir.Sabitlemek için dokunup basılı tutun. Sabitlenmemiş klipler 1 saat sonra silinecektir.Sabitlemek için dokunup basılı tutun. Sabitlenmemiş klipler 1 saat sonra silinecektir.Sabitlemek için dokunup basılı tutun. Sabitlenmemiş klipler 1 saat sonra silinecektir.Sabitlemek için dokunup basılı tutun. Sabitlenmemiş klipler 1 saat sonra silinecektir.",
+     "seller": "BEYDAGİAVM",
+     "up": 0,
+     "down": 5
+    }
+   ]
+  },
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Fantom+Galaxy+XY+38"
+ }
+}

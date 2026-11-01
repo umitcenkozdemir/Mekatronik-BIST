@@ -1,0 +1,581 @@
+{
+ "homend-alex-50-pro-ulticlean": {
+  "id": "homend-alex-50-pro-ulticlean",
+  "name": "Homend Alex 50 Pro Ulticlean",
+  "offers": [],
+  "tek": [],
+  "hbSearch": null,
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Homend+Alex+50+Pro+Ulticlean"
+ },
+ "ecovacs-deebot-x11-omnicyclone": {
+  "id": "ecovacs-deebot-x11-omnicyclone",
+  "name": "Ecovacs Deebot X11 OmniCyclone",
+  "offers": [],
+  "amz": [],
+  "tek": [
+   {
+    "title": "Ecovacs Deebot X11 OmniCyclone Robot Süpürge",
+    "price": 57999.0,
+    "url": "https://www.teknosa.com/ecovacs-deebot-x11-omnicyclone-robot-supurge-p-100000059555",
+    "buyable": true
+   }
+  ],
+  "hbSearch": {
+   "url": "https://www.hepsiburada.com/ecovacs-deebot-x11-omnicyclone-temiz-su-tanki-pm-HBC0000JAF8TL",
+   "title": "Vintek Ecovacs Deebot X11 Omnicyclone - Temiz Su Tankı",
+   "fromSearch": true
+  },
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Ecovacs+Deebot+X11+OmniCyclone"
+ },
+ "xiaomi-robot-vacuum-x20-pro": {
+  "id": "xiaomi-robot-vacuum-x20-pro",
+  "name": "Xiaomi Robot Vacuum X20 Pro",
+  "offers": [],
+  "amz": [],
+  "tek": [],
+  "hb": {
+   "url": "https://www.hepsiburada.com/xiaomi-istasyonlu-7000pa-yuksek-emis-guclu-kendini-temizleme-akilli-hali-algilama-robot-vacuum-x20-pro-hepsi-bir-arada-akilli-temizlik-robotu-sesli-kontrol-mutfak-tartisi-pm-HBC0000AKNEKL",
+   "seller": "HomeVia",
+   "official": false,
+   "price": 44999.0,
+   "buyable": true,
+   "tr_warranty": false,
+   "importer": false,
+   "others": [],
+   "reviews": []
+  },
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Xiaomi+Robot+Vacuum+X20+Pro"
+ },
+ "philips-2000-series-xu2100": {
+  "id": "philips-2000-series-xu2100",
+  "name": "Philips 2000 Series XU2100 Aqua",
+  "offers": [],
+  "amz": [],
+  "tek": [],
+  "hbSearch": null,
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Philips+2000+Series+XU2100+Aqua"
+ },
+ "homend-alex-30": {
+  "id": "homend-alex-30",
+  "name": "Homend Alex 30",
+  "offers": [],
+  "tek": [],
+  "hb": {
+   "url": "https://www.hepsiburada.com/homend-alex-30-otomatik-bosaltim-sistemli-robot-supurge-20-000-pa-duz-zemin-icin-guclu-temizlik-p-HBCV0000HYLGH0",
+   "seller": "solomungo",
+   "official": false,
+   "price": 35990.1,
+   "buyable": true,
+   "tr_warranty": false,
+   "importer": false,
+   "others": [
+    {
+     "seller": "Novella Home",
+     "score": "9,5",
+     "auth": true,
+     "price": 35999.1
+    },
+    {
+     "seller": "Homend",
+     "score": "9,2",
+     "auth": true,
+     "price": 39999.0
+    }
+   ],
+   "reviews": []
+  },
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Homend+Alex+30"
+ },
+ "ecovacs-deebot-t50s": {
+  "id": "ecovacs-deebot-t50s",
+  "name": "Ecovacs Deebot T50S",
+  "offers": [],
+  "amz": [],
+  "tek": [],
+  "hbSearch": null,
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Ecovacs+Deebot+T50S"
+ },
+ "cecotec-conga-m100": {
+  "id": "cecotec-conga-m100",
+  "name": "Cecotec Conga M100",
+  "offers": [],
+  "tek": [],
+  "hb": {
+   "url": "https://www.hepsiburada.com/conga-m100-spin-ai-robot-supurge-pm-HBC0000DE9DN6",
+   "seller": "Cecotec Türkiye",
+   "official": false,
+   "price": 19649.43,
+   "buyable": true,
+   "tr_warranty": false,
+   "importer": false,
+   "others": [],
+   "reviews": []
+  },
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Cecotec+Conga+M100"
+ },
+ "simart-katya-v": {
+  "id": "simart-katya-v",
+  "name": "Şımart Katya V",
+  "offers": [],
+  "hbSearch": null,
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=%C5%9E%C4%B1mart+Katya+V"
+ },
+ "bosch-spotless-advanced": {
+  "id": "bosch-spotless-advanced",
+  "name": "Bosch Spotless Advanced (BCRC2W)",
+  "offers": [],
+  "amz": [],
+  "tek": [],
+  "hb": {
+   "url": "https://www.hepsiburada.com/bosch-spotless-advanced-bcrc2w-akilli-robot-supurge-pm-HBC0000BQAD6F",
+   "seller": "KALKANLAR DTM",
+   "official": false,
+   "price": null,
+   "buyable": true,
+   "tr_warranty": false,
+   "importer": false,
+   "others": [
+    {
+     "seller": "Memicioğlu DTM",
+     "score": "9,5",
+     "auth": true,
+     "price": 22500.0
+    },
+    {
+     "seller": "bydoli",
+     "score": "9,6",
+     "auth": true,
+     "price": 24435.0
+    }
+   ],
+   "reviews": []
+  },
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Bosch+Spotless+Advanced"
+ },
+ "dreame-l10s-ultra-gen-2": {
+  "id": "dreame-l10s-ultra-gen-2",
+  "name": "Dreame L10s Ultra Gen 2",
+  "offers": [],
+  "amz": [],
+  "hb": {
+   "url": "https://www.hepsiburada.com/l10s-ultra-gen-2-robot-supurge-beyaz-pm-HBC000084M0QQ",
+   "seller": "Terminal",
+   "official": false,
+   "price": 41797.58,
+   "buyable": true,
+   "tr_warranty": false,
+   "importer": false,
+   "others": [
+    {
+     "seller": "BOLKUR",
+     "score": "9,7",
+     "auth": true,
+     "price": 41897.34
+    },
+    {
+     "seller": "TicaretVitrini",
+     "score": "9,6",
+     "auth": true,
+     "price": 42894.92
+    }
+   ],
+   "rating": 4.6,
+   "count": 85,
+   "stars": [
+    69,
+    6,
+    3,
+    2,
+    5
+   ],
+   "reviews": [
+    {
+     "date": "19 Nisan 2025",
+     "text": "Yorum yapmak için ürünü test etmeyi bekledim ismini \"Çilem\" koyduk bizi büyük bir çileden kurtardı :) Gelelim ürüne en ağır şartlarda test ettim hiç acımadım sonuçta bı çuval para ödedik ilk önce CleanGenius modu yani yapay zeka destekli modunda test ettim nerde ne zaman yüksek emiş gücünde süpürmesi gerektiğini nereye yoğun paspas atması gerektiğini çok iyi algılıyor ikinci mod özelleştir modu burada ister süpürme+paspas, sadece süperme veya sadece paspas aktif edebilirsiniz engele takildiğinde kendi algılıyor ve size hiçbir şey demeden kendisi kurtuluyor fakat ben işi zorlaştırarak yere havlu bıraktı baya bir cebelleşti en son gel kurtar diye bağırdı amacımda buydu ne zaman uyarı verecek d",
+     "seller": "Hepsiburada",
+     "up": 19,
+     "down": 0
+    },
+    {
+     "date": "14 Ağustos 2025",
+     "text": "Ürün oldukça başarılı tek görrdüğümeksi yanı engel aşma konusunda biraz sıkıntı yaşıyoruz. Daha önce Dream D9 modelini kullanıyordum hiç engel sorunu yaşamamıştık. Bu modelde maalesef yaşıyoruz. Silmesi süpürmesi harika. ayarlardan her oda silmeden sonra yıka şeklinde ayar yaptım , böylelikle temiz paspas yapıyor. çekim gücü en düşükte bile çok güzel.Dysonla süpürülmüş evden dip köşe her yere girebildiği için bir sürü toz çıkardı.Paspas kurutması çok sessiz ve tam kurutuyor paspasta hiç koku olmuyor.Çalışan kadınlar için büyük kolaylık.",
+     "seller": "Hepsiburada",
+     "up": 6,
+     "down": 3
+    },
+    {
+     "date": "02 Mayıs",
+     "text": "Kargo paketlenme çok iyiydi kusursuz geldi ürün tam bi f/p ürünü",
+     "seller": "SATÜRN",
+     "up": 0,
+     "down": 0
+    },
+    {
+     "date": "15 Ekim 2025",
+     "text": "Ürün gweçten mükemmel türkçe konışması verilen komutu yerine getirmesi haritalaması bike kısa sürede tamamladı süpürme ve silmesi de gayet güzel",
+     "seller": "Teknosa",
+     "up": 0,
+     "down": 0
+    },
+    {
+     "date": "04 Haziran 2025",
+     "text": "Ürünü deneyimleyip öyle yazmak istedim iyi olsun akıllı olsun diyorsanız hiç düşünmeden alın Çünkü süpürge size ihtiyacı olmadan bütün ihtiyaçlarını gideriyor süpürme paspaslama istasyona varınca kendi başına yapmış oluyor yaptığı temizlik çoğu kadından iyi yapıyor çok memnunum iyi ki almışım paraya kıyanlar hiç düşünmeden alsın diyorum Dream candır",
+     "seller": "Hepsiburada",
+     "up": 4,
+     "down": 0
+    }
+   ]
+  },
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Dreame+L10s+Ultra+Gen+2"
+ },
+ "cecotec-conga-x100-ai": {
+  "id": "cecotec-conga-x100-ai",
+  "name": "Cecotec Conga X100 AI",
+  "offers": [],
+  "tek": [],
+  "hbSearch": null,
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Cecotec+Conga+X100+AI"
+ },
+ "mova-z60-ultra-roller-complete": {
+  "id": "mova-z60-ultra-roller-complete",
+  "name": "Mova Z60 Ultra Roller Complete",
+  "offers": [],
+  "amz": [],
+  "tek": [],
+  "hbSearch": {
+   "url": "https://www.hepsiburada.com/mova-z60-ultra-roller-complete-jypdm-1a01-12-v-robot-supurge-su-pompasi-pm-HBC0000I429DW",
+   "title": "Ümit Maker Mova Z60 Ultra Roller Complete JYPDM-1A01 12 V Robot Süpürge Su Pompası",
+   "fromSearch": true
+  },
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Mova+Z60+Ultra+Roller+Complete"
+ },
+ "karcher-rvm-4-comfort-extra": {
+  "id": "karcher-rvm-4-comfort-extra",
+  "name": "Karcher RVM 4 Comfort Extra",
+  "offers": [],
+  "amz": [],
+  "tek": [],
+  "hb": {
+   "url": "https://www.hepsiburada.com/rvm-4-comfort-extra-pm-HBC0000DJZ1XX",
+   "seller": "Karcher Türkiye",
+   "official": false,
+   "price": 30329.1,
+   "buyable": true,
+   "tr_warranty": false,
+   "importer": false,
+   "others": [
+    {
+     "seller": "Teknolojika",
+     "score": "9,6",
+     "auth": true,
+     "price": 40499.1
+    },
+    {
+     "seller": "ÜÇBOYUT",
+     "score": "9,3",
+     "auth": true,
+     "price": 41749.0
+    }
+   ],
+   "rating": 5.0,
+   "count": 4,
+   "stars": [
+    4,
+    0,
+    0,
+    0,
+    0
+   ],
+   "reviews": [
+    {
+     "date": "13 Ağustos",
+     "text": "10 numara temizlik yapıyor haliları tek çıkarken biraz kalınsa paspas sürtebilir yoksa mükemmel makina",
+     "seller": "Karcher Türkiye",
+     "up": 0,
+     "down": 0
+    },
+    {
+     "date": "26 Haziran",
+     "text": "Çok güzel temizliyor öyle pahalı diğer markalara gerek yok kalitesi yerinde",
+     "seller": "Karcher Türkiye",
+     "up": 1,
+     "down": 1
+    },
+    {
+     "date": "09 Haziran",
+     "text": "Evini tertemiz ediyor parçlarına da ulaşsam efsane ürün teşekkürler",
+     "seller": "Karcher Türkiye",
+     "up": 1,
+     "down": 1
+    }
+   ]
+  },
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Karcher+RVM+4+Comfort+Extra"
+ },
+ "dji-romo-p": {
+  "id": "dji-romo-p",
+  "name": "DJI Romo P (CS8E)",
+  "offers": [],
+  "amz": [],
+  "tek": [
+   {
+    "title": "DJI Romo P Çöp İstasyonlu Robot Süpürge",
+    "price": 122477.79,
+    "url": "https://www.teknosa.com/dji-romo-p-cop-istasyonlu-robot-supurge-p-100000060753",
+    "buyable": true
+   }
+  ],
+  "hbSearch": null,
+  "mm": [
+   {
+    "title": "[DJI Romo P Paspas Pedleri ve Şeffaf Tasarım 25.000 Pa Emiş Gücü Robot Süpürge](https://www.mediamarkt.com.tr/tr/product/_dji-romo-p-paspas-pedleri-ve-seffaf-tasarim-25000-pa-emis-gucu-robot-supurge-1251497.html)",
+    "url": "https://www.mediamarkt.com.tr/tr/product/_rovexa-dji-romo-p-robot-supurge-uyumlu-kaucuk-sizdirmazlik-halkasi-3lu-set-185947648.html",
+    "price": 61197.0,
+    "delivery": true,
+    "store_pickup": true
+   }
+  ],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=DJI+Romo+P"
+ },
+ "ecovacs-deebot-x11-pro-omni": {
+  "id": "ecovacs-deebot-x11-pro-omni",
+  "name": "Ecovacs Deebot X11 Pro Omni",
+  "offers": [],
+  "amz": [
+   {
+    "title": "ECOVACS DEEBOT X11 Pro Omni Robot Süpürge ve Paspas PowerBoost",
+    "url": "https://www.amazon.com.tr/dp/B0FLQGR3MZ",
+    "price": 39999.0,
+    "buyable": true,
+    "unavailable": false,
+    "lowstock": null,
+    "rating": 3.6,
+    "count": 111,
+    "delivery": "ÜCRETSİZ teslimat 5 - 7 Kas"
+   }
+  ],
+  "tek": [],
+  "hb": {
+   "url": "https://www.hepsiburada.com/ecovacs-deebot-x11-pro-omni-robot-supurge-ve-paspas-powerboost-p-HBCV0000AAVW0D",
+   "seller": "Ecovacs Group Türkiye",
+   "official": false,
+   "price": 36999.0,
+   "buyable": true,
+   "tr_warranty": false,
+   "importer": false,
+   "others": [
+    {
+     "seller": "MORTIK",
+     "score": "9,4",
+     "auth": true,
+     "price": 78599.0
+    }
+   ],
+   "rating": 4.1,
+   "count": 140,
+   "stars": [
+    99,
+    8,
+    6,
+    2,
+    25
+   ],
+   "reviews": [
+    {
+     "date": "17 Ekim 2025",
+     "text": "Vacumswar gibi uluslararası inceleme sitelerinde ilk 5 arasında yer almasından dolayı tercih ettim. İlgili sitelerdeki ve benzerlerindeki daha iyi ürünler Türkiye'de satışta değildi. Dolayısıyla Türkiye'de satışta olan en yüksek dereceli ürünü, incelemeleri izleyerek aldım. Toztorbasız çalışma özelliği, Dyson süpürgeler gibi çok güzel. Ürün çok prestijli bir görüntüsü var. Türkçe komut anlayıp, Türkçe dilince cevaplar verebiliyor. Bir çok dil seçeceği mevcut. Kurulumu çok basitti. Maplemesi segmentine göre gayet hızlıydı. Temizlik noktasında aynen söylenilen ve övülen şekliyle karşılaştık. Onun dışında tetslerde envai çeşit engellerin arasından komando gibi hareket etmesi gerektiğinden ve no",
+     "seller": "",
+     "up": 53,
+     "down": 10
+    },
+    {
+     "date": "02 Eylül",
+     "text": "Tek kelimeyle Muhteşemsin 💗💗💗iyikim oldun💕💕 Satıcı: İMERS TECHNOLOGY COMPANY Seçenek X11 OmniCyclone",
+     "seller": "",
+     "up": 0,
+     "down": 0
+    },
+    {
+     "date": "16 Ekim 2025",
+     "text": "X8 pro omni evde vardı bir tane daha aldım :) üst kat için. cihaz oldukça başarılı. Harıtalamayı ilk seferde çok başarılı çıkardı. Halı tanıması oldukca güzel. Temizlik ise diğer seriden bariz şekilde üstün. Emiş gücü oldukça başarılı. Moplaması kusursuz. Ben orjinal ecovacs sıvısı da aldım. Kokusu da oldukça güzel. En ufak sıkıntısı yok... Lakin başka gerçekler.. Mesela başka markalar bir sürü yanında hediye veriyor. Filtresi,ana fırçası ,yan fırçası,temizlik losyonu... Yani bunları sizde verseniz... Ayrıca umarım yan parçaları yeni tedarikçi olan firma resmi sayfasında satışa sunar. Cihaz için olumsuz bir yorumum yok. Ama harita için diğer markalar çok önde onu da diyeyim. Basit bir harita",
+     "seller": "",
+     "up": 19,
+     "down": 6
+    },
+    {
+     "date": "18 Ekim 2025",
+     "text": "Ekim ayından beri ürünü kullanıyorum ve yorumumu güncelleme zamanım geldi. İlk haftalarda yan fırçanın hav dokuma halıya takılmasından dolayı hasar aldığını görselde de belirtmiştim. Farklı yurt dışı siteden yedek parça temini yaptık Birkaç ay sonra zaten distribütör marka Bu modelin yedek parçalarında Türkiye'ye satışa sundu ağır temizlik solüsyonunu da bu şekilde edinmiş oldum. Ürün aldığımızdan beri bardak kırmadıkça süpürge çalıştırma ihtiyacı hissetmedik. Türkçe dil desteğinin geldiği dönemde bazen tüm odayı temizlememesi ya da o da atlaması gibi yazılımsal hatalar oldu yapılan yorumlarda da süpürge kendi etrafında dönüyor gibi yorumlar olabilir ancak Yeni yazalım güncellemesi ile Bu pr",
+     "seller": "",
+     "up": 24,
+     "down": 4
+    },
+    {
+     "date": "22 Ekim 2025",
+     "text": "Eşimin doğumgünü için almıştım ürün çok hızlı elime ulaştı. Akşam sipariş verdim ertesi gün öğlen kapımdaydı. Eşim çok beğendi çok şık bir ürün. İlk kullanımlarımızdan sonra da çok üründen çok memnun kaldık. Çekiş gücü inanılmaz her şeyi silip süpürüyor. Mopu da çom güzel siliyor evi tertemiz yapıyor. Kesinlikle tavsiye ederim. Satıcı: Hepsiburada Seçenek X11 Pro Omni",
+     "seller": "",
+     "up": 7,
+     "down": 1
+    },
+    {
+     "date": "05 Ocak",
+     "text": "Ürünü 18 kasımda aldım değerlendirmeyi bugüne bıraktım ilkgün kurdum çalıştırdım kullandım çok memnun kaldım ertesi gün kabus cihaza komut veriyorum gitmiyor gidiyor olduğu yerde dakikalarca dönüp duruyor yerini değiştirdim defalarca harita silip yeniden yaptım ıı olmadı dedim ayvayı yedik para çöp oldu birde biliyorum ilk deneyimim çünkü uzun zamandır takip ediyorum anca alınabilecek kadar bir seviyeye çıktı robot süpürge ler neyse konuya dönelim tam sevisi arayacakken aklıma geldi şunu bir fabrika ayarlarına döndüreyim diye sonra reset butonunu bulamadım meğer wi fi lambası aynı zamanda reset butonu imiş manual kitaptan bulduk wifi lambasının reset butonu olduğunu biraz basılı tutup fabrik",
+     "seller": "",
+     "up": 11,
+     "down": 1
+    },
+    {
+     "date": "28 Mart",
+     "text": "10dk da evi haritalandırdı. Hızlıca kurdum ve çalıştırıdım. Umarım uzun süre kıllanımda da memnun kalırım. Sesi standart ayarlarda rahatsız etmiyor. Satıcı: Hepsiburada Seçenek X11 OmniCyclone",
+     "seller": "",
+     "up": 0,
+     "down": 0
+    },
+    {
+     "date": "17 Ekim 2025",
+     "text": "Uzun araştırmalardan sonra Ecovacs X11 OmniCyclone aldım ve gerçekten beklentimin üzerinde bir ürün çıktı. Emiş gücü inanılmaz derecede yüksek, halılardaki tozları bile tek geçişte topluyor. Paspas performansı da çok başarılı — özellikle silindir mop sistemi sayesinde zemin hem temiz hem parlak kalıyor. En beğendiğim yönü ise tamamen toz torbasız olması. İstasyonun kendi kendini temizlemesi, mopları yıkayıp kurutması büyük konfor. Her seferinde müdahale etmeden tertemiz bir evle karşılaşıyorum. Uygulaması da oldukça akıllı; harita oluşturması, oda bazlı temizlik ayarları, sessiz mod gibi özellikler çok kullanışlı. Kısacası; hem güçlü hem pratik bir robot süpürge arayanlar için kesinlikle tav",
+     "seller": "",
+     "up": 13,
+     "down": 1
+    },
+    {
+     "date": "21 Ekim 2025",
+     "text": "Nihayet doğru düzgün MOP ve supurme fonksiyonunu birlikte sunun bir cihaz piyasaya çıktı, klasik MOP özellikli cihazlar hem ekstra uğraştırıyor hemde doğru düzgün temizlemiyordu bunda ise rulo MOP eklemişler ve zemindeki ufak tefek sıvıları bile ıslak mop özelliği sayesinde çekebiliyor. X11 HB kuponu ile aldım, ilk izlenimim eve transformers robotu gelmiş gibi oldu, her an başka bir cihaza dönüşecek gibi duruyor. Deterjan gözlerinin ayrı olması ve ihtiyacı kadar alması oldukça mantıklı bir geliştirme olmuş, ikea sandalyelerim sebebiyle daha önceki robotum için ortalikta ne kadar sandalye vs varsa koltukların üzerine cikarıyordum x11 ile bu sorunda çözüldü, çalırken izlemek bile keyifli :) ne",
+     "seller": "",
+     "up": 13,
+     "down": 2
+    },
+    {
+     "date": "13 Şubat",
+     "text": "5 Yıldız veriyorum gözümde sıfır!!!Ürün kullanmaya başladığım üçüncü günü çalışırken süpürme fırçası tekerine dolandı ve çıktı .Geri takılsada hareket halinde iken tekrar çıkıyor,servis ise bu parça plastik ödemesi size ait diyor, yazık verdiğim paraya çok pişman oldum bu ürünü aldığına satıcıdan da üründen de hiç memnun kalmadım yazık.. Satıcı: VATAN BİLGİSAYAR Seçenek X11 OmniCyclone",
+     "seller": "",
+     "up": 6,
+     "down": 3
+    }
+   ]
+  },
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Ecovacs+Deebot+X11+Pro+Omni"
+ },
+ "mova-p70-pro-ultra": {
+  "id": "mova-p70-pro-ultra",
+  "name": "Mova P70 Pro Ultra",
+  "offers": [],
+  "amz": [
+   {
+    "title": "MOVA P50 Pro Ultra, P70 Pro Ultra Aksesuar Kiti (MRAK67)",
+    "url": "https://www.amazon.com.tr/dp/B0DY1J25T3",
+    "price": 2999.0,
+    "buyable": true,
+    "unavailable": false,
+    "lowstock": "9",
+    "rating": 4.6,
+    "count": 12,
+    "delivery": "ÜCRETSİZ teslimat 5 Kas Per"
+   }
+  ],
+  "tek": [],
+  "hbSearch": null,
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Mova+P70+Pro+Ultra"
+ },
+ "ecovacs-t30c-prime": {
+  "id": "ecovacs-t30c-prime",
+  "name": "Ecovacs T30C Prime",
+  "offers": [],
+  "tek": [],
+  "hbSearch": null,
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Ecovacs+T30C+Prime"
+ },
+ "mova-mobius-60": {
+  "id": "mova-mobius-60",
+  "name": "Mova Mobius 60",
+  "offers": [],
+  "amz": [
+   {
+    "title": "MOVA MOBIUS 60 MopSwap™ Sistemli Robot Süpürge, 30.000 Pa Emiş Gücü, Dinamik Emiş Koruma Sistemi, 8 cm’ye Kadar Engel Aş",
+    "url": "https://www.amazon.com.tr/dp/B0FRMV3487",
+    "price": 75599.1,
+    "buyable": true,
+    "unavailable": false,
+    "lowstock": "8",
+    "rating": 3.8,
+    "count": 71,
+    "delivery": "ÜCRETSİZ teslimat 5 Kas Per"
+   }
+  ],
+  "tek": [],
+  "hb": {
+   "url": "https://www.hepsiburada.com/mova-mobius-60-mopswap-sistemli-robot-supurge-30-000-pa-emis-gucu-dinamik-emis-koruma-sistemi-8-cm-ye-kadar-engel-asma-100-c-ile-yikama-sistemi-3-yil-garanti-pm-HBC0000ORHBEJ",
+   "seller": "AB GLOBAL STORE",
+   "official": false,
+   "price": null,
+   "buyable": true,
+   "tr_warranty": false,
+   "importer": false,
+   "others": [],
+   "reviews": []
+  },
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Mova+Mobius+60"
+ },
+ "bosch-spotless-max-cam": {
+  "id": "bosch-spotless-max-cam",
+  "name": "Bosch Spotless Max Cam (BCRDW3BX)",
+  "offers": [],
+  "amz": [],
+  "tek": [],
+  "hb": {
+   "url": "https://www.hepsiburada.com/robot-supurge-spotless-max-cam-bcrdw3bx-pm-HBC0000JEA87R",
+   "seller": "OPİHOME",
+   "official": false,
+   "price": null,
+   "buyable": true,
+   "tr_warranty": false,
+   "importer": false,
+   "others": [
+    {
+     "seller": "Bosch Ev Aletleri",
+     "score": "9,6",
+     "auth": true,
+     "price": 71300.0
+    }
+   ],
+   "reviews": []
+  },
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Bosch+Spotless+Max+Cam"
+ },
+ "homend-alex-10": {
+  "id": "homend-alex-10",
+  "name": "Homend Alex 10",
+  "offers": [],
+  "tek": [],
+  "hb": {
+   "url": "https://www.hepsiburada.com/homend-alex-10-moplu-ve-haritalamali-10-kpa-akilli-robot-supurge-beyaz-pm-HBC0000IZGJ32",
+   "seller": "Homend",
+   "official": true,
+   "price": 10999.0,
+   "buyable": true,
+   "tr_warranty": false,
+   "importer": false,
+   "others": [],
+   "reviews": []
+  },
+  "mm": [],
+  "mmUrl": "https://www.mediamarkt.com.tr/tr/search.html?query=Homend+Alex+10"
+ }
+}
