@@ -48,6 +48,34 @@ for o in I:
         if verified_buy and o['ver']!='dogrulandi' and o['stock']!='yok': o['ver']='dogrulandi'
     p=PROF.get(o['id'])
     if p: o['prof']=p
+# mağaza ürün bağlantısı doğrulaması: başka modele veya aksesuara giden bağlantıları ele
+_ACC=re.compile(r'uyumlu|yedek|aparat|filtre|firca|fırça|paspas-bezi|mop-bez|toz-torba|aksesuar|-kit|parca-set|hazne|tekerlek|adaptor|braket',re.I)
+_TR=str.maketrans('çğıöşüÇĞİÖŞÜ','cgiosuCGIOSU'); _GEN={'robot','vacuum','bot','mi','supurge','akilli'}
+def _key(m):
+    m=re.sub(r'\(.*?\)','',m).translate(_TR).lower().replace('+',' plus ')
+    return ''.join(t for t in re.split(r'[^a-z0-9]+',m) if t and t not in _GEN)
+def _url_ok(o,b):
+    u=b['url'].lower()
+    if _ACC.search(u): return False
+    if '/dp/' in u: return True
+    nu=re.sub(r'[^a-z0-9]','',u.translate(_TR))
+    keys=[_key(o['model'])]+[re.sub(r'[^a-z0-9]','',x.lower()) for x in re.findall(r'\(([^)]+)\)',o['model']+' '+o['name'])]
+    VAR=('ultra','pro','plus','max','omni','complete','gen2','sonic','flow','lite','prime','heat','roller','ae','ce','combo')
+    for k in keys:
+        if not k or len(k)<3: continue
+        i=nu.find(k)
+        while i>=0:
+            nxt=nu[i+len(k):i+len(k)+8]
+            if not any(nxt.startswith(v) for v in VAR): return True
+            i=nu.find(k,i+1)
+    return False
+_nb=0
+for o in I:
+    for b in ((o.get('deep') or {}).get('box') or []):
+        if b.get('url') and not _url_ok(o,b): b['url']=None; b['urlBad']=True; _nb+=1
+        ref=o.get('price') or 0
+        if b.get('url') and ref and b.get('price') and b['price']<ref*0.5: b['url']=None; b['urlBad']=True; _nb+=1
+print('elenen yanlış mağaza bağlantısı',_nb)
 _main=[o for o in I if o['stock']!='yok' and o.get('ver')!='tek']
 D['deepDone']=sum(1 for o in _main if o.get('prof'))
 D['deepTotal']=len(_main)
