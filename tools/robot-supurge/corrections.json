@@ -100,5 +100,39 @@
  "roborock-s7-max-ultra": {
   "kg": 4.5,
   "specSrc": "Roborock ABD ürün sayfası: robot 10 lb (≈4,5 kg)"
+ },
+ "anker-eufy-omni-e25": {
+  "mah": 5200,
+  "ch": 3.5,
+  "kg": 5.2,
+  "stDust": 3,
+  "stClean": 2.5,
+  "stDirty": 1.8,
+  "dust": 300,
+  "db": 59,
+  "specSrc": "eufy E25 kullanım kılavuzu (Home Depot PDF): 5.200 mAh, 3,5 saat şarj, 11,46 lb, 3 L torba, 2,5 L temiz / 1,8 L kirli su; Vacuum Wars: 300 ml hazne; Homes & Gardens: 51–59 dB"
+ },
+ "dreame-matrix-10-ultra": {
+  "rt": 260,
+  "ch": 4.5,
+  "db": 70,
+  "water": 80,
+  "specSrc": "Dreame UK resmi mağazası özellik tablosu"
+ },
+ "dreame-x60-ultra-complete": {
+  "rt": 180,
+  "specSrc": "Vacuum Wars: resmi pil süresi 180 dk"
+ },
+ "roborock-qrevo-maxv": {
+  "climb": 20,
+  "specSrc": "Vacuum Wars: 20 mm eşik"
+ },
+ "roborock-saros-10": {
+  "stDust": 2.7,
+  "specSrc": "Vacuum Wars: 2,7 L torba"
+ },
+ "roborock-saros-20-flow": {
+  "kg": 5.2,
+  "specSrc": "Roborock ABD ürün sayfası: robot net ağırlığı 5,2 kg"
  }
 }

@@ -2,14 +2,7 @@
 "roborock-s8-maxv-ultra": [
 "kg"
 ],
-"dreame-matrix-10-ultra": [
-"rt",
-"ch",
-"db",
-"water"
-],
 "roborock-saros-20-flow": [
-"kg",
 "stDust",
 "stClean",
 "stDirty"
@@ -42,7 +35,6 @@
 "sides"
 ],
 "dreame-x60-ultra-complete": [
-"rt",
 "ch",
 "water"
 ],
@@ -78,21 +70,12 @@
 ],
 "roborock-saros-10": [
 "kg",
-"stDust",
 "stClean",
 "stDirty"
 ],
 "anker-eufy-omni-e25": [
-"mah",
-"ch",
-"db",
-"dust",
-"kg",
 "climb",
-"water",
-"stDust",
-"stClean",
-"stDirty"
+"water"
 ],
 "roborock-qrevo-curv-5a1": [
 "ch",
@@ -113,8 +96,7 @@
 ],
 "roborock-qrevo-maxv": [
 "ch",
-"kg",
-"climb"
+"kg"
 ],
 "roborock-qrevo-edge-2-flow": [
 "kg"
