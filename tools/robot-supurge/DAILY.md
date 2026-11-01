@@ -35,7 +35,8 @@ TAG=$(date +%Y%m%d)
 ## 2. Derin inceleme (20 model)
 
 1. `python3 -I deep_urls.py $W $B 20` → 6 grup adres basar ve `deep/$B/queue.json` yazar.
-   Kuyruk boşsa yalnızca pazar yerinde satılanlar için `--pz` ekle. İkisi de boşsa bu adımı atla.
+   Sıra en pahalı modelden ucuza doğrudur. Kuyruk boşsa yalnızca pazar yerinde satılanlar için `--pz` ekle. İkisi de boşsa bu adımı atla.
+   Sayfada yalnızca satıştaki modeller gösterilir (stokta olmayan eski modeller ve tek satıcılılar assemble.py'de çıkarılır).
 2. Her grubu Tavily extract (advanced) ile çek, çıktıları `deep/$B/{epey,hb,hbrev,mm,tek,amz}.json` olarak kaydet.
 3. `python3 -I parse_deep.py $W deep/$B` → `deep/$B/research.json` ve özet satırları.
 4. HB ürün linki olmayanlar için: `python3 -I deep_urls.py $W $B --second` → basılan adresleri çek,

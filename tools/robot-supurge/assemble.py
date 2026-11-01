@@ -1,7 +1,14 @@
 # template.html + robots2.json -> robot-supurge.html (artifact gövdesi) ve repo sayfası
 import sys,os
 S=sys.argv[1]; repo_page=sys.argv[2] if len(sys.argv)>2 else None
-t=open(S+'/template.html').read(); d=open(S+'/robots2.json').read().replace('</','<\\/')
+import json
+t=open(S+'/template.html').read()
+D=json.load(open(S+'/robots2.json'))
+# sayfada yalnızca satıştaki modeller: stokta olmayan eski modeller ve tek satıcılı doğrulanamayanlar çıkarılır
+D['hidden']=dict(oos=sum(1 for o in D['items'] if o['stock']=='yok')+len(D.get('oos',[])),tek=sum(1 for o in D['items'] if o['stock']!='yok' and o.get('ver')=='tek'))
+D['items']=[o for o in D['items'] if o['stock']!='yok' and o.get('ver')!='tek']
+D['oos']=[]
+d=json.dumps(D,ensure_ascii=False,separators=(',',':')).replace('</','<\\/')
 body=t.replace('/*__DATA__*/',d,1)
 open(S+'/robot-supurge.html','w').write(body)
 if repo_page:

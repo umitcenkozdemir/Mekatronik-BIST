@@ -3,6 +3,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
+/* masaüstünde yazılar büyür */
+:root{--fs:1}
+@media (min-width:1100px){:root{--fs:1.14}}
+@media (min-width:1600px){:root{--fs:1.24}}
 /* Layout: sticky toolbar, left filter rail (drawer on phones), tabbed main area; data reads like a spec sheet. */
 :root{
   --bg:#f3f6f7; --surface:#ffffff; --sunk:#e9eef0; --line:#d6dfe2; --line-soft:#e4eaec;
@@ -29,7 +33,7 @@
   --dot-muted:#33464e; --shadow:0 1px 2px rgba(0,0,0,.3),0 4px 14px rgba(0,0,0,.25); color-scheme:dark}
 *{box-sizing:border-box}
 html,body{background:var(--bg)}
-body{color:var(--fg);font-family:var(--f-body);font-size:14px;line-height:1.5}
+body{color:var(--fg);font-family:var(--f-body);font-size:calc(14px*var(--fs));line-height:1.5}
 body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--surface)}
 button,input,select{font:inherit;color:inherit}
 button{cursor:pointer}
@@ -45,8 +49,8 @@ button{cursor:pointer}
 h1{font-family:var(--f-display);font-weight:700;font-size:clamp(24px,3.2vw,34px);letter-spacing:-.01em;line-height:1.1;margin:0;text-wrap:balance}
 .sub{color:var(--fg2);margin:6px 0 0;max-width:68ch}
 .stats{display:flex;gap:28px;flex-wrap:wrap}
-.stat .k{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--fg3)}
-.stat .v{font-family:var(--f-mono);font-size:20px;font-weight:500}
+.stat .k{font-size:calc(11px*var(--fs));letter-spacing:.08em;text-transform:uppercase;color:var(--fg3)}
+.stat .v{font-family:var(--f-mono);font-size:calc(20px*var(--fs));font-weight:500}
 .toolbar{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--surface);border-bottom:1px solid var(--line)}
 .toolbar .wrap{display:flex;gap:10px;align-items:center;padding-block:10px;flex-wrap:wrap}
 .search{flex:1 1 260px;min-width:0;position:relative}
@@ -66,85 +70,85 @@ h1{font-family:var(--f-display);font-weight:700;font-size:clamp(24px,3.2vw,34px)
 aside.filters{align-self:start;min-width:0;padding-right:6px}
 .fgroup{border-bottom:1px solid var(--line-soft);padding:12px 0}
 .fgroup:first-child{padding-top:0}
-.fgroup h3{font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--fg3);margin:0 0 8px;font-weight:600;display:flex;justify-content:space-between;align-items:center}
-.fgroup h3 button{font-size:11px;letter-spacing:0;text-transform:none;border:0;background:none;color:var(--accent);padding:0}
+.fgroup h3{font-size:calc(11px*var(--fs));letter-spacing:.09em;text-transform:uppercase;color:var(--fg3);margin:0 0 8px;font-weight:600;display:flex;justify-content:space-between;align-items:center}
+.fgroup h3 button{font-size:calc(11px*var(--fs));letter-spacing:0;text-transform:none;border:0;background:none;color:var(--accent);padding:0}
 .chips{display:flex;flex-wrap:wrap;gap:6px}
-.chip{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:4px 10px;font-size:13px;color:var(--fg2);display:inline-flex;gap:6px;align-items:center}
-.chip .c{font-family:var(--f-mono);font-size:11px;color:var(--fg3)}
+.chip{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:4px 10px;font-size:calc(13px*var(--fs));color:var(--fg2);display:inline-flex;gap:6px;align-items:center}
+.chip .c{font-family:var(--f-mono);font-size:calc(11px*var(--fs));color:var(--fg3)}
 .chip[aria-pressed="true"]{background:var(--accent-soft);border-color:var(--accent);color:var(--fg)}
 .chip[aria-pressed="true"] .c{color:var(--fg2)}
 .pricebox{display:grid;grid-template-columns:1fr 1fr;gap:8px}
-.pricebox label{font-size:12px;color:var(--fg3);display:grid;gap:3px}
+.pricebox label{font-size:calc(12px*var(--fs));color:var(--fg3);display:grid;gap:3px}
 .pricebox input,.fsel{width:100%;padding:7px 9px;border:1px solid var(--line);border-radius:7px;background:var(--surface)}
 .quick{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
-.quick button{font-size:12px;padding:3px 8px;border-radius:6px;border:1px dashed var(--line);background:transparent;color:var(--fg2)}
+.quick button{font-size:calc(12px*var(--fs));padding:3px 8px;border-radius:6px;border:1px dashed var(--line);background:transparent;color:var(--fg2)}
 .brandlist{display:grid;gap:2px;max-height:240px;overflow:auto;margin-top:6px}
 .brandlist label{display:flex;gap:8px;align-items:center;padding:3px 4px;border-radius:5px;cursor:pointer}
 .brandlist label:hover{background:var(--sunk)}
-.brandlist .c{margin-left:auto;font-family:var(--f-mono);font-size:11px;color:var(--fg3)}
-.brandsearch{width:100%;padding:6px 9px;border:1px solid var(--line);border-radius:7px;background:var(--surface);font-size:13px}
+.brandlist .c{margin-left:auto;font-family:var(--f-mono);font-size:calc(11px*var(--fs));color:var(--fg3)}
+.brandsearch{width:100%;padding:6px 9px;border:1px solid var(--line);border-radius:7px;background:var(--surface);font-size:calc(13px*var(--fs))}
 .selrow{display:grid;grid-template-columns:1fr 1fr;gap:8px}
-.selrow label{font-size:12px;color:var(--fg3);display:grid;gap:3px}
-.toggle{display:flex;gap:8px;align-items:center;font-size:13px;color:var(--fg2);margin-top:6px}
+.selrow label{font-size:calc(12px*var(--fs));color:var(--fg3);display:grid;gap:3px}
+.toggle{display:flex;gap:8px;align-items:center;font-size:calc(13px*var(--fs));color:var(--fg2);margin-top:6px}
 
 /* results header */
 .reshead{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:12px}
-.reshead .count{font-family:var(--f-display);font-size:20px;font-weight:600}
-.reshead .count small{font-family:var(--f-body);font-size:13px;color:var(--fg3);font-weight:400;margin-left:6px}
+.reshead .count{font-family:var(--f-display);font-size:calc(20px*var(--fs));font-weight:600}
+.reshead .count small{font-family:var(--f-body);font-size:calc(13px*var(--fs));color:var(--fg3);font-weight:400;margin-left:6px}
 .active-f{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}
-.active-f button{font-size:12px;border:1px solid var(--line);background:var(--sunk);border-radius:6px;padding:2px 8px;color:var(--fg2)}
+.active-f button{font-size:calc(12px*var(--fs));border:1px solid var(--line);background:var(--sunk);border-radius:6px;padding:2px 8px;color:var(--fg2)}
 
 /* cards */
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:14px}
 .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:14px;display:flex;flex-direction:column;gap:10px;min-width:0}
 .card:hover{border-color:var(--fg3)}
 .card .top{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}
-.card .brand{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--fg3);font-weight:600}
-.card h4{font-family:var(--f-display);font-size:17px;font-weight:600;margin:1px 0 0;line-height:1.2;text-wrap:balance;overflow-wrap:anywhere}
+.card .brand{font-size:calc(11px*var(--fs));letter-spacing:.08em;text-transform:uppercase;color:var(--fg3);font-weight:600}
+.card h4{font-family:var(--f-display);font-size:calc(17px*var(--fs));font-weight:600;margin:1px 0 0;line-height:1.2;text-wrap:balance;overflow-wrap:anywhere}
 .card h4 button{all:unset;cursor:pointer}
 .card h4 button:hover{text-decoration:underline;text-underline-offset:3px}
 .card h4 button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
-.price{font-family:var(--f-mono);font-size:19px;font-weight:500;white-space:nowrap}
+.price{font-family:var(--f-mono);font-size:calc(19px*var(--fs));font-weight:500;white-space:nowrap}
 .price-row{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
-.sites{font-size:12px;color:var(--fg3)}
+.sites{font-size:calc(12px*var(--fs));color:var(--fg3)}
 .meters{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.meter .lab{display:flex;justify-content:space-between;font-size:11px;color:var(--fg3);text-transform:uppercase;letter-spacing:.06em}
-.meter .lab b{font-family:var(--f-mono);font-size:13px;color:var(--fg);letter-spacing:0;font-weight:500}
+.meter .lab{display:flex;justify-content:space-between;font-size:calc(11px*var(--fs));color:var(--fg3);text-transform:uppercase;letter-spacing:.06em}
+.meter .lab b{font-family:var(--f-mono);font-size:calc(13px*var(--fs));color:var(--fg);letter-spacing:0;font-weight:500}
 .bar{height:6px;background:var(--sunk);border-radius:3px;overflow:hidden;margin-top:4px}
 .bar i{display:block;height:100%;background:var(--accent);border-radius:3px}
 .bar.fp i{background:var(--good)}
 .specs{display:flex;flex-wrap:wrap;gap:5px}
-.spec{font-size:12px;background:var(--sunk);border-radius:5px;padding:2px 7px;color:var(--fg2);white-space:nowrap}
+.spec{font-size:calc(12px*var(--fs));background:var(--sunk);border-radius:5px;padding:2px 7px;color:var(--fg2);white-space:nowrap}
 .spec.hi{background:var(--accent-soft);color:var(--fg)}
 .card .foot{display:flex;justify-content:space-between;align-items:center;margin-top:auto;padding-top:6px;border-top:1px dashed var(--line-soft)}
-.cmp{display:flex;gap:6px;align-items:center;font-size:13px;color:var(--fg2);cursor:pointer}
+.cmp{display:flex;gap:6px;align-items:center;font-size:calc(13px*var(--fs));color:var(--fg2);cursor:pointer}
 
 /* ikinci el */
 .usedhead .uintro h2{margin-top:0}
 .ukey{background:var(--warn-soft);border-radius:8px;padding:10px 12px;max-width:80ch;margin:10px 0}
-.ustat{display:flex;gap:18px;flex-wrap:wrap;font-size:14px;color:var(--fg2)}.ustat b{font-size:20px;color:var(--fg);margin-right:4px}
+.ustat{display:flex;gap:18px;flex-wrap:wrap;font-size:calc(14px*var(--fs));color:var(--fg2)}.ustat b{font-size:calc(20px*var(--fs));color:var(--fg);margin-right:4px}
 .usedchips{margin:12px 0}.chip.on{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
 .usedlist{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,340px),1fr));gap:12px}
 .ucard{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:14px;display:flex;flex-direction:column;gap:10px;min-width:0}
 .ucard.u-good{border-top:3px solid var(--good)}.ucard.u-warn{border-top:3px solid var(--warn)}.ucard.u-bad{border-top:3px solid var(--line)}
 .ucard .linkish{background:none;padding:0;font:inherit;color:inherit;text-align:left;border-radius:3px}.ucard .unums .linkish{color:var(--accent)}
-.uhead{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}.uhead h3{margin:2px 0 0;font-size:16px;font-family:var(--f-display)}
-.ubrand{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--fg3);font-weight:600}
-.upill{font-size:12px;font-weight:600;padding:3px 9px;border-radius:999px;white-space:nowrap}
+.uhead{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}.uhead h3{margin:2px 0 0;font-size:calc(16px*var(--fs));font-family:var(--f-display)}
+.ubrand{font-size:calc(11px*var(--fs));letter-spacing:.06em;text-transform:uppercase;color:var(--fg3);font-weight:600}
+.upill{font-size:calc(12px*var(--fs));font-weight:600;padding:3px 9px;border-radius:999px;white-space:nowrap}
 .upill.good{background:var(--good-soft);color:var(--good)}.upill.warn{background:var(--warn-soft);color:var(--warn)}.upill.bad{background:var(--sunk);color:var(--fg2)}.upill.muted{background:var(--sunk);color:var(--fg3)}
-.uwhy{margin:0;font-size:13.5px;color:var(--fg2);line-height:1.45}
+.uwhy{margin:0;font-size:calc(13.5px*var(--fs));color:var(--fg2);line-height:1.45}
 .unums{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
-.unums>div{display:flex;flex-direction:column;gap:2px;min-width:0}.unums small{color:var(--fg3);font-size:11.5px}
-.ulab{font-size:11px;color:var(--fg3);text-transform:uppercase;letter-spacing:.05em}
-.ufair .num{font-weight:700;color:var(--accent);font-size:16px}
-.urisk{margin:0;padding-left:18px;font-size:12.5px;color:var(--fg2)}
-.uobs summary{cursor:pointer;font-size:13px;color:var(--accent)}.uobs ul{margin:6px 0 0;padding-left:18px;font-size:12.5px}.uobs li.deal{font-weight:600}
-.checks{padding-left:20px;margin:0;display:grid;gap:8px;font-size:13.5px;color:var(--fg2)}
+.unums>div{display:flex;flex-direction:column;gap:2px;min-width:0}.unums small{color:var(--fg3);font-size:calc(11.5px*var(--fs))}
+.ulab{font-size:calc(11px*var(--fs));color:var(--fg3);text-transform:uppercase;letter-spacing:.05em}
+.ufair .num{font-weight:700;color:var(--accent);font-size:calc(16px*var(--fs))}
+.urisk{margin:0;padding-left:18px;font-size:calc(12.5px*var(--fs));color:var(--fg2)}
+.uobs summary{cursor:pointer;font-size:calc(13px*var(--fs));color:var(--accent)}.uobs ul{margin:6px 0 0;padding-left:18px;font-size:calc(12.5px*var(--fs))}.uobs li.deal{font-weight:600}
+.checks{padding-left:20px;margin:0;display:grid;gap:8px;font-size:calc(13.5px*var(--fs));color:var(--fg2)}
 .usedguide{margin-top:14px}
 .uinline{background:var(--sunk);border-radius:8px;padding:10px 12px}.uinline h3{margin:0 0 4px}
 @media (max-width:520px){.unums{grid-template-columns:1fr 1fr}}
 
-.badge{font-size:11px;font-weight:600;padding:2px 7px;border-radius:5px;white-space:nowrap}
+.badge{font-size:calc(11px*var(--fs));font-weight:600;padding:2px 7px;border-radius:5px;white-space:nowrap}
 .badge.par{background:var(--good-soft);color:var(--good)}
 .badge.one{background:var(--warn-soft);color:var(--warn)}
 .more{display:flex;justify-content:center;margin-top:18px}
@@ -152,9 +156,9 @@ aside.filters{align-self:start;min-width:0;padding-right:6px}
 
 /* table */
 .tablewrap{overflow-x:auto;background:var(--surface);border:1px solid var(--line);border-radius:var(--r)}
-table{border-collapse:collapse;width:100%;font-size:13px}
+table{border-collapse:collapse;width:100%;font-size:calc(13px*var(--fs))}
 th,td{padding:8px 10px;text-align:left;border-bottom:1px solid var(--line-soft);white-space:nowrap}
-th{position:sticky;top:0;background:var(--sunk);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--fg2);font-weight:600}
+th{position:sticky;top:0;background:var(--sunk);font-size:calc(11px*var(--fs));letter-spacing:.06em;text-transform:uppercase;color:var(--fg2);font-weight:600}
 th button{all:unset;cursor:pointer;display:inline-flex;gap:4px;align-items:center}
 th button:focus-visible{outline:2px solid var(--accent)}
 th[aria-sort] button{color:var(--fg)}
@@ -162,49 +166,49 @@ td.r,th.r{text-align:right}
 tbody tr{cursor:pointer}
 tbody tr:hover{background:var(--sunk)}
 td.model{font-weight:500;max-width:260px;overflow:hidden;text-overflow:ellipsis}
-td.model small{display:block;color:var(--fg3);font-weight:400;font-size:11px}
+td.model small{display:block;color:var(--fg3);font-weight:400;font-size:calc(11px*var(--fs))}
 .yes{color:var(--good);font-weight:600}.no{color:var(--fg3)}
 
 /* analysis */
 .panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:18px;margin-bottom:16px;min-width:0}
-.panel h2{font-family:var(--f-display);font-size:19px;margin:0 0 2px;font-weight:600}
-.panel .desc{color:var(--fg2);margin:0 0 12px;font-size:13px;max-width:80ch}
+.panel h2{font-family:var(--f-display);font-size:calc(19px*var(--fs));margin:0 0 2px;font-weight:600}
+.panel .desc{color:var(--fg2);margin:0 0 12px;font-size:calc(13px*var(--fs));max-width:80ch}
 .chartbox{position:relative;width:100%}
 .chartbox svg{display:block;width:100%;height:auto}
-.legend{display:flex;gap:16px;flex-wrap:wrap;font-size:12px;color:var(--fg2);margin-top:8px}
+.legend{display:flex;gap:16px;flex-wrap:wrap;font-size:calc(12px*var(--fs));color:var(--fg2);margin-top:8px}
 .legend span{display:inline-flex;gap:6px;align-items:center}
 .sw{width:10px;height:10px;border-radius:50%;display:inline-block}
-.tip{position:absolute;pointer-events:none;background:var(--fg);color:var(--bg);padding:8px 10px;border-radius:7px;font-size:12px;line-height:1.4;max-width:240px;box-shadow:var(--shadow);z-index:5}
-.tip b{display:block;font-size:13px}
+.tip{position:absolute;pointer-events:none;background:var(--fg);color:var(--bg);padding:8px 10px;border-radius:7px;font-size:calc(12px*var(--fs));line-height:1.4;max-width:240px;box-shadow:var(--shadow);z-index:5}
+.tip b{display:block;font-size:calc(13px*var(--fs))}
 .two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
 .hbars{display:grid;gap:6px}
-.hbar{display:grid;grid-template-columns:110px minmax(0,1fr) 92px;gap:10px;align-items:center;font-size:13px}
+.hbar{display:grid;grid-template-columns:110px minmax(0,1fr) 92px;gap:10px;align-items:center;font-size:calc(13px*var(--fs))}
 .hbar .nm{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .hbar .track{height:14px;position:relative}
 .hbar .track i{position:absolute;left:0;top:0;bottom:0;background:var(--accent);border-radius:0 4px 4px 0}
-.hbar .val{text-align:right;font-family:var(--f-mono);font-size:12px;color:var(--fg2)}
+.hbar .val{text-align:right;font-family:var(--f-mono);font-size:calc(12px*var(--fs));color:var(--fg2)}
 .hist{display:flex;align-items:flex-end;gap:2px;height:180px;border-bottom:1px solid var(--line)}
 .hist div{flex:1;background:var(--accent);border-radius:4px 4px 0 0;min-height:1px;position:relative}
 .hist div:hover{opacity:.8}
-.histx{display:flex;justify-content:space-between;font-size:11px;color:var(--fg3);margin-top:4px;font-family:var(--f-mono)}
+.histx{display:flex;justify-content:space-between;font-size:calc(11px*var(--fs));color:var(--fg3);margin-top:4px;font-family:var(--f-mono)}
 .ftable td,.ftable th{white-space:normal}
 
 /* picks */
 .bracket{margin-bottom:22px}
-.bracket h3{font-family:var(--f-display);font-size:18px;margin:0 0 10px;display:flex;gap:10px;align-items:baseline}
-.bracket h3 small{font-family:var(--f-body);font-size:13px;color:var(--fg3);font-weight:400}
+.bracket h3{font-family:var(--f-display);font-size:calc(18px*var(--fs));margin:0 0 10px;display:flex;gap:10px;align-items:baseline}
+.bracket h3 small{font-family:var(--f-body);font-size:calc(13px*var(--fs));color:var(--fg3);font-weight:400}
 .picks{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px}
 .pick{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:12px 14px;display:grid;gap:6px;text-align:left}
 .pick:hover{border-color:var(--accent)}
-.pick .rk{font-size:11px;color:var(--fg3);text-transform:uppercase;letter-spacing:.07em}
-.pick .nm{font-family:var(--f-display);font-weight:600;font-size:16px}
-.pick .ln{display:flex;justify-content:space-between;gap:8px;font-size:13px;color:var(--fg2)}
+.pick .rk{font-size:calc(11px*var(--fs));color:var(--fg3);text-transform:uppercase;letter-spacing:.07em}
+.pick .nm{font-family:var(--f-display);font-weight:600;font-size:calc(16px*var(--fs))}
+.pick .ln{display:flex;justify-content:space-between;gap:8px;font-size:calc(13px*var(--fs));color:var(--fg2)}
 .usecases{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px}
 
 /* method */
 .prose{max-width:72ch}
-.prose h2{font-family:var(--f-display);font-size:22px;margin:0 0 8px}
-.prose h3{font-family:var(--f-display);font-size:17px;margin:22px 0 6px}
+.prose h2{font-family:var(--f-display);font-size:calc(22px*var(--fs));margin:0 0 8px}
+.prose h3{font-family:var(--f-display);font-size:calc(17px*var(--fs));margin:22px 0 6px}
 .prose p,.prose li{color:var(--fg2)}
 
 /* modal */
@@ -212,79 +216,79 @@ dialog{border:0;padding:0;background:transparent;max-width:min(980px,calc(100vw 
 dialog::backdrop{background:rgba(8,16,20,.55)}
 .modal{background:var(--surface);color:var(--fg);border-radius:14px;border:1px solid var(--line);overflow:auto;max-height:calc(100vh - 24px)}
 .mhead{padding:18px 20px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:16px;align-items:flex-start;position:sticky;top:0;background:var(--surface);z-index:2}
-.mhead h2{font-family:var(--f-display);font-size:22px;margin:0;line-height:1.15}
+.mhead h2{font-family:var(--f-display);font-size:calc(22px*var(--fs));margin:0;line-height:1.15}
 .mbody{padding:18px 20px;display:grid;gap:20px}
 .mgrid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:22px}
-.kv{display:grid;grid-template-columns:auto 1fr;gap:4px 14px;font-size:13px;margin:0}
+.kv{display:grid;grid-template-columns:auto 1fr;gap:4px 14px;font-size:calc(13px*var(--fs));margin:0}
 .kv dt{color:var(--fg3)}
-.kv dd{margin:0;font-family:var(--f-mono);font-size:12.5px;text-align:right}
-.mbody h3{font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--fg3);margin:0 0 8px}
+.kv dd{margin:0;font-family:var(--f-mono);font-size:calc(12.5px*var(--fs));text-align:right}
+.mbody h3{font-size:calc(11px*var(--fs));letter-spacing:.09em;text-transform:uppercase;color:var(--fg3);margin:0 0 8px}
 .sellers{display:grid;gap:4px}
-.seller{display:flex;justify-content:space-between;padding:6px 10px;background:var(--sunk);border-radius:6px;font-size:13px}
+.seller{display:flex;justify-content:space-between;padding:6px 10px;background:var(--sunk);border-radius:6px;font-size:calc(13px*var(--fs))}
 .seller:first-child{background:var(--good-soft)}
 .links{display:flex;gap:8px;flex-wrap:wrap}
-.links a{font-size:13px;color:var(--accent);text-decoration:none;border:1px solid var(--line);padding:5px 10px;border-radius:7px}
+.links a{font-size:calc(13px*var(--fs));color:var(--accent);text-decoration:none;border:1px solid var(--line);padding:5px 10px;border-radius:7px}
 .links a:hover{border-color:var(--accent)}
 .sbars{display:grid;gap:6px}
-.sbar{display:grid;grid-template-columns:120px minmax(0,1fr) 54px;gap:10px;align-items:center;font-size:12.5px}
+.sbar{display:grid;grid-template-columns:120px minmax(0,1fr) 54px;gap:10px;align-items:center;font-size:calc(12.5px*var(--fs))}
 .sbar .val{font-family:var(--f-mono);text-align:right;color:var(--fg2)}
 .extras{display:flex;flex-wrap:wrap;gap:5px}
 .cmpt td,.cmpt th{white-space:normal;vertical-align:top;min-width:150px}
 .cmpt th:first-child,.cmpt td:first-child{min-width:130px;color:var(--fg3);font-weight:500}
 .cmpt td.best{background:var(--good-soft);font-weight:600}
-.cmpt thead th{text-transform:none;letter-spacing:0;font-size:13px;color:var(--fg)}
+.cmpt thead th{text-transform:none;letter-spacing:0;font-size:calc(13px*var(--fs));color:var(--fg)}
 
 /* tray */
 .tray{position:fixed;left:0;right:0;bottom:0;z-index:25;background:var(--surface);border-top:1px solid var(--line);box-shadow:0 -4px 16px rgba(0,0,0,.08);padding-bottom:env(safe-area-inset-bottom,0px)}
 .tray .wrap{display:flex;gap:10px;align-items:center;padding-block:10px;flex-wrap:wrap}
 .tray .items{display:flex;gap:6px;flex-wrap:wrap;flex:1;min-width:0}
-.tray .it{font-size:12px;background:var(--sunk);border-radius:6px;padding:4px 8px;display:inline-flex;gap:6px;align-items:center}
-.tray .it button{border:0;background:none;padding:0;color:var(--fg3);font-size:14px;line-height:1}
-.note{font-size:12px;color:var(--fg3)}
-footer{color:var(--fg3);font-size:12px;padding-block:20px 120px;border-top:1px solid var(--line)}
+.tray .it{font-size:calc(12px*var(--fs));background:var(--sunk);border-radius:6px;padding:4px 8px;display:inline-flex;gap:6px;align-items:center}
+.tray .it button{border:0;background:none;padding:0;color:var(--fg3);font-size:calc(14px*var(--fs));line-height:1}
+.note{font-size:calc(12px*var(--fs));color:var(--fg3)}
+footer{color:var(--fg3);font-size:calc(12px*var(--fs));padding-block:20px 120px;border-top:1px solid var(--line)}
 
-.trust{display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:13px;flex-wrap:wrap}
+.trust{display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:calc(13px*var(--fs));flex-wrap:wrap}
 .stars{color:var(--warn)}
-.muted{color:var(--fg3);font-size:12px}
-.as{font-size:11px;font-weight:600;padding:2px 7px;border-radius:5px;white-space:nowrap;font-family:var(--f-mono)}
+.muted{color:var(--fg3);font-size:calc(12px*var(--fs))}
+.as{font-size:calc(11px*var(--fs));font-weight:600;padding:2px 7px;border-radius:5px;white-space:nowrap;font-family:var(--f-mono)}
 .as.asg{background:var(--good-soft);color:var(--good)}
 .as.asm{background:var(--warn-soft);color:var(--warn)}
 .as.asb{background:var(--sunk);color:var(--bad)}
-.hits{margin:0;padding-left:18px;display:grid;gap:5px;font-size:13px;color:var(--fg2)}
-.sub3{font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--fg3);margin:0 0 8px;font-weight:600}
+.hits{margin:0;padding-left:18px;display:grid;gap:5px;font-size:calc(13px*var(--fs));color:var(--fg2)}
+.sub3{font-size:calc(11px*var(--fs));letter-spacing:.09em;text-transform:uppercase;color:var(--fg3);margin:0 0 8px;font-weight:600}
 .hbar.ib{grid-template-columns:minmax(120px,190px) minmax(0,1fr) 70px}
 #btable tbody tr{cursor:pointer}
 .trustgrid{border-top:1px solid var(--line-soft);padding-top:18px}
-.fgroup h3 .help,.help{display:inline-grid;place-items:center;width:18px;height:18px;border-radius:50%;border:1px solid var(--accent);color:var(--accent);background:transparent;font-size:11px;font-weight:700;padding:0;margin-left:4px;vertical-align:middle;letter-spacing:0;font-family:var(--f-body);cursor:pointer}
+.fgroup h3 .help,.help{display:inline-grid;place-items:center;width:18px;height:18px;border-radius:50%;border:1px solid var(--accent);color:var(--accent);background:transparent;font-size:calc(11px*var(--fs));font-weight:700;padding:0;margin-left:4px;vertical-align:middle;letter-spacing:0;font-family:var(--f-body);cursor:pointer}
 .mbody h3 .help{margin-left:6px}
-.stk{font-size:11px;font-weight:600;padding:2px 7px;border-radius:5px;white-space:nowrap}
+.stk{font-size:calc(11px*var(--fs));font-weight:600;padding:2px 7px;border-radius:5px;white-space:nowrap}
 .stk-ok{background:var(--good-soft);color:var(--good)}.stk-low{background:var(--warn-soft);color:var(--warn)}.stk-no{background:var(--sunk);color:var(--bad)}
-details.oos{margin-top:22px}details.oos summary{cursor:pointer;font-family:var(--f-display);font-size:17px;font-weight:600;display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}
-.sortbox{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.sortbox label{font-size:12px;color:var(--fg3);text-transform:uppercase;letter-spacing:.08em;font-weight:600}.sortsel{width:auto;min-width:0;max-width:100%}
+details.oos{margin-top:22px}details.oos summary{cursor:pointer;font-family:var(--f-display);font-size:calc(17px*var(--fs));font-weight:600;display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}
+.sortbox{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.sortbox label{font-size:calc(12px*var(--fs));color:var(--fg3);text-transform:uppercase;letter-spacing:.08em;font-weight:600}.sortsel{width:auto;min-width:0;max-width:100%}
 .yr{color:var(--fg3);font-weight:500;letter-spacing:0;text-transform:none}
 .badges{display:flex;flex-direction:column;gap:4px;align-items:flex-end}
 .badge.deep{background:var(--accent-soft);color:var(--accent)}
-.verd{margin:0;font-size:13px;color:var(--fg2);line-height:1.45}
-.kind{font-size:10.5px;font-weight:600;padding:1px 6px;border-radius:4px;margin-left:4px;white-space:nowrap}
+.verd{margin:0;font-size:calc(13px*var(--fs));color:var(--fg2);line-height:1.45}
+.kind{font-size:calc(10.5px*var(--fs));font-weight:600;padding:1px 6px;border-radius:4px;margin-left:4px;white-space:nowrap}
 .k-ret{background:var(--good-soft);color:var(--good)}.k-brand{background:var(--accent-soft);color:var(--accent)}.k-mkt{background:var(--sunk);color:var(--fg3)}
 .rvw{border:1px solid var(--accent);border-radius:12px;padding:16px;display:grid;gap:14px;background:var(--bg)}
 .rvw-pending{border-style:dashed;border-color:var(--line);padding:10px 14px}
-.rverdict{margin:0;font-size:15px;line-height:1.55;max-width:80ch}
+.rverdict{margin:0;font-size:calc(15px*var(--fs));line-height:1.55;max-width:80ch}
 .buybox{display:grid;gap:6px}
 .buyrow{display:grid;grid-template-columns:minmax(0,1.6fr) auto auto auto;gap:10px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:8px 10px}
 .buy-no{opacity:.65}
-.btn.sm2{padding:5px 10px;font-size:12.5px;text-decoration:none;white-space:nowrap}
-.pc{margin:0;padding-left:18px;display:grid;gap:4px;font-size:13.5px;color:var(--fg2)}
+.btn.sm2{padding:5px 10px;font-size:calc(12.5px*var(--fs));text-decoration:none;white-space:nowrap}
+.pc{margin:0;padding-left:18px;display:grid;gap:4px;font-size:calc(13.5px*var(--fs));color:var(--fg2)}
 .pc-plus li::marker{content:"+  ";color:var(--good);font-weight:700}.pc-minus li::marker{content:"−  ";color:var(--bad);font-weight:700}
-.sub4{font-size:12px;font-weight:600;color:var(--fg3);margin:6px 0 4px}
-.starbars{display:grid;gap:3px}.sbr{display:grid;grid-template-columns:28px minmax(0,1fr) 40px;gap:8px;align-items:center;font-size:12px}
+.sub4{font-size:calc(12px*var(--fs));font-weight:600;color:var(--fg3);margin:6px 0 4px}
+.starbars{display:grid;gap:3px}.sbr{display:grid;grid-template-columns:28px minmax(0,1fr) 40px;gap:8px;align-items:center;font-size:calc(12px*var(--fs))}
 .alts{display:grid;gap:6px}.alt{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2px 10px;text-align:left;background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:8px 10px}
 .alt:hover{border-color:var(--accent)}.alt small{grid-column:1/-1;color:var(--fg3)}.alt .badge{grid-column:1/-1;justify-self:start}
 .linkish{cursor:pointer;border:0}.linkish:hover{background:var(--accent-soft)}
 @media (max-width:620px){.buyrow{grid-template-columns:minmax(0,1fr) auto}.buyrow .bstat{grid-column:1}.buyrow .btn{justify-self:end}}
 .oos-card{border-style:dashed;background:var(--bg)}
 .layout.nofilter{grid-template-columns:minmax(0,1fr)}
-.guidebar{background:var(--accent-soft);border-radius:var(--r);padding:10px 14px;margin-bottom:14px;font-size:13px;color:var(--fg)}
+.guidebar{background:var(--accent-soft);border-radius:var(--r);padding:10px 14px;margin-bottom:14px;font-size:calc(13px*var(--fs));color:var(--fg)}
 .guidebar a,.prio a,#helpGuide{color:var(--accent);font-weight:600}
 .ghero .lead,.lead{color:var(--fg2);max-width:78ch;margin:0 0 10px}
 .verdict{background:var(--good-soft);border-radius:8px;padding:8px 12px;margin:0 0 14px;max-width:78ch}
@@ -292,12 +296,12 @@ details.oos{margin-top:22px}details.oos summary{cursor:pointer;font-family:var(-
 .prio b{color:var(--fg)}
 .optgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px}
 .opt{border:1px solid var(--line);border-radius:var(--r);padding:12px 14px;display:flex;flex-direction:column;gap:6px;min-width:0}
-.opt p{margin:0;font-size:13px;color:var(--fg2)}
+.opt p{margin:0;font-size:calc(13px*var(--fs));color:var(--fg2)}
 .opt .who{color:var(--fg)}
-.opth{display:flex;justify-content:space-between;align-items:center;gap:8px;font-family:var(--f-display);font-size:16px}
-.st5{color:var(--accent);letter-spacing:2px;font-size:10px;white-space:nowrap}.st5 span{color:var(--line)}
+.opth{display:flex;justify-content:space-between;align-items:center;gap:8px;font-family:var(--f-display);font-size:calc(16px*var(--fs))}
+.st5{color:var(--accent);letter-spacing:2px;font-size:calc(10px*var(--fs));white-space:nowrap}.st5 span{color:var(--line)}
 .pl{color:var(--good);font-weight:700}.mi{color:var(--bad);font-weight:700}
-.btn.sm{padding:2px 0;font-size:13px;align-self:flex-start;color:var(--accent)}
+.btn.sm{padding:2px 0;font-size:calc(13px*var(--fs));align-self:flex-start;color:var(--accent)}
 .gloss{display:grid;grid-template-columns:minmax(150px,220px) 1fr;gap:8px 18px;margin:0}
 .gloss dt{font-weight:600}.gloss dd{margin:0;color:var(--fg2)}
 .myths{margin:0;padding-left:18px;display:grid;gap:8px;color:var(--fg2);max-width:80ch}.myths b{color:var(--fg)}
@@ -316,7 +320,7 @@ details.oos{margin-top:22px}details.oos summary{cursor:pointer;font-family:var(-
   .masthead .wrap{grid-template-columns:minmax(0,1fr)}
 }
 @media (max-width:520px){
-  .stats{gap:16px}.stat .v{font-size:17px}
+  .stats{gap:16px}.stat .v{font-size:calc(17px*var(--fs))}
   .hbar{grid-template-columns:84px minmax(0,1fr) 80px}
   .sbar{grid-template-columns:96px minmax(0,1fr) 48px}
 }
@@ -359,7 +363,7 @@ details.oos{margin-top:22px}details.oos summary{cursor:pointer;font-family:var(-
 <div class="wrap layout">
   <aside class="filters" id="filters" aria-label="Filtreler">
     <div class="fgroup" style="display:flex;justify-content:space-between;align-items:center">
-      <strong style="font-family:var(--f-display);font-size:16px">Filtreler</strong>
+      <strong style="font-family:var(--f-display);font-size:calc(16px*var(--fs))">Filtreler</strong>
       <span><button class="btn ghost" type="button" id="reset">Temizle</button><button class="btn only-mobile" type="button" id="closeFilters">Bitti</button></span>
     </div>
     <div class="fgroup">
@@ -380,7 +384,7 @@ details.oos{margin-top:22px}details.oos summary{cursor:pointer;font-family:var(-
       </div>
       <div class="chips" data-group="net" style="margin-top:8px"></div>
     </div>
-    <div class="fgroup"><h3><span>Stok durumu <button type="button" class="help" data-help="stock" aria-label="Stok durumu nasıl belirlendi?">?</button></span><button type="button" data-clear="stock">sıfırla</button></h3><div class="chips" data-group="stock"></div><label class="toggle"><input type="checkbox" id="showOOS"> Eski ve doğrulanamayan modelleri de göster</label></div>
+    <div class="fgroup"><h3><span>Stok durumu <button type="button" class="help" data-help="stock" aria-label="Stok durumu nasıl belirlendi?">?</button></span><button type="button" data-clear="stock">sıfırla</button></h3><div class="chips" data-group="stock"></div></div>
     <div class="fgroup"><h3><span>Hazır istasyon <button type="button" class="help" data-help="station" aria-label="İstasyon tipleri nedir?">?</button></span><button type="button" data-clear="station">sıfırla</button></h3><div class="chips" data-group="station"></div></div>
     <div class="fgroup"><h3><span>Navigasyon <button type="button" class="help" data-help="nav" aria-label="Navigasyon türleri nedir?">?</button></span><button type="button" data-clear="nav">sıfırla</button></h3><div class="chips" data-group="nav"></div></div>
     <div class="fgroup"><h3><span>Mop tipi <button type="button" class="help" data-help="mop" aria-label="Mop sistemleri nedir?">?</button></span><button type="button" data-clear="mop">sıfırla</button></h3><div class="chips" data-group="mop"></div></div>
@@ -526,7 +530,7 @@ details.oos{margin-top:22px}details.oos summary{cursor:pointer;font-family:var(-
             <dt>Hepsiburada</dt><dd>"Yenilenmiş" robot süpürge seçeneği şu an çok az (son kontrolde 2 ürün).</dd>
           </dl>
           <h3 class="sub3" style="margin-top:14px">Makul fiyat nasıl hesaplandı?</h3>
-          <p class="note" style="font-size:13px;color:var(--fg2)">Ölçü, bugün aynı puanı veren en ucuz garantili sıfır modeldir (aynı modelin sıfırı daha ucuzsa o). Tam istasyonlu bir model yalnızca tam istasyonlu modellerle, satış sonrası notu 45 ve üstü markalar arasında kıyaslanır. Bu fiyat cihazın yaşına göre indirilir: bu yıl çıkmışsa %80'i, 1 yaşındaysa %70'i, 2 yaşındaysa %60'ı, 3 yaşındaysa %50'si, daha eskiyse %40'ı. Garantisiz ve pili yıpranmış bir cihaza bundan fazlasını vermek, sıfırını almaktan daha kötü bir anlaşmadır.</p>
+          <p class="note" style="font-size:calc(13px*var(--fs));color:var(--fg2)">Ölçü, bugün aynı puanı veren en ucuz garantili sıfır modeldir (aynı modelin sıfırı daha ucuzsa o). Tam istasyonlu bir model yalnızca tam istasyonlu modellerle, satış sonrası notu 45 ve üstü markalar arasında kıyaslanır. Bu fiyat cihazın yaşına göre indirilir: bu yıl çıkmışsa %80'i, 1 yaşındaysa %70'i, 2 yaşındaysa %60'ı, 3 yaşındaysa %50'si, daha eskiyse %40'ı. Garantisiz ve pili yıpranmış bir cihaza bundan fazlasını vermek, sıfırını almaktan daha kötü bir anlaşmadır.</p>
         </div>
       </div>
     </section>
@@ -589,7 +593,7 @@ const GROUPS={
  obst:["Yapay zekâ / kamera","3D / yapısal ışık","Temel sensör","Tampon"],
  type:["Süpürge + Mop","Sadece süpürge","Sadece mop"],
  net:["Türkiye geneli","Çok noktalı","Merkezi","Bilinmiyor"],
- stock:["var","sinirli","yok"],
+ stock:["var","sinirli"],
  feat:FEATS.map(f=>f[0])
 };
 const NETLABEL={"Türkiye geneli":"Servis: Türkiye geneli","Çok noktalı":"Servis: çok noktalı","Merkezi":"Servis: merkezi (kargo)","Bilinmiyor":"Servis bilgisi yok"};
@@ -599,7 +603,7 @@ const FEATNAME=Object.fromEntries(FEATS);
 const has=(r,k)=>k==="voice"?r.voice.length>0:!!r[k];
 
 const S={q:"",pmin:null,pmax:null,station:new Set(),nav:new Set(),mop:new Set(),obst:new Set(),type:new Set(),net:new Set(),stock:new Set(),feat:new Set(),brand:new Set(),
-  minPa:0,minRt:0,minClimb:0,minSites:1,maxH:0,maxDb:0,minUr:0,minUrc:0,minAs:0,minW:0,minYr:0,pareto:false,sort:"fp",tsort:null,shown:48,tshown:80,cmp:[]};
+  minPa:0,minRt:0,minClimb:0,minSites:1,maxH:0,maxDb:0,minUr:0,minUrc:0,minAs:0,minW:0,minYr:0,pareto:false,sort:"-price",tsort:null,shown:48,tshown:80,cmp:[]};
 (()=>{const c=store.get("rs-cmp");if(Array.isArray(c))S.cmp=c.filter(id=>byId[id]).slice(0,4)})();
 
 function filterOut(skip){
@@ -665,7 +669,7 @@ $("#sort").addEventListener("change",e=>{S.sort=e.target.value;update()});
 $("#pareto").addEventListener("change",e=>{S.pareto=e.target.checked;update()});
 $("#onlyDeep").addEventListener("change",e=>{S.onlyDeep=e.target.checked;S.shown=48;update()});
 $("#onlyVer").addEventListener("change",e=>{S.onlyVer=e.target.checked;S.shown=48;update()});
-$("#showOOS").addEventListener("change",e=>{S.showOOS=e.target.checked;if(!S.showOOS)S.stock.delete("yok");S.shown=48;S.tshown=80;update()});
+
 for(const id of ["pmin","pmax"])$("#"+id).addEventListener("change",e=>{const v=e.target.value.trim();S[id]=v===""?null:+v;S.shown=48;update()});
 const PQ=[["≤ 10 bin",null,10000],["10–20 bin",10000,20000],["20–35 bin",20000,35000],["35–50 bin",35000,50000],["50 bin +",50000,null]];
 $("#pquick").innerHTML=PQ.map((p,i)=>`<button type="button" data-pq="${i}">${p[0]}</button>`).join("");
@@ -704,7 +708,7 @@ $("#activef").addEventListener("click",e=>{
   else if(k==="pareto"){S.pareto=false;$("#pareto").checked=false}
   else if(k==="onlyDeep"){S.onlyDeep=false;$("#onlyDeep").checked=false}
   else if(k==="onlyVer"){S.onlyVer=false;$("#onlyVer").checked=false}
-  else if(k==="showOOS"){S.showOOS=false;S.stock.delete("yok");$("#showOOS").checked=false}
+  else if(k==="showOOS"){S.showOOS=false}
   else{S[k]=k==="minSites"?1:0;$("#"+k).value=String(S[k])}
   update()});
 
@@ -726,7 +730,7 @@ const asBand=v=>v>=70?"g":v>=55?"m":"b";
 function liteCard(r){
   return `<article class="card oos-card">
   <div class="top"><div style="min-width:0"><div class="brand">${esc(r.brand)}${r.yr?` <span class="yr">· ≈${r.yr}</span>`:""}</div><h4><button type="button" data-open="${r.id}">${esc(r.model||r.name)}</button></h4></div></div>
-  <div class="price-row"><span class="price muted" style="font-size:15px">Satılmıyor</span>${stockBadge(r)}</div>
+  <div class="price-row"><span class="price muted" style="font-size:calc(15px*var(--fs))">Satılmıyor</span>${stockBadge(r)}</div>
   <p class="note" style="margin:0">Artık satılmayan eski model; mağazalarda bulunamadı. Sadece temel özellikleri biliniyor.</p>
   <div class="specs"><span class="spec">${esc(r.type)}</span>${r.pa?`<span class="spec">${fmt(r.pa)} Pa</span>`:""}${r.rt?`<span class="spec">${fmt(r.rt)} dk</span>`:""}${r.mah?`<span class="spec">${fmt(r.mah)} mAh</span>`:""}</div>
   <div class="foot"><span class="note">Puanlanmadı</span><a class="btn ghost" href="${esc(r.url)}" target="_blank" rel="noopener">Epey'de incele →</a></div>
@@ -911,10 +915,10 @@ function renderPicks(rows){
    ["Sorunsuz kullanım önceliği","Kullanıcı puanı ≥ 4,3 (en az 100 değerlendirme) ve satış sonrası notu ≥ 60",r=>r.ur>=4.3&&r.urc>=100&&(r.as??0)>=60],
    ["Türkiye geneli servis","Servis ağı Türkiye geneli olan markalar",r=>r.net==="Türkiye geneli"]];
   $("#usecases").innerHTML=U.map(([t,d,f])=>{const c=rows.filter(r=>f(r)&&r.sites>=2).sort(SORTS.fp);const r=c[0];
-    return `<div class="panel" style="margin:0"><h2 style="font-size:16px">${t}</h2><p class="desc" style="margin-bottom:8px">${d} · ${c.length} uygun model</p>${r?pick(r,"Önerilen")+(c[1]?`<p class="note" style="margin:8px 0 0">Alternatif: <button type="button" class="btn ghost" style="padding:0" data-open="${c[1].id}">${esc(c[1].name)}</button> · ${TL(c[1].price)}</p>`:""):`<p class="note">Filtrede uygun model yok.</p>`}</div>`}).join("");
+    return `<div class="panel" style="margin:0"><h2 style="font-size:calc(16px*var(--fs))">${t}</h2><p class="desc" style="margin-bottom:8px">${d} · ${c.length} uygun model</p>${r?pick(r,"Önerilen")+(c[1]?`<p class="note" style="margin:8px 0 0">Alternatif: <button type="button" class="btn ghost" style="padding:0" data-open="${c[1].id}">${esc(c[1].name)}</button> · ${TL(c[1].price)}</p>`:""):`<p class="note">Filtrede uygun model yok.</p>`}</div>`}).join("");
 }
 function pick(r,rk){return `<button type="button" class="pick" data-open="${r.id}"><span class="rk">${rk}</span><span class="nm">${esc(r.name)}</span>
- <span class="ln"><span class="num" style="color:var(--fg);font-size:15px">${TL(r.price)}</span><span>${r.sites} mağaza</span></span>
+ <span class="ln"><span class="num" style="color:var(--fg);font-size:calc(15px*var(--fs))">${TL(r.price)}</span><span>${r.sites} mağaza</span></span>
  <span class="ln"><span>Puan <b class="num">${r.score.toFixed(0)}</b> · F/P <b class="num">${r.fp}</b></span><span>${esc(r.station)}</span></span>
  <span class="specs">${specChips(r)}</span></button>`}
 
@@ -989,7 +993,7 @@ function reviewBlock(r){
 function openDetail(id){
   const r=byId[id];if(!r)return;
   if(r.lite){const q=encodeURIComponent(r.name.replace(/\(.*?\)/g,"").trim());
-    $("#dlgBody").innerHTML=`<div class="mhead"><div><div class="brand" style="font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--fg3);font-weight:600">${esc(r.brand)} · ${esc(r.type)}</div><h2 id="dlgTitle">${esc(r.name)}</h2><div style="margin-top:6px">${stockBadge(r)}</div></div><button class="btn" type="button" id="dlgClose" aria-label="Kapat">✕</button></div>
+    $("#dlgBody").innerHTML=`<div class="mhead"><div><div class="brand" style="font-size:calc(11px*var(--fs));letter-spacing:.08em;text-transform:uppercase;color:var(--fg3);font-weight:600">${esc(r.brand)} · ${esc(r.type)}</div><h2 id="dlgTitle">${esc(r.name)}</h2><div style="margin-top:6px">${stockBadge(r)}</div></div><button class="btn" type="button" id="dlgClose" aria-label="Kapat">✕</button></div>
     <div class="mbody"><p class="verdict" style="background:var(--warn-soft)">Bu artık satılmayan eski bir model; son stok kontrolünde (${CHECKED}) hiçbir mağazada bulunamadı. Ayrıntılı özellikleri ve puanı bu yüzden toplanmadı. İkinci el alacaksanız servis ve yedek parça durumunu mutlaka sorun.</p>
     ${kv([["Çıkış yılı (tahmini)",r.yr?"≈"+r.yr:"—"],["Emiş gücü",r.pa?fmt(r.pa)+" Pa":"—"],["Çalışma süresi",r.rt?fmt(r.rt)+" dk":"—"],["Pil",r.mah?fmt(r.mah)+" mAh":"—"]])}
     <div><h3>Yine de aramak isterseniz</h3><div class="links">${STORES.map(([n,u])=>`<a href="${u}${q}" target="_blank" rel="noopener">${n}</a>`).join("")}<a href="${esc(r.url)}" target="_blank" rel="noopener">Epey</a></div></div></div>`;
@@ -997,7 +1001,7 @@ function openDetail(id){
   const q=encodeURIComponent(r.name.replace(/\(.*?\)/g,"").trim());
   const KIND={retail:["Büyük mağaza","k-ret"],brand:["Resmi / distribütör","k-brand"],market:["Pazar yeri satıcısı","k-mkt"]};
   const sellers=(r.offers&&r.offers.length)?r.offers.map(x=>`<div class="seller"><span>${esc(x.store&&x.store!=="?"?x.store:"")}${x.seller&&x.seller!==x.store?`<small class="muted"> · ${esc(x.seller)}</small>`:""} <span class="kind ${(KIND[x.kind]||[])[1]||""}">${(KIND[x.kind]||[""])[0]}</span></span><span class="num">${TL(x.price)}</span></div>`).join(""):(r.sellers.length?r.sellers.map(([s,p])=>`<div class="seller"><span>${esc(s)}</span><span class="num">${TL(p)}</span></div>`).join(""):`<p class="note">Mağaza listesi alınamadı.</p>`);
-  $("#dlgBody").innerHTML=`<div class="mhead"><div><div class="brand" style="font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--fg3);font-weight:600">${esc(r.brand)} · ${esc(r.type)}</div><h2 id="dlgTitle">${esc(r.name)}</h2>
+  $("#dlgBody").innerHTML=`<div class="mhead"><div><div class="brand" style="font-size:calc(11px*var(--fs));letter-spacing:.08em;text-transform:uppercase;color:var(--fg3);font-weight:600">${esc(r.brand)} · ${esc(r.type)}</div><h2 id="dlgTitle">${esc(r.name)}</h2>
    <div style="display:flex;gap:14px;align-items:baseline;flex-wrap:wrap;margin-top:6px"><span class="price">${TL(r.price)}</span><span class="sites">${r.stock==="yok"?"son görülen fiyat":"en düşük fiyat"}</span>${stockBadge(r)}${r.pareto?`<span class="badge par">Fiyatına göre en iyi</span>`:""}</div></div>
    <button class="btn" type="button" id="dlgClose" aria-label="Kapat">✕</button></div>
   <div class="mbody">
@@ -1045,7 +1049,7 @@ function openCompare(){
 /* ---------- method & header ---------- */
 function renderStatic(){
   const prices=ALL.map(r=>r.price);
-  $("#stats").innerHTML=[["Satıştaki model",ALL.length],["Eski / doğrulanamayan",OOSFULL.length+OOS.length],["Detaylı incelenen",DEEPN],["Marka",new Set(ALL.map(r=>r.brand)).size],["Kullanıcı puanlı",ALL.filter(r=>r.ur!=null).length],["Medyan fiyat",fmt(median(prices))+" TL"],["Fiyat aralığı",fmt(Math.min(...prices)/1000)+"–"+fmt(Math.max(...prices)/1000)+" bin"]]
+  $("#stats").innerHTML=[["Satıştaki model",ALL.length],["Detaylı incelenen",DEEPN],["Marka",new Set(ALL.map(r=>r.brand)).size],["Kullanıcı puanlı",ALL.filter(r=>r.ur!=null).length],["Medyan fiyat",fmt(median(prices))+" TL"],["Fiyat aralığı",fmt(Math.min(...prices)/1000)+"–"+fmt(Math.max(...prices)/1000)+" bin"]]
     .map(([k,v])=>`<div class="stat"><div class="k">${k}</div><div class="v">${v}</div></div>`).join("");
   $("#method").innerHTML=`<h2>Veri ve puanlama yöntemi</h2>
   <p>Liste, ${SNAP} tarihinde fiyat karşılaştırma sitesi epey.com'da en az bir Türk mağazasında (Hepsiburada, Trendyol, Amazon, n11, PTT AVM, MediaMarkt, Teknosa, Vatan ve diğerleri) fiyatı bulunan ${ALL.length} robot süpürgeden oluşur. Cam temizleme robotları ve fiyatı olmayan eski modeller dahil değildir. Gösterilen fiyat o gün bulunan en düşük fiyattır. Fiyatlar her gün değişir; satın almadan önce mağazada kontrol edin.</p>
@@ -1067,7 +1071,7 @@ function renderStatic(){
   <h3>Fiyatına göre en iyi</h3>
   <p>Kendisinden ucuz olup daha yüksek puan alan başka model bulunmayan modellerdir (Pareto sınırı). Bütçeniz neyse, bu listede o bütçeye en yakın model teknik olarak en dolu seçenektir.</p>
   <h3>Stok kontrolü</h3>
-  <p>Stok durumu ${CHECKED} tarihinde epey.com listesi yeniden taranarak belirlendi. En az 3 mağazada fiyatı olan model "stokta", 1–2 mağazada olan "sınırlı stok" sayılır. Son kontrolde hiçbir mağazada fiyatı bulunmayan modeller, listenin arka sayfalarındaki fiyatsız popüler modeller ve 2023 veya öncesinde çıkmış olup sadece 1–2 satıcıda kalanlar "eski modeller" bölümüne ayrılır; analizlere ve önerilere katılmaz.</p>
+  <p>Stok durumu ${CHECKED} tarihinde epey.com listesi yeniden taranarak belirlendi. En az 3 mağazada fiyatı olan model "stokta", 1–2 mağazada olan "sınırlı stok" sayılır. Son kontrolde hiçbir mağazada fiyatı bulunmayan modeller, listenin arka sayfalarındaki fiyatsız popüler modeller ve 2023 veya öncesinde çıkmış olup sadece 1–2 satıcıda kalanlar eski model sayılır ve sayfadan çıkarılır${DATA.hidden?` (bu kontrolde ${DATA.hidden.oos} eski model ve tek satıcıda kalan ${DATA.hidden.tek} doğrulanamayan model)`:""}. Varsayılan sıralama en pahalı modelden başlar.</p>
   <h3>Satıcı doğrulaması ve detaylı inceleme</h3>
   <p>Her teklifin satıcısı üç gruba ayrılır: büyük mağaza (MediaMarkt, Teknosa, Vatan, Hepsiburada veya Amazon'un kendisi gibi), markanın resmi mağazası veya Türkiye distribütörü, ve pazar yeri satıcısı. En az bir büyük mağaza veya resmi satıcıda bulunan model "doğrulanmış" sayılır; sadece pazar yeri satıcılarında olan "pazar yeri" uyarısıyla listede kalır; tek bir pazar yeri satıcısında görünen model listeden ayrılır.</p>
   <p>Detaylı incelenen modellerde Hepsiburada, Amazon, MediaMarkt ve Teknosa ürün sayfaları açılıp satın alınabilirlik, satıcı, garanti türü ve puan dağılımı kontrol edilir; kullanıcı yorumları okunur; ürün sayfasından doğrulanan sınıflandırma hataları düzeltilir. Her gün 20 model sırayla incelenir.</p>
@@ -1149,7 +1153,7 @@ function trustHelpHTML(){return `<dl class="gloss"><dt>Kullanıcı puanı (★)<
  <dt>Satış sonrası notu</dt><dd>Markanın şikâyetlere yanıt oranı, Şikâyetvar memnuniyeti, kullanıcı puanı, servis ağı ve garanti süresinden oluşan 0–100 özet. 70 üstü iyi, 55 altı zayıf.</dd>
  <dt>Servis ağı</dt><dd>"Türkiye geneli": şehrinizde yetkili servis bulma ihtimali yüksek. "Merkezi": cihaz kargoyla tek servise gider, süreç 1–4 hafta sürebilir.</dd>
  <dt>Türkiye garantisi</dt><dd>Faturada "Türkiye garantili" veya resmi distribütör adı arayın. İthalatçı garantili ürünlerde servis süreci farklı ve bazen zor olabilir.</dd></dl>`}
-const HELP={stock:["Stok durumu nasıl belirlendi?",()=>`<dl class="gloss"><dt>Stokta (3+ mağaza)</dt><dd>Son kontrolde en az 3 farklı mağazada fiyatı ve stoğu vardı. Fiyat rekabeti var; tükenme riski düşük.</dd><dt>Sınırlı stok (1–2 mağaza)</dt><dd>Sadece 1–2 mağazada var. Fiyat ithalatçı veya tek satıcı fiyatı olabilir; model piyasadan çekiliyor da olabilir. Satın almadan önce satıcıyı ve garantiyi kontrol edin.</dd><dt>Eski model</dt><dd>Piyasadan çekilmiş veya yeni sürümü çıkmış model. İki durumda bu gruba girer: son kontrolde hiçbir mağazada fiyatı yoksa, ya da 2023 veya öncesinde çıkmış olup sadece 1–2 satıcıda kalmışsa.</dd><dt>Çıkış yılı (≈)</dt><dd>Ürün sayfalarında çıkış tarihi yazmadığı için, modelin epey.com Türkiye kataloğuna eklenme sırasından tahmin edildi. Bu yaklaşık olarak Türkiye'de satışa çıkış yılıdır; dünyadaki ilk çıkıştan bir yıl kadar sonra olabilir. Eski olup hâlâ 3+ mağazada satılan modeller satışta sayılır. Listenin altında ayrı bölümde durur; "Eski modelleri de göster" ile listeye katabilirsiniz.</dd><dt>Pazar yeri</dt><dd>Sadece pazar yeri satıcılarında (Hepsiburada, Trendyol, n11 vb. üzerindeki üçüncü taraf satıcılar) bulunan model. Satın alınabilir ama faturada Türkiye garantisi olup olmadığını kontrol edin.</dd><dt>Doğrulanamadı · tek satıcı</dt><dd>Sadece tek bir pazar yeri satıcısında listelenmiş, büyük mağaza veya resmi satıcıda bulunamayan model. Listeden ayrılır.</dd><dt>Detaylı incelendi</dt><dd>Mağazaların kendi ürün sayfaları açılıp "sepete eklenebilir mi", satıcı ve garanti türü tek tek kontrol edildi; kullanıcı yorumları okundu.</dd><dt>Kontrol zamanı</dt><dd>${CHECKED}. Stok, epey.com’un 19 mağazadan topladığı güncel tekliflerden belirlendi. Sayfa canlı değildir; satın almadan önce mağazada doğrulayın.</dd></dl>`],station:["İstasyon tipleri",()=>topicHTML("station",1)],nav:["Navigasyon türleri",()=>topicHTML("nav",1)],mop:["Mop sistemleri",()=>topicHTML("mop",1)],obst:["Engel algılama",()=>topicHTML("obst",1)],type:["Ürün tipi",()=>topicHTML("type",1)],
+const HELP={stock:["Stok durumu nasıl belirlendi?",()=>`<dl class="gloss"><dt>Stokta (3+ mağaza)</dt><dd>Son kontrolde en az 3 farklı mağazada fiyatı ve stoğu vardı. Fiyat rekabeti var; tükenme riski düşük.</dd><dt>Sınırlı stok (1–2 mağaza)</dt><dd>Sadece 1–2 mağazada var. Fiyat ithalatçı veya tek satıcı fiyatı olabilir; model piyasadan çekiliyor da olabilir. Satın almadan önce satıcıyı ve garantiyi kontrol edin.</dd><dt>Eski modeller</dt><dd>Son kontrolde hiçbir mağazada fiyatı olmayan ya da 2023 veya öncesinde çıkıp sadece 1–2 satıcıda kalan modeller listeden çıkarıldı. Sayfada yalnızca bugün satın alınabilen modeller var.</dd><dt>Çıkış yılı (≈)</dt><dd>Ürün sayfalarında çıkış tarihi yazmadığı için, modelin epey.com Türkiye kataloğuna eklenme sırasından tahmin edildi. Bu yaklaşık olarak Türkiye'de satışa çıkış yılıdır; dünyadaki ilk çıkıştan bir yıl kadar sonra olabilir. Eski olup hâlâ 3+ mağazada satılan modeller satışta sayılır. Listenin altında ayrı bölümde durur; "Eski modelleri de göster" ile listeye katabilirsiniz.</dd><dt>Pazar yeri</dt><dd>Sadece pazar yeri satıcılarında (Hepsiburada, Trendyol, n11 vb. üzerindeki üçüncü taraf satıcılar) bulunan model. Satın alınabilir ama faturada Türkiye garantisi olup olmadığını kontrol edin.</dd><dt>Doğrulanamadı · tek satıcı</dt><dd>Sadece tek bir pazar yeri satıcısında listelenmiş, büyük mağaza veya resmi satıcıda bulunamayan modeller listede gösterilmez.</dd><dt>Detaylı incelendi</dt><dd>Mağazaların kendi ürün sayfaları açılıp "sepete eklenebilir mi", satıcı ve garanti türü tek tek kontrol edildi; kullanıcı yorumları okundu.</dd><dt>Kontrol zamanı</dt><dd>${CHECKED}. Stok, epey.com’un 19 mağazadan topladığı güncel tekliflerden belirlendi. Sayfa canlı değildir; satın almadan önce mağazada doğrulayın.</dd></dl>`],station:["İstasyon tipleri",()=>topicHTML("station",1)],nav:["Navigasyon türleri",()=>topicHTML("nav",1)],mop:["Mop sistemleri",()=>topicHTML("mop",1)],obst:["Engel algılama",()=>topicHTML("obst",1)],type:["Ürün tipi",()=>topicHTML("type",1)],
  tech:["Teknik değerler ne anlama gelir?",techHTML],feat:["Özellikler sözlüğü",featHTML],trust:["Kullanıcı puanı ve satış sonrası",trustHelpHTML],
  score:["Puanlar nasıl okunur?",()=>`<dl class="gloss"><dt>Özellik puanı (0–100)</dt><dd>Kâğıt üzerindeki özelliklerin toplamı: navigasyon, istasyon, mop, emiş, pil vb. Temizlik kalitesini doğrudan ölçmez.</dd><dt>F/P (0–100)</dt><dd>Aynı fiyattaki modellere göre ne kadar çok özellik sunduğu. 50 ortalama, 70+ fiyatına göre çok dolu.</dd><dt>Fiyatına göre en iyi</dt><dd>Kendisinden ucuz olup daha yüksek puan alan başka model yok.</dd></dl>`]};
 function openHelp(k){const h=HELP[k];if(!h)return;$("#helpBody").innerHTML=`<div class="mhead"><h2 id="helpTitle">${h[0]}</h2><button class="btn" type="button" id="helpClose" aria-label="Kapat">✕</button></div><div class="mbody">${h[1]()}<p class="note"><a href="#rehber" id="helpGuide">Tüm rehberi ve seçim sihirbazını aç →</a></p></div>`;
@@ -1218,7 +1222,7 @@ function renderWizard(){
      <p class="note">Aranan: ${C.map(c=>esc(c.lab)).join(" · ")}</p>
      ${relaxed.length?`<p class="note" style="color:var(--warn)">Tam eşleşen model azdı; şu şartlar gevşetildi: ${relaxed.map(esc).join(", ")}.</p>`:""}
      <div class="picks">${res.slice(0,6).map((r,i)=>`<button type="button" class="pick" data-open="${r.id}"><span class="rk">${i===0?"En uygun":(i+1)+". öneri"}</span><span class="nm">${esc(r.name)}</span>
-      <span class="ln"><span class="num" style="color:var(--fg);font-size:15px">${TL(r.price)}</span><span>${r.ur!=null?stars(r.ur)+` (${fmt(r.urc)})`:""}</span></span>
+      <span class="ln"><span class="num" style="color:var(--fg);font-size:calc(15px*var(--fs))">${TL(r.price)}</span><span>${r.ur!=null?stars(r.ur)+` (${fmt(r.urc)})`:""}</span></span>
       <span class="ln" style="display:block">Neden: ${why(r)||"kriterlere uyuyor"}</span></button>`).join("")}</div></div>`;
   }
   $("#wizard").innerHTML=out;
@@ -1319,7 +1323,7 @@ function renderGuvence(rows){
   $("#bdetail").innerHTML=x?`<h2>${esc(selBrand)}</h2><p class="desc">${esc(x.service||"Servis bilgisi bulunamadı")}${x.svcSrc?` · Kaynak: ${esc(x.svcSrc)}`:""}</p>
    <div class="two"><div><h3 class="sub3">Sık şikâyet konuları (son ${x.sample} şikâyet)</h3>${issueBars(x.issues,x.sample)}
      ${x.topics&&x.topics.length?`<h3 class="sub3" style="margin-top:14px">Şikâyetvar'da öne çıkan aramalar</h3><div class="extras">${x.topics.map(t=>`<span class="spec">${esc(t)}</span>`).join("")}</div>`:""}
-     ${x.aiSummary?`<h3 class="sub3" style="margin-top:14px">Şikâyetvar marka karnesi özeti</h3><p class="note" style="font-size:13px;color:var(--fg2)">${esc(x.aiSummary)}</p>`:""}</div>
+     ${x.aiSummary?`<h3 class="sub3" style="margin-top:14px">Şikâyetvar marka karnesi özeti</h3><p class="note" style="font-size:calc(13px*var(--fs));color:var(--fg2)">${esc(x.aiSummary)}</p>`:""}</div>
    <div><h3 class="sub3">Son şikâyet başlıkları</h3>${x.recent&&x.recent.length?`<ul class="hits">${x.recent.map(it=>`<li>${esc(it.t)}${it.m&&it.m.length?` <span class="muted">· ${esc(it.m.join(", "))}</span>`:""}${it.d?` <span class="muted">· ${esc(it.d)}</span>`:""}</li>`).join("")}</ul>`:`<p class="note">Örneklem yok.</p>`}
      <p class="note"><a href="${svLink(x)}" target="_blank" rel="noopener">Şikâyetvar'da ${esc(selBrand)} robot süpürge şikâyetleri</a></p>
      <h3 class="sub3" style="margin-top:14px">Not dağılımı</h3>${kv(Object.entries(x.asParts||{}).map(([k2,v2])=>[{yanit:"Yanıt oranı (25)",memnuniyet:"Memnuniyet (15)",kullanici:"Kullanıcı puanı (25)",servis:"Servis ağı (20)",garanti:"Garanti (15)"}[k2],String(v2).replace(".",",")]))}</div></div>`:"";
@@ -1336,10 +1340,10 @@ const sortCur=a=>a.sort((x,y)=>((x.stock==="yok")-(y.stock==="yok"))||((!!x.lite
 function update(){
   cur=sortCur(filterOut());
   renderChips();renderView();
-  store.set("rs-sort",S.sort);
+  store.set("rs-sort2",S.sort);
 }
 window.addEventListener("hashchange",showView);
 window.addEventListener("hashchange",()=>{const d=$("#dlg");if(d&&d.open)d.close()});
-(()=>{const s=store.get("rs-sort");if(s&&SORTS[s]){S.sort=s;$("#sort").value=s}})();
+(()=>{const s=store.get("rs-sort2");if(s&&SORTS[s])S.sort=s;$("#sort").value=S.sort})();
 renderStatic();renderTray();cur=sortCur(filterOut());renderChips();showView();
 </script>

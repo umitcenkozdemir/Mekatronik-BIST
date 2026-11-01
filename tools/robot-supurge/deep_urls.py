@@ -17,9 +17,9 @@ if '--second' in sys.argv:
 prof=json.load(open(S+'/profiles.json'))
 Q=json.load(open(S+'/profile_queue.json'))
 if '--pz' in sys.argv:  # yalnızca pazar yerinde satılan (doğrulanmamış) modeller, puana göre
-    todo=sorted([i for i,o in R.items() if i not in prof and o.get('ver')=='pazaryeri' and not o.get('gone') and o['stock']!='yok'],key=lambda i:-R[i]['score'])[:N]
+    todo=sorted([i for i,o in R.items() if i not in prof and o.get('ver')=='pazaryeri' and not o.get('gone') and o['stock']!='yok'],key=lambda i:-(R[i]['price'] or 0))[:N]
 else:
-    todo=[i for i in Q if i not in prof and i in R and R[i]['stock']!='yok' and R[i].get('ver')=='dogrulandi'][:N]
+    todo=sorted([i for i in Q if i not in prof and i in R and R[i]['stock']!='yok' and R[i].get('ver')=='dogrulandi'],key=lambda i:-(R[i]['price'] or 0))[:N]  # en pahalılar önce
 json.dump(todo,open(D+'/queue.json','w'))
 tag=datetime.date.today().strftime('%Y%m%d')
 nm=lambda i: urllib.parse.quote_plus(re.sub(r'\(.*?\)','',R[i]['name']).strip())
