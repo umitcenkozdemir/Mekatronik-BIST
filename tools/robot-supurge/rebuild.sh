@@ -7,4 +7,5 @@ RS_WORK="$W" python3 -I build.py
 python3 -I build_rel.py "$W" >/dev/null
 python3 -I attach_oos.py "$W" "$WHEN"
 python3 -I enrich.py "$W"
+python3 -I ikinciel/build_used.py "$W" >/dev/null
 python3 -I assemble.py "$W" "$W/../../public/robot-supurge/index.html"

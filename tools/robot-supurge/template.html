@@ -118,6 +118,32 @@ aside.filters{align-self:start;min-width:0;padding-right:6px}
 .spec.hi{background:var(--accent-soft);color:var(--fg)}
 .card .foot{display:flex;justify-content:space-between;align-items:center;margin-top:auto;padding-top:6px;border-top:1px dashed var(--line-soft)}
 .cmp{display:flex;gap:6px;align-items:center;font-size:13px;color:var(--fg2);cursor:pointer}
+
+/* ikinci el */
+.usedhead .uintro h2{margin-top:0}
+.ukey{background:var(--warn-soft);border-radius:8px;padding:10px 12px;max-width:80ch;margin:10px 0}
+.ustat{display:flex;gap:18px;flex-wrap:wrap;font-size:14px;color:var(--fg2)}.ustat b{font-size:20px;color:var(--fg);margin-right:4px}
+.usedchips{margin:12px 0}.chip.on{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.usedlist{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,340px),1fr));gap:12px}
+.ucard{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:14px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.ucard.u-good{border-top:3px solid var(--good)}.ucard.u-warn{border-top:3px solid var(--warn)}.ucard.u-bad{border-top:3px solid var(--line)}
+.ucard .linkish{background:none;padding:0;font:inherit;color:inherit;text-align:left;border-radius:3px}.ucard .unums .linkish{color:var(--accent)}
+.uhead{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}.uhead h3{margin:2px 0 0;font-size:16px;font-family:var(--f-display)}
+.ubrand{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--fg3);font-weight:600}
+.upill{font-size:12px;font-weight:600;padding:3px 9px;border-radius:999px;white-space:nowrap}
+.upill.good{background:var(--good-soft);color:var(--good)}.upill.warn{background:var(--warn-soft);color:var(--warn)}.upill.bad{background:var(--sunk);color:var(--fg2)}.upill.muted{background:var(--sunk);color:var(--fg3)}
+.uwhy{margin:0;font-size:13.5px;color:var(--fg2);line-height:1.45}
+.unums{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.unums>div{display:flex;flex-direction:column;gap:2px;min-width:0}.unums small{color:var(--fg3);font-size:11.5px}
+.ulab{font-size:11px;color:var(--fg3);text-transform:uppercase;letter-spacing:.05em}
+.ufair .num{font-weight:700;color:var(--accent);font-size:16px}
+.urisk{margin:0;padding-left:18px;font-size:12.5px;color:var(--fg2)}
+.uobs summary{cursor:pointer;font-size:13px;color:var(--accent)}.uobs ul{margin:6px 0 0;padding-left:18px;font-size:12.5px}.uobs li.deal{font-weight:600}
+.checks{padding-left:20px;margin:0;display:grid;gap:8px;font-size:13.5px;color:var(--fg2)}
+.usedguide{margin-top:14px}
+.uinline{background:var(--sunk);border-radius:8px;padding:10px 12px}.uinline h3{margin:0 0 4px}
+@media (max-width:520px){.unums{grid-template-columns:1fr 1fr}}
+
 .badge{font-size:11px;font-weight:600;padding:2px 7px;border-radius:5px;white-space:nowrap}
 .badge.par{background:var(--good-soft);color:var(--good)}
 .badge.one{background:var(--warn-soft);color:var(--warn)}
@@ -324,6 +350,7 @@ details.oos{margin-top:22px}details.oos summary{cursor:pointer;font-family:var(-
       <a href="#analiz" data-view="analiz">Analiz</a>
       <a href="#guvence" data-view="guvence">Güvence</a>
       <a href="#oneriler" data-view="oneriler">Öneriler</a>
+      <a href="#ikinci-el" data-view="ikinci-el">İkinci El</a>
       <a href="#yontem" data-view="yontem">Yöntem</a>
     </nav>
   </div>
@@ -476,6 +503,32 @@ details.oos{margin-top:22px}details.oos summary{cursor:pointer;font-family:var(-
       <div id="brackets"></div>
       <div class="reshead" style="margin-top:12px"><div class="count">Kullanım senaryosuna göre</div></div>
       <div class="usecases" id="usecases"></div>
+    </section>
+    <section data-pane="ikinci-el" hidden>
+      <div class="usedhead" id="usedHead"></div>
+      <div class="chips usedchips" id="usedChips" role="group" aria-label="Karara göre süz"></div>
+      <div class="usedlist" id="usedList"></div>
+      <div class="two usedguide">
+        <div class="panel"><h2>İkinci el alırken kontrol listesi</h2><ol class="checks">
+          <li><b>Pil:</b> Satıcıdan tam şarjla bir temizlik başlatmasını isteyin; uygulamadaki süre ve alan, kutudaki değerin yarısının altındaysa pil değişecek demektir. Pilin fiyatını önceden öğrenin.</li>
+          <li><b>Lazer kule (LiDAR):</b> Açılışta tepedeki kule dönmeli, ses yapmamalı. Haritalama hatası veren cihaz almayın.</li>
+          <li><b>Hesaptan çıkarılmış mı:</b> Cihaz satıcının uygulama hesabından silinmiş ve fabrika ayarlarına döndürülmüş olmalı. Aksi halde kuramazsınız.</li>
+          <li><b>Fatura ve garanti:</b> Faturayı ve seri numarasını isteyin. Kalan Türkiye garantisi fiyatı belirgin biçimde artırır; yurt dışından gelen cihazların garantisi burada geçmez.</li>
+          <li><b>İstasyon:</b> Mop yıkama, kurutma ve toz boşaltmayı satıcının yanında bir kez çalıştırın. Pompa, hortum ve ısıtıcı arızaları istasyonlu modellerde en pahalı onarımdır.</li>
+          <li><b>Sarf malzemesi:</b> Ana fırça, yan fırça, filtre, mop bezi ve toz torbası aşınmışsa yedek setin fiyatını pazarlıkta düşün.</li>
+          <li><b>"Sıfır" diye satılan ürünler:</b> Şikâyetvar'da, sıfır diye alınıp servis kaydı çıkan cihaz şikâyetleri var. "Kapalı kutu" ilanında bile faturadaki tarihi ve servis kaydını kontrol edin.</li>
+        </ol></div>
+        <div class="panel"><h2>Nereden bakılır?</h2>
+          <dl class="kv">
+            <dt>letgo</dt><dd>Robot süpürge kategorisinde yaklaşık 3.900 ilan var. Ödemeyi platformda tutan "Cüzdanım Güvende" seçeneğini kullanın.</dd>
+            <dt>sahibinden.com</dt><dd>En çok ilan burada. "Param Güvende" ile alırsanız ürünü görmeden para satıcıya geçmez.</dd>
+            <dt>Amazon</dt><dd>Bazı ürün sayfalarında "yeni ve ikinci el teklifler" bölümü var; iade hakkı ve Amazon güvencesi sürer.</dd>
+            <dt>Hepsiburada</dt><dd>"Yenilenmiş" robot süpürge seçeneği şu an çok az (son kontrolde 2 ürün).</dd>
+          </dl>
+          <h3 class="sub3" style="margin-top:14px">Makul fiyat nasıl hesaplandı?</h3>
+          <p class="note" style="font-size:13px;color:var(--fg2)">Ölçü, bugün aynı puanı veren en ucuz garantili sıfır modeldir (aynı modelin sıfırı daha ucuzsa o). Tam istasyonlu bir model yalnızca tam istasyonlu modellerle, satış sonrası notu 45 ve üstü markalar arasında kıyaslanır. Bu fiyat cihazın yaşına göre indirilir: bu yıl çıkmışsa %80'i, 1 yaşındaysa %70'i, 2 yaşındaysa %60'ı, 3 yaşındaysa %50'si, daha eskiyse %40'ı. Garantisiz ve pili yıpranmış bir cihaza bundan fazlasını vermek, sıfırını almaktan daha kötü bir anlaşmadır.</p>
+        </div>
+      </div>
     </section>
     <section data-pane="yontem" hidden>
       <div class="prose" id="method"></div>
@@ -909,7 +962,10 @@ function reviewBlock(r){
   const sib=siblings(r);
   const sibHtml=sib.length?`<div><h3>Aynı serideki diğer modeller</h3><div class="extras">${sib.map(x=>`<button type="button" class="spec linkish" data-open="${x.id}">${esc(x.model)} · ${x.price?TL(x.price):"satılmıyor"}${x.stock==="yok"?" · eski":""}</button>`).join("")}</div></div>`:"";
   const alts=r.stock!=="yok"?altsFor(r):[];
-  const altHtml=alts.length?`<div><h3>Aynı bütçede alternatifler</h3><div class="alts">${alts.map(a=>`<button type="button" class="alt" data-open="${a.x.id}"><b>${esc(a.x.name)}</b><span class="num">${TL(a.x.price)}</span><small>${esc(a.why)}</small>${a.x.prof?`<span class="badge deep">✓ İncelendi</span>`:""}</button>`).join("")}</div></div>`:"";
+  const uu=USEDBY[r.id];
+  const usedHtml=uu?`<div class="uinline"><h3>İkinci elde</h3><p class="note" style="margin:0">${uu.n} ilan, ortası ${TL(uu.med)}. Makul üst sınır ${uu.fair?TL(uu.fair):"—"}. <b>${UV[uu.verdict][0]}.</b> <a href="#ikinci-el" class="linkish">İkinci el sayfası</a></p></div>`:"";
+  const altHtml0=alts.length?`<div><h3>Aynı bütçede alternatifler</h3><div class="alts">${alts.map(a=>`<button type="button" class="alt" data-open="${a.x.id}"><b>${esc(a.x.name)}</b><span class="num">${TL(a.x.price)}</span><small>${esc(a.why)}</small>${a.x.prof?`<span class="badge deep">✓ İncelendi</span>`:""}</button>`).join("")}</div></div>`:"";
+  const altHtml=usedHtml+altHtml0;
   if(!p){
     const pos=ALL.filter(x=>x.ver==="dogrulandi"&&!x.prof).indexOf(r);
     return `<div class="rvw rvw-pending"><p class="note" style="margin:0">${r.ver==="dogrulandi"?`Bu model henüz detaylı incelenmedi${pos>=0?` (sırada ${Math.ceil((pos+1)/20)}. gün)`:""}. Aşağıdaki bilgiler ürün özelliklerinden ve mağaza listelerinden otomatik derlendi.`:r.ver==="pazaryeri"?`Bu model sadece pazar yeri satıcılarında bulundu; büyük mağaza veya resmi satıcıda yok. Satın alırken faturada Türkiye garantisi olup olmadığını kontrol edin.`:`Bu model detaylı inceleme kapsamında değil.`}</p></div>${altHtml?`<div class="mgrid">${altHtml}${sibHtml}</div>`:sibHtml}`;
@@ -1184,16 +1240,17 @@ function renderGuide(){
 }
 
 /* ---------- routing & update ---------- */
-const VIEWS=["rehber","liste","tablo","analiz","guvence","oneriler","yontem"];
+const VIEWS=["rehber","liste","tablo","analiz","guvence","oneriler","ikinci-el","yontem"];
 document.addEventListener("keydown",e=>{if(e.key==="Enter"){const t=e.target.closest&&e.target.closest("tr[data-brand]");if(t){selBrand=t.dataset.brand;renderGuvence(inStock())}}});
 function view(){const h=location.hash.slice(1);return VIEWS.includes(h)?h:"liste"}
 function showView(){
   const v=view();
   document.querySelectorAll("[data-pane]").forEach(p=>p.hidden=p.dataset.pane!==v);
   document.querySelectorAll(".tabs a").forEach(a=>a.setAttribute("aria-current",a.dataset.view===v?"page":"false"));
-  fl.style.display=(v==="yontem"||v==="rehber")?"none":"";
-  document.querySelector(".layout").classList.toggle("nofilter",v==="yontem"||v==="rehber");
-  $("#openFilters").style.visibility=(v==="yontem"||v==="rehber")?"hidden":"";
+  const nof=v==="yontem"||v==="rehber"||v==="ikinci-el";
+  fl.style.display=nof?"none":"";
+  document.querySelector(".layout").classList.toggle("nofilter",nof);
+  $("#openFilters").style.visibility=nof?"hidden":"";
   renderView();
 }
 const inStock=()=>cur.filter(r=>r.stock!=="yok");
@@ -1205,7 +1262,43 @@ function renderView(){
   else if(v==="oneriler")renderPicks(inStock());
   else if(v==="guvence")renderGuvence(inStock());
   else if(v==="rehber")renderGuide();
+  else if(v==="ikinci-el")renderUsed();
 }
+/* ---------- ikinci el ---------- */
+const USED=DATA.used||{rows:[]};const USEDBY=Object.fromEntries(USED.rows.map(u=>[u.id,u]));
+const UV={mantikli:["Mantıklı","good"],pazarlik:["Fırsat ilanı varsa","warn"],degmez:["Şu an değmez","bad"],bilgi:["Veri yetersiz","muted"]};
+let usedF="all";
+function usedCard(u){
+  const [lab,cls]=UV[u.verdict];
+  const alt=u.alt?`<button type="button" class="linkish" data-open="${u.alt.id}">${esc(u.alt.name)}</button> <span class="num">${TL(u.alt.price)}</span>`:"—";
+  const obs=u.obs.slice().sort((a,b)=>a.p-b.p).map(o=>`<li class="${o.deal?"deal":""}"><span class="num">${TL(o.p)}</span> <span class="muted">${esc(o.src==="letgo"?"letgo":"sahibinden")}${o.city?" · "+esc(o.city):""}</span>${o.note?` · ${esc(o.note)}`:""}${o.flag==="sifir"?` <span class="badge one">sıfır ilanı</span>`:""}${o.flag==="teshir"?` <span class="badge one">teşhir</span>`:""}${o.flag==="kuskulu"?` <span class="badge one">tutarsız</span>`:""}${o.deal?` <span class="badge par">makul</span>`:""}</li>`).join("");
+  return `<article class="ucard u-${cls}">
+   <div class="uhead"><div><div class="ubrand">${esc(u.brand)} · ≈${u.yr||"?"} · puan ${String(u.score).replace(".",",")}</div>
+     <h3>${byId[u.id]&&!byId[u.id].lite?`<button type="button" class="linkish" data-open="${u.id}">${esc(u.name)}</button>`:esc(u.name)}</h3></div>
+     <span class="upill ${cls}">${lab}</span></div>
+   <p class="uwhy">${esc(u.why)}</p>
+   <div class="unums">
+     <div><span class="ulab">İlanlar (${u.n})</span><span class="num">${u.lo===u.hi?TL(u.lo):fmt(u.lo)+"–"+TL(u.hi)}</span><small>ortası ${TL(u.med)}</small></div>
+     <div class="ufair"><span class="ulab">Makul üst sınır</span><span class="num">${u.fair?TL(u.fair):"—"}</span><small>bunun altında görürseniz düşünün</small></div>
+     <div><span class="ulab">${u.newv?"Sıfırı":"Sıfır alternatif"}</span><span>${u.newv?`<span class="num">${TL(u.newp)}</span>`:alt}</span>${u.newv&&u.alt&&u.alt.price<u.newp?`<small>aynı sınıfta en ucuz: ${alt}</small>`:""}</div>
+   </div>
+   ${u.risks.length?`<ul class="urisk">${u.risks.map(x=>`<li>${esc(x)}</li>`).join("")}</ul>`:""}
+   <details class="uobs"><summary>Görülen ilanlar</summary><ul>${obs}</ul></details>
+  </article>`;
+}
+function renderUsed(){
+  const R=USED.rows, c=k=>R.filter(u=>u.verdict===k).length;
+  const cheaperNew=R.filter(u=>u.ref&&u.med>=u.ref).length;
+  $("#usedHead").innerHTML=`<div class="panel uintro"><h2>İkinci el robot süpürge: hangisi mantıklı?</h2>
+   <p class="desc">${USED.nObs} ilan (${USED.srcs.letgo} letgo, ${USED.srcs.sahibinden} sahibinden) ${R.length} modelle eşleştirildi, ${esc(USED.date)}. Her model için bugün aynı puanı veren en ucuz garantili sıfır modelle kıyaslandı ve yaşına göre makul bir üst fiyat hesaplandı.</p>
+   <p class="ukey"><b>Ana bulgu:</b> 2026'da sıfır fiyatları çok düştü. ${R.length} modelin ${cheaperNew} tanesinde ilanların ortası, aynı puandaki garantili sıfır modelin fiyatına eşit ya da daha yüksek. İkinci el ancak aşağıdaki "makul üst sınır" ve altında anlamlı.</p>
+   <div class="ustat"><span><b class="num">${c("mantikli")}</b> mantıklı</span><span><b class="num">${c("pazarlik")}</b> fırsat ilanı var</span><span><b class="num">${c("degmez")}</b> şu an değmez</span></div></div>`;
+  const F=[["all","Tümü",R.length],["mantikli","Mantıklı",c("mantikli")],["pazarlik","Fırsat ilanı",c("pazarlik")],["degmez","Şu an değmez",c("degmez")]];
+  $("#usedChips").innerHTML=F.filter(f=>f[2]||f[0]==="all").map(([k,n,m])=>`<button type="button" class="chip${usedF===k?" on":""}" data-uf="${k}" aria-pressed="${usedF===k}">${n} <span class="num">${m}</span></button>`).join("");
+  const rows=R.filter(u=>usedF==="all"||u.verdict===usedF);
+  $("#usedList").innerHTML=rows.map(usedCard).join("")||`<p class="note">Bu grupta model yok.</p>`;
+}
+document.addEventListener("click",e=>{const b=e.target.closest("[data-uf]");if(b){usedF=b.dataset.uf;renderUsed()}});
 let selBrand=null;
 function renderGuvence(rows){
   const inF=new Set(rows.map(r=>r.brand));
@@ -1246,6 +1339,7 @@ function update(){
   store.set("rs-sort",S.sort);
 }
 window.addEventListener("hashchange",showView);
+window.addEventListener("hashchange",()=>{const d=$("#dlg");if(d&&d.open)d.close()});
 (()=>{const s=store.get("rs-sort");if(s&&SORTS[s]){S.sort=s;$("#sort").value=s}})();
 renderStatic();renderTray();cur=sortCur(filterOut());renderChips();showView();
 </script>
