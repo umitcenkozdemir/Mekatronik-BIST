@@ -129,6 +129,14 @@ aside.filters{align-self:start;min-width:0;padding-right:6px}
 .spec{font-size:calc(12px*var(--fs));background:var(--sunk);border-radius:5px;padding:2px 7px;color:var(--fg2);white-space:nowrap}
 .spec.hi{background:var(--accent-soft);color:var(--fg)}
 .card .foot{display:flex;justify-content:space-between;align-items:center;margin-top:auto;padding-top:6px;border-top:1px dashed var(--line-soft)}
+.favb{border:1px solid var(--line);background:var(--surface);color:var(--fg2);border-radius:999px;padding:3px 10px;font:inherit;font-size:calc(12.5px*var(--fs));cursor:pointer;white-space:nowrap}
+.favb[aria-pressed="true"]{color:var(--bad);border-color:var(--bad);background:var(--warn-soft)}
+.favb:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.footl{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.favbar{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-left:auto}
+#toast{position:fixed;left:50%;bottom:calc(76px + env(safe-area-inset-bottom,0px));transform:translateX(-50%) translateY(20px);background:var(--fg);color:var(--bg);padding:10px 14px;border-radius:8px;font-size:calc(13px*var(--fs));opacity:0;pointer-events:none;transition:opacity .2s,transform .2s;z-index:50;max-width:min(90vw,460px);text-align:center}
+#toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
+.cmpt th:first-child,.cmpt td:first-child{position:sticky;left:0;background:var(--surface);z-index:1}
 .cmp{display:flex;gap:6px;align-items:center;font-size:calc(13px*var(--fs));color:var(--fg2);cursor:pointer}
 .badge{font-size:calc(11px*var(--fs));font-weight:600;padding:2px 7px;border-radius:5px;white-space:nowrap}
 .badge.par{background:var(--good-soft);color:var(--good)}
@@ -195,6 +203,7 @@ td.model small{display:block;color:var(--fg3);font-weight:400;font-size:calc(11p
 
 /* modal */
 dialog{border:0;padding:0;background:transparent;max-width:min(980px,calc(100vw - 24px));width:100%;max-height:calc(100vh - 24px)}
+dialog.wide{max-width:min(1600px,calc(100vw - 24px))}
 dialog::backdrop{background:rgba(8,16,20,.55)}
 .modal{background:var(--surface);color:var(--fg);border-radius:14px;border:1px solid var(--line);overflow:auto;max-height:calc(100vh - 24px)}
 .mhead{padding:18px 20px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:16px;align-items:flex-start;position:sticky;top:0;background:var(--surface);z-index:2}
@@ -424,7 +433,7 @@ details.oos{margin-top:22px}details.oos summary{cursor:pointer;font-family:var(-
     <section data-pane="liste">
       <div class="guidebar" id="deepbar"></div>
       <div class="guidebar">Ne alacağınızdan emin değil misiniz? <a href="#rehber">Seçim sihirbazını deneyin</a> ya da filtre başlıklarındaki <span class="help" aria-hidden="true">?</span> işaretine dokunarak terimlerin ne anlama geldiğini okuyun.</div>
-      <div class="reshead"><div class="count" id="count1"></div><div class="sortbox"><label for="sort">Sırala</label><select id="sort" class="fsel sortsel" aria-label="Sıralama">
+      <div class="reshead"><div class="count" id="count1"></div><div class="favbar" id="favBar"></div><div class="sortbox"><label for="sort">Sırala</label><select id="sort" class="fsel sortsel" aria-label="Sıralama">
         <option value="rec">Önerilen (F/P + puan + güvence)</option>
         <option value="fp">Fiyat/performans (yüksek)</option>
         <option value="dev">Beklenen fiyata göre en ucuz</option>
@@ -523,6 +532,7 @@ const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&
 const $=s=>document.querySelector(s);
 const byId=Object.fromEntries(ITEMS.map(r=>[r.id,r]));
 const median=a=>{if(!a.length)return null;const s=[...a].sort((x,y)=>x-y),m=s.length>>1;return s.length%2?s[m]:(s[m-1]+s[m])/2};
+const CMPMAX=8;
 const store={get(k){try{return JSON.parse(localStorage.getItem(k))}catch(e){return null}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
 const cm=mm=>mm?String(Math.round(mm/10*10)/10).replace(".",","):"—";
 const dims=r=>r.w&&r.h?`${cm(r.w)} × ${cm(r.h)}${r.d?" × "+cm(r.d):""} cm`:"—";
@@ -552,10 +562,25 @@ const has=(r,k)=>!!r[k];
 
 const S={q:"",pmin:null,pmax:null,type:new Set(),cool:new Set(),ecl:new Set(),net:new Set(),stock:new Set(),col:new Set(),feat:new Set(),brand:new Set(),
   maxW:0,maxH:0,maxD:0,minL:0,maxL:0,maxDb:0,minSites:1,minAs:0,minYr:0,pareto:false,sort:"rec",tsort:null,shown:48,tshown:80,cmp:[]};
-(()=>{const c=store.get("bz-cmp");if(Array.isArray(c))S.cmp=c.filter(id=>byId[id]).slice(0,4)})();
+(()=>{const c=store.get("bz-cmp");if(Array.isArray(c))S.cmp=c.filter(id=>byId[id]).slice(0,CMPMAX)})();
+/* ---------- favoriler (yalnızca bu tarayıcıda saklanır) ---------- */
+const FAVK="bz-fav";const FAV=new Set((store.get(FAVK)||[]).filter(id=>byId[id]));S.onlyFav=false;
+function toggleFav(id){if(FAV.has(id))FAV.delete(id);else FAV.add(id);store.set(FAVK,[...FAV]);
+  document.querySelectorAll(`[data-fav="${CSS.escape(id)}"]`).forEach(b=>{const on=FAV.has(id);b.setAttribute("aria-pressed",on);b.innerHTML=favLabel(on)});
+  renderFavBar();if(S.onlyFav)update()}
+const favLabel=on=>on?`<span aria-hidden="true">♥</span> Favoride`:`<span aria-hidden="true">♡</span> Favori`;
+const favBtn=id=>`<button type="button" class="favb" data-fav="${esc(id)}" aria-pressed="${FAV.has(id)}">${favLabel(FAV.has(id))}</button>`;
+function renderFavBar(){const n=FAV.size;const b=$("#favBar");if(!b)return;
+  b.innerHTML=`<button type="button" class="btn ${S.onlyFav?"primary":""}" id="favOnly" aria-pressed="${S.onlyFav}"><span aria-hidden="true">♥</span> Favoriler <span class="num">${n}</span></button>${n>=2?`<button type="button" class="btn ghost" id="favCmp">Favorileri karşılaştır</button>`:""}`}
+document.addEventListener("click",e=>{const f=e.target.closest("[data-fav]");if(f){e.preventDefault();toggleFav(f.dataset.fav);return}
+  if(e.target.closest("#favOnly")){if(!FAV.size){toast("Henüz favori yok. Kartlardaki ♡ Favori düğmesiyle ekleyin.");return}S.onlyFav=!S.onlyFav;S.shown=48;renderFavBar();update();return}
+  if(e.target.closest("#favCmp")){S.cmp=[...FAV].slice(0,CMPMAX);store.set("bz-cmp",S.cmp);renderTray();document.querySelectorAll("[data-cmp]").forEach(cb=>cb.checked=S.cmp.includes(cb.dataset.cmp));if(FAV.size>CMPMAX)toast(`İlk ${CMPMAX} favori karşılaştırılıyor.`);openCompare()}});
+function toast(m){let el=$("#toast");if(!el){el=document.createElement("div");el.id="toast";el.setAttribute("role","status");document.body.appendChild(el)}el.textContent=m;el.classList.add("on");clearTimeout(toast.t);toast.t=setTimeout(()=>el.classList.remove("on"),3200)}
+
 const CHIPG=["type","cool","ecl","net","stock","col"];
 function filterOut(skip){
   return (S.showOOS?ALL.concat(OOSFULL):ALL).filter(r=>{
+    if(S.onlyFav&&!FAV.has(r.id))return false;
     if(S.q){const q=S.q.toLocaleLowerCase("tr");if(!(r.name.toLocaleLowerCase("tr").includes(q)||r.brand.toLocaleLowerCase("tr").includes(q)))return false}
     if(S.pmin!=null&&r.price<S.pmin)return false;
     if(S.pmax!=null&&r.price>S.pmax)return false;
@@ -624,7 +649,7 @@ const PQ=[["≤ 20 bin",null,20000],["20–35 bin",20000,35000],["35–50 bin",3
 $("#pquick").innerHTML=PQ.map((p,i)=>`<button type="button" data-pq="${i}">${p[0]}</button>`).join("");
 $("#pquick").addEventListener("click",e=>{const b=e.target.closest("[data-pq]");if(!b)return;const p=PQ[+b.dataset.pq];S.pmin=p[1];S.pmax=p[2];$("#pmin").value=p[1]??"";$("#pmax").value=p[2]??"";S.shown=48;update()});
 $("#reset").addEventListener("click",()=>{
-  Object.assign(S,{q:"",pmin:null,pmax:null,maxW:0,maxH:0,maxD:0,minL:0,maxL:0,maxDb:0,minSites:1,minAs:0,minYr:0,pareto:false,showOOS:false,onlyDeep:false,onlyVer:false,shown:48,tshown:80});
+  Object.assign(S,{q:"",pmin:null,pmax:null,maxW:0,maxH:0,maxD:0,minL:0,maxL:0,maxDb:0,minSites:1,minAs:0,minYr:0,pareto:false,showOOS:false,onlyDeep:false,onlyFav:false,onlyVer:false,shown:48,tshown:80});
   ["showOOS","onlyDeep","onlyVer","pareto"].forEach(i=>$("#"+i).checked=false);
   CHIPG.concat(["feat","brand"]).forEach(g=>S[g].clear());
   ["q","pmin","pmax","bq"].forEach(i=>$("#"+i).value="");
@@ -645,7 +670,7 @@ function activeList(){
   for(const k in th)if(S[k])a.push([k,th[k](S[k])]);
   if(S.minSites>1)a.push(["minSites",`${S.minSites}+ mağaza`]);
   if(S.pareto)a.push(["pareto","Fiyatına göre en iyi"]);
-  if(S.onlyDeep)a.push(["onlyDeep","Detaylı incelenenler"]);
+  if(S.onlyDeep)a.push(["onlyDeep","Detaylı incelenenler"]);if(S.onlyFav)a.push(["onlyFav","Favoriler"]);
   if(S.onlyVer)a.push(["onlyVer","Büyük mağaza / yetkili satıcı"]);
   if(S.showOOS)a.push(["showOOS","Eski modeller dahil"]);
   return a;
@@ -654,6 +679,7 @@ $("#activef").addEventListener("click",e=>{
   const b=e.target.closest("[data-af]");if(!b)return;const k=b.dataset.af;
   if(k==="q"){S.q="";$("#q").value=""}
   else if(k==="price"){S.pmin=S.pmax=null;$("#pmin").value=$("#pmax").value=""}
+  else if(k==="onlyFav"){S.onlyFav=false;renderFavBar()}
   else if(k.includes("|")){const[g,v]=k.split("|");S[g].delete(v)}
   else if(["pareto","onlyDeep","onlyVer"].includes(k)){S[k]=false;$("#"+k).checked=false}
   else if(k==="showOOS"){S.showOOS=false;S.stock.delete("yok");$("#showOOS").checked=false}
@@ -690,13 +716,13 @@ function card(r){
     <div class="meter"><div class="lab">F/P <b>${r.fp}</b></div><div class="bar fp"><i style="width:${r.fp}%"></i></div></div>
   </div>
   <div class="specs">${specChips(r)}</div>
-  <div class="foot"><label class="cmp"><input type="checkbox" data-cmp="${r.id}" ${inCmp?"checked":""}> Karşılaştır</label><button class="btn ghost" type="button" data-open="${r.id}">Ayrıntı →</button></div>
+  <div class="foot"><span class="footl"><label class="cmp"><input type="checkbox" data-cmp="${r.id}" ${inCmp?"checked":""}> Karşılaştır</label>${favBtn(r.id)}</span><button class="btn ghost" type="button" data-open="${r.id}">Ayrıntı →</button></div>
   </article>`;
 }
 document.addEventListener("click",e=>{const o=e.target.closest("[data-open]");if(o){openDetail(o.dataset.open)}});
 document.addEventListener("change",e=>{const id=e.target.dataset&&e.target.dataset.cmp;if(!id)return;toggleCmp(id,e.target.checked)});
 function toggleCmp(id,on){
-  if(on&&!S.cmp.includes(id)){if(S.cmp.length>=4){S.cmp.shift()}S.cmp.push(id)}
+  if(on&&!S.cmp.includes(id)){if(S.cmp.length>=CMPMAX){S.cmp.shift();toast(`En fazla ${CMPMAX} model karşılaştırılabilir; en eski seçim çıkarıldı.`)}S.cmp.push(id)}
   if(!on)S.cmp=S.cmp.filter(x=>x!==id);
   store.set("bz-cmp",S.cmp);renderTray();
   document.querySelectorAll(`[data-cmp]`).forEach(cb=>cb.checked=S.cmp.includes(cb.dataset.cmp));
@@ -912,7 +938,7 @@ function reviewBlock(r){
   </div>`;
 }
 function openDetail(id){
-  const r=byId[id];if(!r)return;
+  const r=byId[id];if(!r)return;$("#dlg").classList.remove("wide");
   const q=encodeURIComponent(r.name.trim());
   const KIND={retail:["Büyük mağaza","k-ret"],brand:["Resmi / yetkili","k-brand"],market:["Pazar yeri satıcısı","k-mkt"]};
   const SRCH={Hepsiburada:"https://www.hepsiburada.com/ara?q=",Trendyol:"https://www.trendyol.com/sr?q=",Amazon:"https://www.amazon.com.tr/s?k=",MediaMarkt:"https://www.mediamarkt.com.tr/tr/search.html?query=",Teknosa:"https://www.teknosa.com/arama/?s=",n11:"https://www.n11.com/arama?q=",Beymen:"https://www.beymen.com/tr/search?q=",Pazarama:"https://www.pazarama.com/arama?q=","PTT AVM":"https://www.pttavm.com/arama?q=",Idefix:"https://www.idefix.com/arama?q=","Çiçeksepeti":"https://www.ciceksepeti.com/arama?query=",A101:"https://www.a101.com.tr/arama?k="};
@@ -938,7 +964,7 @@ function openDetail(id){
    </div>
    ${trustBlock(r)}
    ${r.extras.length?`<div><h3>Üreticinin listelediği diğer özellikler</h3><div class="extras">${r.extras.map(x=>`<span class="spec">${esc(x)}</span>`).join("")}</div></div>`:""}
-   <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center"><label class="cmp"><input type="checkbox" data-cmp="${r.id}" ${S.cmp.includes(r.id)?"checked":""}> Karşılaştırmaya ekle</label><span class="note">Fiyatlar ${SNAP} tarihli anlık görüntüdür; satın almadan önce mağazada doğrulayın.</span></div>
+   <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center">${favBtn(r.id)}<label class="cmp"><input type="checkbox" data-cmp="${r.id}" ${S.cmp.includes(r.id)?"checked":""}> Karşılaştırmaya ekle</label><span class="note">Fiyatlar ${SNAP} tarihli anlık görüntüdür; satın almadan önce mağazada doğrulayın.</span></div>
   </div>`;
   const dlg=$("#dlg");if(!dlg.open)dlg.showModal();$("#dlgClose").onclick=()=>dlg.close();
   $("#dlgBody").scrollTop=0;
@@ -946,7 +972,7 @@ function openDetail(id){
 $("#dlg").addEventListener("click",e=>{if(e.target.id==="dlg")e.target.close()});
 
 function openCompare(){
-  const rs=S.cmp.map(id=>byId[id]);if(rs.length<2)return;
+  const rs=S.cmp.map(id=>byId[id]);if(rs.length<2)return;$("#dlg").classList.add("wide");
   const EO={A:1,B:2,C:3,D:4,E:5,F:6,G:7};
   const ROWS=[
    ["Fiyat",r=>r.price,v=>TL(v),"min"],["Beklenen fiyata göre (%)",r=>r.dev,v=>(v>0?"+":"")+v+"%","min"],["Çıkış yılı (≈)",r=>r.yr,v=>v,"max"],["Mağaza sayısı",r=>r.sites,v=>v,"max"],
@@ -1216,7 +1242,7 @@ function update(){
 }
 window.addEventListener("hashchange",showView);
 (()=>{const s=store.get("bz-sort");if(s&&SORTS[s]){S.sort=s;$("#sort").value=s}})();
-renderStatic();renderTray();cur=sortCur(filterOut());renderChips();showView();
+renderStatic();renderTray();renderFavBar();cur=sortCur(filterOut());renderChips();showView();
 </script>
 
 </body>
