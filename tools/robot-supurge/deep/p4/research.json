@@ -1,0 +1,518 @@
+{
+ "viomi-v5-pro": {
+  "id": "viomi-v5-pro",
+  "name": "Viomi V5 Pro",
+  "offers": [],
+  "hbSearch": null
+ },
+ "irobot-roomba-combo-j7-plus": {
+  "id": "irobot-roomba-combo-j7-plus",
+  "name": "iRobot Roomba Combo j7+",
+  "offers": [],
+  "amz": [
+   {
+    "title": "iRobot Roomba Combo j7+ Robot Süpürge ve Paspas",
+    "url": "https://www.amazon.com.tr/dp/B0BQN7SM6C",
+    "price": 24999.0,
+    "buyable": true,
+    "unavailable": false,
+    "lowstock": "1",
+    "rating": 4.0,
+    "count": 17,
+    "delivery": "ÜCRETSİZ teslimat 5 Kas Per"
+   }
+  ],
+  "hbSearch": null
+ },
+ "philips-homerun-3000-series-aqua": {
+  "id": "philips-homerun-3000-series-aqua",
+  "name": "Philips HomeRun 3000 Series Aqua (XU3000)",
+  "offers": [],
+  "amz": [],
+  "hbSearch": null
+ },
+ "xiaomi-mi-robot-vacuum-mop-2-pro": {
+  "id": "xiaomi-mi-robot-vacuum-mop-2-pro",
+  "name": "Xiaomi Mi Robot Vacuum Mop 2 Pro (MJST1SHW)",
+  "offers": [],
+  "hbSearch": null
+ },
+ "tefal-rg9075-x-plorer-serie-130-ai": {
+  "id": "tefal-rg9075-x-plorer-serie-130-ai",
+  "name": "Tefal RG9075 X-Plorer Serie 130 AI",
+  "offers": [],
+  "hbSearch": null
+ },
+ "tefal-rg9475-x-plorer-serie-220": {
+  "id": "tefal-rg9475-x-plorer-serie-220",
+  "name": "Tefal RG9475 X-Plorer Serie 220",
+  "offers": [],
+  "hb": {
+   "url": "https://www.hepsiburada.com/tefal-rg9475-x-plorer-serie-220-mop-ozellikli-dahili-temizleme-istasyonlu-akilli-robot-supurge-5600-pa-pm-HBC00006RXQNJ",
+   "seller": "Z Dış Ticaret",
+   "official": false,
+   "price": null,
+   "buyable": true,
+   "tr_warranty": false,
+   "importer": false,
+   "others": [
+    {
+     "seller": "Teknoalem",
+     "score": "8,9",
+     "auth": true,
+     "price": 25000.0
+    }
+   ],
+   "rating": 3.8,
+   "count": 12,
+   "stars": [
+    7,
+    1,
+    1,
+    0,
+    3
+   ],
+   "reviews": [
+    {
+     "date": "24 Ekim",
+     "text": "Arasıra kullandık son 5,6 aydır sarj olmama arasıra sarj olma problemi vardı. Hiç sarj olmayınca yetkili servisine getirdik bir aydan fazla oldu haber yok. Yetkili servisi Trabzon onur elektronik adlı fason bir servis. Bu ürünü tavsiye etmiyorum ve böyle bir firmanın sorumsuz servislerle çalışmasını yakıştıramadım.",
+     "seller": "Tefal - Rowenta - WMF Türkiye",
+     "up": 0,
+     "down": 0
+    },
+    {
+     "date": "24 Eylül 2024",
+     "text": "Ürün çok iyi eşime aldım ve çok beğendi. Mop özelliği olsun emiş gücü olsun harika. Normal halının yani çok kalın olmadığı sürece rahatça görevini yapmaya devam ediyor. Uygulamada hata vs yok. Artı oval olmaması köşelere daha rahat girmesini sağlıyor..",
+     "seller": "Tefal - Rowenta - WMF Türkiye",
+     "up": 3,
+     "down": 0
+    },
+    {
+     "date": "04 Temmuz 2025",
+     "text": "Gerçekten parasına degdı ıyıkı almışım",
+     "seller": "BESAM iletişim",
+     "up": 1,
+     "down": 0
+    },
+    {
+     "date": "11 Mart 2025",
+     "text": "Ürünü alalı baya oldu . evde hayvan besliyorsanız gayet iyi temizliyor. çekim gücü kuvvateli tek eksik yanı toz haznesi oldukça küçük 2 oda da doluyor",
+     "seller": "Tefal - Rowenta - WMF Türkiye",
+     "up": 1,
+     "down": 0
+    },
+    {
+     "date": "22 Kasım 2024",
+     "text": "Ürünü hiç beğenmedim düzgün temizlik yapmıyor heryer olduğu gibi duruyor düzgün kullanamadım bile arkasında ben temizliyorum o kadar övüldü ama bana göre sıfır",
+     "seller": "Güven Al Tedarik",
+     "up": 3,
+     "down": 3
+    },
+    {
+     "date": "14 Kasım 2024",
+     "text": "çok güzel süpürmesi silmesi yatakların altına giriyor bana büyük rahatlık oldu kargoda çok ozenliydi ve hızlı teslimat için teşekkür ederim",
+     "seller": "Tefal - Rowenta - WMF Türkiye",
+     "up": 1,
+     "down": 0
+    },
+    {
+     "date": "28 Kasım 2025",
+     "text": "hiç bir işe yaramıyor 1 yıldan fazla oldu alalı tek başına sürmesi güzel fakat bezi taktığımda kendi kendine duruyor asla silmiyor ve toz haznesinin orada bir ince tel var hazneyi temizlemek için çıkardığımda gördüm ki tel yamulmuş",
+     "seller": "Tefal - Rowenta - WMF Türkiye",
+     "up": 1,
+     "down": 0
+    },
+    {
+     "date": "26 Ağustos 2024",
+     "text": "ürünü alırken çok robot spürge araştırdım en mantıklısı bu geldi.çekim kuvveti çok iyi . ürün çok iyi temizlemesi harika.",
+     "seller": "Tefal - Rowenta - WMF Türkiye",
+     "up": 2,
+     "down": 1
+    },
+    {
+     "date": "25 Ağustos 2024",
+     "text": "Süpürme aparatı takılı iken performansı çok iyi ama silme aparatını takınca ince halıda bile birçok kez takılıyor. Silme modunda hiç kullanamadım.",
+     "seller": "Tefal - Rowenta - WMF Türkiye",
+     "up": 3,
+     "down": 0
+    },
+    {
+     "date": "04 Nisan 2025",
+     "text": "Sıfır farklı ürün yolladınız ürünün iyadesini istiyorum insanları mağdur etmeyin",
+     "seller": "VİP SHOWROOM",
+     "up": 1,
+     "down": 0
+    }
+   ]
+  }
+ },
+ "dreame-bot-d9-max": {
+  "id": "dreame-bot-d9-max",
+  "name": "Dreame Bot D9 Max",
+  "offers": [],
+  "amz": [],
+  "hb": {
+   "url": "https://www.hepsiburada.com/dreame-bot-d9-max-robot-supurge-vakum-ve-paspas-pm-HBC000013LYY4",
+   "seller": "Anzar",
+   "official": false,
+   "price": null,
+   "buyable": true,
+   "tr_warranty": false,
+   "importer": false,
+   "others": [
+    {
+     "seller": "kupavalesi06",
+     "score": "10,0",
+     "auth": true,
+     "price": 9999.0
+    },
+    {
+     "seller": "boandbo",
+     "score": "9,6",
+     "auth": true,
+     "price": 14040.0
+    }
+   ],
+   "rating": 4.6,
+   "count": 452,
+   "stars": [
+    373,
+    32,
+    9,
+    7,
+    31
+   ],
+   "reviews": [
+    {
+     "date": "22 Şubat",
+     "text": "Mükemmel tereddüt ettim ama gerçekten süper ürün 2 gündür kullanıyorum ve okadar güzel supuruyorki gerçekten fazla para verip almaya pekte gerek yokmuş vede 2 gün içinde elimde oldu.🩷",
+     "seller": "UMT TEKNOLOJİ YAZILIM A.Ş",
+     "up": 1,
+     "down": 0
+    },
+    {
+     "date": "04 Mayıs 2024",
+     "text": "Bu marka ve modele robot süpürgeleri cok arastirarak karar verip aldım. Aldığım zaman kutusundan çıkardım uygun yer bulup yerleştirdim.Ama seyahatim nedeniyle kullanmadım.Bugun haritalama için çalıştırdım.Calismasinda sorun görünmüyordu.Ustunun de tozunu alırken .ustundeki kiriisik görünümlü izleri naylon var saniyordum.Megerse bayağı çatlak izleri..inanamadim.Şu an şoktayım.Aldigimda nasıl farketmedim? Kutusu çok sağlam ,kutu icersinde kırılması imkansız.Defolu ürün gonderildigini düşünüyorum.Bu çatlaklar düşme vs den kaynaklanmışsa calismasinda da zamanla sorun çıkar mı bilemiyorum.İade süremi kaçırdım.Simdi ne yapmam gerekiyor yenisi ile değiştirmem için? Yetkili servisi kim?Çok üzüldüm..",
+     "seller": "powerofstore",
+     "up": 11,
+     "down": 1
+    },
+    {
+     "date": "20 Mayıs 2022",
+     "text": "Hayatı kolaylaştıran bir ürün. Ama koltukların üstü kedi tüyü olunca diğer makina ile temizlemek zorunda kaldım. Zira çıkamıyor koltuğa 🙂 Köşeleri temizleyemiyor. Her seferinde farklı bir rota ile çalışıyor şu an. Çözemedik henüz. Mop kullanmadık şimdilik. 4000 pa ürün, sırf bunun için bir çok model eledik,bu bile tatmin etmedi fazlaca, daha düşük pa nasıl olur bilemedim.Çalışan ve çocuklu aileler için hafta içi iyi bir kurtarıcı, bel,boyun sorunu olanlar için de iyi bir yardımcı olabilir ama gelişmesi lazım ki gelişecektir. O zamana kadar idare edeceğiz. Paketleme iyiydi. Herhangi bir ezik, darbe yoktu. Hepsijet ile gelen ürünler konusunda zaten sıkıntı yaşamadık hiç, oldukça erken geliyor ",
+     "seller": "mobifon",
+     "up": 11,
+     "down": 8
+    },
+    {
+     "date": "01 Şubat 2022",
+     "text": "Süpürge ambalajlı bir şekilde ulaştı. satıcıya teşekkür ederim. Cihazın ilk önce şarjını doldurup alt katı komple standart modda hem haritalandırdı hemde süpürdü. Resimde çıkan tozu şaşırmamak elde değil. Haritayı çok hızlı bir şekilde yaptı ve tek seferde şarjına geldi. Bu önemliydi. Sonrasında tek odayı mop yaptırdım. Mop da iyi iş çıkardı. Haritalandırma yaparken sağa sola sert vuruşlar yapmadı. Uygulaması çok kolay. Genpa garantili. Umararım uzun süre bu şekilde kullanırım. Alacak kişilere tavsiye ederim.",
+     "seller": "mobilepoint",
+     "up": 18,
+     "down": 2
+    },
+    {
+     "date": "21 Mart 2022",
+     "text": "Piyasa da ki en yüksek çekim gücüne sahip olması cezbedici , temiz odadan 2 odayı süpürmesene rağmen çıkar pislik o kadar güzel çekiyor ki hayret ediyorum çalışan için büyük kolaylık tek dezavantajı genel olarak etrafta bir düzen istiyor o düzeni hep istiyor temizlik yaparken etrafta ya da yerde fazlalık eşya olmayacak",
+     "seller": "mobilepoint",
+     "up": 9,
+     "down": 2
+    },
+    {
+     "date": "17 Şubat",
+     "text": "Çok teşekkür ederiz harika bir ürün iyiki aldık tereddüt etmeyin alın bence ayrıca Türkçe dil desteği ile mevcut",
+     "seller": "Hepsiburada",
+     "up": 0,
+     "down": 0
+    },
+    {
+     "date": "17 Nisan",
+     "text": "Bu markanın Lidar sensörlü olmayanını kullandık. Çok iyi değildi. Bunun üstündeki lidar sensörü çıkıntısı, girebileceği koltuk, yatak altı gibi yerlerde sıkıntı çıkarabilir diye düşündük, sıkıntı olmadı. Tersine, öncekinden çok daha iyi çıktı. Haritalama ve sonrasında sağa sola çarpmayıp dolaşabilme konusunda çok iyi. Temizlik gücü de iyi, hem süpürge hem de paspas modunda. 3-4 yıldır bu cihazları kullanıyoruz, hergün çalıştığında (zaten kendi kendine çalışıyor, bize hiç zahmeti yok gibi) ev sürekli pırıl pırıl oluyor. Anlayamadığım şey, 1 ay olmadan fiyat %12 arttı. Filtresini ve ana fırçayı 2-3 günde bir temizlersen, hem her seferinde aynı kalitede temizliyor, hem de cihazın çalışma ömrü u",
+     "seller": "BigTech34",
+     "up": 0,
+     "down": 1
+    },
+    {
+     "date": "09 Mart 2025",
+     "text": "Bu robotu 2022 yılında burdan aldık.Nerdeyse her gün açıp kullanıyoruz.Gayet güzel.Neden bilmiyorum ara sıra haritayı siliyor sonra tekrar haritalandırıyoruz.Ama paspası hiç güzel değil.Suyu kullanıp paspas yapmıyor.",
+     "seller": "mobifon",
+     "up": 5,
+     "down": 1
+    },
+    {
+     "date": "03 Ekim",
+     "text": "Ürün gayet başarılı tam bir FP. Ürünün uygulaması sıtabil değil ama. Çok dandik bir uygulaması var Çin malıyım ben diyor. Ya da iPhone ile stabil çalışmıyor.",
+     "seller": "polatorganizasyon",
+     "up": 0,
+     "down": 0
+    },
+    {
+     "date": "15 Mart 2022",
+     "text": "Sipariş verdiğimiz gibi kargolandı. Paketlenmesi iyiydi ve zarar görmemiş. Genelde piyasada ki tüm ürünlere emiş güce ne olursa olsun en iyi emiş gücü yazarak pazarlıyorlar fakat bu ürün 4000 pa emiş gücü ile gerçekten piyasanın en yüksek emişli cihazı veya cihazlarından. Keşke daha önce alsaydık dedirtti. Haritalaması başarılı fakat Eşik boyu yüksek ise o alanı algılayamıyor. Mop özelliği suyu yükseğe alınca gayet ıslak şekilde görevini yapıyor. Turbo modda sesi çok yüksek ama çekişi çok iyi dumuma geliyor. SON OLARAK ÇOK ÖNEMLİ; Kimse siyah halı üzerinde çalışır mı çalışmaz mı gibi bir yorumda bulunmamış. cevap ÇALIŞMAZ. Bu durum başta bizi çok üzdü, siyah halıyı boşluk zannettiği için gör",
+     "seller": "mobilepoint",
+     "up": 18,
+     "down": 0
+    }
+   ]
+  }
+ },
+ "fakir-robert-rs-770": {
+  "id": "fakir-robert-rs-770",
+  "name": "Fakir Robert RS 770",
+  "offers": [],
+  "amz": [],
+  "hb": {
+   "url": "https://www.hepsiburada.com/robert-rs-770-akilli-robot-supurge-beyaz-renk-450-ml-toz-haznesi-ile-uzaktan-kontrol-pm-HBC0000EU54S2",
+   "seller": "ErdirenGrup",
+   "official": false,
+   "price": 18948.0,
+   "buyable": true,
+   "tr_warranty": false,
+   "importer": false,
+   "others": [],
+   "reviews": []
+  }
+ },
+ "arnica-sil-supur": {
+  "id": "arnica-sil-supur",
+  "name": "Arnica Sil Süpür (ET13350)",
+  "offers": [],
+  "amz": [],
+  "hbSearch": null
+ },
+ "philips-xu2000-26": {
+  "id": "philips-xu2000-26",
+  "name": "Philips 2000 Serisi XU2000/26",
+  "offers": [],
+  "amz": [],
+  "hbSearch": null
+ },
+ "ultenic-t10-elite": {
+  "id": "ultenic-t10-elite",
+  "name": "Ultenic T10 Elite",
+  "offers": [],
+  "amz": [],
+  "hb": {
+   "url": "https://www.hepsiburada.com/ultenic-t10-elite-robot-vacuum-cleaner-with-mop-robotic-vacuum-self-emptying-for-45-days-hands-free-pm-HBC0000M7LNZ7",
+   "seller": "BZN COMMERCE",
+   "official": false,
+   "price": 42356.74,
+   "buyable": true,
+   "tr_warranty": false,
+   "importer": false,
+   "others": [],
+   "reviews": []
+  }
+ },
+ "tcl-sweeva-6000": {
+  "id": "tcl-sweeva-6000",
+  "name": "TCL Sweeva 6000",
+  "offers": [],
+  "hbSearch": {
+   "url": "https://www.hepsiburada.com/tcl-sweeva-6000m-haritalama-ozellikli-moplu-robot-supurge-pm-HBC00009XZOO9",
+   "title": "Tcl Sweeva 6000M Haritalama Özellikli Moplu Robot Süpürge",
+   "fromSearch": true
+  }
+ },
+ "blaupunkt-s10-pro-8684166156485": {
+  "id": "blaupunkt-s10-pro-8684166156485",
+  "name": "Blaupunkt S10 Pro [8684166156485]",
+  "offers": [],
+  "hbSearch": null
+ },
+ "hobot-legee-7": {
+  "id": "hobot-legee-7",
+  "name": "Hobot Legee 7",
+  "offers": [],
+  "amz": [],
+  "hb": {
+   "url": "https://www.hepsiburada.com/hobot-legee-7-akilli-robot-supurge-paspas-pm-HBC00001MN00E",
+   "seller": "inmotion",
+   "official": false,
+   "price": 15299.99,
+   "buyable": true,
+   "tr_warranty": false,
+   "importer": false,
+   "others": [],
+   "reviews": []
+  }
+ },
+ "electrolux-er71hw1ug": {
+  "id": "electrolux-er71hw1ug",
+  "name": "Electrolux ER71HW1UG",
+  "offers": [],
+  "hb": {
+   "url": "https://www.hepsiburada.com/electrolux-er71hw1ug-hijyenik-700-robot-supurge-kent-gri-pm-HBC00008FYJ1I",
+   "seller": "ezebilisim",
+   "official": false,
+   "price": 12999.0,
+   "buyable": true,
+   "tr_warranty": false,
+   "importer": false,
+   "others": [
+    {
+     "seller": "ÖZGÜR İLETİŞİM ANKARA",
+     "score": "9,8",
+     "auth": true,
+     "price": 16888.0
+    },
+    {
+     "seller": "pandorra teknoloji",
+     "score": "9,5",
+     "auth": true,
+     "price": 17449.0
+    }
+   ],
+   "reviews": []
+  }
+ },
+ "next-pro-maid-x8": {
+  "id": "next-pro-maid-x8",
+  "name": "Next Pro Maid X8",
+  "offers": [],
+  "hb": {
+   "url": "https://www.hepsiburada.com/next-pro-maid-x8-akilli-robot-supurge-ve-paspas-pm-HBC00007MXHBK",
+   "seller": "Rh+PozitifTeknoloji",
+   "official": false,
+   "price": null,
+   "buyable": true,
+   "tr_warranty": false,
+   "importer": false,
+   "others": [
+    {
+     "seller": "HAS ALFA ELEKTRONİK",
+     "score": "9,4",
+     "auth": true,
+     "price": 12375.0
+    }
+   ],
+   "rating": 4.8,
+   "count": 141,
+   "stars": [
+    122,
+    14,
+    1,
+    2,
+    2
+   ],
+   "reviews": [
+    {
+     "date": "01 Haziran 2024",
+     "text": "Xiaomi den hiçbir farkı yok hatta kusursuz bile diyebilirim 3 saat boyunca temizlik yapabiliyor ve su haznesini hep dolu bırakıyorum Hergün saat 12 ye zamanlama kurdum evime bir aydır ne vileda ne süpürge tutuyorum , bal dök yala yerler Yazılımını mükemmel yapmışlar Türk malı olduğu içinde mutluyum",
+     "seller": "Elmak Elektromarket",
+     "up": 14,
+     "down": 0
+    },
+    {
+     "date": "12 Mayıs 2024",
+     "text": "Uzun zamandır robot süpürge almak istiyordum ve bayağı bu kategorideki ürünlere baktım. Birkaç marka gözüme kestirdim fiyat aralıkları 7.000 ile 10.000 arasında değişiyordu. En son Next ile karşılaştım, fiyatı oldukça uygun geldi. Uydu alanındaki teknolojik atılımlarına güvenerek aldım. Geleyim kullandıktan sonraki deneyimlerime; - Ürün fiyatının üstünde bir kalite veriyor. Ürün size güzel ve güvenli bir kutuda geliyor. Kutunun içinde gerekli olan her şey var. - Ben şimdiye kadar sadece süpürme modunu kullandım ve tek cümle ile hayran kaldım. Köşelerden tutun, koltuk altlarına ve halılara kadar tertemiz süpürüyor. - Haritalama özelliği ve mobil uygulaması çok kullanışlı. Ürünü kurmak aşırı b",
+     "seller": "Elmak Elektromarket",
+     "up": 8,
+     "down": 0
+    },
+    {
+     "date": "18 Ekim",
+     "text": "Ürün fena değil. Bazen sağa sola çarpıyor.Sensörleri biraz daha iyi olsa bu sorun olmaz. Ses seviyesi az bu güzel. Biraz daha iyi çekim gücü olabilir. Mop yaparken halı tanıma özelliğini ya biz bulamadık yada yok. Halıyı ıslatıyor mop yaparken. Fiyatı düşünüldüğünde çok çok tatmin edici. Tavsiye edilir",
+     "seller": "Next&NextStar",
+     "up": 0,
+     "down": 0
+    },
+    {
+     "date": "12 Temmuz 2025",
+     "text": "Annem ile birlikte yaşıyoruz. O yorulmasın diye aldım. Fayda-maliyet analizine göre piyasada gayet iyi bir ürün. Temizliği de iyi. Bir ev süpürmesini dip bucak 1,5 saate bitiriyor. Öncelikle uygulamasını indirip kurmanız gerekiyor. Çok basit kurulabilecek bir cihaz ancak modeminizin 2.4 ghz'yi desteklemesi gerekiyor. Yüksek ghz'ye bağlanmakta sorun yaşıyor hatta görmüyor. Alacaklara tavsiyem öncelikle cihazı alacaksanız koltuk boşluklarınızın boyu çok önemli. Makine sensöründen orayı boş algılıyor ve girmeye çalışıyor. Bu nedenle resimde de görexeğiniz üzere zorladığı için çizikler oluşuyor ancak bu benim kullanıcı hatam. Bir ürün alırken her açıdan dikkat etmek lazım. İlk çalıştırmada evini",
+     "seller": "VTECH BİLİŞİM TEKNOLOJİLERİ",
+     "up": 1,
+     "down": 0
+    },
+    {
+     "date": "19 Ağustos 2024",
+     "text": "Kurulumu kolay,önce odanın sınırlarını belirliyor,sonra zigzaglar çizerek tamamını temizliyor. İlk harita belirleme işleminden sonra uygulama üzerinden oda ya da bölge belirleyip özel süpürme ya da silme yaptırabilirsiniz. Silme işi sadece suyla,haliyle çamaşır sularıyla foşur foşur temizlik yapma eğilimli birine fazla temiz gelmiyor ama hiç yoktan iyidir:) Parçaların çıkarılması ve temizliği de kolay. Kargo 1-2 günde geldi,ambalajı gayet korunaklı .Kedilerim var,yerdeki kum ve pati izleri için özellikle aldim. Pratiklik kazandıkça daha kolay ve keyifli oluyor. İyi ki almışım",
+     "seller": "Elmak Elektromarket",
+     "up": 2,
+     "down": 0
+    },
+    {
+     "date": "14 Ekim",
+     "text": "Canım kocam bana bunu hediye...))) nerdeee kendi paramla aldım.urun güzel bu fiyata göre iyi performansı var.hergun kullanıyorum",
+     "seller": "Next&NextStar",
+     "up": 1,
+     "down": 0
+    },
+    {
+     "date": "18 Mayıs 2024",
+     "text": "Çok beğendim. Zaten yorumları okuduğumda almaya karar verdim birde ben yorum yapmış oldum. Fiyatı hem uygun hem güzel süpürüyor. Alırsanız pişman olmazsınız. Evde değilim ama yinede eksiksiz çalıştırıyorum. Harika bir icaat :) yasaklı bölge de ayarlanabiliniyor üstelik",
+     "seller": "Elmak Elektromarket",
+     "up": 5,
+     "down": 1
+    },
+    {
+     "date": "13 Eylül 2024",
+     "text": "Hiç boşyere Xiaomi vs. almayın. Çok araştırdım ve kullanıyoruz çok memnun kaldık. Üretici duymasın zam yapmasın:) Akrabada Xiamio pro 2 var. O ayarda bir cihaz. Süpürme de yaptık silme de yaptık 110 metrekare evi %80 şarj kalarak bitirdi. Otomatik emiş gücü olması çok iyi halılarda daha yüksek performansla çekim yapıyor. Yükseklik lidar sensör dahil 9,5 santim bu bilgi birçok üründe bahsedilmiyor, koltuklarımın altına rahatca girdi. Otomatik haritalandırma sistemi çok başarılı ayrıca uygulamadan manuel kumandadan istediğiniz yere de yönlendirebilirsiniz. Üstelik Yerli ürün. Alın aldırın..",
+     "seller": "Elmak Elektromarket",
+     "up": 4,
+     "down": 0
+    },
+    {
+     "date": "10 Ekim",
+     "text": "Ben uygun fiyata aldım. Kullanımı kolay. Güzel temizliyor. İnternete baglanırken 2.4mhz istiyor kurulumda, buna dikkat ediniz. Ben wifi degil iki telin birinden internet paylaşımı yaparak kurdum.",
+     "seller": "Next&NextStar",
+     "up": 0,
+     "down": 0
+    },
+    {
+     "date": "11 Ekim",
+     "text": "İndirimde aldım 5 K Ya tarih 11 Ekim ürün ulaştı kaliteli sensörleri güzel çalışıyor çarpmadan kendi yolunu bulup güzelce gidiyor bence hiç düşünmeden alın temizlemesi de basit yani hemen halloluyor annelere hediye almak için birebir üründür",
+     "seller": "Next&NextStar",
+     "up": 0,
+     "down": 0
+    }
+   ]
+  }
+ },
+ "homend-alex-laser-pro-plus-1283h": {
+  "id": "homend-alex-laser-pro-plus-1283h",
+  "name": "Homend Alex Laser Pro+ 1283H (700.01.01.0385)",
+  "offers": [],
+  "hbSearch": null
+ },
+ "irobot-roomba-combo-j5": {
+  "id": "irobot-roomba-combo-j5",
+  "name": "iRobot Roomba Combo j5",
+  "offers": [],
+  "hb": {
+   "url": "https://www.hepsiburada.com/irobot-roomba-combo-j5-akilli-robot-supurge-ve-paspas-pm-HBC00006220FN",
+   "seller": "LİN GRUP",
+   "official": false,
+   "price": 17099.1,
+   "buyable": true,
+   "tr_warranty": false,
+   "importer": false,
+   "others": [],
+   "rating": 3.7,
+   "count": 3,
+   "stars": [
+    2,
+    0,
+    0,
+    0,
+    1
+   ],
+   "reviews": [
+    {
+     "date": "10 Haziran",
+     "text": "Muhteşem bir alet. Evimde üç tane patilim var ve evim pırıl pırıl oluyor. Toz tüy bitti",
+     "seller": "LİN GRUP",
+     "up": 0,
+     "down": 0
+    },
+    {
+     "date": "26 Aralık 2025",
+     "text": "Roomba 605im var daha \"akıllı\" bir ürüne geçmek istedim ama ürün çok kötü. Uygulamada boşaltma için bir tuş var kayboluyor. Servisi aradım ertesi gün döndüler ürüne reset attılar haftasonu merkez sunucularda bir güncelleme oldu ondan dolayı fln dediler üstüne 3 gün geçti yine gitti. Tuşla aktif ettiriyorum ama kiri istasyona çekmiyor. Her seferinde elle boşaltıcaksam ya da ürünü sıfırlıcaksam ne anladım bu işten. Akıllı haritalaması iyi hoş ama tüm evi süpür diyorum 10m2 odada 45dk kaldı kendim dururup öbür odaya yönlendirdim. 605'e göre şarjı çok az gidiyor haznesi çok küçük. 605deki gırgır fırçası bunda olmadıgı için öbek saç toz gibi seylerde başarısız. İkisi bi arada deyince hem siliyor ",
+     "seller": "iRobot Türkiye",
+     "up": 1,
+     "down": 0
+    }
+   ]
+  }
+ }
+}

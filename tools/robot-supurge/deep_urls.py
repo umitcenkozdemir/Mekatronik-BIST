@@ -1,5 +1,5 @@
 # Sıradaki N modelin derin inceleme adreslerini üretir.
-# Kullanım: python3 deep_urls.py <çalışma_klasörü> <batch_adı> [N=20] [--second]
+# Kullanım: python3 deep_urls.py <çalışma_klasörü> <batch_adı> [N=20] [--second] [--pz]
 #  - İlk geçiş: deep/<batch>/queue.json yazar ve 6 grup URL basar (epey, hb, hbrev, mm, tek, amz)
 #  - --second: ilk geçişte HB ürün linki bulunamayan modeller için research.json'daki hbSearch sonuçlarından ürün+yorum adreslerini basar
 import json,sys,os,re,urllib.parse,datetime
@@ -16,7 +16,10 @@ if '--second' in sys.argv:
     print(json.dumps(out)); sys.exit()
 prof=json.load(open(S+'/profiles.json'))
 Q=json.load(open(S+'/profile_queue.json'))
-todo=[i for i in Q if i not in prof and i in R and R[i]['stock']!='yok' and R[i].get('ver')=='dogrulandi'][:N]
+if '--pz' in sys.argv:  # yalnızca pazar yerinde satılan (doğrulanmamış) modeller, puana göre
+    todo=sorted([i for i,o in R.items() if i not in prof and o.get('ver')=='pazaryeri' and not o.get('gone') and o['stock']!='yok'],key=lambda i:-R[i]['score'])[:N]
+else:
+    todo=[i for i in Q if i not in prof and i in R and R[i]['stock']!='yok' and R[i].get('ver')=='dogrulandi'][:N]
 json.dump(todo,open(D+'/queue.json','w'))
 tag=datetime.date.today().strftime('%Y%m%d')
 nm=lambda i: urllib.parse.quote_plus(re.sub(r'\(.*?\)','',R[i]['name']).strip())

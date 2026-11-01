@@ -723,7 +723,7 @@ function renderList(rows){
   $("#activef").innerHTML=af.map(([k,t])=>`<button type="button" data-af="${esc(k)}" aria-label="${esc(t)} filtresini kaldır">${esc(t)} ×</button>`).join("");
   $("#fcount").textContent=af.length?`(${af.length})`:"";
   $("#cards").innerHTML=n?rows.slice(0,S.shown).map(card).join(""):`<div class="empty" style="grid-column:1/-1">Bu filtrelere uyan model yok. Bir filtreyi kaldırmayı ya da fiyat aralığını genişletmeyi deneyin.</div>`;
-  $("#deepbar").innerHTML=DEEPT?`<b>${DEEPN} / ${DEEPT}</b> doğrulanmış model detaylı incelendi: mağaza stokları tek tek kontrol edildi, satıcılar ve kullanıcı yorumları okundu. Her gün 20 model daha ekleniyor. <button type="button" class="btn ghost" style="padding:0;color:var(--accent);font-weight:600" id="deepOnly">Sadece bunları göster</button>`:"";
+  $("#deepbar").innerHTML=DEEPT?`<b>${DEEPN} / ${DEEPT}</b> satıştaki model detaylı incelendi: mağaza stokları tek tek kontrol edildi, satıcılar ve kullanıcı yorumları okundu. Yeni çıkan modeller her gün ekleniyor. <button type="button" class="btn ghost" style="padding:0;color:var(--accent);font-weight:600" id="deepOnly">Sadece bunları göster</button>`:"";
   $("#moreBtn").hidden=n<=S.shown;
   $("#moreBtn").textContent=`Daha fazla göster (${Math.max(0,n-S.shown)} model kaldı)`;
   renderOOS();

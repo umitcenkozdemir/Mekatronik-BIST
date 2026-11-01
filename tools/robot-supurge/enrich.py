@@ -48,8 +48,9 @@ for o in I:
         if verified_buy and o['ver']!='dogrulandi' and o['stock']!='yok': o['ver']='dogrulandi'
     p=PROF.get(o['id'])
     if p: o['prof']=p
-D['deepDone']=sum(1 for o in I if o.get('prof'))
-D['deepTotal']=len([i for i in Q])
+_main=[o for o in I if o['stock']!='yok' and o.get('ver')!='tek']
+D['deepDone']=sum(1 for o in _main if o.get('prof'))
+D['deepTotal']=len(_main)
 D['corrections']={k:v.get('src') for k,v in json.load(open(S+'/corrections.json')).items() if not k.startswith('_')}
 json.dump(D,open(S+'/robots2.json','w'),ensure_ascii=False,separators=(',',':'))
 import collections

@@ -4504,5 +4504,2001 @@
   "liked": [],
   "disliked": [],
   "issues": []
+ },
+ "roborock-qrevo-curv": {
+  "date": "1 Kasım 2026",
+  "verdict": "Kameralı, su dolumlu, sıcak su yıkamalı, uzayan mop ve fırçalı Roborock; kâğıt üzerinde çok güçlü. Ancak yalnızca pazar yeri satıcıları satıyor ve fiyatlar 63,5 binden 95 bin TL'ye kadar dağınık. Hepsiburada'da 264 puanın 207'si 5 yıldız, 31'i 1 yıldız; kullanıcılar temizliği ve uzaktan kamera ile izlemeyi övüyor.",
+  "forWho": [
+   "Tam donanım isteyen, garanti kaynağını kontrol edebilecekler"
+  ],
+  "notFor": [
+   "Resmi distribütör güvencesi isteyenler"
+  ],
+  "pros": [
+   "Kamera, su dolumu, uzayan mop ve fırça",
+   "Kullanıcı puanı 4,4 (264)"
+  ],
+  "cons": [
+   "Yalnızca pazar yeri; fiyatlar 63–95 bin TL arası",
+   "1 yıldız oranı %12"
+  ],
+  "liked": [
+   "Temizlik ve kendi kendini temizleme",
+   "Uzun pil (130 m² tek şarjda)",
+   "Uzaktan kamera ile ev izleme"
+  ],
+  "disliked": [],
+  "issues": []
+ },
+ "jonr-x1-max": {
+  "date": "1 Kasım 2026",
+  "verdict": "Kameralı, su dolumlu, sıcak su yıkama ve kurutmalı, uzayan mop ve fırçalı Jonr; 30 bin TL için donanımı çok geniş. Yalnızca İstech İletişim satıyor (Trendyol 30 bin TL, diğer kanallar 40 bin TL). Kullanıcı puanı 3,5 (7) ve marka Türkiye'de yeni.",
+  "forWho": [
+   "Düşük bütçeye geniş donanım isteyen, risk alabilenler"
+  ],
+  "notFor": [
+   "Bilinen marka ve servis isteyenler"
+  ],
+  "pros": [
+   "Kamera, su dolumu, uzayan mop ve fırça",
+   "Trendyol'da 30 bin TL"
+  ],
+  "cons": [
+   "Tek satıcı, marka yeni",
+   "Puan 3,5 (7)"
+  ],
+  "liked": [],
+  "disliked": [],
+  "issues": []
+ },
+ "roborock-qrevo-master": {
+  "date": "1 Kasım 2026",
+  "verdict": "Kameralı, su dolumlu, sıcak su yıkama ve kurutmalı Roborock. Hepsiburada'da 569 puanın 453'ü 5 yıldız; en beğenilen yorum mop performansını öne çıkarıyor. Ancak artık yalnızca pazar yerinde 78,5–155 bin TL'ye satılıyor ve birkaç kullanıcı satıcıların kutusu açılmış, kullanılmış ürün gönderdiğini yazıyor.",
+  "forWho": [
+   "Mop performansını önemseyenler (satıcıyı dikkatle seçerek)"
+  ],
+  "notFor": [
+   "Resmi garanti isteyenler"
+  ],
+  "pros": [
+   "Kullanıcı memnuniyeti yüksek (453/569 beş yıldız)",
+   "Su dolumu, sıcak su yıkama, kurutma"
+  ],
+  "cons": [
+   "Fiyatlar 78–155 bin TL, çok dağınık",
+   "Kullanılmış ürün gönderilmesi şikâyetleri"
+  ],
+  "liked": [
+   "Mop performansı",
+   "Süpürme, silme ve kendini temizleme"
+  ],
+  "disliked": [
+   "Yatak altına girememesi ve kafasını çarpması",
+   "Satıcının kutusu açılmış, haritası kayıtlı ürün göndermesi"
+  ],
+  "issues": []
+ },
+ "roborock-qrevo-curv-5a1": {
+  "date": "1 Kasım 2026",
+  "verdict": "Qrevo Curv'un alternatif versiyonu: kamera, su dolumu, sıcak su yıkama, uzayan mop ve fırça. Yalnızca pazar yeri satıcıları 67–73 bin TL'ye satıyor. Türkiye'den kullanıcı yorumu yok.",
+  "forWho": [
+   "Qrevo Curv donanımını isteyenler"
+  ],
+  "notFor": [
+   "Resmi garanti isteyenler"
+  ],
+  "pros": [
+   "Kamera, su dolumu, uzayan mop ve fırça"
+  ],
+  "cons": [
+   "Yalnızca pazar yeri, 67 bin TL üstü",
+   "Yorum yok"
+  ],
+  "liked": [],
+  "disliked": [],
+  "issues": []
+ },
+ "roborock-s8-maxv-ultra": {
+  "date": "1 Kasım 2026",
+  "verdict": "2023'ün amiral gemisi: kamera, titreşimli mop, su dolumu, sıcak su yıkama, kurutma ve deterjan dozlama. Hepsiburada'da 1.420 puanın 1.148'i 5 yıldız; kullanıcılar evcil hayvan tüyünde başarısını övüyor. Bugün yalnızca pazar yerinde 77,5–180 bin TL'ye satılıyor; bu fiyat eski bir model için çok yüksek.",
+  "forWho": [
+   "Kanıtlanmış amiral gemisi isteyen, uygun fiyat bulursa"
+  ],
+  "notFor": [
+   "Fiyat/performans arayanlar"
+  ],
+  "pros": [
+   "Çok yüksek kullanıcı memnuniyeti",
+   "Su dolumu, deterjan, sıcak su yıkama"
+  ],
+  "cons": [
+   "Eski model, fiyatlar 77–180 bin TL",
+   "Yalnızca pazar yeri"
+  ],
+  "liked": [
+   "Evcil hayvan tüyünde başarı",
+   "Kurup unutma: tam otomatik bakım"
+  ],
+  "disliked": [
+   "İstasyona dönerken arkasında kir bırakması (bir kullanıcı)"
+  ],
+  "issues": []
+ },
+ "jonr-x9-pro": {
+  "date": "1 Kasım 2026",
+  "verdict": "Rulo moplu, 3D engel algılamalı, su dolumlu, sıcak su yıkama ve kurutmalı Jonr. Yalnızca İstech İletişim satıyor (Trendyol 35 bin TL, diğerleri 44–48 bin TL). 11 cm yükseklik ve kullanıcı yorumu olmaması dezavantaj.",
+  "forWho": [
+   "Rulo mopu uygun fiyata isteyen, risk alabilenler"
+  ],
+  "notFor": [
+   "Alçak mobilyalı evler",
+   "Bilinen marka isteyenler"
+  ],
+  "pros": [
+   "Rulo mop, su dolumu, uzayan mop ve fırça"
+  ],
+  "cons": [
+   "Tek satıcı, yorum yok",
+   "11 cm yükseklik"
+  ],
+  "liked": [],
+  "disliked": [],
+  "issues": []
+ },
+ "roborock-qrevo-maxv": {
+  "date": "1 Kasım 2026",
+  "verdict": "Kameralı, su dolumlu, sıcak su yıkama ve kurutmalı Roborock. Puan 4,9 (27). Yalnızca iki pazar yeri satıcısı 59–61 bin TL'ye satıyor (sınırlı stok). Emiş 7.000 Pa ile yeni modellerin gerisinde.",
+  "forWho": [
+   "Kameralı Roborock'u arayanlar"
+  ],
+  "notFor": [
+   "Resmi garanti isteyenler"
+  ],
+  "pros": [
+   "Kamera, su dolumu, uzayan mop",
+   "Puan 4,9 (27)"
+  ],
+  "cons": [
+   "Sınırlı stok, yalnızca pazar yeri",
+   "7.000 Pa"
+  ],
+  "liked": [],
+  "disliked": [],
+  "issues": []
+ },
+ "dreame-bot-l10s-pro-ultra-heat": {
+  "date": "1 Kasım 2026",
+  "verdict": "3D engel algılamalı, su dolumlu, sıcak su yıkama, kurutma ve deterjan dozlamalı Dreame. Pazar yerlerinde 34,7–46 bin TL. 7.000 Pa emiş zayıf; Dreame'in resmi kanallardaki yeni modelleri benzer fiyata daha güçlü.",
+  "forWho": [
+   "Su dolumunu 35 bin TL civarında isteyenler"
+  ],
+  "notFor": [
+   "Halılı evler (7.000 Pa)"
+  ],
+  "pros": [
+   "Su dolumu, deterjan, sıcak su yıkama"
+  ],
+  "cons": [
+   "7.000 Pa",
+   "Yalnızca pazar yeri; yorum yok"
+  ],
+  "liked": [],
+  "disliked": [],
+  "issues": []
+ },
+ "mova-s70-roller": {
+  "date": "1 Kasım 2026",
+  "verdict": "28.000 Pa, rulo mop, 3D engel algılama ve su dolumlu Mova; 9,15 cm ile alçak. Yalnızca pazar yeri satıcıları 61 bin TL'den başlayan fiyatlarla satıyor. Mova'nın resmi kanallardaki Z60/Z70 modelleri benzer fiyata stokta.",
+  "forWho": [
+   "Alçak mobilya, rulo mop isteyenler"
+  ],
+  "notFor": [
+   "Resmi garanti isteyenler"
+  ],
+  "pros": [
+   "28.000 Pa, rulo mop, su dolumu",
+   "9,15 cm yükseklik"
+  ],
+  "cons": [
+   "Yalnızca pazar yeri, 61 bin TL üstü",
+   "Yorum yok"
+  ],
+  "liked": [],
+  "disliked": [],
+  "issues": []
+ },
+ "dreame-bot-l20-ultra": {
+  "date": "1 Kasım 2026",
+  "verdict": "2023'ün Dreame amiral gemisi: su dolumu, uzayan mop, kurutma. Pazar yerlerinde 40–58 bin TL. 7.000 Pa emiş ve eski model olması nedeniyle bu fiyat yüksek; L40s Pro gibi yeni modeller resmi kanalda benzer fiyata.",
+  "forWho": [
+   "Tavsiye edilmez (yeni modeller daha iyi)"
+  ],
+  "notFor": [
+   "Fiyat/performans arayanlar"
+  ],
+  "pros": [
+   "Su dolumu, uzayan mop, 260 dk"
+  ],
+  "cons": [
+   "Eski model, 7.000 Pa",
+   "Yalnızca pazar yeri"
+  ],
+  "liked": [],
+  "disliked": [],
+  "issues": []
+ },
+ "roborock-qrevo-c": {
+  "date": "1 Kasım 2026",
+  "verdict": "3D engel algılamalı, su dolumlu, uzayan moplu Roborock. Puan 4,5 (398); Amazon'da 364 ve 249 değerlendirmeli ilanlar var (46,5–56 bin TL). Pazar yerlerinde 54–76 bin TL. 12.000 Pa ile orta seviye.",
+  "forWho": [
+   "Su dolumu isteyen Roborock kullanıcıları"
+  ],
+  "notFor": [
+   "Resmi garanti isteyenler"
+  ],
+  "pros": [
+   "Su dolumu, uzayan mop, 3D engel",
+   "Puan 4,5 (398)"
+  ],
+  "cons": [
+   "Yalnızca pazar yeri; fiyatlar dağınık",
+   "Sıcak su yıkama yok"
+  ],
+  "liked": [],
+  "disliked": [],
+  "issues": []
+ },
+ "tp-link-tapo-rv50-pro-omni": {
+  "date": "1 Kasım 2026",
+  "verdict": "Sıcak su yıkama, kurutma ve deterjan dozlamalı, uzayan moplu tam istasyonlu Tapo. Prote adlı tek satıcı 37 bin TL'ye satıyor. Engel algılama yalnızca tampon; 3 kullanıcı puanı var.",
+  "forWho": [
+   "Tapo ekosistemi kullananlar"
+  ],
+  "notFor": [
+   "Kablo ve oyuncak dolu zeminler"
+  ],
+  "pros": [
+   "Sıcak su yıkama, kurutma, deterjan",
+   "Uzayan mop, 17.000 Pa"
+  ],
+  "cons": [
+   "Engel algılama yalnızca tampon",
+   "Tek satıcı"
+  ],
+  "liked": [],
+  "disliked": [],
+  "issues": []
+ },
+ "samsung-bespoke-jet-bot-combo-ai": {
+  "date": "1 Kasım 2026",
+  "verdict": "Kameralı, su dolumlu, sıcak su yıkama ve kurutmalı Samsung. Pazar yerlerinde 61–80 bin TL. 6.000 Pa emiş bu fiyat için çok düşük; Samsung'un resmi kanalında satılmıyor.",
+  "forWho": [
+   "Samsung SmartThings kullananlar"
+  ],
+  "notFor": [
+   "Fiyat/performans arayanlar"
+  ],
+  "pros": [
+   "Kamera, su dolumu, sıcak su yıkama"
+  ],
+  "cons": [
+   "61 bin TL'ye 6.000 Pa",
+   "Yalnızca pazar yeri"
+  ],
+  "liked": [
+   "Tam otomatik işlev"
+  ],
+  "disliked": [],
+  "issues": []
+ },
+ "roborock-qrevo-s": {
+  "date": "1 Kasım 2026",
+  "verdict": "3D engel algılamalı, su dolumlu, kurutmalı Roborock. Puan 4,7 (810) ile çok yüksek. Pazar yerlerinde 53–76 bin TL; bu fiyat 7.000 Pa'lık bir model için yüksek.",
+  "forWho": [
+   "Kanıtlanmış memnuniyet isteyenler"
+  ],
+  "notFor": [
+   "Fiyat/performans arayanlar"
+  ],
+  "pros": [
+   "Puan 4,7 (810)",
+   "Su dolumu, kurutma"
+  ],
+  "cons": [
+   "7.000 Pa, 53 bin TL üstü",
+   "Yalnızca pazar yeri"
+  ],
+  "liked": [],
+  "disliked": [],
+  "issues": []
+ },
+ "mova-e30-ultra": {
+  "date": "1 Kasım 2026",
+  "verdict": "3D engel algılamalı, mop kaldırmalı tam istasyonlu Mova. Puan 4,7 (150). Yalnızca iki pazar yeri satıcısı var (40,5 bin ve 150 bin TL); sınırlı stok. Mova E40 Ultra büyük perakendecilerde 30 bin TL'ye.",
+  "forWho": [
+   "Tavsiye edilmez (E40 Ultra daha ucuz)"
+  ],
+  "notFor": [
+   "Fiyat/performans arayanlar"
+  ],
+  "pros": [
+   "Puan 4,7 (150)",
+   "3D engel algılama"
+  ],
+  "cons": [
+   "Sınırlı stok, 40 bin TL",
+   "Sıcak su ve kurutma yok"
+  ],
+  "liked": [],
+  "disliked": [],
+  "issues": []
+ },
+ "roborock-s7-max-ultra": {
+  "date": "1 Kasım 2026",
+  "verdict": "2022 modeli Roborock: titreşimli mop, su dolumu, 3D engel algılama. Hepsiburada'da 149 puanın 117'si 5 yıldız. Bugün pazar yerinde 72–115 bin TL'ye satılıyor; bu fiyat çok yüksek. Bir kullanıcı kullanılmış ürün geldiğini, bir diğeri distribütör garantili (Genpa) olduğunu yazıyor.",
+  "forWho": [
+   "Tavsiye edilmez (fiyatı yüksek)"
+  ],
+  "notFor": [
+   "Fiyat/performans arayanlar"
+  ],
+  "pros": [
+   "Kullanıcı memnuniyeti iyi",
+   "Su dolumu, titreşimli mop"
+  ],
+  "cons": [
+   "Eski model, 72 bin TL üstü",
+   "Kullanılmış ürün şikâyeti"
+  ],
+  "liked": [
+   "Her şeyi kendisinin yapması",
+   "Dar alanlarda başarılı"
+  ],
+  "disliked": [
+   "Kullanılmış ürün gönderilmesi",
+   "Kargoda hasar"
+  ],
+  "issues": []
+ },
+ "ecovacs-deebot-t30-pro-omni": {
+  "date": "1 Kasım 2026",
+  "verdict": "Sıcak su yıkama ve kurutmalı tam istasyonlu Ecovacs. Pazar yerlerinde 31–47 bin TL. Şikâyetvar'da T30 serisi için 15 şikâyet var: tampon sıkışması ve uzun servis süreleri (1,5 ay). Resmi kanalda daha yeni T50S 30 bin TL.",
+  "forWho": [
+   "Tavsiye edilmez (T50S daha iyi)"
+  ],
+  "notFor": [
+   "Servis riskine toleransı düşük olanlar"
+  ],
+  "pros": [
+   "Sıcak su yıkama, kurutma"
+  ],
+  "cons": [
+   "Şikâyetvar'da 15 servis/tampon şikâyeti",
+   "Yalnızca pazar yeri"
+  ],
+  "liked": [],
+  "disliked": [],
+  "issues": [
+   "Tampon sıkışması (Şikâyetvar)",
+   "Serviste 1,5 aylık bekleme (Şikâyetvar)"
+  ]
+ },
+ "jonr-t5-pro-gen-2": {
+  "date": "1 Kasım 2026",
+  "verdict": "Uzayan moplu, kurutmalı tam istasyonlu Jonr. İstech İletişim 26–33 bin TL'ye satıyor. Puan 3,8 (95). Engel algılama yalnızca tampon, sıcak su yıkama yok.",
+  "forWho": [
+   "Düşük bütçeye tam istasyon isteyenler"
+  ],
+  "notFor": [
+   "Bilinen marka isteyenler"
+  ],
+  "pros": [
+   "Tam istasyon, uzayan mop"
+  ],
+  "cons": [
+   "Puan 3,8 (95)",
+   "Tampon ile engel algılama, tek satıcı"
+  ],
+  "liked": [],
+  "disliked": [],
+  "issues": []
+ },
+ "roborock-s8-plus": {
+  "date": "1 Kasım 2026",
+  "verdict": "2023 modeli: 3D engel algılamalı, titreşimli mop, toz boşaltma istasyonu. Pazar yerlerinde 41–76 bin TL. 6.000 Pa ve yalnızca toz boşaltma istasyonu bu fiyat için zayıf. Şikâyetvar'da paspas modülü hatası şikâyeti var.",
+  "forWho": [
+   "Tavsiye edilmez (fiyatı yüksek)"
+  ],
+  "notFor": [
+   "Fiyat/performans arayanlar"
+  ],
+  "pros": [
+   "3D engel algılama, titreşimli mop"
+  ],
+  "cons": [
+   "41 bin TL üstü, 6.000 Pa",
+   "Yalnızca pazar yeri; paspas modülü şikâyeti"
+  ],
+  "liked": [],
+  "disliked": [],
+  "issues": [
+   "Sürekli paspas modülü hatası (Şikâyetvar)"
+  ]
+ },
+ "xiaomi-robot-vacuum-x10-plus": {
+  "date": "1 Kasım 2026",
+  "verdict": "Kameralı, su dolumlu, kurutmalı tam istasyonlu Xiaomi. Pazar yerlerinde 28–35 bin TL. Hepsiburada'da 299 puanın 243'ü 5 yıldız; kullanıcılar hızlı haritalamayı ve silmeyi övüyor. 4.000 Pa emiş ve 120 dk pil zayıf. Şikâyetvar'da sensör ve şarj arızası şikâyetleri var.",
+  "forWho": [
+   "Su dolumunu 30 bin TL altında isteyen, sert zeminli evler"
+  ],
+  "notFor": [
+   "Halılı evler (4.000 Pa)"
+  ],
+  "pros": [
+   "Kamera, su dolumu, kurutma",
+   "Kullanıcı memnuniyeti iyi (243/299)"
+  ],
+  "cons": [
+   "4.000 Pa, 120 dk pil",
+   "Sensör ve şarj arızası şikâyetleri"
+  ],
+  "liked": [
+   "Hızlı haritalama, Mi Home uygulaması",
+   "Silme performansı, ped kurutma"
+  ],
+  "disliked": [
+   "İstasyonun büyük olması"
+  ],
+  "issues": [
+   "Tekrarlayan sensör hatası (Şikâyetvar)",
+   "Tekrarlayan şarj arızası, 4.500 TL ücret (Şikâyetvar)"
+  ]
+ },
+ "roborock-q8-max-pro-plus": {
+  "date": "1 Kasım 2026",
+  "verdict": "3D engel algılamalı, mop kaldırmalı, toz boşaltmalı Roborock; 250 dk pil. Pazar yerlerinde 33–45 bin TL. Puan 4,1 (553) ama Hepsiburada'da 502 puanın 84'ü 1 yıldız. Kullanıcılar halıda mop kaldırmayı ve haritalamayı övüyor; Şikâyetvar'da tekerlek sıkışması ve fırça kapağı kırılması şikâyetleri var.",
+  "forWho": [
+   "Toz boşaltmalı, mop kaldırmalı model arayanlar"
+  ],
+  "notFor": [
+   "Gerçek paspas bekleyenler (sabit ped)"
+  ],
+  "pros": [
+   "Halıda mop kaldırma, 250 dk pil",
+   "Haritalama ve kaldığı yerden devam"
+  ],
+  "cons": [
+   "1 yıldız oranı yüksek (84/502)",
+   "Tekerlek ve fırça kapağı şikâyetleri"
+  ],
+  "liked": [
+   "Halıda paspası kaldırması",
+   "Toz torbasını kendisinin boşaltması",
+   "Haritalama, kaldığı yerden devam etmesi"
+  ],
+  "disliked": [],
+  "issues": [
+   "Şarjdan çıkıp kapanma (Şikâyetvar)",
+   "Ana fırça kapağı kırılması (Şikâyetvar)",
+   "Tekrarlayan ana tekerlek sıkışması (Şikâyetvar)"
+  ]
+ },
+ "roborock-q8-max-plus": {
+  "date": "1 Kasım 2026",
+  "verdict": "3D engel algılamalı, toz boşaltmalı Roborock. Puan 4,6 (482); Hepsiburada'da 482 puanın 396'sı 5 yıldız. Kullanıcılar çekiş gücünü ve tam otomatik boşaltmayı övüyor. Amazon'da bir satıcı 30 bin TL'ye satıyor; diğerleri 38–50 bin TL.",
+  "forWho": [
+   "Kanıtlanmış, toz boşaltmalı model isteyenler"
+  ],
+  "notFor": [
+   "Gerçek paspas bekleyenler"
+  ],
+  "pros": [
+   "Puan 4,6 (482)",
+   "Çekiş gücü, 240 dk pil"
+  ],
+  "cons": [
+   "Mop kaldırma yok, basınçlı ped",
+   "Yalnızca pazar yeri; fiyatlar dağınık"
+  ],
+  "liked": [
+   "Çekiş gücü (çorap bile çekiyor)",
+   "Tek tuşla süpürüp hazneyi boşaltması"
+  ],
+  "disliked": [
+   "Bir üründe süpürme sırasında sürtünme sesi"
+  ],
+  "issues": []
+ },
+ "philips-homerun-7000-serisi-aqua-xu7100": {
+  "date": "1 Kasım 2026",
+  "verdict": "3D engel algılamalı, titreşimli moplu, toz boşaltmalı Philips. Pazar yerlerinde 35,5–47 bin TL. 5.000 Pa emiş bu fiyat için çok zayıf.",
+  "forWho": [
+   "Tavsiye edilmez"
+  ],
+  "notFor": [
+   "Fiyat/performans arayanlar"
+  ],
+  "pros": [
+   "3D engel algılama, titreşimli mop"
+  ],
+  "cons": [
+   "35 bin TL'ye 5.000 Pa",
+   "Yalnızca pazar yeri"
+  ],
+  "liked": [],
+  "disliked": [],
+  "issues": []
+ },
+ "roborock-s8": {
+  "date": "1 Kasım 2026",
+  "verdict": "İstasyonsuz Roborock S8: 3D engel algılama, titreşimli mop, mop kaldırma. Pazar yerlerinde 30–34 bin TL. Şikâyetvar'da orijinal HEPA filtre bulunamaması ve servis şikâyetleri var. İstasyonsuz bir model için fiyat yüksek.",
+  "forWho": [
+   "Tavsiye edilmez"
+  ],
+  "notFor": [
+   "Fiyat/performans arayanlar"
+  ],
+  "pros": [
+   "3D engel algılama, titreşimli mop"
+  ],
+  "cons": [
+   "İstasyon yok, 30 bin TL",
+   "Filtre bulunamama şikâyetleri"
+  ],
+  "liked": [],
+  "disliked": [],
+  "issues": [
+   "Orijinal HEPA filtre stok sorunu (Şikâyetvar)",
+   "Garanti servisi arızayı çözmedi (Şikâyetvar)"
+  ]
+ },
+ "roborock-q8-max": {
+  "date": "1 Kasım 2026",
+  "verdict": "İstasyonsuz Roborock Q8 Max: 3D engel algılama, 240 dk pil. Puan 4,6 (2.264) ile çok yüksek. Pazar yerlerinde 15,5–22 bin TL. Şikâyetvar'da ana fırça kapağı kırılması ve servis şikâyetleri var.",
+  "forWho": [
+   "15–20 bin TL'ye kanıtlanmış süpürme isteyenler"
+  ],
+  "notFor": [
+   "Kendi kendine boşaltma isteyenler"
+  ],
+  "pros": [
+   "Puan 4,6 (2.264)",
+   "3D engel algılama, 240 dk pil"
+  ],
+  "cons": [
+   "İstasyon yok, basınçlı ped",
+   "Fırça kapağı kırılması şikâyetleri"
+  ],
+  "liked": [],
+  "disliked": [],
+  "issues": [
+   "Ana fırça kapağı kırılması (Şikâyetvar)",
+   "Servisten kırık dönme (Şikâyetvar)"
+  ]
+ },
+ "tefal-rg9695-x-plorer-serie": {
+  "date": "1 Kasım 2026",
+  "verdict": "Kameralı, titreşimli moplu, toz boşaltmalı Tefal. Pazar yerlerinde 33–75 bin TL. 8.000 Pa ve 120 dk pil bu fiyat için zayıf.",
+  "forWho": [
+   "Tavsiye edilmez"
+  ],
+  "notFor": [
+   "Fiyat/performans arayanlar"
+  ],
+  "pros": [
+   "Kamera ile engel tanıma, toz boşaltma"
+  ],
+  "cons": [
+   "33 bin TL üstü, 120 dk",
+   "Yalnızca pazar yeri; yorum yok"
+  ],
+  "liked": [],
+  "disliked": [],
+  "issues": []
+ },
+ "roborock-q7-max-plus": {
+  "date": "1 Kasım 2026",
+  "verdict": "2021 modeli: 4.200 Pa, basınçlı ped, toz boşaltma. Pazar yerlerinde 39–46 bin TL; bu fiyat eski ve zayıf bir model için gerçek dışı.",
+  "forWho": [
+   "Tavsiye edilmez"
+  ],
+  "notFor": [
+   "Herkes"
+  ],
+  "pros": [
+   "Toz boşaltma"
+  ],
+  "cons": [
+   "Eski model, 4.200 Pa",
+   "39 bin TL üstü"
+  ],
+  "liked": [],
+  "disliked": [],
+  "issues": []
+ },
+ "ecovacs-deebot-n20e": {
+  "date": "1 Kasım 2026",
+  "verdict": "10–12 bin TL'lik Ecovacs: 11.000 Pa, 350 dk pil, titreşimli mop. Hepsiburada'da N20 serisi ile ortak sayfada 163 puanın 121'i 5 yıldız; kullanıcılar hızlı haritalamayı ve emişi övüyor. Yalnızca pazar yeri satıcıları satıyor. Kurulumda 2,4 GHz Wi-Fi gerekiyor.",
+  "forWho": [
+   "Uygun fiyata güçlü emiş ve uzun pil isteyenler"
+  ],
+  "notFor": [
+   "Kendi kendine boşaltma isteyenler"
+  ],
+  "pros": [
+   "11.000 Pa, 350 dk pil, titreşimli mop",
+   "10–12 bin TL"
+  ],
+  "cons": [
+   "Yalnızca pazar yeri",
+   "Kurulumda 2,4 GHz Wi-Fi gerekli"
+  ],
+  "liked": [
+   "Hızlı ve doğru haritalama (seri ortak sayfa)",
+   "Emiş gücü"
+  ],
+  "disliked": [
+   "Kurulum sırasında zorluk"
+  ],
+  "issues": []
+ },
+ "dreame-d10-plus-gen-2": {
+  "date": "1 Kasım 2026",
+  "verdict": "Toz boşaltmalı, 285 dk pilli Dreame. Hepsiburada'da 714 puanın 586'sı 5 yıldız; kullanıcılar halı ve saç toplamadaki başarısını övüyor. Pazar yerlerinde 27–32 bin TL. 6.000 Pa ve sabit ped mop zayıf; bu fiyata tam istasyonlu modeller var.",
+  "forWho": [
+   "Ağırlıklı süpürme isteyen, kanıtlanmış model arayanlar"
+  ],
+  "notFor": [
+   "Gerçek paspas bekleyenler"
+  ],
+  "pros": [
+   "Kullanıcı memnuniyeti yüksek (586/714)",
+   "285 dk pil, toz boşaltma"
+  ],
+  "cons": [
+   "Sabit ped mop",
+   "27 bin TL'ye tam istasyon alınabilir"
+  ],
+  "liked": [
+   "Halı ve saç toplama",
+   "Çalışanlar için pratiklik"
+  ],
+  "disliked": [
+   "Silme performansının yetersiz bulunması",
+   "Hazne çok doluyken boşaltamaması (bir kez)"
+  ],
+  "issues": []
+ },
+ "ezviz-re5-plus": {
+  "date": "1 Kasım 2026",
+  "verdict": "Toz boşaltmalı, basınçlı pedli Ezviz. Pazar yerlerinde 20,7–24 bin TL. Aynı markanın RE4 Plus'ı Ezviz Türkiye'de 17 bin TL. 4.000 Pa emiş zayıf.",
+  "forWho": [
+   "Tavsiye edilmez (RE4 Plus daha ucuz)"
+  ],
+  "notFor": [
+   "Halılı evler"
+  ],
+  "pros": [
+   "Toz boşaltma, 240 dk pil"
+  ],
+  "cons": [
+   "4.000 Pa",
+   "Yalnızca pazar yeri; yorum yok"
+  ],
+  "liked": [],
+  "disliked": [],
+  "issues": []
+ },
+ "ecovacs-deebot-n20-pro-plus": {
+  "date": "1 Kasım 2026",
+  "verdict": "N20 Pro'nun toz boşaltma istasyonlu versiyonu. Puan 3,9 (96); Hepsiburada'da 96 puanın 22'si 1 yıldız. Kullanıcılar haritalamayı ve kedi tüyünde başarısını övüyor; bazıları kurulumun zor olduğunu ve robotun bazı yerlere çarptığını yazıyor. Pazar yerlerinde 17–31 bin TL (sınırlı stok).",
+  "forWho": [
+   "Evcil hayvanlı evlerde toz boşaltma isteyenler"
+  ],
+  "notFor": [
+   "Kurulumla uğraşmak istemeyenler"
+  ],
+  "pros": [
+   "Toz boşaltma, 300 dk pil",
+   "Kedi tüyünde başarılı"
+  ],
+  "cons": [
+   "1 yıldız oranı yüksek (22/96)",
+   "Zor kurulum, bazı yerlere çarpma"
+  ],
+  "liked": [
+   "Hızlı haritalama (100 m² 15 dk)",
+   "Kendi haznesini boşaltması",
+   "Kedi tüyünde çekiş"
+  ],
+  "disliked": [
+   "Bazı bölgelerde sürekli çarpması",
+   "Kurulum ve haritalamanın stresli olması"
+  ],
+  "issues": []
+ },
+ "dersar-l1-plus": {
+  "date": "1 Kasım 2026",
+  "verdict": "8,5–11 bin TL'lik LiDAR'lı, mop kaldırmalı robot; 8,6 cm yüksekliği alçak mobilyalar için uygun. Yalnızca pazar yeri satıcıları var (sınırlı stok). Marka bilinmiyor, kullanıcı yorumu yok.",
+  "forWho": [
+   "Çok düşük bütçe, alçak mobilya"
+  ],
+  "notFor": [
+   "Servis güvencesi isteyenler"
+  ],
+  "pros": [
+   "8,6 cm, LiDAR, mop kaldırma",
+   "8,5 bin TL"
+  ],
+  "cons": [
+   "Bilinmeyen marka, sınırlı stok",
+   "Yorum yok"
+  ],
+  "liked": [],
+  "disliked": [],
+  "issues": []
+ },
+ "roborock-q7-max": {
+  "date": "1 Kasım 2026",
+  "verdict": "2021 modeli istasyonsuz Roborock: 4.200 Pa, basınçlı ped. Puan 4,7 (6.248). Pazar yerlerinde 17–44 bin TL; uygun ilan bulunursa (17 bin TL civarı) bile yeni modellerin gerisinde.",
+  "forWho": [
+   "Tavsiye edilmez (eski model)"
+  ],
+  "notFor": [
+   "Fiyat/performans arayanlar"
+  ],
+  "pros": [
+   "Puan 4,7 (6.248)"
+  ],
+  "cons": [
+   "Eski model, 4.200 Pa",
+   "Fiyatlar 17–44 bin TL dağınık"
+  ],
+  "liked": [],
+  "disliked": [],
+  "issues": []
+ },
+ "arcelik-imperium-robo-3-1-rs-9231": {
+  "date": "1 Kasım 2026",
+  "verdict": "LiDAR'lı, toz boşaltmalı Arçelik. Pazar yerlerinde 26–32 bin TL. Puan 4,6 (29) ama bir kullanıcı bir yılda 10 kez servis gördüğünü yazıyor; Şikâyetvar'da 14 şikâyet var: şarj olmama, batarya arızası ve 5.800 TL'lik pil değişimi.",
+  "forWho": [
+   "Tavsiye edilmez"
+  ],
+  "notFor": [
+   "Güvenilirlik arayanlar"
+  ],
+  "pros": [
+   "Toz boşaltma, 240 dk pil"
+  ],
+  "cons": [
+   "5.000 Pa, sabit ped",
+   "Şikâyetvar'da 14 batarya/şarj şikâyeti"
+  ],
+  "liked": [
+   "Şık tasarım",
+   "Temizlik (ilk aylarda)"
+  ],
+  "disliked": [
+   "Bir yılda 10 servis, 5 tamir"
+  ],
+  "issues": [
+   "Şarj olmama (Şikâyetvar)",
+   "Batarya arızası, yüksek değişim ücreti (Şikâyetvar)"
+  ]
+ },
+ "tp-link-tapo-rv30-max-plus": {
+  "date": "1 Kasım 2026",
+  "verdict": "LiDAR'lı, toz boşaltmalı Tapo. Prote adlı satıcı 13,6–15,5 bin TL'ye satıyor. 5.300 Pa ve sabit ped orta seviye. Şikâyetvar'da sürekli arıza şikâyeti var.",
+  "forWho": [
+   "15 bin TL altında toz boşaltma isteyenler"
+  ],
+  "notFor": [
+   "Gerçek paspas bekleyenler"
+  ],
+  "pros": [
+   "Toz boşaltma, LiDAR",
+   "13,6 bin TL"
+  ],
+  "cons": [
+   "Tek satıcı",
+   "Arıza şikâyeti (1)"
+  ],
+  "liked": [],
+  "disliked": [],
+  "issues": [
+   "Sürekli arıza, iade talebi (Şikâyetvar, 1)"
+  ]
+ },
+ "narwal-freo-x-plus": {
+  "date": "1 Kasım 2026",
+  "verdict": "İstasyonsuz, mop kaldırmalı, basınçlı pedli Narwal. Pazar yerlerinde 16–19 bin TL. Puan 4,4 (37); kullanıcılar malzeme kalitesini ve silmeyi övüyor. Bir kullanıcı birden fazla bölge seçildiğinde yalnızca birini temizlediğini yazıyor.",
+  "forWho": [
+   "İstasyonsuz, kaliteli silme isteyenler"
+  ],
+  "notFor": [
+   "Kendi kendine boşaltma isteyenler"
+  ],
+  "pros": [
+   "Malzeme kalitesi, silme performansı",
+   "Puan 4,4 (37)"
+  ],
+  "cons": [
+   "İstasyon yok",
+   "Çoklu bölge temizliğinde hata"
+  ],
+  "liked": [
+   "Çekiş ve silme",
+   "Malzeme kalitesi"
+  ],
+  "disliked": [
+   "Birden fazla bölge seçildiğinde yalnızca birini temizlemesi"
+  ],
+  "issues": []
+ },
+ "roborock-q8-plus": {
+  "date": "1 Kasım 2026",
+  "verdict": "LiDAR'lı, 10.000 Pa, toz boşaltmalı Roborock; sabit ped mop. Pazar yerlerinde 30–45 bin TL. Bu fiyata tam istasyonlu modeller var. Kullanıcı yorumu bulunamadı.",
+  "forWho": [
+   "Tavsiye edilmez"
+  ],
+  "notFor": [
+   "Fiyat/performans arayanlar"
+  ],
+  "pros": [
+   "Toz boşaltma, 10.000 Pa"
+  ],
+  "cons": [
+   "30 bin TL'ye sabit ped",
+   "Yalnızca pazar yeri; yorum yok"
+  ],
+  "liked": [],
+  "disliked": [],
+  "issues": []
+ },
+ "xiaomi-robot-vacuum-s20-plus": {
+  "date": "1 Kasım 2026",
+  "verdict": "İstasyonsuz, döner moplu, mop kaldırmalı Xiaomi. Pazar yerlerinde 20–25 bin TL. Hepsiburada'da 57 puanın 50'si 5 yıldız; kullanıcılar döner mopun elle silmiş gibi temizlediğini ve sessizliği övüyor. Şikâyetvar'da Xiaomi robotları için 20 şikâyet var (yazılım, haritalama, ağ bağlantısı).",
+  "forWho": [
+   "İstasyonsuz ama döner moplu model isteyenler"
+  ],
+  "notFor": [
+   "Kendi kendine boşaltma isteyenler"
+  ],
+  "pros": [
+   "Döner mop, mop kaldırma",
+   "Puan 4,7 (57); sessiz"
+  ],
+  "cons": [
+   "İstasyon yok, 6.000 Pa",
+   "Yazılım ve bağlantı şikâyetleri"
+  ],
+  "liked": [
+   "Döner mopla elle silmiş gibi temizlik",
+   "Hızlı haritalama (10 dk)",
+   "Sessiz çalışma, iyi engel algılama"
+  ],
+  "disliked": [],
+  "issues": [
+   "Sürekli yazılım ve haritalama arızası (Şikâyetvar)",
+   "Uygulamada ağ bağlantısı hatası (Şikâyetvar)"
+  ]
+ },
+ "xiaomi-robot-vacuum-s10-plus": {
+  "date": "1 Kasım 2026",
+  "verdict": "İstasyonsuz, döner moplu, 3D engel algılamalı eski Xiaomi. Pazar yerlerinde 20–33 bin TL. 4.000 Pa ve 120 dk pil zayıf; S20+ benzer fiyata daha iyi. Şikâyetvar'da servis şikâyetleri var.",
+  "forWho": [
+   "Tavsiye edilmez (S20+ daha iyi)"
+  ],
+  "notFor": [
+   "Büyük evler"
+  ],
+  "pros": [
+   "Döner mop, 3D engel algılama"
+  ],
+  "cons": [
+   "4.000 Pa, 120 dk",
+   "Servis şikâyetleri"
+  ],
+  "liked": [],
+  "disliked": [],
+  "issues": [
+   "Servisten hasarlı dönme (Şikâyetvar)",
+   "Kullanıcı hatası iddiasıyla yüksek ücret (Şikâyetvar)"
+  ]
+ },
+ "roborock-q5-pro": {
+  "date": "1 Kasım 2026",
+  "verdict": "İstasyonsuz, 240 dk pilli Roborock; sabit ped. Pazar yerlerinde 29–50 bin TL; bu fiyat istasyonsuz bir model için gerçek dışı.",
+  "forWho": [
+   "Tavsiye edilmez"
+  ],
+  "notFor": [
+   "Herkes"
+  ],
+  "pros": [
+   "240 dk pil"
+  ],
+  "cons": [
+   "29 bin TL üstü, istasyon yok",
+   "Wi-Fi arızası şikâyeti"
+  ],
+  "liked": [],
+  "disliked": [],
+  "issues": [
+   "Wi-Fi arızası (Şikâyetvar, 1)"
+  ]
+ },
+ "ecovacs-deebot-n10": {
+  "date": "1 Kasım 2026",
+  "verdict": "LiDAR'lı, 300 dk pilli, mop kaldırmalı Ecovacs; istasyon yok. Yalnızca Hepsiburada'da iki pazar yeri satıcısı 17–19 bin TL'ye satıyor. 143 puanın 112'si 5 yıldız; kullanıcılar Türkçe desteği ve oda bazlı temizliği övüyor. Bazıları haritayı tekrar kullanmadığını ve sık çevrim dışı olduğunu yazıyor. N20e daha ucuz ve güçlü.",
+  "forWho": [
+   "Tavsiye edilmez (N20e daha ucuz)"
+  ],
+  "notFor": [
+   "Fiyat/performans arayanlar"
+  ],
+  "pros": [
+   "300 dk pil, Türkçe destek",
+   "Kullanıcı memnuniyeti iyi"
+  ],
+  "cons": [
+   "4.300 Pa, 17 bin TL",
+   "Harita ve bağlantı sorunları"
+  ],
+  "liked": [
+   "Türkçe destek, emiş ve su ayarları",
+   "Dubleks harita, oda sırası seçimi"
+  ],
+  "disliked": [
+   "Haritayı tekrar kullanmayıp yeniden haritalaması",
+   "Sık çevrim dışı olması"
+  ],
+  "issues": [
+   "Servisin eski parça kullanması (Şikâyetvar, 1)"
+  ]
+ },
+ "tp-link-tapo-rv20-max": {
+  "date": "1 Kasım 2026",
+  "verdict": "8,3 cm yüksekliğinde, LiDAR'lı, mop kaldırmalı Tapo; istasyon yok. Satıcı fiyatları 11 binden 24 bin TL'ye dağınık; sınırlı stok. Kullanıcı yorumu bulunamadı.",
+  "forWho": [
+   "Alçak mobilyalı evler"
+  ],
+  "notFor": [
+   "Kendi kendine boşaltma isteyenler"
+  ],
+  "pros": [
+   "8,3 cm, mop kaldırma"
+  ],
+  "cons": [
+   "Sınırlı stok, dağınık fiyat",
+   "Yorum yok"
+  ],
+  "liked": [],
+  "disliked": [],
+  "issues": []
+ },
+ "hobot-legee-d8": {
+  "date": "1 Kasım 2026",
+  "verdict": "Paspas odaklı, basınçlı pedli, LiDAR'lı Hobot; istasyon yok. Pazar yerlerinde 20–36 bin TL. 5.000 Pa emiş ve istasyonsuz yapı bu fiyat için zayıf.",
+  "forWho": [
+   "Tavsiye edilmez"
+  ],
+  "notFor": [
+   "Fiyat/performans arayanlar"
+  ],
+  "pros": [
+   "Basınçlı ped ile paspas"
+  ],
+  "cons": [
+   "İstasyon yok, 5.000 Pa",
+   "20 bin TL üstü; yorum yok"
+  ],
+  "liked": [],
+  "disliked": [],
+  "issues": []
+ },
+ "karcher-rcv-5": {
+  "date": "1 Kasım 2026",
+  "verdict": "Kameralı, LiDAR'lı, istasyonsuz Karcher. Pazar yerlerinde 15,5–21 bin TL. Hepsiburada'daki 3 puanın hepsi 5 yıldız; bir kullanıcı 3 kedili evde memnun. Başka bir kullanıcı (Xiaomi S20+ yorumunda) çekmediği için iade ettiğini yazıyor. 120 dk pil kısa.",
+  "forWho": [
+   "Kamera ile engel tanıma isteyen, istasyonsuz"
+  ],
+  "notFor": [
+   "Büyük evler (120 dk)"
+  ],
+  "pros": [
+   "Kamera ile engel tanıma",
+   "Kedi tüyünde memnuniyet"
+  ],
+  "cons": [
+   "120 dk pil, sabit ped",
+   "Filtre yıkanamıyor"
+  ],
+  "liked": [
+   "Kedili evde temizlik",
+   "İnce tozu alması"
+  ],
+  "disliked": [
+   "Filtresinin yıkanamaması",
+   "Zayıf çekiş ve silme (başka bir üründeki karşılaştırma)"
+  ],
+  "issues": []
+ },
+ "philips-homerun-3000-series-aqua-xu3100-xu3110": {
+  "date": "1 Kasım 2026",
+  "verdict": "4.000 Pa, sabit ped, toz boşaltmalı Philips. Pazar yerlerinde 40,5–65 bin TL; bu fiyat gerçek dışı.",
+  "forWho": [
+   "Tavsiye edilmez"
+  ],
+  "notFor": [
+   "Herkes"
+  ],
+  "pros": [
+   "Toz boşaltma, 200 dk"
+  ],
+  "cons": [
+   "40 bin TL'ye 4.000 Pa",
+   "Yalnızca pazar yeri"
+  ],
+  "liked": [],
+  "disliked": [],
+  "issues": []
+ },
+ "tp-link-tapo-rv30": {
+  "date": "1 Kasım 2026",
+  "verdict": "LiDAR'lı, istasyonsuz Tapo. Pazar yerlerinde 16–26 bin TL. Bir kullanıcı haritalamayı ve eşik geçişini övüyor. Şikâyetvar'da TP-Link robotları için yedek parça gecikmesi şikâyetleri var. 4.200 Pa zayıf.",
+  "forWho": [
+   "Tavsiye edilmez (RV30 Max daha ucuz)"
+  ],
+  "notFor": [
+   "Halılı evler"
+  ],
+  "pros": [
+   "Başarılı haritalama, eşik geçişi"
+  ],
+  "cons": [
+   "4.200 Pa, istasyon yok",
+   "Yedek parça gecikmesi şikâyetleri"
+  ],
+  "liked": [
+   "Haritalamanın zamanla ayrıntılanması",
+   "Mermer eşikten geçebilmesi"
+  ],
+  "disliked": [],
+  "issues": [
+   "Yedek parça tesliminde uzun gecikme (Şikâyetvar)"
+  ]
+ },
+ "xiaomi-robot-vacuum-s10t": {
+  "date": "1 Kasım 2026",
+  "verdict": "11–12 bin TL'lik LiDAR'lı Xiaomi: 8.000 Pa, sabit ped, istasyon yok. Puan 4,3 (2.381). Yalnızca pazar yeri satıcıları satıyor. Şikâyetvar'da su verme arızası ve yedek parça yokluğu şikâyetleri var.",
+  "forWho": [
+   "12 bin TL'ye LiDAR ve 8.000 Pa isteyenler"
+  ],
+  "notFor": [
+   "Gerçek paspas bekleyenler"
+  ],
+  "pros": [
+   "Puan 4,3 (2.381)",
+   "8.000 Pa, 11 bin TL"
+  ],
+  "cons": [
+   "Sabit ped, istasyon yok",
+   "Yedek parça ve su verme şikâyetleri"
+  ],
+  "liked": [],
+  "disliked": [],
+  "issues": [
+   "Su verme arızası (Şikâyetvar)",
+   "Yedek parça yokluğu (Şikâyetvar)"
+  ]
+ },
+ "tp-link-tapo-rv30-max": {
+  "date": "1 Kasım 2026",
+  "verdict": "Amazon'da bir satıcı 9 bin TL'ye satıyor; LiDAR, 5.300 Pa, 150 dk pil, istasyon yok. Puan 3,7 (34). Diğer ilanlar 16–32 bin TL ile aşırı pahalı.",
+  "forWho": [
+   "9 bin TL'ye LiDAR isteyenler"
+  ],
+  "notFor": [
+   "Gerçek paspas bekleyenler"
+  ],
+  "pros": [
+   "LiDAR, Amazon'da 9 bin TL"
+  ],
+  "cons": [
+   "Puan 3,7",
+   "Diğer ilanlar çok pahalı"
+  ],
+  "liked": [],
+  "disliked": [],
+  "issues": []
+ },
+ "anker-eufy-robovac-x8-hybrid": {
+  "date": "1 Kasım 2026",
+  "verdict": "2021 modeli Eufy: LiDAR, 4.000 Pa (çift türbin), sabit ped, istasyon yok. Pazar yerlerinde 11–17 bin TL. Eski bir model; aynı fiyata daha yeni ve güçlü modeller var.",
+  "forWho": [
+   "Tavsiye edilmez"
+  ],
+  "notFor": [
+   "Fiyat/performans arayanlar"
+  ],
+  "pros": [
+   "LiDAR"
+  ],
+  "cons": [
+   "Eski model, 4.000 Pa",
+   "Yalnızca pazar yeri"
+  ],
+  "liked": [],
+  "disliked": [],
+  "issues": []
+ },
+ "electrolux-er71uw2sw": {
+  "date": "1 Kasım 2026",
+  "verdict": "LiDAR'lı, toz boşaltmalı, sabit ped moplu Electrolux. Pazar yerlerinde 19–32 bin TL. 4.000 Pa emiş bu fiyat için zayıf. Kullanıcı yorumu bulunamadı.",
+  "forWho": [
+   "Tavsiye edilmez"
+  ],
+  "notFor": [
+   "Fiyat/performans arayanlar"
+  ],
+  "pros": [
+   "Toz boşaltma, 175 dk"
+  ],
+  "cons": [
+   "4.000 Pa",
+   "Yalnızca pazar yeri; yorum yok"
+  ],
+  "liked": [],
+  "disliked": [],
+  "issues": []
+ },
+ "roborock-q8": {
+  "date": "1 Kasım 2026",
+  "verdict": "İstasyonsuz, 10.000 Pa, LiDAR'lı Roborock. Pazar yerlerinde 15,5–16,5 bin TL (bir ilan 35 bin TL). Puan 4,4 (11). Sabit ped mop.",
+  "forWho": [
+   "16 bin TL'ye güçlü süpürme isteyenler"
+  ],
+  "notFor": [
+   "Gerçek paspas bekleyenler"
+  ],
+  "pros": [
+   "10.000 Pa, dolaşmayan fırça",
+   "Puan 4,4"
+  ],
+  "cons": [
+   "İstasyon yok, sabit ped",
+   "Yalnızca pazar yeri"
+  ],
+  "liked": [],
+  "disliked": [],
+  "issues": []
+ },
+ "irobot-roomba-combo-j5-plus": {
+  "date": "1 Kasım 2026",
+  "verdict": "Kamera ile gezinen, 3D engel algılamalı, toz boşaltmalı iRobot. Lin Grup 18 bin TL'ye satıyor. Puan 3,6 (26); 75 dk pil ve 2.800 Pa zayıf. iRobot'un mali durumu yedek parça açısından risk.",
+  "forWho": [
+   "Kablo ve oyuncak dolu küçük evler"
+  ],
+  "notFor": [
+   "Büyük evler (75 dk)",
+   "Uzun vadeli parça desteği arayanlar"
+  ],
+  "pros": [
+   "3D engel algılama, toz boşaltma",
+   "8,7 cm"
+  ],
+  "cons": [
+   "75 dk pil, 2.800 Pa",
+   "Puan 3,6; iRobot'un geleceği belirsiz"
+  ],
+  "liked": [],
+  "disliked": [],
+  "issues": []
+ },
+ "mamibot-exvac800s": {
+  "date": "1 Kasım 2026",
+  "verdict": "LiDAR'lı, toz boşaltmalı, sabit ped moplu Mamibot. Pazar yerlerinde 35–39 bin TL (sınırlı stok); 5.000 Pa emiş için çok pahalı.",
+  "forWho": [
+   "Tavsiye edilmez"
+  ],
+  "notFor": [
+   "Herkes"
+  ],
+  "pros": [
+   "Toz boşaltma"
+  ],
+  "cons": [
+   "35 bin TL'ye 5.000 Pa",
+   "Sınırlı stok; yorum yok"
+  ],
+  "liked": [],
+  "disliked": [],
+  "issues": []
+ },
+ "grundig-vcr-6330": {
+  "date": "1 Kasım 2026",
+  "verdict": "LiDAR'lı, 240 dk pilli, sabit ped moplu Grundig; istasyon yok. Pazar yerlerinde 15–16,6 bin TL. 5.000 Pa zayıf; aynı fiyata daha güçlü modeller var.",
+  "forWho": [
+   "Arçelik grubu servisini isteyenler"
+  ],
+  "notFor": [
+   "Fiyat/performans arayanlar"
+  ],
+  "pros": [
+   "240 dk pil"
+  ],
+  "cons": [
+   "5.000 Pa, istasyon yok",
+   "Yorum yok"
+  ],
+  "liked": [],
+  "disliked": [],
+  "issues": []
+ },
+ "viomi-v5-pro": {
+  "date": "1 Kasım 2026",
+  "verdict": "2021 modeli Viomi: LiDAR, 4.000 Pa, sabit ped, istasyon yok. Pazar yerlerinde 12–15,5 bin TL. Şikâyetvar'da 11 şikâyet var: haritalama hatası, istasyonu bulamama ve 7.500–9.000 TL onarım ücretleri.",
+  "forWho": [
+   "Tavsiye edilmez"
+  ],
+  "notFor": [
+   "Herkes"
+  ],
+  "pros": [
+   "LiDAR"
+  ],
+  "cons": [
+   "Eski model, 4.000 Pa",
+   "Şikâyetvar'da 11 arıza/onarım ücreti şikâyeti"
+  ],
+  "liked": [],
+  "disliked": [],
+  "issues": [
+   "Haritalama hatası ve 7.500 TL onarım ücreti (Şikâyetvar)",
+   "Şarj istasyonunu bulamama (Şikâyetvar)",
+   "Servisin 9.000 TL ücret istemesi (Şikâyetvar)"
+  ]
+ },
+ "irobot-roomba-combo-j7-plus": {
+  "date": "1 Kasım 2026",
+  "verdict": "Kamera ile gezinen, 3D engel algılamalı, kalkan mop kollu, toz boşaltmalı iRobot. Amazon'da bir satıcı 25 bin TL'ye satıyor; diğerleri 31–48 bin TL. Puan 4,0 (17). Şikâyetvar'da memnuniyetsizlik şikâyetleri var; iRobot'un mali durumu yedek parça açısından risk.",
+  "forWho": [
+   "Kablo ve oyuncak dolu evler"
+  ],
+  "notFor": [
+   "Uzun vadeli parça desteği arayanlar"
+  ],
+  "pros": [
+   "3D engel algılama, toz boşaltma",
+   "8,7 cm"
+  ],
+  "cons": [
+   "Sabit ped, emiş belirtilmemiş",
+   "iRobot'un geleceği belirsiz"
+  ],
+  "liked": [],
+  "disliked": [],
+  "issues": [
+   "Genel memnuniyetsizlik (Şikâyetvar, 2)"
+  ]
+ },
+ "philips-homerun-3000-series-aqua": {
+  "date": "1 Kasım 2026",
+  "verdict": "LiDAR'lı, 200 dk pilli, sabit ped moplu Philips; istasyon yok. Pazar yerlerinde 11–16,5 bin TL. 4.000 Pa emiş zayıf.",
+  "forWho": [
+   "Sadece sert zeminli küçük evler"
+  ],
+  "notFor": [
+   "Halılı evler"
+  ],
+  "pros": [
+   "200 dk pil, LiDAR"
+  ],
+  "cons": [
+   "4.000 Pa, sabit ped",
+   "Yorum yok"
+  ],
+  "liked": [],
+  "disliked": [],
+  "issues": []
+ },
+ "xiaomi-mi-robot-vacuum-mop-2-pro": {
+  "date": "1 Kasım 2026",
+  "verdict": "2021'in çok satan Xiaomi'si: LiDAR, titreşimli mop. Puan 4,7 (4.239). Pazar yerlerinde 11–12,3 bin TL. 3.000 Pa ve 110 dk pil bugün zayıf; Şikâyetvar'da yedek su haznesi bulunamama ve batarya şikâyetleri var.",
+  "forWho": [
+   "Tavsiye edilmez (yeni modeller daha iyi)"
+  ],
+  "notFor": [
+   "Büyük evler",
+   "Halılı evler"
+  ],
+  "pros": [
+   "Puan 4,7 (4.239)",
+   "Titreşimli mop"
+  ],
+  "cons": [
+   "3.000 Pa, 110 dk",
+   "Yedek parça ve batarya şikâyetleri"
+  ],
+  "liked": [],
+  "disliked": [],
+  "issues": [
+   "Yedek su haznesi temin edilememesi (Şikâyetvar)",
+   "Hızlı batarya tüketimi, servis reddi (Şikâyetvar)"
+  ]
+ },
+ "tefal-rg9075-x-plorer-serie-130-ai": {
+  "date": "1 Kasım 2026",
+  "verdict": "8 cm yüksekliğinde, 3D engel algılamalı, LiDAR'lı Tefal; istasyon yok. Pazar yerlerinde 10–17 bin TL. Puan 4,1 (49). 2.700 Pa ve 120 dk pil zayıf; Şikâyetvar'da Wi-Fi ve uygulama donma şikâyetleri var.",
+  "forWho": [
+   "Alçak mobilyalı, kablo dolu evler"
+  ],
+  "notFor": [
+   "Halılı evler"
+  ],
+  "pros": [
+   "8 cm, 3D engel algılama"
+  ],
+  "cons": [
+   "2.700 Pa, 120 dk",
+   "Wi-Fi ve uygulama şikâyetleri"
+  ],
+  "liked": [],
+  "disliked": [],
+  "issues": [
+   "Wi-Fi bağlantı sorunu (Şikâyetvar)",
+   "Uygulama donması (Şikâyetvar)",
+   "Elektrik almama (Şikâyetvar)"
+  ]
+ },
+ "tefal-rg9475-x-plorer-serie-220": {
+  "date": "1 Kasım 2026",
+  "verdict": "Titreşimli moplu, LiDAR'lı Tefal; istasyon yok. Hepsiburada'da iki pazar yeri satıcısı 25 bin TL'ye satıyor (sınırlı stok). Puan 3,8 (12); yorumlar karışık: bazıları çekişi övüyor, bazıları temizlemediğini ve mop takılıyken ince halıda takıldığını yazıyor.",
+  "forWho": [
+   "Tavsiye edilmez"
+  ],
+  "notFor": [
+   "Halılı evler"
+  ],
+  "pros": [
+   "Titreşimli mop, çekiş beğeniliyor"
+  ],
+  "cons": [
+   "Karışık yorumlar",
+   "25 bin TL'ye istasyon yok"
+  ],
+  "liked": [
+   "Çekiş gücü",
+   "Uygulamanın sorunsuz olması"
+  ],
+  "disliked": [
+   "Mop takılıyken ince halıda bile takılması",
+   "Düzgün temizlik yapmaması (bir kullanıcı)"
+  ],
+  "issues": []
+ },
+ "dreame-bot-d9-max": {
+  "date": "1 Kasım 2026",
+  "verdict": "10–12 bin TL'lik LiDAR'lı Dreame: 4.000 Pa, sabit ped, istasyon yok. Hepsiburada'da 452 puanın 373'ü 5 yıldız; kullanıcılar emişi ve haritalamayı övüyor. Bazıları köşeleri temizleyemediğini yazıyor. Yeni sürüm D9 Max Gen 2 resmi kanallarda satılıyor.",
+  "forWho": [
+   "11 bin TL'ye kanıtlanmış süpürme isteyenler"
+  ],
+  "notFor": [
+   "Gerçek paspas bekleyenler"
+  ],
+  "pros": [
+   "Kullanıcı memnuniyeti yüksek (373/452)",
+   "Haritalama, 11 bin TL"
+  ],
+  "cons": [
+   "Sabit ped, istasyon yok",
+   "Köşe temizliği zayıf"
+  ],
+  "liked": [
+   "Emiş gücü, toplanan toz miktarı",
+   "Hızlı haritalama"
+  ],
+  "disliked": [
+   "Köşeleri temizleyememesi",
+   "Koltuk üstündeki tüye ulaşamaması"
+  ],
+  "issues": [
+   "Tekrarlayan şarj ünitesi arızası (Şikâyetvar, 1)"
+  ]
+ },
+ "fakir-robert-rs-770": {
+  "date": "1 Kasım 2026",
+  "verdict": "Eski (2020) Fakir: LiDAR, 4.000 Pa, sabit ped; 12,5 cm yüksekliği mobilya altına girmeyi zorlaştırıyor. Pazar yerlerinde 13–19 bin TL. Şikâyetvar'da 12 şikâyet var: bağlantı hatası, fırça ve yamaç sensörü arızaları.",
+  "forWho": [
+   "Tavsiye edilmez"
+  ],
+  "notFor": [
+   "Herkes"
+  ],
+  "pros": [
+   "LiDAR"
+  ],
+  "cons": [
+   "12,5 cm, 4.000 Pa",
+   "Şikâyetvar'da 12 arıza şikâyeti"
+  ],
+  "liked": [],
+  "disliked": [],
+  "issues": [
+   "Bağlantı hatası, uygulama erişim sorunu (Şikâyetvar)",
+   "Rulo fırça uyarısı sorunu (Şikâyetvar)",
+   "Yamaç sensörü hatası (Şikâyetvar)"
+  ]
+ },
+ "arnica-sil-supur": {
+  "date": "1 Kasım 2026",
+  "verdict": "Eski Arnica modeli: 3.000 Pa, sabit ped, istasyon yok. Pazar yerlerinde 18–21 bin TL; bu fiyat gerçek dışı.",
+  "forWho": [
+   "Tavsiye edilmez"
+  ],
+  "notFor": [
+   "Herkes"
+  ],
+  "pros": [
+   "LiDAR"
+  ],
+  "cons": [
+   "Eski model, 3.000 Pa",
+   "18 bin TL üstü"
+  ],
+  "liked": [],
+  "disliked": [],
+  "issues": []
+ },
+ "philips-xu2000-26": {
+  "date": "1 Kasım 2026",
+  "verdict": "Philips 2000 Serisi'nin XU2000/26 versiyonu: LiDAR, 6.000 Pa, sabit ped, istasyon yok. Pazar yerlerinde 11,4–13 bin TL. Amazon'un kendisi XU2000/15'i 11,3 bin TL'ye satıyor.",
+  "forWho": [
+   "Tavsiye edilmez (XU2000/15 Amazon'da)"
+  ],
+  "notFor": [
+   "Büyük evler"
+  ],
+  "pros": [
+   "LiDAR"
+  ],
+  "cons": [
+   "120 dk pil, sabit ped",
+   "Yalnızca pazar yeri"
+  ],
+  "liked": [],
+  "disliked": [],
+  "issues": []
+ },
+ "ultenic-t10-elite": {
+  "date": "1 Kasım 2026",
+  "verdict": "LiDAR'lı, toz boşaltmalı Ultenic. Amazon'da bir satıcı 15 bin TL'ye satıyor; diğerleri 25–42 bin TL ile aşırı pahalı. Emiş gücü belirtilmemiş, yorum yok.",
+  "forWho": [
+   "Tavsiye edilmez"
+  ],
+  "notFor": [
+   "Fiyat/performans arayanlar"
+  ],
+  "pros": [
+   "Toz boşaltma"
+  ],
+  "cons": [
+   "Fiyatlar 15–42 bin TL dağınık",
+   "Yorum yok"
+  ],
+  "liked": [],
+  "disliked": [],
+  "issues": []
+ },
+ "tcl-sweeva-6000": {
+  "date": "1 Kasım 2026",
+  "verdict": "Mopsuz, LiDAR'lı, 2.700 Pa TCL. Pazar yerlerinde 8,6–9,5 bin TL. Puan 4,5 (126). Mop isteyen için 6000M versiyonu Amazon'da 11 bin TL.",
+  "forWho": [
+   "Sadece süpürme isteyen, düşük bütçe"
+  ],
+  "notFor": [
+   "Paspas isteyenler",
+   "Halılı evler"
+  ],
+  "pros": [
+   "Puan 4,5 (126)",
+   "9 bin TL"
+  ],
+  "cons": [
+   "Mop yok, 2.700 Pa"
+  ],
+  "liked": [],
+  "disliked": [],
+  "issues": []
+ },
+ "blaupunkt-s10-pro-8684166156485": {
+  "date": "1 Kasım 2026",
+  "verdict": "LiDAR'lı, 200 dk pilli, sabit ped moplu Blaupunkt; istasyon yok. Hepsiburada'da iki pazar yeri satıcısı 19,5–20 bin TL'ye satıyor (sınırlı stok). 5.000 Pa için pahalı.",
+  "forWho": [
+   "Tavsiye edilmez"
+  ],
+  "notFor": [
+   "Fiyat/performans arayanlar"
+  ],
+  "pros": [
+   "200 dk pil"
+  ],
+  "cons": [
+   "19,5 bin TL'ye 5.000 Pa",
+   "Sınırlı stok; yorum yok"
+  ],
+  "liked": [],
+  "disliked": [],
+  "issues": []
+ },
+ "hobot-legee-7": {
+  "date": "1 Kasım 2026",
+  "verdict": "Eski (2020) paspas odaklı Hobot: basınçlı ped, 2.700 Pa. Pazar yerlerinde 14,5–17 bin TL. Bugünün modellerine göre zayıf.",
+  "forWho": [
+   "Tavsiye edilmez"
+  ],
+  "notFor": [
+   "Herkes"
+  ],
+  "pros": [
+   "Basınçlı ped"
+  ],
+  "cons": [
+   "Eski model, 2.700 Pa",
+   "Yorum yok"
+  ],
+  "liked": [],
+  "disliked": [],
+  "issues": []
+ },
+ "electrolux-er71hw1ug": {
+  "date": "1 Kasım 2026",
+  "verdict": "LiDAR'lı, 175 dk pilli, sabit ped moplu Electrolux; istasyon yok. Pazar yerlerinde 13–22 bin TL. 4.000 Pa zayıf; kullanıcı yorumu yok.",
+  "forWho": [
+   "Tavsiye edilmez"
+  ],
+  "notFor": [
+   "Halılı evler"
+  ],
+  "pros": [
+   "175 dk pil"
+  ],
+  "cons": [
+   "4.000 Pa, istasyon yok",
+   "Yorum yok"
+  ],
+  "liked": [],
+  "disliked": [],
+  "issues": []
+ },
+ "next-pro-maid-x8": {
+  "date": "1 Kasım 2026",
+  "verdict": "10–14 bin TL'lik LiDAR'lı Next. Hepsiburada'da 141 puanın 122'si 5 yıldız; kullanıcılar Xiaomi Mop 2 Pro'ya benzer performans ve kolay kurulum anlatıyor. 2.700 Pa ve sabit ped zayıf; istasyon yok.",
+  "forWho": [
+   "Düşük bütçeyle haritalamalı robot isteyenler"
+  ],
+  "notFor": [
+   "Halılı evler (2.700 Pa)"
+  ],
+  "pros": [
+   "Kullanıcı memnuniyeti yüksek (122/141)",
+   "Kolay kurulum, oda/bölge seçimi"
+  ],
+  "cons": [
+   "2.700 Pa, sabit ped",
+   "İstasyon yok"
+  ],
+  "liked": [
+   "Xiaomi Mop 2 Pro'ya benzer performans",
+   "Zamanlama ve oda bazlı temizlik",
+   "Kolay kurulum"
+  ],
+  "disliked": [],
+  "issues": []
+ },
+ "homend-alex-laser-pro-plus-1283h": {
+  "date": "1 Kasım 2026",
+  "verdict": "Eski Homend modeli: 3.000 Pa, 100 dk pil, istasyon yok. Pazar yerlerinde 19–25 bin TL; bu fiyat gerçek dışı. Şikâyetvar'da parça temin edilememesi şikâyeti var.",
+  "forWho": [
+   "Tavsiye edilmez"
+  ],
+  "notFor": [
+   "Herkes"
+  ],
+  "pros": [
+   "LiDAR"
+  ],
+  "cons": [
+   "3.000 Pa, 100 dk",
+   "Parça bulunamama şikâyeti"
+  ],
+  "liked": [],
+  "disliked": [],
+  "issues": [
+   "Parça temin edilememesi (Şikâyetvar, 1)"
+  ]
+ },
+ "irobot-roomba-combo-j5": {
+  "date": "1 Kasım 2026",
+  "verdict": "Kamera ile gezinen, 3D engel algılamalı iRobot; istasyon yok. Pazar yerlerinde 17–21,6 bin TL (sınırlı stok). Bir kullanıcı uygulama ve servis sorunlarını anlatıyor, bir diğeri evcil hayvanlı evde memnun. 75 dk pil kısa.",
+  "forWho": [
+   "Küçük, evcil hayvanlı evler"
+  ],
+  "notFor": [
+   "Büyük evler",
+   "Uzun vadeli parça desteği arayanlar"
+  ],
+  "pros": [
+   "3D engel algılama, 8,7 cm"
+  ],
+  "cons": [
+   "75 dk pil, istasyon yok",
+   "Uygulama sorunları; iRobot'un geleceği belirsiz"
+  ],
+  "liked": [
+   "Evcil hayvan tüyünde başarı"
+  ],
+  "disliked": [
+   "Uygulamadaki tuşların kaybolması, servis sürecinin uzaması"
+  ],
+  "issues": []
+ },
+ "viomi-v5": {
+  "date": "1 Kasım 2026",
+  "verdict": "Eski (2021) Viomi: LiDAR, 2.700 Pa, sabit ped, istasyon yok. Pazar yerlerinde 12,4–15 bin TL. Bu fiyata çok daha güçlü modeller var; Viomi V5 Pro için Şikâyetvar'da yüksek onarım ücreti şikâyetleri bulunuyor.",
+  "forWho": [
+   "Tavsiye edilmez"
+  ],
+  "notFor": [
+   "Herkes"
+  ],
+  "pros": [
+   "LiDAR"
+  ],
+  "cons": [
+   "Eski model, 2.700 Pa",
+   "Marka servisi için şikâyetler"
+  ],
+  "liked": [],
+  "disliked": [],
+  "issues": []
+ },
+ "tefal-rg8577wh-x-plorer-serie-75-s-max": {
+  "date": "1 Kasım 2026",
+  "verdict": "LiDAR'lı, 150 dk pilli, sabit ped moplu Tefal; istasyon yok. Pazar yerlerinde 7–17 bin TL. 2.700 Pa zayıf; ancak 7–10 bin TL'lik ilanlar bulunursa temel süpürme için kabul edilebilir.",
+  "forWho": [
+   "Çok düşük bütçe, sert zemin"
+  ],
+  "notFor": [
+   "Halılı evler"
+  ],
+  "pros": [
+   "LiDAR, 150 dk"
+  ],
+  "cons": [
+   "2.700 Pa, sabit ped",
+   "Fiyatlar dağınık; yorum yok"
+  ],
+  "liked": [],
+  "disliked": [],
+  "issues": []
+ },
+ "tefal-rg8477-x-plorer-series": {
+  "date": "1 Kasım 2026",
+  "verdict": "7,8 cm yüksekliğinde LiDAR'lı Tefal; 2.300 Pa, sabit ped, istasyon yok. Hepsiburada'da iki pazar yeri satıcısı 24–27 bin TL'ye satıyor; bu fiyat gerçek dışı.",
+  "forWho": [
+   "Tavsiye edilmez"
+  ],
+  "notFor": [
+   "Herkes"
+  ],
+  "pros": [
+   "7,8 cm yükseklik"
+  ],
+  "cons": [
+   "24 bin TL'ye 2.300 Pa",
+   "Sınırlı stok"
+  ],
+  "liked": [],
+  "disliked": [],
+  "issues": []
+ },
+ "anker-eufy-robovac-lr30-hybrid": {
+  "date": "1 Kasım 2026",
+  "verdict": "Eski Eufy: LiDAR, 3.000 Pa, sabit ped, istasyon yok. Pazar yerlerinde 10,5–15 bin TL. Şikâyetvar'da Türkçe destek bulunamaması şikâyeti var.",
+  "forWho": [
+   "Tavsiye edilmez"
+  ],
+  "notFor": [
+   "Herkes"
+  ],
+  "pros": [
+   "LiDAR"
+  ],
+  "cons": [
+   "Eski model, 3.000 Pa",
+   "Türkçe destek yok"
+  ],
+  "liked": [],
+  "disliked": [],
+  "issues": [
+   "Şarjdayken kontrol edilememe, Türkçe destek bulunamaması (Şikâyetvar, 1)"
+  ]
+ },
+ "xiaomi-robot-vacuum-s20": {
+  "date": "1 Kasım 2026",
+  "verdict": "LiDAR'lı, 5.000 Pa, sabit ped moplu Xiaomi; istasyon yok. Puan 4,3 (735). Pazar yerlerinde 14,8–17 bin TL. Döner moplu S20+ 20 bin TL civarında ve daha iyi silme sunuyor.",
+  "forWho": [
+   "Temel süpürme isteyen Xiaomi kullanıcıları"
+  ],
+  "notFor": [
+   "Gerçek paspas bekleyenler"
+  ],
+  "pros": [
+   "Puan 4,3 (735)",
+   "LiDAR"
+  ],
+  "cons": [
+   "Sabit ped, 5.000 Pa",
+   "S20+ biraz daha pahalı ama çok daha iyi"
+  ],
+  "liked": [],
+  "disliked": [],
+  "issues": []
+ },
+ "philips-xu2000-21": {
+  "date": "1 Kasım 2026",
+  "verdict": "Philips 2000 Serisi XU2000/21: LiDAR, 2.700 Pa, sabit ped, istasyon yok. Pazar yerlerinde 14–17 bin TL. Amazon'daki XU2000/15 daha ucuz ve daha güçlü (6.000 Pa).",
+  "forWho": [
+   "Tavsiye edilmez"
+  ],
+  "notFor": [
+   "Halılı evler"
+  ],
+  "pros": [
+   "LiDAR"
+  ],
+  "cons": [
+   "2.700 Pa, 130 dk",
+   "XU2000/15 daha ucuz"
+  ],
+  "liked": [],
+  "disliked": [],
+  "issues": []
+ },
+ "philips-xu2000-22": {
+  "date": "1 Kasım 2026",
+  "verdict": "Philips 2000 Serisi XU2000/22: LiDAR, 2.700 Pa, sabit ped, istasyon yok. Pazar yerlerinde 13–20 bin TL. Amazon'daki XU2000/15 daha ucuz ve daha güçlü.",
+  "forWho": [
+   "Tavsiye edilmez"
+  ],
+  "notFor": [
+   "Halılı evler"
+  ],
+  "pros": [
+   "LiDAR"
+  ],
+  "cons": [
+   "2.700 Pa, 130 dk",
+   "XU2000/15 daha ucuz"
+  ],
+  "liked": [],
+  "disliked": [],
+  "issues": []
+ },
+ "philips-homerun-2000-series": {
+  "date": "1 Kasım 2026",
+  "verdict": "Philips 2000 Serisi XU2000 (temel versiyon): LiDAR, 2.700 Pa, sabit ped, istasyon yok. Pazar yerlerinde 12,6–20 bin TL.",
+  "forWho": [
+   "Tavsiye edilmez"
+  ],
+  "notFor": [
+   "Halılı evler"
+  ],
+  "pros": [
+   "LiDAR"
+  ],
+  "cons": [
+   "2.700 Pa, 130 dk",
+   "Yorum yok"
+  ],
+  "liked": [],
+  "disliked": [],
+  "issues": []
+ },
+ "karcher-rcv-3": {
+  "date": "1 Kasım 2026",
+  "verdict": "Eski Karcher RCV 3: LiDAR, 2.500 Pa, 120 dk, sabit ped, istasyon yok. Pazar yerlerinde 13–16 bin TL; Amazon ilanı 379 değerlendirmeli. Bu fiyata daha güçlü modeller var.",
+  "forWho": [
+   "Tavsiye edilmez"
+  ],
+  "notFor": [
+   "Halılı ve büyük evler"
+  ],
+  "pros": [
+   "LiDAR"
+  ],
+  "cons": [
+   "2.500 Pa, 120 dk",
+   "Eski model"
+  ],
+  "liked": [],
+  "disliked": [],
+  "issues": []
+ },
+ "beko-robo-x-rs-2221": {
+  "date": "1 Kasım 2026",
+  "verdict": "Jiroskoplu (LiDAR'sız), 2.700 Pa Beko; 7,8 cm yükseklik tek avantajı. Pazar yerlerinde 18,5–19,5 bin TL; bu fiyat gerçek dışı. Şikâyetvar'da sürekli arıza şikâyetleri var.",
+  "forWho": [
+   "Tavsiye edilmez"
+  ],
+  "notFor": [
+   "Herkes"
+  ],
+  "pros": [
+   "7,8 cm"
+  ],
+  "cons": [
+   "LiDAR yok, 2.700 Pa",
+   "Sürekli arıza şikâyetleri"
+  ],
+  "liked": [],
+  "disliked": [],
+  "issues": [
+   "Sürekli arıza, servis çözümsüz (Şikâyetvar)"
+  ]
+ },
+ "irobot-roomba-combo": {
+  "date": "1 Kasım 2026",
+  "verdict": "Eski (2019–2020) jiroskoplu iRobot Roomba Combo; LiDAR ve istasyon yok. Pazar yerlerinde 8,7–12 bin TL. Bu fiyata LiDAR'lı modeller var; iRobot'un mali durumu yedek parça açısından risk.",
+  "forWho": [
+   "Tavsiye edilmez"
+  ],
+  "notFor": [
+   "Herkes"
+  ],
+  "pros": [
+   "8,2 cm"
+  ],
+  "cons": [
+   "LiDAR yok, 110 dk",
+   "Eski model"
+  ],
+  "liked": [],
+  "disliked": [],
+  "issues": []
+ },
+ "electrolux-er61uw1dg": {
+  "date": "1 Kasım 2026",
+  "verdict": "Eski Electrolux: LiDAR yok, 120 dk pil, sabit ped. Pazar yerlerinde 16,6–22 bin TL; bu fiyat gerçek dışı.",
+  "forWho": [
+   "Tavsiye edilmez"
+  ],
+  "notFor": [
+   "Herkes"
+  ],
+  "pros": [],
+  "cons": [
+   "Haritalama zayıf, emiş belirtilmemiş",
+   "16 bin TL üstü"
+  ],
+  "liked": [],
+  "disliked": [],
+  "issues": []
+ },
+ "blaupunkt-s10-robomaster": {
+  "date": "1 Kasım 2026",
+  "verdict": "Blaupunkt S10 Robomaster: 2.200 Pa, 200 dk pil, sabit ped; Hepsiburada başlığı akıllı haritalama yazıyor. Hepsiburada'da iki satıcı 12 bin TL'ye satıyor (sınırlı stok). 74 puanın 55'i 5 yıldız; kullanıcılar fiyat/performansı övüyor. Şikâyetvar'da 9 şikâyet var: batarya arızası ve yedek fırça bulunamama.",
+  "forWho": [
+   "Düşük bütçeyle günlük süpürme isteyenler"
+  ],
+  "notFor": [
+   "Uzun ömür ve yedek parça isteyenler"
+  ],
+  "pros": [
+   "Kullanıcı memnuniyeti iyi (55/74)",
+   "200 dk pil"
+  ],
+  "cons": [
+   "2.200 Pa",
+   "Batarya ve yedek parça şikâyetleri"
+  ],
+  "liked": [
+   "Fiyatına göre temizlik",
+   "Hızlı harita oluşturma"
+  ],
+  "disliked": [
+   "Bazen şarj istasyonuna dönememesi",
+   "Telefona bağlamada zorluk"
+  ],
+  "issues": [
+   "Batarya arızası (Şikâyetvar)",
+   "Yedek ana fırça bulunamaması (Şikâyetvar)"
+  ]
+ },
+ "redline-robored-g1": {
+  "date": "1 Kasım 2026",
+  "verdict": "7–8,5 bin TL'lik jiroskoplu, mopsuz basit robot; 7,5 cm yükseklik. Haritalama, mop ve istasyon yok.",
+  "forWho": [
+   "En düşük bütçeyle basit süpürme"
+  ],
+  "notFor": [
+   "Haritalama ve paspas isteyenler"
+  ],
+  "pros": [
+   "7,5 cm, 7 bin TL"
+  ],
+  "cons": [
+   "Haritalama ve mop yok",
+   "115 dk"
+  ],
+  "liked": [],
+  "disliked": [],
+  "issues": []
+ },
+ "xiaomi-vacuum-e12": {
+  "date": "1 Kasım 2026",
+  "verdict": "Rastgele hareket eden, 4.000 Pa, sabit ped moplu Xiaomi. Pazar yerlerinde 37–40 bin TL; bu fiyat temel bir model için tamamen gerçek dışı (muhtemelen hatalı ilan).",
+  "forWho": [
+   "Tavsiye edilmez"
+  ],
+  "notFor": [
+   "Herkes"
+  ],
+  "pros": [
+   "8 cm"
+  ],
+  "cons": [
+   "Haritalama yok",
+   "37 bin TL fiyat gerçek dışı"
+  ],
+  "liked": [],
+  "disliked": [],
+  "issues": []
+ },
+ "xiaomi-mi-robot-vacuum-mop-essential": {
+  "date": "1 Kasım 2026",
+  "verdict": "Eski (2020) Xiaomi Essential: rastgele hareket, 2.200 Pa, sabit ped. Pazar yerlerinde 14–21 bin TL; bu fiyat gerçek dışı.",
+  "forWho": [
+   "Tavsiye edilmez"
+  ],
+  "notFor": [
+   "Herkes"
+  ],
+  "pros": [
+   "8,2 cm"
+  ],
+  "cons": [
+   "Haritalama yok, 2.200 Pa",
+   "14 bin TL üstü"
+  ],
+  "liked": [],
+  "disliked": [],
+  "issues": []
+ },
+ "irobot-roomba-combo-essential": {
+  "date": "1 Kasım 2026",
+  "verdict": "Rastgele hareket eden, sabit ped moplu iRobot. Pazar yerlerinde 8,4–10 bin TL. Puan 3,7 (213); kullanıcılar aynı yerde dönüp durduğunu ve iki tekerleğin 7.500 TL'ye mal olduğunu yazıyor.",
+  "forWho": [
+   "Tavsiye edilmez"
+  ],
+  "notFor": [
+   "Herkes"
+  ],
+  "pros": [
+   "8,5 cm"
+  ],
+  "cons": [
+   "Haritalama yok, verimsiz rota",
+   "Yedek parça çok pahalı"
+  ],
+  "liked": [],
+  "disliked": [
+   "Aynı yerde uzun süre dönüp durması",
+   "Duvar diplerinde takılması",
+   "İki tekerlek fiyatının 7.500 TL olması"
+  ],
+  "issues": []
  }
 }
