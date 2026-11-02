@@ -1,0 +1,12 @@
+{
+"anker-eufy-omni-e28":{"mah":5200,"ch":3.5,"kg":5.2,"water":120,"climb":21,"dust":300,"na":["rt","db"],"specSrc":"eufy Omni E28 kullanım kılavuzu (T2352): 5.200 mAh, 3,5 saat şarj, 11,46 lb, robotta 120 ml su, 21 mm'ye kadar engel; Vacuum Wars: 300 ml hazne"},
+"mova-v50-ultra-complete":{"rt":220,"na":["kg","water"],"specSrc":"Vacuum Wars: resmi çalışma süresi 220 dk"},
+"roborock-qrevo-2-pro":{"climb":40,"stClean":4,"na":["ch","kg","stDust","stDirty"],"specSrc":"BGR incelemesi: 4 cm eşik, 4 L temiz su tankı"},
+"dreame-l40s-pro":{"na":["db"]},
+"bosch-spotless-max-cam":{"na":["db","kg"]},
+"mova-s70-pro-roller":{"na":["rt","ch","db","kg","climb","water"]},
+"karcher-rvf-7-eu":{"stDust":4,"specSrc":"Kärcher resmi teknik veri: istasyon filtre torbası 4 L"},
+"irobot-roomba-combo-10-max":{"na":["pa","stDust"]},
+"xiaomi-vacuum-5-pro":{"na":["ch","db"]},
+"dji-romo-s":{}
+}

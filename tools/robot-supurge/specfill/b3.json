@@ -1,0 +1,11 @@
+{
+"dji-romo-a":{"climb":25,"specSrc":"DJI destek sayfası: 2,5 cm'ye kadar eşik"},
+"dji-romo-s":{"climb":25,"specSrc":"DJI destek sayfası: 2,5 cm'ye kadar eşik"},
+"dreame-aqua-10-ultra-roller":{"rt":175,"climb":42,"stDust":3.2,"specSrc":"Vacuum Wars (resmi pil süresi 175 dk); Dreame resmi: tek eşik 42 mm, 3,2 L toz torbası"},
+"dreame-l50-ultra":{"ch":3,"db":78,"stDust":3.2,"sides":1,"specSrc":"dreametech.com özellik tablosu: 3 saat şarj, ≤78 dB, 3,2 L torba, tek yan fırça"},
+"roborock-qrevo-c-pro":{"climb":20,"specSrc":"Roborock resmi: 20 mm eşik"},
+"roborock-qrevo-curv-2-flow":{"climb":20,"specSrc":"Roborock resmi: 20 mm eşik"},
+"roborock-qrevo-curvx":{"kg":4.42,"specSrc":"Roborock resmi: robot 9,74 lb"},
+"roborock-saros-10r":{"kg":4.1,"specSrc":"Roborock resmi özellik tablosu: 4,1 kg"},
+"xiaomi-robot-vacuum-6":{"db":50,"specSrc":"Bağımsız ölçüm testi: ~50 dB"}
+}

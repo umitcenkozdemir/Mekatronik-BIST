@@ -102,11 +102,8 @@
 "kg"
 ],
 "dreame-aqua-10-ultra-roller": [
-"rt",
 "ch",
-"db",
-"climb",
-"stDust"
+"db"
 ],
 "mova-z60-ultra-roller-complete": [
 "rt",
@@ -130,15 +127,11 @@
 ],
 "roborock-qrevo-curvx": [
 "ch",
-"kg",
 "stClean",
 "stDirty"
 ],
 "roborock-qrevo-curv-2-pro": [
 "ch",
-"kg"
-],
-"roborock-saros-10r": [
 "kg"
 ],
 "roborock-qrevo-c": [
@@ -172,7 +165,6 @@
 "stDust"
 ],
 "xiaomi-robot-vacuum-6": [
-"db",
 "dust"
 ],
 "roborock-qrevo-edge-2": [
@@ -191,69 +183,19 @@
 "water"
 ],
 "roborock-qrevo-c-pro": [
-"ch",
-"climb"
+"ch"
 ],
 "roborock-qrevo-curv-2-flow": [
-"kg",
-"climb"
-],
-"dji-romo-a": [
-"climb"
+"kg"
 ],
 "dreame-l50-ultra": [
-"ch",
-"db",
-"water",
-"stDust",
-"sides"
-],
-"mova-v50-ultra-complete": [
-"rt",
-"kg",
 "water"
-],
-"roborock-qrevo-2-pro": [
-"ch",
-"kg",
-"climb",
-"stDust",
-"stClean",
-"stDirty"
-],
-"dreame-l40s-pro": [
-"db"
-],
-"anker-eufy-omni-e28": [
-"mah",
-"rt",
-"ch",
-"db",
-"dust",
-"kg",
-"climb",
-"water"
-],
-"bosch-spotless-max-cam": [
-"db",
-"kg"
 ],
 "mova-e30-ultra": [
 "ch",
 "db",
 "dust",
 "water"
-],
-"mova-s70-pro-roller": [
-"rt",
-"ch",
-"db",
-"kg",
-"climb",
-"water"
-],
-"dji-romo-s": [
-"climb"
 ],
 "fakir-robert-rs-850-plus": [
 "pa",
@@ -265,23 +207,12 @@
 "stClean",
 "stDirty"
 ],
-"karcher-rvf-7-eu": [
-"stDust"
-],
 "dreame-bot-l20-ultra": [
 "ch"
 ],
 "homend-alex-50-pro-ulticlean": [
 "dust",
 "water"
-],
-"irobot-roomba-combo-10-max": [
-"pa",
-"stDust"
-],
-"xiaomi-vacuum-5-pro": [
-"ch",
-"db"
 ],
 "dreame-l50-ultra-ce": [
 "rt",
