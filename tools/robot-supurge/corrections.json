@@ -1048,5 +1048,164 @@
   "na": [
    "db"
   ]
+ },
+ "simart-katya-o": {
+  "na": [
+   "db",
+   "dust",
+   "water"
+  ]
+ },
+ "cecotec-conga-x100-ai": {
+  "na": [
+   "ch",
+   "db",
+   "dust",
+   "h",
+   "kg",
+   "mah",
+   "rt",
+   "stClean",
+   "stDirty",
+   "stDust",
+   "water"
+  ]
+ },
+ "simart-katya-u": {
+  "na": [
+   "ch"
+  ]
+ },
+ "cecotec-conga-x70": {
+  "na": [
+   "ch",
+   "climb",
+   "db",
+   "dust",
+   "h",
+   "kg",
+   "rt",
+   "stClean",
+   "stDirty",
+   "stDust",
+   "water"
+  ]
+ },
+ "yui-rs16-pro-max-pet-kit": {
+  "na": [
+   "ch",
+   "climb",
+   "db",
+   "kg",
+   "mah"
+  ]
+ },
+ "cecotec-conga-y80": {
+  "na": [
+   "ch",
+   "climb",
+   "db",
+   "dust",
+   "kg",
+   "rt",
+   "water"
+  ]
+ },
+ "cecotec-conga-m100": {
+  "na": [
+   "ch",
+   "climb",
+   "db",
+   "dust",
+   "water"
+  ]
+ },
+ "cecotec-conga-y50": {
+  "na": [
+   "ch",
+   "climb",
+   "db",
+   "dust",
+   "h",
+   "kg",
+   "rt",
+   "water"
+  ]
+ },
+ "simart-katya-v-plus": {
+  "na": [
+   "db"
+  ]
+ },
+ "yui-rs16-pro": {
+  "na": [
+   "ch",
+   "climb",
+   "db",
+   "kg",
+   "mah"
+  ]
+ },
+ "cecotec-conga-m10": {
+  "na": [
+   "ch",
+   "climb",
+   "db",
+   "dust",
+   "kg",
+   "mah",
+   "water"
+  ]
+ },
+ "simart-katya-v": {
+  "na": [
+   "db",
+   "stDust"
+  ]
+ },
+ "yui-rs16": {
+  "na": [
+   "ch",
+   "climb",
+   "db",
+   "h",
+   "kg",
+   "mah",
+   "stDust"
+  ]
+ },
+ "simart-katya-p": {
+  "na": [
+   "ch",
+   "db"
+  ]
+ },
+ "kiwi-kvc-4091": {
+  "na": [
+   "ch",
+   "db",
+   "dust",
+   "kg",
+   "rt"
+  ]
+ },
+ "irobot-roomba-combo-essential": {
+  "na": [
+   "ch",
+   "climb",
+   "db",
+   "pa"
+  ]
+ },
+ "dreame-d9-max-gen-2": {
+  "db": 67,
+  "specSrc": "Versus özellik tablosu: 67 dB"
+ },
+ "tcl-sweeva-6000m": {
+  "na": [
+   "ch",
+   "kg",
+   "water"
+  ]
  }
 }

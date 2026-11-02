@@ -177,11 +177,6 @@
 "roborock-s8-plus": [
 "kg"
 ],
-"simart-katya-o": [
-"db",
-"dust",
-"water"
-],
 "roborock-qrevo-c-pro": [
 "ch"
 ],
@@ -196,19 +191,6 @@
 ],
 "dreame-bot-l20-ultra": [
 "ch"
-],
-"cecotec-conga-x100-ai": [
-"mah",
-"rt",
-"ch",
-"db",
-"dust",
-"h",
-"kg",
-"water",
-"stDust",
-"stClean",
-"stDirty"
 ],
 "dreame-bot-l10s-pro-ultra-heat": [
 "ch",
@@ -229,9 +211,6 @@
 "kg",
 "stDust"
 ],
-"simart-katya-u": [
-"ch"
-],
 "roborock-q5-pro": [
 "ch",
 "kg",
@@ -242,19 +221,6 @@
 ],
 "dreame-d10-plus-gen-2": [
 "db"
-],
-"cecotec-conga-x70": [
-"rt",
-"ch",
-"db",
-"dust",
-"h",
-"kg",
-"climb",
-"water",
-"stDust",
-"stClean",
-"stDirty"
 ],
 "tefal-rg9475-x-plorer-serie-220": [
 "mah",
@@ -292,13 +258,6 @@
 "db",
 "climb"
 ],
-"yui-rs16-pro-max-pet-kit": [
-"mah",
-"ch",
-"db",
-"kg",
-"climb"
-],
 "xiaomi-robot-vacuum-s10-plus": [
 "db",
 "climb"
@@ -309,15 +268,6 @@
 "db",
 "stDust"
 ],
-"cecotec-conga-y80": [
-"rt",
-"ch",
-"db",
-"dust",
-"kg",
-"climb",
-"water"
-],
 "electrolux-er71uw2sw": [
 "water"
 ],
@@ -326,25 +276,8 @@
 "db",
 "stDust"
 ],
-"cecotec-conga-m100": [
-"ch",
-"db",
-"dust",
-"climb",
-"water"
-],
 "arnica-sil-supur": [
 "kg"
-],
-"cecotec-conga-y50": [
-"rt",
-"ch",
-"db",
-"dust",
-"h",
-"kg",
-"climb",
-"water"
 ],
 "ecovacs-deebot-n10": [
 "db",
@@ -365,9 +298,6 @@
 "h",
 "kg",
 "water"
-],
-"simart-katya-v-plus": [
-"db"
 ],
 "tp-link-tapo-rv30": [
 "ch",
@@ -413,29 +343,9 @@
 "philips-xu2000-21": [
 "climb"
 ],
-"yui-rs16-pro": [
-"mah",
-"ch",
-"db",
-"kg",
-"climb"
-],
-"cecotec-conga-m10": [
-"mah",
-"ch",
-"db",
-"dust",
-"kg",
-"climb",
-"water"
-],
 "tp-link-tapo-rv30-max-plus": [
 "ch",
 "kg"
-],
-"simart-katya-v": [
-"db",
-"stDust"
 ],
 "philips-xu2000-22": [
 "climb"
@@ -451,15 +361,6 @@
 "h",
 "kg",
 "climb"
-],
-"yui-rs16": [
-"mah",
-"ch",
-"db",
-"h",
-"kg",
-"climb",
-"stDust"
 ],
 "blaupunkt-s10-robomaster": [
 "db",
@@ -479,11 +380,6 @@
 "h",
 "kg"
 ],
-"tcl-sweeva-6000m": [
-"ch",
-"kg",
-"water"
-],
 "tefal-rg8577wh-x-plorer-serie-75-s-max": [
 "mah"
 ],
@@ -493,22 +389,9 @@
 "viomi-v5-pro": [
 "ch"
 ],
-"simart-katya-p": [
-"ch",
-"db"
-],
-"dreame-d9-max-gen-2": [
-"db"
-],
 "tcl-sweeva-6000": [
 "ch",
 "kg"
-],
-"irobot-roomba-combo-essential": [
-"pa",
-"ch",
-"db",
-"climb"
 ],
 "tp-link-tapo-rv30-max": [
 "ch",
@@ -521,13 +404,6 @@
 "dersar-l1-plus": [
 "ch",
 "db",
-"kg"
-],
-"kiwi-kvc-4091": [
-"rt",
-"ch",
-"db",
-"dust",
 "kg"
 ],
 "ultenic-d6s": [
