@@ -1,0 +1,11 @@
+{
+"irobot-roomba-combo-j7":{"rt":80,"db":66,"na":["pa","stDust"],"specSrc":"Best Cordless Vacuum Guide özellik listesi: 60–80 dk, 66,2 dB"},
+"xiaomi-robot-vacuum-x20-plus":{"na":["rt","db","climb","water"]},
+"xiaomi-h50":{"dust":280,"stDust":2.5,"stDirty":4,"na":["rt","ch","db","water"],"specSrc":"Xiaomi resmi SSS: 280 ml hazne, 2,5 L torba; mi.com: 4 L temiz/kirli su"},
+"dreame-l40-plus":{"na":["ch","db","climb"]},
+"philips-homerun-7000-series-aqua-xu7000":{"na":["stDust"]},
+"dreame-l40":{"na":["ch","db","climb"]},
+"blaupunkt-s10-pro-8684166156485":{"na":["mah","h","kg","climb"]},
+"lura-wipen-clean":{"na":["kg"]},
+"dyson-r1-nurovi":{"na":["mah","db"]}
+}

@@ -1,0 +1,110 @@
+{
+"roborock-s8-pro": {
+"na": [
+"ch",
+"kg",
+"climb",
+"stDust"
+]
+},
+"xiaomi-s40-pro": {
+"na": [
+"ch",
+"db"
+]
+},
+"dreame-f20": {
+"na": [
+"ch",
+"db",
+"climb",
+"water"
+]
+},
+"lydsto-s1d-max": {
+"na": [
+"mah",
+"rt",
+"ch",
+"db",
+"dust",
+"kg",
+"climb",
+"water"
+]
+},
+"tefal-rg9675-x-plorer-serie-240": {
+"na": [
+"mah",
+"h",
+"kg",
+"climb",
+"stDust"
+]
+},
+"karcher-rcv-3": {
+"na": [
+"climb"
+]
+},
+"hoover-hg530h-011": {
+"mah": 2600,
+"water": 300,
+"na": [
+"climb"
+],
+"specSrc": "Hoover H-GO 500 (HG530H-011) ürün föyü: 2.600 mAh, 300 ml su"
+},
+"roborock-q8-max-pro": {
+"na": [
+"kg",
+"stDust"
+]
+},
+"dreame-d20": {
+"na": [
+"db"
+]
+},
+"bosch-spotless": {
+"na": [
+"db",
+"kg"
+]
+},
+"philips-xu5000": {
+"na": [
+"stDust"
+]
+},
+"viomi-v5": {
+"na": [
+"mah",
+"rt",
+"ch",
+"db"
+]
+},
+"dreame-f10": {
+"ch": 6,
+"sides": 1,
+"na": [
+"db"
+],
+"specSrc": "Versus özellik tablosu: 6 saat şarj, tek yan fırça"
+},
+"karcher-rcv-2": {
+"water": 250,
+"na": [
+"climb"
+],
+"specSrc": "Kärcher resmi teknik föy: 250 ml temiz su tankı"
+},
+"xiaomi-s40": {
+"db": 60,
+"na": [
+"ch"
+],
+"specSrc": "RoboVacGuide özellik tablosu: 60 dB"
+}
+}

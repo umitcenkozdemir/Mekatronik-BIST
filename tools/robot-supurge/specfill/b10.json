@@ -1,0 +1,84 @@
+{
+"roborock-q8-max-pro-plus": {
+"na": [
+"kg",
+"stDust"
+]
+},
+"ecovacs-deebot-t50s": {
+"na": [
+"db",
+"dust",
+"kg",
+"climb",
+"water",
+"stDust",
+"stClean",
+"stDirty"
+]
+},
+"xiaomi-robot-vacuum-x20-pro": {
+"stDust": 2.5,
+"na": [
+"ch",
+"db",
+"dust",
+"climb",
+"water"
+],
+"specSrc": "mi.com resmi ürün sayfası: 2,5 L toz torbası"
+},
+"lydsto-w2-lite": {
+"na": [
+"rt",
+"ch",
+"db",
+"dust",
+"water"
+]
+},
+"irobot-roomba-combo-j7-plus": {
+"rt": 80,
+"stDust": 2.4,
+"na": [
+"pa"
+],
+"specSrc": "Best Cordless Vacuum Guide özellik listesi: 60–80 dk, 2,4 L torba"
+},
+"roborock-s9-plus": {
+"na": [
+"ch",
+"kg",
+"climb",
+"stDust"
+]
+},
+"ecovacs-deebot-t30c": {
+"na": [
+"kg"
+]
+},
+"narwal-freo-z10-ultra": {
+"rt": 150,
+"ch": 3,
+"na": [
+"water"
+],
+"specSrc": "TechRadar testi: ~2,5 saat çalışma, ~3 saat şarj; robotta su tankı yok"
+},
+"ecovacs-t30c-prime": {
+"na": [
+"db",
+"dust",
+"h",
+"kg",
+"water"
+]
+},
+"bosch-spotless-advanced-plus": {
+"na": [
+"db",
+"kg"
+]
+}
+}

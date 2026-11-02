@@ -1,0 +1,66 @@
+{
+"karcher-rvc-3-comfort-extra": {
+"stDust": 4,
+"na": [
+"climb"
+],
+"specSrc": "Kärcher resmi: istasyon filtre torbası 4 L (RVC 3 Comfort / RVM 4 Comfort uyumlu)"
+},
+"karcher-rvc-3-eu": {
+"na": [
+"climb"
+]
+},
+"xiaomi-h40": {
+"ch": 4,
+"na": [
+"db",
+"dust"
+],
+"specSrc": "Robocleaners özellik tablosu: en fazla 4 saat şarj"
+},
+"narwal-freo-x-plus": {
+"na": [
+"rt",
+"ch",
+"db",
+"water"
+]
+},
+"dreame-l10s-plus": {
+"na": [
+"climb"
+]
+},
+"philips-2000-series-xu2100": {
+"na": [
+"climb"
+]
+},
+"ecovacs-deebot-n20e-plus": {
+"na": [
+"kg"
+]
+},
+"roborock-s9": {
+"na": [
+"ch",
+"kg",
+"climb",
+"stDust"
+]
+},
+"ezviz-re4-plus": {
+"na": [
+"db"
+]
+},
+"roborock-q8": {
+"na": [
+"ch",
+"kg",
+"climb",
+"stDust"
+]
+}
+}

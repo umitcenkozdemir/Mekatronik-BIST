@@ -11,15 +11,33 @@
  },
  "roborock-s9": {
   "mop": "Titreşimli",
-  "src": "VibraRise 2.0 titreşimli mop"
+  "src": "VibraRise 2.0 titreşimli mop",
+  "na": [
+   "ch",
+   "climb",
+   "kg",
+   "stDust"
+  ]
  },
  "roborock-s9-plus": {
   "mop": "Titreşimli",
-  "src": "VibraRise 2.0 titreşimli mop"
+  "src": "VibraRise 2.0 titreşimli mop",
+  "na": [
+   "ch",
+   "climb",
+   "kg",
+   "stDust"
+  ]
  },
  "roborock-s8-pro": {
   "mop": "Titreşimli",
-  "src": "VibraRise 2.0 titreşimli mop"
+  "src": "VibraRise 2.0 titreşimli mop",
+  "na": [
+   "ch",
+   "climb",
+   "kg",
+   "stDust"
+  ]
  },
  "dyson-spot-plusscrub-ai": {
   "obst": "Yapay zekâ / kamera",
@@ -52,11 +70,21 @@
  },
  "ecovacs-deebot-t30c": {
   "nav": "LiDAR",
-  "src": "Ecovacs T30C: TrueMapping lazer (dToF) navigasyon; epey alanı boş (1 Kasım 2026)"
+  "src": "Ecovacs T30C: TrueMapping lazer (dToF) navigasyon; epey alanı boş (1 Kasım 2026)",
+  "na": [
+   "kg"
+  ]
  },
  "ecovacs-t30c-prime": {
   "nav": "LiDAR",
-  "src": "Ecovacs T30C Prime: TrueMapping lazer (dToF) navigasyon; epey alanı boş (1 Kasım 2026)"
+  "src": "Ecovacs T30C Prime: TrueMapping lazer (dToF) navigasyon; epey alanı boş (1 Kasım 2026)",
+  "na": [
+   "db",
+   "dust",
+   "h",
+   "kg",
+   "water"
+  ]
  },
  "ecovacs-deebot-t80s-omni": {
   "mop": "Rulo mop",
@@ -539,6 +567,331 @@
    "rt",
    "sides",
    "water"
+  ]
+ },
+ "roborock-q8-max-pro-plus": {
+  "na": [
+   "kg",
+   "stDust"
+  ]
+ },
+ "ecovacs-deebot-t50s": {
+  "na": [
+   "climb",
+   "db",
+   "dust",
+   "kg",
+   "stClean",
+   "stDirty",
+   "stDust",
+   "water"
+  ]
+ },
+ "xiaomi-robot-vacuum-x20-pro": {
+  "stDust": 2.5,
+  "specSrc": "mi.com resmi ürün sayfası: 2,5 L toz torbası",
+  "na": [
+   "ch",
+   "climb",
+   "db",
+   "dust",
+   "water"
+  ]
+ },
+ "lydsto-w2-lite": {
+  "na": [
+   "ch",
+   "db",
+   "dust",
+   "rt",
+   "water"
+  ]
+ },
+ "irobot-roomba-combo-j7-plus": {
+  "rt": 80,
+  "stDust": 2.4,
+  "specSrc": "Best Cordless Vacuum Guide özellik listesi: 60–80 dk, 2,4 L torba",
+  "na": [
+   "pa"
+  ]
+ },
+ "narwal-freo-z10-ultra": {
+  "rt": 150,
+  "ch": 3,
+  "specSrc": "TechRadar testi: ~2,5 saat çalışma, ~3 saat şarj; robotta su tankı yok",
+  "na": [
+   "water"
+  ]
+ },
+ "bosch-spotless-advanced-plus": {
+  "na": [
+   "db",
+   "kg"
+  ]
+ },
+ "irobot-roomba-combo-j7": {
+  "rt": 80,
+  "db": 66,
+  "specSrc": "Best Cordless Vacuum Guide özellik listesi: 60–80 dk, 66,2 dB",
+  "na": [
+   "pa",
+   "stDust"
+  ]
+ },
+ "xiaomi-robot-vacuum-x20-plus": {
+  "na": [
+   "climb",
+   "db",
+   "rt",
+   "water"
+  ]
+ },
+ "xiaomi-h50": {
+  "dust": 280,
+  "stDust": 2.5,
+  "stDirty": 4,
+  "specSrc": "Xiaomi resmi SSS: 280 ml hazne, 2,5 L torba; mi.com: 4 L temiz/kirli su",
+  "na": [
+   "ch",
+   "db",
+   "rt",
+   "water"
+  ]
+ },
+ "dreame-l40-plus": {
+  "na": [
+   "ch",
+   "climb",
+   "db"
+  ]
+ },
+ "philips-homerun-7000-series-aqua-xu7000": {
+  "na": [
+   "stDust"
+  ]
+ },
+ "dreame-l40": {
+  "na": [
+   "ch",
+   "climb",
+   "db"
+  ]
+ },
+ "blaupunkt-s10-pro-8684166156485": {
+  "na": [
+   "climb",
+   "h",
+   "kg",
+   "mah"
+  ]
+ },
+ "lura-wipen-clean": {
+  "na": [
+   "kg"
+  ]
+ },
+ "dyson-r1-nurovi": {
+  "na": [
+   "db",
+   "mah"
+  ]
+ },
+ "karcher-rvc-3-comfort-extra": {
+  "stDust": 4,
+  "specSrc": "Kärcher resmi: istasyon filtre torbası 4 L (RVC 3 Comfort / RVM 4 Comfort uyumlu)",
+  "na": [
+   "climb"
+  ]
+ },
+ "karcher-rvc-3-eu": {
+  "na": [
+   "climb"
+  ]
+ },
+ "xiaomi-h40": {
+  "ch": 4,
+  "specSrc": "Robocleaners özellik tablosu: en fazla 4 saat şarj",
+  "na": [
+   "db",
+   "dust"
+  ]
+ },
+ "narwal-freo-x-plus": {
+  "na": [
+   "ch",
+   "db",
+   "rt",
+   "water"
+  ]
+ },
+ "dreame-l10s-plus": {
+  "na": [
+   "climb"
+  ]
+ },
+ "philips-2000-series-xu2100": {
+  "na": [
+   "climb"
+  ]
+ },
+ "ecovacs-deebot-n20e-plus": {
+  "na": [
+   "kg"
+  ]
+ },
+ "ezviz-re4-plus": {
+  "na": [
+   "db"
+  ]
+ },
+ "roborock-q8": {
+  "na": [
+   "ch",
+   "climb",
+   "kg",
+   "stDust"
+  ]
+ },
+ "xiaomi-s40-pro": {
+  "na": [
+   "ch",
+   "db"
+  ]
+ },
+ "dreame-f20": {
+  "na": [
+   "ch",
+   "climb",
+   "db",
+   "water"
+  ]
+ },
+ "lydsto-s1d-max": {
+  "na": [
+   "ch",
+   "climb",
+   "db",
+   "dust",
+   "kg",
+   "mah",
+   "rt",
+   "water"
+  ]
+ },
+ "tefal-rg9675-x-plorer-serie-240": {
+  "na": [
+   "climb",
+   "h",
+   "kg",
+   "mah",
+   "stDust"
+  ]
+ },
+ "karcher-rcv-3": {
+  "na": [
+   "climb"
+  ]
+ },
+ "hoover-hg530h-011": {
+  "mah": 2600,
+  "water": 300,
+  "specSrc": "Hoover H-GO 500 (HG530H-011) ürün föyü: 2.600 mAh, 300 ml su",
+  "na": [
+   "climb"
+  ]
+ },
+ "roborock-q8-max-pro": {
+  "na": [
+   "kg",
+   "stDust"
+  ]
+ },
+ "dreame-d20": {
+  "na": [
+   "db"
+  ]
+ },
+ "bosch-spotless": {
+  "na": [
+   "db",
+   "kg"
+  ]
+ },
+ "philips-xu5000": {
+  "na": [
+   "stDust"
+  ]
+ },
+ "viomi-v5": {
+  "na": [
+   "ch",
+   "db",
+   "mah",
+   "rt"
+  ]
+ },
+ "dreame-f10": {
+  "ch": 6,
+  "sides": 1,
+  "specSrc": "Versus özellik tablosu: 6 saat şarj, tek yan fırça",
+  "na": [
+   "db"
+  ]
+ },
+ "karcher-rcv-2": {
+  "water": 250,
+  "specSrc": "Kärcher resmi teknik föy: 250 ml temiz su tankı",
+  "na": [
+   "climb"
+  ]
+ },
+ "xiaomi-s40": {
+  "db": 60,
+  "specSrc": "RoboVacGuide özellik tablosu: 60 dB",
+  "na": [
+   "ch"
+  ]
+ },
+ "ultenic-t10-pro": {
+  "na": [
+   "climb",
+   "dust",
+   "kg",
+   "water"
+  ]
+ },
+ "ecovacs-deebot-n20e": {
+  "na": [
+   "kg",
+   "stDust"
+  ]
+ },
+ "irobot-roomba-105-combo": {
+  "na": [
+   "climb",
+   "db",
+   "rt",
+   "stDust"
+  ]
+ },
+ "dreame-l10s-pro-gen-2": {
+  "na": [
+   "ch",
+   "climb",
+   "db"
+  ]
+ },
+ "ecovacs-deebot-n20-pro": {
+  "na": [
+   "db",
+   "kg",
+   "stDust"
+  ]
+ },
+ "narwal-freo-s": {
+  "na": [
+   "ch",
+   "mah"
   ]
  }
 }

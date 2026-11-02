@@ -1,0 +1,44 @@
+{
+"ultenic-t10-pro": {
+"na": [
+"dust",
+"kg",
+"climb",
+"water"
+]
+},
+"ecovacs-deebot-n20e": {
+"na": [
+"kg",
+"stDust"
+]
+},
+"irobot-roomba-105-combo": {
+"na": [
+"rt",
+"db",
+"climb",
+"stDust"
+]
+},
+"dreame-l10s-pro-gen-2": {
+"na": [
+"ch",
+"db",
+"climb"
+]
+},
+"ecovacs-deebot-n20-pro": {
+"na": [
+"db",
+"kg",
+"stDust"
+]
+},
+"narwal-freo-s": {
+"na": [
+"mah",
+"ch"
+]
+}
+}
