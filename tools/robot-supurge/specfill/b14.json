@@ -40,5 +40,160 @@
 "mah",
 "ch"
 ]
+},
+"fakir-robert-rs-730": {
+"na": [
+"h",
+"kg"
+]
+},
+"fakir-robert-rs-740": {
+"na": [
+"h",
+"kg"
+]
+},
+"fakir-robert-rs-780": {
+"na": [
+"h",
+"climb",
+"stDust"
+]
+},
+"fakir-robert-rs-800": {
+"na": [
+"h",
+"kg"
+]
+},
+"fakir-robert-rs-830-plus": {
+"na": [
+"ch",
+"h",
+"kg",
+"water",
+"stDust"
+]
+},
+"fakir-robert-rs-800-plus": {
+"na": [
+"db",
+"h",
+"kg"
+]
+},
+"fakir-robert-rs-840-plus": {
+"na": [
+"db",
+"h",
+"kg"
+]
+},
+"fakir-robert-rs-780-plus": {
+"na": [
+"h",
+"climb",
+"stDust"
+]
+},
+"fakir-robert-robot": {
+"na": [
+"pa",
+"mah",
+"climb"
+]
+},
+"fakir-robert-rs-760": {
+"water": 350,
+"na": [
+"db",
+"h",
+"kg"
+],
+"specSrc": "Fakir resmi ürün sayfası (fakir.com.tr) teknik özellik tablosu: 350 ml su tankı"
+},
+"fakir-robert-rs-850-plus": {
+"pa": 15000,
+"db": 76,
+"stClean": 4,
+"stDirty": 4,
+"na": [
+"kg",
+"climb",
+"water",
+"stDust"
+],
+"specSrc": "Fakir resmi ürün sayfası (fakir.com.tr) teknik özellik tablosu: 15.000 Pa, güçlü modda 76 dB(A), 4 L temiz / 4 L kirli su"
+},
+"homend-alex-40": {
+"na": [
+"rt",
+"ch",
+"db",
+"climb",
+"water"
+]
+},
+"homend-alex-30": {
+"na": [
+"ch",
+"db",
+"dust",
+"h",
+"kg",
+"water",
+"stDust"
+]
+},
+"homend-alex-10": {
+"na": [
+"db",
+"dust",
+"kg"
+]
+},
+"homend-alex-laser-pro-plus-1283h": {
+"na": [
+"kg",
+"climb"
+]
+},
+"homend-alex-50-pro-ulticlean": {
+"na": [
+"dust",
+"water"
+]
+},
+"arcelik-imperium-robo-3-2-rs-6131": {
+"na": [
+"db"
+]
+},
+"arcelik-imperium-robo-3-1-rs-9231": {
+"na": [
+"db"
+]
+},
+"arcelik-imperium-robo-2-2-rs-6121": {
+"na": [
+"db",
+"stDust"
+]
+},
+"arcelik-imperium-robo-2-1-rs-9221": {
+"na": [
+"db"
+]
+},
+"beko-robo-x-2-0-rs-8121": {
+"na": [
+"rt",
+"db"
+]
+},
+"beko-robo-x-rs-2221": {
+"na": [
+"db"
+]
 }
 }

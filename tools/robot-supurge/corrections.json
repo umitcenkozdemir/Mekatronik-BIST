@@ -893,5 +893,160 @@
    "ch",
    "mah"
   ]
+ },
+ "fakir-robert-rs-730": {
+  "na": [
+   "h",
+   "kg"
+  ]
+ },
+ "fakir-robert-rs-740": {
+  "na": [
+   "h",
+   "kg"
+  ]
+ },
+ "fakir-robert-rs-780": {
+  "na": [
+   "climb",
+   "h",
+   "stDust"
+  ]
+ },
+ "fakir-robert-rs-800": {
+  "na": [
+   "h",
+   "kg"
+  ]
+ },
+ "fakir-robert-rs-830-plus": {
+  "na": [
+   "ch",
+   "h",
+   "kg",
+   "stDust",
+   "water"
+  ]
+ },
+ "fakir-robert-rs-800-plus": {
+  "na": [
+   "db",
+   "h",
+   "kg"
+  ]
+ },
+ "fakir-robert-rs-840-plus": {
+  "na": [
+   "db",
+   "h",
+   "kg"
+  ]
+ },
+ "fakir-robert-rs-780-plus": {
+  "na": [
+   "climb",
+   "h",
+   "stDust"
+  ]
+ },
+ "fakir-robert-robot": {
+  "na": [
+   "climb",
+   "mah",
+   "pa"
+  ]
+ },
+ "fakir-robert-rs-760": {
+  "water": 350,
+  "specSrc": "Fakir resmi ürün sayfası (fakir.com.tr) teknik özellik tablosu: 350 ml su tankı",
+  "na": [
+   "db",
+   "h",
+   "kg"
+  ]
+ },
+ "fakir-robert-rs-850-plus": {
+  "pa": 15000,
+  "db": 76,
+  "stClean": 4,
+  "stDirty": 4,
+  "specSrc": "Fakir resmi ürün sayfası (fakir.com.tr) teknik özellik tablosu: 15.000 Pa, güçlü modda 76 dB(A), 4 L temiz / 4 L kirli su",
+  "na": [
+   "climb",
+   "kg",
+   "stDust",
+   "water"
+  ]
+ },
+ "homend-alex-40": {
+  "na": [
+   "ch",
+   "climb",
+   "db",
+   "rt",
+   "water"
+  ]
+ },
+ "homend-alex-30": {
+  "na": [
+   "ch",
+   "db",
+   "dust",
+   "h",
+   "kg",
+   "stDust",
+   "water"
+  ]
+ },
+ "homend-alex-10": {
+  "na": [
+   "db",
+   "dust",
+   "kg"
+  ]
+ },
+ "homend-alex-laser-pro-plus-1283h": {
+  "na": [
+   "climb",
+   "kg"
+  ]
+ },
+ "homend-alex-50-pro-ulticlean": {
+  "na": [
+   "dust",
+   "water"
+  ]
+ },
+ "arcelik-imperium-robo-3-2-rs-6131": {
+  "na": [
+   "db"
+  ]
+ },
+ "arcelik-imperium-robo-3-1-rs-9231": {
+  "na": [
+   "db"
+  ]
+ },
+ "arcelik-imperium-robo-2-2-rs-6121": {
+  "na": [
+   "db",
+   "stDust"
+  ]
+ },
+ "arcelik-imperium-robo-2-1-rs-9221": {
+  "na": [
+   "db"
+  ]
+ },
+ "beko-robo-x-2-0-rs-8121": {
+  "na": [
+   "db",
+   "rt"
+  ]
+ },
+ "beko-robo-x-rs-2221": {
+  "na": [
+   "db"
+  ]
  }
 }

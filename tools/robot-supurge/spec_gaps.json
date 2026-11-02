@@ -194,29 +194,8 @@
 "dust",
 "water"
 ],
-"fakir-robert-rs-850-plus": [
-"pa",
-"db",
-"kg",
-"climb",
-"water",
-"stDust",
-"stClean",
-"stDirty"
-],
 "dreame-bot-l20-ultra": [
 "ch"
-],
-"homend-alex-50-pro-ulticlean": [
-"dust",
-"water"
-],
-"fakir-robert-rs-830-plus": [
-"ch",
-"h",
-"kg",
-"water",
-"stDust"
 ],
 "cecotec-conga-x100-ai": [
 "mah",
@@ -231,22 +210,10 @@
 "stClean",
 "stDirty"
 ],
-"fakir-robert-rs-840-plus": [
-"db",
-"h",
-"kg"
-],
 "dreame-bot-l10s-pro-ultra-heat": [
 "ch",
 "db",
 "climb"
-],
-"homend-alex-40": [
-"rt",
-"ch",
-"db",
-"climb",
-"water"
 ],
 "ecovacs-deebot-t30-pro-omni": [
 "rt",
@@ -270,36 +237,11 @@
 "kg",
 "stDust"
 ],
-"fakir-robert-robot": [
-"pa",
-"mah",
-"climb"
-],
 "xiaomi-robot-vacuum-x10-plus": [
 "stDirty"
 ],
-"homend-alex-30": [
-"ch",
-"db",
-"dust",
-"h",
-"kg",
-"water",
-"stDust"
-],
-"arcelik-imperium-robo-3-2-rs-6131": [
-"db"
-],
 "dreame-d10-plus-gen-2": [
 "db"
-],
-"arcelik-imperium-robo-3-1-rs-9231": [
-"db"
-],
-"fakir-robert-rs-800-plus": [
-"db",
-"h",
-"kg"
 ],
 "cecotec-conga-x70": [
 "rt",
@@ -323,10 +265,6 @@
 ],
 "tefal-rg8477-x-plorer-series": [
 "mah",
-"kg"
-],
-"fakir-robert-rs-740": [
-"h",
 "kg"
 ],
 "roborock-q8-max": [
@@ -361,10 +299,6 @@
 "kg",
 "climb"
 ],
-"arcelik-imperium-robo-2-2-rs-6121": [
-"db",
-"stDust"
-],
 "xiaomi-robot-vacuum-s10-plus": [
 "db",
 "climb"
@@ -375,10 +309,6 @@
 "db",
 "stDust"
 ],
-"beko-robo-x-2-0-rs-8121": [
-"rt",
-"db"
-],
 "cecotec-conga-y80": [
 "rt",
 "ch",
@@ -387,10 +317,6 @@
 "kg",
 "climb",
 "water"
-],
-"homend-alex-laser-pro-plus-1283h": [
-"kg",
-"climb"
 ],
 "electrolux-er71uw2sw": [
 "water"
@@ -420,24 +346,9 @@
 "climb",
 "water"
 ],
-"fakir-robert-rs-780-plus": [
-"h",
-"climb",
-"stDust"
-],
-"fakir-robert-rs-800": [
-"h",
-"kg"
-],
 "ecovacs-deebot-n10": [
 "db",
 "stDust"
-],
-"beko-robo-x-rs-2221": [
-"db"
-],
-"arcelik-imperium-robo-2-1-rs-9221": [
-"db"
 ],
 "electrolux-er71hw1ug": [
 "ch",
@@ -465,12 +376,6 @@
 ],
 "philips-homerun-3000-series-aqua": [
 "stDust"
-],
-"fakir-robert-rs-760": [
-"db",
-"h",
-"kg",
-"water"
 ],
 "ultenic-t10-elite": [
 "pa",
@@ -547,11 +452,6 @@
 "kg",
 "climb"
 ],
-"fakir-robert-rs-780": [
-"h",
-"climb",
-"stDust"
-],
 "yui-rs16": [
 "mah",
 "ch",
@@ -569,11 +469,6 @@
 "rt",
 "ch",
 "db"
-],
-"homend-alex-10": [
-"db",
-"dust",
-"kg"
 ],
 "dreame-bot-d9-max": [
 "ch"
@@ -597,10 +492,6 @@
 ],
 "viomi-v5-pro": [
 "ch"
-],
-"fakir-robert-rs-730": [
-"h",
-"kg"
 ],
 "simart-katya-p": [
 "ch",
