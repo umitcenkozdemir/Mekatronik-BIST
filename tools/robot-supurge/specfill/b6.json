@@ -1,0 +1,13 @@
+{
+"dyson-spot-plusscrub-ai":{"climb":20,"na":["mah","db","dust","water"],"specSrc":"Vacuum Wars testi: 20 mm engel aşma"},
+"roborock-qrevo-l-pro":{"ch":4.5,"na":["climb"],"specSrc":"EFTM incelemesi: tam şarj yaklaşık 4,5 saat"},
+"mamibot-exvac800s":{"rt":170,"specSrc":"Mamibot resmi tanıtım: 55–170 dk"},
+"ezviz-rs20-pro":{"na":["kg","climb"]},
+"dyson-r2-nurovi":{"na":["mah","db"]},
+"dreame-x40-ultra":{"db":70,"specSrc":"Modern Castle ölçümü: Max+ modunda 70 dB"},
+"dreame-l40-ultra-ae":{"na":["water"]},
+"jonr-x9-pro":{"climb":20,"na":["db","dust","kg","water"],"specSrc":"JONR resmi ürün sayfası: 20 mm basamak"},
+"dreame-l10s-ultra-gen-2":{"kg":4,"specSrc":"Dreame resmi özellik tablosu: robot 4 kg"},
+"xiaomi-vacuum-5":{"ch":6,"na":["db"],"specSrc":"Notebookcheck (Xiaomi lansmanı): tam şarj yaklaşık 6 saat"},
+"xiaomi-vacuum-5-pro":{"ch":6,"specSrc":"Notebookcheck (Xiaomi lansmanı): 5 ve 5 Pro için tam şarj yaklaşık 6 saat"}
+}

@@ -8,6 +8,8 @@ for f in sorted(glob.glob(S+'/specfill/b*.json')):
         c=C.setdefault(k,{})
         na=sorted(set(c.get('na',[]))|set(v.get('na',[])))
         c.update({a:b for a,b in v.items() if a!='na'})
+        na=[a for a in na if a not in c]
         if na: c['na']=na
+        else: c.pop('na',None)
 json.dump(C,open(S+'/corrections.json','w'),ensure_ascii=False,indent=1)
 print('ok',len(C))

@@ -1,0 +1,12 @@
+{
+"dreame-l50-ultra":{"water":80,"specSrc":"dreametech.com özellik tablosu: 3 saat şarj, ≤78 dB, 3,2 L torba, tek yan fırça, robotta 80 ml su"},
+"dreame-l50-ultra-ce":{"na":["rt","ch","db","climb","water"]},
+"roborock-qrevo-l":{"na":["stDust"]},
+"xiaomi-vacuum-e12":{"dust":400,"water":200,"climb":15,"kg":3.2,"na":["ch","db"],"specSrc":"Xiaomi E12 ürün föyü (400 ml hazne, 200 ml su, 15 mm eşik) ve kullanım kılavuzu (3,2 kg)"},
+"dreame-l40-ultra":{"db":71,"kg":3.9,"specSrc":"TechRadar: en fazla 71 dB (Max+); Dreame resmi (Gürcistan) özellik tablosu: robot 3,9 kg"},
+"mova-p50-pro-ultra":{"rt":170,"na":["ch","db","water"],"specSrc":"MOVA resmi karşılaştırma sayfası: 170 dk"},
+"tp-link-tapo-rv50-pro-omni":{"rt":250,"na":["ch","db","kg","sides"],"specSrc":"Product-Wise özellik tablosu: 250 dk"},
+"mova-e50-pro-ultra":{"na":["mah","rt","ch","db","kg","climb","water"]},
+"ecovacs-deebot-t80s-omni":{"rt":205,"na":["kg"],"specSrc":"Vacuum Wars: resmi pil süresi 205 dk"},
+"roborock-qrevo-edge-5v1":{"climb":40,"specSrc":"Roborock resmi Qrevo Edge sayfası: en fazla 4 cm eşik"}
+}

@@ -188,9 +188,6 @@
 "roborock-qrevo-curv-2-flow": [
 "kg"
 ],
-"dreame-l50-ultra": [
-"water"
-],
 "mova-e30-ultra": [
 "ch",
 "db",
@@ -214,74 +211,12 @@
 "dust",
 "water"
 ],
-"dreame-l50-ultra-ce": [
-"rt",
-"ch",
-"db",
-"climb",
-"water"
-],
-"roborock-qrevo-l": [
-"stDust"
-],
 "fakir-robert-rs-830-plus": [
 "ch",
 "h",
 "kg",
 "water",
 "stDust"
-],
-"xiaomi-vacuum-e12": [
-"ch",
-"db",
-"dust",
-"kg",
-"climb",
-"water"
-],
-"dreame-l40-ultra": [
-"db",
-"kg"
-],
-"mova-p50-pro-ultra": [
-"rt",
-"ch",
-"db",
-"water"
-],
-"tp-link-tapo-rv50-pro-omni": [
-"rt",
-"ch",
-"db",
-"kg",
-"sides"
-],
-"mova-e50-pro-ultra": [
-"mah",
-"rt",
-"ch",
-"db",
-"kg",
-"climb",
-"water"
-],
-"ecovacs-deebot-t80s-omni": [
-"rt",
-"kg"
-],
-"roborock-qrevo-edge-5v1": [
-"climb"
-],
-"dyson-spot-plusscrub-ai": [
-"mah",
-"db",
-"dust",
-"climb",
-"water"
-],
-"roborock-qrevo-l-pro": [
-"ch",
-"climb"
 ],
 "cecotec-conga-x100-ai": [
 "mah",
@@ -296,34 +231,10 @@
 "stClean",
 "stDirty"
 ],
-"mamibot-exvac800s": [
-"rt"
-],
-"ezviz-rs20-pro": [
-"kg",
-"climb"
-],
-"dyson-r2-nurovi": [
-"mah",
-"db"
-],
-"dreame-x40-ultra": [
-"db"
-],
-"dreame-l40-ultra-ae": [
-"water"
-],
 "fakir-robert-rs-840-plus": [
 "db",
 "h",
 "kg"
-],
-"jonr-x9-pro": [
-"db",
-"dust",
-"kg",
-"climb",
-"water"
 ],
 "dreame-bot-l10s-pro-ultra-heat": [
 "ch",
@@ -337,74 +248,12 @@
 "climb",
 "water"
 ],
-"dreame-l10s-ultra-gen-2": [
-"kg"
-],
-"xiaomi-vacuum-5": [
-"ch",
-"db"
-],
-"narwal-freo": [
-"ch",
-"climb",
-"water",
-"stClean",
-"stDirty"
-],
-"tefal-rg9695-x-plorer-serie": [
-"mah",
-"dust",
-"h",
-"kg",
-"climb",
-"stDust"
-],
-"roborock-qrevo-pro": [
-"ch",
-"kg",
-"climb",
-"stDust",
-"stClean",
-"stDirty"
-],
-"narwal-freo-z10": [
-"rt",
-"ch",
-"climb",
-"water"
-],
 "ecovacs-deebot-t30-pro-omni": [
 "rt",
 "kg",
 "stDust",
 "stClean",
 "stDirty"
-],
-"dreame-d30-ultra": [
-"ch",
-"db",
-"water"
-],
-"roborock-q8-plus": [
-"ch",
-"kg",
-"climb",
-"stDust"
-],
-"airbot-x40-ultra": [
-"ch",
-"water"
-],
-"ecovacs-deebot-t90-omni": [
-"sides"
-],
-"lydsto-w2": [
-"rt",
-"water"
-],
-"jonr-x1-max": [
-"kg",
-"water"
 ],
 "roborock-q8-max-plus": [
 "water"
@@ -421,17 +270,6 @@
 "kg",
 "stDust"
 ],
-"karcher-rvm-4-comfort-extra": [
-"climb",
-"water"
-],
-"narwal-freo-x-ultra": [
-"rt",
-"ch",
-"db",
-"climb",
-"water"
-],
 "fakir-robert-robot": [
 "pa",
 "mah",
@@ -439,14 +277,6 @@
 ],
 "xiaomi-robot-vacuum-x10-plus": [
 "stDirty"
-],
-"ecovacs-deebot-t80-omni": [
-"dust",
-"kg"
-],
-"dreame-d20-ultra": [
-"db",
-"water"
 ],
 "homend-alex-30": [
 "ch",
@@ -460,64 +290,16 @@
 "arcelik-imperium-robo-3-2-rs-6131": [
 "db"
 ],
-"lydsto-w3": [
-"ch",
-"kg",
-"water"
-],
-"narwal-freo-z-ultra": [
-"rt",
-"ch",
-"kg",
-"climb",
-"water"
-],
-"ecovacs-deebot-t50s-pro-omni": [
-"ch",
-"kg",
-"stClean",
-"stDirty"
-],
-"xiaomi-h50-pro": [
-"rt",
-"ch",
-"db",
-"water",
-"stDust",
-"stDirty"
-],
 "dreame-d10-plus-gen-2": [
 "db"
 ],
-"jonr-t5-pro-gen-2": [
-"db",
-"dust",
-"kg",
-"water"
-],
 "arcelik-imperium-robo-3-1-rs-9231": [
 "db"
-],
-"xiaomi-x20-max-2": [
-"db",
-"dust",
-"water"
-],
-"mova-e40-ultra": [
-"db",
-"kg"
 ],
 "fakir-robert-rs-800-plus": [
 "db",
 "h",
 "kg"
-],
-"lydsto-w2-plus": [
-"rt",
-"ch",
-"db",
-"water",
-"sides"
 ],
 "roborock-q8-max-pro-plus": [
 "kg",
@@ -560,12 +342,6 @@
 "db",
 "dust",
 "water"
-],
-"roborock-s8-pro-plus": [
-"ch",
-"kg",
-"climb",
-"stDust"
 ],
 "irobot-roomba-combo-j7-plus": [
 "pa",

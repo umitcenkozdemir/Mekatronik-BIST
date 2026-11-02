@@ -4,7 +4,10 @@
   "mop": "Rulo mop",
   "obst": "Yapay zekâ / kamera",
   "cam": true,
-  "src": "Hepsiburada başlığı: OZMO Roller 3.0, AIVI 3D 4.0"
+  "src": "Hepsiburada başlığı: OZMO Roller 3.0, AIVI 3D 4.0",
+  "na": [
+   "sides"
+  ]
  },
  "roborock-s9": {
   "mop": "Titreşimli",
@@ -21,15 +24,31 @@
  "dyson-spot-plusscrub-ai": {
   "obst": "Yapay zekâ / kamera",
   "cam": true,
-  "src": "HD kamera ve yapay zekâ kir tanıma"
+  "src": "HD kamera ve yapay zekâ kir tanıma",
+  "climb": 20,
+  "specSrc": "Vacuum Wars testi: 20 mm engel aşma",
+  "na": [
+   "db",
+   "dust",
+   "mah",
+   "water"
+  ]
  },
  "ecovacs-deebot-t80-omni": {
   "mop": "Rulo mop",
-  "src": "Hepsiburada başlığı: Kendini Temizleyen OZMO Roller ve Sıcak Su ile Paspas Yıkama (1 Kasım 2026)"
+  "src": "Hepsiburada başlığı: Kendini Temizleyen OZMO Roller ve Sıcak Su ile Paspas Yıkama (1 Kasım 2026)",
+  "dust": 220,
+  "kg": 4.95,
+  "specSrc": "ECOVACS resmi özellik tablosu: 0,22 L hazne, robot 4,95 kg"
  },
  "xiaomi-x20-max-2": {
   "obst": "3D / yapısal ışık",
-  "src": "Hepsiburada ürün açıklaması: Yapılandırılmış ışıklı ve kenar lazerli hassas engel atlama sistemi (1 Kasım 2026)"
+  "src": "Hepsiburada ürün açıklaması: Yapılandırılmış ışıklı ve kenar lazerli hassas engel atlama sistemi (1 Kasım 2026)",
+  "na": [
+   "db",
+   "dust",
+   "water"
+  ]
  },
  "ecovacs-deebot-t30c": {
   "nav": "LiDAR",
@@ -41,7 +60,12 @@
  },
  "ecovacs-deebot-t80s-omni": {
   "mop": "Rulo mop",
-  "src": "Ecovacs T80S Omni: OZMO Roller rulo mop (1 Kasım 2026)"
+  "src": "Ecovacs T80S Omni: OZMO Roller rulo mop (1 Kasım 2026)",
+  "rt": 205,
+  "specSrc": "Vacuum Wars: resmi pil süresi 205 dk",
+  "na": [
+   "kg"
+  ]
  },
  "ecovacs-deebot-t90-pro-omni": {
   "mop": "Rulo mop",
@@ -68,7 +92,13 @@
  },
  "roborock-s8-pro-plus": {
   "mop": "Titreşimli",
-  "src": "VibraRise titreşimli mop (1 Kasım 2026)"
+  "src": "VibraRise titreşimli mop (1 Kasım 2026)",
+  "na": [
+   "ch",
+   "climb",
+   "kg",
+   "stDust"
+  ]
  },
  "anker-eufy-3-in-1-e20": {
   "obst": "3D / yapısal ışık",
@@ -160,7 +190,8 @@
   "db": 78,
   "stDust": 3.2,
   "sides": 1,
-  "specSrc": "dreametech.com özellik tablosu: 3 saat şarj, ≤78 dB, 3,2 L torba, tek yan fırça"
+  "specSrc": "dreametech.com özellik tablosu: 3 saat şarj, ≤78 dB, 3,2 L torba, tek yan fırça, robotta 80 ml su",
+  "water": 80
  },
  "roborock-qrevo-c-pro": {
   "climb": 20,
@@ -239,8 +270,275 @@
  },
  "xiaomi-vacuum-5-pro": {
   "na": [
+   "db"
+  ],
+  "ch": 6,
+  "specSrc": "Notebookcheck (Xiaomi lansmanı): 5 ve 5 Pro için tam şarj yaklaşık 6 saat"
+ },
+ "dreame-l50-ultra-ce": {
+  "na": [
+   "ch",
+   "climb",
+   "db",
+   "rt",
+   "water"
+  ]
+ },
+ "roborock-qrevo-l": {
+  "na": [
+   "stDust"
+  ]
+ },
+ "xiaomi-vacuum-e12": {
+  "dust": 400,
+  "water": 200,
+  "climb": 15,
+  "kg": 3.2,
+  "specSrc": "Xiaomi E12 ürün föyü (400 ml hazne, 200 ml su, 15 mm eşik) ve kullanım kılavuzu (3,2 kg)",
+  "na": [
    "ch",
    "db"
+  ]
+ },
+ "dreame-l40-ultra": {
+  "db": 71,
+  "kg": 3.9,
+  "specSrc": "TechRadar: en fazla 71 dB (Max+); Dreame resmi (Gürcistan) özellik tablosu: robot 3,9 kg"
+ },
+ "mova-p50-pro-ultra": {
+  "rt": 170,
+  "specSrc": "MOVA resmi karşılaştırma sayfası: 170 dk",
+  "na": [
+   "ch",
+   "db",
+   "water"
+  ]
+ },
+ "tp-link-tapo-rv50-pro-omni": {
+  "rt": 250,
+  "specSrc": "Product-Wise özellik tablosu: 250 dk",
+  "na": [
+   "ch",
+   "db",
+   "kg",
+   "sides"
+  ]
+ },
+ "mova-e50-pro-ultra": {
+  "na": [
+   "ch",
+   "climb",
+   "db",
+   "kg",
+   "mah",
+   "rt",
+   "water"
+  ]
+ },
+ "roborock-qrevo-edge-5v1": {
+  "climb": 40,
+  "specSrc": "Roborock resmi Qrevo Edge sayfası: en fazla 4 cm eşik"
+ },
+ "roborock-qrevo-l-pro": {
+  "ch": 4.5,
+  "specSrc": "EFTM incelemesi: tam şarj yaklaşık 4,5 saat",
+  "na": [
+   "climb"
+  ]
+ },
+ "mamibot-exvac800s": {
+  "rt": 170,
+  "specSrc": "Mamibot resmi tanıtım: 55–170 dk"
+ },
+ "ezviz-rs20-pro": {
+  "na": [
+   "climb",
+   "kg"
+  ]
+ },
+ "dyson-r2-nurovi": {
+  "na": [
+   "db",
+   "mah"
+  ]
+ },
+ "dreame-x40-ultra": {
+  "db": 70,
+  "specSrc": "Modern Castle ölçümü: Max+ modunda 70 dB"
+ },
+ "dreame-l40-ultra-ae": {
+  "na": [
+   "water"
+  ]
+ },
+ "jonr-x9-pro": {
+  "climb": 20,
+  "specSrc": "JONR resmi ürün sayfası: 20 mm basamak",
+  "na": [
+   "db",
+   "dust",
+   "kg",
+   "water"
+  ]
+ },
+ "dreame-l10s-ultra-gen-2": {
+  "kg": 4,
+  "specSrc": "Dreame resmi özellik tablosu: robot 4 kg"
+ },
+ "xiaomi-vacuum-5": {
+  "ch": 6,
+  "specSrc": "Notebookcheck (Xiaomi lansmanı): tam şarj yaklaşık 6 saat",
+  "na": [
+   "db"
+  ]
+ },
+ "narwal-freo": {
+  "na": [
+   "ch",
+   "climb",
+   "stClean",
+   "stDirty",
+   "water"
+  ]
+ },
+ "tefal-rg9695-x-plorer-serie": {
+  "na": [
+   "climb",
+   "dust",
+   "h",
+   "kg",
+   "mah",
+   "stDust"
+  ]
+ },
+ "roborock-qrevo-pro": {
+  "na": [
+   "ch",
+   "climb",
+   "kg",
+   "stClean",
+   "stDirty",
+   "stDust"
+  ]
+ },
+ "narwal-freo-z10": {
+  "na": [
+   "ch",
+   "climb",
+   "rt",
+   "water"
+  ]
+ },
+ "dreame-d30-ultra": {
+  "na": [
+   "ch",
+   "db",
+   "water"
+  ]
+ },
+ "roborock-q8-plus": {
+  "na": [
+   "ch",
+   "climb",
+   "kg",
+   "stDust"
+  ]
+ },
+ "airbot-x40-ultra": {
+  "na": [
+   "ch",
+   "water"
+  ]
+ },
+ "lydsto-w2": {
+  "na": [
+   "rt",
+   "water"
+  ]
+ },
+ "jonr-x1-max": {
+  "kg": 3.6,
+  "specSrc": "XiaomiPlanets karşılaştırma tablosu: robot 3,6 kg",
+  "na": [
+   "water"
+  ]
+ },
+ "karcher-rvm-4-comfort-extra": {
+  "na": [
+   "climb",
+   "water"
+  ]
+ },
+ "narwal-freo-x-ultra": {
+  "na": [
+   "ch",
+   "climb",
+   "db",
+   "rt",
+   "water"
+  ]
+ },
+ "dreame-d20-ultra": {
+  "na": [
+   "db",
+   "water"
+  ]
+ },
+ "lydsto-w3": {
+  "na": [
+   "ch",
+   "kg",
+   "water"
+  ]
+ },
+ "narwal-freo-z-ultra": {
+  "na": [
+   "ch",
+   "climb",
+   "kg",
+   "rt",
+   "water"
+  ]
+ },
+ "ecovacs-deebot-t50s-pro-omni": {
+  "na": [
+   "ch",
+   "kg",
+   "stClean",
+   "stDirty"
+  ]
+ },
+ "xiaomi-h50-pro": {
+  "rt": 120,
+  "stDirty": 4,
+  "specSrc": "Xiaomi resmi SSS: 120 dk; mi.com: 4 L temiz/kirli su",
+  "na": [
+   "ch",
+   "db",
+   "stDust",
+   "water"
+  ]
+ },
+ "jonr-t5-pro-gen-2": {
+  "na": [
+   "db",
+   "dust",
+   "kg",
+   "water"
+  ]
+ },
+ "mova-e40-ultra": {
+  "kg": 4,
+  "db": 64,
+  "specSrc": "Versus ve video inceleme: robot 4 kg; Max+ modunda ölçülen 64 dB"
+ },
+ "lydsto-w2-plus": {
+  "na": [
+   "ch",
+   "db",
+   "rt",
+   "sides",
+   "water"
   ]
  }
 }

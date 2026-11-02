@@ -1,0 +1,74 @@
+{
+"lydsto-w3": {
+"na": [
+"ch",
+"kg",
+"water"
+]
+},
+"narwal-freo-z-ultra": {
+"na": [
+"rt",
+"ch",
+"kg",
+"climb",
+"water"
+]
+},
+"ecovacs-deebot-t50s-pro-omni": {
+"na": [
+"ch",
+"kg",
+"stClean",
+"stDirty"
+]
+},
+"xiaomi-h50-pro": {
+"rt": 120,
+"stDirty": 4,
+"na": [
+"ch",
+"db",
+"water",
+"stDust"
+],
+"specSrc": "Xiaomi resmi SSS: 120 dk; mi.com: 4 L temiz/kirli su"
+},
+"jonr-t5-pro-gen-2": {
+"na": [
+"db",
+"dust",
+"kg",
+"water"
+]
+},
+"xiaomi-x20-max-2": {
+"na": [
+"db",
+"dust",
+"water"
+]
+},
+"mova-e40-ultra": {
+"kg": 4,
+"db": 64,
+"specSrc": "Versus ve video inceleme: robot 4 kg; Max+ modunda ölçülen 64 dB"
+},
+"lydsto-w2-plus": {
+"na": [
+"rt",
+"ch",
+"db",
+"water",
+"sides"
+]
+},
+"roborock-s8-pro-plus": {
+"na": [
+"ch",
+"kg",
+"climb",
+"stDust"
+]
+}
+}
