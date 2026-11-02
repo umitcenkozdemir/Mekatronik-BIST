@@ -1,0 +1,142 @@
+{
+"simart-katya-o": {
+"na": [
+"db",
+"dust",
+"water"
+]
+},
+"cecotec-conga-x100-ai": {
+"na": [
+"mah",
+"rt",
+"ch",
+"db",
+"dust",
+"h",
+"kg",
+"water",
+"stDust",
+"stClean",
+"stDirty"
+]
+},
+"simart-katya-u": {
+"na": [
+"ch"
+]
+},
+"cecotec-conga-x70": {
+"na": [
+"rt",
+"ch",
+"db",
+"dust",
+"h",
+"kg",
+"climb",
+"water",
+"stDust",
+"stClean",
+"stDirty"
+]
+},
+"yui-rs16-pro-max-pet-kit": {
+"na": [
+"mah",
+"ch",
+"db",
+"kg",
+"climb"
+]
+},
+"cecotec-conga-y80": {
+"na": [
+"rt",
+"ch",
+"db",
+"dust",
+"kg",
+"climb",
+"water"
+]
+},
+"cecotec-conga-m100": {
+"na": [
+"ch",
+"db",
+"dust",
+"climb",
+"water"
+]
+},
+"cecotec-conga-y50": {
+"na": [
+"rt",
+"ch",
+"db",
+"dust",
+"h",
+"kg",
+"climb",
+"water"
+]
+},
+"simart-katya-v-plus": {
+"na": [
+"db"
+]
+},
+"yui-rs16-pro": {
+"na": [
+"mah",
+"ch",
+"db",
+"kg",
+"climb"
+]
+},
+"cecotec-conga-m10": {
+"na": [
+"mah",
+"ch",
+"db",
+"dust",
+"kg",
+"climb",
+"water"
+]
+},
+"simart-katya-v": {
+"na": [
+"db",
+"stDust"
+]
+},
+"yui-rs16": {
+"na": [
+"mah",
+"ch",
+"db",
+"h",
+"kg",
+"climb",
+"stDust"
+]
+},
+"simart-katya-p": {
+"na": [
+"ch",
+"db"
+]
+},
+"kiwi-kvc-4091": {
+"na": [
+"rt",
+"ch",
+"db",
+"dust",
+"kg"
+]
+}
+}
