@@ -1,0 +1,163 @@
+{
+"roborock-saros-20-flow": {
+"na": [
+"stDust",
+"stClean",
+"stDirty"
+]
+},
+"roborock-qrevo-master": {
+"climb": 20,
+"specSrc": "Vacuum Wars özellik özeti: 20 mm eşik",
+"na": [
+"ch"
+]
+},
+"mova-mobius-60": {
+"na": [
+"rt",
+"ch",
+"db",
+"kg",
+"water"
+]
+},
+"roborock-saros-20": {
+"sides": 1,
+"specSrc": "Roborock resmi sayfası: tek FlexiArm Arc yan fırça",
+"na": [
+"stDust",
+"stClean",
+"stDirty"
+]
+},
+"roborock-saros-20-sonic": {
+"sides": 1,
+"specSrc": "Roborock resmi sayfası: tek FlexiArm Arc yan fırça",
+"na": [
+"kg",
+"stDust",
+"stClean",
+"stDirty"
+]
+},
+"dreame-x60-ultra-complete": {
+"na": [
+"ch",
+"water"
+]
+},
+"mova-v70-ultra-complete": {
+"na": [
+"rt",
+"ch",
+"db",
+"dust",
+"kg",
+"water",
+"stDust"
+]
+},
+"lydsto-w2-edge": {
+"na": [
+"ch",
+"db",
+"dust",
+"water"
+]
+},
+"roborock-qrevo-edge-3-pro": {
+"na": [
+"ch",
+"kg",
+"stDust",
+"stClean",
+"stDirty"
+]
+},
+"mova-z70-ultra-roller-complete": {
+"na": [
+"rt",
+"ch",
+"db",
+"dust",
+"kg",
+"water"
+]
+},
+"roborock-saros-10": {
+"na": [
+"kg",
+"stClean",
+"stDirty"
+]
+},
+"anker-eufy-omni-e25": {
+"climb": 21,
+"water": 120,
+"specSrc": "eufy E25 kullanım kılavuzu: 21 mm'ye kadar engel, robotta 120 ml temiz su; Vacuum Wars: 21 mm eşik",
+"na": []
+},
+"roborock-qrevo-curv-5a1": {
+"na": [
+"ch",
+"climb",
+"stClean",
+"stDirty"
+]
+},
+"roborock-qrevo-edge-2-pro": {
+"na": [
+"ch",
+"kg",
+"stDust",
+"stClean",
+"stDirty"
+]
+},
+"roborock-qrevo-edge-2-flow": {
+"na": [
+"kg"
+]
+},
+"dreame-aqua-10-ultra-roller": {
+"na": [
+"ch",
+"db"
+]
+},
+"mova-z60-ultra-roller-complete": {
+"na": [
+"rt",
+"ch",
+"db",
+"kg"
+]
+},
+"dreame-x50-pro-ultra-complete": {
+"na": [
+"rt",
+"ch",
+"db",
+"water"
+]
+},
+"mova-s70-roller": {
+"sides": 1,
+"specSrc": "Vacuum Wars lansman yazısı: tek uzayan yan fırça (MaxiReach)",
+"na": [
+"rt",
+"ch",
+"db",
+"kg",
+"climb"
+]
+},
+"roborock-qrevo-curvx": {
+"na": [
+"ch",
+"stClean",
+"stDirty"
+]
+}
+}
