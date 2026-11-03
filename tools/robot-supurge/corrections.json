@@ -159,7 +159,13 @@
   "kg": 5.05,
   "ch": 2.5,
   "rt": 180,
-  "specSrc": "Roborock ABD ürün sayfası: robot 5,05 kg, 2,5 saat şarj; Business Insider: 180 dk"
+  "specSrc": "Roborock resmi sayfası: tek FlexiArm Arc yan fırça",
+  "sides": 1,
+  "na": [
+   "stClean",
+   "stDirty",
+   "stDust"
+  ]
  },
  "roborock-s7-max-ultra": {
   "kg": 4.5,
@@ -174,7 +180,9 @@
   "stDirty": 1.8,
   "dust": 300,
   "db": 59,
-  "specSrc": "eufy E25 kullanım kılavuzu (Home Depot PDF): 5.200 mAh, 3,5 saat şarj, 11,46 lb, 3 L torba, 2,5 L temiz / 1,8 L kirli su; Vacuum Wars: 300 ml hazne; Homes & Gardens: 51–59 dB"
+  "specSrc": "eufy E25 kullanım kılavuzu (Home Depot PDF): 5.200 mAh, 3,5 saat şarj, 11,46 lb, 3 L torba, 2,5 L temiz / 1,8 L kirli su; Vacuum Wars: 300 ml hazne; Homes & Gardens: 51–59 dB",
+  "climb": 21,
+  "water": 120
  },
  "dreame-matrix-10-ultra": {
   "rt": 260,
@@ -185,7 +193,11 @@
  },
  "dreame-x60-ultra-complete": {
   "rt": 180,
-  "specSrc": "Vacuum Wars: resmi pil süresi 180 dk"
+  "specSrc": "Vacuum Wars: resmi pil süresi 180 dk",
+  "na": [
+   "ch",
+   "water"
+  ]
  },
  "roborock-qrevo-maxv": {
   "climb": 20,
@@ -193,11 +205,21 @@
  },
  "roborock-saros-10": {
   "stDust": 2.7,
-  "specSrc": "Vacuum Wars: 2,7 L torba"
+  "specSrc": "Vacuum Wars: 2,7 L torba",
+  "na": [
+   "kg",
+   "stClean",
+   "stDirty"
+  ]
  },
  "roborock-saros-20-flow": {
   "kg": 5.2,
-  "specSrc": "Roborock ABD ürün sayfası: robot net ağırlığı 5,2 kg"
+  "specSrc": "Roborock ABD ürün sayfası: robot net ağırlığı 5,2 kg",
+  "na": [
+   "stClean",
+   "stDirty",
+   "stDust"
+  ]
  },
  "dji-romo-a": {
   "climb": 25,
@@ -211,7 +233,11 @@
   "rt": 175,
   "climb": 42,
   "stDust": 3.2,
-  "specSrc": "Vacuum Wars (resmi pil süresi 175 dk); Dreame resmi: tek eşik 42 mm, 3,2 L toz torbası"
+  "specSrc": "Vacuum Wars (resmi pil süresi 175 dk); Dreame resmi: tek eşik 42 mm, 3,2 L toz torbası",
+  "na": [
+   "ch",
+   "db"
+  ]
  },
  "dreame-l50-ultra": {
   "ch": 3,
@@ -231,7 +257,12 @@
  },
  "roborock-qrevo-curvx": {
   "kg": 4.42,
-  "specSrc": "Roborock resmi: robot 9,74 lb"
+  "specSrc": "Roborock resmi: robot 9,74 lb",
+  "na": [
+   "ch",
+   "stClean",
+   "stDirty"
+  ]
  },
  "roborock-saros-10r": {
   "kg": 4.1,
@@ -1206,6 +1237,144 @@
    "ch",
    "kg",
    "water"
+  ]
+ },
+ "roborock-qrevo-master": {
+  "climb": 20,
+  "specSrc": "Vacuum Wars özellik özeti: 20 mm eşik",
+  "na": [
+   "ch"
+  ]
+ },
+ "mova-mobius-60": {
+  "na": [
+   "ch",
+   "db",
+   "kg",
+   "rt",
+   "water"
+  ]
+ },
+ "roborock-saros-20-sonic": {
+  "sides": 1,
+  "specSrc": "Roborock resmi sayfası: tek FlexiArm Arc yan fırça",
+  "na": [
+   "kg",
+   "stClean",
+   "stDirty",
+   "stDust"
+  ]
+ },
+ "mova-v70-ultra-complete": {
+  "na": [
+   "ch",
+   "db",
+   "dust",
+   "kg",
+   "rt",
+   "stDust",
+   "water"
+  ]
+ },
+ "lydsto-w2-edge": {
+  "na": [
+   "ch",
+   "db",
+   "dust",
+   "water"
+  ]
+ },
+ "roborock-qrevo-edge-3-pro": {
+  "kg": 4.96,
+  "specSrc": "Roborock resmi ürün sayfası özellik tablosu: robot 4,96 kg",
+  "na": [
+   "ch",
+   "stClean",
+   "stDirty",
+   "stDust"
+  ]
+ },
+ "mova-z70-ultra-roller-complete": {
+  "na": [
+   "ch",
+   "db",
+   "dust",
+   "kg",
+   "rt",
+   "water"
+  ]
+ },
+ "roborock-qrevo-curv-5a1": {
+  "na": [
+   "ch",
+   "climb",
+   "stClean",
+   "stDirty"
+  ]
+ },
+ "roborock-qrevo-edge-2-pro": {
+  "na": [
+   "ch",
+   "kg",
+   "stClean",
+   "stDirty",
+   "stDust"
+  ]
+ },
+ "roborock-qrevo-edge-2-flow": {
+  "na": [
+   "kg"
+  ]
+ },
+ "mova-z60-ultra-roller-complete": {
+  "na": [
+   "ch",
+   "db",
+   "kg",
+   "rt"
+  ]
+ },
+ "dreame-x50-pro-ultra-complete": {
+  "na": [
+   "ch",
+   "db",
+   "rt",
+   "water"
+  ]
+ },
+ "mova-s70-roller": {
+  "sides": 1,
+  "specSrc": "Vacuum Wars lansman yazısı: tek uzayan yan fırça (MaxiReach)",
+  "na": [
+   "ch",
+   "climb",
+   "db",
+   "kg",
+   "rt"
+  ]
+ },
+ "ultenic-d6s": {
+  "na": [
+   "climb",
+   "mah",
+   "water"
+  ]
+ },
+ "philips-xu2000-21": {
+  "na": [
+   "climb"
+  ]
+ },
+ "philips-xu2000-22": {
+  "na": [
+   "climb"
+  ]
+ },
+ "tefal-rg9177-x-plorer-serie-140": {
+  "na": [
+   "ch",
+   "climb",
+   "mah"
   ]
  }
 }

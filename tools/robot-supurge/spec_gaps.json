@@ -2,93 +2,8 @@
 "roborock-s8-maxv-ultra": [
 "kg"
 ],
-"roborock-saros-20-flow": [
-"stDust",
-"stClean",
-"stDirty"
-],
 "roborock-s7-max-ultra": [
 "climb"
-],
-"roborock-qrevo-master": [
-"ch",
-"climb"
-],
-"mova-mobius-60": [
-"rt",
-"ch",
-"db",
-"kg",
-"water"
-],
-"roborock-saros-20": [
-"stDust",
-"stClean",
-"stDirty",
-"sides"
-],
-"roborock-saros-20-sonic": [
-"kg",
-"stDust",
-"stClean",
-"stDirty",
-"sides"
-],
-"dreame-x60-ultra-complete": [
-"ch",
-"water"
-],
-"mova-v70-ultra-complete": [
-"rt",
-"ch",
-"db",
-"dust",
-"kg",
-"water",
-"stDust"
-],
-"lydsto-w2-edge": [
-"ch",
-"db",
-"dust",
-"water"
-],
-"roborock-qrevo-edge-3-pro": [
-"ch",
-"kg",
-"stDust",
-"stClean",
-"stDirty"
-],
-"mova-z70-ultra-roller-complete": [
-"rt",
-"ch",
-"db",
-"dust",
-"kg",
-"water"
-],
-"roborock-saros-10": [
-"kg",
-"stClean",
-"stDirty"
-],
-"anker-eufy-omni-e25": [
-"climb",
-"water"
-],
-"roborock-qrevo-curv-5a1": [
-"ch",
-"climb",
-"stClean",
-"stDirty"
-],
-"roborock-qrevo-edge-2-pro": [
-"ch",
-"kg",
-"stDust",
-"stClean",
-"stDirty"
 ],
 "samsung-bespoke-jet-bot-combo-ai": [
 "mah",
@@ -98,50 +13,13 @@
 "ch",
 "kg"
 ],
-"roborock-qrevo-edge-2-flow": [
-"kg"
-],
-"dreame-aqua-10-ultra-roller": [
-"ch",
-"db"
-],
-"mova-z60-ultra-roller-complete": [
-"rt",
-"ch",
-"db",
-"kg"
-],
-"dreame-x50-pro-ultra-complete": [
-"rt",
-"ch",
-"db",
-"water"
-],
-"mova-s70-roller": [
-"rt",
-"ch",
-"db",
-"kg",
-"climb",
-"sides"
-],
-"roborock-qrevo-curvx": [
-"ch",
-"stClean",
-"stDirty"
-],
-"roborock-qrevo-curv-2-pro": [
-"ch",
-"kg"
-],
 "roborock-qrevo-c": [
 "ch",
 "climb"
 ],
-"roborock-qrevo-s": [
+"roborock-qrevo-curv-2-pro": [
 "ch",
-"kg",
-"climb"
+"kg"
 ],
 "ecovacs-deebot-x11-omnicyclone": [
 "kg"
@@ -149,11 +27,10 @@
 "ezviz-rs20-max": [
 "climb"
 ],
-"dreame-l50s-pro-ultra": [
-"rt",
+"roborock-qrevo-s": [
 "ch",
-"db",
-"water"
+"kg",
+"climb"
 ],
 "mova-p70-pro-ultra": [
 "rt",
@@ -163,6 +40,12 @@
 "kg",
 "water",
 "stDust"
+],
+"dreame-l50s-pro-ultra": [
+"rt",
+"ch",
+"db",
+"water"
 ],
 "xiaomi-robot-vacuum-6": [
 "dust"
@@ -174,14 +57,11 @@
 "stDirty",
 "sides"
 ],
-"roborock-s8-plus": [
+"roborock-qrevo-curv-2-flow": [
 "kg"
 ],
 "roborock-qrevo-c-pro": [
 "ch"
-],
-"roborock-qrevo-curv-2-flow": [
-"kg"
 ],
 "mova-e30-ultra": [
 "ch",
@@ -191,6 +71,9 @@
 ],
 "dreame-bot-l20-ultra": [
 "ch"
+],
+"roborock-q8-max-plus": [
+"water"
 ],
 "dreame-bot-l10s-pro-ultra-heat": [
 "ch",
@@ -203,9 +86,6 @@
 "stDust",
 "stClean",
 "stDirty"
-],
-"roborock-q8-max-plus": [
-"water"
 ],
 "roborock-s8": [
 "kg",
@@ -222,6 +102,14 @@
 "dreame-d10-plus-gen-2": [
 "db"
 ],
+"ultenic-t10-elite": [
+"pa",
+"db",
+"dust",
+"h",
+"climb",
+"water"
+],
 "tefal-rg9475-x-plorer-serie-220": [
 "mah",
 "h",
@@ -232,10 +120,6 @@
 "tefal-rg8477-x-plorer-series": [
 "mah",
 "kg"
-],
-"roborock-q8-max": [
-"water",
-"stDust"
 ],
 "hobot-legee-d8": [
 "rt",
@@ -258,6 +142,10 @@
 "db",
 "climb"
 ],
+"tcl-sweeva-6000": [
+"ch",
+"kg"
+],
 "xiaomi-robot-vacuum-s10-plus": [
 "db",
 "climb"
@@ -268,25 +156,34 @@
 "db",
 "stDust"
 ],
+"electrolux-er71hw1ug": [
+"ch",
+"kg",
+"water"
+],
 "electrolux-er71uw2sw": [
 "water"
+],
+"roborock-q8-max": [
+"water",
+"stDust"
+],
+"tp-link-tapo-rv30": [
+"ch",
+"kg",
+"stDust"
+],
+"arnica-sil-supur": [
+"kg"
 ],
 "irobot-roomba-combo-j5-plus": [
 "mah",
 "db",
 "stDust"
 ],
-"arnica-sil-supur": [
-"kg"
-],
 "ecovacs-deebot-n10": [
 "db",
 "stDust"
-],
-"electrolux-er71hw1ug": [
-"ch",
-"kg",
-"water"
 ],
 "ecovacs-deebot-n20-pro-plus": [
 "db",
@@ -299,25 +196,10 @@
 "kg",
 "water"
 ],
-"tp-link-tapo-rv30": [
+"tp-link-tapo-rv30-max": [
 "ch",
 "kg",
 "stDust"
-],
-"philips-homerun-3000-series-aqua": [
-"stDust"
-],
-"ultenic-t10-elite": [
-"pa",
-"db",
-"dust",
-"h",
-"climb",
-"water"
-],
-"grundig-vcr-6330": [
-"db",
-"kg"
 ],
 "xiaomi-robot-vacuum-s20": [
 "rt",
@@ -325,30 +207,26 @@
 "db",
 "climb"
 ],
+"tp-link-tapo-rv30-max-plus": [
+"ch",
+"kg"
+],
+"philips-homerun-3000-series-aqua": [
+"stDust"
+],
+"grundig-vcr-6330": [
+"db",
+"kg"
+],
 "hobot-legee-7": [
 "rt",
 "ch",
 "kg",
 "climb"
 ],
-"tefal-rg9177-x-plorer-serie-140": [
-"mah",
-"ch",
-"climb"
-],
 "xiaomi-mi-robot-vacuum-mop-essential": [
 "rt",
 "db"
-],
-"philips-xu2000-21": [
-"climb"
-],
-"tp-link-tapo-rv30-max-plus": [
-"ch",
-"kg"
-],
-"philips-xu2000-22": [
-"climb"
 ],
 "anker-eufy-robovac-x8-hybrid": [
 "kg"
@@ -363,6 +241,11 @@
 "climb"
 ],
 "blaupunkt-s10-robomaster": [
+"db",
+"kg"
+],
+"dersar-l1-plus": [
+"ch",
 "db",
 "kg"
 ],
@@ -383,33 +266,14 @@
 "tefal-rg8577wh-x-plorer-serie-75-s-max": [
 "mah"
 ],
-"tefal-rg9075-x-plorer-serie-130-ai": [
-"mah"
-],
 "viomi-v5-pro": [
 "ch"
 ],
-"tcl-sweeva-6000": [
-"ch",
-"kg"
-],
-"tp-link-tapo-rv30-max": [
-"ch",
-"kg",
-"stDust"
+"tefal-rg9075-x-plorer-serie-130-ai": [
+"mah"
 ],
 "irobot-roomba-combo": [
 "pa"
-],
-"dersar-l1-plus": [
-"ch",
-"db",
-"kg"
-],
-"ultenic-d6s": [
-"mah",
-"climb",
-"water"
 ],
 "redline-robored-g1": [
 "pa",

@@ -69,11 +69,12 @@
 "roborock-qrevo-edge-3-pro": {
 "na": [
 "ch",
-"kg",
 "stDust",
 "stClean",
 "stDirty"
-]
+],
+"kg": 4.96,
+"specSrc": "Roborock resmi ürün sayfası özellik tablosu: robot 4,96 kg"
 },
 "mova-z70-ultra-roller-complete": {
 "na": [
@@ -158,6 +159,30 @@
 "ch",
 "stClean",
 "stDirty"
+]
+},
+"ultenic-d6s": {
+"na": [
+"mah",
+"climb",
+"water"
+]
+},
+"philips-xu2000-21": {
+"na": [
+"climb"
+]
+},
+"philips-xu2000-22": {
+"na": [
+"climb"
+]
+},
+"tefal-rg9177-x-plorer-serie-140": {
+"na": [
+"mah",
+"ch",
+"climb"
 ]
 }
 }
