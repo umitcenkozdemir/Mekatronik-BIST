@@ -1,3 +1,4 @@
+import os
 # Buzdolabı satıcı sınıflama + offers.json üretimi (epey detay sayfalarından)
 import json,glob,re,sys,collections
 S=sys.argv[1]
@@ -19,8 +20,9 @@ def classify(site,seller,brand):
     if 'yetkili' in n or 'bayi' in n: return 'brand',seller
     return 'market',seller
 if __name__=='__main__':
-    out={}
-    for f in glob.glob(S+'/raw_detail/*.txt'):
+    import time
+    out={}; META={}  # META: her ürün sayfasının en son çekildiği tarih
+    for f in sorted(glob.glob(S+'/raw_detail/*.txt'),key=os.path.getmtime):
         for r in json.load(open(f)).get('results',[]):
             u=r['url'].split('?')[0]
             if not re.search(r'buzdolabi/[^/]+\.html$',u): continue
@@ -39,7 +41,9 @@ if __name__=='__main__':
                     if not pm: continue
                     sm=re.search(r'\*\*Satıcı:\*\*\s*([^|*\n]+)',blk)
                     offers.append(dict(site='',store='?',seller=sm.group(1).strip() if sm else None,price=float(pm[-1].replace('.','').replace(',','.')),age=None))
-            out[u]=offers
+            if offers or u not in out:
+                out[u]=offers; META[u]=time.strftime('%Y-%m-%d',time.localtime(os.path.getmtime(f)))
     json.dump(out,open(S+'/offers.json','w'),ensure_ascii=False)
+    json.dump(META,open(S+'/offers_meta.json','w'),ensure_ascii=False)
     print(len(out),'pages', sum(1 for v in out.values() if v),'with offers')
     print(collections.Counter(o['seller'] for v in out.values() for o in v).most_common(40))
