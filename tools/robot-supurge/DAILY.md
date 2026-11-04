@@ -32,6 +32,16 @@ TAG=$(date +%Y%m%d)
    Yeni modelleri `profile_queue.json`'a popülerlik sırasına göre ekle (liste sayfasındaki sırası).
 5. `python3 -I parse_oos.py $W` (fiyatsız eski modeller listesi).
 
+## 1a. Satıcı listelerini tazele (her gün)
+
+Kart fiyatı günlük listeden, ayrıntı penceresindeki mağaza listesi ise ürün sayfasından gelir. İkisi farklı günlerden olursa
+kartta görünen fiyat mağaza listesinde bulunmaz. Bu yüzden her gün:
+1. Kart fiyatı, en ucuz mağaza fiyatından %5'ten fazla farklı olan modellerin epey ürün sayfalarını (`<url>?s=$TAG`) 10'arlı çek.
+2. Ayrıca satıcı listesi en eski olan 30 modeli (offers_meta.json'da tarihi en eski ya da hiç olmayan) çek.
+3. Çıktıları `raw_detail/` içine koy ve `python3 -I sellers.py $W` çalıştır. `offers_meta.json` her sayfanın çekilme tarihini tutar;
+   `enrich.py` 2 Kasım 2026 sonrası çekilen listeyi derin incelemedeki eski listenin yerine kullanır ve kutudaki mağaza fiyatlarını günceller.
+   Tavily bazen mağaza logolarını döndürmez; o zaman satıcı adları ayrıştırılır, mağaza "?" olur.
+
 ## 1b. Özellik tamamlama (her gün 20 model, en pahalıdan)
 
 Hedef: hiçbir modelde boş özellik kalmaması. `spec_gaps.json` eksik alanları en pahalı modelden başlayarak listeler
