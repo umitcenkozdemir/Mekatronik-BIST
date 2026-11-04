@@ -35,6 +35,14 @@ TAG=$(date +%Y%m%d)
    ve `python3 -I sellers.py .` çalıştır. Solo olan yeni modelleri `profile_queue.json`'un sonuna (liste sırasıyla) ekle.
 4. Haftada bir (pazartesi) stoktaki tüm modellerin detay sayfalarını yeniden çek (satıcı listeleri tazelenir).
 
+## 1a. Satıcı listelerini tazele (her gün)
+
+Kart fiyatı günlük listeden, ayrıntı penceresindeki mağaza listesi ürün sayfasından gelir. İkisi farklı günlerden olursa kartta görünen fiyat
+mağaza listesinde bulunmaz. Her gün kart fiyatı en ucuz mağaza fiyatından %5'ten fazla farklı olan modellerin epey ürün sayfalarını
+(`<url>?s=$TAG`) 10'arlı çek, `raw_detail/` içine koy, `parse_detail.py` ve `sellers.py` çalıştır. `offers_meta.json` her sayfanın çekilme
+tarihini tutar; `enrich.py` 2 Kasım 2026 sonrası çekilen listeyi derin incelemedeki eski listenin yerine kullanır ve kutudaki fiyatları günceller.
+Tavily'nin gelişmiş çekiminde (advanced) hız sınırı var: 3 çağrıdan sonra ~90 sn bekle.
+
 ## 2. Derin inceleme (30 model)
 
 1. `python3 -I deep_urls.py $W $B 30` → `deep/$B/queue.json` ve `hb` (model koduyla Hepsiburada araması) ile `tek` (Teknosa) adreslerini basar.
