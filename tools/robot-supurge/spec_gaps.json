@@ -9,65 +9,20 @@
 "mah",
 "climb"
 ],
-"roborock-qrevo-c": [
-"ch",
-"climb"
-],
 "roborock-qrevo-maxv": [
 "ch",
 "kg"
-],
-"roborock-qrevo-curv-2-pro": [
-"ch",
-"kg"
-],
-"ecovacs-deebot-x11-omnicyclone": [
-"kg"
-],
-"ezviz-rs20-max": [
-"climb"
-],
-"mova-p70-pro-ultra": [
-"rt",
-"ch",
-"db",
-"dust",
-"kg",
-"water",
-"stDust"
-],
-"dreame-l50s-pro-ultra": [
-"rt",
-"ch",
-"db",
-"water"
 ],
 "roborock-qrevo-s": [
 "ch",
 "kg",
 "climb"
 ],
-"roborock-qrevo-edge-2": [
-"climb",
-"stDust",
-"stClean",
-"stDirty",
-"sides"
-],
-"roborock-qrevo-c-pro": [
-"ch"
-],
-"xiaomi-robot-vacuum-6": [
-"dust"
-],
 "mova-e30-ultra": [
 "ch",
 "db",
 "dust",
 "water"
-],
-"roborock-qrevo-curv-2-flow": [
-"kg"
 ],
 "dreame-bot-l20-ultra": [
 "ch"

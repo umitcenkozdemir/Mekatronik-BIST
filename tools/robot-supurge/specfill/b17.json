@@ -1,0 +1,65 @@
+{
+"ecovacs-deebot-x11-omnicyclone": {
+"kg": 5.3,
+"specSrc": "ECOVACS resmi özellik tablosu: robot 5,3 kg"
+},
+"roborock-qrevo-c-pro": {
+"ch": 4,
+"specSrc": "Roborock Avustralya resmi mağazası özellik tablosu: yaklaşık 4 saat şarj"
+},
+"roborock-qrevo-c": {
+"na": [
+"ch",
+"climb"
+]
+},
+"roborock-qrevo-curv-2-pro": {
+"na": [
+"ch",
+"kg"
+]
+},
+"ezviz-rs20-max": {
+"na": [
+"climb"
+]
+},
+"mova-p70-pro-ultra": {
+"na": [
+"rt",
+"ch",
+"db",
+"dust",
+"kg",
+"water",
+"stDust"
+]
+},
+"dreame-l50s-pro-ultra": {
+"na": [
+"rt",
+"ch",
+"db",
+"water"
+]
+},
+"roborock-qrevo-edge-2": {
+"na": [
+"climb",
+"stDust",
+"stClean",
+"stDirty",
+"sides"
+]
+},
+"xiaomi-robot-vacuum-6": {
+"na": [
+"dust"
+]
+},
+"roborock-qrevo-curv-2-flow": {
+"na": [
+"kg"
+]
+}
+}

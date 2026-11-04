@@ -106,7 +106,9 @@
  },
  "ecovacs-deebot-x11-omnicyclone": {
   "mop": "Rulo mop",
-  "src": "X11 serisi: OZMO Roller rulo mop (1 Kasım 2026)"
+  "src": "X11 serisi: OZMO Roller rulo mop (1 Kasım 2026)",
+  "kg": 5.3,
+  "specSrc": "ECOVACS resmi özellik tablosu: robot 5,3 kg"
  },
  "mova-v50-ultra-complete": {
   "mop": "Çift döner",
@@ -249,11 +251,15 @@
  },
  "roborock-qrevo-c-pro": {
   "climb": 20,
-  "specSrc": "Roborock resmi: 20 mm eşik"
+  "specSrc": "Roborock resmi: 20 mm eşik",
+  "ch": 4
  },
  "roborock-qrevo-curv-2-flow": {
   "climb": 20,
-  "specSrc": "Roborock resmi: 20 mm eşik"
+  "specSrc": "Roborock resmi: 20 mm eşik",
+  "na": [
+   "kg"
+  ]
  },
  "roborock-qrevo-curvx": {
   "kg": 4.42,
@@ -270,7 +276,10 @@
  },
  "xiaomi-robot-vacuum-6": {
   "db": 50,
-  "specSrc": "Bağımsız ölçüm testi: ~50 dB"
+  "specSrc": "Bağımsız ölçüm testi: ~50 dB",
+  "na": [
+   "dust"
+  ]
  },
  "anker-eufy-omni-e28": {
   "mah": 5200,
@@ -1375,6 +1384,51 @@
    "ch",
    "climb",
    "mah"
+  ]
+ },
+ "roborock-qrevo-c": {
+  "na": [
+   "ch",
+   "climb"
+  ]
+ },
+ "roborock-qrevo-curv-2-pro": {
+  "na": [
+   "ch",
+   "kg"
+  ]
+ },
+ "ezviz-rs20-max": {
+  "na": [
+   "climb"
+  ]
+ },
+ "mova-p70-pro-ultra": {
+  "na": [
+   "ch",
+   "db",
+   "dust",
+   "kg",
+   "rt",
+   "stDust",
+   "water"
+  ]
+ },
+ "dreame-l50s-pro-ultra": {
+  "na": [
+   "ch",
+   "db",
+   "rt",
+   "water"
+  ]
+ },
+ "roborock-qrevo-edge-2": {
+  "na": [
+   "climb",
+   "sides",
+   "stClean",
+   "stDirty",
+   "stDust"
   ]
  }
 }

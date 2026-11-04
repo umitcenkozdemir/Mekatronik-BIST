@@ -6510,5 +6510,31 @@
    "İki tekerlek fiyatının 7.500 TL olması"
   ],
   "issues": []
+ },
+ "irobot-roomba-105-combo-autoempty": {
+  "date": "4 Kasım 2026",
+  "verdict": "Roomba 105 Combo'nun toz boşaltma istasyonlu sürümü: LiDAR navigasyon, kaldırılabilen sabit ped mop, 7.000 Pa. Tek satıcı Hepsiburada'daki iRobot Türkiye mağazası, 14.999 TL. Engel algılama yalnızca tampon; iRobot'un satış sonrası notu düşük (34/100).",
+  "forWho": [
+   "Bütçesi sınırlı, toz boşaltma istasyonu isteyen ve yerde kablo/çorap bırakmayanlar"
+  ],
+  "notFor": [
+   "Yerde dağınıklık olan evler (kamera yok, yalnızca tampon)",
+   "Satış sonrası güvencesine önem verenler"
+  ],
+  "pros": [
+   "LiDAR navigasyon ve toz boşaltma istasyonu bu fiyatta",
+   "Halıda mop kaldırma",
+   "iRobot Türkiye'nin kendi mağazası satıyor"
+  ],
+  "cons": [
+   "Engel algılama yalnızca tampon",
+   "Kısa çalışma süresi (75 dk, 3.000 mAh)",
+   "Sabit ped mop lekeyi çıkarmaz",
+   "iRobot satış sonrası notu düşük (34/100), tek satıcı",
+   "İstasyonsuz Roomba 105 Combo yaklaşık 5 bin TL ucuz (9.999 TL)"
+  ],
+  "liked": [],
+  "disliked": [],
+  "issues": []
  }
 }
