@@ -7,7 +7,7 @@ def clean(s):
 for f in glob.glob(sys.argv[1]+'/mcp-Tavily-tavily_extract-*.txt'):
     d=json.load(open(f))
     for r in d.get('results',[]):
-        u=r['url']
+        u=r['url'].split('?')[0]
         if not re.search(r'epey\.com/robot-supurge/[^/]+\.html$',u): continue
         t=r['raw_content']
         specs={}

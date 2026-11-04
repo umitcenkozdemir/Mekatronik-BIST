@@ -9,13 +9,13 @@
 "mah",
 "climb"
 ],
-"roborock-qrevo-maxv": [
-"ch",
-"kg"
-],
 "roborock-qrevo-c": [
 "ch",
 "climb"
+],
+"roborock-qrevo-maxv": [
+"ch",
+"kg"
 ],
 "roborock-qrevo-curv-2-pro": [
 "ch",
@@ -25,11 +25,6 @@
 "kg"
 ],
 "ezviz-rs20-max": [
-"climb"
-],
-"roborock-qrevo-s": [
-"ch",
-"kg",
 "climb"
 ],
 "mova-p70-pro-ultra": [
@@ -47,8 +42,10 @@
 "db",
 "water"
 ],
-"xiaomi-robot-vacuum-6": [
-"dust"
+"roborock-qrevo-s": [
+"ch",
+"kg",
+"climb"
 ],
 "roborock-qrevo-edge-2": [
 "climb",
@@ -57,11 +54,11 @@
 "stDirty",
 "sides"
 ],
-"roborock-qrevo-curv-2-flow": [
-"kg"
-],
 "roborock-qrevo-c-pro": [
 "ch"
+],
+"xiaomi-robot-vacuum-6": [
+"dust"
 ],
 "mova-e30-ultra": [
 "ch",
@@ -69,16 +66,14 @@
 "dust",
 "water"
 ],
+"roborock-qrevo-curv-2-flow": [
+"kg"
+],
 "dreame-bot-l20-ultra": [
 "ch"
 ],
 "roborock-q8-max-plus": [
 "water"
-],
-"dreame-bot-l10s-pro-ultra-heat": [
-"ch",
-"db",
-"climb"
 ],
 "ecovacs-deebot-t30-pro-omni": [
 "rt",
@@ -87,9 +82,10 @@
 "stClean",
 "stDirty"
 ],
-"roborock-s8": [
-"kg",
-"stDust"
+"dreame-bot-l10s-pro-ultra-heat": [
+"ch",
+"db",
+"climb"
 ],
 "roborock-q5-pro": [
 "ch",
@@ -99,7 +95,28 @@
 "xiaomi-robot-vacuum-x10-plus": [
 "stDirty"
 ],
+"roborock-s8": [
+"kg",
+"stDust"
+],
+"tefal-rg9475-x-plorer-serie-220": [
+"mah",
+"h",
+"kg",
+"climb",
+"stDust"
+],
 "dreame-d10-plus-gen-2": [
+"db"
+],
+"tefal-rg8477-x-plorer-series": [
+"mah",
+"kg"
+],
+"roborock-q7-max": [
+"stDust"
+],
+"ezviz-re5-plus": [
 "db"
 ],
 "ultenic-t10-elite": [
@@ -110,27 +127,10 @@
 "climb",
 "water"
 ],
-"tefal-rg9475-x-plorer-serie-220": [
-"mah",
-"h",
-"kg",
-"climb",
-"stDust"
-],
-"tefal-rg8477-x-plorer-series": [
-"mah",
-"kg"
-],
 "hobot-legee-d8": [
 "rt",
 "ch",
 "kg"
-],
-"ezviz-re5-plus": [
-"db"
-],
-"roborock-q7-max": [
-"stDust"
 ],
 "tp-link-tapo-rv20-max": [
 "ch",
@@ -142,52 +142,28 @@
 "db",
 "climb"
 ],
-"tcl-sweeva-6000": [
-"ch",
-"kg"
-],
-"xiaomi-robot-vacuum-s10-plus": [
-"db",
-"climb"
-],
 "irobot-roomba-combo-j5": [
 "pa",
 "mah",
 "db",
 "stDust"
 ],
+"ecovacs-deebot-n20-pro-plus": [
+"db",
+"kg"
+],
 "electrolux-er71hw1ug": [
 "ch",
 "kg",
 "water"
 ],
-"electrolux-er71uw2sw": [
-"water"
+"xiaomi-robot-vacuum-s10-plus": [
+"db",
+"climb"
 ],
 "roborock-q8-max": [
 "water",
 "stDust"
-],
-"tp-link-tapo-rv30": [
-"ch",
-"kg",
-"stDust"
-],
-"arnica-sil-supur": [
-"kg"
-],
-"irobot-roomba-combo-j5-plus": [
-"mah",
-"db",
-"stDust"
-],
-"ecovacs-deebot-n10": [
-"db",
-"stDust"
-],
-"ecovacs-deebot-n20-pro-plus": [
-"db",
-"kg"
 ],
 "electrolux-er61uw1dg": [
 "pa",
@@ -196,10 +172,25 @@
 "kg",
 "water"
 ],
-"tp-link-tapo-rv30-max": [
+"tp-link-tapo-rv30": [
 "ch",
 "kg",
 "stDust"
+],
+"irobot-roomba-combo-j5-plus": [
+"mah",
+"db",
+"stDust"
+],
+"tcl-sweeva-6000": [
+"ch",
+"kg"
+],
+"electrolux-er71uw2sw": [
+"water"
+],
+"arnica-sil-supur": [
+"kg"
 ],
 "xiaomi-robot-vacuum-s20": [
 "rt",
@@ -207,16 +198,11 @@
 "db",
 "climb"
 ],
-"tp-link-tapo-rv30-max-plus": [
-"ch",
-"kg"
-],
-"philips-homerun-3000-series-aqua": [
-"stDust"
-],
-"grundig-vcr-6330": [
+"irobot-roomba-105-combo-autoempty": [
 "db",
-"kg"
+"dust",
+"climb",
+"stDust"
 ],
 "hobot-legee-7": [
 "rt",
@@ -228,11 +214,26 @@
 "rt",
 "db"
 ],
+"grundig-vcr-6330": [
+"db",
+"kg"
+],
+"philips-homerun-3000-series-aqua": [
+"stDust"
+],
+"ecovacs-deebot-n10": [
+"db",
+"stDust"
+],
 "anker-eufy-robovac-x8-hybrid": [
 "kg"
 ],
 "philips-homerun-2000-series": [
 "climb"
+],
+"blaupunkt-s10-robomaster": [
+"db",
+"kg"
 ],
 "next-pro-maid-x8": [
 "ch",
@@ -240,22 +241,15 @@
 "kg",
 "climb"
 ],
-"blaupunkt-s10-robomaster": [
-"db",
-"kg"
-],
-"dersar-l1-plus": [
-"ch",
-"db",
-"kg"
-],
 "xiaomi-robot-vacuum-s10t": [
 "rt",
 "ch",
 "db"
 ],
-"dreame-bot-d9-max": [
-"ch"
+"dersar-l1-plus": [
+"ch",
+"db",
+"kg"
 ],
 "anker-eufy-robovac-lr30-hybrid": [
 "rt",
@@ -263,8 +257,13 @@
 "h",
 "kg"
 ],
-"tefal-rg8577wh-x-plorer-serie-75-s-max": [
-"mah"
+"tp-link-tapo-rv30-max": [
+"ch",
+"kg",
+"stDust"
+],
+"dreame-bot-d9-max": [
+"ch"
 ],
 "viomi-v5-pro": [
 "ch"
@@ -274,6 +273,14 @@
 ],
 "irobot-roomba-combo": [
 "pa"
+],
+"tefal-rg8577wh-x-plorer-serie-75-s-max": [
+"mah"
+],
+"soultech-rb001": [
+"rt",
+"ch",
+"kg"
 ],
 "redline-robored-g1": [
 "pa",
