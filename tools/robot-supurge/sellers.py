@@ -13,8 +13,11 @@ def classify(site,seller,brand):
     if b and b in n: return 'brand',seller
     if any(x in n for x in ['santis','recci','globalsmart','homend','simartpazarlama','fakirhausgerate','purees']): return 'brand',seller
     return 'market',seller
-out={}
-for f in glob.glob(S+'/raw_detail/*.txt'):
+import os,time
+# Birleştirerek güncelle: yeni çekilen sayfalar eskilerin yerine geçer, diğerleri korunur. offers_meta.json her sayfanın çekilme tarihini tutar.
+out=json.load(open(S+'/offers.json')) if os.path.exists(S+'/offers.json') else {}
+META=json.load(open(S+'/offers_meta.json')) if os.path.exists(S+'/offers_meta.json') else {}
+for f in sorted(glob.glob(S+'/raw_detail/*.txt'),key=os.path.getmtime):
     for r in json.load(open(f)).get('results',[]):
         u=r['url'].split('?')[0]
         if not re.search(r'robot-supurge/[^/]+\.html$',u): continue
@@ -28,6 +31,14 @@ for f in glob.glob(S+'/raw_detail/*.txt'):
                 title=re.sub(r'\*\*Satıcı.*','',re.sub(r'!\[[^\]]*\]\([^)]*\)','',seg)).strip()[:160]
                 age=re.search(r'(\d+ (?:dk|saat|gün) önce)',mm.group(4))
                 offers.append(dict(site=site,store=DIRECT.get(site) or MARKET.get(site,site),seller=s.group(1).strip() if s else None,price=float(mm.group(3).replace('.','').replace(',','.')),title=title,age=age.group(1) if age else None))
-        out[u]=offers
+        if m and not offers:
+            # bazı çekimlerde mağaza logoları gelmiyor: satıcı adlarından ayrıştır (mağaza bilinmiyorsa '?')
+            for mm in re.finditer(r'\*\*Satıcı:\*\*\s*([^*|\n]+?)\s*(?:\||\n).*?([\d.]+,\d\d) TL(.{0,120})',m.group(1),re.S):
+                sel=mm.group(1).strip(); age=re.search(r'(\d+ (?:dk|saat|gün) önce)',mm.group(3))
+                st='Hepsiburada' if norm(sel)=='hepsiburada' else '?'
+                offers.append(dict(site='',store=st,seller=sel,price=float(mm.group(2).replace('.','').replace(',','.')),title='',age=age.group(1) if age else None))
+        if offers or u not in out:
+            out[u]=offers; META[u]=time.strftime('%Y-%m-%d',time.localtime(os.path.getmtime(f)))
 json.dump(out,open(S+'/offers.json','w'),ensure_ascii=False)
+json.dump(META,open(S+'/offers_meta.json','w'),ensure_ascii=False)
 print(len(out))

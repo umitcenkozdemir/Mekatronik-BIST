@@ -4,6 +4,8 @@ S=sys.argv[1]
 D=json.load(open(S+'/robots2.json')); I=D['items']
 exec(open(S+'/sellers.py').read().split('out={}')[0].replace("S=sys.argv[1]","pass"))
 OFF=json.load(open(S+'/offers.json'))
+OFFM=json.load(open(S+'/offers_meta.json')) if os.path.exists(S+'/offers_meta.json') else {}
+FRESH='2026-11-02'  # bu tarihten sonra yeniden çekilen satıcı listeleri, derin incelemedeki eski listenin yerine geçer
 PROF=json.load(open(S+'/profiles.json')); PROF.pop('_meta',None)
 RES={}
 for f in sorted(glob.glob(S+'/deep/*/research.json')):
@@ -16,7 +18,7 @@ def ver_of(o,offs):
     return 'pazaryeri' if len(sellers)>=2 else ('tek' if offs else 'tek')
 for o in I:
     r=RES.get(o['id'])
-    if r and r.get('offers'):
+    if r and r.get('offers') and OFFM.get(o['url'],'')<FRESH:
         offs=r['offers']
     else:
         offs=[]
@@ -41,10 +43,15 @@ for o in I:
         for t in (r.get('tek') or []):
             if t.get('price') and t.get('url'):
                 box.append(dict(store='Teknosa',seller='Teknosa',official=True,price=t['price'],url=t['url'],ok=bool(t['buyable']),warranty=None,high=t['price']>minp*1.3)); break
+        if OFFM.get(o['url'],'')>=FRESH:
+            # satıcı listesi yeniden çekildiyse kutudaki mağaza fiyatlarını da bugünkü en düşük fiyatla güncelle
+            for b in box:
+                fp=[x['price'] for x in offs if x['store']==b['store']]
+                if fp: b['price']=min(fp); b['high']=b['price']>minp*1.3
         box.sort(key=lambda b:(not b['ok'],b['price']))
         verified_buy=any(b['ok'] and (b['official'] or b['store'] in('MediaMarkt','Teknosa','Amazon')) for b in box)
         st=hb.get('stars') if hb else None
-        o['deep']=dict(box=box,buyOk=verified_buy,stars=st,hbCount=(hb or {}).get('count'),checked=D.get('stockChecked'))
+        o['deep']=dict(box=box,buyOk=verified_buy,stars=st,hbCount=(hb or {}).get('count'),checked=D.get('stockChecked'),offersDate=OFFM.get(o['url']))
         if verified_buy and o['ver']!='dogrulandi' and o['stock']!='yok': o['ver']='dogrulandi'
     p=PROF.get(o['id'])
     if p: o['prof']=p
