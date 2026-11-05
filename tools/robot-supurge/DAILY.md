@@ -36,10 +36,11 @@ TAG=$(date +%Y%m%d)
 
 Kart fiyatı günlük listeden, ayrıntı penceresindeki mağaza listesi ise ürün sayfasından gelir. İkisi farklı günlerden olursa
 kartta görünen fiyat mağaza listesinde bulunmaz. Bu yüzden her gün:
-1. Kart fiyatı, en ucuz mağaza fiyatından %5'ten fazla farklı olan modellerin epey ürün sayfalarını (`<url>?s=$TAG`) 10'arlı çek.
+1. Kart fiyatı en ucuz mağaza fiyatının %5'ten fazla altında kalan (kart fiyatı mağaza listesinde bulunmayan) modellerin epey ürün sayfalarını (`<url>?s=$TAG`) 10'arlı çek.
 2. Ayrıca satıcı listesi en eski olan 30 modeli (offers_meta.json'da tarihi en eski ya da hiç olmayan) çek.
 3. Çıktıları `raw_detail/` içine koy ve `python3 -I sellers.py $W` çalıştır. `offers_meta.json` her sayfanın çekilme tarihini tutar;
    `enrich.py` 2 Kasım 2026 sonrası çekilen listeyi derin incelemedeki eski listenin yerine kullanır ve kutudaki mağaza fiyatlarını günceller.
+   Tek satıcısı olup fiyatı yalnız 9'lardan oluşan (99.999 TL gibi) ilanlar yer tutucu fiyattır; build.py bunları stokta yok sayar.
    Tavily bazen mağaza logolarını döndürmez; o zaman satıcı adları ayrıştırılır, mağaza "?" olur.
 
 ## 1b. Özellik tamamlama (her gün 20 model, en pahalıdan)
