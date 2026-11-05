@@ -1430,5 +1430,20 @@
    "stDirty",
    "stDust"
   ]
+ },
+ "irobot-roomba-105-combo-autoempty": {
+  "na": [
+   "climb",
+   "db",
+   "dust",
+   "stDust"
+  ]
+ },
+ "tp-link-tapo-rv30-max": {
+  "na": [
+   "ch",
+   "kg",
+   "stDust"
+  ]
  }
 }

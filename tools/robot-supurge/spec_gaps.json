@@ -149,12 +149,6 @@
 "db",
 "climb"
 ],
-"irobot-roomba-105-combo-autoempty": [
-"db",
-"dust",
-"climb",
-"stDust"
-],
 "hobot-legee-7": [
 "rt",
 "ch",
@@ -214,11 +208,6 @@
 ],
 "tefal-rg8577wh-x-plorer-serie-75-s-max": [
 "mah"
-],
-"tp-link-tapo-rv30-max": [
-"ch",
-"kg",
-"stDust"
 ],
 "dreame-bot-d9-max": [
 "ch"
