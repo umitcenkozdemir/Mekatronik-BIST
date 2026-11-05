@@ -30,17 +30,17 @@
 "roborock-q8-max-plus": [
 "water"
 ],
+"dreame-bot-l10s-pro-ultra-heat": [
+"ch",
+"db",
+"climb"
+],
 "ecovacs-deebot-t30-pro-omni": [
 "rt",
 "kg",
 "stDust",
 "stClean",
 "stDirty"
-],
-"dreame-bot-l10s-pro-ultra-heat": [
-"ch",
-"db",
-"climb"
 ],
 "roborock-q5-pro": [
 "ch",
@@ -50,15 +50,15 @@
 "xiaomi-robot-vacuum-x10-plus": [
 "stDirty"
 ],
-"roborock-s8": [
-"kg",
-"stDust"
-],
 "tefal-rg9475-x-plorer-serie-220": [
 "mah",
 "h",
 "kg",
 "climb",
+"stDust"
+],
+"roborock-s8": [
+"kg",
 "stDust"
 ],
 "dreame-d10-plus-gen-2": [
@@ -68,11 +68,11 @@
 "mah",
 "kg"
 ],
-"roborock-q7-max": [
-"stDust"
-],
 "ezviz-re5-plus": [
 "db"
+],
+"roborock-q7-max": [
+"stDust"
 ],
 "ultenic-t10-elite": [
 "pa",
@@ -103,10 +103,6 @@
 "db",
 "stDust"
 ],
-"ecovacs-deebot-n20-pro-plus": [
-"db",
-"kg"
-],
 "electrolux-er71hw1ug": [
 "ch",
 "kg",
@@ -120,26 +116,26 @@
 "water",
 "stDust"
 ],
-"electrolux-er61uw1dg": [
-"pa",
-"ch",
-"h",
-"kg",
-"water"
-],
 "tp-link-tapo-rv30": [
 "ch",
 "kg",
 "stDust"
+],
+"ecovacs-deebot-n20-pro-plus": [
+"db",
+"kg"
 ],
 "irobot-roomba-combo-j5-plus": [
 "mah",
 "db",
 "stDust"
 ],
-"tcl-sweeva-6000": [
+"electrolux-er61uw1dg": [
+"pa",
 "ch",
-"kg"
+"h",
+"kg",
+"water"
 ],
 "electrolux-er71uw2sw": [
 "water"
@@ -164,6 +160,10 @@
 "ch",
 "kg",
 "climb"
+],
+"tcl-sweeva-6000": [
+"ch",
+"kg"
 ],
 "xiaomi-mi-robot-vacuum-mop-essential": [
 "rt",
@@ -190,16 +190,16 @@
 "db",
 "kg"
 ],
+"xiaomi-robot-vacuum-s10t": [
+"rt",
+"ch",
+"db"
+],
 "next-pro-maid-x8": [
 "ch",
 "h",
 "kg",
 "climb"
-],
-"xiaomi-robot-vacuum-s10t": [
-"rt",
-"ch",
-"db"
 ],
 "dersar-l1-plus": [
 "ch",
@@ -211,6 +211,9 @@
 "db",
 "h",
 "kg"
+],
+"tefal-rg8577wh-x-plorer-serie-75-s-max": [
+"mah"
 ],
 "tp-link-tapo-rv30-max": [
 "ch",
@@ -228,9 +231,6 @@
 ],
 "irobot-roomba-combo": [
 "pa"
-],
-"tefal-rg8577wh-x-plorer-serie-75-s-max": [
-"mah"
 ],
 "soultech-rb001": [
 "rt",

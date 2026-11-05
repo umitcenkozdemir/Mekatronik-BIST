@@ -110,7 +110,7 @@ for it in L:
     sc['ekstra']=min(5,(2 if brushext else 0)+(1 if tangle else 0)+(1 if hepa else 0)+(1 if pet else 0)+(2 if combo else 0)+(1 if spot else 0))
     score=round(sum(sc.values()),1)
     out.append(dict(id=re.sub(r'\.html$','',it['url'].rsplit('/',1)[1]),name=name,brand=brand,model=model,type='Robot + dikey süpürge' if combo else {'Robot Süpürge+Mop':'Süpürge + Mop','Robot Süpürge':'Sadece süpürge','Robot Mop':'Sadece mop'}.get(typ,typ),combo=combo,spot=spot,
-        price=round(price),sites=0 if it.get('gone') else it['sites'],stock='yok' if (it.get('gone') or (IMG.get(it['url'],10**9)<900000 and it['sites']<=2)) else ('var' if it['sites']>=3 else 'sinirli'),old=bool(IMG.get(it['url'],10**9)<900000),gone=bool(it.get('gone')),imgId=IMG.get(it['url']),lastSites=it['sites'],sellers=sl[:8],url=it['url'],
+        price=round(price),sites=0 if it.get('gone') else it['sites'],stock='yok' if (it.get('gone') or (IMG.get(it['url'],10**9)<900000 and it['sites']<=2) or (it['sites']<=1 and str(int(it['price'])).strip('9')=='')) else ('var' if it['sites']>=3 else 'sinirli'),old=bool(IMG.get(it['url'],10**9)<900000),gone=bool(it.get('gone')),imgId=IMG.get(it['url']),lastSites=it['sites'],sellers=sl[:8],url=it['url'],
         pa=pa,mah=mah,rt=rt,ch=ch,db=db,w=w,dust=dust,water=water,h=h,kg=kg,climb=climb,area=area,stDust=st_dust,stClean=st_clean,stDirty=st_dirty,
         nav=nav,navRaw=navraw,cam=has_cam,obst=obst,mop=mop,mopLift=mop_lift,mopLiftMm=mop_lift_mm,mopExt=mopext,mopDetach=mopdetach,
         station=station,selfEmpty=selfempty,selfEmptyOpt=se=='Opsiyonel',mopWash=mopwash,hotWash=hotwash,hotDry=hotdry,refill=refill,deterg=deterg,
