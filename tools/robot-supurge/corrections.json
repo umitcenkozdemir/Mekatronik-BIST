@@ -4,10 +4,11 @@
   "mop": "Rulo mop",
   "obst": "Yapay zekâ / kamera",
   "cam": true,
-  "src": "Hepsiburada başlığı: OZMO Roller 3.0, AIVI 3D 4.0",
+  "src": "Hepsiburada başlığı: OZMO Roller 3.0, AIVI 3D 4.0; Ecovacs resmi sayfaları: T90 ailesi gövdeye gömülü dToF LiDAR (epey: Mini-ToF) (9 Kasım 2026)",
   "na": [
    "sides"
-  ]
+  ],
+  "nav": "LiDAR"
  },
  "roborock-s9": {
   "mop": "Titreşimli",
@@ -88,12 +89,16 @@
  },
  "ecovacs-deebot-t80s-omni": {
   "mop": "Rulo mop",
-  "src": "Ecovacs T80S Omni: OZMO Roller rulo mop (1 Kasım 2026)",
+  "src": "Ecovacs T80S Omni: OZMO Roller rulo mop (1 Kasım 2026); Ecovacs resmi özellik sayfası (US/AU): Mini-ToF gömülü lazer navigasyon, engel algılama \"Structured light, RGB AI + Supplementary Light\" (AIVI 3D 3.0), ZeroTangle 3.0 var; Vacuum Wars ve video inceleme: RGB kamera + yapılandırılmış ışık, entegre LiDAR (9 Kasım 2026)",
   "rt": 205,
   "specSrc": "Vacuum Wars: resmi pil süresi 205 dk",
   "na": [
    "kg"
-  ]
+  ],
+  "nav": "LiDAR",
+  "obst": "Yapay zekâ / kamera",
+  "cam": true,
+  "tangle": true
  },
  "ecovacs-deebot-t90-pro-omni": {
   "mop": "Rulo mop",
@@ -580,7 +585,9 @@
    "kg",
    "stClean",
    "stDirty"
-  ]
+  ],
+  "nav": "LiDAR",
+  "src": "Ecovacs resmi sayfaları: T50 ailesi \"Fully-Embedded dToF LiDAR\" (epey: Mini-ToF) (9 Kasım 2026)"
  },
  "xiaomi-h50-pro": {
   "rt": 120,
