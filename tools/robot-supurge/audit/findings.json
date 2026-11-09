@@ -6,7 +6,9 @@
  },
  "mova-mobius-60": {
   "hotDry": true,
-  "src": "MOVA resmi blog: istasyon paspasları sıcak havayla kurutuyor"
+  "src": "MOVA resmi blog: istasyon paspasları sıcak havayla kurutuyor; MOVA resmi sayfası: AI SmartSight (LED destekli kamera) + yapısal ışık 3D tarayıcı, 240+ engel tanıma",
+  "obst": "Yapay zekâ / kamera",
+  "cam": true
  },
  "dreame-matrix-10-ultra": {
   "hotWash": true,
@@ -135,5 +137,80 @@
   "obst": "Yapay zekâ / kamera",
   "cam": true,
   "src": "Ecovacs US resmi özellik tablosu: engel algılama RGBD (RGB kamera + derinlik), dToF navigasyon"
+ },
+ "roborock-qrevo-edge-5v1": {
+  "obst": "3D / yapısal ışık",
+  "src": "Roborock Global Qrevo Edge serisi resmi sayfası: Qrevo Edge 5V1 Reactive Tech yapısal ışıkla engel algılama"
+ },
+ "dyson-r2-nurovi": {
+  "obst": "3D / yapısal ışık",
+  "src": "Dyson resmi destek sayfası: LiDAR ve çizgi lazer (line laser) sensörü"
+ },
+ "dreame-bot-l10s-pro-ultra-heat": {
+  "obst": "Yapay zekâ / kamera",
+  "cam": true,
+  "src": "Dreame resmi L10s Pro Ultra sayfası: AI Action, RGB kamera + 3D yapısal ışık"
+ },
+ "ecovacs-deebot-t30-pro-omni": {
+  "obst": "3D / yapısal ışık",
+  "src": "Ecovacs AU resmi özellik tablosu: engel algılama TrueDetect 3D 3.0"
+ },
+ "dreame-d30-ultra": {
+  "obst": "3D / yapısal ışık",
+  "src": "Dreame resmi blog incelemesi: tek çizgi lazer ile engel algılama"
+ },
+ "ezviz-rs20-pro": {
+  "hotWash": true,
+  "src": "EZVIZ UK resmi sayfası: 60 °C su ile paspas yıkama, sıcak hava kurutma"
+ },
+ "philips-homerun-9000-serisi-xu9100-10": {
+  "mop": "Rulo mop",
+  "mah": 6000.0,
+  "src": "Philips TR resmi sayfası: silindir (rulo) paspas, PowerCyclone Aqua; Versuni kılavuzu: 6000 mAh nominal pil"
+ },
+ "xiaomi-vacuum-5": {
+  "mop": "Çift döner",
+  "src": "Xiaomi resmi sayfası: iki paspas tutucu (döner paspas), uzayabilen paspas, sıcak su yıkama ve sıcak hava kurutma"
+ },
+ "ecovacs-deebot-t90-omni": {
+  "hotDry": true,
+  "src": "Ecovacs US resmi özellik tablosu: hot air dry"
+ },
+ "xiaomi-robot-vacuum-x20-pro": {
+  "obst": "3D / yapısal ışık",
+  "src": "Xiaomi resmi sayfası: yapısal ışık ve kenar lazeri ile engel algılama"
+ },
+ "dreame-l40-ultra-ce": {
+  "hotDry": true,
+  "src": "Dreame resmi sayfası: yıkamadan sonra paspaslar ılık/sıcak havayla kurutuluyor"
+ },
+ "narwal-freo-x-ultra": {
+  "obst": "3D / yapısal ışık",
+  "src": "Narwal CA resmi sayfası: üç lazerli (tri-laser) navigasyon ve engel algılama"
+ },
+ "xiaomi-robot-vacuum-x10-plus": {
+  "mop": "Çift döner",
+  "src": "Xiaomi resmi sayfası: çift basınçlı dönen ped (2 ped tablası), istasyonda ped yıkama ve sıcak hava kurutma"
+ },
+ "mova-e40-ultra": {
+  "obst": "3D / yapısal ışık",
+  "src": "MOVA resmi sayfası: tek çizgi lazer ile engel algılama"
+ },
+ "xiaomi-h50-pro": {
+  "obst": "3D / yapısal ışık",
+  "src": "Xiaomi resmi sayfası: 129° geniş açılı lazer ile engel algılama"
+ },
+ "ecovacs-deebot-t50s-pro-omni": {
+  "hotWash": true,
+  "hotDry": true,
+  "src": "Ecovacs US resmi sayfası: 75 °C (167 °F) sıcak su ile paspas yıkama, sıcak hava kurutma"
+ },
+ "ecovacs-deebot-t30c": {
+  "obst": "3D / yapısal ışık",
+  "src": "Ecovacs resmi özellik tablosu: tek çizgi yapısal ışık ile engel algılama"
+ },
+ "fakir-robert-rs-800-plus": {
+  "nav": "LiDAR",
+  "src": "Fakir resmi ürün sayfası: LDS lazer navigasyon (5 harita), 360° çift döner mop, otomatik toz boşaltma"
  }
 }

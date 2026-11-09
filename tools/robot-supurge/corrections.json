@@ -4,11 +4,12 @@
   "mop": "Rulo mop",
   "obst": "Yapay zekâ / kamera",
   "cam": true,
-  "src": "Hepsiburada başlığı: OZMO Roller 3.0, AIVI 3D 4.0; Ecovacs resmi sayfaları: T90 ailesi gövdeye gömülü dToF LiDAR (epey: Mini-ToF) (9 Kasım 2026)",
+  "src": "Hepsiburada başlığı: OZMO Roller 3.0, AIVI 3D 4.0; Ecovacs resmi sayfaları: T90 ailesi gövdeye gömülü dToF LiDAR (epey: Mini-ToF) (9 Kasım 2026); Resmi kaynak denetimi (9 Kasım 2026): Ecovacs US resmi özellik tablosu: hot air dry",
   "na": [
    "sides"
   ],
-  "nav": "LiDAR"
+  "nav": "LiDAR",
+  "hotDry": true
  },
  "roborock-s9": {
   "mop": "Titreşimli",
@@ -43,7 +44,7 @@
  "dyson-spot-plusscrub-ai": {
   "obst": "Yapay zekâ / kamera",
   "cam": true,
-  "src": "HD kamera ve yapay zekâ kir tanıma",
+  "src": "HD kamera ve yapay zekâ kir tanıma; Resmi kaynak denetimi (9 Kasım 2026): Dyson resmi sayfası: rulo paspas 140 °F (60 °C) ısıtılmış suyla temizleniyor, 113 °F (45 °C) sıcak havayla kurutuluyor",
   "climb": 20,
   "specSrc": "Vacuum Wars testi: 20 mm engel aşma",
   "na": [
@@ -51,7 +52,9 @@
    "dust",
    "mah",
    "water"
-  ]
+  ],
+  "hotWash": true,
+  "hotDry": true
  },
  "ecovacs-deebot-t80-omni": {
   "mop": "Rulo mop",
@@ -71,10 +74,11 @@
  },
  "ecovacs-deebot-t30c": {
   "nav": "LiDAR",
-  "src": "Ecovacs T30C: TrueMapping lazer (dToF) navigasyon; epey alanı boş (1 Kasım 2026)",
+  "src": "Ecovacs T30C: TrueMapping lazer (dToF) navigasyon; epey alanı boş (1 Kasım 2026); Resmi kaynak denetimi (9 Kasım 2026): Ecovacs resmi özellik tablosu: tek çizgi yapısal ışık ile engel algılama",
   "na": [
    "kg"
-  ]
+  ],
+  "obst": "3D / yapısal ışık"
  },
  "ecovacs-t30c-prime": {
   "nav": "LiDAR",
@@ -103,17 +107,24 @@
  "ecovacs-deebot-t90-pro-omni": {
   "mop": "Rulo mop",
   "nav": "LiDAR",
-  "src": "Ecovacs T90 Pro Omni: OZMO Roller 3.0 rulo mop, dToF lazer navigasyon (1 Kasım 2026)"
+  "src": "Ecovacs T90 Pro Omni: OZMO Roller 3.0 rulo mop, dToF lazer navigasyon (1 Kasım 2026); Resmi kaynak denetimi (9 Kasım 2026): Ecovacs UK/AU resmi sayfası: AIVI 3D 4.0 yapay zekâ engel tanıma, sıcak hava kurutma",
+  "obst": "Yapay zekâ / kamera",
+  "cam": true,
+  "hotDry": true
  },
  "ecovacs-deebot-x11-pro-omni": {
   "mop": "Rulo mop",
-  "src": "Hepsiburada yorumları ve X11 serisi: OZMO Roller rulo mop (1 Kasım 2026)"
+  "src": "Hepsiburada yorumları ve X11 serisi: OZMO Roller rulo mop (1 Kasım 2026); Resmi kaynak denetimi (9 Kasım 2026): Ecovacs US resmi özellik tablosu: engel algılama RGBD (RGB kamera + derinlik), dToF navigasyon",
+  "obst": "Yapay zekâ / kamera",
+  "cam": true
  },
  "ecovacs-deebot-x11-omnicyclone": {
   "mop": "Rulo mop",
-  "src": "X11 serisi: OZMO Roller rulo mop (1 Kasım 2026)",
+  "src": "X11 serisi: OZMO Roller rulo mop (1 Kasım 2026); Resmi kaynak denetimi (9 Kasım 2026): Ecovacs US/AE resmi özellik tablosu: engel algılama RGBD (RGB kamera + derinlik), AIVI 3D 3.0, dToF navigasyon",
   "kg": 5.3,
-  "specSrc": "ECOVACS resmi özellik tablosu: robot 5,3 kg"
+  "specSrc": "ECOVACS resmi özellik tablosu: robot 5,3 kg",
+  "obst": "Yapay zekâ / kamera",
+  "cam": true
  },
  "mova-v50-ultra-complete": {
   "mop": "Çift döner",
@@ -175,12 +186,16 @@
    "stClean",
    "stDirty",
    "stDust"
-  ]
+  ],
+  "nav": "LiDAR",
+  "src": "Resmi kaynak denetimi (9 Kasım 2026): Roborock US resmi sayfası/SSS: StarSight 3D ToF lazer navigasyon (ön ve sol arka), RGB kamera, 100 °C sıcak su, 55 °C sıcak hava"
  },
  "roborock-s7-max-ultra": {
   "kg": 4.5,
   "specSrc": "Versus özellik tablosu: azami tırmanma 20 mm",
-  "climb": 20
+  "climb": 20,
+  "hotDry": true,
+  "src": "Resmi kaynak denetimi (9 Kasım 2026): Roborock US resmi sayfası: 45 °C sıcak hava ile paspas ve istasyon tabanı kurutma"
  },
  "anker-eufy-omni-e25": {
   "mah": 5200,
@@ -200,7 +215,9 @@
   "ch": 4.5,
   "db": 70,
   "water": 80,
-  "specSrc": "Dreame UK resmi mağazası özellik tablosu"
+  "specSrc": "Dreame UK resmi mağazası özellik tablosu",
+  "hotWash": true,
+  "src": "Resmi kaynak denetimi (9 Kasım 2026): Dreame resmi özellik tablosu: Auto Mop Cleaning with Hot Water ✓ (100 °C ThermoHub), engel algılama AI RGB + 3D yapısal ışık"
  },
  "dreame-x60-ultra-complete": {
   "rt": 180,
@@ -223,7 +240,9 @@
    "kg",
    "stClean",
    "stDirty"
-  ]
+  ],
+  "mop": "Titreşimli",
+  "src": "Resmi kaynak denetimi (9 Kasım 2026): Roborock US resmi sayfası: titreşimli paspas (VibraRise), 8 N baskı"
  },
  "roborock-saros-20-flow": {
   "kg": 5.2,
@@ -250,7 +269,9 @@
   "na": [
    "ch",
    "db"
-  ]
+  ],
+  "nav": "LiDAR",
+  "src": "Resmi kaynak denetimi (9 Kasım 2026): Dreame resmi sayfası: VersaLift geri çekilebilir LDS lazer navigasyon, OmniSight 2.0 (çift kamera)"
  },
  "dreame-l50-ultra": {
   "ch": 3,
@@ -279,11 +300,15 @@
    "ch",
    "stClean",
    "stDirty"
-  ]
+  ],
+  "hotDry": true,
+  "src": "Resmi kaynak denetimi (9 Kasım 2026): Roborock US resmi sayfası: 113 °F (45 °C) sıcak hava kurutma"
  },
  "roborock-saros-10r": {
   "kg": 4.1,
-  "specSrc": "Roborock resmi özellik tablosu: 4,1 kg"
+  "specSrc": "Roborock resmi özellik tablosu: 4,1 kg",
+  "nav": "LiDAR",
+  "src": "Resmi kaynak denetimi (9 Kasım 2026): Roborock US resmi sayfası: StarSight lazer (3D ToF) navigasyon"
  },
  "xiaomi-robot-vacuum-6": {
   "db": 50,
@@ -339,20 +364,28 @@
  },
  "karcher-rvf-7-eu": {
   "stDust": 4,
-  "specSrc": "Kärcher resmi teknik veri: istasyon filtre torbası 4 L"
+  "specSrc": "Kärcher resmi teknik veri: istasyon filtre torbası 4 L",
+  "pa": 13000.0,
+  "src": "Resmi kaynak denetimi (9 Kasım 2026): Kärcher resmi teknik veri: emiş gücü maks. 13.000 Pa (epey 1.300 yazıyordu)"
  },
  "irobot-roomba-combo-10-max": {
   "na": [
    "pa",
    "stDust"
-  ]
+  ],
+  "nav": "Kamera (vSLAM)",
+  "obst": "Yapay zekâ / kamera",
+  "cam": true,
+  "src": "Resmi kaynak denetimi (9 Kasım 2026): iRobot US resmi sayfası: PrecisionVision kamera navigasyonu, kamera ile nesne tanıma (kablo, evcil hayvan dışkısı)"
  },
  "xiaomi-vacuum-5-pro": {
   "na": [
    "db"
   ],
   "ch": 6,
-  "specSrc": "Notebookcheck (Xiaomi lansmanı): 5 ve 5 Pro için tam şarj yaklaşık 6 saat"
+  "specSrc": "Notebookcheck (Xiaomi lansmanı): 5 ve 5 Pro için tam şarj yaklaşık 6 saat",
+  "mop": "Çift döner",
+  "src": "Resmi kaynak denetimi (9 Kasım 2026): Xiaomi resmi sayfası: iki adet paspas tutucu, yüksek devirle dönen ve uzayabilen paspaslar, 80 °C sıcak su yıkama, sıcak hava kurutma"
  },
  "dreame-l50-ultra-ce": {
   "na": [
@@ -361,7 +394,9 @@
    "db",
    "rt",
    "water"
-  ]
+  ],
+  "nav": "LiDAR",
+  "src": "Resmi kaynak denetimi (9 Kasım 2026): Dreame resmi sayfası: Pathfinder lazer ile 360° tarama ve rota planlama"
  },
  "roborock-qrevo-l": {
   "na": [
@@ -412,11 +447,15 @@
    "mah",
    "rt",
    "water"
-  ]
+  ],
+  "obst": "3D / yapısal ışık",
+  "src": "Resmi kaynak denetimi (9 Kasım 2026): MOVA resmi sayfası: LDS lidar navigasyon, önde tek çizgi lazer ile engel algılama"
  },
  "roborock-qrevo-edge-5v1": {
   "climb": 40,
-  "specSrc": "Roborock resmi Qrevo Edge sayfası: en fazla 4 cm eşik"
+  "specSrc": "Roborock resmi Qrevo Edge sayfası: en fazla 4 cm eşik",
+  "obst": "3D / yapısal ışık",
+  "src": "Resmi kaynak denetimi (9 Kasım 2026): Roborock Global Qrevo Edge serisi resmi sayfası: Qrevo Edge 5V1 Reactive Tech yapısal ışıkla engel algılama"
  },
  "roborock-qrevo-l-pro": {
   "ch": 4.5,
@@ -433,13 +472,17 @@
   "na": [
    "climb",
    "kg"
-  ]
+  ],
+  "hotWash": true,
+  "src": "Resmi kaynak denetimi (9 Kasım 2026): EZVIZ UK resmi sayfası: 60 °C su ile paspas yıkama, sıcak hava kurutma"
  },
  "dyson-r2-nurovi": {
   "na": [
    "db",
    "mah"
-  ]
+  ],
+  "obst": "3D / yapısal ışık",
+  "src": "Resmi kaynak denetimi (9 Kasım 2026): Dyson resmi destek sayfası: LiDAR ve çizgi lazer (line laser) sensörü"
  },
  "dreame-x40-ultra": {
   "db": 70,
@@ -469,7 +512,9 @@
   "specSrc": "Notebookcheck (Xiaomi lansmanı): tam şarj yaklaşık 6 saat",
   "na": [
    "db"
-  ]
+  ],
+  "mop": "Çift döner",
+  "src": "Resmi kaynak denetimi (9 Kasım 2026): Xiaomi resmi sayfası: iki paspas tutucu (döner paspas), uzayabilen paspas, sıcak su yıkama ve sıcak hava kurutma"
  },
  "narwal-freo": {
   "na": [
@@ -513,7 +558,9 @@
    "ch",
    "db",
    "water"
-  ]
+  ],
+  "obst": "3D / yapısal ışık",
+  "src": "Resmi kaynak denetimi (9 Kasım 2026): Dreame resmi blog incelemesi: tek çizgi lazer ile engel algılama"
  },
  "roborock-q8-plus": {
   "na": [
@@ -555,7 +602,9 @@
    "db",
    "rt",
    "water"
-  ]
+  ],
+  "obst": "3D / yapısal ışık",
+  "src": "Resmi kaynak denetimi (9 Kasım 2026): Narwal CA resmi sayfası: üç lazerli (tri-laser) navigasyon ve engel algılama"
  },
  "dreame-d20-ultra": {
   "na": [
@@ -587,7 +636,9 @@
    "stDirty"
   ],
   "nav": "LiDAR",
-  "src": "Ecovacs resmi sayfaları: T50 ailesi \"Fully-Embedded dToF LiDAR\" (epey: Mini-ToF) (9 Kasım 2026)"
+  "src": "Ecovacs resmi sayfaları: T50 ailesi \"Fully-Embedded dToF LiDAR\" (epey: Mini-ToF) (9 Kasım 2026); Resmi kaynak denetimi (9 Kasım 2026): Ecovacs US resmi sayfası: 75 °C (167 °F) sıcak su ile paspas yıkama, sıcak hava kurutma",
+  "hotWash": true,
+  "hotDry": true
  },
  "xiaomi-h50-pro": {
   "rt": 120,
@@ -598,7 +649,9 @@
    "db",
    "stDust",
    "water"
-  ]
+  ],
+  "obst": "3D / yapısal ışık",
+  "src": "Resmi kaynak denetimi (9 Kasım 2026): Xiaomi resmi sayfası: 129° geniş açılı lazer ile engel algılama"
  },
  "jonr-t5-pro-gen-2": {
   "na": [
@@ -611,7 +664,9 @@
  "mova-e40-ultra": {
   "kg": 4,
   "db": 64,
-  "specSrc": "Versus ve video inceleme: robot 4 kg; Max+ modunda ölçülen 64 dB"
+  "specSrc": "Versus ve video inceleme: robot 4 kg; Max+ modunda ölçülen 64 dB",
+  "obst": "3D / yapısal ışık",
+  "src": "Resmi kaynak denetimi (9 Kasım 2026): MOVA resmi sayfası: tek çizgi lazer ile engel algılama"
  },
  "lydsto-w2-plus": {
   "na": [
@@ -649,7 +704,9 @@
    "db",
    "dust",
    "water"
-  ]
+  ],
+  "obst": "3D / yapısal ışık",
+  "src": "Resmi kaynak denetimi (9 Kasım 2026): Xiaomi resmi sayfası: yapısal ışık ve kenar lazeri ile engel algılama"
  },
  "lydsto-w2-lite": {
   "na": [
@@ -986,7 +1043,9 @@
    "db",
    "h",
    "kg"
-  ]
+  ],
+  "nav": "LiDAR",
+  "src": "Resmi kaynak denetimi (9 Kasım 2026): Fakir resmi ürün sayfası: LDS lazer navigasyon (5 harita), 360° çift döner mop, otomatik toz boşaltma"
  },
  "fakir-robert-rs-840-plus": {
   "na": [
@@ -1029,7 +1088,9 @@
    "kg",
    "stDust",
    "water"
-  ]
+  ],
+  "hotDry": true,
+  "src": "Resmi kaynak denetimi (9 Kasım 2026): Fakir resmi ürün sayfası: sıcak hava ile mop kurutma"
  },
  "homend-alex-40": {
   "na": [
@@ -1068,7 +1129,10 @@
   "na": [
    "dust",
    "water"
-  ]
+  ],
+  "obst": "Yapay zekâ / kamera",
+  "cam": true,
+  "src": "Resmi kaynak denetimi (9 Kasım 2026): Homend resmi ürün adı ve bağımsız video inceleme: yapay zekâ destekli engel algılama"
  },
  "arcelik-imperium-robo-3-2-rs-6131": {
   "na": [
@@ -1275,7 +1339,11 @@
    "kg",
    "rt",
    "water"
-  ]
+  ],
+  "hotDry": true,
+  "obst": "Yapay zekâ / kamera",
+  "cam": true,
+  "src": "Resmi kaynak denetimi (9 Kasım 2026): MOVA resmi blog: istasyon paspasları sıcak havayla kurutuyor; MOVA resmi sayfası: AI SmartSight (LED destekli kamera) + yapısal ışık 3D tarayıcı, 240+ engel tanıma"
  },
  "roborock-saros-20-sonic": {
   "sides": 1,
@@ -1296,7 +1364,11 @@
    "rt",
    "stDust",
    "water"
-  ]
+  ],
+  "obst": "Yapay zekâ / kamera",
+  "cam": true,
+  "hotDry": true,
+  "src": "Resmi kaynak denetimi (9 Kasım 2026): MOVA resmi sayfası: yapay zekâ 300+ engeli tanıyor, geri çekilebilir DToF navigasyon, 70 °C sıcak hava kurutma"
  },
  "lydsto-w2-edge": {
   "na": [
@@ -1324,7 +1396,11 @@
    "kg",
    "rt",
    "water"
-  ]
+  ],
+  "nav": "LiDAR",
+  "obst": "Yapay zekâ / kamera",
+  "cam": true,
+  "src": "Resmi kaynak denetimi (9 Kasım 2026): MOVA resmi sayfası: geri çekilebilir DToF lazer navigasyon, RGB AI SmartSight + çift 3D yapısal ışık"
  },
  "roborock-qrevo-curv-5a1": {
   "na": [
@@ -1332,7 +1408,9 @@
    "climb",
    "stClean",
    "stDirty"
-  ]
+  ],
+  "hotDry": true,
+  "src": "Resmi kaynak denetimi (9 Kasım 2026): Roborock Global resmi Qrevo Curv serisi sayfası: sıcak hava kurutma"
  },
  "roborock-qrevo-edge-2-pro": {
   "na": [
@@ -1362,7 +1440,9 @@
    "db",
    "rt",
    "water"
-  ]
+  ],
+  "nav": "LiDAR",
+  "src": "Resmi kaynak denetimi (9 Kasım 2026): Dreame resmi sayfası: 360° 3D LiDAR (geri çekilebilir lazer kule)"
  },
  "mova-s70-roller": {
   "sides": 1,
@@ -1373,7 +1453,9 @@
    "db",
    "kg",
    "rt"
-  ]
+  ],
+  "hotWash": true,
+  "src": "Resmi kaynak denetimi (9 Kasım 2026): MOVA resmi sayfası: rulo mop 80 °C sıcak suyla kendini yıkıyor"
  },
  "ultenic-d6s": {
   "na": [
@@ -1425,7 +1507,11 @@
    "rt",
    "stDust",
    "water"
-  ]
+  ],
+  "obst": "Yapay zekâ / kamera",
+  "cam": true,
+  "hotWash": true,
+  "src": "Resmi kaynak denetimi (9 Kasım 2026): MOVA US resmi sayfası: yapay zekâ 280+ engeli tanıyor, sıcak su ile paspas yıkama, 260 rpm çift döner mop"
  },
  "dreame-l50s-pro-ultra": {
   "na": [
@@ -1499,7 +1585,10 @@
   "na": [
    "ch",
    "db"
-  ]
+  ],
+  "obst": "Yapay zekâ / kamera",
+  "cam": true,
+  "src": "Resmi kaynak denetimi (9 Kasım 2026): Dreame resmi L10s Pro Ultra sayfası: AI Action, RGB kamera + 3D yapısal ışık"
  },
  "ecovacs-deebot-t30-pro-omni": {
   "rt": 290,
@@ -1509,7 +1598,9 @@
   "na": [
    "stDirty",
    "stDust"
-  ]
+  ],
+  "obst": "3D / yapısal ışık",
+  "src": "Resmi kaynak denetimi (9 Kasım 2026): Ecovacs AU resmi özellik tablosu: engel algılama TrueDetect 3D 3.0"
  },
  "roborock-q5-pro": {
   "kg": 3.4,
@@ -1523,7 +1614,9 @@
   "specSrc": "Xiaomi resmi özellik sayfası kirli su tankı hacmini vermiyor",
   "na": [
    "stDirty"
-  ]
+  ],
+  "mop": "Çift döner",
+  "src": "Resmi kaynak denetimi (9 Kasım 2026): Xiaomi resmi sayfası: çift basınçlı dönen ped (2 ped tablası), istasyonda ped yıkama ve sıcak hava kurutma"
  },
  "tefal-rg9475-x-plorer-serie-220": {
   "h": 96,
@@ -1581,5 +1674,37 @@
   "ch": 4,
   "kg": 3.7,
   "specSrc": "E-Catalog özellik tablosu: çalışma 90 dk, şarj 4 sa, ağırlık 3,7 kg"
+ },
+ "roborock-saros-z70": {
+  "nav": "LiDAR",
+  "hotDry": true,
+  "src": "Resmi kaynak denetimi (9 Kasım 2026): Roborock US resmi sayfası: StarSight 2.0 lazer tabanlı navigasyon (LDS'ye göre 21 kat örnekleme), 55 °C sıcak hava kurutma"
+ },
+ "roborock-qrevo-curv": {
+  "hotDry": true,
+  "src": "Resmi kaynak denetimi (9 Kasım 2026): Roborock Global resmi Qrevo Curv serisi sayfası: sıcak hava kurutma"
+ },
+ "beko-robo-x-4-0-vrr-95514-vw": {
+  "pa": 8000.0,
+  "hotDry": true,
+  "src": "Resmi kaynak denetimi (9 Kasım 2026): Beko resmi ürün sayfası: 8.000 Pa emiş, paspasları otomatik yıkar ve sıcak havayla kurutur"
+ },
+ "ecovacs-deebot-x8-pro-omni": {
+  "obst": "Yapay zekâ / kamera",
+  "cam": true,
+  "src": "Resmi kaynak denetimi (9 Kasım 2026): Ecovacs resmi özellik tablosu: engel algılama AIVI 3D 3.0 / RGBD (RGB kamera)"
+ },
+ "arcelik-imperium-robo-4-0-rs-9551": {
+  "pa": 8000.0,
+  "src": "Resmi kaynak denetimi (9 Kasım 2026): Arçelik resmi ürün sayfası özellik tablosu: 8000 Pa"
+ },
+ "philips-homerun-9000-serisi-xu9100-10": {
+  "mop": "Rulo mop",
+  "mah": 6000.0,
+  "src": "Resmi kaynak denetimi (9 Kasım 2026): Philips TR resmi sayfası: silindir (rulo) paspas, PowerCyclone Aqua; Versuni kılavuzu: 6000 mAh nominal pil"
+ },
+ "dreame-l40-ultra-ce": {
+  "hotDry": true,
+  "src": "Resmi kaynak denetimi (9 Kasım 2026): Dreame resmi sayfası: yıkamadan sonra paspaslar ılık/sıcak havayla kurutuluyor"
  }
 }

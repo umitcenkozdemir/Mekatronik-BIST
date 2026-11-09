@@ -5,8 +5,8 @@ d={o['id']:o for o in json.load(open(S+'/robots2.json'))['items']}
 R=[('nav','LiDAR',r'\blidar\b|\blds\b|laser distance|\bdtof\b|d-tof|starsight|laser navigation|precisense|lazer navigasyon|lazer mesafe|pathfinder|\blaser\b.*(navigat|map)'),
    ('nav','Kamera (vSLAM)',r'vslam|visual slam|camera[- ]based navigation|imprint.*map|vision navigation'),
    ('nav','Jiroskop',r'gyroscop|jiroskop'),
-   ('obst','Yapay zekâ / kamera',r'\brgb\b|ai camera|reactiveai|reactive ai|aivi|precisionvision|camera.*(obstacle|recogni|avoid)|(obstacle|recogni|avoid).*camera|kamera|ai (recogni|identif)|recogni[sz]es? (over |up to )?\d+\+? (types of )?(obstacles|objects)|\d+\+? (types of )?(obstacles|objects) (recogni|identif)'),
-   ('obst','3D / yapısal ışık',r'structured light|3d obstacle|line laser|reactive 3d|3d sensing|3d structured|tof sensor|yapısal ışık'),
+   ('obst','Yapay zekâ / kamera',r'\brgb\b|ai camera|reactiveai|reactive ai|aivi|precisionvision|camera.*(obstacle|recogni|avoid)|(obstacle|recogni|avoid).*camera|kamera|\\brgbd\\b|ai (recogni|identif)|recogni[sz]es? (over |up to )?\d+\+? (types of )?(obstacles|objects)|\d+\+? (types of )?(obstacles|objects) (recogni|identif)'),
+   ('obst','3D / yapısal ışık',r'structured light|truedetect 3d|3d obstacle|line laser|reactive 3d|3d sensing|3d structured|tof sensor|yapısal ışık'),
    ('mop','Rulo mop',r'(?<!duo)roller mop|ozmo roller|mop roller|aquamop|roller mopping|rulo mop|roller-mop|self-cleaning roller|crawler'),
    ('mop','Çift döner',r'rotating mop|spinning mop|dual[- ](rotating|spinning)|rotary mop|döner mop|twin spinning|spinning pads|pads? .{0,20}spinning|spinning .{0,15}pads'),
    ('mop','Titreşimli',r'vibrarise|sonic mop|vibrat|titreşim'),
@@ -33,7 +33,7 @@ for i in ids:
         for l in re.split(r'\n+',t):
             if re.match(r'^[ \t]{3,}\S',l): continue  # girintili site menüsü satırı
             ll=l.lower()
-            if len(ll)>400 or ll.count('|')>=3 or '](/' in ll or '](http' in ll: continue  # karşılaştırma tablosu satırlarını atla
+            if len(ll)>400 or (ll.count('|')>=3 and not rel(r.get('url',''))) or '](/' in ll or '](http' in ll: continue  # karşılaştırma tablosu satırlarını atla
             for k,v,p in R:
                 if re.search(p,ll):
                     found.setdefault(k,[]); 
