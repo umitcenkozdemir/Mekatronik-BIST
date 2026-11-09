@@ -1,0 +1,140 @@
+{
+ "roborock-s8-maxv-ultra": {
+  "na": [
+   "kg"
+  ],
+  "specSrc": "Roborock US resmi sayfası yalnızca robot+istasyon ağırlığını veriyor (29,1 lb); robot tek başına ağırlığı yayımlanmamış"
+ },
+ "roborock-s7-max-ultra": {
+  "climb": 20,
+  "specSrc": "Versus özellik tablosu: azami tırmanma 20 mm"
+ },
+ "samsung-bespoke-jet-bot-combo-ai": {
+  "na": [
+   "mah",
+   "climb"
+  ],
+  "specSrc": "Samsung resmi özellik sayfası pil kapasitesi ve eşik yüksekliği vermiyor"
+ },
+ "roborock-qrevo-maxv": {
+  "ch": 4,
+  "kg": 3.8,
+  "specSrc": "Galaxus özellik tablosu: şarj süresi 240 dk, robot ağırlığı 3,80 kg"
+ },
+ "roborock-qrevo-s": {
+  "ch": 4,
+  "climb": 20,
+  "na": [
+   "kg"
+  ],
+  "specSrc": "Roborock Store ANZ (yetkili): şarj ≈4 saat; Vacuum Wars ve Versus: eşik 20 mm; robot ağırlığı ayrı verilmemiş (15,19 kg set)"
+ },
+ "mova-e30-ultra": {
+  "ch": 3.5,
+  "dust": 300,
+  "water": 80,
+  "na": [
+   "db"
+  ],
+  "specSrc": "MOVA resmi sayfası: toz haznesi 300 ml, su tankı 80 ml; kullanım kılavuzu: şarj ≈3,5 saat; ses için kaynaklar çelişiyor (70/74 dB)"
+ },
+ "dreame-bot-l20-ultra": {
+  "na": [
+   "ch"
+  ],
+  "specSrc": "Şarj süresi için kaynaklar çelişiyor (210 dk, 3 sa, 3,5 sa, 4 sa)"
+ },
+ "roborock-q8-max-plus": {
+  "water": 350,
+  "specSrc": "Modern Castle, Android Police, Amazon ürün sayfası: su tankı 350 ml"
+ },
+ "dreame-bot-l10s-pro-ultra-heat": {
+  "climb": 20,
+  "na": [
+   "ch",
+   "db"
+  ],
+  "specSrc": "Versus özellik tablosu: tırmanma 20 mm; şarj süresi kaynakları çelişiyor (4 sa / ≈3 sa), ses değeri yayımlanmamış"
+ },
+ "ecovacs-deebot-t30-pro-omni": {
+  "rt": 290,
+  "kg": 4.1,
+  "stClean": 4,
+  "na": [
+   "stDust",
+   "stDirty"
+  ],
+  "specSrc": "Ecovacs Avustralya resmi özellik sayfası: çalışma 200–290 dk, robot ≈4,1 kg, istasyon su tankı 4 L; toz torbası ve kirli su tankı hacmi verilmemiş"
+ },
+ "roborock-q5-pro": {
+  "kg": 3.4,
+  "stDust": 2.5,
+  "na": [
+   "ch"
+  ],
+  "specSrc": "Roborock resmi sayfası: RockDock Plus 2,5 L toz torbası; Modern Castle üretici tablosu: 3,4 kg; şarj süresi yayımlanmamış"
+ },
+ "xiaomi-robot-vacuum-x10-plus": {
+  "na": [
+   "stDirty"
+  ],
+  "specSrc": "Xiaomi resmi özellik sayfası kirli su tankı hacmini vermiyor"
+ },
+ "tefal-rg9475-x-plorer-serie-220": {
+  "h": 96,
+  "climb": 10,
+  "na": [
+   "mah",
+   "kg",
+   "stDust"
+  ],
+  "specSrc": "Hepsiburada ürün özellikleri (ithalatçı Groupe SEB İstanbul): boy 96 mm, aşılabilir engel 10 mm; pil, ağırlık ve istasyon torbası verilmemiş"
+ },
+ "roborock-s8": {
+  "stDust": 2.5,
+  "na": [
+   "kg"
+  ],
+  "specSrc": "Roborock resmi sayfası (RockDock Plus 2,5 L) ve S8+ karşılaştırma incelemesi: 2,5 L toz torbası; robot ağırlığı bulunamadı"
+ },
+ "dreame-d10-plus-gen-2": {
+  "na": [
+   "db"
+  ],
+  "specSrc": "Ses için kaynaklar çelişiyor (60, 65, ölçülen 79 dB)"
+ },
+ "tefal-rg8477-x-plorer-series": {
+  "na": [
+   "mah",
+   "kg"
+  ],
+  "specSrc": "Tefal RG8477 için pil ve ağırlık bilgisi yayımlanmamış"
+ },
+ "ezviz-re5-plus": {
+  "na": [
+   "db"
+  ],
+  "specSrc": "Ses için yalnızca tutarsız toplayıcı değerleri var (50/64 dB)"
+ },
+ "roborock-q7-max": {
+  "stDust": 2.5,
+  "specSrc": "Roborock resmi sayfası: Auto-Empty Dock Pure 2,5 L toz torbası"
+ },
+ "ultenic-t10-elite": {
+  "climb": 17,
+  "water": 210,
+  "na": [
+   "pa",
+   "db",
+   "dust",
+   "h"
+  ],
+  "specSrc": "TechRadar incelemesi: su haznesi 210 ml, 17 mm altındaki engelleri aşıyor; emiş, ses (yalnızca ölçüm), toz haznesi ve yükseklik yayımlanmamış"
+ },
+ "hobot-legee-d8": {
+  "rt": 90,
+  "ch": 4,
+  "kg": 3.7,
+  "specSrc": "E-Catalog özellik tablosu: çalışma 90 dk, şarj 4 sa, ağırlık 3,7 kg"
+ }
+}
