@@ -82,14 +82,16 @@
  },
  "ecovacs-t30c-prime": {
   "nav": "LiDAR",
-  "src": "Ecovacs T30C Prime: TrueMapping lazer (dToF) navigasyon; epey alanı boş (1 Kasım 2026)",
+  "src": "Ecovacs T30C Prime: TrueMapping lazer (dToF) navigasyon; epey alanı boş (1 Kasım 2026); Resmi kaynak denetimi (9 Kasım 2026): Ecovacs resmi (ae.ecovacs.com T30C Prime OMNI): AIVI 3D 4.0 engel algılama, 75°C yıkama + sıcak hava mop kurutma",
   "na": [
    "db",
    "dust",
    "h",
    "kg",
    "water"
-  ]
+  ],
+  "obst": "Yapay zekâ / kamera",
+  "hotDry": true
  },
  "ecovacs-deebot-t80s-omni": {
   "mop": "Rulo mop",
@@ -593,7 +595,9 @@
   "na": [
    "climb",
    "water"
-  ]
+  ],
+  "obst": "Yapay zekâ / kamera",
+  "src": "Resmi kaynak denetimi (9 Kasım 2026): Kärcher resmi: LiDAR + çift lazer sistemi ve kamera ile engel (kablo, çorap) algılama, yapay zekâ navigasyon"
  },
  "narwal-freo-x-ultra": {
   "na": [
@@ -610,7 +614,9 @@
   "na": [
    "db",
    "water"
-  ]
+  ],
+  "obst": "3D / yapısal ışık",
+  "src": "Resmi kaynak denetimi (9 Kasım 2026): Dreame resmi (in.dreametech.com): Navigasyon ve engel algılama LDS + tek çizgi lazer"
  },
  "lydsto-w3": {
   "na": [
@@ -715,7 +721,9 @@
    "dust",
    "rt",
    "water"
-  ]
+  ],
+  "pa": 5000.0,
+  "src": "Resmi kaynak denetimi (9 Kasım 2026): Satıcı ürün sayfaları (microless, amazon.ae, YM-W4-W03): 5000 Pa emiş"
  },
  "irobot-roomba-combo-j7-plus": {
   "rt": 80,
@@ -723,7 +731,9 @@
   "specSrc": "Best Cordless Vacuum Guide özellik listesi: 60–80 dk, 2,4 L torba",
   "na": [
    "pa"
-  ]
+  ],
+  "obst": "Yapay zekâ / kamera",
+  "src": "Resmi kaynak denetimi (9 Kasım 2026): iRobot resmi + Vacuum Wars: PrecisionVision kamera navigasyonu ayakkabı, kablo, evcil hayvan dışkısını tanıyıp kaçınır"
  },
  "narwal-freo-z10-ultra": {
   "rt": 150,
@@ -737,7 +747,9 @@
   "na": [
    "db",
    "kg"
-  ]
+  ],
+  "obst": "3D / yapısal ışık",
+  "src": "Resmi kaynak denetimi (9 Kasım 2026): Bosch ürün açıklaması (BCRD2W, Amazon.de üretici metni): 360° LiDAR + kızılötesi ışıklı Smart Vision, engeller algılanıp atlatılır"
  },
  "irobot-roomba-combo-j7": {
   "rt": 80,
@@ -746,7 +758,9 @@
   "na": [
    "pa",
    "stDust"
-  ]
+  ],
+  "obst": "Yapay zekâ / kamera",
+  "src": "Resmi kaynak denetimi (9 Kasım 2026): iRobot: Combo j7 robotu j7+ ile aynı; PrecisionVision kamera ile nesne tanıma"
  },
  "xiaomi-robot-vacuum-x20-plus": {
   "na": [
@@ -754,7 +768,9 @@
    "db",
    "rt",
    "water"
-  ]
+  ],
+  "obst": "3D / yapısal ışık",
+  "src": "Resmi kaynak denetimi (9 Kasım 2026): Xiaomi resmi sayfası: S-Cross geniş alanlı yapısal ışık engel algılama, LDS lazer navigasyon"
  },
  "xiaomi-h50": {
   "dust": 280,
@@ -832,12 +848,16 @@
    "db",
    "rt",
    "water"
-  ]
+  ],
+  "obst": "3D / yapısal ışık",
+  "src": "Resmi kaynak denetimi (9 Kasım 2026): Narwal resmi: Tri-Laser (üç lazer) engel algılama, 1 cm³ üstü nesneleri tanır, ince kablolardan kaçınır"
  },
  "dreame-l10s-plus": {
   "na": [
    "climb"
-  ]
+  ],
+  "obst": "3D / yapısal ışık",
+  "src": "Resmi kaynak denetimi (9 Kasım 2026): Dreame resmi (L10s Plus): 3DAdapt engel algılama (dinamik lazer)"
  },
  "philips-2000-series-xu2100": {
   "na": [
@@ -847,12 +867,16 @@
  "ecovacs-deebot-n20e-plus": {
   "na": [
    "kg"
-  ]
+  ],
+  "obst": "Temel sensör",
+  "src": "Resmi kaynak denetimi (9 Kasım 2026): Ecovacs resmi (N20 ailesi, N20 PLUS sayfası): engelden kaçınma kızılötesi"
  },
  "ezviz-re4-plus": {
   "na": [
    "db"
-  ]
+  ],
+  "obst": "Temel sensör",
+  "src": "Resmi kaynak denetimi (9 Kasım 2026): Ezviz resmi (CS-RE4P): LDS LiDAR, engelden kaçınma kızılötesi dedektörler"
  },
  "roborock-q8": {
   "na": [
@@ -866,7 +890,9 @@
   "na": [
    "ch",
    "db"
-  ]
+  ],
+  "obst": "3D / yapısal ışık",
+  "src": "Resmi kaynak denetimi (9 Kasım 2026): Xiaomi resmi (S40 Pro): 129° geniş açılı yapısal ışık engel algılama"
  },
  "dreame-f20": {
   "na": [
@@ -930,7 +956,9 @@
  "philips-xu5000": {
   "na": [
    "stDust"
-  ]
+  ],
+  "obst": "3D / yapısal ışık",
+  "src": "Resmi kaynak denetimi (9 Kasım 2026): Philips resmi (HomeRun 5000 serisi, XU5100 ile aynı robot): çizgi lazerle küçük engel algılama"
  },
  "viomi-v5": {
   "na": [
@@ -953,7 +981,9 @@
   "specSrc": "Kärcher resmi teknik föy: 250 ml temiz su tankı",
   "na": [
    "climb"
-  ]
+  ],
+  "nav": "Jiroskop",
+  "src": "Resmi kaynak denetimi (9 Kasım 2026): Kärcher resmi veri föyü (RCV 2, 1.269-671.0): jiroskop navigasyon, 4000Pa, 2.6Ah"
  },
  "xiaomi-s40": {
   "db": 60,
@@ -996,13 +1026,18 @@
    "db",
    "kg",
    "stDust"
-  ]
+  ],
+  "nav": "LiDAR",
+  "obst": "Temel sensör",
+  "src": "Resmi kaynak denetimi (9 Kasım 2026): Ecovacs resmi (N20 PRO PLUS ile aynı robot): LDS navigasyon, kızılötesi engel algılama"
  },
  "narwal-freo-s": {
   "na": [
    "ch",
    "mah"
-  ]
+  ],
+  "obst": "3D / yapısal ışık",
+  "src": "Resmi kaynak denetimi (9 Kasım 2026): Vacuum Wars + Narwal: LiDAR, tampon/kızılötesi + öne bakan yapısal ışık engel algılama, 8N basınçlı düz mop"
  },
  "fakir-robert-rs-730": {
   "na": [
@@ -1014,7 +1049,9 @@
   "na": [
    "h",
    "kg"
-  ]
+  ],
+  "obst": "Temel sensör",
+  "src": "Resmi kaynak denetimi (9 Kasım 2026): Fakir resmi: engel, merdiven ve köşe algılama sensörleri"
  },
  "fakir-robert-rs-780": {
   "na": [
@@ -1226,7 +1263,9 @@
    "kg",
    "rt",
    "water"
-  ]
+  ],
+  "nav": "LiDAR",
+  "src": "Resmi kaynak denetimi (9 Kasım 2026): Cecotec ürün sayfası (Amazon, A01_EU01_112281): 'Laser and AI Navigation', 13000Pa, kendini boşaltan istasyon"
  },
  "cecotec-conga-m100": {
   "na": [
@@ -1479,7 +1518,9 @@
    "ch",
    "climb",
    "mah"
-  ]
+  ],
+  "obst": "Temel sensör",
+  "src": "Resmi kaynak denetimi (9 Kasım 2026): Tefal/Rowenta Serie 140 SSS: ön ve yan iki sensörle alçak engel algılama"
  },
  "roborock-qrevo-c": {
   "na": [
@@ -1652,7 +1693,9 @@
   "specSrc": "Ses için yalnızca tutarsız toplayıcı değerleri var (50/64 dB)",
   "na": [
    "db"
-  ]
+  ],
+  "obst": "Temel sensör",
+  "src": "Resmi kaynak denetimi (9 Kasım 2026): Ezviz resmi: engelden kaçınma kızılötesi dedektörlerle"
  },
  "roborock-q7-max": {
   "stDust": 2.5,
@@ -1673,7 +1716,9 @@
   "rt": 90,
   "ch": 4,
   "kg": 3.7,
-  "specSrc": "E-Catalog özellik tablosu: çalışma 90 dk, şarj 4 sa, ağırlık 3,7 kg"
+  "specSrc": "E-Catalog özellik tablosu: çalışma 90 dk, şarj 4 sa, ağırlık 3,7 kg",
+  "mop": "Titreşimli",
+  "src": "Resmi kaynak denetimi (9 Kasım 2026): Hobot resmi: dakikada 1300 kez ileri-geri (reciprocating) ovalayan, 800 g baskılı mop"
  },
  "roborock-saros-z70": {
   "nav": "LiDAR",
@@ -1706,5 +1751,41 @@
  "dreame-l40-ultra-ce": {
   "hotDry": true,
   "src": "Resmi kaynak denetimi (9 Kasım 2026): Dreame resmi sayfası: yıkamadan sonra paspaslar ılık/sıcak havayla kurutuluyor"
+ },
+ "irobot-roomba-combo-j5": {
+  "obst": "Yapay zekâ / kamera",
+  "src": "Resmi kaynak denetimi (9 Kasım 2026): iRobot resmi: Roomba Combo j5 PrecisionVision navigasyonu ile kablo, oyuncak, evcil hayvan dışkısını tanıyıp kaçınır"
+ },
+ "xiaomi-robot-vacuum-s20-plus": {
+  "obst": "Temel sensör",
+  "src": "Resmi kaynak denetimi (9 Kasım 2026): Xiaomi resmi (mi.com S20+): kenar lazer sensörü + engelden kaçınma sensörleri"
+ },
+ "ecovacs-deebot-n20-pro-plus": {
+  "obst": "Temel sensör",
+  "src": "Resmi kaynak denetimi (9 Kasım 2026): Ecovacs resmi (N20 PRO PLUS): LDS navigasyon, engelden kaçınma kızılötesi"
+ },
+ "irobot-roomba-combo-j5-plus": {
+  "obst": "Yapay zekâ / kamera",
+  "src": "Resmi kaynak denetimi (9 Kasım 2026): iRobot resmi (j557020): PrecisionVision ile evcil hayvan dışkısı ve kabloları tanıyıp kaçınır"
+ },
+ "philips-xu5100": {
+  "obst": "3D / yapısal ışık",
+  "src": "Resmi kaynak denetimi (9 Kasım 2026): Philips resmi (XU5100/11): çizgi lazer teknolojisiyle 2,5x2 cm ve üzeri küçük engelleri algılar"
+ },
+ "bosch-spotless-advanced": {
+  "obst": "3D / yapısal ışık",
+  "src": "Resmi kaynak denetimi (9 Kasım 2026): Bosch üretici metni (Spotless Advanced ailesi, BCRD2W ile aynı robot): 360° LiDAR + kızılötesi ışıklı Smart Vision engel algılama"
+ },
+ "xiaomi-mi-robot-vacuum-mop-essential": {
+  "nav": "Jiroskop",
+  "src": "Resmi kaynak denetimi (9 Kasım 2026): Xiaomi kılavuzu + inceleme: Essential (G1) jiroskopla S/zikzak rotada ilerler, gerçek zamanlı harita"
+ },
+ "hobot-legee-7": {
+  "mop": "Titreşimli",
+  "src": "Resmi kaynak denetimi (9 Kasım 2026): Hobot resmi (LEGEE serisi): ileri-geri ovalayan (reciprocating) 600 g baskılı mop"
+ },
+ "blaupunkt-s10-robomaster": {
+  "pa": 3000.0,
+  "src": "Resmi kaynak denetimi (9 Kasım 2026): Türkiye distribütörü tanıtım videosu (Technofashion): Robomaster S10 3000Pa emiş, akıllı haritalama"
  }
 }

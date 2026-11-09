@@ -212,5 +212,131 @@
  "fakir-robert-rs-800-plus": {
   "nav": "LiDAR",
   "src": "Fakir resmi ürün sayfası: LDS lazer navigasyon (5 harita), 360° çift döner mop, otomatik toz boşaltma"
+ },
+ "xiaomi-robot-vacuum-x20-plus": {
+  "obst": "3D / yapısal ışık",
+  "src": "Xiaomi resmi sayfası: S-Cross geniş alanlı yapısal ışık engel algılama, LDS lazer navigasyon"
+ },
+ "bosch-spotless-advanced-plus": {
+  "obst": "3D / yapısal ışık",
+  "src": "Bosch ürün açıklaması (BCRD2W, Amazon.de üretici metni): 360° LiDAR + kızılötesi ışıklı Smart Vision, engeller algılanıp atlatılır"
+ },
+ "ecovacs-t30c-prime": {
+  "obst": "Yapay zekâ / kamera",
+  "hotDry": true,
+  "src": "Ecovacs resmi (ae.ecovacs.com T30C Prime OMNI): AIVI 3D 4.0 engel algılama, 75°C yıkama + sıcak hava mop kurutma"
+ },
+ "karcher-rvm-4-comfort-extra": {
+  "obst": "Yapay zekâ / kamera",
+  "src": "Kärcher resmi: LiDAR + çift lazer sistemi ve kamera ile engel (kablo, çorap) algılama, yapay zekâ navigasyon"
+ },
+ "irobot-roomba-combo-j7-plus": {
+  "obst": "Yapay zekâ / kamera",
+  "src": "iRobot resmi + Vacuum Wars: PrecisionVision kamera navigasyonu ayakkabı, kablo, evcil hayvan dışkısını tanıyıp kaçınır"
+ },
+ "dreame-d20-ultra": {
+  "obst": "3D / yapısal ışık",
+  "src": "Dreame resmi (in.dreametech.com): Navigasyon ve engel algılama LDS + tek çizgi lazer"
+ },
+ "lydsto-w2-lite": {
+  "pa": 5000.0,
+  "src": "Satıcı ürün sayfaları (microless, amazon.ae, YM-W4-W03): 5000 Pa emiş"
+ },
+ "fakir-robert-rs-740": {
+  "obst": "Temel sensör",
+  "src": "Fakir resmi: engel, merdiven ve köşe algılama sensörleri"
+ },
+ "ezviz-re5-plus": {
+  "obst": "Temel sensör",
+  "src": "Ezviz resmi: engelden kaçınma kızılötesi dedektörlerle"
+ },
+ "irobot-roomba-combo-j7": {
+  "obst": "Yapay zekâ / kamera",
+  "src": "iRobot: Combo j7 robotu j7+ ile aynı; PrecisionVision kamera ile nesne tanıma"
+ },
+ "hobot-legee-d8": {
+  "mop": "Titreşimli",
+  "src": "Hobot resmi: dakikada 1300 kez ileri-geri (reciprocating) ovalayan, 800 g baskılı mop"
+ },
+ "irobot-roomba-combo-j5": {
+  "obst": "Yapay zekâ / kamera",
+  "src": "iRobot resmi: Roomba Combo j5 PrecisionVision navigasyonu ile kablo, oyuncak, evcil hayvan dışkısını tanıyıp kaçınır"
+ },
+ "xiaomi-robot-vacuum-s20-plus": {
+  "obst": "Temel sensör",
+  "src": "Xiaomi resmi (mi.com S20+): kenar lazer sensörü + engelden kaçınma sensörleri"
+ },
+ "ecovacs-deebot-n20-pro-plus": {
+  "obst": "Temel sensör",
+  "src": "Ecovacs resmi (N20 PRO PLUS): LDS navigasyon, engelden kaçınma kızılötesi"
+ },
+ "irobot-roomba-combo-j5-plus": {
+  "obst": "Yapay zekâ / kamera",
+  "src": "iRobot resmi (j557020): PrecisionVision ile evcil hayvan dışkısı ve kabloları tanıyıp kaçınır"
+ },
+ "philips-xu5100": {
+  "obst": "3D / yapısal ışık",
+  "src": "Philips resmi (XU5100/11): çizgi lazer teknolojisiyle 2,5x2 cm ve üzeri küçük engelleri algılar"
+ },
+ "dreame-l10s-plus": {
+  "obst": "3D / yapısal ışık",
+  "src": "Dreame resmi (L10s Plus): 3DAdapt engel algılama (dinamik lazer)"
+ },
+ "ecovacs-deebot-n20e-plus": {
+  "obst": "Temel sensör",
+  "src": "Ecovacs resmi (N20 ailesi, N20 PLUS sayfası): engelden kaçınma kızılötesi"
+ },
+ "xiaomi-s40-pro": {
+  "obst": "3D / yapısal ışık",
+  "src": "Xiaomi resmi (S40 Pro): 129° geniş açılı yapısal ışık engel algılama"
+ },
+ "cecotec-conga-y80": {
+  "nav": "LiDAR",
+  "src": "Cecotec ürün sayfası (Amazon, A01_EU01_112281): 'Laser and AI Navigation', 13000Pa, kendini boşaltan istasyon"
+ },
+ "bosch-spotless-advanced": {
+  "obst": "3D / yapısal ışık",
+  "src": "Bosch üretici metni (Spotless Advanced ailesi, BCRD2W ile aynı robot): 360° LiDAR + kızılötesi ışıklı Smart Vision engel algılama"
+ },
+ "xiaomi-mi-robot-vacuum-mop-essential": {
+  "nav": "Jiroskop",
+  "src": "Xiaomi kılavuzu + inceleme: Essential (G1) jiroskopla S/zikzak rotada ilerler, gerçek zamanlı harita"
+ },
+ "hobot-legee-7": {
+  "mop": "Titreşimli",
+  "src": "Hobot resmi (LEGEE serisi): ileri-geri ovalayan (reciprocating) 600 g baskılı mop"
+ },
+ "tefal-rg9177-x-plorer-serie-140": {
+  "obst": "Temel sensör",
+  "src": "Tefal/Rowenta Serie 140 SSS: ön ve yan iki sensörle alçak engel algılama"
+ },
+ "narwal-freo-x-plus": {
+  "obst": "3D / yapısal ışık",
+  "src": "Narwal resmi: Tri-Laser (üç lazer) engel algılama, 1 cm³ üstü nesneleri tanır, ince kablolardan kaçınır"
+ },
+ "ezviz-re4-plus": {
+  "obst": "Temel sensör",
+  "src": "Ezviz resmi (CS-RE4P): LDS LiDAR, engelden kaçınma kızılötesi dedektörler"
+ },
+ "philips-xu5000": {
+  "obst": "3D / yapısal ışık",
+  "src": "Philips resmi (HomeRun 5000 serisi, XU5100 ile aynı robot): çizgi lazerle küçük engel algılama"
+ },
+ "karcher-rcv-2": {
+  "nav": "Jiroskop",
+  "src": "Kärcher resmi veri föyü (RCV 2, 1.269-671.0): jiroskop navigasyon, 4000Pa, 2.6Ah"
+ },
+ "blaupunkt-s10-robomaster": {
+  "pa": 3000.0,
+  "src": "Türkiye distribütörü tanıtım videosu (Technofashion): Robomaster S10 3000Pa emiş, akıllı haritalama"
+ },
+ "ecovacs-deebot-n20-pro": {
+  "nav": "LiDAR",
+  "obst": "Temel sensör",
+  "src": "Ecovacs resmi (N20 PRO PLUS ile aynı robot): LDS navigasyon, kızılötesi engel algılama"
+ },
+ "narwal-freo-s": {
+  "obst": "3D / yapısal ışık",
+  "src": "Vacuum Wars + Narwal: LiDAR, tampon/kızılötesi + öne bakan yapısal ışık engel algılama, 8N basınçlı düz mop"
  }
 }
