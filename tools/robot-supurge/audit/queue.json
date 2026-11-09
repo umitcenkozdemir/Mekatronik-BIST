@@ -1,0 +1,2011 @@
+[
+{
+"id": "roborock-s8-maxv-ultra",
+"q": "Roborock S8 MaxV Ultra specifications",
+"dom": [
+"roborock.com",
+"global.roborock.com",
+"us.roborock.com"
+]
+},
+{
+"id": "dreame-matrix-10-ultra",
+"q": "Dreame Matrix 10 Ultra specifications",
+"dom": [
+"dreametech.com",
+"dreame.tech"
+]
+},
+{
+"id": "roborock-qrevo-master",
+"q": "Roborock Qrevo Master specifications",
+"dom": [
+"roborock.com",
+"global.roborock.com",
+"us.roborock.com"
+]
+},
+{
+"id": "mova-mobius-60",
+"q": "Mova Mobius 60 specifications",
+"dom": [
+"mova.tech",
+"mova-tech.com"
+]
+},
+{
+"id": "roborock-saros-20-flow",
+"q": "Roborock Saros 20 Flow specifications",
+"dom": [
+"roborock.com",
+"global.roborock.com",
+"us.roborock.com"
+]
+},
+{
+"id": "mova-v70-ultra-complete",
+"q": "Mova V70 Ultra Complete specifications",
+"dom": [
+"mova.tech",
+"mova-tech.com"
+]
+},
+{
+"id": "roborock-s7-max-ultra",
+"q": "Roborock S7 Max Ultra specifications",
+"dom": [
+"roborock.com",
+"global.roborock.com",
+"us.roborock.com"
+]
+},
+{
+"id": "dreame-x60-ultra-complete",
+"q": "Dreame X60 Ultra Complete specifications",
+"dom": [
+"dreametech.com",
+"dreame.tech"
+]
+},
+{
+"id": "roborock-saros-10",
+"q": "Roborock Saros 10 specifications",
+"dom": [
+"roborock.com",
+"global.roborock.com",
+"us.roborock.com"
+]
+},
+{
+"id": "roborock-saros-20",
+"q": "Roborock Saros 20 specifications",
+"dom": [
+"roborock.com",
+"global.roborock.com",
+"us.roborock.com"
+]
+},
+{
+"id": "roborock-saros-20-sonic",
+"q": "Roborock Saros 20 Sonic specifications",
+"dom": [
+"roborock.com",
+"global.roborock.com",
+"us.roborock.com"
+]
+},
+{
+"id": "lydsto-w2-edge",
+"q": "Lydsto W2 Edge specifications",
+"dom": [
+"lydsto.com"
+]
+},
+{
+"id": "mova-z70-ultra-roller-complete",
+"q": "Mova Z70 Ultra Roller Complete specifications",
+"dom": [
+"mova.tech",
+"mova-tech.com"
+]
+},
+{
+"id": "anker-eufy-omni-e25",
+"q": "Anker Eufy Omni E25 specifications",
+"dom": [
+"eufy.com"
+]
+},
+{
+"id": "roborock-qrevo-edge-3-pro",
+"q": "Roborock Qrevo Edge 3 Pro specifications",
+"dom": [
+"roborock.com",
+"global.roborock.com",
+"us.roborock.com"
+]
+},
+{
+"id": "roborock-qrevo-curv",
+"q": "Roborock Qrevo Curv specifications",
+"dom": [
+"roborock.com",
+"global.roborock.com",
+"us.roborock.com"
+]
+},
+{
+"id": "roborock-saros-z70",
+"q": "Roborock Saros Z70 specifications",
+"dom": [
+"roborock.com",
+"global.roborock.com",
+"us.roborock.com"
+]
+},
+{
+"id": "roborock-qrevo-edge-2-pro",
+"q": "Roborock Qrevo Edge 2 Pro specifications",
+"dom": [
+"roborock.com",
+"global.roborock.com",
+"us.roborock.com"
+]
+},
+{
+"id": "dreame-x50-pro-ultra-complete",
+"q": "Dreame X50 Pro Ultra Complete specifications",
+"dom": [
+"dreametech.com",
+"dreame.tech"
+]
+},
+{
+"id": "samsung-bespoke-jet-bot-combo-ai",
+"q": "Samsung Bespoke Jet Bot Combo AI (VR7MD97714G) specifications",
+"dom": [
+"samsung.com"
+]
+},
+{
+"id": "dji-romo-p",
+"q": "DJI Romo P (CS8E) specifications",
+"dom": [
+"dji.com"
+]
+},
+{
+"id": "roborock-qrevo-curv-5a1",
+"q": "Roborock Qrevo Curv 5A1 specifications",
+"dom": [
+"roborock.com",
+"global.roborock.com",
+"us.roborock.com"
+]
+},
+{
+"id": "roborock-qrevo-c",
+"q": "Roborock Qrevo C specifications",
+"dom": [
+"roborock.com",
+"global.roborock.com",
+"us.roborock.com"
+]
+},
+{
+"id": "mova-z60-ultra-roller-complete",
+"q": "Mova Z60 Ultra Roller Complete specifications",
+"dom": [
+"mova.tech",
+"mova-tech.com"
+]
+},
+{
+"id": "mova-s70-roller",
+"q": "Mova S70 Roller specifications",
+"dom": [
+"mova.tech",
+"mova-tech.com"
+]
+},
+{
+"id": "roborock-qrevo-edge-2-flow",
+"q": "Roborock Qrevo Edge 2 Flow specifications",
+"dom": [
+"roborock.com",
+"global.roborock.com",
+"us.roborock.com"
+]
+},
+{
+"id": "roborock-saros-10r",
+"q": "Roborock Saros 10R specifications",
+"dom": [
+"roborock.com",
+"global.roborock.com",
+"us.roborock.com"
+]
+},
+{
+"id": "roborock-qrevo-curv-2-pro",
+"q": "Roborock Qrevo Curv 2 Pro specifications",
+"dom": [
+"roborock.com",
+"global.roborock.com",
+"us.roborock.com"
+]
+},
+{
+"id": "dreame-aqua-10-ultra-roller",
+"q": "Dreame Aqua 10 Ultra Roller specifications",
+"dom": [
+"dreametech.com",
+"dreame.tech"
+]
+},
+{
+"id": "ezviz-rs20-max",
+"q": "Ezviz RS20 Max specifications",
+"dom": [
+"ezviz.com"
+]
+},
+{
+"id": "mova-p70-pro-ultra",
+"q": "Mova P70 Pro Ultra specifications",
+"dom": [
+"mova.tech",
+"mova-tech.com"
+]
+},
+{
+"id": "mova-v50-ultra-complete",
+"q": "Mova V50 Ultra Complete specifications",
+"dom": [
+"mova.tech",
+"mova-tech.com"
+]
+},
+{
+"id": "dreame-l50s-pro-ultra",
+"q": "Dreame L50s Pro Ultra specifications",
+"dom": [
+"dreametech.com",
+"dreame.tech"
+]
+},
+{
+"id": "roborock-qrevo-maxv",
+"q": "Roborock Qrevo MaxV specifications",
+"dom": [
+"roborock.com",
+"global.roborock.com",
+"us.roborock.com"
+]
+},
+{
+"id": "roborock-qrevo-curvx",
+"q": "Roborock Qrevo CurvX specifications",
+"dom": [
+"roborock.com",
+"global.roborock.com",
+"us.roborock.com"
+]
+},
+{
+"id": "roborock-qrevo-edge-2",
+"q": "Roborock Qrevo Edge 2 specifications",
+"dom": [
+"roborock.com",
+"global.roborock.com",
+"us.roborock.com"
+]
+},
+{
+"id": "ecovacs-deebot-t90-pro-omni",
+"q": "Ecovacs Deebot T90 Pro Omni specifications",
+"dom": [
+"ecovacs.com"
+]
+},
+{
+"id": "dji-romo-a",
+"q": "DJI Romo A (CR8E) specifications",
+"dom": [
+"dji.com"
+]
+},
+{
+"id": "ecovacs-deebot-x11-omnicyclone",
+"q": "Ecovacs Deebot X11 OmniCyclone specifications",
+"dom": [
+"ecovacs.com"
+]
+},
+{
+"id": "lydsto-r1-pro",
+"q": "Lydsto R1 Pro specifications",
+"dom": [
+"lydsto.com"
+]
+},
+{
+"id": "simart-katya-o",
+"q": "Şımart Katya O specifications",
+"dom": null
+},
+{
+"id": "lydsto-r1",
+"q": "Lydsto R1 (HD-STYTJ) specifications",
+"dom": [
+"lydsto.com"
+]
+},
+{
+"id": "tefal-rg9695-x-plorer-serie",
+"q": "Tefal RG9695 X-Plorer Serie specifications",
+"dom": [
+"tefal.com",
+"tefal.com.tr"
+]
+},
+{
+"id": "roborock-qrevo-s",
+"q": "Roborock Qrevo S specifications",
+"dom": [
+"roborock.com",
+"global.roborock.com",
+"us.roborock.com"
+]
+},
+{
+"id": "roborock-qrevo-c-pro",
+"q": "Roborock Qrevo C Pro specifications",
+"dom": [
+"roborock.com",
+"global.roborock.com",
+"us.roborock.com"
+]
+},
+{
+"id": "xiaomi-robot-vacuum-6",
+"q": "Xiaomi Robot Vacuum 6 (PV32GL) specifications",
+"dom": [
+"mi.com"
+]
+},
+{
+"id": "roborock-qrevo-curv-2-flow",
+"q": "Roborock Qrevo Curv 2 Flow specifications",
+"dom": [
+"roborock.com",
+"global.roborock.com",
+"us.roborock.com"
+]
+},
+{
+"id": "dreame-l50-ultra",
+"q": "Dreame L50 Ultra specifications",
+"dom": [
+"dreametech.com",
+"dreame.tech"
+]
+},
+{
+"id": "bosch-spotless-max-cam",
+"q": "Bosch Spotless Max Cam (BCRDW3BX) specifications",
+"dom": [
+"bosch-home.com",
+"bosch-home.com.tr"
+]
+},
+{
+"id": "mova-e30-ultra",
+"q": "Mova E30 Ultra specifications",
+"dom": [
+"mova.tech",
+"mova-tech.com"
+]
+},
+{
+"id": "dreame-x50-ultra-complete",
+"q": "Dreame X50 Ultra Complete specifications",
+"dom": [
+"dreametech.com",
+"dreame.tech"
+]
+},
+{
+"id": "beko-robo-x-4-0-vrr-95514-vw",
+"q": "Beko Robo-X 4.0 VRR 95514 VW robot süpürge özellikleri",
+"dom": [
+"beko.com.tr"
+]
+},
+{
+"id": "mova-s70-pro-roller",
+"q": "Mova S70 Pro Roller specifications",
+"dom": [
+"mova.tech",
+"mova-tech.com"
+]
+},
+{
+"id": "fakir-robert-rs-850-plus",
+"q": "Fakir Robert RS 850 Plus specifications",
+"dom": [
+"fakir.com.tr"
+]
+},
+{
+"id": "dji-romo-s",
+"q": "DJI Romo S (CR8F) specifications",
+"dom": [
+"dji.com"
+]
+},
+{
+"id": "ecovacs-deebot-x8-pro-omni",
+"q": "Ecovacs Deebot X8 Pro Omni specifications",
+"dom": [
+"ecovacs.com"
+]
+},
+{
+"id": "mova-e50-pro-ultra",
+"q": "Mova E50 Pro Ultra specifications",
+"dom": [
+"mova.tech",
+"mova-tech.com"
+]
+},
+{
+"id": "karcher-rvf-7-eu",
+"q": "Karcher RVF 7 EU specifications",
+"dom": [
+"kaercher.com"
+]
+},
+{
+"id": "roborock-qrevo-2-pro",
+"q": "Roborock Qrevo 2 Pro specifications",
+"dom": [
+"roborock.com",
+"global.roborock.com",
+"us.roborock.com"
+]
+},
+{
+"id": "dreame-bot-l20-ultra",
+"q": "Dreame Bot L20 Ultra specifications",
+"dom": [
+"dreametech.com",
+"dreame.tech"
+]
+},
+{
+"id": "arcelik-imperium-robo-4-0-rs-9551",
+"q": "Arçelik Imperium Robo 4.0 RS 9551 specifications",
+"dom": [
+"arcelik.com.tr"
+]
+},
+{
+"id": "irobot-roomba-combo-10-max",
+"q": "iRobot Roomba Combo 10 Max specifications",
+"dom": [
+"irobot.com",
+"irobot.com.tr"
+]
+},
+{
+"id": "dreame-l50-ultra-ce",
+"q": "Dreame L50 Ultra CE specifications",
+"dom": [
+"dreametech.com",
+"dreame.tech"
+]
+},
+{
+"id": "xiaomi-vacuum-5-pro",
+"q": "Xiaomi Vacuum 5 Pro (OV21GL) specifications",
+"dom": [
+"mi.com"
+]
+},
+{
+"id": "roborock-q8-max-pro-plus",
+"q": "Roborock Q8 Max Pro+ specifications",
+"dom": [
+"roborock.com",
+"global.roborock.com",
+"us.roborock.com"
+]
+},
+{
+"id": "roborock-q8-max-plus",
+"q": "Roborock Q8 Max+ specifications",
+"dom": [
+"roborock.com",
+"global.roborock.com",
+"us.roborock.com"
+]
+},
+{
+"id": "dyson-spot-plusscrub-ai",
+"q": "Dyson Spot+Scrub Ai specifications",
+"dom": [
+"dyson.com",
+"dyson.com.tr"
+]
+},
+{
+"id": "dreame-l40s-pro",
+"q": "Dreame L40s Pro specifications",
+"dom": [
+"dreametech.com",
+"dreame.tech"
+]
+},
+{
+"id": "cecotec-conga-x100-ai",
+"q": "Cecotec Conga X100 AI specifications",
+"dom": [
+"cecotec.com",
+"storececotec.com"
+]
+},
+{
+"id": "homend-alex-50-pro-ulticlean",
+"q": "Homend Alex 50 Pro Ulticlean specifications",
+"dom": [
+"homend.com.tr",
+"homend.com"
+]
+},
+{
+"id": "anker-eufy-omni-e28",
+"q": "Anker Eufy Omni E28 specifications",
+"dom": [
+"eufy.com"
+]
+},
+{
+"id": "mova-p50-pro-ultra",
+"q": "Mova P50 Pro Ultra specifications",
+"dom": [
+"mova.tech",
+"mova-tech.com"
+]
+},
+{
+"id": "mamibot-exvac800s",
+"q": "Mamibot EXVAC800S specifications",
+"dom": [
+"mamibot.com"
+]
+},
+{
+"id": "ecovacs-deebot-x11-pro-omni",
+"q": "Ecovacs Deebot X11 Pro Omni specifications",
+"dom": [
+"ecovacs.com"
+]
+},
+{
+"id": "roborock-qrevo-l",
+"q": "Roborock Qrevo L specifications",
+"dom": [
+"roborock.com",
+"global.roborock.com",
+"us.roborock.com"
+]
+},
+{
+"id": "dreame-l40-ultra",
+"q": "Dreame L40 Ultra (RLX53SE) specifications",
+"dom": [
+"dreametech.com",
+"dreame.tech"
+]
+},
+{
+"id": "philips-homerun-3000-series-aqua-xu3100-xu3110",
+"q": "Philips HomeRun 3000 Series Aqua (XU3100/XU3110) specifications",
+"dom": [
+"philips.com",
+"philips.com.tr",
+"versuni.com"
+]
+},
+{
+"id": "dreame-l10s-ultra-gen-2",
+"q": "Dreame L10s Ultra Gen 2 specifications",
+"dom": [
+"dreametech.com",
+"dreame.tech"
+]
+},
+{
+"id": "roborock-q7-max-plus",
+"q": "Roborock Q7 Max+ specifications",
+"dom": [
+"roborock.com",
+"global.roborock.com",
+"us.roborock.com"
+]
+},
+{
+"id": "homend-alex-30",
+"q": "Homend Alex 30 specifications",
+"dom": [
+"homend.com.tr",
+"homend.com"
+]
+},
+{
+"id": "roborock-qrevo-l-pro",
+"q": "Roborock Qrevo L Pro specifications",
+"dom": [
+"roborock.com",
+"global.roborock.com",
+"us.roborock.com"
+]
+},
+{
+"id": "fakir-robert-rs-830-plus",
+"q": "Fakir Robert RS 830 Plus specifications",
+"dom": [
+"fakir.com.tr"
+]
+},
+{
+"id": "dyson-r2-nurovi",
+"q": "Dyson R2 Nurovi specifications",
+"dom": [
+"dyson.com",
+"dyson.com.tr"
+]
+},
+{
+"id": "jonr-x9-pro",
+"q": "Jonr X9 Pro specifications",
+"dom": null
+},
+{
+"id": "roborock-qrevo-edge-5v1",
+"q": "Roborock Qrevo Edge 5V1 specifications",
+"dom": [
+"roborock.com",
+"global.roborock.com",
+"us.roborock.com"
+]
+},
+{
+"id": "fakir-robert-rs-840-plus",
+"q": "Fakir Robert RS 840 Plus specifications",
+"dom": [
+"fakir.com.tr"
+]
+},
+{
+"id": "narwal-freo",
+"q": "Narwal Freo specifications",
+"dom": [
+"narwal.com"
+]
+},
+{
+"id": "homend-alex-40",
+"q": "Homend Alex 40 specifications",
+"dom": [
+"homend.com.tr",
+"homend.com"
+]
+},
+{
+"id": "dreame-x40-ultra",
+"q": "Dreame X40 Ultra specifications",
+"dom": [
+"dreametech.com",
+"dreame.tech"
+]
+},
+{
+"id": "dreame-l40-ultra-ae",
+"q": "Dreame L40 Ultra AE (RLL77SE) specifications",
+"dom": [
+"dreametech.com",
+"dreame.tech"
+]
+},
+{
+"id": "dreame-bot-l10s-pro-ultra-heat",
+"q": "Dreame Bot L10S Pro Ultra Heat specifications",
+"dom": [
+"dreametech.com",
+"dreame.tech"
+]
+},
+{
+"id": "ecovacs-deebot-t30-pro-omni",
+"q": "Ecovacs Deebot T30 Pro Omni specifications",
+"dom": [
+"ecovacs.com"
+]
+},
+{
+"id": "roborock-qrevo-pro",
+"q": "Roborock Qrevo Pro specifications",
+"dom": [
+"roborock.com",
+"global.roborock.com",
+"us.roborock.com"
+]
+},
+{
+"id": "dreame-d30-ultra",
+"q": "Dreame D30 Ultra specifications",
+"dom": [
+"dreametech.com",
+"dreame.tech"
+]
+},
+{
+"id": "philips-homerun-7000-serisi-aqua-xu7100",
+"q": "Philips HomeRun 7000 Serisi Aqua XU7100 specifications",
+"dom": [
+"philips.com",
+"philips.com.tr",
+"versuni.com"
+]
+},
+{
+"id": "ecovacs-deebot-t80s-omni",
+"q": "Ecovacs Deebot T80S Omni specifications",
+"dom": [
+"ecovacs.com"
+]
+},
+{
+"id": "narwal-freo-z10",
+"q": "Narwal Freo Z10 specifications",
+"dom": [
+"narwal.com"
+]
+},
+{
+"id": "philips-homerun-9000-serisi-xu9100-10",
+"q": "Philips HomeRun 9000 Serisi XU9100/10 specifications",
+"dom": [
+"philips.com",
+"philips.com.tr",
+"versuni.com"
+]
+},
+{
+"id": "ezviz-rs20-pro",
+"q": "Ezviz RS20 Pro specifications",
+"dom": [
+"ezviz.com"
+]
+},
+{
+"id": "roborock-q8-plus",
+"q": "Roborock Q8+ specifications",
+"dom": [
+"roborock.com",
+"global.roborock.com",
+"us.roborock.com"
+]
+},
+{
+"id": "jonr-x1-max",
+"q": "Jonr X1 Max specifications",
+"dom": null
+},
+{
+"id": "xiaomi-vacuum-5",
+"q": "Xiaomi Vacuum 5 (OV31GL) specifications",
+"dom": [
+"mi.com"
+]
+},
+{
+"id": "ecovacs-deebot-t90-omni",
+"q": "Ecovacs Deebot T90 Omni specifications",
+"dom": [
+"ecovacs.com"
+]
+},
+{
+"id": "roborock-q5-pro",
+"q": "Roborock Q5 Pro specifications",
+"dom": [
+"roborock.com",
+"global.roborock.com",
+"us.roborock.com"
+]
+},
+{
+"id": "simart-katya-u",
+"q": "Şımart Katya U specifications",
+"dom": null
+},
+{
+"id": "narwal-freo-x-ultra",
+"q": "Narwal Freo X Ultra specifications",
+"dom": [
+"narwal.com"
+]
+},
+{
+"id": "fakir-robert-robot",
+"q": "Fakir Robert specifications",
+"dom": [
+"fakir.com.tr"
+]
+},
+{
+"id": "xiaomi-robot-vacuum-x20-pro",
+"q": "Xiaomi Robot Vacuum X20 Pro specifications",
+"dom": [
+"mi.com"
+]
+},
+{
+"id": "dreame-l40-ultra-ce",
+"q": "Dreame L40 Ultra CE (RLD52SE) specifications",
+"dom": [
+"dreametech.com",
+"dreame.tech"
+]
+},
+{
+"id": "ecovacs-deebot-t80-omni",
+"q": "Ecovacs Deebot T80 Omni specifications",
+"dom": [
+"ecovacs.com"
+]
+},
+{
+"id": "mova-e40-ultra",
+"q": "Mova E40 Ultra specifications",
+"dom": [
+"mova.tech",
+"mova-tech.com"
+]
+},
+{
+"id": "narwal-freo-z-ultra",
+"q": "Narwal Freo Z Ultra specifications",
+"dom": [
+"narwal.com"
+]
+},
+{
+"id": "xiaomi-robot-vacuum-x10-plus",
+"q": "Xiaomi Robot Vacuum X10+ (B101GL) specifications",
+"dom": [
+"mi.com"
+]
+},
+{
+"id": "xiaomi-h50-pro",
+"q": "Xiaomi H50 Pro specifications",
+"dom": [
+"mi.com"
+]
+},
+{
+"id": "ecovacs-deebot-t50s-pro-omni",
+"q": "Ecovacs Deebot T50S Pro Omni specifications",
+"dom": [
+"ecovacs.com"
+]
+},
+{
+"id": "beko-robo-x-3-1-vrr-82314-vb",
+"q": "Beko Robo-X 3.1 VRR 82314 VB specifications",
+"dom": [
+"beko.com.tr"
+]
+},
+{
+"id": "xiaomi-x20-max-2",
+"q": "Xiaomi X20 Max specifications",
+"dom": [
+"mi.com"
+]
+},
+{
+"id": "arcelik-imperium-robo-3-1-rs-9231",
+"q": "Arçelik Imperium Robo 3.1 RS 9231 specifications",
+"dom": [
+"arcelik.com.tr"
+]
+},
+{
+"id": "ecovacs-deebot-t30c",
+"q": "Ecovacs Deebot T30C specifications",
+"dom": [
+"ecovacs.com"
+]
+},
+{
+"id": "arcelik-imperium-robo-3-2-rs-6131",
+"q": "Arçelik Imperium Robo 3.2 RS 6131 specifications",
+"dom": [
+"arcelik.com.tr"
+]
+},
+{
+"id": "fakir-robert-rs-800-plus",
+"q": "Fakir Robert RS 800 Plus specifications",
+"dom": [
+"fakir.com.tr"
+]
+},
+{
+"id": "ecovacs-deebot-t50s",
+"q": "Ecovacs Deebot T50S specifications",
+"dom": [
+"ecovacs.com"
+]
+},
+{
+"id": "lydsto-w2-plus",
+"q": "Lydsto W2 Plus specifications",
+"dom": [
+"lydsto.com"
+]
+},
+{
+"id": "cecotec-conga-x70",
+"q": "Cecotec Conga X70 specifications",
+"dom": [
+"cecotec.com",
+"storececotec.com"
+]
+},
+{
+"id": "jonr-t5-pro-gen-2",
+"q": "Jonr T5 Pro Gen 2 specifications",
+"dom": null
+},
+{
+"id": "beko-robo-x-3-2-vrr-62514-vb",
+"q": "Beko Robo-X 3.2 VRR 62514 VB specifications",
+"dom": [
+"beko.com.tr"
+]
+},
+{
+"id": "lura-wipen-clean",
+"q": "Lura Wipe'n Clean specifications",
+"dom": null
+},
+{
+"id": "tefal-rg9475-x-plorer-serie-220",
+"q": "Tefal RG9475 X-Plorer Serie 220 specifications",
+"dom": [
+"tefal.com",
+"tefal.com.tr"
+]
+},
+{
+"id": "xiaomi-robot-vacuum-x20-plus",
+"q": "Xiaomi Robot Vacuum X20+ specifications",
+"dom": [
+"mi.com"
+]
+},
+{
+"id": "roborock-s9-plus",
+"q": "Roborock S9+ specifications",
+"dom": [
+"roborock.com",
+"global.roborock.com",
+"us.roborock.com"
+]
+},
+{
+"id": "lydsto-w3",
+"q": "Lydsto W3 specifications",
+"dom": [
+"lydsto.com"
+]
+},
+{
+"id": "roborock-s8",
+"q": "Roborock S8 Sonic specifications",
+"dom": [
+"roborock.com",
+"global.roborock.com",
+"us.roborock.com"
+]
+},
+{
+"id": "roborock-s8-pro-plus",
+"q": "Roborock S8 Pro+ specifications",
+"dom": [
+"roborock.com",
+"global.roborock.com",
+"us.roborock.com"
+]
+},
+{
+"id": "bosch-spotless-advanced-plus",
+"q": "Bosch Spotless Advanced + (BCRD2W) specifications",
+"dom": [
+"bosch-home.com",
+"bosch-home.com.tr"
+]
+},
+{
+"id": "dreame-d10-plus-gen-2",
+"q": "Dreame D10 Plus Gen 2 specifications",
+"dom": [
+"dreametech.com",
+"dreame.tech"
+]
+},
+{
+"id": "ecovacs-deebot-x2-omni",
+"q": "Ecovacs Deebot X2 Omni specifications",
+"dom": [
+"ecovacs.com"
+]
+},
+{
+"id": "irobot-roomba-combo-j7-plus",
+"q": "iRobot Roomba Combo j7+ specifications",
+"dom": [
+"irobot.com",
+"irobot.com.tr"
+]
+},
+{
+"id": "narwal-freo-z10-ultra",
+"q": "Narwal Freo Z10 Ultra specifications",
+"dom": [
+"narwal.com"
+]
+},
+{
+"id": "ecovacs-t30c-prime",
+"q": "Ecovacs T30C Prime specifications",
+"dom": [
+"ecovacs.com"
+]
+},
+{
+"id": "tefal-rg8477-x-plorer-series",
+"q": "Tefal RG8477 X-Plorer Series specifications",
+"dom": [
+"tefal.com",
+"tefal.com.tr"
+]
+},
+{
+"id": "dreame-d20-ultra",
+"q": "Dreame D20 Ultra specifications",
+"dom": [
+"dreametech.com",
+"dreame.tech"
+]
+},
+{
+"id": "karcher-rvm-4-comfort-extra",
+"q": "Karcher RVM 4 Comfort Extra specifications",
+"dom": [
+"kaercher.com"
+]
+},
+{
+"id": "xiaomi-h50",
+"q": "Xiaomi H50 specifications",
+"dom": [
+"mi.com"
+]
+},
+{
+"id": "grundig-vcr-7330",
+"q": "Grundig VCR 7330 specifications",
+"dom": [
+"grundig.com.tr",
+"grundig.com"
+]
+},
+{
+"id": "lydsto-w2-lite",
+"q": "Lydsto W2 Lite specifications",
+"dom": [
+"lydsto.com"
+]
+},
+{
+"id": "fakir-robert-rs-740",
+"q": "Fakir Robert RS 740 specifications",
+"dom": [
+"fakir.com.tr"
+]
+},
+{
+"id": "ezviz-re5-plus",
+"q": "Ezviz RE5 Plus specifications",
+"dom": [
+"ezviz.com"
+]
+},
+{
+"id": "roborock-q7-max",
+"q": "Roborock Q7 Max (Q380RR) specifications",
+"dom": [
+"roborock.com",
+"global.roborock.com",
+"us.roborock.com"
+]
+},
+{
+"id": "karcher-rvc-3-comfort-extra",
+"q": "Karcher RVC 3 Comfort Extra specifications",
+"dom": [
+"kaercher.com"
+]
+},
+{
+"id": "ultenic-t10-elite",
+"q": "Ultenic T10 Elite specifications",
+"dom": [
+"ultenic.com"
+]
+},
+{
+"id": "hobot-legee-d8",
+"q": "Hobot Legee D8 specifications",
+"dom": [
+"hobot.com.tw",
+"hobot.com"
+]
+},
+{
+"id": "dreame-l40-plus",
+"q": "Dreame L40 Plus specifications",
+"dom": [
+"dreametech.com",
+"dreame.tech"
+]
+},
+{
+"id": "tp-link-tapo-rv20-max",
+"q": "TP-Link Tapo RV20 Max specifications",
+"dom": [
+"tp-link.com"
+]
+},
+{
+"id": "arcelik-imperium-robo-2-2-rs-6121",
+"q": "Arçelik Imperium Robo 2.2 RS 6121 specifications",
+"dom": [
+"arcelik.com.tr"
+]
+},
+{
+"id": "philips-homerun-7000-series-aqua-xu7000",
+"q": "Philips HomeRun 7000 Series Aqua XU7000 specifications",
+"dom": [
+"philips.com",
+"philips.com.tr",
+"versuni.com"
+]
+},
+{
+"id": "irobot-roomba-combo-j7",
+"q": "iRobot Roomba Combo j7 (C7158) specifications",
+"dom": [
+"irobot.com",
+"irobot.com.tr"
+]
+},
+{
+"id": "dyson-r1-nurovi",
+"q": "Dyson R1 Nurovi specifications",
+"dom": [
+"dyson.com",
+"dyson.com.tr"
+]
+},
+{
+"id": "xiaomi-robot-vacuum-s20-plus",
+"q": "Xiaomi Robot Vacuum S20+ (B108GL) specifications",
+"dom": [
+"mi.com"
+]
+},
+{
+"id": "dreame-l40",
+"q": "Dreame L40 specifications",
+"dom": [
+"dreametech.com",
+"dreame.tech"
+]
+},
+{
+"id": "blaupunkt-s10-pro-8684166156485",
+"q": "Blaupunkt S10 Pro [8684166156485] specifications",
+"dom": [
+"blaupunkt.com"
+]
+},
+{
+"id": "irobot-roomba-combo-j5",
+"q": "iRobot Roomba Combo j5 specifications",
+"dom": [
+"irobot.com",
+"irobot.com.tr"
+]
+},
+{
+"id": "karcher-rvc-3-eu",
+"q": "Karcher RVC 3 EU specifications",
+"dom": [
+"kaercher.com"
+]
+},
+{
+"id": "fantom-galaxy-xy-38",
+"q": "Fantom Galaxy XY 38 specifications",
+"dom": null
+},
+{
+"id": "beko-robo-x-2-0-rs-8121",
+"q": "Beko Robo-X 2.0 RS 8121 specifications",
+"dom": [
+"beko.com.tr"
+]
+},
+{
+"id": "homend-alex-laser-pro-plus-1283h",
+"q": "Homend Alex Laser Pro+ 1283H (700.01.01.0385) specifications",
+"dom": [
+"homend.com.tr",
+"homend.com"
+]
+},
+{
+"id": "electrolux-er71hw1ug",
+"q": "Electrolux ER71HW1UG specifications",
+"dom": [
+"electrolux.com.tr",
+"electrolux.com"
+]
+},
+{
+"id": "xiaomi-h40",
+"q": "Xiaomi H40 (OV51) specifications",
+"dom": [
+"mi.com"
+]
+},
+{
+"id": "xiaomi-robot-vacuum-s10-plus",
+"q": "Xiaomi Robot Vacuum S10+ (B105) specifications",
+"dom": [
+"mi.com"
+]
+},
+{
+"id": "roborock-q8-max",
+"q": "Roborock Q8 Max specifications",
+"dom": [
+"roborock.com",
+"global.roborock.com",
+"us.roborock.com"
+]
+},
+{
+"id": "tp-link-tapo-rv30",
+"q": "TP-Link Tapo RV30 specifications",
+"dom": [
+"tp-link.com"
+]
+},
+{
+"id": "ecovacs-deebot-n20-pro-plus",
+"q": "Ecovacs Deebot N20 Pro Plus specifications",
+"dom": [
+"ecovacs.com"
+]
+},
+{
+"id": "robogil-stella-500b",
+"q": "Robogil Stella-500B specifications",
+"dom": null
+},
+{
+"id": "philips-xu5100",
+"q": "Philips XU5100 specifications",
+"dom": [
+"philips.com",
+"philips.com.tr",
+"versuni.com"
+]
+},
+{
+"id": "yui-rs16-pro-max-pet-kit",
+"q": "Yui RS16 Pro Max Pet Kit specifications",
+"dom": null
+},
+{
+"id": "beko-robo-x-2-2-vrr-52514-vb",
+"q": "Beko Robo-X 2.2 VRR 52514 VB specifications",
+"dom": [
+"beko.com.tr"
+]
+},
+{
+"id": "irobot-roomba-combo-j5-plus",
+"q": "iRobot Roomba Combo j5+ (j557020) specifications",
+"dom": [
+"irobot.com",
+"irobot.com.tr"
+]
+},
+{
+"id": "fakir-robert-rs-800",
+"q": "Fakir Robert RS 800 specifications",
+"dom": [
+"fakir.com.tr"
+]
+},
+{
+"id": "electrolux-er61uw1dg",
+"q": "Electrolux ER61UW1DG specifications",
+"dom": [
+"electrolux.com.tr",
+"electrolux.com"
+]
+},
+{
+"id": "dreame-l10s-plus",
+"q": "Dreame L10S Plus specifications",
+"dom": [
+"dreametech.com",
+"dreame.tech"
+]
+},
+{
+"id": "roborock-q8",
+"q": "Roborock Q8 specifications",
+"dom": [
+"roborock.com",
+"global.roborock.com",
+"us.roborock.com"
+]
+},
+{
+"id": "philips-2000-series-xu2100",
+"q": "Philips 2000 Series XU2100 Aqua specifications",
+"dom": [
+"philips.com",
+"philips.com.tr",
+"versuni.com"
+]
+},
+{
+"id": "electrolux-er71uw2sw",
+"q": "Electrolux ER71UW2SW specifications",
+"dom": [
+"electrolux.com.tr",
+"electrolux.com"
+]
+},
+{
+"id": "ecovacs-deebot-n20e-plus",
+"q": "Ecovacs Deebot N20e Plus specifications",
+"dom": [
+"ecovacs.com"
+]
+},
+{
+"id": "xiaomi-s40-pro",
+"q": "Xiaomi S40 Pro (OV71GL) specifications",
+"dom": [
+"mi.com"
+]
+},
+{
+"id": "roborock-s9",
+"q": "Roborock S9 specifications",
+"dom": [
+"roborock.com",
+"global.roborock.com",
+"us.roborock.com"
+]
+},
+{
+"id": "simart-katya-v-plus",
+"q": "Şımart Katya V+ specifications",
+"dom": null
+},
+{
+"id": "cecotec-conga-y80",
+"q": "Cecotec Conga Y80 specifications",
+"dom": [
+"cecotec.com",
+"storececotec.com"
+]
+},
+{
+"id": "cecotec-conga-m100",
+"q": "Cecotec Conga M100 specifications",
+"dom": [
+"cecotec.com",
+"storececotec.com"
+]
+},
+{
+"id": "lydsto-s1d-max",
+"q": "Lydsto S1D Max (YM-S1MAX) specifications",
+"dom": [
+"lydsto.com"
+]
+},
+{
+"id": "arnica-sil-supur",
+"q": "Arnica Sil Süpür (ET13350) specifications",
+"dom": null
+},
+{
+"id": "bosch-spotless-advanced",
+"q": "Bosch Spotless Advanced (BCRC2W) specifications",
+"dom": [
+"bosch-home.com",
+"bosch-home.com.tr"
+]
+},
+{
+"id": "tefal-rg9675-x-plorer-serie-240",
+"q": "Tefal RG9675 X-Plorer Serie 240 specifications",
+"dom": [
+"tefal.com",
+"tefal.com.tr"
+]
+},
+{
+"id": "karcher-rcv-5",
+"q": "Karcher RCV 5 specifications",
+"dom": [
+"kaercher.com"
+]
+},
+{
+"id": "hoover-hg530h-011",
+"q": "Hoover HG530H 011 specifications",
+"dom": [
+"hoover.com.tr",
+"hoover-home.com"
+]
+},
+{
+"id": "cecotec-conga-y50",
+"q": "Cecotec Conga Y50 specifications",
+"dom": [
+"cecotec.com",
+"storececotec.com"
+]
+},
+{
+"id": "xiaomi-robot-vacuum-s20",
+"q": "Xiaomi Robot Vacuum S20 specifications",
+"dom": [
+"mi.com"
+]
+},
+{
+"id": "roborock-s8-pro",
+"q": "Roborock S8 Pro specifications",
+"dom": [
+"roborock.com",
+"global.roborock.com",
+"us.roborock.com"
+]
+},
+{
+"id": "irobot-roomba-105-combo-autoempty",
+"q": "iRobot Roomba 105 Combo AutoEmpty specifications",
+"dom": [
+"irobot.com",
+"irobot.com.tr"
+]
+},
+{
+"id": "fakir-robert-rs-760",
+"q": "Fakir Robert RS 760 specifications",
+"dom": [
+"fakir.com.tr"
+]
+},
+{
+"id": "beko-robo-x-rs-2221",
+"q": "Beko Robo-X RS 2221 specifications",
+"dom": [
+"beko.com.tr"
+]
+},
+{
+"id": "dreame-f20",
+"q": "Dreame F20 specifications",
+"dom": [
+"dreametech.com",
+"dreame.tech"
+]
+},
+{
+"id": "roborock-q8-max-pro",
+"q": "Roborock Q8 Max Pro specifications",
+"dom": [
+"roborock.com",
+"global.roborock.com",
+"us.roborock.com"
+]
+},
+{
+"id": "hobot-legee-7",
+"q": "Hobot Legee 7 specifications",
+"dom": [
+"hobot.com.tw",
+"hobot.com"
+]
+},
+{
+"id": "fakir-robert-rs-780-plus",
+"q": "Fakir Robert RS 780 Plus specifications",
+"dom": [
+"fakir.com.tr"
+]
+},
+{
+"id": "tcl-sweeva-6000",
+"q": "TCL Sweeva 6000 specifications",
+"dom": [
+"tcl.com"
+]
+},
+{
+"id": "tefal-rg9177-x-plorer-serie-140",
+"q": "Tefal RG9177 X-Plorer Serie 140 specifications",
+"dom": [
+"tefal.com",
+"tefal.com.tr"
+]
+},
+{
+"id": "xiaomi-mi-robot-vacuum-mop-essential",
+"q": "Xiaomi Mi Robot Vacuum Mop Essential (SKV4136GL) specifications",
+"dom": [
+"mi.com"
+]
+},
+{
+"id": "beko-robo-x-2-1-vrr-72314-vb",
+"q": "Beko Robo-X 2.1 VRR 72314 VB specifications",
+"dom": [
+"beko.com.tr"
+]
+},
+{
+"id": "narwal-freo-x-plus",
+"q": "Narwal Freo X Plus specifications",
+"dom": [
+"narwal.com"
+]
+},
+{
+"id": "dreame-d20",
+"q": "Dreame D20 specifications",
+"dom": [
+"dreametech.com",
+"dreame.tech"
+]
+},
+{
+"id": "bosch-spotless",
+"q": "Bosch Spotless (BCRC1W) specifications",
+"dom": [
+"bosch-home.com",
+"bosch-home.com.tr"
+]
+},
+{
+"id": "grundig-vcr-6330",
+"q": "Grundig VCR 6330 specifications",
+"dom": [
+"grundig.com.tr",
+"grundig.com"
+]
+},
+{
+"id": "philips-homerun-3000-series-aqua",
+"q": "Philips HomeRun 3000 Series Aqua (XU3000) specifications",
+"dom": [
+"philips.com",
+"philips.com.tr",
+"versuni.com"
+]
+},
+{
+"id": "ezviz-re4-plus",
+"q": "Ezviz RE4 Plus specifications",
+"dom": [
+"ezviz.com"
+]
+},
+{
+"id": "philips-xu2000-21",
+"q": "Philips 2000 Serisi XU2000/21 specifications",
+"dom": [
+"philips.com",
+"philips.com.tr",
+"versuni.com"
+]
+},
+{
+"id": "ecovacs-deebot-n10",
+"q": "Ecovacs Deebot N10 specifications",
+"dom": [
+"ecovacs.com"
+]
+},
+{
+"id": "ultenic-t10-pro",
+"q": "Ultenic T10 Pro specifications",
+"dom": [
+"ultenic.com"
+]
+},
+{
+"id": "arcelik-imperium-robo-2-1-rs-9221",
+"q": "Arçelik Imperium Robo 2.1 RS 9221 specifications",
+"dom": [
+"arcelik.com.tr"
+]
+},
+{
+"id": "yui-rs16-pro",
+"q": "Yui RS16 Pro specifications",
+"dom": null
+},
+{
+"id": "anker-eufy-robovac-x8-hybrid",
+"q": "Anker Eufy RoboVac X8 Hybrid (T2261) specifications",
+"dom": [
+"eufy.com"
+]
+},
+{
+"id": "philips-xu5000",
+"q": "Philips XU5000 specifications",
+"dom": [
+"philips.com",
+"philips.com.tr",
+"versuni.com"
+]
+},
+{
+"id": "cecotec-conga-m10",
+"q": "Cecotec Conga M10 specifications",
+"dom": [
+"cecotec.com",
+"storececotec.com"
+]
+},
+{
+"id": "homend-alex-laser-power-1289h",
+"q": "Homend Alex Laser Power 1289H specifications",
+"dom": [
+"homend.com.tr",
+"homend.com"
+]
+},
+{
+"id": "philips-homerun-2000-series",
+"q": "Philips 2000 Serisi XU2000 specifications",
+"dom": [
+"philips.com",
+"philips.com.tr",
+"versuni.com"
+]
+},
+{
+"id": "philips-xu2000-22",
+"q": "Philips 2000 Serisi XU2000/22 specifications",
+"dom": [
+"philips.com",
+"philips.com.tr",
+"versuni.com"
+]
+},
+{
+"id": "dreame-f10",
+"q": "Dreame F10 specifications",
+"dom": [
+"dreametech.com",
+"dreame.tech"
+]
+},
+{
+"id": "karcher-rcv-3",
+"q": "Karcher RCV 3 specifications",
+"dom": [
+"kaercher.com"
+]
+},
+{
+"id": "viomi-v5",
+"q": "Viomi V5 specifications",
+"dom": [
+"viomi.com"
+]
+},
+{
+"id": "philips-xu2000-27",
+"q": "Philips 2000 Serisi XU2000/27 specifications",
+"dom": [
+"philips.com",
+"philips.com.tr",
+"versuni.com"
+]
+},
+{
+"id": "xiaomi-s40",
+"q": "Xiaomi S40 (OV81) specifications",
+"dom": [
+"mi.com"
+]
+},
+{
+"id": "karcher-rcv-2",
+"q": "Karcher RCV 2 specifications",
+"dom": [
+"kaercher.com"
+]
+},
+{
+"id": "simart-katya-v",
+"q": "Şımart Katya V specifications",
+"dom": null
+},
+{
+"id": "yui-rs16",
+"q": "Yui RS16 specifications",
+"dom": null
+},
+{
+"id": "blaupunkt-s10-robomaster",
+"q": "Blaupunkt S10 Robomaster specifications",
+"dom": [
+"blaupunkt.com"
+]
+},
+{
+"id": "xiaomi-mi-robot-vacuum-mop-2-pro",
+"q": "Xiaomi Mi Robot Vacuum Mop 2 Pro (MJST1SHW) specifications",
+"dom": [
+"mi.com"
+]
+},
+{
+"id": "xiaomi-robot-vacuum-s10t",
+"q": "Xiaomi Robot Vacuum S10T (STFCR01SZ) specifications",
+"dom": [
+"mi.com"
+]
+},
+{
+"id": "next-pro-maid-x8",
+"q": "Next Pro Maid X8 specifications",
+"dom": null
+},
+{
+"id": "philips-xu2000-26",
+"q": "Philips 2000 Serisi XU2000/26 specifications",
+"dom": [
+"philips.com",
+"philips.com.tr",
+"versuni.com"
+]
+},
+{
+"id": "ecovacs-deebot-n20-pro",
+"q": "Ecovacs Deebot N20 Pro specifications",
+"dom": [
+"ecovacs.com"
+]
+},
+{
+"id": "fakir-robert-rs-780",
+"q": "Fakir Robert RS 780 specifications",
+"dom": [
+"fakir.com.tr"
+]
+},
+{
+"id": "dersar-l1-plus",
+"q": "Dersar L1 Plus specifications",
+"dom": null
+},
+{
+"id": "homend-alex-10",
+"q": "Homend Alex 10 specifications",
+"dom": [
+"homend.com.tr",
+"homend.com"
+]
+},
+{
+"id": "anker-eufy-robovac-lr30-hybrid",
+"q": "Anker Eufy RoboVac LR30 Hybrid (T2193) specifications",
+"dom": [
+"eufy.com"
+]
+},
+{
+"id": "philips-2000-serisi-xu2000-15",
+"q": "Philips 2000 Serisi XU2000/15 specifications",
+"dom": [
+"philips.com",
+"philips.com.tr",
+"versuni.com"
+]
+},
+{
+"id": "tefal-rg8577wh-x-plorer-serie-75-s-max",
+"q": "Tefal RG8577WH X-Plorer Serie 75 S Max specifications",
+"dom": [
+"tefal.com",
+"tefal.com.tr"
+]
+},
+{
+"id": "homend-alex-laser-1291h",
+"q": "Homend Alex Laser 1291H specifications",
+"dom": [
+"homend.com.tr",
+"homend.com"
+]
+},
+{
+"id": "irobot-roomba-105-combo",
+"q": "iRobot Roomba 105 Combo specifications",
+"dom": [
+"irobot.com",
+"irobot.com.tr"
+]
+},
+{
+"id": "narwal-freo-s",
+"q": "Narwal Freo S specifications",
+"dom": [
+"narwal.com"
+]
+},
+{
+"id": "dreame-l10s-pro-gen-2",
+"q": "Dreame L10S Pro Gen 2 specifications",
+"dom": [
+"dreametech.com",
+"dreame.tech"
+]
+},
+{
+"id": "tp-link-tapo-rv30-max",
+"q": "TP-Link Tapo RV30 Max specifications",
+"dom": [
+"tp-link.com"
+]
+},
+{
+"id": "tcl-sweeva-6000m",
+"q": "TCL Sweeva 6000M specifications",
+"dom": [
+"tcl.com"
+]
+},
+{
+"id": "dreame-bot-d9-max",
+"q": "Dreame Bot D9 Max specifications",
+"dom": [
+"dreametech.com",
+"dreame.tech"
+]
+},
+{
+"id": "fakir-robert-rs-730",
+"q": "Fakir Robert RS 730 specifications",
+"dom": [
+"fakir.com.tr"
+]
+},
+{
+"id": "viomi-v5-pro",
+"q": "Viomi V5 Pro specifications",
+"dom": [
+"viomi.com"
+]
+},
+{
+"id": "tefal-rg9075-x-plorer-serie-130-ai",
+"q": "Tefal RG9075 X-Plorer Serie 130 AI specifications",
+"dom": [
+"tefal.com",
+"tefal.com.tr"
+]
+},
+{
+"id": "ecovacs-deebot-n20e",
+"q": "Ecovacs Deebot N20e specifications",
+"dom": [
+"ecovacs.com"
+]
+},
+{
+"id": "fakir-robert-rs-770",
+"q": "Fakir Robert RS 770 specifications",
+"dom": [
+"fakir.com.tr"
+]
+},
+{
+"id": "simart-katya-p",
+"q": "Şımart Katya P specifications",
+"dom": null
+},
+{
+"id": "kiwi-kvc-4091",
+"q": "Kiwi KVC-4091 specifications",
+"dom": null
+},
+{
+"id": "irobot-roomba-combo",
+"q": "iRobot Roomba Combo specifications",
+"dom": [
+"irobot.com",
+"irobot.com.tr"
+]
+},
+{
+"id": "dreame-d9-max-gen-2",
+"q": "Dreame D9 Max Gen 2 specifications",
+"dom": [
+"dreametech.com",
+"dreame.tech"
+]
+},
+{
+"id": "irobot-roomba-combo-essential",
+"q": "iRobot Roomba Combo Essential specifications",
+"dom": [
+"irobot.com",
+"irobot.com.tr"
+]
+},
+{
+"id": "soultech-rb001",
+"q": "Soultech RB001 specifications",
+"dom": null
+},
+{
+"id": "ultenic-d6s",
+"q": "Ultenic D6S specifications",
+"dom": [
+"ultenic.com"
+]
+},
+{
+"id": "redline-robored-g1",
+"q": "Redline Robored G1 specifications",
+"dom": null
+}
+]

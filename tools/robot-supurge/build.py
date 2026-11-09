@@ -56,13 +56,15 @@ for it in L:
     _C=CORR.get(re.sub(r'\.html$','',it['url'].rsplit('/',1)[1]),{})
     mop=_C.get('mop',mop); obst=_C.get('obst',obst); has_cam=_C.get('cam',has_cam); nav=_C.get('nav',nav)
     se=(sp.get('Toz Boşaltma İstasyonu') or ['Yok'])[0]; mw=(sp.get('Mop Temizleme İstasyonu') or ['Yok'])[0]
-    selfempty = se=='Var'; mopwash = mw=='Var'
+    selfempty = _C.get('selfEmpty',se=='Var'); mopwash = _C.get('mopWash',mw=='Var')
     if selfempty and mopwash: station='Tam istasyon'
     elif mopwash: station='Mop yıkama'
     elif selfempty: station='Toz boşaltma'
     else: station='Sadece şarj'
     hotwash='Sıcak Su ile Mop Yıkama' in ot; hotdry='Sıcak Hava ile Mop Kurutma' in ot
     refill='Otomatik Su Haznesi Dolumu' in ot; deterg=bool(ot & {'Otomatik Deterjan Dolumu','DuoSolution Sistemi'})
+    # resmi kaynakla doğrulanan istasyon özellikleri (corrections.json)
+    hotwash=_C.get('hotWash',hotwash); hotdry=_C.get('hotDry',hotdry); refill=_C.get('refill',refill); deterg=_C.get('deterg',deterg)
     mopext='Otomatik Mop Uzatma' in ot; brushext=bool(ot & {'Otomatik Yan Fırça Uzatma','FlexiArm','Kenar Temizliği'}) and 'Otomatik Yan Fırça Uzatma' in ot
     mopdetach='Otomatik Mop Çıkarma' in ot
     carpet='Halı Algılama' in ot or 'Halılara Özelleştirilmiş Modlar' in ot

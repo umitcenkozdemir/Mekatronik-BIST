@@ -1,0 +1,139 @@
+{
+ "roborock-saros-z70": {
+  "nav": "LiDAR",
+  "hotDry": true,
+  "src": "Roborock US resmi sayfası: StarSight 2.0 lazer tabanlı navigasyon (LDS'ye göre 21 kat örnekleme), 55 °C sıcak hava kurutma"
+ },
+ "mova-mobius-60": {
+  "hotDry": true,
+  "src": "MOVA resmi blog: istasyon paspasları sıcak havayla kurutuyor"
+ },
+ "dreame-matrix-10-ultra": {
+  "hotWash": true,
+  "src": "Dreame resmi özellik tablosu: Auto Mop Cleaning with Hot Water ✓ (100 °C ThermoHub), engel algılama AI RGB + 3D yapısal ışık"
+ },
+ "roborock-s7-max-ultra": {
+  "hotDry": true,
+  "src": "Roborock US resmi sayfası: 45 °C sıcak hava ile paspas ve istasyon tabanı kurutma"
+ },
+ "roborock-saros-10": {
+  "mop": "Titreşimli",
+  "src": "Roborock US resmi sayfası: titreşimli paspas (VibraRise), 8 N baskı"
+ },
+ "mova-v70-ultra-complete": {
+  "obst": "Yapay zekâ / kamera",
+  "cam": true,
+  "hotDry": true,
+  "src": "MOVA resmi sayfası: yapay zekâ 300+ engeli tanıyor, geri çekilebilir DToF navigasyon, 70 °C sıcak hava kurutma"
+ },
+ "roborock-saros-20": {
+  "nav": "LiDAR",
+  "src": "Roborock US resmi sayfası/SSS: StarSight 3D ToF lazer navigasyon (ön ve sol arka), RGB kamera, 100 °C sıcak su, 55 °C sıcak hava"
+ },
+ "mova-z70-ultra-roller-complete": {
+  "nav": "LiDAR",
+  "obst": "Yapay zekâ / kamera",
+  "cam": true,
+  "src": "MOVA resmi sayfası: geri çekilebilir DToF lazer navigasyon, RGB AI SmartSight + çift 3D yapısal ışık"
+ },
+ "dreame-x50-pro-ultra-complete": {
+  "nav": "LiDAR",
+  "src": "Dreame resmi sayfası: 360° 3D LiDAR (geri çekilebilir lazer kule)"
+ },
+ "mova-s70-roller": {
+  "hotWash": true,
+  "src": "MOVA resmi sayfası: rulo mop 80 °C sıcak suyla kendini yıkıyor"
+ },
+ "roborock-qrevo-curv-5a1": {
+  "hotDry": true,
+  "src": "Roborock Global resmi Qrevo Curv serisi sayfası: sıcak hava kurutma"
+ },
+ "roborock-qrevo-curv": {
+  "hotDry": true,
+  "src": "Roborock Global resmi Qrevo Curv serisi sayfası: sıcak hava kurutma"
+ },
+ "roborock-saros-10r": {
+  "nav": "LiDAR",
+  "src": "Roborock US resmi sayfası: StarSight lazer (3D ToF) navigasyon"
+ },
+ "dreame-aqua-10-ultra-roller": {
+  "nav": "LiDAR",
+  "src": "Dreame resmi sayfası: VersaLift geri çekilebilir LDS lazer navigasyon, OmniSight 2.0 (çift kamera)"
+ },
+ "mova-p70-pro-ultra": {
+  "obst": "Yapay zekâ / kamera",
+  "cam": true,
+  "hotWash": true,
+  "src": "MOVA US resmi sayfası: yapay zekâ 280+ engeli tanıyor, sıcak su ile paspas yıkama, 260 rpm çift döner mop"
+ },
+ "ecovacs-deebot-t90-pro-omni": {
+  "obst": "Yapay zekâ / kamera",
+  "cam": true,
+  "hotDry": true,
+  "src": "Ecovacs UK/AU resmi sayfası: AIVI 3D 4.0 yapay zekâ engel tanıma, sıcak hava kurutma"
+ },
+ "roborock-qrevo-curvx": {
+  "hotDry": true,
+  "src": "Roborock US resmi sayfası: 113 °F (45 °C) sıcak hava kurutma"
+ },
+ "ecovacs-deebot-x11-omnicyclone": {
+  "obst": "Yapay zekâ / kamera",
+  "cam": true,
+  "src": "Ecovacs US/AE resmi özellik tablosu: engel algılama RGBD (RGB kamera + derinlik), AIVI 3D 3.0, dToF navigasyon"
+ },
+ "beko-robo-x-4-0-vrr-95514-vw": {
+  "pa": 8000.0,
+  "hotDry": true,
+  "src": "Beko resmi ürün sayfası: 8.000 Pa emiş, paspasları otomatik yıkar ve sıcak havayla kurutur"
+ },
+ "karcher-rvf-7-eu": {
+  "pa": 13000.0,
+  "src": "Kärcher resmi teknik veri: emiş gücü maks. 13.000 Pa (epey 1.300 yazıyordu)"
+ },
+ "fakir-robert-rs-850-plus": {
+  "hotDry": true,
+  "src": "Fakir resmi ürün sayfası: sıcak hava ile mop kurutma"
+ },
+ "ecovacs-deebot-x8-pro-omni": {
+  "obst": "Yapay zekâ / kamera",
+  "cam": true,
+  "src": "Ecovacs resmi özellik tablosu: engel algılama AIVI 3D 3.0 / RGBD (RGB kamera)"
+ },
+ "mova-e50-pro-ultra": {
+  "obst": "3D / yapısal ışık",
+  "src": "MOVA resmi sayfası: LDS lidar navigasyon, önde tek çizgi lazer ile engel algılama"
+ },
+ "irobot-roomba-combo-10-max": {
+  "nav": "Kamera (vSLAM)",
+  "obst": "Yapay zekâ / kamera",
+  "cam": true,
+  "src": "iRobot US resmi sayfası: PrecisionVision kamera navigasyonu, kamera ile nesne tanıma (kablo, evcil hayvan dışkısı)"
+ },
+ "arcelik-imperium-robo-4-0-rs-9551": {
+  "pa": 8000.0,
+  "src": "Arçelik resmi ürün sayfası özellik tablosu: 8000 Pa"
+ },
+ "dreame-l50-ultra-ce": {
+  "nav": "LiDAR",
+  "src": "Dreame resmi sayfası: Pathfinder lazer ile 360° tarama ve rota planlama"
+ },
+ "xiaomi-vacuum-5-pro": {
+  "mop": "Çift döner",
+  "src": "Xiaomi resmi sayfası: iki adet paspas tutucu, yüksek devirle dönen ve uzayabilen paspaslar, 80 °C sıcak su yıkama, sıcak hava kurutma"
+ },
+ "dyson-spot-plusscrub-ai": {
+  "hotWash": true,
+  "hotDry": true,
+  "src": "Dyson resmi sayfası: rulo paspas 140 °F (60 °C) ısıtılmış suyla temizleniyor, 113 °F (45 °C) sıcak havayla kurutuluyor"
+ },
+ "homend-alex-50-pro-ulticlean": {
+  "obst": "Yapay zekâ / kamera",
+  "cam": true,
+  "src": "Homend resmi ürün adı ve bağımsız video inceleme: yapay zekâ destekli engel algılama"
+ },
+ "ecovacs-deebot-x11-pro-omni": {
+  "obst": "Yapay zekâ / kamera",
+  "cam": true,
+  "src": "Ecovacs US resmi özellik tablosu: engel algılama RGBD (RGB kamera + derinlik), dToF navigasyon"
+ }
+}
