@@ -9,6 +9,11 @@ DOM={'Roborock':['roborock.com','global.roborock.com','us.roborock.com'],'Dreame
 'Beko':['beko.com.tr'],'Arçelik':['arcelik.com.tr'],'Grundig':['grundig.com.tr','grundig.com'],'Fakir':['fakir.com.tr'],'Homend':['homend.com.tr','homend.com'],
 'Hoover':['hoover.com.tr','hoover-home.com'],'TCL':['tcl.com'],'Blaupunkt':['blaupunkt.com'],'Mamibot':['mamibot.com']}
 d=sorted([o for o in json.load(open(S+'/robots2.json'))['items'] if o['stock']!='yok' and o.get('ver')!='tek'],key=lambda o:-o['price'])
-Q=[dict(id=o['id'],q=f"{o['brand']} {o['model']} specifications",dom=DOM.get(o['brand'])) for o in d]
-json.dump(Q,open(S+'/audit/queue.json','w'),ensure_ascii=False,indent=0)
-print(len(Q),sum(1 for q in Q if q['dom']))
+# mevcut kuyruğu koru (elle düzeltilmiş sorgular kaybolmasın), yalnızca yeni modelleri ekle
+import os
+F=S+'/audit/queue.json'; Q=json.load(open(F)) if os.path.exists(F) else []
+have={q['id'] for q in Q}
+new=[dict(id=o['id'],q=f"{o['brand']} {o['model']} specifications",dom=DOM.get(o['brand'])) for o in d if o['id'] not in have]
+Q+=new
+json.dump(Q,open(F,'w'),ensure_ascii=False,indent=0)
+print('kuyruk',len(Q),'yeni',len(new),[q['id'] for q in new])

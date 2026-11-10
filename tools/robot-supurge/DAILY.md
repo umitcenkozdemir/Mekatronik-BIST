@@ -73,6 +73,27 @@ Kaynakta bulunamayan değerler "na" listesine girer; sayfada "Üretici açıklam
 7. Ürün sayfasında sınıflandırmanın yanlış olduğunu gördüysen (mop tipi, engel algılama, kamera, navigasyon)
    `corrections.json`'a ekle (`src` alanına kanıtı yaz).
 
+## 2a. Tutarlılık denetimi (her gün; epey verisine körü körüne güvenme)
+
+Puanı belirleyen alanlar (nav, obst, mop, selfEmpty, mopWash, hotWash, hotDry, refill, deterg, pa, mah) epey'den gelir ve
+epey'de eksik/yanlış etiket sık görülür (ör. T80S'de LiDAR ve kamera yazmıyordu). 9 Kasım 2026'da 265 modelin tamamı
+üretici sayfası / bağımsız incelemeyle denetlendi (`audit/`). Her gün:
+
+1. **Yeni modeller**: Bugün eklenen her model için `audit/queue.json`'a kayıt ekle (`python3 -I audit/queue.py` yeni id'leri ekler),
+   üretici sayfasını Tavily search ile bul (`include_raw_content` KULLANMA; kısa özetler yeter, gerekiyorsa tek sayfayı
+   `tavily_extract` + `query` ile oku) ve şu alanları doğrula: navigasyon, engel algılama, mop tipi, istasyon özellikleri, Pa, mAh.
+2. **Kural ihlali taraması**: `python3 -I audit/lint.py $W` — şüpheli kombinasyonları listeler
+   (ör. aynı seride kardeş modelle farklı nav/obst; "AI/Vision/kamera" geçen adda Tampon; "Omni/Ultra" adında mopWash yok;
+   "Plus" adında selfEmpty yok; 10000 Pa üstü ama nav Rastgele/Jiroskop). Her satırı kaynağa bakarak çöz.
+3. **Rotasyon**: `audit/raw/` içinde en eski tarihli 10 modeli yeniden kontrol et (ürün yazılım/sayfa güncellemeleri).
+4. Bulguyu `python3 -I audit/rec.py <id> alan=değer ... "kaynak açıklaması"` ile kaydet, `python3 -I audit/apply.py $W` ile
+   `corrections.json`'a işle. Kanıt yoksa değeri değiştirme; kaynak bulunamayanı `audit/note.py <id> - "not"` ile işaretle.
+5. Karar kuralları: lazerle mesafe ölçen her navigasyon (LDS, gömülü/geri çekilir dToF, StarSight, Mini-ToF) → LiDAR;
+   RGB/RGBD/AI kamera ile nesne tanıma → "Yapay zekâ / kamera"; yapısal ışık / çizgi lazer / 3D ToF / TrueDetect 3D → "3D / yapısal ışık";
+   yalnız kızılötesi/ToF mesafe sensörü → "Temel sensör"; sadece tampon → "Tampon". İleri-geri (reciprocating) ovalayan mop → "Titreşimli".
+   Karşılaştırma tabloları, başka modelin sayfası, seri sayfası ve menü metinleri kanıt sayılmaz.
+6. Kısa özette düzeltilen model ve alan sayısını belirt.
+
 ## 3. Yeniden üret, kontrol et, yayınla
 
 ```bash

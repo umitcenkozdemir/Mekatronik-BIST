@@ -338,5 +338,21 @@
  "narwal-freo-s": {
   "obst": "3D / yapısal ışık",
   "src": "Vacuum Wars + Narwal: LiDAR, tampon/kızılötesi + öne bakan yapısal ışık engel algılama, 8N basınçlı düz mop"
+ },
+ "dreame-d9-max-gen-2": {
+  "obst": "Tampon",
+  "src": "Dreame resmi D serisi karşılaştırması: D9 Max Gen 2 engel algılama 'Mechanical Barrier' (mekanik tampon)"
+ },
+ "ecovacs-deebot-n20e": {
+  "obst": "Temel sensör",
+  "src": "Ecovacs resmi (N20 ailesi): engelden kaçınma kızılötesi"
+ },
+ "dreame-bot-l20-ultra": {
+  "obst": "Yapay zekâ / kamera",
+  "src": "Dreame resmi (L20 Ultra): AI Action nesne tanıma + 3D yapısal ışık, LED ile karanlıkta tanıma"
+ },
+ "cecotec-conga-x100-ai": {
+  "pa": 25000.0,
+  "src": "Cecotec resmi tanıtım videosu (Conga X100): 25.000 Pa Ungravity motor, AI Pro (lazer + yapay zekâ); bağımsız inceleme 20.000 Pa diyor — üretici değeri alındı"
  }
 }

@@ -1004,7 +1004,9 @@
   "na": [
    "kg",
    "stDust"
-  ]
+  ],
+  "obst": "Temel sensör",
+  "src": "Resmi kaynak denetimi (9 Kasım 2026): Ecovacs resmi (N20 ailesi): engelden kaçınma kızılötesi"
  },
  "irobot-roomba-105-combo": {
   "na": [
@@ -1223,7 +1225,9 @@
    "stDirty",
    "stDust",
    "water"
-  ]
+  ],
+  "pa": 25000.0,
+  "src": "Resmi kaynak denetimi (9 Kasım 2026): Cecotec resmi tanıtım videosu (Conga X100): 25.000 Pa Ungravity motor, AI Pro (lazer + yapay zekâ); bağımsız inceleme 20.000 Pa diyor — üretici değeri alındı"
  },
  "simart-katya-u": {
   "na": [
@@ -1355,7 +1359,9 @@
  },
  "dreame-d9-max-gen-2": {
   "db": 67,
-  "specSrc": "Versus özellik tablosu: 67 dB"
+  "specSrc": "Versus özellik tablosu: 67 dB",
+  "obst": "Tampon",
+  "src": "Resmi kaynak denetimi (9 Kasım 2026): Dreame resmi D serisi karşılaştırması: D9 Max Gen 2 engel algılama 'Mechanical Barrier' (mekanik tampon)"
  },
  "tcl-sweeva-6000m": {
   "na": [
@@ -1614,7 +1620,9 @@
   "specSrc": "Şarj süresi için kaynaklar çelişiyor (210 dk, 3 sa, 3,5 sa, 4 sa)",
   "na": [
    "ch"
-  ]
+  ],
+  "obst": "Yapay zekâ / kamera",
+  "src": "Resmi kaynak denetimi (9 Kasım 2026): Dreame resmi (L20 Ultra): AI Action nesne tanıma + 3D yapısal ışık, LED ile karanlıkta tanıma"
  },
  "roborock-q8-max-plus": {
   "water": 350,
