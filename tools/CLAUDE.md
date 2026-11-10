@@ -19,7 +19,7 @@ Bu klasörde iki Türkçe alışveriş rehberi var. Her biri tek dosyalık bir H
 - **epey.com** 9 Kasım'dan beri bulut ortamından açılmıyordu (Tavily "Failed to fetch"). Liste/satıcı tazeleme
   yapılamadığı için stok tarihi "5 Kasım 2026, 10:37" olarak tutuldu. Yerel makinede tekrar dene.
 
-## Günlük iş
+## Günlük iş (bulut görevleri 10 Kasım 2026’da kapatıldı; artık elle / VS Code’dan çalıştırılıyor)
 
 `robot-supurge/DAILY.md` adım adım anlatıyor (liste tazeleme, satıcılar, özellik tamamlama, derin inceleme,
 tutarlılık denetimi `audit/lint.py`, yeniden üretme, yayın, commit). Özet komutlar:
