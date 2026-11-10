@@ -1762,19 +1762,43 @@
  },
  "irobot-roomba-combo-j5": {
   "obst": "Yapay zekâ / kamera",
-  "src": "Resmi kaynak denetimi (9 Kasım 2026): iRobot resmi: Roomba Combo j5 PrecisionVision navigasyonu ile kablo, oyuncak, evcil hayvan dışkısını tanıyıp kaçınır"
+  "src": "Resmi kaynak denetimi (9 Kasım 2026): iRobot resmi: Roomba Combo j5 PrecisionVision navigasyonu ile kablo, oyuncak, evcil hayvan dışkısını tanıyıp kaçınır",
+  "specSrc": "iRobot resmi sayfası Pa, batarya, ses ve torba hacmi yayımlamıyor",
+  "na": [
+   "db",
+   "mah",
+   "pa",
+   "stDust"
+  ]
  },
  "xiaomi-robot-vacuum-s20-plus": {
   "obst": "Temel sensör",
-  "src": "Resmi kaynak denetimi (9 Kasım 2026): Xiaomi resmi (mi.com S20+): kenar lazer sensörü + engelden kaçınma sensörleri"
+  "src": "Resmi kaynak denetimi (9 Kasım 2026): Xiaomi resmi (mi.com S20+): kenar lazer sensörü + engelden kaçınma sensörleri",
+  "specSrc": "Xiaomi resmi S20+ (B108GL) teknik sayfası şarj süresi, ses ve eşik yüksekliği vermiyor",
+  "na": [
+   "ch",
+   "climb",
+   "db"
+  ]
  },
  "ecovacs-deebot-n20-pro-plus": {
   "obst": "Temel sensör",
-  "src": "Resmi kaynak denetimi (9 Kasım 2026): Ecovacs resmi (N20 PRO PLUS): LDS navigasyon, engelden kaçınma kızılötesi"
+  "src": "Resmi kaynak denetimi (9 Kasım 2026): Ecovacs resmi (N20 PRO PLUS): LDS navigasyon, engelden kaçınma kızılötesi",
+  "specSrc": "Ecovacs resmi sayfası yalnız 65-82 dBA aralığı ve paket ağırlığı veriyor; robot ağırlığı yok",
+  "na": [
+   "db",
+   "kg"
+  ]
  },
  "irobot-roomba-combo-j5-plus": {
   "obst": "Yapay zekâ / kamera",
-  "src": "Resmi kaynak denetimi (9 Kasım 2026): iRobot resmi (j557020): PrecisionVision ile evcil hayvan dışkısı ve kabloları tanıyıp kaçınır"
+  "src": "Resmi kaynak denetimi (9 Kasım 2026): iRobot resmi (j557020): PrecisionVision ile evcil hayvan dışkısı ve kabloları tanıyıp kaçınır",
+  "specSrc": "iRobot resmi sayfası batarya, ses ve torba hacmi yayımlamıyor",
+  "na": [
+   "db",
+   "mah",
+   "stDust"
+  ]
  },
  "philips-xu5100": {
   "obst": "3D / yapısal ışık",
@@ -1786,14 +1810,136 @@
  },
  "xiaomi-mi-robot-vacuum-mop-essential": {
   "nav": "Jiroskop",
-  "src": "Resmi kaynak denetimi (9 Kasım 2026): Xiaomi kılavuzu + inceleme: Essential (G1) jiroskopla S/zikzak rotada ilerler, gerçek zamanlı harita"
+  "src": "Resmi kaynak denetimi (9 Kasım 2026): Xiaomi kılavuzu + inceleme: Essential (G1) jiroskopla S/zikzak rotada ilerler, gerçek zamanlı harita",
+  "specSrc": "Xiaomi kılavuzu/sayfası çalışma süresi ve ses vermiyor",
+  "na": [
+   "db",
+   "rt"
+  ]
  },
  "hobot-legee-7": {
   "mop": "Titreşimli",
-  "src": "Resmi kaynak denetimi (9 Kasım 2026): Hobot resmi (LEGEE serisi): ileri-geri ovalayan (reciprocating) 600 g baskılı mop"
+  "src": "Resmi kaynak denetimi (9 Kasım 2026): Hobot resmi (LEGEE serisi): ileri-geri ovalayan (reciprocating) 600 g baskılı mop",
+  "climb": 20,
+  "specSrc": "Hobot resmi LEGEE-D7 sayfası: 20 mm engel aşma; süre ve ağırlık verilmiyor",
+  "na": [
+   "ch",
+   "kg",
+   "rt"
+  ]
  },
  "blaupunkt-s10-robomaster": {
   "pa": 3000.0,
   "src": "Resmi kaynak denetimi (9 Kasım 2026): Türkiye distribütörü tanıtım videosu (Technofashion): Robomaster S10 3000Pa emiş, akıllı haritalama"
+ },
+ "xiaomi-robot-vacuum-s10-plus": {
+  "obst": "Yapay zekâ / kamera",
+  "src": "Resmi kaynak denetimi (9 Kasım 2026): Xiaomi resmi S10+ (B105) teknik sayfası: çizgi lazer sensörü + 'AI Visual identification sensor' (engel ve mobilya tanıma)",
+  "specSrc": "Xiaomi resmi S10+ (B105) teknik sayfası ses ve eşik yüksekliği vermiyor (şarj ~6 saat, robot 3,8 kg)",
+  "na": [
+   "climb",
+   "db"
+  ]
+ },
+ "xiaomi-robot-vacuum-s20": {
+  "obst": "Temel sensör",
+  "src": "Resmi kaynak denetimi (9 Kasım 2026): Xiaomi resmi S20 SSS: 8 noktalı TOF engel algılama (3 cm üstü nesneler)",
+  "specSrc": "Xiaomi resmi S20 (D106) teknik sayfası: 3200 mAh, 3,5 kg; çalışma/şarj süresi, ses ve eşik vermiyor",
+  "na": [
+   "ch",
+   "climb",
+   "db",
+   "rt"
+  ]
+ },
+ "tp-link-tapo-rv20-max": {
+  "ch": 4,
+  "stDust": 3,
+  "specSrc": "TP-Link resmi RV20 Max Plus veri föyü (aynı robot): şarj 4 saat, isteğe bağlı istasyon 3 L torba; robot ağırlığı yayımlanmamış",
+  "na": [
+   "kg"
+  ]
+ },
+ "electrolux-er71hw1ug": {
+  "specSrc": "Electrolux model sayfası bulunamadı; satıcı sayfaları bu değerleri vermiyor",
+  "na": [
+   "ch",
+   "kg",
+   "water"
+  ]
+ },
+ "roborock-q8-max": {
+  "specSrc": "Roborock resmi Q8 Max+ sayfası su tankı ve istasyon torbası hacmini vermiyor",
+  "na": [
+   "stDust",
+   "water"
+  ]
+ },
+ "tp-link-tapo-rv30": {
+  "stDust": 4,
+  "specSrc": "TP-Link resmi RV30 Plus sayfası: istasyon torbası 4 L; şarj süresi (yalnız %20-100 ~180 dk) ve ağırlık verilmiyor",
+  "na": [
+   "ch",
+   "kg"
+  ]
+ },
+ "electrolux-er61uw1dg": {
+  "specSrc": "Resmi/bağımsız model kaynağı bulunamadı",
+  "na": [
+   "ch",
+   "h",
+   "kg",
+   "pa",
+   "water"
+  ]
+ },
+ "electrolux-er71uw2sw": {
+  "specSrc": "Resmi/bağımsız model kaynağı bulunamadı",
+  "na": [
+   "water"
+  ]
+ },
+ "arnica-sil-supur": {
+  "specSrc": "Resmi/bağımsız model kaynağı bulunamadı",
+  "na": [
+   "kg"
+  ]
+ },
+ "tcl-sweeva-6000": {
+  "kg": 4.5,
+  "specSrc": "TCL US resmi sayfası: ürün ağırlığı 10 lb (~4,5 kg); şarj süresi verilmiyor",
+  "na": [
+   "ch"
+  ]
+ },
+ "grundig-vcr-6330": {
+  "specSrc": "Grundig model sayfası bulunamadı",
+  "na": [
+   "db",
+   "kg"
+  ]
+ },
+ "philips-homerun-3000-series-aqua": {
+  "specSrc": "Philips resmi XU3000 föyü: yalnız şarj istasyonu, toz torbası yok (N/A)",
+  "na": [
+   "stDust"
+  ]
+ },
+ "ecovacs-deebot-n10": {
+  "specSrc": "Ecovacs sayfası ses ve isteğe bağlı istasyon torba hacmini vermiyor",
+  "na": [
+   "db",
+   "stDust"
+  ]
+ },
+ "anker-eufy-robovac-x8-hybrid": {
+  "specSrc": "eufy resmi X8/X8 Hybrid özellik tablosu ağırlık vermiyor (yalnız X8 Pro 4,1 kg)",
+  "na": [
+   "kg"
+  ]
+ },
+ "philips-homerun-2000-series": {
+  "climb": 17,
+  "specSrc": "Philips resmi XU2000/20 sayfası: engel aşma 17 mm"
  }
 }

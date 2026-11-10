@@ -354,5 +354,13 @@
  "cecotec-conga-x100-ai": {
   "pa": 25000.0,
   "src": "Cecotec resmi tanıtım videosu (Conga X100): 25.000 Pa Ungravity motor, AI Pro (lazer + yapay zekâ); bağımsız inceleme 20.000 Pa diyor — üretici değeri alındı"
+ },
+ "xiaomi-robot-vacuum-s10-plus": {
+  "obst": "Yapay zekâ / kamera",
+  "src": "Xiaomi resmi S10+ (B105) teknik sayfası: çizgi lazer sensörü + 'AI Visual identification sensor' (engel ve mobilya tanıma)"
+ },
+ "xiaomi-robot-vacuum-s20": {
+  "obst": "Temel sensör",
+  "src": "Xiaomi resmi S20 SSS: 8 noktalı TOF engel algılama (3 cm üstü nesneler)"
  }
 }

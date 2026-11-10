@@ -1,0 +1,156 @@
+{
+ "tp-link-tapo-rv20-max": {
+  "ch": 4,
+  "stDust": 3,
+  "na": [
+   "kg"
+  ],
+  "specSrc": "TP-Link resmi RV20 Max Plus veri föyü (aynı robot): şarj 4 saat, isteğe bağlı istasyon 3 L torba; robot ağırlığı yayımlanmamış"
+ },
+ "xiaomi-robot-vacuum-s20-plus": {
+  "na": [
+   "ch",
+   "db",
+   "climb"
+  ],
+  "specSrc": "Xiaomi resmi S20+ (B108GL) teknik sayfası şarj süresi, ses ve eşik yüksekliği vermiyor"
+ },
+ "irobot-roomba-combo-j5": {
+  "na": [
+   "pa",
+   "mah",
+   "db",
+   "stDust"
+  ],
+  "specSrc": "iRobot resmi sayfası Pa, batarya, ses ve torba hacmi yayımlamıyor"
+ },
+ "electrolux-er71hw1ug": {
+  "na": [
+   "ch",
+   "kg",
+   "water"
+  ],
+  "specSrc": "Electrolux model sayfası bulunamadı; satıcı sayfaları bu değerleri vermiyor"
+ },
+ "xiaomi-robot-vacuum-s10-plus": {
+  "na": [
+   "db",
+   "climb"
+  ],
+  "specSrc": "Xiaomi resmi S10+ (B105) teknik sayfası ses ve eşik yüksekliği vermiyor (şarj ~6 saat, robot 3,8 kg)"
+ },
+ "roborock-q8-max": {
+  "na": [
+   "water",
+   "stDust"
+  ],
+  "specSrc": "Roborock resmi Q8 Max+ sayfası su tankı ve istasyon torbası hacmini vermiyor"
+ },
+ "tp-link-tapo-rv30": {
+  "stDust": 4,
+  "na": [
+   "ch",
+   "kg"
+  ],
+  "specSrc": "TP-Link resmi RV30 Plus sayfası: istasyon torbası 4 L; şarj süresi (yalnız %20-100 ~180 dk) ve ağırlık verilmiyor"
+ },
+ "ecovacs-deebot-n20-pro-plus": {
+  "na": [
+   "db",
+   "kg"
+  ],
+  "specSrc": "Ecovacs resmi sayfası yalnız 65-82 dBA aralığı ve paket ağırlığı veriyor; robot ağırlığı yok"
+ },
+ "irobot-roomba-combo-j5-plus": {
+  "na": [
+   "mah",
+   "db",
+   "stDust"
+  ],
+  "specSrc": "iRobot resmi sayfası batarya, ses ve torba hacmi yayımlamıyor"
+ },
+ "electrolux-er61uw1dg": {
+  "na": [
+   "pa",
+   "ch",
+   "h",
+   "kg",
+   "water"
+  ],
+  "specSrc": "Resmi/bağımsız model kaynağı bulunamadı"
+ },
+ "electrolux-er71uw2sw": {
+  "na": [
+   "water"
+  ],
+  "specSrc": "Resmi/bağımsız model kaynağı bulunamadı"
+ },
+ "arnica-sil-supur": {
+  "na": [
+   "kg"
+  ],
+  "specSrc": "Resmi/bağımsız model kaynağı bulunamadı"
+ },
+ "xiaomi-robot-vacuum-s20": {
+  "na": [
+   "rt",
+   "ch",
+   "db",
+   "climb"
+  ],
+  "specSrc": "Xiaomi resmi S20 (D106) teknik sayfası: 3200 mAh, 3,5 kg; çalışma/şarj süresi, ses ve eşik vermiyor"
+ },
+ "hobot-legee-7": {
+  "climb": 20,
+  "na": [
+   "rt",
+   "ch",
+   "kg"
+  ],
+  "specSrc": "Hobot resmi LEGEE-D7 sayfası: 20 mm engel aşma; süre ve ağırlık verilmiyor"
+ },
+ "tcl-sweeva-6000": {
+  "kg": 4.5,
+  "na": [
+   "ch"
+  ],
+  "specSrc": "TCL US resmi sayfası: ürün ağırlığı 10 lb (~4,5 kg); şarj süresi verilmiyor"
+ },
+ "xiaomi-mi-robot-vacuum-mop-essential": {
+  "na": [
+   "rt",
+   "db"
+  ],
+  "specSrc": "Xiaomi kılavuzu/sayfası çalışma süresi ve ses vermiyor"
+ },
+ "grundig-vcr-6330": {
+  "na": [
+   "db",
+   "kg"
+  ],
+  "specSrc": "Grundig model sayfası bulunamadı"
+ },
+ "philips-homerun-3000-series-aqua": {
+  "na": [
+   "stDust"
+  ],
+  "specSrc": "Philips resmi XU3000 föyü: yalnız şarj istasyonu, toz torbası yok (N/A)"
+ },
+ "ecovacs-deebot-n10": {
+  "na": [
+   "db",
+   "stDust"
+  ],
+  "specSrc": "Ecovacs sayfası ses ve isteğe bağlı istasyon torba hacmini vermiyor"
+ },
+ "anker-eufy-robovac-x8-hybrid": {
+  "na": [
+   "kg"
+  ],
+  "specSrc": "eufy resmi X8/X8 Hybrid özellik tablosu ağırlık vermiyor (yalnız X8 Pro 4,1 kg)"
+ },
+ "philips-homerun-2000-series": {
+  "climb": 17,
+  "specSrc": "Philips resmi XU2000/20 sayfası: engel aşma 17 mm"
+ }
+}
